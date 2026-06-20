@@ -82,6 +82,33 @@ var ptx_lunr_docs = [
   "body": "    A vertical cross-section through Earth's atmosphere, where the green rectangle represents the ground and blue circles represent discrete atmospheric particles.   Vertical cross-section through Earth's atmosphere, which is filled with discrete particles that become more spaced apart with height.     The atmospheric cross-section shown in is decomposed into volume elements, each of which contain multiple discrete particles.   Vertical cross-section through Earth's atmosphere, which is filled with discrete particles that become more spaced apart with height, with adjacent volume elements enclosing collections of discrete particles.     "
 },
 {
+  "id": "ch1-section-calculus",
+  "level": "1",
+  "url": "ch1-section-calculus.html",
+  "type": "Section",
+  "number": "1.2",
+  "title": "Calculus",
+  "body": " Calculus   If we further assume state variables are described by differentiable functions of time and three-dimensional space (i.e., if we assume the values any given state variable takes on do not sharply jump from volume element to volume element but instead vary continuously and smoothly in time and space), then we can apply calculus and differential equations to describe and predict changes in these atmospheric properties.  We will review relevant calculus below as well as introduce a twist on the chain rule for multivariable functions that helps us view atmospheric flow from different perspectives.    Partial differentiation  A function has an ordinary derivative denoted by (called Lagrange's notation or prime notation) or (called Leibniz's notation). \"Ordinary\" means is a function of only one independent variable.  In meteorology, we typically deal with more complicated functions of several independent variables denoting time and space.  Consider a state variable measured within an air parcel. While is depicted here as a scalar quantity for simplicity, be aware that it could represent a vector quantity.  To isolate the rate at which is changing as changes, we take the partial derivative of with respect to . This partial derivative can be denoted by or ; the latter notation is preferred in this text.  When finding , we hold , , and constant. It follows that an alternative, explicit notation for the partial derivative of with respect to is     where the subscripts indicate which independent variables are held constant.  Likewise,           While the subscripts often will be omitted for brevity, we will use them whenever greater clarity on which independent variables are held constant is needed.   "
+},
+{
+  "id": "ch1-section-calculus-subsection-partial-differentiation-2",
+  "level": "2",
+  "url": "ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ordinary derivative "
+},
+{
+  "id": "ch1-section-calculus-subsection-partial-differentiation-5",
+  "level": "2",
+  "url": "ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "partial derivative of with respect to "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
