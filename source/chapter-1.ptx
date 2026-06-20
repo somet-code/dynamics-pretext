@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Continuum Approximation and Calculus in Geophysical Fluid Dynamics</title>
+
+  <introduction>
+    <p>
+      <term>Mechanics</term> is the study of motion.
+      The sub-field of <term>kinematics</term> deals with simply describing motion using position, velocity, and acceleration,
+      without questioning why motion happens in the first place.
+      The sub-field of <term>dynamics</term> goes further: It seeks to explain the causes of motion.
+      Dynamical explanations for why motion occurs use forces and related concepts like momentum and energy within the contexts of various physical laws.
+      Since dynamics deals with the causes motion, it enables us to explain how motions come to be
+      and<mdash />perhaps more importantly to meteorologists<mdash />predict how they will evolve in the future.
+    </p>
+    <p>
+      <term>Fluid dynamics</term> applies dynamics to fluids.
+      A <term>fluid</term> is a substance that cannot withstand any force directed parallel to its surface:
+      This applies to liquids as well as to gases like air.
+      Unlike solids,
+      which<mdash />at least to a point<mdash />can resist forces applied parallel to their surfaces and return to their original shapes once the forces are removed,
+      fluids cannot resist such forces and instead immediately and continuously <term>deform</term> and <term>flow</term> in response to them.
+      This property causes fluids to take on the shapes of their containers rather than a preferred shape like solids.
+      And because their particles are in constant random motion, gases expand to occupy the entire volume of any container!
+    </p>
+    <p>
+      <term>Geophysical fluid dynamics</term> (<acro>GFD</acro>) applies fluid dynamics to naturally occurring fluids like atmospheres and oceans.
+      Therefore, <term>atmospheric dynamics</term> is a branch of GFD.
+    </p>
+    <p>
+      In this atmospheric dynamics course, we will explore the causes of
+      atmospheric motion<mdash />i.e., <term>wind</term><mdash />using the principles of momentum, mass, and energy conservation.
+      While their corresponding physical laws are written as mathematical formulas,
+      it is the physical interpretations of these equations that give them meaning and power to explain and predict atmospheric motions.
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-section-name.ptx" />
+
+</chapter>
