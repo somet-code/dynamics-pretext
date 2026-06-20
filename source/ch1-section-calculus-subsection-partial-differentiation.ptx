@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch1-section-calculus-subsection-partial-differentiation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Partial differentiation</title>
+
+  <p>
+    A function <m>f(x)</m> has an <term>ordinary derivative</term> denoted by <m>f'(x)</m> (called Lagrange's notation or prime notation) or <m>\frac{df}{dx}</m> (called Leibniz's notation).
+    "Ordinary" means <m>f</m> is a function of only one independent variable.
+  </p>
+
+  <p>
+    In meteorology, we typically deal with more complicated functions of several independent variables denoting time and space.
+  </p>
+  
+  <p>
+    Consider a state variable <m>f = f(x,y,z,t)</m> measured within an air parcel.
+    While <m>f</m> is depicted here as a scalar quantity for simplicity,
+    be aware that it could represent a vector quantity.
+  </p>
+
+  <p>
+    To isolate the rate at which <m>f</m> is changing as <m>x</m> changes,
+    we take the <term>partial derivative of <m>f</m> with respect to <m>x</m></term>.
+    This partial derivative can be denoted by <m>f_x</m> or <m>\frac{\partial f}{\partial x}</m>;
+    the latter notation is preferred in this text.
+  </p>
+
+  <p>
+    When finding <m>\frac{\partial f}{\partial x}</m>, we hold <m>y</m>, <m>z</m>, and <m>t</m> constant.
+    It follows that an alternative, explicit notation for the partial derivative of <m>f</m> with respect to <m>x</m> is
+  </p>
+
+  <p>
+    <md number="yes">
+        \frac{\partial f}{\partial x}
+        =
+        \left(
+            \frac{\partial f}{\partial x}
+        \right)_{y,z,t}
+    </md>
+  </p>
+
+  <p>
+    where the subscripts indicate which independent variables are held constant.
+  </p>
+
+  <p>
+    Likewise,
+  </p>
+
+  <p>
+    <md number="yes">
+        \frac{\partial f}{\partial y}
+        =
+        \left(
+            \frac{\partial f}{\partial y}
+        \right)_{x,z,t}
+    </md>
+  </p>
+
+  <p>
+    <md number="yes">
+        \frac{\partial f}{\partial z}
+        =
+        \left(
+            \frac{\partial f}{\partial z}
+        \right)_{x,y,t}
+    </md>
+  </p>
+
+  <p>
+    <md number="yes">
+        \frac{\partial f}{\partial t}
+        =
+        \left(
+            \frac{\partial f}{\partial t}
+        \right)_{x,y,z}
+    </md>
+  </p>
+
+  <p>
+    While the subscripts often will be omitted for brevity,
+    we will use them whenever greater clarity on which independent variables are held constant is needed.
+  </p>
+
+</subsection>
