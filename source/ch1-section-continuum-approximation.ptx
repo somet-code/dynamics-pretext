@@ -81,8 +81,8 @@
 
   <p>
     <xref ref="ch1-continuum" text="type-global" /> below summarizes the essential components of the continuum approximation:
-    FIGa shows a simple depiction of discrete particles in Earth's atmosphere,
-    and FIGb shows volume elements imposed within the atmosphere,
+    <xref ref="ch1-continuum-a" text="type-global" /> shows a simple depiction of discrete particles in Earth's atmosphere,
+    and <xref ref="ch1-continuum-b" text="type-global" /> shows volume elements imposed within the atmosphere,
     each containing many discrete particles.
   </p>
 
