@@ -13,6 +13,7 @@
       Since dynamics deals with the causes motion, it enables us to explain how motions come to be
       and<mdash />perhaps more importantly to meteorologists<mdash />predict how they will evolve in the future.
     </p>
+    
     <p>
       <term>Fluid dynamics</term> applies dynamics to fluids.
       A <term>fluid</term> is a substance that cannot withstand any force directed parallel to its surface:
@@ -23,10 +24,12 @@
       This property causes fluids to take on the shapes of their containers rather than a preferred shape like solids.
       And because their particles are in constant random motion, gases expand to occupy the entire volume of any container!
     </p>
+
     <p>
       <term>Geophysical fluid dynamics</term> (<acro>GFD</acro>) applies fluid dynamics to naturally occurring fluids like atmospheres and oceans.
       Therefore, <term>atmospheric dynamics</term> is a branch of GFD.
     </p>
+    
     <p>
       In this atmospheric dynamics course, we will explore the causes of
       atmospheric motion<mdash />i.e., <term>wind</term><mdash />using the principles of momentum, mass, and energy conservation.
