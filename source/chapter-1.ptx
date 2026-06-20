@@ -36,6 +36,6 @@
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-section-name.ptx" />
+  <xi:include href="ch1-section-continuum-approximation.ptx" />
 
 </chapter>
