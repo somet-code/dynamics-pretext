@@ -5,7 +5,7 @@
 
   <introduction>
     <p>
-      If we further assume state variables are described by differentiable functions of time <m>t</m> and three-dimensional space <m>x</m>, <m>y</m>, and <m>z</m>
+      If we further assume state variables are described by differentiable functions of time and three-dimensional space
       (i.e., if we assume the values any given state variable takes on do not sharply jump from volume element to volume element but instead vary continuously and smoothly in time and space),
       then we can apply calculus and differential equations to describe and predict changes in these atmospheric properties.
     </p>
@@ -14,5 +14,7 @@
       We will review relevant calculus below as well as introduce a twist on the chain rule for multivariable functions that helps us view atmospheric flow from different perspectives.
     </p>
   </introduction>
+
+  <xi:include href="ch1-section-calculus-subsection-partial-differentiation.ptx" />
 
 </section>
