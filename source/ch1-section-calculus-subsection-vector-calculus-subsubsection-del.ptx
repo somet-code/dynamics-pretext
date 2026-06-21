@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsubsection xml:id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Del</title>
+
+  <p>
+    The operator <m>\nabla = \hat{i} \, \frac{\partial}{\partial x} + \hat{j} \, \frac{\partial}{\partial y} + \hat{k} \, \frac{\partial}{\partial z}</m>,
+    which is called <term>del</term>, <term>nabla</term>, or the <term>gradient operator</term>,
+    is used to find the following important quantities.
+  </p>
+  
+  <p>
+    <ul>
+        <li>
+            <p>
+                The <term>gradient</term> of <m>f</m>, <m>\nabla f</m>, gives the magnitude and direction of the maximum change of the scalar field <m>f</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                The <term>divergence</term> of <m>\vec{F}</m>, <m>\nabla \cdot \vec{F}</m>, gives the outward flux of the vector field <m>\vec{F}</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                The <term>curl</term> of <m>\vec{F}</m>, <m>\nabla \times \vec{F}</m>, gives the rotation of the vector field <m>\vec{F}</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                The <term>Laplacian</term> of <m>f</m>, <m>\nabla^2 f = \nabla \cdot \nabla f</m>, gives the divergence of the gradient of the scalar field <m>f</m>.
+                <ul>
+                    <li>
+                        <p>
+                            <m>\nabla^2 = \nabla \cdot \nabla = \frac{\partial^2}{\partial x^2} +  \frac{\partial^2}{\partial y^2} +  \frac{\partial^2}{\partial z^2}</m>
+                            is called the <term>Laplace operator</term>.
+                            It occasionally is given by the symbol <m>\Delta</m>.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    Del's important definitions and properties are described on Wikipedia's <url href="https://en.wikipedia.org/wiki/Del">del page</url>.
+  </p>
+
+</subsubsection>
