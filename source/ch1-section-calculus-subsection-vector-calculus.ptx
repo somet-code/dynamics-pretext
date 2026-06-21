@@ -13,5 +13,6 @@
 
     <xi:include href="ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule.ptx" />
     <xi:include href="ch1-section-calculus-subsection-vector-calculus-subsubsection-del.ptx" />
+    <xi:include href="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products.ptx" />
 
 </subsection>

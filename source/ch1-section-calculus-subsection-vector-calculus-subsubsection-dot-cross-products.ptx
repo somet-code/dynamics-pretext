@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsubsection xml:id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Properties of dot and cross products</title>
+
+  <p>
+    We will employ several properties of dot and cross products in derivations.
+    Wikipedia's <url href="https://en.wikipedia.org/wiki/Dot_product#Properties">dot product page</url> and <url href="https://en.wikipedia.org/wiki/Cross_product#Properties">cross product page</url> list many useful properties,
+    and I recommend the reader refer to them as needed.
+    Some properties we will use in derivations include
+  </p>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                scalar multiplication with a cross product
+                <m>\left( c \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( c \, \vec{b} \right) = c \left( \vec{a} \times \vec{b} \right)</m>,
+                where $c$ is a scalar;
+            </p>
+        </li>
+        <li>
+            <p>
+                the distributive property of cross products over addition
+                <m>\vec{a} \times \left( \vec{b} + \vec{c} \right) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}</m>;
+                and
+            </p>
+        </li>
+        <li>
+            <p>
+                the <term>vector triple product</term>
+                <m>\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{a} \cdot \vec{b}) \, \vec{c}</m>
+                and
+                <m>(\vec{a} \times \vec{b}) \times \vec{c} = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{b} \cdot \vec{c}) \, \vec{a}</m>.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+</subsubsection>
