@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsubsection xml:id="ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Right-hand rule</title>
+
+  <p>
+    The <term>right-hand rule</term> is a convention used to define the orientations of coordinate axes and vectors.
+    The <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the Cartesian coordinate system are oriented perpendicular to each other following the right-hand rule
+    (<xref ref="ch1-right-hand-rule-a" text="type-global" />),
+    and the right-hand rule determines the direction of the vector that results from the cross product of two other vectors
+    (<xref ref="ch1-right-hand-rule-b" text="type-global" />).
+    See Wikipedia's <url href="https://en.wikipedia.org/wiki/Right-hand_rule">right-hand rule page</url>
+    for instructions and visuals on how to use the right-hand rule either with your index and middle fingers and thumb or with curled fingers.
+  </p>
+
+  <figure>
+    <caption />
+    <sidebyside>
+        <figure xml:id="ch1-right-hand-rule-a">
+            <caption>
+                The right-hand rule applied to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the Cartesian coordinate system,
+                where the arrows show the sense of the right-hand rule for any combination of two axes.
+            </caption>
+            <image source="images/ch1-right-hand-rule-a.png" width="50%">
+                <shortdescription>
+                    Three straight orthogonal arrows representing the x-, y-, and z-axes of the Cartesian coordinate system,
+                    and curved arrows showing the sense of the right-hand rule for any combination of two axes.
+                </shortdescription>
+            </image>
+        </figure>
+        <figure xml:id="ch1-right-hand-rule-b">
+            <caption>
+                The right-hand rule applied to the cross product <m>\vec{A} \times \vec{B}</m> (left) and the cross product
+                <m>\vec{B} \times \vec{A}</m> (right),
+                where the curved red arrows show the sense of the right-hand rule.
+                Note that the cross product is not commutative,
+                so <m>\vec{B} \times \vec{A}</m> points in the opposite direction as <m>\vec{A} \times \vec{B}</m>.
+            </caption>
+            <image source="images/ch1-right-hand-rule-b.png" width="50%">
+                <shortdescription>
+                    (left) The cross product of two vectors and (right) the cross product of the same two vectors but in reverse order.
+                </shortdescription>
+            </image>
+        </figure>
+    </sidebyside>
+  </figure>
+
+  <p>
+    Two options for finding the orientation of the vector that results from the cross product of two other vectors by applying the right-hand rule to a human's right hand are shown in
+    <xref ref="ch1-right-hand-rule-hands" text="type-global" /> below.
+    Make sure to use the right hand,
+    not the left hand,
+    or the results of your cross products will point opposite their correct directions!
+  </p>
+
+  <figure xml:id="ch1-right-hand-rule-hands">
+    <caption />
+    <sidebyside>
+        <figure xml:id="ch1-right-hand-rule-hands-a">
+            <caption>
+                The right-hand rule using the four fingers that point together in the direction of vector <m>\vec{A}</m>,
+                the palm that points in the direction of vector <m>\vec{B}</m>,
+                and the thumb that points in the direction of the vector that results from the cross product <m>\vec{A} \times \vec{B}</m> of a human's right hand.
+                Reproduced with modified vector annotations from
+                <url href="https://commons.wikimedia.org/wiki/File:Right-hand-rule.jpg}">P.wormer via Wikimedia Commons</url>
+                under <url href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</url>.
+            </caption>
+            <image source="images/ch1-right-hand-rule-hands-a.png" width="50%">
+                <shortdescription>
+                    The right-hand rule using the four fingers that point together in the direction of vector A,
+                    the palm that points in the direction of vector B,
+                    and the thumb that points in the direction of the vector that results from the cross product A x B of a human's right hand.
+                </shortdescription>
+            </image>
+        </figure>
+        <figure xml:id="ch1-right-hand-rule-hands-b">
+            <caption>
+                The right-hand rule using the index finger that points in the direction of vector <m>\vec{A}</m>,
+                the middle finger that points in the direction of vector <m>\vec{B}</m>,
+                and the thumb that points in the direction of the vector that results from the cross product <m>\vec{A} \times \vec{B}</m> of a human's right hand.
+                Reproduced with modified vector annotations from
+                <url href="https://commons.wikimedia.org/wiki/File:Right-hand_rule_for_cross_product.png">Sepitropova via Wikimedia Commons</url>
+                under <url href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</url>.
+            </caption>
+            <image source="images/ch1-right-hand-rule-hands-b.png" width="50%">
+                <shortdescription>
+                    The right-hand rule using the index finger that points in the direction of vector A,
+                    the middle finger that points in the direction of vector B, and the thumb that points in the direction of the vector that results from the cross product A x B of a human's right hand.
+                </shortdescription>
+            </image>
+        </figure>
+    </sidebyside>
+  </figure>
+
+</subsubsection>

@@ -11,4 +11,6 @@
     </p>
   </introduction>
 
+    <xi:include href="ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule.ptx" />
+
 </subsection>
