@@ -20,7 +20,7 @@
 
   <p>
     To isolate the rate at which <m>f</m> is changing as <m>x</m> changes,
-    we take the <term>partial derivative of <m>f</m> with respect to <m>x</m></term>.
+    we take the <term>partial derivative</term> of <m>f</m> with respect to <m>x</m>.
     This partial derivative can be denoted by <m>f_x</m> or <m>\frac{\partial f}{\partial x}</m>;
     the latter notation is preferred in this text.
   </p>
