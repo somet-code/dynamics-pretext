@@ -33,7 +33,7 @@
                 The right-hand rule applied to the cross product <m>\vec{A} \times \vec{B}</m> (left) and the cross product
                 <m>\vec{B} \times \vec{A}</m> (right),
                 where the curved red arrows show the sense of the right-hand rule.
-                Note that the cross product is not commutative,
+                Note the cross product is not commutative,
                 so <m>\vec{B} \times \vec{A}</m> points in the opposite direction as <m>\vec{A} \times \vec{B}</m>.
             </caption>
             <image source="images/ch1-right-hand-rule-b.png" width="50%">
