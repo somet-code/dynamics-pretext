@@ -16,5 +16,6 @@
   </introduction>
 
   <xi:include href="ch1-section-calculus-subsection-partial-differentiation.ptx" />
+  <xi:include href="ch1-section-calculus-subsection-vector-calculus.ptx" />
 
 </section>

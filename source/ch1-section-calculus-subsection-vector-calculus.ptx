@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch1-section-calculus-subsection-vector-calculus" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Vector algebra and calculus</title>
+
+  <introduction>
+    <p>
+        Section 1.2.1 of Martin has a very thorough review of relevant vector algebra and calculus,
+        and you should work through it carefully.
+        A few especially important or possibly less familiar topics are briefly discussed next.
+    </p>
+  </introduction>
+
+</subsection>
