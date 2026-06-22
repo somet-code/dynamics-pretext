@@ -108,6 +108,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -128,15 +133,15 @@ eBookConfig.enable_chatcodes =  false;
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partial differentiation</span>
 </h3>
-<div class="para" id="ch1-section-calculus-subsection-partial-differentiation-2">A function <span class="process-math">\(f(x)\)</span> has an <dfn class="terminology">ordinary derivative</dfn> denoted by <span class="process-math">\(f'(x)\)</span> (called Lagrange’s notation or prime notation) or <span class="process-math">\(\frac{df}{dx}\)</span> (called Leibniz’s notation). "Ordinary" means <span class="process-math">\(f\)</span> is a function of only one independent variable.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch1-section-calculus-subsection-partial-differentiation-2">A function <span class="process-math">\(f(x)\)</span> has an <dfn class="terminology">ordinary derivative</dfn> denoted by <span class="process-math">\(f'(x)\)</span> (called Lagrange’s notation or prime notation) or <span class="process-math">\(\dfrac{df}{dx}\)</span> (called Leibniz’s notation). "Ordinary" means <span class="process-math">\(f\)</span> is a function of only one independent variable.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ch1-section-calculus-subsection-partial-differentiation-3">In meteorology, we typically deal with more complicated functions of several independent variables denoting time and space.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ch1-section-calculus-subsection-partial-differentiation-4">Consider a state variable <span class="process-math">\(f = f(x,y,z,t)\)</span> measured within an air parcel. While <span class="process-math">\(f\)</span> is depicted here as a scalar quantity for simplicity, be aware that it could represent a vector quantity.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch1-section-calculus-subsection-partial-differentiation-5">To isolate the rate at which <span class="process-math">\(f\)</span> is changing as <span class="process-math">\(x\)</span> changes, we take the <dfn class="terminology">partial derivative</dfn> of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\text{.}\)</span> This partial derivative can be denoted by <span class="process-math">\(f_x\)</span> or <span class="process-math">\(\frac{\partial f}{\partial x}\text{;}\)</span> the latter notation is preferred in this text.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch1-section-calculus-subsection-partial-differentiation-5">To isolate the rate at which <span class="process-math">\(f\)</span> is changing as <span class="process-math">\(x\)</span> changes, we take the <dfn class="terminology">partial derivative</dfn> of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\text{.}\)</span> This partial derivative can be denoted by <span class="process-math">\(f_x\)</span> or <span class="process-math">\(\dfrac{\partial f}{\partial x}\text{;}\)</span> the latter notation is preferred in this text.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch1-section-calculus-subsection-partial-differentiation-6">When finding <span class="process-math">\(\frac{\partial f}{\partial x}\text{,}\)</span> we hold <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(t\)</span> constant. It follows that an alternative, explicit notation for the partial derivative of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch1-section-calculus-subsection-partial-differentiation-6">When finding <span class="process-math">\(\dfrac{\partial f}{\partial x}\text{,}\)</span> we hold <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(t\)</span> constant. It follows that an alternative, explicit notation for the partial derivative of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-partial-differentiation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch1-section-calculus-subsection-partial-differentiation-7">
 <div class="displaymath process-math" id="ch1-section-calculus-subsection-partial-differentiation-7-1">
@@ -248,7 +253,7 @@ eBookConfig.enable_chatcodes =  false;
 <h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Del</span>
 </h4>
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2">The operator <span class="process-math">\(\nabla = \hat{i} \, \frac{\partial}{\partial x} + \hat{j} \, \frac{\partial}{\partial y} + \hat{k} \, \frac{\partial}{\partial z}\text{,}\)</span> which is called <dfn class="terminology">del</dfn>, <dfn class="terminology">nabla</dfn>, or the <dfn class="terminology">gradient operator</dfn>, is used to find the following important quantities.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2">The operator <span class="process-math">\(\nabla = \hat{i} \, \dfrac{\partial}{\partial x} + \hat{j} \, \dfrac{\partial}{\partial y} + \hat{k} \, \dfrac{\partial}{\partial z}\text{,}\)</span> which is called <dfn class="terminology">del</dfn>, <dfn class="terminology">nabla</dfn>, or the <dfn class="terminology">gradient operator</dfn>, is used to find the following important quantities.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3">
 <ul class="disc" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1">
@@ -274,7 +279,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="circle" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5">
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5-1">
 <div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5-1-1">
-<span class="process-math">\(\nabla^2 = \nabla \cdot \nabla = \frac{\partial^2}{\partial x^2} +  \frac{\partial^2}{\partial y^2} +  \frac{\partial^2}{\partial z^2}\)</span> is called the <dfn class="terminology">Laplace operator</dfn>. It occasionally is given by the symbol <span class="process-math">\(\Delta\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\nabla^2 = \nabla \cdot \nabla = \dfrac{\partial^2}{\partial x^2} +  \dfrac{\partial^2}{\partial y^2} +  \dfrac{\partial^2}{\partial z^2}\)</span> is called the <dfn class="terminology">Laplace operator</dfn>. It occasionally is given by the symbol <span class="process-math">\(\Delta\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -299,7 +304,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3">
 <ul class="disc" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1">
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1">
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1">scalar multiplication with a cross product <span class="process-math">\(\left( c \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( c \, \vec{b} \right) = c \left( \vec{a} \times \vec{b} \right)\text{,}\)</span> where $c$ is a scalar;<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1">scalar multiplication with a cross product <span class="process-math">\(\left( k \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( k \, \vec{b} \right) = k \left( \vec{a} \times \vec{b} \right)\text{,}\)</span> where <span class="process-math">\(k\)</span> is a scalar;<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
@@ -318,6 +323,117 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Subsubsection 1.2.2.3: Properties of dot and cross products"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" title="Copy heading and permalink for Subsubsection 1.2.2.3: Properties of dot and cross products" aria-label="Copy heading and permalink for Subsubsection 1.2.2.3: Properties of dot and cross products">🔗</a></div>
 </section><div class="autopermalink" data-description="Subsection 1.2.2: Vector algebra and calculus"><a href="#ch1-section-calculus-subsection-vector-calculus" title="Copy heading and permalink for Subsection 1.2.2: Vector algebra and calculus" aria-label="Copy heading and permalink for Subsection 1.2.2: Vector algebra and calculus">🔗</a></div>
+</section>
+<section class="subsection" id="ch1-section-calculus-subsection-taylor-series">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor series</span>
+</h3>
+<section class="introduction" id="ch1-section-calculus-subsection-taylor-series-2">
+<div class="para" id="ch1-section-calculus-subsection-taylor-series-2-1">You learned in a calculus course that an infinitely differentiable function <span class="process-math">\(f(x)\)</span> can be approximated by—and sometimes perfectly represented by—its Taylor series expansion at <span class="process-math">\(x=a\)</span> as given by<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-taylor-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch1-section-calculus-subsection-taylor-series-2-2">
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-taylor-series-2-2-1">
+\begin{align}
+f(x) \amp \approx \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n\notag\\
+\amp = f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2\notag\\
+\amp \quad + \frac{f^{(3)}(a)}{6}(x-a)^3 + \dots\tag{1.2.5}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-taylor-series-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsubsection" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations">
+<h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span>
+</h4>
+<div class="para" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-2">We often create an <dfn class="terminology"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximation</dfn> of <span class="process-math">\(f(x)\)</span> using its <dfn class="terminology"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order Taylor polynomial</dfn>, which is the polynomial of degree <span class="process-math">\(n\)</span> formed from the <span class="process-math">\(n^{\mathrm{th}}\)</span> partial sum of <a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-2-2-1" class="xref" data-knowl="./knowl/xref/eqn-taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.5">(1.2.5)</a>. For example, the <dfn class="terminology">first-order approximation</dfn> of <span class="process-math">\(f(x)\)</span> (also called its <dfn class="terminology">linear approximation</dfn>) is given by its first-order Taylor polynomial<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-3">
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-3-1">
+\begin{equation*}
+f(x) \approx f(a) + f'(a)(x-a)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-4">and the <dfn class="terminology">second-order approximation</dfn> of <span class="process-math">\(f(x)\)</span> is given by its second-order Taylor polynomial<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-5">
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-5-1">
+\begin{equation*}
+f(x) \approx f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-6">In many atmospheric dynamics applications, terms of second order and higher are grouped together as "<dfn class="terminology">higher-order terms</dfn>" and are neglected in Taylor series expansions of state variables. Thus, state variables often are represented by their first-order approximations.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 1.2.3.1: n^{\mathrm{th}}-order approximations"><a href="#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" title="Copy heading and permalink for Subsubsection 1.2.3.1: n^{\mathrm{th}}-order approximations" aria-label="Copy heading and permalink for Subsubsection 1.2.3.1: n^{\mathrm{th}}-order approximations">🔗</a></div>
+</section><div class="autopermalink" data-description="Subsection 1.2.3: Taylor series"><a href="#ch1-section-calculus-subsection-taylor-series" title="Copy heading and permalink for Subsection 1.2.3: Taylor series" aria-label="Copy heading and permalink for Subsection 1.2.3: Taylor series">🔗</a></div>
+</section>
+<section class="subsection" id="ch1-section-calculus-subsection-total-differentiation">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Total differentiation</span>
+</h3>
+<div class="para" id="ch1-section-calculus-subsection-total-differentiation-2">Consider a state variable <span class="process-math">\(f = f(x,y,z,t)\)</span> measured within an air parcel. Again, while <span class="process-math">\(f\)</span> is depicted here as a scalar quantity for simplicity, be aware that it could represent a vector quantity.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-total-differentiation-3">If the air parcel’s position changes with time as it moves through the atmosphere, then <span class="process-math">\(x = x(t)\text{,}\)</span> <span class="process-math">\(y = y(t)\text{,}\)</span> and <span class="process-math">\(z = z(t)\text{.}\)</span> Consequently, <span class="process-math">\(f\)</span> is a differentiable function of <span class="process-math">\(t\text{,}\)</span> and so we can quantify the time rate of change of <span class="process-math">\(f\)</span> within the air parcel by calculating <span class="process-math">\(\dfrac{df}{dt}\text{.}\)</span> We do this using the <dfn class="terminology">chain rule for multivariable functions</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch1-section-calculus-subsection-total-differentiation-4">
+<div class="displaymath process-math" id="eqn-total-derivative-chain-rule">
+\begin{equation}
+\frac{df}{dt} =
+\frac{\partial f}{\partial x} \frac{dx}{dt} +
+\frac{\partial f}{\partial y} \frac{dy}{dt} +
+\frac{\partial f}{\partial z} \frac{dz}{dt} +
+\frac{\partial f}{\partial t} \frac{dt}{dt}\tag{1.2.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-total-differentiation-5">Since <span class="process-math">\(\dfrac{dt}{dt} = 1\text{,}\)</span> <a href="ch1-section-calculus.html#eqn-total-derivative-chain-rule" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-chain-rule.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.6">(1.2.6)</a> simplifies to<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch1-section-calculus-subsection-total-differentiation-6">
+<div class="displaymath process-math" id="eqn-total-derivative-chain-rule-simplified">
+\begin{equation}
+\frac{df}{dt} =
+\frac{\partial f}{\partial t} +
+\frac{\partial f}{\partial x} \frac{dx}{dt} +
+\frac{\partial f}{\partial y} \frac{dy}{dt} +
+\frac{\partial f}{\partial z} \frac{dz}{dt}\tag{1.2.7}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-total-differentiation-7">where the terms have been rearranged to match standard presentations.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-total-differentiation-8">
+<a href="ch1-section-calculus.html#eqn-total-derivative-chain-rule-simplified" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-chain-rule-simplified.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.7">(1.2.7)</a> is the formula for the <dfn class="terminology">total derivative</dfn> of <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-total-differentiation-9">Furthermore, <span class="process-math">\(u = \dfrac{dx}{dt}\text{,}\)</span><span class="process-math">\(v = \dfrac{dy}{dt}\text{,}\)</span> and <span class="process-math">\(w = \dfrac{dz}{dt}\)</span> are the <dfn class="terminology">zonal</dfn>, <dfn class="terminology">meridional</dfn>, and <dfn class="terminology">vertical</dfn> components of the air parcel’s full (three-dimensional) velocity (i.e., wind) vector <span class="process-math">\(\vec{u} = u \, \hat{i} + v \, \hat{j} + w \, \hat{k}\text{,}\)</span> respectively, and so <a href="ch1-section-calculus.html#eqn-total-derivative-chain-rule-simplified" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-chain-rule-simplified.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.7">(1.2.7)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch1-section-calculus-subsection-total-differentiation-10">
+<div class="displaymath process-math" id="eqn-total-derivative-chain-rule-final">
+\begin{equation}
+\frac{df}{dt} =
+\frac{\partial f}{\partial t} +
+u \, \frac{\partial f}{\partial x} +
+v \, \frac{\partial f}{\partial y} +
+w \, \frac{\partial f}{\partial z}\tag{1.2.8}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch1-section-calculus-subsection-total-differentiation-11">Finally, we can use the gradient of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(\nabla f = \dfrac{\partial f}{\partial x} \, \hat{i} + \dfrac{\partial f}{\partial y} \, \hat{j} + \dfrac{\partial f}{\partial z} \, \hat{k}\text{,}\)</span> to rewrite <a href="ch1-section-calculus.html#eqn-total-derivative-chain-rule-final" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-chain-rule-final.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.2.8">(1.2.8)</a> as<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch1-section-calculus-subsection-total-differentiation-12">
+<div class="displaymath process-math" id="eqn-total-derivative-vector-final">
+\begin{equation}
+\frac{df}{dt} = \frac{\partial f}{\partial t} + \vec{u} \cdot \nabla f\tag{1.2.9}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-total-differentiation-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.4: Total differentiation"><a href="#ch1-section-calculus-subsection-total-differentiation" title="Copy heading and permalink for Subsection 1.2.4: Total differentiation" aria-label="Copy heading and permalink for Subsection 1.2.4: Total differentiation">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 1.2: Calculus"><a href="#ch1-section-calculus" title="Copy heading and permalink for Section 1.2: Calculus" aria-label="Copy heading and permalink for Section 1.2: Calculus">🔗</a></div>
 </section>
 </div>
