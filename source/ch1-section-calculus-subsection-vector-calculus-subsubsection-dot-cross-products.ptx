@@ -15,8 +15,8 @@
         <li>
             <p>
                 scalar multiplication with a cross product
-                <m>\left( c \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( c \, \vec{b} \right) = c \left( \vec{a} \times \vec{b} \right)</m>,
-                where $c$ is a scalar;
+                <m>\left( k \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( k \, \vec{b} \right) = k \left( \vec{a} \times \vec{b} \right)</m>,
+                where <m>k</m> is a scalar;
             </p>
         </li>
         <li>
