@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch1-section-calculus-subsection-taylor-series" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Taylor series</title>
+
+  <introduction>
+    <p>
+        You learned in a calculus course that an infinitely differentiable function <m>f(x)</m>
+        can be approximated by<mdash />and sometimes perfectly represented by<mdash />its Taylor series expansion at <m>x=a</m> as given by
+    </p>
+
+    <p>
+        <md xml:id="taylor-series-simple" number="yes">
+            <mrow number="no">f(x) \amp \approx \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n</mrow>
+            <mrow number="no"> \amp = f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2</mrow>
+            <mrow number="yes"> \amp \quad + \frac{f^{(3)}(a)}{6}(x-a)^3 + \frac{f^{(4)}(a)}{24}(x-a)^4 + \dots</mrow>
+        </md>
+    </p>
+  </introduction>
+
+</subsection>
