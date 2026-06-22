@@ -4,7 +4,7 @@
   <title>Del</title>
 
   <p>
-    The operator <m>\nabla = \hat{i} \, \frac{\partial}{\partial x} + \hat{j} \, \frac{\partial}{\partial y} + \hat{k} \, \frac{\partial}{\partial z}</m>,
+    The operator <m>\nabla = \hat{i} \, \dfrac{\partial}{\partial x} + \hat{j} \, \dfrac{\partial}{\partial y} + \hat{k} \, \dfrac{\partial}{\partial z}</m>,
     which is called <term>del</term>, <term>nabla</term>, or the <term>gradient operator</term>,
     is used to find the following important quantities.
   </p>
@@ -32,7 +32,7 @@
                 <ul>
                     <li>
                         <p>
-                            <m>\nabla^2 = \nabla \cdot \nabla = \frac{\partial^2}{\partial x^2} +  \frac{\partial^2}{\partial y^2} +  \frac{\partial^2}{\partial z^2}</m>
+                            <m>\nabla^2 = \nabla \cdot \nabla = \dfrac{\partial^2}{\partial x^2} +  \dfrac{\partial^2}{\partial y^2} +  \dfrac{\partial^2}{\partial z^2}</m>
                             is called the <term>Laplace operator</term>.
                             It occasionally is given by the symbol <m>\Delta</m>.
                         </p>

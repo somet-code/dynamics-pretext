@@ -13,7 +13,7 @@
     If the air parcel's position changes with time as it moves through the atmosphere,
     then <m>x = x(t)</m>, <m>y = y(t)</m>, and <m>z = z(t)</m>.
     Consequently, <m>f</m> is a differentiable function of <m>t</m>,
-    and so we can quantify the time rate of change of <m>f</m> within the air parcel by calculating <m>\frac{df}{dt}</m>.
+    and so we can quantify the time rate of change of <m>f</m> within the air parcel by calculating <m>\dfrac{df}{dt}</m>.
     We do this using the <term>chain rule for multivariable functions</term>:
   </p>
 
@@ -28,7 +28,7 @@
   </p>
 
   <p>
-    Since <m>\frac{dt}{dt}=1</m>, <xref ref="eqn-total-derivative-chain-rule" text="type-global" /> simplifies to
+    Since <m>\dfrac{dt}{dt} = 1</m>, <xref ref="eqn-total-derivative-chain-rule" text="type-global" /> simplifies to
   </p>
 
   <p>
@@ -50,7 +50,7 @@
   </p>
 
   <p>
-    Furthermore, <m>u = \frac{dx}{dt}</m>,<m>v = \frac{dy}{dt}</m>, and <m>w = \frac{dz}{dt}</m>
+    Furthermore, <m>u = \dfrac{dx}{dt}</m>,<m>v = \dfrac{dy}{dt}</m>, and <m>w = \dfrac{dz}{dt}</m>
     are the <term>zonal</term>, <term>meridional</term>, and <term>vertical</term>
     components of the air parcel's full (three-dimensional) velocity (i.e., wind) vector
     <m>\vec{u} = u \, \hat{i} + v \, \hat{j} + w \, \hat{k}</m>, respectively,
@@ -69,7 +69,7 @@
 
   <p>
     Finally, we can use the gradient of <m>f</m>,
-    <m>\nabla f = \frac{\partial f}{\partial x} \, \hat{i} + \frac{\partial f}{\partial y} \, \hat{j} + \frac{\partial f}{\partial z} \, \hat{k}</m>,
+    <m>\nabla f = \dfrac{\partial f}{\partial x} \, \hat{i} + \dfrac{\partial f}{\partial y} \, \hat{j} + \dfrac{\partial f}{\partial z} \, \hat{k}</m>,
     to rewrite <xref ref="eqn-total-derivative-chain-rule-final" text="type-global" /> as
   </p>
 

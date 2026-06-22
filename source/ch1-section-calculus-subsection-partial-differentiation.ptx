@@ -4,7 +4,7 @@
   <title>Partial differentiation</title>
 
   <p>
-    A function <m>f(x)</m> has an <term>ordinary derivative</term> denoted by <m>f'(x)</m> (called Lagrange's notation or prime notation) or <m>\frac{df}{dx}</m> (called Leibniz's notation).
+    A function <m>f(x)</m> has an <term>ordinary derivative</term> denoted by <m>f'(x)</m> (called Lagrange's notation or prime notation) or <m>\dfrac{df}{dx}</m> (called Leibniz's notation).
     "Ordinary" means <m>f</m> is a function of only one independent variable.
   </p>
 
@@ -21,12 +21,12 @@
   <p>
     To isolate the rate at which <m>f</m> is changing as <m>x</m> changes,
     we take the <term>partial derivative</term> of <m>f</m> with respect to <m>x</m>.
-    This partial derivative can be denoted by <m>f_x</m> or <m>\frac{\partial f}{\partial x}</m>;
+    This partial derivative can be denoted by <m>f_x</m> or <m>\dfrac{\partial f}{\partial x}</m>;
     the latter notation is preferred in this text.
   </p>
 
   <p>
-    When finding <m>\frac{\partial f}{\partial x}</m>, we hold <m>y</m>, <m>z</m>, and <m>t</m> constant.
+    When finding <m>\dfrac{\partial f}{\partial x}</m>, we hold <m>y</m>, <m>z</m>, and <m>t</m> constant.
     It follows that an alternative, explicit notation for the partial derivative of <m>f</m> with respect to <m>x</m> is
   </p>
 
