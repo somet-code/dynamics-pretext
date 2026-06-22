@@ -210,10 +210,10 @@
   </p>
 
   <p>
-    The difference between the Lagrangian and Eulerian frameworks is visualized in FIG below.
+    The difference between the Lagrangian and Eulerian frameworks is visualized in <xref ref="ch1-eulerian-lagrangian" text="type-global" /> below.
   </p>
 
-  <figure xml:id="">
+  <figure xml:id="ch1-eulerian-lagrangian">
     <caption />
     <sidebyside>
       <figure xml:id="ch1-eulerian">
