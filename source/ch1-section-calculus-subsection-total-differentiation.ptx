@@ -74,10 +74,193 @@
   </p>
 
   <p>
-    <md xml:id="eqn-total-derivative-vector-final" number="yes">
+    <md xml:id="eqn-total-derivative-vector" number="yes">
       \frac{df}{dt} = \frac{\partial f}{\partial t} + \vec{u} \cdot \nabla f
     </md>
-    
+  </p>
+
+  <p>
+    In most texts, <m>\dfrac{df}{dt}</m> is replaced with <m>\dfrac{Df}{Dt}</m>
+    to emphasize this derivative differs from the ordinary derivative of a function of a single variable.
+    Going forward, I will adopt this notation as shown in <xref ref="eqn-total-derivative-vector-final" text="type-global" />
+    below to be consistent with standard presentations.
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-vector-final" number="yes">
+      \frac{Df}{Dt} = \frac{\partial f}{\partial t} + \vec{u} \cdot \nabla f
+    </md>
+  </p>
+
+  <p>
+    Since <m>f</m> can be any scalar or vector state variable, we often write the total derivative as an operator:
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-operator" number="yes">
+      \frac{D(\;)}{Dt}
+      =
+      \frac{\partial (\;)}{\partial t}
+      +
+      \vec{u} \cdot \nabla (\;)
+    </md>
+  </p>
+
+  <p>
+    where any state variable<mdash />scalar or vector<mdash />could be inserted into the parentheses.
+  </p>
+
+  <p>
+    Frequently, we use the following rearrangement of <xref ref="eqn-total-derivative-vector-final" text="type-global" />:
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-vector-rearrange" number="yes">
+      \frac{\partial f}{\partial t} = \frac{Df}{Dt} - \vec{u} \cdot \nabla f
+    </md>
+  </p>
+
+  <p>
+    This arrangement more readily lends itself to physical interpretation.
+    We interpret the terms of <xref ref="eqn-total-derivative-vector-rearrange" text="type-global" /> as follows.
+  </p>
+
+  <p>
+    <ul>
+      <li>
+        <p>
+          <m>\dfrac{\partial f}{\partial t}</m> is the <term>Eulerian derivative</term>
+          (also called the <term>local derivative</term>)
+          that gives the rate at which <m>f</m> is changing with respect to time <m>t</m> at a fixed geographic point
+          (i.e., at a specific location on Earth's surface or within its atmosphere) as air parcels move through that location.
+          It is named after <url href="https://en.wikipedia.org/wiki/Leonhard_Euler">Leonhard Euler</url>,
+          who contributed significantly to fluid dynamics as well as mathematics, optics, astronomy, and other fields.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\dfrac{Df}{Dt}</m> is the <term>Lagrangian derivative</term>
+          (also called the <term>total derivative</term>,
+          <term>material derivative</term>,
+          <term>substantial derivative</term>,
+          <term>advective derivative</term>,
+          <term>convective derivative</term>,
+          and <term>individual derivative</term>)
+          that gives the rate at which <m>f</m> is changing with respect to time <m>t</m> within a moving air parcel,
+          following the air parcel as it moves through the atmosphere.
+          We can think of the Lagrangian derivative as describing sources and sinks of <m>f</m> within the air parcel.
+          Sometimes it is described as the time rate of change "following the motion" or "with the flow."
+          It is named after <url href="https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange">Joseph-Louis Lagrange</url>,
+          who succeeded and collaborated with Euler and also made significant contributions to these fields.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>-\vec{u} \cdot \nabla f</m> is <term>advection</term>:
+          the rate of importation at a fixed location by the wind of some atmospheric property carried within air parcels.
+          In particular,
+          advection gives the rate of change of the atmospheric property at a fixed location on Earth,
+          due to the transport of air parcels by the wind through the location.
+          <ul>
+            <li>
+              <p>
+                Be careful about the negative sign!
+                The negative sign is part of the advection formula,
+                and therefore <m>-\vec{u} \cdot \nabla f \lt 0</m> for <em>positive</em> advection and
+                <m>-\vec{u} \cdot \nabla f \lt 0</m> for <em>negative</em> advection.
+              </p>
+            </li>
+            <li>
+              <p>
+                The negative of advection, <m>\vec{u} \cdot \nabla f</m>
+                (note the absence of the negative sign!),
+                is called the <term>convective derivative</term>.
+                Yes, this is confusing since the Lagrangian derivative also can be called the convective derivative.
+                But in most sources, "convective derivative" refers to the negative of advection,
+                not to the Lagrangian derivative.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+    </ul>
+  </p>
+
+  <p>
+    For example, if we replace <m>f</m> in <xref ref="eqn-total-derivative-vector-rearrange" text="type-global" />
+    with temperature <m>T</m> (which means we implicitly are assuming <m>T = T(x,y,z,t)</m>), we get
+  </p>
+
+  <p>
+    <md>
+      \frac{\partial T}{\partial t} = \frac{DT}{Dt} - \vec{u} \cdot \nabla T
+    </md>
+  </p>
+
+  <p>
+    where <m>\dfrac{\partial T}{\partial t}</m> is the local time rate of change of temperature
+    (i.e., the <term>local temperature tendency</term>),
+    <m>\dfrac{DT}{Dt}</m> is the time rate of change of temperature within an air parcel caused by diabatic processes
+    (i.e., it is the <term>diabatic heating rate</term> caused by radiative heating or cooling,
+    latent heat release or absorption,
+    conduction,
+    and/or mixing),
+    and <m>-\vec{u} \cdot \nabla T</m> is <term>temperature advection</term>,
+    where <m>-\vec{u} \cdot \nabla T \gt 0</m> for <em>warm</em> advection and <m>-\vec{u} \cdot \nabla T \lt 0</m> for <em>cold</em> advection.
+  </p>
+
+  <p>
+    The difference between the Lagrangian and Eulerian frameworks is visualized in FIG below.
+  </p>
+
+  <figure xml:id="">
+    <caption />
+    <sidebyside>
+      <figure xml:id="ch1-eulerian">
+        <caption>
+          In a Eulerian framework,
+          state variables are measured within a control volume at a fixed location relative to Earth (dashed box)
+          as air parcels (solid boxes) flow through its open boundaries.
+        </caption>
+        <image source="images/ch1-eulerian.png" width="50%">
+          <shortdescription>
+            An air parcel shown at three successive times as it passes through a control volume.
+          </shortdescription>
+        </image>
+      </figure>
+      <figure xml:id="ch1-lagrangian">
+        <caption>
+          In a Lagrangian framework, state variables are measured within an air parcel as it moves through Earth's atmosphere.
+        </caption>
+        <image source="images/ch1-lagrangian.png" width="50%">
+          <shortdescription>
+            An air parcel shown at three successive times as it moves through Earth's atmosphere.
+          </shortdescription>
+        </image>
+      </figure>
+    </sidebyside>
+  </figure>
+
+  <p>
+    It becomes clear from <xref ref="eqn-total-derivative-vector-rearrange" text="type-global" />
+    that the time rate of change of <m>f</m>
+    measured at a fixed location on Earth is due to the advection by the wind of air parcels through the location as well as the changes in <m>f</m>
+    inside the air parcels as they move through the location.
+  </p>
+
+  <p>
+    If <m>\dfrac{Df}{Dt} = 0</m>, we say <m>f</m> is <term>conserved</term> following the motion.
+    In other words, <m>f</m> remains constant within air parcels as they move through the atmosphere.
+    But <xref ref="eqn-total-derivative-vector-rearrange" text="type-global" /> shows that,
+    even if <m>f</m> is conserved within air parcels,
+    local changes in <m>f</m> still can occur due to advection.
+  </p>
+
+  <p>
+    In summary, <xref ref="eqn-total-derivative-vector-final" text="type-global" />
+    and <xref ref="eqn-total-derivative-vector-rearrange" text="type-global" />
+    give us two distinct but related frameworks by which we can measure change in state variables:
+    the <term>Lagrangian framework</term> and the <term>Eulerian framework</term>.
   </p>
 
 </subsection>
