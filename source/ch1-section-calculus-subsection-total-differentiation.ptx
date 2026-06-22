@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch1-section-calculus-subsection-total-differentiation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Total differentiation</title>
+
+  <p>
+    Consider a state variable <m>f = f(x,y,z,t)</m> measured within an air parcel.
+    Again, while <m>f</m> is depicted here as a scalar quantity for simplicity,
+    be aware that it could represent a vector quantity.
+  </p>
+
+  <p>
+    If the air parcel's position changes with time as it moves through the atmosphere,
+    then <m>x = x(t)</m>, <m>y = y(t)</m>, and <m>z = z(t)</m>.
+    Consequently, <m>f</m> is a differentiable function of <m>t</m>,
+    and so we can quantify the time rate of change of <m>f</m> within the air parcel by calculating <m>\frac{df}{dt}</m>.
+    We do this using the <term>chain rule for multivariable functions</term>:
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-chain-rule" number="yes">
+        \frac{df}{dt} =
+        \frac{\partial f}{\partial x} \frac{dx}{dt} +
+        \frac{\partial f}{\partial y} \frac{dy}{dt} +
+        \frac{\partial f}{\partial z} \frac{dz}{dt} +
+        \frac{\partial f}{\partial t} \frac{dt}{dt}
+    </md>
+  </p>
+
+  <p>
+    Since <m>\frac{dt}{dt}=1</m>, <xref ref="eqn-total-derivative-chain-rule" text="type-global" /> simplifies to
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-chain-rule-simplified" number="yes">
+        \frac{df}{dt} =
+        \frac{\partial f}{\partial t} +
+        \frac{\partial f}{\partial x} \frac{dx}{dt} +
+        \frac{\partial f}{\partial y} \frac{dy}{dt} +
+        \frac{\partial f}{\partial z} \frac{dz}{dt}
+    </md>
+  </p>
+
+  <p>
+    where the terms have been rearranged to match standard presentations.
+  </p>
+
+  <p>
+    <xref ref="eqn-total-derivative-chain-rule-simplified" text="type-global" /> is the formula for the <term>total derivative</term> of <m>f</m>.
+  </p>
+
+</subsection>

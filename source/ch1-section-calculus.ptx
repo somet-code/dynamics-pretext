@@ -18,5 +18,6 @@
   <xi:include href="ch1-section-calculus-subsection-partial-differentiation.ptx" />
   <xi:include href="ch1-section-calculus-subsection-vector-calculus.ptx" />
   <xi:include href="ch1-section-calculus-subsection-taylor-series.ptx" />
+  <xi:include href="ch1-section-calculus-subsection-total-differentiation.ptx" />
 
 </section>
