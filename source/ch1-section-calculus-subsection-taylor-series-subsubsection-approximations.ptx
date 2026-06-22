@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsubsection xml:id="ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title><m>n^{\mathrm{th}}</m>-order approximations</title>
+
+  <p>
+    We often create an <term><m>n^{\mathrm{th}}</m>-order approximation</term> of <m>f(x)</m> using its <term><m>n^{\mathrm{th}}</m>-order Taylor polynomial</term>,
+    which is the polynomial of degree <m>n</m> formed from the <m>n^{\mathrm{th}}</m> partial sum of <xref ref="eqn-taylor-series"/>.
+    For example, the <term>first-order approximation</term> of <m>f(x)</m> (also called its <term>linear approximation</term>)
+    is given by its first-order Taylor polynomial
+  </p>
+
+  <p>
+    <md>
+        f(x) \approx f(a) + f'(a)(x-a)
+    </md>
+  </p>
+
+  <p>
+    and the <term>second-order approximation</term> of <m>f(x)</m> is given by its second-order Taylor polynomial
+  </p>
+
+  <p>
+    <md>
+        f(x) \approx f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2
+    </md>
+  </p>
+
+  <p>
+    In many atmospheric dynamics applications,
+    terms of second order and higher are grouped together as "<term>higher-order terms</term>" and are neglected in Taylor series expansions of state variables.
+    Thus, state variables often are represented by their first-order approximations.
+  </p>
+
+</subsubsection>
