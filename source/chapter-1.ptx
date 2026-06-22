@@ -41,5 +41,6 @@
   <!-- include sections -->
   <xi:include href="ch1-section-continuum-approximation.ptx" />
   <xi:include href="ch1-section-calculus.ptx" />
+  <xi:include href="ch1-section-finite-differencing.ptx" />
 
 </chapter>

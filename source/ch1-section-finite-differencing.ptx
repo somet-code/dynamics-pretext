@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch1-section-finite-differencing" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Finite differencing</title>
+
+    <p>
+        Rarely do we know the form of the differentiable function that describes a given state variable.
+        But thanks to meteorological instruments and numerical and artificial intelligence (AI) weather models,
+        we do have discrete measurements of various state variable in space and time,
+        and so we can apply <term>finite differencing</term> to approximate derivatives using discrete differences between measurements.
+    </p>
+
+    <p>
+        Consider the one-dimensional case first.
+        If we have measurements of a state variable <m>f(x)</m> at a central point <m>x_0</m>
+        and two other points <m>x_1 = x_0 - \Delta x</m> and <m>x_2 = x_0 + \Delta x</m> each spaced <m>\Delta x</m> from the central point,
+        as shown in <xref ref="ch1-centered-difference" text="type-global" /> below, we can make the approximations
+    </p>
+
+    <p>
+        <md xml:id="eqn-difference-quotient" number="yes">
+            \left. \frac{df}{dx} \right|_{x=x_0}
+            \approx
+            \frac{f(x_2) - f(x_1)}{2 \Delta x}
+        </md>
+    </p>
+
+    <p>
+        and
+    </p>
+
+    <p>
+        <md xml:id="eqn-difference-quotient-second" number="yes">
+            \left. \frac{d^2f}{dx^2} \right|_{x=x_0}
+            \approx
+            \frac{f(x_2) - 2f(x_0) + f(x_1)}{(\Delta x)^2}
+        </md>
+    </p>
+
+    <p>
+        Note that <xref ref="eqn-difference-quotient" text="type-global" /> is equivalent to the <term>difference quotient</term> of precalculus.
+    </p>
+
+    <figure xml:id="ch1-centered-difference">
+        <caption>
+            Adapted from Martin Figure 1.6.
+            Example of centered differencing.
+            Central point <m>x_0</m> and equally-spaced surrounding points <m>x_1 = x_0 - \Delta x</m> and <m>x_2 = x_0 + \Delta x</m>,
+            where <m>\Delta x \gt 0 </m> is distance from <m>x_0</m>.
+            <m>x</m> increases to the right.
+        </caption>
+        <image source="images/ch1-centered-difference.png" width="60%">
+            <shortdescription>
+                A point in the middle of two equally-spaced points.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        The reasoning of centered differencing can be applied to partial derivatives by only allowing one independent variable to change.
+        For example, if we have a state variable <m>f = f(x,y,z,t)</m>,
+        we can use centered differencing to approximate its first and second partial derivatives with respect to <m>x</m> as
+    </p>
+
+    <p>
+        <md xml:id="eqn-partial-difference-quotient" number="yes">
+            \left. \frac{\partial f}{\partial x} \right|_{(x,y,z,t)=(x_0,y_0,z_0,t_0)}
+            \approx
+            \frac{f(x_2,y_0,z_0,t_0) - f(x_1,y_0,z_0,t_0)}{2 \Delta x}
+        </md>
+    </p>
+
+    <p>
+        and
+    </p>
+
+    <p>
+        <md xml:id="eqn-partial-difference-quotient-second" number="yes">
+            \left. \frac{\partial^2 f}{\partial x^2} \right|_{(x,y,z,t)=(x_0,y_0,z_0,t_0)}
+            \approx
+            \frac{f(x_2,y_0,z_0,t_0) - 2 f(x_0,y_0,z_0,t_0) + f(x_1,y_0,z_0,t_0)}{(\Delta x)^2}
+        </md>
+    </p>
+
+    <p>
+        respectively.
+    </p>
+
+    <p>
+        Furthermore, it is not required that surrounding points be spaced at equal distances around a central point. For example,
+    </p>
+
+    <p>
+        <md xml:id="eqn-difference-quotient-unbalanced" number="yes">
+            \left. \frac{df}{dx} \right|_{x=x_0}
+            \approx
+            \frac{f(x_2) - f(x_1)}{x_2 - x_1}
+        </md>
+    </p>
+
+    <p>
+        and
+    </p>
+
+    <p>
+        <md xml:id="eqn-partial-difference-quotient-unbalanced" number="yes">
+            \left. \frac{\partial f}{\partial x} \right|_{(x,y,z,t)=(x_0,y_0,z_0,t_0)}
+            \approx
+            \frac{f(x_2,y_0,z_0,t_0) - f(x_1,y_0,z_0,t_0)}{x_2 - x_1}  
+        </md>
+    </p>
+
+    <p>
+        are valid algorithms for approximating ordinary and partial derivatives, respectively,
+        including in cases when <m>x_1</m> and <m>x_2</m> are not spaced at equal distances from <m>x_0</m>.
+        This more general case is shown in <xref ref="ch1-finite-difference" text="type-global" /> below.
+        In fact, either <m>x_1</m> or <m>x_2</m> (but not both) could coincide with <m>x_0</m> and these algorithms still would be valid!
+    </p>
+
+    <p>
+        Once again, <xref ref="eqn-difference-quotient-unbalanced" text="type-global" /> is equivalent to the difference quotient of precalculus.
+    </p>
+
+    <figure xml:id="ch1-finite-difference">
+        <caption>
+            Reproduction of <xref ref="ch1-centered-difference" text="type-global" />,
+            but the surrounding points <m>x_1</m> and <m>x_2</m> are not equally spaced from the point <m>x_0</m>.
+        </caption>
+        <image source="images/ch1-finite-difference.png" width="60%">
+            <shortdescription>
+                A point in the middle of two unequally-spaced points.
+            </shortdescription>
+        </image>
+    </figure>
+
+</section>
