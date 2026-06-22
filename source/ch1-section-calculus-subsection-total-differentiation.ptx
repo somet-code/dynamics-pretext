@@ -49,4 +49,35 @@
     <xref ref="eqn-total-derivative-chain-rule-simplified" text="type-global" /> is the formula for the <term>total derivative</term> of <m>f</m>.
   </p>
 
+  <p>
+    Furthermore, <m>u = \frac{dx}{dt}</m>,<m>v = \frac{dy}{dt}</m>, and <m>w = \frac{dz}{dt}</m>
+    are the <term>zonal</term>, <term>meridional</term>, and <term>vertical</term>
+    components of the air parcel's full (three-dimensional) velocity (i.e., wind) vector
+    <m>\vec{u} = u \, \hat{i} + v \, \hat{j} + w \, \hat{k}</m>, respectively,
+    and so <xref ref="eqn-total-derivative-chain-rule-simplified" text="type-global" /> becomes
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-chain-rule-final" number="yes">
+      \frac{df}{dt} =
+      \frac{\partial f}{\partial t} +
+      u \, \frac{\partial f}{\partial x} +
+      v \, \frac{\partial f}{\partial y} +
+      w \, \frac{\partial f}{\partial z}
+    </md>
+  </p>
+
+  <p>
+    Finally, we can use the gradient of <m>f</m>,
+    <m>\nabla f = \frac{\partial f}{\partial x} \, \hat{i} + \frac{\partial f}{\partial y} \, \hat{j} + \frac{\partial f}{\partial z} \, \hat{k}</m>,
+    to rewrite <xref ref="eqn-total-derivative-chain-rule-final" text="type-global" /> as
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-vector-final" number="yes">
+      \frac{df}{dt} = \frac{\partial f}{\partial t} + \vec{u} \cdot \nabla f
+    </md>
+    
+  </p>
+
 </subsection>
