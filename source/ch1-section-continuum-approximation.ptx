@@ -68,7 +68,10 @@
   </figure>
 
   <p>
-    Some volume elements move through Earth's atmosphere with velocity <m>\vec{u} = u \, \hat{i} + v \, \hat{j} + w \, \hat{k}</m>
+    Some volume elements move through Earth's atmosphere with velocity
+    <md>
+      \vec{u} = u \, \hat{i} + v \, \hat{j} + w \, \hat{k}
+    </md>
     (and we assume all discrete particles within the element move at this velocity);
     other volume elements remain fixed to specific locations on Earth's surface or within its atmosphere while many mobile volume elements flow through their open boundaries with velocity <m>\vec{u}</m>.
     The former volume elements, whose paths through the atmosphere can be tracked over time, often are called <term>air parcels</term>, <term>air particles</term>, <term>material elements</term>, or <term>material volumes</term>,

@@ -15,23 +15,31 @@
         <li>
             <p>
                 scalar multiplication with a cross product
-                <m>\left( k \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( k \, \vec{b} \right) = k \left( \vec{a} \times \vec{b} \right)</m>,
+                <md>
+                    \left( k \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( k \, \vec{b} \right) = k \left( \vec{a} \times \vec{b} \right)
+                </md>,
                 where <m>k</m> is a scalar;
             </p>
         </li>
         <li>
             <p>
                 the distributive property of cross products over addition
-                <m>\vec{a} \times \left( \vec{b} + \vec{c} \right) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}</m>;
+                <md>
+                    \vec{a} \times \left( \vec{b} + \vec{c} \right) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}
+                </md>;
                 and
             </p>
         </li>
         <li>
             <p>
                 the <term>vector triple product</term>
-                <m>\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{a} \cdot \vec{b}) \, \vec{c}</m>
+                <md>
+                    \vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{a} \cdot \vec{b}) \, \vec{c}
+                </md>
                 and
-                <m>(\vec{a} \times \vec{b}) \times \vec{c} = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{b} \cdot \vec{c}) \, \vec{a}</m>.
+                <md>
+                    (\vec{a} \times \vec{b}) \times \vec{c} = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{b} \cdot \vec{c}) \, \vec{a}
+                </md>.
             </p>
         </li>
     </ul>

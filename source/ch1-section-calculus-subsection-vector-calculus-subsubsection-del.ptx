@@ -4,7 +4,10 @@
   <title>Del</title>
 
   <p>
-    The operator <m>\nabla = \hat{i} \, \dfrac{\partial}{\partial x} + \hat{j} \, \dfrac{\partial}{\partial y} + \hat{k} \, \dfrac{\partial}{\partial z}</m>,
+    The operator
+    <md>
+        \nabla = \hat{i} \, \frac{\partial}{\partial x} + \hat{j} \, \frac{\partial}{\partial y} + \hat{k} \, \frac{\partial}{\partial z}
+    </md>,
     which is called <term>del</term>, <term>nabla</term>, or the <term>gradient operator</term>,
     is used to find the following important quantities.
   </p>
@@ -13,22 +16,38 @@
     <ul>
         <li>
             <p>
-                The <term>gradient</term> of <m>f</m>, <m>\nabla f</m>, gives the magnitude and direction of the maximum change of the scalar field <m>f</m>.
+                The <term>gradient</term> of <m>f</m>,
+                <md>
+                    \nabla f
+                </md>,
+                gives the magnitude and direction of the maximum change of the scalar field <m>f</m>.
             </p>
         </li>
         <li>
             <p>
-                The <term>divergence</term> of <m>\vec{F}</m>, <m>\nabla \cdot \vec{F}</m>, gives the outward flux of the vector field <m>\vec{F}</m>.
+                The <term>divergence</term> of <m>\vec{F}</m>,
+                <md>
+                    \nabla \cdot \vec{F}
+                </md>,
+                gives the outward flux of the vector field <m>\vec{F}</m>.
             </p>
         </li>
         <li>
             <p>
-                The <term>curl</term> of <m>\vec{F}</m>, <m>\nabla \times \vec{F}</m>, gives the rotation of the vector field <m>\vec{F}</m>.
+                The <term>curl</term> of <m>\vec{F}</m>,
+                <md>
+                    \nabla \times \vec{F}
+                </md>,
+                gives the rotation of the vector field <m>\vec{F}</m>.
             </p>
         </li>
         <li>
             <p>
-                The <term>Laplacian</term> of <m>f</m>, <m>\nabla^2 f = \nabla \cdot \nabla f</m>, gives the divergence of the gradient of the scalar field <m>f</m>.
+                The <term>Laplacian</term> of <m>f</m>,
+                <md>
+                    \nabla^2 f = \nabla \cdot \nabla f
+                </md>,
+                gives the divergence of the gradient of the scalar field <m>f</m>.
                 <ul>
                     <li>
                         <p>
