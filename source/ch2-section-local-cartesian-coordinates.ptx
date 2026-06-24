@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch2-section-local-cartesian-coordinates" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Local Cartesian coordinate system</title>
+
+    <p>
+        We combine the <xref ref="ch2-section-cartesian-coordinates" text="custom">Cartesian coordinate system</xref>
+        with the <xref ref="ch2-section-spherical-coordinates" text="custom">geographic coordinate system</xref>
+        described previously to create the <term>local Cartesian coordinate system</term>.
+        The word "local" has the same meaning here as it does for the local derivative of <xref ref="chapter-1" text="custom">Chapter 1</xref>:
+        It refers to a fixed location on Earth.
+    </p>
+
+    <p>
+        We place the origin of the local Cartesian coordinate system at any point of interest fixed to the planet's surface
+        (<xref ref="ch2-local-cartesian-coordinates-a" text="type-global" />)
+        or within its atmosphere
+        (<xref ref="ch2-local-cartesian-coordinates-b" text="type-global" />).
+        This point is identified by geographic coordinates <m>(\lambda, \phi, a+z)</m>.
+        Note this point rotates along with Earth about Earth's polar axis.
+    </p>
+
+    <figure xml:id="ch2-local-cartesian-coordinates">
+        <caption>
+            Equatorial projections showing the unit direction vectors <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m>
+            of the local Cartesian coordinate system placed at a point on Earth's surface in <xref ref="ch2-local-cartesian-coordinates-a" text="local" />
+            and a point within Earth's atmosphere in <xref ref="ch2-local-cartesian-coordinates-b" text="local" />,
+            where "point" refers to a volume element.
+            The points have the same latitude <m>\phi</m> as shown and the same longitude <m>\lambda</m> that,
+            while not shown, corresponds to the right-half of the curve of Earth's surface.
+            The Equator is labeled EQ and the North Pole is labeled NP.
+            Earth's mean radius is given by <m>a</m> and the point's geometric height in <xref ref="ch2-local-cartesian-coordinates-b" text="local" />
+            is given by <m>z</m>.
+            The point's radial distance from Earth's polar axis is given by <m>a\cos{\phi}</m> in <xref ref="ch2-local-cartesian-coordinates-a" text="local" />
+            and <m>(a+z)\cos{\phi}</m> in <xref ref="ch2-local-cartesian-coordinates-b" text="local" />.
+        </caption>
+        <sidebyside>
+            <figure xml:id="ch2-local-cartesian-coordinates-a">
+                <caption />
+                <image source="images/ch2-local-cartesian-coordinates-a.png" width="50%">
+                    <shortdescription>
+                        A point on Earth's surface with the local Cartesian coordinate system placed at that point.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch2-local-cartesian-coordinates-b">
+                <caption />
+                <image source="images/ch2-local-cartesian-coordinates-b.png" width="50%">
+                    <shortdescription>
+                        A point within Earth's atmosphere with the local Cartesian coordinate system placed at that point.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
+
+    <p>
+        The local Cartesian coordinate system has the following characteristics.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    <m>x</m> increases (decreases) to the local east (west), parallel to curves of latitude.
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\lambda</m> varies directly with <m>x</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                According to the arc length formula,
+                                a small change in <m>x</m> is given by
+                                <md>
+                                    \delta x = a \cos{\phi} \, \delta \lambda
+                                </md>
+                                along Earth's surface
+                                (<xref ref="ch2-local-cartesian-coordinates-differential-x-a" text="type-global" />)
+                                and by <md>
+                                    \delta x = (a + z) \cos{\phi} \, \delta \lambda
+                                </md>
+                                within Earth's atmosphere
+                                (<xref ref="ch2-local-cartesian-coordinates-differential-x-b" text="type-global" />).
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>y</m> increases (decreases) to the local north (south), parallel to curves of longitude.
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\phi</m> varies directly with <m>y</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                According to the arc length formula,
+                                a small change in <m>y</m> is given by
+                                <md>
+                                    \delta y = a \, \delta \phi
+                                </md>
+                                along Earth's surface
+                                (<xref ref="ch2-local-cartesian-coordinates-differential-y-a" text="type-global" />)
+                                and by
+                                <md>
+                                    \delta y = (a+z) \, \delta \phi
+                                </md>
+                                within Earth's atmosphere
+                                (<xref ref="ch2-local-cartesian-coordinates-differential-y-b" text="type-global" />).
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>z</m> increases (decreases) locally upward (downward), perpendicular to Earth's mean sea level.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\hat{i}</m> points to the local east, parallel to the <m>+x</m>-axis.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\hat{j}</m> points to the local north, parallel to the <m>+y</m>-axis.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\hat{k}</m> points locally upward, parallel to the <m>+z</m>-axis.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>u</m> is the <term>zonal</term> component of velocity and is positive (negative) for westerly (easterly) flow.
+                    (Remember wind is named for the direction it blows <em>from</em>, not toward!)
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>v</m> is the <term>meridional</term> component of velocity and is positive (negative) for southerly (northerly) flow.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>w</m> is the <term>vertical</term> component of velocity and is positive (negative) for upward (downward) motion.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <figure xml:id="ch2-local-cartesian-coordinates-differential-x">
+        <caption>
+            North polar projection showing the geometric relationship between arc <m>\delta x</m>
+            and longitudinal displacement <m>\delta \lambda</m>
+            at latitude <m>\phi</m> measured along Earth's surface in <xref ref="ch2-local-cartesian-coordinates-differential-x-a" text="local" />
+            and within Earth's atmosphere in <xref ref="ch2-local-cartesian-coordinates-differential-x-b" text="local" />.
+            The North Pole is labeled NP.
+            The radial distance from Earth's polar axis is given by <m>a\cos{\phi}</m> in <xref ref="ch2-local-cartesian-coordinates-differential-x-a" text="local" />
+            and <m>(a+z)\cos{\phi}</m> in <xref ref="ch2-local-cartesian-coordinates-differential-x-b" text="local" />.
+        </caption>
+        <sidebyside>
+            <figure xml:id="ch2-local-cartesian-coordinates-differential-x-a">
+                <caption />
+                <image source="images/ch2-local-cartesian-coordinates-differential-x-a.png" width="50%">
+                    <shortdescription>
+                        Arc length <m>\delta x</m> along Earth's surface at latitude <m>\phi</m> corresponding to longitudinal displacement <m>\delta \lambda</m>.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch2-local-cartesian-coordinates-differential-x-b">
+                <caption />
+                <image source="images/ch2-local-cartesian-coordinates-differential-x-b.png" width="50%">
+                    <shortdescription>
+                        Arc length <m>\delta x</m> within Earth's atmosphere at latitude <m>\phi</m> corresponding to longitudinal displacement <m>\delta \lambda</m>.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
+
+    <figure xml:id="ch2-local-cartesian-coordinates-differential-y">
+        <caption>
+            Equatorial projection showing the geometric relationship between arc <m>\delta y</m>
+            and latitudinal displacement <m>\delta \phi</m>
+            at longitude <m>\lambda</m> measured along Earth's surface in <xref ref="ch2-local-cartesian-coordinates-differential-y-a" text="local" />
+            and within Earth's atmosphere in <xref ref="ch2-local-cartesian-coordinates-differential-y-b" text="local" />.
+            The longitude <m>\lambda</m>, while not shown, corresponds to the right-half of the curve of Earth's surface.
+            The Equator is labeled EQ and the North Pole is labeled NP.
+        </caption>
+        <sidebyside>
+            <figure xml:id="ch2-local-cartesian-coordinates-differential-y-a">
+                <caption />
+                <image source="images/ch2-local-cartesian-coordinates-differential-y-a.png" width="50%">
+                    <shortdescription>
+                        Arc length <m>\delta y</m> along Earth's surface at longitude <m>\lambda</m> corresponding to latitudinal displacement <m>\delta \phi</m>.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch2-local-cartesian-coordinates-differential-y-b">
+                <caption />
+                <image source="images/ch2-local-cartesian-coordinates-differential-y-b.png" width="50%">
+                    <shortdescription>
+                        Arc length <m>\delta y</m> within Earth's atmosphere at longitude <m>\lambda</m> corresponding to latitudinal displacement <m>\delta \phi</m>.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
+
+    <p>
+        A very simplified depiction of the correspondence between the coordinates and velocity components of the local Cartesian Coordinate system is shown in
+        FIG below.
+    </p>
+
+    <figure xml:id="ch2-local-cartesian-coordinates-stull">
+        <caption>
+            Simplified depiction of the direct correspondence between the zonal (<m>x</m>),
+            meridional (<m>y</m>),
+            and vertical (<m>z</m>)
+            directions (left) and the zonal (<m>u</m>),
+            meridional (<m>v</m>),
+            and vertical (<m>w</m>) velocity components (right),
+            respectively,
+            of the local Cartesian coordinate system.
+            Reproduced from Fig. 1.1 of <url href="https://www.eoas.ubc.ca/books/Practical_Meteorology/">Stull (2017)</url>
+            under <url href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</url>.
+        </caption>
+        <image source="images/ch2-local-cartesian-coordinates-stull.png" width="100%">
+            <shortdescription>
+                Directions (left) and velocity components (right) of the local Cartesian coordinate system.
+            </shortdescription>
+        </image>
+    </figure>
+
+</section>

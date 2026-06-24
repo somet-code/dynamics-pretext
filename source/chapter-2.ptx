@@ -25,5 +25,6 @@
 
   <xi:include href="ch2-section-cartesian-coordinates.ptx" />
   <xi:include href="ch2-section-spherical-coordinates.ptx" />
+  <xi:include href="ch2-section-local-cartesian-coordinates.ptx" />
 
 </chapter>
