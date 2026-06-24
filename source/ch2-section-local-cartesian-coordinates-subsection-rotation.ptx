@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch2-section-local-cartesian-coordinates-subsection-rotation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Note on rotation, sphericity, and the local Cartesian coordinate system</title>
+
+  <p>
+    A difficulty of using the local Cartesian coordinate system is that its <m>x</m>-, <m>y</m>-, and <m>z</m>-axes
+    and their corresponding <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m> unit direction vectors,
+    respectively,
+    placed at any location fixed relative to Earth change orientation in space as Earth rotates.
+    We will tackle this complication in Chapter 3.
+  </p>
+
+  <p>
+    Another difficulty of using the local Cartesian coordinate system is that its <m>x</m>-, <m>y</m>-, and <m>z</m>-axes
+    and their corresponding <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m> unit direction vectors,
+    respectively,
+    change orientation in space depending on the longitude <m>\lambda</m> and latitude <m>\phi</m> of the location at which the origin of the coordinate system is placed,
+    as shown in <xref ref="ch2-local-cartesian-coordinates-sphericity" text="type-global" /> below. We will tackle this complication in Chapter 5.
+  </p>
+
+  <figure xml:id="ch2-local-cartesian-coordinates-sphericity">
+    <caption>
+        Examples of the local Cartesian coordinate system unit direction vectors
+        <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m>
+        when the origin of the coordinate system is placed at different locations on Earth's surface along a line of latitude (horizontal dashed curve)
+        and a line of longitude (vertical dashed curve)
+        as well within Earth's atmosphere.
+        Note that the orientations of the unit direction vectors in space change depending on the placement of the origin.
+    </caption>
+    <image source="images/ch2-local-cartesian-coordinates-sphericity.png" width="60%">
+        <shortdescription>
+            Unit direction vectors at points with different latitude, longitude, and height on Earth's surface and in its atmosphere.
+        </shortdescription>
+    </image>
+  </figure>
+
+</subsection>
