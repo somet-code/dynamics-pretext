@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch2-section-spherical-coordinates" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Spherical coordinate systems</title>
+
+    <p>
+        You learned in your multivariable calculus course about a <term>standard spherical coordinate system</term>
+        that builds upon the Cartesian coordinate system.
+        In this spherical coordinate system,
+        the location of a point in three-dimensional space is given by the coordinates <m>(\rho, \theta, \phi)</m>.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    <m>\rho</m> is the <term>radial distance</term>:
+                    the distance measured outward to the point from the origin.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\theta</m> is the <term>polar angle</term> (also called the <term>azimuthal angle</term>):
+                    the angle measured counter-clockwise from the <m>+x</m>-axis to the projection of the point into the <m>xy</m>-plane.
+                    This same polar angle is used in standard polar and cylindrical coordinate systems.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\phi</m> is the <term>zenith angle</term>:
+                    the angle measured downward from the <m>+z</m>-axis to the line connecting the origin to the point.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Earth is nearly spherical and can be approximated as a sphere in most meteorological applications.
+        We use <term>Earth's mean radius</term> $a$ as the radius of this hypothetical spherical Earth.
+        Holton &amp; Hakim (2013) give the value of <m>a</m> as 6370 km,
+        while other sources give slightly different values.
+        We will use Holton &amp; Hakim's value of <m>a</m> in this course.
+    </p>
+
+    <p>
+        Rather than use the standard spherical coordinate system to describe the locations of volume elements on Earth's surface and within its atmosphere,
+        we instead use a <m>geographic coordinate system</m> in which the location of an element is given by the coordinates <m>(\lambda, \phi, z)</m>.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    <m>\lambda</m> is <term>longitude</term>: the angle measured horizontally counter-clockwise from the Prime Meridian.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\phi</m> is <term>latitude</term>: the angle measured horizontally toward the North Pole from the Equator.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>z</m> is <term>height</term>: the radial distance measured from Earth's center.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Curves of longitude (<term>meridians</term>) and curves of latitude (<term>parallels</term>)
+        are shown in <xref ref="ch2-lat-long" text="type-global" /> below.
+    </p>
+
+    <figure xml:id="ch2-lat-long">
+        <caption>
+            Parallels of latitude (left) and meridians of longitude (right) labeled at 30° increments relative to the Equator and Prime Meridian,
+            respectively.
+            Reproduced from <url href="https://commons.wikimedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg">Djexplo via Wikimedia Commons</url>
+            under <url href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0 Universal Public Domain Dedication</url>.
+        </caption>
+        <image source="images/ch2-lat-long.png" width="100%">
+            <shortdescription>
+                Curves of latitude and longtiude on a spherical Earth at 30° increments relative to the Equator and Prime Meridian, respectively.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Meteorologists typically express <m>h</m> as the sum of Earth's mean radius <m>a</m> and <term>geometric height</term> <m>z</m>,
+        which is the signed radial distance above Earth's mean sea level, as <m>h = a + z</m>.
+        <m>z</m> is referred to as <term>elevation</term> when it describes the height of a point on Earth's surface,
+        <term>altitude</term> when it describes the height of a point within Earth's atmosphere,
+        and <term>depth</term> when it describes the height of a point within Earth's oceans or otherwise below its surface.
+        In this last case, <m>z</m> would be negative.
+    </p>
+
+    <p>
+        An example of a volume element within Earth's atmosphere with coordinates <m>(\lambda, \phi, z+a)</m>
+        according to the geographic coordinate system described above is shown in <xref ref="ch2-geographic-spherical-coordinates" text="type-global" /> below.
+    </p>
+
+    <figure xml:id="ch2-geographic-spherical-coordinates">
+        <caption>
+            A volume element within Earth's atmosphere depicted as a rectangular prism in geographic 3-space with central coordinates <m>(\lambda, \phi, a+z)</m>.
+            Earth is depicted as a sphere.
+            Thick black labeled curves show the Equator and Prime Meridian.
+            Dashed curves show the meridian and parallel for the volume element.
+            Dashed lines show Earth's mean radius <m>a</m> and angles corresponding to longitude <m>\lambda</m> and latitude <m>\phi</m> for the volume element.
+            The dotted line shows the volume element's geometric height <m>z</m>.
+            Note the volume element would be located on Earth's surface if <m>z = 0</m>.
+        </caption>
+        <image source="images/ch2-geographic-spherical-coordinates.png" width="60%">
+            <shortdescription>
+                The position of a volume element in Earth's atmosphere in geographic 3-space,
+                with latitude and longitude and geometric height.
+            </shortdescription>
+        </image>
+    </figure>
+
+</section>
