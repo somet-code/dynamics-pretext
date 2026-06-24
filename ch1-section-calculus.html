@@ -120,7 +120,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+</ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
@@ -258,28 +265,73 @@ eBookConfig.enable_chatcodes =  false;
 <h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Del</span>
 </h4>
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2">The operator <span class="process-math">\(\nabla = \hat{i} \, \dfrac{\partial}{\partial x} + \hat{j} \, \dfrac{\partial}{\partial y} + \hat{k} \, \dfrac{\partial}{\partial z}\text{,}\)</span> which is called <dfn class="terminology">del</dfn>, <dfn class="terminology">nabla</dfn>, or the <dfn class="terminology">gradient operator</dfn>, is used to find the following important quantities.<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2">
+<div class="para">The operator</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2-1">
+\begin{equation*}
+\nabla = \hat{i} \, \frac{\partial}{\partial x} + \hat{j} \, \frac{\partial}{\partial y} + \hat{k} \, \frac{\partial}{\partial z}\text{,}
+\end{equation*}
+</div>
+<div class="para">which is called <dfn class="terminology">del</dfn>, <dfn class="terminology">nabla</dfn>, or the <dfn class="terminology">gradient operator</dfn>, is used to find the following important quantities.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3">
 <ul class="disc" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1">
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-1">
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-1-1">The <dfn class="terminology">gradient</dfn> of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(\nabla f\text{,}\)</span> gives the magnitude and direction of the maximum change of the scalar field <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-1-1">
+<div class="para">The <dfn class="terminology">gradient</dfn> of <span class="process-math">\(f\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-1-1-3">
+\begin{equation*}
+\nabla f\text{,}
+\end{equation*}
+</div>
+<div class="para">gives the magnitude and direction of the maximum change of the scalar field <span class="process-math">\(f\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-2">
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-2-1">The <dfn class="terminology">divergence</dfn> of <span class="process-math">\(\vec{F}\text{,}\)</span> <span class="process-math">\(\nabla \cdot \vec{F}\text{,}\)</span> gives the outward flux of the vector field <span class="process-math">\(\vec{F}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-2-1">
+<div class="para">The <dfn class="terminology">divergence</dfn> of <span class="process-math">\(\vec{F}\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-2-1-3">
+\begin{equation*}
+\nabla \cdot \vec{F}\text{,}
+\end{equation*}
+</div>
+<div class="para">gives the outward flux of the vector field <span class="process-math">\(\vec{F}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-3">
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-3-1">The <dfn class="terminology">curl</dfn> of <span class="process-math">\(\vec{F}\text{,}\)</span> <span class="process-math">\(\nabla \times \vec{F}\text{,}\)</span> gives the rotation of the vector field <span class="process-math">\(\vec{F}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-3-1">
+<div class="para">The <dfn class="terminology">curl</dfn> of <span class="process-math">\(\vec{F}\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-3-1-3">
+\begin{equation*}
+\nabla \times \vec{F}\text{,}
+\end{equation*}
+</div>
+<div class="para">gives the rotation of the vector field <span class="process-math">\(\vec{F}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4">
 <div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1">
-<div class="para">The <dfn class="terminology">Laplacian</dfn> of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(\nabla^2 f = \nabla \cdot \nabla f\text{,}\)</span> gives the divergence of the gradient of the scalar field <span class="process-math">\(f\text{.}\)</span>
+<div class="para">The <dfn class="terminology">Laplacian</dfn> of <span class="process-math">\(f\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-3">
+\begin{equation*}
+\nabla^2 f = \nabla \cdot \nabla f\text{,}
+\end{equation*}
+</div>
+<div class="para">gives the divergence of the gradient of the scalar field <span class="process-math">\(f\text{.}\)</span>
 </div>
 <ul class="circle" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5">
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-del-3-1-4-1-5-1">
@@ -309,17 +361,47 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3">
 <ul class="disc" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1">
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1">
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1">scalar multiplication with a cross product <span class="process-math">\(\left( k \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( k \, \vec{b} \right) = k \left( \vec{a} \times \vec{b} \right)\text{,}\)</span> where <span class="process-math">\(k\)</span> is a scalar;<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1">
+<div class="para">scalar multiplication with a cross product</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1-1">
+\begin{equation*}
+\left( k \, \vec{a} \right) \times \vec{b} = \vec{a} \times \left( k \, \vec{b} \right) = k \left( \vec{a} \times \vec{b} \right)\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(k\)</span> is a scalar;</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-2">
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-2-1">the distributive property of cross products over addition <span class="process-math">\(\vec{a} \times \left( \vec{b} + \vec{c} \right) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}\text{;}\)</span> and<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-2-1">
+<div class="para">the distributive property of cross products over addition</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-2-1-1">
+\begin{equation*}
+\vec{a} \times \left( \vec{b} + \vec{c} \right) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}\text{;}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3">
-<div class="para" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3-1">the <dfn class="terminology">vector triple product</dfn> <span class="process-math">\(\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{a} \cdot \vec{b}) \, \vec{c}\)</span> and <span class="process-math">\((\vec{a} \times \vec{b}) \times \vec{c} = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{b} \cdot \vec{c}) \, \vec{a}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3-1">
+<div class="para">the <dfn class="terminology">vector triple product</dfn>
+</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3-1-2">
+\begin{equation*}
+\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{a} \cdot \vec{b}) \, \vec{c}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" id="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3-1-3">
+\begin{equation*}
+(\vec{a} \times \vec{b}) \times \vec{c} = (\vec{a} \cdot \vec{c}) \, \vec{b} - (\vec{b} \cdot \vec{c}) \, \vec{a}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item"><a href="#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>

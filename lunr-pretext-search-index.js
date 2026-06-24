@@ -343,6 +343,159 @@ var ptx_lunr_docs = [
   "body": " A volume element depicted as a rectangular prism in Cartesian 3-space with central coordinates and position vector . Dashed lines shown signed distances of the volume element from the origin drawn parallel to the -, -, and -axes.   The position vector of a volume element in Cartesian 3-space, with signed distances from the origin depicting the magnitudes and directions of its components.   "
 },
 {
+  "id": "ch2-section-spherical-coordinates",
+  "level": "1",
+  "url": "ch2-section-spherical-coordinates.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Spherical coordinate systems",
+  "body": " Spherical coordinate systems  You learned in your multivariable calculus course about a standard spherical coordinate system that builds upon the Cartesian coordinate system. In this spherical coordinate system, the location of a point in three-dimensional space is given by the coordinates .      is the radial distance : the distance measured outward to the point from the origin.     is the polar angle (also called the azimuthal angle ): the angle measured counter-clockwise from the -axis to the projection of the point into the -plane. This same polar angle is used in standard polar and cylindrical coordinate systems.     is the zenith angle : the angle measured downward from the -axis to the line connecting the origin to the point.     Earth is nearly spherical and can be approximated as a sphere in most meteorological applications. We use Earth's mean radius $a$ as the radius of this hypothetical spherical Earth. Holton & Hakim (2013) give the value of as 6370 km, while other sources give slightly different values. We will use Holton & Hakim's value of in this course.  Rather than use the standard spherical coordinate system to describe the locations of volume elements on Earth's surface and within its atmosphere, we instead use a in which the location of an element is given by the coordinates .      is longitude : the angle measured horizontally counter-clockwise from the Prime Meridian.     is latitude : the angle measured horizontally toward the North Pole from the Equator.     is height : the radial distance measured from Earth's center.     Curves of longitude ( meridians ) and curves of latitude ( parallels ) are shown in below.   Parallels of latitude (left) and meridians of longitude (right) labeled at 30° increments relative to the Equator and Prime Meridian, respectively. Reproduced from Djexplo via Wikimedia Commons under CC0 1.0 Universal Public Domain Dedication .   Curves of latitude and longtiude on a spherical Earth at 30° increments relative to the Equator and Prime Meridian, respectively.    Meteorologists typically express as the sum of Earth's mean radius and geometric height  , which is the signed radial distance above Earth's mean sea level, as . is referred to as elevation when it describes the height of a point on Earth's surface, altitude when it describes the height of a point within Earth's atmosphere, and depth when it describes the height of a point within Earth's oceans or otherwise below its surface. In this last case, would be negative.  An example of a volume element within Earth's atmosphere with coordinates according to the geographic coordinate system described above is shown in below.   A volume element within Earth's atmosphere depicted as a rectangular prism in geographic 3-space with central coordinates . Earth is depicted as a sphere. Thick black labeled curves show the Equator and Prime Meridian. Dashed curves show the meridian and parallel for the volume element. Dashed lines show Earth's mean radius and angles corresponding to longitude and latitude for the volume element. The dotted line shows the volume element's geometric height . Note the volume element would be located on Earth's surface if .   The position of a volume element in Earth's atmosphere in geographic 3-space, with latitude and longitude and geometric height.    "
+},
+{
+  "id": "ch2-section-spherical-coordinates-2",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-section-spherical-coordinates-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "standard spherical coordinate system "
+},
+{
+  "id": "ch2-section-spherical-coordinates-3",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-section-spherical-coordinates-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "radial distance polar angle azimuthal angle zenith angle "
+},
+{
+  "id": "ch2-section-spherical-coordinates-4",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-section-spherical-coordinates-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Earth's mean radius "
+},
+{
+  "id": "ch2-section-spherical-coordinates-6",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-section-spherical-coordinates-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "longitude latitude height "
+},
+{
+  "id": "ch2-section-spherical-coordinates-7",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-section-spherical-coordinates-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "meridians parallels "
+},
+{
+  "id": "ch2-lat-long",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-lat-long",
+  "type": "Figure",
+  "number": "2.2.1",
+  "title": "",
+  "body": " Parallels of latitude (left) and meridians of longitude (right) labeled at 30° increments relative to the Equator and Prime Meridian, respectively. Reproduced from Djexplo via Wikimedia Commons under CC0 1.0 Universal Public Domain Dedication .   Curves of latitude and longtiude on a spherical Earth at 30° increments relative to the Equator and Prime Meridian, respectively.   "
+},
+{
+  "id": "ch2-section-spherical-coordinates-9",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-section-spherical-coordinates-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geometric height elevation altitude depth "
+},
+{
+  "id": "ch2-geographic-spherical-coordinates",
+  "level": "2",
+  "url": "ch2-section-spherical-coordinates.html#ch2-geographic-spherical-coordinates",
+  "type": "Figure",
+  "number": "2.2.2",
+  "title": "",
+  "body": " A volume element within Earth's atmosphere depicted as a rectangular prism in geographic 3-space with central coordinates . Earth is depicted as a sphere. Thick black labeled curves show the Equator and Prime Meridian. Dashed curves show the meridian and parallel for the volume element. Dashed lines show Earth's mean radius and angles corresponding to longitude and latitude for the volume element. The dotted line shows the volume element's geometric height . Note the volume element would be located on Earth's surface if .   The position of a volume element in Earth's atmosphere in geographic 3-space, with latitude and longitude and geometric height.   "
+},
+{
+  "id": "ch2-section-local-cartesian-coordinates",
+  "level": "1",
+  "url": "ch2-section-local-cartesian-coordinates.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Local Cartesian coordinate system",
+  "body": " Local Cartesian coordinate system   We combine the Cartesian coordinate system with the geographic coordinate system described previously to create the local Cartesian coordinate system . The word \"local\" has the same meaning here as it does for the local derivative of Chapter 1 : It refers to a fixed location on Earth.  We place the origin of the local Cartesian coordinate system at any point of interest fixed to the planet's surface ( ) or within its atmosphere ( ). This point is identified by geographic coordinates . Note this point rotates along with Earth about Earth's polar axis.   Equatorial projections showing the unit direction vectors , , and of the local Cartesian coordinate system placed at a point on Earth's surface in and a point within Earth's atmosphere in , where \"point\" refers to a volume element. The points have the same latitude as shown and the same longitude that, while not shown, corresponds to the right-half of the curve of Earth's surface. The Equator is labeled EQ and the North Pole is labeled NP. Earth's mean radius is given by and the point's geometric height in is given by . The point's radial distance from Earth's polar axis is given by in and in .      A point on Earth's surface with the local Cartesian coordinate system placed at that point.       A point within Earth's atmosphere with the local Cartesian coordinate system placed at that point.      The local Cartesian coordinate system has the following characteristics.      increases (decreases) to the local east (west), parallel to curves of latitude.    varies directly with .    According to the arc length formula, a small change in is given by along Earth's surface ( ) and by within Earth's atmosphere ( ).        increases (decreases) to the local north (south), parallel to curves of longitude.    varies directly with .    According to the arc length formula, a small change in is given by along Earth's surface ( ) and by within Earth's atmosphere ( ).        increases (decreases) locally upward (downward), perpendicular to Earth's mean sea level.     points to the local east, parallel to the -axis.     points to the local north, parallel to the -axis.     points locally upward, parallel to the -axis.     is the zonal component of velocity and is positive (negative) for westerly (easterly) flow. (Remember wind is named for the direction it blows from , not toward!)     is the meridional component of velocity and is positive (negative) for southerly (northerly) flow.     is the vertical component of velocity and is positive (negative) for upward (downward) motion.      North polar projection showing the geometric relationship between arc and longitudinal displacement at latitude measured along Earth's surface in and within Earth's atmosphere in . The North Pole is labeled NP. The radial distance from Earth's polar axis is given by in and in .      Arc length along Earth's surface at latitude corresponding to longitudinal displacement .       Arc length within Earth's atmosphere at latitude corresponding to longitudinal displacement .       Equatorial projection showing the geometric relationship between arc and latitudinal displacement at longitude measured along Earth's surface in and within Earth's atmosphere in . The longitude , while not shown, corresponds to the right-half of the curve of Earth's surface. The Equator is labeled EQ and the North Pole is labeled NP.      Arc length along Earth's surface at longitude corresponding to latitudinal displacement .       Arc length within Earth's atmosphere at longitude corresponding to latitudinal displacement .      A very simplified depiction of the correspondence between the coordinates and velocity components of the local Cartesian Coordinate system is shown in below.   Simplified depiction of the direct correspondence between the zonal ( ), meridional ( ), and vertical ( ) directions (left) and the zonal ( ), meridional ( ), and vertical ( ) velocity components (right), respectively, of the local Cartesian coordinate system. Reproduced from Fig. 1.1 of Stull (2017) under CC BY-NC-SA 4.0 .   Directions (left) and velocity components (right) of the local Cartesian coordinate system.      Note on rotation, sphericity, and the local Cartesian coordinate system  A difficulty of using the local Cartesian coordinate system is that its -, -, and -axes and their corresponding , , and unit direction vectors, respectively, placed at any location fixed relative to Earth change orientation in space as Earth rotates. We will tackle this complication in Chapter 3.  Another difficulty of using the local Cartesian coordinate system is that its -, -, and -axes and their corresponding , , and unit direction vectors, respectively, change orientation in space depending on the longitude and latitude of the location at which the origin of the coordinate system is placed, as shown in below. We will tackle this complication in Chapter 5.   Examples of the local Cartesian coordinate system unit direction vectors , , and when the origin of the coordinate system is placed at different locations on Earth's surface along a line of latitude (horizontal dashed curve) and a line of longitude (vertical dashed curve) as well within Earth's atmosphere. Note that the orientations of the unit direction vectors in space change depending on the placement of the origin.   Unit direction vectors at points with different latitude, longitude, and height on Earth's surface and in its atmosphere.     "
+},
+{
+  "id": "ch2-section-local-cartesian-coordinates-2-1",
+  "level": "2",
+  "url": "ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "local Cartesian coordinate system "
+},
+{
+  "id": "ch2-local-cartesian-coordinates",
+  "level": "2",
+  "url": "ch2-section-local-cartesian-coordinates.html#ch2-local-cartesian-coordinates",
+  "type": "Figure",
+  "number": "2.3.1",
+  "title": "",
+  "body": " Equatorial projections showing the unit direction vectors , , and of the local Cartesian coordinate system placed at a point on Earth's surface in and a point within Earth's atmosphere in , where \"point\" refers to a volume element. The points have the same latitude as shown and the same longitude that, while not shown, corresponds to the right-half of the curve of Earth's surface. The Equator is labeled EQ and the North Pole is labeled NP. Earth's mean radius is given by and the point's geometric height in is given by . The point's radial distance from Earth's polar axis is given by in and in .      A point on Earth's surface with the local Cartesian coordinate system placed at that point.       A point within Earth's atmosphere with the local Cartesian coordinate system placed at that point.     "
+},
+{
+  "id": "ch2-section-local-cartesian-coordinates-2-5",
+  "level": "2",
+  "url": "ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-2-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "zonal meridional vertical "
+},
+{
+  "id": "ch2-local-cartesian-coordinates-differential-x",
+  "level": "2",
+  "url": "ch2-section-local-cartesian-coordinates.html#ch2-local-cartesian-coordinates-differential-x",
+  "type": "Figure",
+  "number": "2.3.2",
+  "title": "",
+  "body": " North polar projection showing the geometric relationship between arc and longitudinal displacement at latitude measured along Earth's surface in and within Earth's atmosphere in . The North Pole is labeled NP. The radial distance from Earth's polar axis is given by in and in .      Arc length along Earth's surface at latitude corresponding to longitudinal displacement .       Arc length within Earth's atmosphere at latitude corresponding to longitudinal displacement .     "
+},
+{
+  "id": "ch2-local-cartesian-coordinates-differential-y",
+  "level": "2",
+  "url": "ch2-section-local-cartesian-coordinates.html#ch2-local-cartesian-coordinates-differential-y",
+  "type": "Figure",
+  "number": "2.3.3",
+  "title": "",
+  "body": " Equatorial projection showing the geometric relationship between arc and latitudinal displacement at longitude measured along Earth's surface in and within Earth's atmosphere in . The longitude , while not shown, corresponds to the right-half of the curve of Earth's surface. The Equator is labeled EQ and the North Pole is labeled NP.      Arc length along Earth's surface at longitude corresponding to latitudinal displacement .       Arc length within Earth's atmosphere at longitude corresponding to latitudinal displacement .     "
+},
+{
+  "id": "ch2-local-cartesian-coordinates-stull",
+  "level": "2",
+  "url": "ch2-section-local-cartesian-coordinates.html#ch2-local-cartesian-coordinates-stull",
+  "type": "Figure",
+  "number": "2.3.4",
+  "title": "",
+  "body": " Simplified depiction of the direct correspondence between the zonal ( ), meridional ( ), and vertical ( ) directions (left) and the zonal ( ), meridional ( ), and vertical ( ) velocity components (right), respectively, of the local Cartesian coordinate system. Reproduced from Fig. 1.1 of Stull (2017) under CC BY-NC-SA 4.0 .   Directions (left) and velocity components (right) of the local Cartesian coordinate system.   "
+},
+{
+  "id": "ch2-local-cartesian-coordinates-sphericity",
+  "level": "2",
+  "url": "ch2-section-local-cartesian-coordinates.html#ch2-local-cartesian-coordinates-sphericity",
+  "type": "Figure",
+  "number": "2.3.5",
+  "title": "",
+  "body": " Examples of the local Cartesian coordinate system unit direction vectors , , and when the origin of the coordinate system is placed at different locations on Earth's surface along a line of latitude (horizontal dashed curve) and a line of longitude (vertical dashed curve) as well within Earth's atmosphere. Note that the orientations of the unit direction vectors in space change depending on the placement of the origin.   Unit direction vectors at points with different latitude, longitude, and height on Earth's surface and in its atmosphere.   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
