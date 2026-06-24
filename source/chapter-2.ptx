@@ -23,4 +23,6 @@
     </p>
   </introduction>
 
+  <xi:include href="ch2-section-cartesian-coordinates.ptx" />
+
 </chapter>

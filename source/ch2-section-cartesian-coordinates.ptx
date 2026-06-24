@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch2-section-cartesian-coordinates" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Cartesian coordinate system</title>
+
+    <p>
+        In <xref ref="chapter-1" text="type-global" />,
+        we used the <term>Cartesian coordinate system</term> (also called the <term>rectangular coordinate system</term>)
+        to identify the locations of volume elements in three-dimensional space.
+        The location of the center of any volume element is given by the ordered triple <m>(x, y, z)</m>,
+        where <m>x</m>, <m>y</m>, and <m>z</m> are its coordinates.
+        These coordinates are signed distances from the origin measured parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes,
+        which are mutually orthogonal and oriented relative to each other following the right-hand rule.
+        Additionally, the <term>unit direction vectors</term> <m>\hat{i}</m>,
+        <m>\hat{j}</m>,
+        and <m>\hat{k}</m> are parallel to the <m>x</m>-,
+        <m>y</m>-,
+        and <m>z</m>-axes, respectively, and point in their positive directions.
+    </p>
+
+    <p>
+        An arbitrary vector <m>\vec{A}</m> is written in Cartesian coordinates in <term>component form</term>
+        <md>
+            \vec{A} = \langle A_x, A_y, A_z \rangle
+        </md>
+        or in <term>unit vector form</term> as
+        <md>
+            \vec{A} = A_x \, \hat{i} + A_y \, \hat{j} + A_z \, \hat{k}
+        </md>.
+        In either case, <m>A_x</m>, <m>A_y</m>, and <m>A_z</m> are its <m>x</m>, <m>y</m>, and <m>z</m> <term>components</term>, respectively.
+        Like coordinates, components are signed distances from the origin measured parallel to coordinate axes.
+        When multiplied onto their corresponding unit direction vectors and summed, they result in the desired vector.
+    </p>
+
+    <p>
+        A position vector
+        <md>
+            \vec{r} = x \, \hat{i} + y \, \hat{j} + z \, \hat{k}
+        </md>
+        is drawn in Cartesian 3-space with its tail fixed to the origin and its tip attached to a volume element of interest with coordinates <m>(x,y,z)</m>.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    If the volume element can move through space with time <m>t</m>,
+                    its position vector is
+                    <md>
+                        \vec{r}(t) = x(t) \, \hat{i} + y(t) \, \hat{j} + z(t) \, \hat{k}
+                    </md>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    It follows that the volume element's velocity is given by
+                    <md>
+                        \vec{u}(t) = \frac{D\vec{r}}{Dt} = \frac{Dx}{Dt} \, \hat{i} + \frac{Dy}{Dt} \, \hat{j} + \frac{Dz}{Dt} \, \hat{k} = u(t) \, \hat{i} + v(t) \, \hat{j} + w(t) \, \hat{k}
+                    </md>,
+                    where <m>u</m>, <m>v</m>, and <m>w</m> are the velocity components in the <m>x</m>, <m>y</m>, and <m>z</m> directions, respectively.
+                </p>
+            </li>
+            <li>
+                <p>
+                    It further follows that the volume element's acceleration is given by
+                    <md>
+                        \vec{a}(t) = \frac{D\vec{u}}{Dt} = \frac{Du}{Dt} \, \hat{i} + \frac{Dv}{Dt} \, \hat{j} + \frac{Dw}{Dt} \, \hat{k}
+                    </md>.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        An example of a volume element with coordinates <m>(x, y, z)</m> and position vector <m>\vec{r}</m>
+        is shown in <xref ref="ch2-cartesian-coordinates" text="type-global" /> below.
+    </p>
+
+    <figure xml:id="ch2-cartesian-coordinates">
+        <caption>
+            A volume element depicted as a rectangular prism in Cartesian 3-space with central coordinates <m>(x, y, z)</m>
+            and position vector <m>\vec{r} = x \, \hat{i} + y \, \hat{j} + z \, \hat{k}</m>.
+            Dashed lines shown signed distances of the volume element from the origin drawn parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes.
+        </caption>
+        <image source="images/ch2-cartesian-coordinates.png"  width="60%">
+            <shortdescription>
+                The position vector of a volume element in Cartesian 3-space,
+                with signed distances from the origin depicting the magnitudes and directions of its components.
+            </shortdescription>
+        </image>
+    </figure>
+
+</section>
