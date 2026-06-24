@@ -268,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Finite differencing",
-  "body": " Finite differencing  Rarely do we know the form of the differentiable function that describes a given state variable. But thanks to meteorological instruments and numerical and artificial intelligence (AI) weather models, we do have discrete measurements of various state variable in space and time, and so we can apply finite differencing to approximate derivatives using discrete differences between measurements.  Consider the one-dimensional case first. If we have measurements of a state variable at a central point and two other points and each spaced from the central point, as shown in below, we can make the approximations     and     Note that is equivalent to the difference quotient of precalculus.   Adapted from Martin Figure 1.6. Example of centered differencing. Central point and equally-spaced surrounding points and , where is a distance from . increases to the right.   A point in the middle of two equally-spaced points.    The reasoning of centered differencing can be applied to partial derivatives by only allowing one independent variable to change. For example, if we have a state variable , we can use centered differencing to approximate its first and second partial derivatives with respect to as     and     respectively.  Furthermore, it is not required that surrounding points be spaced at equal distances around a central point. For example,     and     are valid algorithms for approximating ordinary and partial derivatives, respectively, including in cases when and are not spaced at equal distances from . This more general case is shown in below. In fact, either or (but not both) could coincide with and these algorithms still would be valid!  Once again, is equivalent to the difference quotient of precalculus.   Reproduction of , but the surrounding points and are not equally spaced from the point .   A point in the middle of two unequally-spaced points.    "
+  "body": " Finite differencing  Rarely do we know the form of the differentiable function that describes a given state variable. But thanks to meteorological instruments and numerical and artificial intelligence (AI) weather models, we do have discrete measurements of various state variable in space and time, and so we can apply finite differencing to approximate derivatives using discrete differences between measurements.  Consider the one-dimensional case first. If we have measurements of a state variable at a central point and two other points and each spaced from the central point, as shown in below, we can make the approximations     and     Note that is equivalent to the difference quotient of precalculus.   Adapted from Martin Figure 1.6. Example of centered differencing. Central point and equally-spaced surrounding points and , where is distance from . increases to the right.   A point in the middle of two equally-spaced points.    The reasoning of centered differencing can be applied to partial derivatives by only allowing one independent variable to change. For example, if we have a state variable , we can use centered differencing to approximate its first and second partial derivatives with respect to as     and     respectively.  Furthermore, it is not required that surrounding points be spaced at equal distances around a central point. For example,     and     are valid algorithms for approximating ordinary and partial derivatives, respectively, including in cases when and are not spaced at equal distances from . This more general case is shown in below. In fact, either or (but not both) could coincide with and these algorithms still would be valid!  Once again, is equivalent to the difference quotient of precalculus.   Reproduction of , but the surrounding points and are not equally spaced from the point .   A point in the middle of two unequally-spaced points.    "
 },
 {
   "id": "ch1-section-finite-differencing-2",
@@ -295,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "1.3.1",
   "title": "",
-  "body": " Adapted from Martin Figure 1.6. Example of centered differencing. Central point and equally-spaced surrounding points and , where is a distance from . increases to the right.   A point in the middle of two equally-spaced points.   "
+  "body": " Adapted from Martin Figure 1.6. Example of centered differencing. Central point and equally-spaced surrounding points and , where is distance from . increases to the right.   A point in the middle of two equally-spaced points.   "
 },
 {
   "id": "ch1-finite-difference",
@@ -305,6 +305,42 @@ var ptx_lunr_docs = [
   "number": "1.3.2",
   "title": "",
   "body": " Reproduction of , but the surrounding points and are not equally spaced from the point .   A point in the middle of two unequally-spaced points.   "
+},
+{
+  "id": "ch2-section-cartesian-coordinates",
+  "level": "1",
+  "url": "ch2-section-cartesian-coordinates.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Cartesian coordinate system",
+  "body": " Cartesian coordinate system  In , we used the Cartesian coordinate system (also called the rectangular coordinate system ) to identify the locations of volume elements in three-dimensional space. The location of the center of any volume element is given by the ordered triple , where , , and are its coordinates. These coordinates are signed distances from the origin measured parallel to the -, -, and -axes, which are mutually orthogonal and oriented relative to each other following the right-hand rule. Additionally, the unit direction vectors  , , and are parallel to the -, -, and -axes, respectively, and point in their positive directions.  An arbitrary vector is written in Cartesian coordinates in component form  or in unit vector form as . In either case, , , and are its , , and  components , respectively. Like coordinates, components are signed distances from the origin measured parallel to coordinate axes. When multiplied onto their corresponding unit direction vectors and summed, they result in the desired vector.  A position vector is drawn in Cartesian 3-space with its tail fixed to the origin and its tip attached to a volume element of interest with coordinates .     If the volume element can move through space with time , its position vector is .    It follows that the volume element's velocity is given by , where , , and are the velocity components in the , , and directions, respectively.    It further follows that the volume element's acceleration is given by .     An example of a volume element with coordinates and position vector is shown in below.   A volume element depicted as a rectangular prism in Cartesian 3-space with central coordinates and position vector . Dashed lines shown signed distances of the volume element from the origin drawn parallel to the -, -, and -axes.   The position vector of a volume element in Cartesian 3-space, with signed distances from the origin depicting the magnitudes and directions of its components.    "
+},
+{
+  "id": "ch2-section-cartesian-coordinates-2",
+  "level": "2",
+  "url": "ch2-section-cartesian-coordinates.html#ch2-section-cartesian-coordinates-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Cartesian coordinate system rectangular coordinate system unit direction vectors "
+},
+{
+  "id": "ch2-section-cartesian-coordinates-3",
+  "level": "2",
+  "url": "ch2-section-cartesian-coordinates.html#ch2-section-cartesian-coordinates-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "component form unit vector form components "
+},
+{
+  "id": "ch2-cartesian-coordinates",
+  "level": "2",
+  "url": "ch2-section-cartesian-coordinates.html#ch2-cartesian-coordinates",
+  "type": "Figure",
+  "number": "2.1.1",
+  "title": "",
+  "body": " A volume element depicted as a rectangular prism in Cartesian 3-space with central coordinates and position vector . Dashed lines shown signed distances of the volume element from the origin drawn parallel to the -, -, and -axes.   The position vector of a volume element in Cartesian 3-space, with signed distances from the origin depicting the magnitudes and directions of its components.   "
 },
 {
   "id": "backmatter-2",
