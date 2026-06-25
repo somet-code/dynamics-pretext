@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch2-section-selected-references" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Selected references</title>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                Chapter 2 of <xref ref="martin" text="custom">Martin (2006)</xref>: See tentative course schedule for specific readings.
+            </p>
+        </li>
+        <li>
+            <p>
+                Chapter 1 of <xref ref="stull" text="custom">Stull (2017)</xref>
+            </p>
+        </li>
+    </ul>
+  </p>
+
+</section>
