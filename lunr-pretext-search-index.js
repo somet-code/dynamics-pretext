@@ -307,6 +307,15 @@ var ptx_lunr_docs = [
   "body": " Reproduction of , but the surrounding points and are not equally spaced from the point .   A point in the middle of two unequally-spaced points.   "
 },
 {
+  "id": "ch1-section-selected-references",
+  "level": "1",
+  "url": "ch1-section-selected-references.html",
+  "type": "Section",
+  "number": "1.4",
+  "title": "Selected references",
+  "body": " Selected references     Chapter 1 of Martin (2006) : See tentative course schedule for specific readings.    Chapters 1 and 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapters 1 and 6 of Marshall and Plumb (2007)      "
+},
+{
   "id": "ch2-section-cartesian-coordinates",
   "level": "1",
   "url": "ch2-section-cartesian-coordinates.html",
@@ -494,6 +503,60 @@ var ptx_lunr_docs = [
   "number": "2.3.5",
   "title": "",
   "body": " Examples of the local Cartesian coordinate system unit direction vectors , , and when the origin of the coordinate system is placed at different locations on Earth's surface along a line of latitude (horizontal dashed curve) and a line of longitude (vertical dashed curve) as well within Earth's atmosphere. Note that the orientations of the unit direction vectors in space change depending on the placement of the origin.   Unit direction vectors at points with different latitude, longitude, and height on Earth's surface and in its atmosphere.   "
+},
+{
+  "id": "ch2-section-selected-references",
+  "level": "1",
+  "url": "ch2-section-selected-references.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Selected references",
+  "body": " Selected references     Chapter 2 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 1 of Stull (2017)      "
+},
+{
+  "id": "chapter-3",
+  "level": "1",
+  "url": "chapter-3.html",
+  "type": "Chapter",
+  "number": "3",
+  "title": "Fundamental Forces",
+  "body": " Fundamental Forces   Consider an air parcel in the shape of a rectangular prism centered at with edges parallel to the -, -, and -axes of the local Cartesian coordinate system and length, width, and height , , and , respectively, where indicates each dimension is immeasurably small ( ).   An air parcel centered at with edges parallel to the -, -, and -axes of the local Cartesian coordinate system and length [m], width [m], and height [m].   Rectangular prism with center point and length, width, and height.    Recall from that we can regard this air parcel as having uniform density [ ]. Thus, its mass also is distributed uniformly throughout its volume and is given by [kg].  Let's explore the forces acting on this air parcel and how they affect its motion.   Handling mass  Since it is not reasonable to measure the mass of air parcels in real life, we will employ force per unit mass , which is equivalent to acceleration and could be called specific force.    "
+},
+{
+  "id": "ch3-air-parcel",
+  "level": "2",
+  "url": "chapter-3.html#ch3-air-parcel",
+  "type": "Figure",
+  "number": "3.0.1",
+  "title": "",
+  "body": " An air parcel centered at with edges parallel to the -, -, and -axes of the local Cartesian coordinate system and length [m], width [m], and height [m].   Rectangular prism with center point and length, width, and height.   "
+},
+{
+  "id": "references",
+  "level": "1",
+  "url": "references.html",
+  "type": "References",
+  "number": "4",
+  "title": "References",
+  "body": " References   Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b    "
+},
+{
+  "id": "holton-hakim-6",
+  "level": "2",
+  "url": "references.html#holton-hakim-6",
+  "type": "Note",
+  "number": "4.1.1",
+  "title": "",
+  "body": " 3rd edition  "
+},
+{
+  "id": "stull-5",
+  "level": "2",
+  "url": "references.html#stull-5",
+  "type": "Note",
+  "number": "4.4.1",
+  "title": "",
+  "body": " Version 1.02b  "
 },
 {
   "id": "backmatter-2",
