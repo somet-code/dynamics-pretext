@@ -47,4 +47,6 @@
 
   </introduction>
 
+  <xi:include href="ch3-section-gravitational-force.ptx" />
+
 </chapter>

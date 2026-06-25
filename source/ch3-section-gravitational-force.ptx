@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch3-section-gravitational-force" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Gravitational force</title>
+
+    <p>
+        The <term>gravitational force</term> <m>\vec{F}_g</m> [N] is an attractive force between two masses.
+        <term>Newton's law of universal gravitation</term> gives the magnitude of the gravitational force:
+    </p>
+
+    <p>
+        <md xml:id="eqn-gravitational-force-magnitude" number="yes">
+            F_g = G \frac{m_1 \, m_2}{r^2}
+        </md>
+    </p>
+
+    <p>
+        where <m>r</m> [m] is the distance between the centers of masses <m>m_1</m> [kg] and <m>m_2</m> [kg]
+        and <m>G = 6.6743 \times 10^{-11}</m> <m>\text{N} \, \text{m}^{2} \, \text{kg}^{-2}</m>
+        is the <term>gravitational constant</term>.
+    </p>
+
+    <p>
+        For an air parcel attracted to Earth by its gravitational force (FIG),
+        we can replace <m>m_1</m> with the air parcel's mass <m>m</m> and <m>m_2</m> with Earth's mass <m>M_E</m>.
+        Then <xref ref="eqn-gravitational-force-magnitude" text="type-global" /> dictates
+    </p>
+
+    <p>
+        <md xml:id="eqn-gravitational-force-earth-r" number="yes">
+            \vec{F}_g = -G \frac{m \, M_E}{r^2} \left( \frac{\vec{r}}{r} \right)
+        </md>
+    </p>
+
+    <p>
+        where <m>r</m> now represents the distance between the air parcel's center of mass and Earth's center of mass
+        and <m>\vec{r}</m> points from Earth's center of mass to the air parcel's center of mass.
+        (Note <m>\dfrac{\vec{r}}{r}</m> is a unit vector, since <m>|\vec{r}| = r</m>.)
+        If we further assume Earth is spherical with radius <m>a</m>, <xref ref="eqn-gravitational-force-earth-r" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-gravitational-force-earth-z" number="yes">
+            \vec{F}_g = -G \frac{m \, M_E}{(a+z)^2} \left( \frac{\vec{r}}{r} \right)
+        </md>
+    </p>
+
+    <p>
+        Dividing <xref ref="eqn-gravitational-force-earth-z" text="type-global" />
+        by <m>m</m> produces the gravitational force per unit mass,
+        which is called the <term>gravitational acceleration</term>
+        <m>\vec{g^*}</m> [<m>\text{m} \, \text{s}^{-2}</m>]:
+    </p>
+
+    <p>
+        <md xml:id="eqn-gravitational-acceleration-earth" number="yes">
+            \frac{\vec{F}_g}{m} = \vec{g^*} = -G \frac{M_E}{(a+z)^2} \left( \frac{\vec{r}}{r} \right)
+        </md>
+    </p>
+
+    <figure xml:id="ch3-gravitational-force">
+        <caption />
+        <sidebyside>
+            <figure xml:id="ch3-airparcel-earth-gravitational">
+                <caption>
+                    A wide view of Earth's gravitational force <m>\vec{F}_g</m>
+                    attracting the air parcel from <xref ref="ch3-air-parcel" text="type-global" />
+                    toward the planet's center of mass.
+                </caption>
+                <image source="images/ch3-airparcel-earth-gravitational.png" width="50%">
+                    <shortdescription>
+                        Air parcel attracted to Earth by gravitational force.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch3-airparcel-gravitational">
+                <caption>
+                    A zoomed-in view of Earth's gravitational force <m>\vec{F}_g</m>
+                    acting on the center of mass of the air parcel from <xref ref="ch3-airparcel-earth-gravitational" text="local" />
+                    toward the planet's center of mass.
+                </caption>
+                <image source="images/ch3-airparcel-gravitational.png" width="50%">
+                    <shortdescription>
+                        Air parcel attracted to Earth by gravitational force.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
+
+</section>
