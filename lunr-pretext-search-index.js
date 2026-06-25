@@ -514,22 +514,49 @@ var ptx_lunr_docs = [
   "body": " Selected references     Chapter 2 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 1 of Stull (2017)      "
 },
 {
-  "id": "chapter-3",
+  "id": "ch3-section-gravitational-force",
   "level": "1",
-  "url": "chapter-3.html",
-  "type": "Chapter",
-  "number": "3",
-  "title": "Fundamental Forces",
-  "body": " Fundamental Forces   Consider an air parcel in the shape of a rectangular prism centered at with edges parallel to the -, -, and -axes of the local Cartesian coordinate system and length, width, and height , , and , respectively, where indicates each dimension is immeasurably small ( ).   An air parcel centered at with edges parallel to the -, -, and -axes of the local Cartesian coordinate system and length [m], width [m], and height [m].   Rectangular prism with center point and length, width, and height.    Recall from that we can regard this air parcel as having uniform density [ ]. Thus, its mass also is distributed uniformly throughout its volume and is given by [kg].  Let's explore the forces acting on this air parcel and how they affect its motion.   Handling mass  Since it is not reasonable to measure the mass of air parcels in real life, we will employ force per unit mass , which is equivalent to acceleration and could be called specific force.    "
+  "url": "ch3-section-gravitational-force.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "Gravitational force",
+  "body": " Gravitational force  The gravitational force  [N] is an attractive force between two masses. Newton's law of universal gravitation gives the magnitude of the gravitational force:     where [m] is the distance between the centers of masses [kg] and [kg] and  is the gravitational constant .  For an air parcel attracted to Earth by its gravitational force (FIG), we can replace with the air parcel's mass and with Earth's mass . Then dictates     where now represents the distance between the air parcel's center of mass and Earth's center of mass and points from Earth's center of mass to the air parcel's center of mass. (Note is a unit vector, since .) If we further assume Earth is spherical with radius , becomes     Dividing by produces the gravitational force per unit mass, which is called the gravitational acceleration  [ ]:         A wide view of Earth's gravitational force attracting the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.     A zoomed-in view of Earth's gravitational force acting on the center of mass of the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.      "
 },
 {
-  "id": "ch3-air-parcel",
+  "id": "ch3-section-gravitational-force-2",
   "level": "2",
-  "url": "chapter-3.html#ch3-air-parcel",
-  "type": "Figure",
-  "number": "3.0.1",
+  "url": "ch3-section-gravitational-force.html#ch3-section-gravitational-force-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
   "title": "",
-  "body": " An air parcel centered at with edges parallel to the -, -, and -axes of the local Cartesian coordinate system and length [m], width [m], and height [m].   Rectangular prism with center point and length, width, and height.   "
+  "body": "gravitational force Newton's law of universal gravitation "
+},
+{
+  "id": "ch3-section-gravitational-force-4",
+  "level": "2",
+  "url": "ch3-section-gravitational-force.html#ch3-section-gravitational-force-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "gravitational constant "
+},
+{
+  "id": "ch3-section-gravitational-force-9",
+  "level": "2",
+  "url": "ch3-section-gravitational-force.html#ch3-section-gravitational-force-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "gravitational acceleration "
+},
+{
+  "id": "ch3-gravitational-force",
+  "level": "2",
+  "url": "ch3-section-gravitational-force.html#ch3-gravitational-force",
+  "type": "Figure",
+  "number": "3.1.1",
+  "title": "",
+  "body": "    A wide view of Earth's gravitational force attracting the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.     A zoomed-in view of Earth's gravitational force acting on the center of mass of the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.     "
 },
 {
   "id": "references",
