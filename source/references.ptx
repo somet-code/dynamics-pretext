@@ -31,4 +31,16 @@
         <year>2006</year>
     </biblio>
 
+    <biblio type="bibtex" xml:id="stull">
+        <author>Stull, R. B.</author>
+        <title>Practical Meteorology: An Algebra-based Survey of Atmospheric Science</title>
+        <publisher>University of British Columbia</publisher>
+        <year>2017</year>
+        <note>
+            <p>
+                Version 1.02b
+            </p>
+        </note>
+    </biblio>
+
 </references>
