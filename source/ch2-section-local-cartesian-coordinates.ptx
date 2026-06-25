@@ -173,7 +173,7 @@
                     <caption />
                     <image source="images/ch2-local-cartesian-coordinates-differential-x-a.png" width="50%">
                         <shortdescription>
-                            Arc length <m>\delta x</m> along Earth's surface at latitude <m>\phi</m> corresponding to longitudinal displacement <m>\delta \lambda</m>.
+                            Arc length along Earth's surface at a fixed latitude and its corresponding longitudinal displacement.
                         </shortdescription>
                     </image>
                 </figure>
@@ -181,7 +181,7 @@
                     <caption />
                     <image source="images/ch2-local-cartesian-coordinates-differential-x-b.png" width="50%">
                         <shortdescription>
-                            Arc length <m>\delta x</m> within Earth's atmosphere at latitude <m>\phi</m> corresponding to longitudinal displacement <m>\delta \lambda</m>.
+                            Arc length within Earth's atmosphere at a fixed latitude and its corresponding longitudinal displacement.
                         </shortdescription>
                     </image>
                 </figure>
@@ -202,7 +202,7 @@
                     <caption />
                     <image source="images/ch2-local-cartesian-coordinates-differential-y-a.png" width="50%">
                         <shortdescription>
-                            Arc length <m>\delta y</m> along Earth's surface at longitude <m>\lambda</m> corresponding to latitudinal displacement <m>\delta \phi</m>.
+                            Arc length along Earth's surface at a fixed longitude and its corresponding latitudinal displacement.
                         </shortdescription>
                     </image>
                 </figure>
@@ -210,7 +210,7 @@
                     <caption />
                     <image source="images/ch2-local-cartesian-coordinates-differential-y-b.png" width="50%">
                         <shortdescription>
-                            Arc length <m>\delta y</m> within Earth's atmosphere at longitude <m>\lambda</m> corresponding to latitudinal displacement <m>\delta \phi</m>.
+                            Arc length within Earth's atmosphere at a fixed longitude and its corresponding latitudinal displacement.
                         </shortdescription>
                     </image>
                 </figure>
