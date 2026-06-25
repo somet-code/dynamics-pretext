@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Gravitational force",
-  "body": " Gravitational force  The gravitational force  [N] is an attractive force between two masses. Newton's law of universal gravitation gives the magnitude of the gravitational force:     where [m] is the distance between the centers of masses [kg] and [kg] and  is the gravitational constant .  For an air parcel attracted to Earth by its gravitational force (FIG), we can replace with the air parcel's mass and with Earth's mass . Then dictates     where now represents the distance between the air parcel's center of mass and Earth's center of mass and points from Earth's center of mass to the air parcel's center of mass. (Note is a unit vector, since .) If we further assume Earth is spherical with radius , becomes     Dividing by produces the gravitational force per unit mass, which is called the gravitational acceleration  [ ]:         A wide view of Earth's gravitational force attracting the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.     A zoomed-in view of Earth's gravitational force acting on the center of mass of the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.      "
+  "body": " Gravitational force  The gravitational force  [N] is an attractive force between two masses. Newton's law of universal gravitation gives the magnitude of the gravitational force:     where [m] is the distance between the centers of masses [kg] and [kg] and  is the gravitational constant .  For an air parcel attracted to Earth by its gravitational force ( ), we can replace with the air parcel's mass and with Earth's mass . Then dictates     where now represents the distance between the air parcel's center of mass and Earth's center of mass and points from Earth's center of mass to the air parcel's center of mass. (Note is a unit vector, since .) If we further assume Earth is spherical with radius , becomes     Dividing by produces the gravitational force per unit mass, which is called the gravitational acceleration  [ ]:         A wide view of Earth's gravitational force attracting the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.     A zoomed-in view of Earth's gravitational force acting on the center of mass of the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.      "
 },
 {
   "id": "ch3-section-gravitational-force-2",
@@ -557,6 +557,96 @@ var ptx_lunr_docs = [
   "number": "3.1.1",
   "title": "",
   "body": "    A wide view of Earth's gravitational force attracting the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.     A zoomed-in view of Earth's gravitational force acting on the center of mass of the air parcel from toward the planet's center of mass.   Air parcel attracted to Earth by gravitational force.     "
+},
+{
+  "id": "ch3-section-pressure-gradient-force",
+  "level": "1",
+  "url": "ch3-section-pressure-gradient-force.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Pressure gradient force",
+  "body": " Pressure gradient force   Pressure [Pa] is the magnitude of a force applied perpendicular to a surface divided by the area of the surface:   ,  where is the pressure and [N] is the magnitude of the force applied perpendicular to a surface with area [ ].   Fluid pressure is compressive, and atmospheric pressure is fluid pressure caused by the combined force of numerous discrete atmospheric particles colliding with a surface of any orientation placed anywhere within the atmosphere.  The air parcel from experiences such combined compressive forces perpendicular to each of its six faces, as represented by the force vectors in below. The pressure at its center results. Note if the air parcel was a different shape, it still would experience these forces perpendicular to its boundaries, which would result in the same central pressure.   Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from , creating pressure measured at its center.   Rectangular prism with pressure measured at center point and forces compressing all faces.    For simplicity, consider only the forces acting on the left and right sides of the air parcel from , denoted and , respectively, as shown in below.   The air parcel from with only the combined compressive forces and acting on the left and right faces of the air parcel, respectively.   Rectangular prism with pressure measured at center point and forces compressing the left and right faces.    We can create a linear approximation of each of these forces using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces and neglecting the higher order terms.        where is evaluated at the center of the air parcel, i.e., . Note is positive since it points in the -direction and is negative since it points in the -direction.  Adding and produces the net force in the -direction :     Since , we can write the net force per unit mass in the -direction by dividing by :     Similarly, we can write the net forces per unit mass in the and -directions as     and     Note that each of these accelerations depends on a spatial derivative of pressure, or a pressure gradient , but not on a specific value of pressure.  We combine these three component accelerations into the pressure gradient force (PGF) per unit mass , or the pressure gradient acceleration :     where is the PGF and is the pressure gradient acceleration.  A gradient vector points from lower values toward higher values of the scalar quantity of interest, in the direction of fastest increase. Visually, a gradient vector points locally perpendicular to isopleths (contours of constant value) of the scalar quantity of interest toward higher values, and its magnitude is determined by the strength of the gradient: Closer spacing of isopleths indicates larger gradients.  It follows that the pressure gradient vector points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to isobars (contours of constant pressure), and its magnitude increases as the strength of the pressure gradient increases. But the negative sign in means that the pressure gradient force vector and, likewise, the pressure gradient acceleration vector point in the opposite direction as the pressure gradient vector. These principles are visualized in below.   Three isobars of pressure with values (middle), (top), and (bottom), where the increment of pressure is positive. The pressure gradient vectors point locally perpendicular to the isobars away from the lower value of pressure denoted by the isobar and toward the higher value of pressure denoted by the isobar. The pressure gradient force vectors point locally perpendicular to the isobars away from the higher value of pressure denoted by the isobar and toward the lower value of pressure denoted by the isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.   Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right.    "
+},
+{
+  "id": "ch3-section-pressure-gradient-force-2",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Pressure "
+},
+{
+  "id": "ch3-section-pressure-gradient-force-5",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Fluid pressure atmospheric pressure "
+},
+{
+  "id": "ch3-airparcel-pressure-forces",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-forces",
+  "type": "Figure",
+  "number": "3.2.1",
+  "title": "",
+  "body": " Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from , creating pressure measured at its center.   Rectangular prism with pressure measured at center point and forces compressing all faces.   "
+},
+{
+  "id": "ch3-airparcel-pressure-forces-x",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-forces-x",
+  "type": "Figure",
+  "number": "3.2.2",
+  "title": "",
+  "body": " The air parcel from with only the combined compressive forces and acting on the left and right faces of the air parcel, respectively.   Rectangular prism with pressure measured at center point and forces compressing the left and right faces.   "
+},
+{
+  "id": "ch3-section-pressure-gradient-force-22",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "pressure gradient "
+},
+{
+  "id": "ch3-section-pressure-gradient-force-23",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "pressure gradient force (PGF) per unit mass pressure gradient acceleration "
+},
+{
+  "id": "ch3-section-pressure-gradient-force-26",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-26",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "isopleths "
+},
+{
+  "id": "ch3-section-pressure-gradient-force-27",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-27",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "isobars "
+},
+{
+  "id": "ch3-isobars",
+  "level": "2",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-isobars",
+  "type": "Figure",
+  "number": "3.2.3",
+  "title": "",
+  "body": " Three isobars of pressure with values (middle), (top), and (bottom), where the increment of pressure is positive. The pressure gradient vectors point locally perpendicular to the isobars away from the lower value of pressure denoted by the isobar and toward the higher value of pressure denoted by the isobar. The pressure gradient force vectors point locally perpendicular to the isobars away from the higher value of pressure denoted by the isobar and toward the lower value of pressure denoted by the isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.   Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right.   "
 },
 {
   "id": "references",

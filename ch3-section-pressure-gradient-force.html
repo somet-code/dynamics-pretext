@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Pressure gradient force</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="METR 3113">
+<meta property="book:author" content="Dr. Amanda Kis">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d1480f934b51d4ec.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.fa61545fa3ffbf2f.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="Atmospheric Dynamics I" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="atmospheric-dynamics-i.html"><span class="title">METR 3113</span> <span class="subtitle">Atmospheric Dynamics I</span></a></h1>
+<p class="byline">Dr. Amanda Kis</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch3-section-gravitational-force.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-3.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Continuum Approximation and Calculus in Geophysical Fluid Dynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-continuum-approximation.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Continuum approximation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1-section-calculus.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Partial differentiation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector algebra and calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Right-hand rule</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-del" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Del</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-finite-differencing.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Finite differencing</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Fundamental Forces</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-gravitational-force.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Gravitational force</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch3-section-pressure-gradient-force.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Pressure gradient force</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">4</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ch3-section-pressure-gradient-force">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pressure gradient force</span>
+</h2>
+<div class="para" id="ch3-section-pressure-gradient-force-2">
+<dfn class="terminology">Pressure</dfn> [Pa] is the magnitude of a force applied perpendicular to a surface divided by the area of the surface:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-3">
+<div class="displaymath process-math" id="ch3-section-pressure-gradient-force-3-1">
+\begin{equation*}
+p = \frac{F_{\perp}}{A}\text{,}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-4">where <span class="process-math">\(p\)</span> is the pressure and <span class="process-math">\(F_{\perp}\)</span> [N] is the magnitude of the force applied perpendicular to a surface with area <span class="process-math">\(A\)</span> [<span class="process-math">\(\text{m}^{2}\)</span>].<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-5">
+<dfn class="terminology">Fluid pressure</dfn> is compressive, and <dfn class="terminology">atmospheric pressure</dfn> is fluid pressure caused by the combined force of numerous discrete atmospheric particles colliding with a surface of any orientation placed anywhere within the atmosphere.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-6">The air parcel from <a href="chapter-3.html#ch3-air-parcel" class="xref" data-knowl="./knowl/xref/ch3-air-parcel.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.0.1">Figure 3.0.1</a> experiences such combined compressive forces perpendicular to each of its six faces, as represented by the force vectors in <a href="ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-forces" class="xref" data-knowl="./knowl/xref/ch3-airparcel-pressure-forces.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.1">Figure 3.2.1</a> below. The pressure at its center <span class="process-math">\(p_0 = p(x_0, y_0, z_0)\)</span> results. Note if the air parcel was a different shape, it still would experience these forces perpendicular to its boundaries, which would result in the same central pressure.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch3-airparcel-pressure-forces"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch3-airparcel-pressure-forces.png" class="contained" alt="Rectangular prism with pressure measured at center point and forces compressing all faces."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from <a href="chapter-3.html#ch3-air-parcel" class="xref" data-knowl="./knowl/xref/ch3-air-parcel.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.0.1">Figure 3.0.1</a>, creating pressure <span class="process-math">\(p_0 = p(x_0, y_0, z_0)\)</span> measured at its center.<div class="autopermalink" data-description="Figure 3.2.1"><a href="#ch3-airparcel-pressure-forces" title="Copy heading and permalink for Figure 3.2.1" aria-label="Copy heading and permalink for Figure 3.2.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch3-section-pressure-gradient-force-8">For simplicity, consider only the forces acting on the left and right sides of the air parcel from <a href="ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-forces" class="xref" data-knowl="./knowl/xref/ch3-airparcel-pressure-forces.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.1">Figure 3.2.1</a>, denoted <span class="process-math">\(F_L\)</span> and <span class="process-math">\(F_R\text{,}\)</span> respectively, as shown in <a href="ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-forces-x" class="xref" data-knowl="./knowl/xref/ch3-airparcel-pressure-forces-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.2">Figure 3.2.2</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch3-airparcel-pressure-forces-x"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch3-airparcel-pressure-forces-x.png" class="contained" alt="Rectangular prism with pressure measured at center point and forces compressing the left and right faces."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The air parcel from <a href="ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-forces" class="xref" data-knowl="./knowl/xref/ch3-airparcel-pressure-forces.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.1">Figure 3.2.1</a> with only the combined compressive forces <span class="process-math">\(F_L\)</span> and <span class="process-math">\(F_R\)</span> acting on the left and right faces of the air parcel, respectively.<div class="autopermalink" data-description="Figure 3.2.2"><a href="#ch3-airparcel-pressure-forces-x" title="Copy heading and permalink for Figure 3.2.2" aria-label="Copy heading and permalink for Figure 3.2.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch3-section-pressure-gradient-force-10">We can create a linear approximation of each of these forces using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces and neglecting the higher order terms.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-11">
+<div class="displaymath process-math" id="ch3-airparcel-pressure-force-left">
+\begin{equation}
+F_L = \left(
+p_0 + \frac{\partial p}{\partial x} \frac{(-\delta x)}{2}
+\right) \delta y \, \delta z
+= \left(
+p_0 - \frac{\partial p}{\partial x} \frac{\delta x}{2}
+\right) \delta y \, \delta z\tag{3.2.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-12">
+<div class="displaymath process-math" id="ch3-airparcel-pressure-force-right">
+\begin{equation}
+F_R = -\left(
+p_0 + \frac{\partial p}{\partial x} \frac{\delta x}{2}
+\right) \delta y \, \delta z\tag{3.2.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-13">
+<div class="para">where <span class="process-math">\(\dfrac{\partial p}{\partial x}\)</span> is evaluated at the center of the air parcel, i.e.,</div>
+<div class="displaymath process-math" id="ch3-section-pressure-gradient-force-13-2">
+\begin{equation*}
+\frac{\partial p}{\partial x} = \left. \frac{\partial p}{\partial x} \right|_{(x,y,z)=(x_0,y_0,z_0)}\text{.}
+\end{equation*}
+</div>
+<div class="para">Note <span class="process-math">\(F_L\)</span> is positive since it points in the <span class="process-math">\(+x\)</span>-direction and <span class="process-math">\(F_R\)</span> is negative since it points in the <span class="process-math">\(-x\)</span>-direction.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-14">Adding <span class="process-math">\(F_L\)</span> and <span class="process-math">\(F_R\)</span> produces the net force in the <span class="process-math">\(x\)</span>-direction <span class="process-math">\(F_x\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-15">
+<div class="displaymath process-math" id="ch3-airparcel-pressure-force-x">
+\begin{equation}
+F_x = F_L + F_R = -\frac{\partial p}{\partial x} \delta x \, \delta y \, \delta z\tag{3.2.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-16">Since <span class="process-math">\(m = \rho \, \delta x \, \delta y \, \delta z\text{,}\)</span> we can write the net force per unit mass in the <span class="process-math">\(x\)</span>-direction by dividing <a href="ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-force-x" class="xref" data-knowl="./knowl/xref/ch3-airparcel-pressure-force-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.3">(3.2.3)</a> by <span class="process-math">\(m\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-17">
+<div class="displaymath process-math" id="ch3-airparcel-pressure-acceleration-x">
+\begin{equation}
+\frac{F_x}{m} = a_x = -\frac{1}{\rho} \frac{\partial p}{\partial x}\tag{3.2.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-18">Similarly, we can write the net forces per unit mass in the <span class="process-math">\(y-\)</span> and <span class="process-math">\(z\)</span>-directions as<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-19">
+<div class="displaymath process-math" id="ch3-airparcel-pressure-acceleration-y">
+\begin{equation}
+\frac{F_y}{m} = a_y = -\frac{1}{\rho} \frac{\partial p}{\partial y}\tag{3.2.5}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-20">and<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-21">
+<div class="displaymath process-math" id="ch3-airparcel-pressure-acceleration-z">
+\begin{equation}
+\frac{F_z}{m} = a_z = -\frac{1}{\rho} \frac{\partial p}{\partial z}\tag{3.2.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-22">Note that each of these accelerations depends on a spatial derivative of pressure, or a <dfn class="terminology">pressure gradient</dfn>, but not on a specific value of pressure.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-23">We combine these three component accelerations into the <dfn class="terminology">pressure gradient force (PGF) per unit mass</dfn>, or the <dfn class="terminology">pressure gradient acceleration</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch3-section-pressure-gradient-force-24">
+<div class="displaymath process-math" id="ch3-pressure-gradient-acceleration">
+\begin{equation}
+\frac{\vec{F}_{PG}}{m}
+= \vec{a}_{PG}
+= -\frac{1}{\rho} \left[
+\frac{\partial p}{\partial x} \, \hat{i} + \frac{\partial p}{\partial y} \, \hat{j} + \frac{\partial p}{\partial z} \, \hat{k}
+\right]
+=  -\frac{1}{\rho} \nabla p\tag{3.2.7}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-25">where <span class="process-math">\(\vec{F}_{PG}\)</span> is the PGF and <span class="process-math">\(\vec{a}_{PG}\)</span> is the pressure gradient acceleration.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-26">A gradient vector points from lower values toward higher values of the scalar quantity of interest, in the direction of fastest increase. Visually, a gradient vector points locally perpendicular to<dfn class="terminology">isopleths</dfn> (contours of constant value) of the scalar quantity of interest toward higher values, and its magnitude is determined by the strength of the gradient: Closer spacing of isopleths indicates larger gradients.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch3-section-pressure-gradient-force-27">It follows that the pressure gradient vector <span class="process-math">\(\nabla p\)</span> points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to <dfn class="terminology">isobars</dfn> (contours of constant pressure), and its magnitude increases as the strength of the pressure gradient increases. But the negative sign in <a href="ch3-section-pressure-gradient-force.html#ch3-pressure-gradient-acceleration" class="xref" data-knowl="./knowl/xref/ch3-pressure-gradient-acceleration.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.7">(3.2.7)</a> means that the pressure gradient force vector <span class="process-math">\(\vec{F}_{PG}\)</span> and, likewise, the pressure gradient acceleration vector <span class="process-math">\(\vec{a}_{PG}\)</span> point in the opposite direction as the pressure gradient vector. These principles are visualized in <a href="ch3-section-pressure-gradient-force.html#ch3-isobars" class="xref" data-knowl="./knowl/xref/ch3-isobars.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.3">Figure 3.2.3</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch3-isobars"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch3-isobars.png" class="contained" alt="Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Three isobars of pressure with values <span class="process-math">\(p\)</span> (middle), <span class="process-math">\(p - \Delta p\)</span> (top), and <span class="process-math">\(p + \Delta p\)</span> (bottom), where the increment of pressure <span class="process-math">\(\Delta p\)</span> is positive. The pressure gradient vectors <span class="process-math">\(\nabla p\)</span> point locally perpendicular to the isobars away from the lower value of pressure denoted by the <span class="process-math">\(p - \Delta p\)</span> isobar and toward the higher value of pressure denoted by the <span class="process-math">\(p + \Delta p\)</span> isobar. The pressure gradient force vectors <span class="process-math">\(\vec{F}_{PG}\)</span> point locally perpendicular to the isobars away from the higher value of pressure denoted by the <span class="process-math">\(p + \Delta p\)</span> isobar and toward the lower value of pressure denoted by the <span class="process-math">\(p - \Delta p\)</span> isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.<div class="autopermalink" data-description="Figure 3.2.3"><a href="#ch3-isobars" title="Copy heading and permalink for Figure 3.2.3" aria-label="Copy heading and permalink for Figure 3.2.3">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Section 3.2: Pressure gradient force"><a href="#ch3-section-pressure-gradient-force" title="Copy heading and permalink for Section 3.2: Pressure gradient force" aria-label="Copy heading and permalink for Section 3.2: Pressure gradient force">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch3-section-gravitational-force.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
