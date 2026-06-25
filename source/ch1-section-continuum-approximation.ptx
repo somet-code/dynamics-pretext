@@ -8,7 +8,7 @@
     molecular nitrogen (<m>\mathrm{N}_2</m>), molecular oxygen (<m>\mathrm{O}_2</m>), water vapor (<m>\mathrm{H}_2\mathrm{O}</m>), and others.
     Individual gas particles (which include both atoms and molecules) are very small, and much empty space generally lies between them on average.
     Each gas particle moves continuously and randomly,
-    although larger-scale ordered motion like the wind can be superimposed on a collection of gas particles.
+    although larger-scale organized motion like the wind can be superimposed on a collection of gas particles and dominate their overall motion.
   </p>
 
   <p>
@@ -19,7 +19,7 @@
   </p>
 
   <p>
-    Keeping track of the largely random motions of numerous discrete particles in Earth's atmosphere is unnecessary for our purposes,
+    Keeping track of the somewhat random motions of numerous discrete particles in Earth's atmosphere is unnecessary for our purposes,
     since even the smallest atmospheric motions we are interested in occur on scales multiple orders of magnitude larger than microscopic intermolecular distances.
     Instead, we make use of the <term>continuum approximation</term>:
     We assume the atmosphere's mass is continuously distributed in space rather than held in discrete particles.
@@ -28,7 +28,8 @@
 
   <p>
     Points within the atmospheric continuum are not geometric points without size,
-    but instead are <term>volume elements</term> of any convenient shape that are infinitesimally small yet contain many discrete particles.
+    but instead are <term>volume elements</term>
+    of any convenient shape that are much smaller than the atmospheric flows of interest within which they are caught up yet contain many discrete particles.
     An example of a volume element is shown in <xref ref="ch1-volume-element" text="type-global" /> below.
   </p>
 
@@ -47,11 +48,12 @@
 
   <p>
     We assume the discrete particles contained within a volume element are distributed homogeneously through it.
-    Local averages of temperature, pressure, density, velocity, and other<term>state variables</term> describe the volume elements
+    Local averages of temperature, pressure, density, velocity, and other <term>state variables</term> describe the volume elements
     at any moment in time<mdash />without reference to the volume element's history<mdash />and
     are assumed to be uniform throughout the volume element.
     A representative value of any state variable is measured at the center of the volume element.
-    For example, the pressure <m>p</m> measured at <m>(x_0, y_0, z_0)</m> is given by <m>p_0 = p(x_0, y_0, z_0)</m>,
+    For example, the pressure <m>p</m> measured at the central point of a volume element<m>(x_0, y_0, z_0)</m>
+    is given by <m>p_0 = p(x_0, y_0, z_0)</m>,
     as shown in <xref ref="ch1-volume-element-property" text="type-global" /> below.
   </p>
 
@@ -79,7 +81,7 @@
     The latter volume elements, whose locations are centered at permanent locations in the Earth system for all time, often are called <term>control volumes</term>.
     These different behaviors of fluid elements lead to two different but connected frameworks from which we can conceptualize atmospheric flow:
     the Lagrangian framework and the Eulerian framework.
-    We will explore these frameworks in SEC below.
+    We will explore these frameworks in <xref ref="ch1-section-calculus-subsection-total-differentiation" text="type-global" />.
   </p>
 
   <p>
