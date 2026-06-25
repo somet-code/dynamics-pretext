@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fundamental Forces</title>
+
+  <introduction>
+    <p>
+        Consider an air parcel in the shape of a rectangular prism centered at <m>(x_0, y_0, z_0)</m>
+        with edges parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the local Cartesian coordinate system
+        and length, width, and height <m>\delta x</m>, <m>\delta y</m>, and <m>\delta z</m>, respectively,
+        where <m>\delta</m> indicates each dimension is immeasurably small (<xref ref="ch3-air-parcel" text="type-global" />).
+    </p>
+
+    <figure xml:id="ch3-air-parcel">
+        <caption>
+            An air parcel centered at <m>(x_0,y_0,z_0)</m>
+            with edges parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the local Cartesian coordinate system
+            and length <m>\delta x</m> [m], width <m>\delta y</m> [m], and height <m>\delta z</m> [m].
+        </caption>
+        <image source="images/ch1-volume-element.png" width="60%">
+            <shortdescription>
+                Rectangular prism with center point and length, width, and height.
+            </shortdescription>
+        </image>
+    </figure>
+
+  <p>
+    Recall from <xref ref="chapter-1" /> that we can regard this air parcel as having uniform density
+    <m>\rho</m> [<m>\text{kg} \, \text{m}^{-3}</m>].
+    Thus, its mass also is distributed uniformly throughout its volume and is given by <m>m = \rho \, \delta x \, \delta y \, \delta z</m> [kg].
+  </p>
+
+  <p>
+    Let's explore the forces acting on this air parcel and how they affect its motion.
+  </p>
+
+  <paragraphs>
+    <title>Handling mass</title>
+
+    <p>
+        Since it is not reasonable to measure the mass of air parcels in real life,
+        we will employ force <em>per unit mass</em>,
+        which is equivalent to acceleration and could be called <em>specific</em> force.
+    </p>
+    
+  </paragraphs>
+
+  </introduction>
+
+</chapter>
