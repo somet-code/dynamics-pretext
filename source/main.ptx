@@ -16,6 +16,8 @@
     <xi:include href="./chapter-2.ptx" />
     <xi:include href="./chapter-3.ptx" />
 
+    <xi:include href="./references.ptx" />
+
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 

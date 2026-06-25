@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<references xml:id="references" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>References</title>
+
+    <biblio type="bibtex" xml:id="holton-hakim">
+        <author>Holton, J. R.</author>
+        <author>Hakim, G. J.</author>
+        <title>An Introduction to Dynamic Meteorology</title>
+        <publisher>Academic Press</publisher>
+        <year>2013</year>
+        <note>
+            <p>
+                3rd edition
+            </p>
+        </note>
+    </biblio>
+
+    <biblio type="bibtex" xml:id="marshall-plumb">
+        <author>Marshall, J.</author>
+        <author>Plumb, R. A.</author>
+        <title>Atmosphere, Ocean and Climate Dynamics: An Introductory Text</title>
+        <publisher>Academic Press</publisher>
+        <year>2007</year>
+    </biblio>
+
+    <biblio type="bibtex" xml:id="martin">
+        <author>Martin, J. E.</author>
+        <title>Mid-latitude Atmospheric Dynamics: A First Course</title>
+        <publisher>Wiley</publisher>
+        <year>2006</year>
+    </biblio>
+
+</references>
