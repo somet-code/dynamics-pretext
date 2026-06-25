@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch3-section-pressure-gradient-force" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Pressure gradient force</title>
+
+    <p>
+        <term>Pressure</term> [Pa] is the magnitude of a force applied perpendicular to a surface divided by the area of the surface:
+    </p>
+
+    <p>
+        <md>
+            p = \frac{F_{\perp}}{A}
+        </md>,
+    </p>
+
+    <p>
+        where <m>p</m> is the pressure and <m>F_{\perp}</m> [N] is the magnitude of the force applied perpendicular to a surface with area <m>A</m> [<m>\text{m}^{2}</m>].
+    </p>
+
+    <p>
+        <term>Fluid pressure</term> is compressive,
+        and <term>atmospheric pressure</term>
+        is fluid pressure caused by the combined force of numerous discrete atmospheric particles colliding with a surface of any orientation placed anywhere within the atmosphere.
+    </p>
+
+    <p>
+        The air parcel from <xref ref="ch3-air-parcel" text="type-global" />
+        experiences such combined compressive forces perpendicular to each of its six faces,
+        as represented by the force vectors in FIG below.
+        The pressure at its center $p_0 = p(x_0, y_0, z_0)$ results. Note that if the air parcel was a different shape, it still would experience these forces perpendicular to its boundaries, which would result in the same central pressure.
+    </p>
+
+</section>
