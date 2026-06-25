@@ -26,8 +26,191 @@
     <p>
         The air parcel from <xref ref="ch3-air-parcel" text="type-global" />
         experiences such combined compressive forces perpendicular to each of its six faces,
-        as represented by the force vectors in FIG below.
-        The pressure at its center $p_0 = p(x_0, y_0, z_0)$ results. Note that if the air parcel was a different shape, it still would experience these forces perpendicular to its boundaries, which would result in the same central pressure.
+        as represented by the force vectors in <xref ref="ch3-airparcel-pressure-forces" text="type-global" /> below.
+        The pressure at its center <m>p_0 = p(x_0, y_0, z_0)</m> results.
+        Note if the air parcel was a different shape,
+        it still would experience these forces perpendicular to its boundaries,
+        which would result in the same central pressure.
     </p>
+
+    <figure xml:id="ch3-airparcel-pressure-forces">
+        <caption>
+            Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from
+            <xref ref="ch3-air-parcel" text="type-global" />,
+            creating pressure <m>p_0 = p(x_0, y_0, z_0)</m> measured at its center.
+        </caption>
+        <image source="images/ch3-airparcel-pressure-forces.png" width="60%">
+            <shortdescription>
+                Rectangular prism with pressure measured at center point and forces compressing all faces.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        For simplicity,
+        consider only the forces acting on the left and right sides of the air parcel from
+        <xref ref="ch3-airparcel-pressure-forces" text="type-global" />,
+        denoted <m>F_L</m> and <m>F_R</m>, respectively,
+        as shown in <xref ref="ch3-airparcel-pressure-forces-x" text="type-global" /> below.
+    </p>
+
+    <figure xml:id="ch3-airparcel-pressure-forces-x">
+        <caption>
+            The air parcel from <xref ref="ch3-airparcel-pressure-forces" text="type-global" />
+            with only the combined compressive forces <m>F_L</m> and <m>F_R</m> acting on the left and right faces of the air parcel,
+            respectively.
+        </caption>
+        <image source="images/ch3-airparcel-pressure-forces-x.png" width="60%">
+            <shortdescription>
+                Rectangular prism with pressure measured at center point and forces compressing the left and right faces.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        We can create a linear approximation of each of these forces
+        using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces
+        and neglecting the higher order terms.
+    </p>
+
+    <p>
+        <md xml:id="ch3-airparcel-pressure-force-left" number="yes">
+            F_L = \left(
+                p_0 + \frac{\partial p}{\partial x} \frac{(-\delta x)}{2}
+            \right) \delta y \, \delta z
+            = \left(
+                p_0 - \frac{\partial p}{\partial x} \frac{\delta x}{2}
+            \right) \delta y \, \delta z
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="ch3-airparcel-pressure-force-right" number="yes">
+            F_R = -\left(
+                p_0 + \frac{\partial p}{\partial x} \frac{\delta x}{2}
+            \right) \delta y \, \delta z
+        </md>
+        
+    </p>
+
+    <p>
+        where <m>\dfrac{\partial p}{\partial x}</m> is evaluated at the center of the air parcel, i.e.,
+        <md>
+            \frac{\partial p}{\partial x} = \left. \frac{\partial p}{\partial x} \right|_{(x,y,z)=(x_0,y_0,z_0)}
+        </md>.
+        Note <m>F_L</m> is positive since it points in the <m>+x</m>-direction and <m>F_R</m> is negative since it points in the <m>-x</m>-direction.
+    </p>
+
+    <p>
+        Adding <m>F_L</m> and <m>F_R</m> produces the net force in the <m>x</m>-direction <m>F_x</m>:
+    </p>
+
+    <p>
+        <md xml:id="ch3-airparcel-pressure-force-x" number="yes">
+            F_x = F_L + F_R = -\frac{\partial p}{\partial x} \delta x \, \delta y \, \delta z
+        </md>
+    </p>
+
+    <p>
+        Since <m>m = \rho \, \delta x \, \delta y \, \delta z</m>,
+        we can write the net force per unit mass in the <m>x</m>-direction by dividing
+        <xref ref="ch3-airparcel-pressure-force-x" text="type-global" /> by <m>m</m>:
+    </p>
+
+    <p>
+        <md xml:id="ch3-airparcel-pressure-acceleration-x" number="yes">
+            \frac{F_x}{m} = a_x = -\frac{1}{\rho} \frac{\partial p}{\partial x}
+        </md>
+    </p>
+
+    <p>
+        Similarly, we can write the net forces per unit mass in the <m>y-</m> and <m>z</m>-directions as
+    </p>
+
+    <p>
+        <md xml:id="ch3-airparcel-pressure-acceleration-y" number="yes">
+            \frac{F_y}{m} = a_y = -\frac{1}{\rho} \frac{\partial p}{\partial y}
+        </md>
+    </p>
+
+    <p>
+        and
+    </p>
+
+    <p>
+        <md xml:id="ch3-airparcel-pressure-acceleration-z" number="yes">
+            \frac{F_z}{m} = a_z = -\frac{1}{\rho} \frac{\partial p}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        Note that each of these accelerations depends on a spatial derivative of pressure,
+        or a <term>pressure gradient</term>,
+        but not on a specific value of pressure.
+    </p>
+
+    <p>
+        We combine these three component accelerations into the <term>pressure gradient force (PGF) per unit mass</term>,
+        or the <term>pressure gradient acceleration</term>:
+    </p>
+
+    <p>
+        <md xml:id="ch3-pressure-gradient-acceleration" number="yes">
+            \frac{\vec{F}_{PG}}{m}
+            = \vec{a}_{PG}
+            = -\frac{1}{\rho} \left[
+                \frac{\partial p}{\partial x} \, \hat{i} + \frac{\partial p}{\partial y} \, \hat{j} + \frac{\partial p}{\partial z} \, \hat{k}
+            \right]
+            =  -\frac{1}{\rho} \nabla p
+        </md>
+    </p>
+    
+    <p>
+        where <m>\vec{F}_{PG}</m> is the PGF and <m>\vec{a}_{PG}</m> is the pressure gradient acceleration.
+    </p>
+
+    <p>
+        A gradient vector points from lower values toward higher values of the scalar quantity of interest,
+        in the direction of fastest increase.
+        Visually, a gradient vector points locally perpendicular to<term>isopleths</term> (contours of constant value)
+        of the scalar quantity of interest toward higher values,
+        and its magnitude is determined by the strength of the gradient:
+        Closer spacing of isopleths indicates larger gradients.
+    </p>
+
+    <p>
+        It follows that the pressure gradient vector <m>\nabla p</m> points from lower to higher values of pressure,
+        in the direction of fastest increase, locally perpendicular to <term>isobars</term> (contours of constant pressure),
+        and its magnitude increases as the strength of the pressure gradient increases.
+        But the negative sign in <xref ref="ch3-pressure-gradient-acceleration" text="type-global" />
+        means that the pressure gradient force vector <m>\vec{F}_{PG}</m> and,
+        likewise, the pressure gradient acceleration vector <m>\vec{a}_{PG}</m>
+        point in the opposite direction as the pressure gradient vector.
+        These principles are visualized in <xref ref="ch3-isobars" text="type-global" /> below.
+    </p>
+
+    <figure xml:id="ch3-isobars">
+        <caption>
+            Three isobars of pressure with values <m>p</m> (middle),
+            <m>p - \Delta p</m> (top),
+            and <m>p + \Delta p</m> (bottom),
+            where the increment of pressure <m>\Delta p</m> is positive.
+            The pressure gradient vectors <m>\nabla p</m>
+            point locally perpendicular to the isobars away from the lower value of pressure denoted by the
+            <m>p - \Delta p</m> isobar and toward the higher value of pressure denoted by the <m>p + \Delta p</m> isobar.
+            The pressure gradient force vectors <m>\vec{F}_{PG}</m>
+            point locally perpendicular to the isobars away from the higher value of pressure denoted by the <m>p + \Delta p</m> isobar
+            and toward the lower value of pressure denoted by the <m>p - \Delta p</m> isobar.
+            Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart),
+            indicating a stronger (weaker) pressure gradient.
+        </caption>
+        <image source="images/ch3-isobars.png" width="60%">
+            <shortdescription>
+                Three isobars spaced further apart on the left and closer together on the right,
+                with pressure gradient and pressure gradient vectors shown at the left and right.
+                The vectors are shorter on the left and longer on the right.
+            </shortdescription>
+        </image>
+    </figure>
 
 </section>

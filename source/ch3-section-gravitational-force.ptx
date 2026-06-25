@@ -21,7 +21,7 @@
     </p>
 
     <p>
-        For an air parcel attracted to Earth by its gravitational force (FIG),
+        For an air parcel attracted to Earth by its gravitational force (<xref ref="ch3-gravitational-force" text="type-global" />),
         we can replace <m>m_1</m> with the air parcel's mass <m>m</m> and <m>m_2</m> with Earth's mass <m>M_E</m>.
         Then <xref ref="eqn-gravitational-force-magnitude" text="type-global" /> dictates
     </p>

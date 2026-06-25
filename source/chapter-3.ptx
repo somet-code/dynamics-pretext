@@ -48,5 +48,6 @@
   </introduction>
 
   <xi:include href="ch3-section-gravitational-force.ptx" />
+  <xi:include href="ch3-section-pressure-gradient-force.ptx" />
 
 </chapter>
