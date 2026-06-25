@@ -34,7 +34,7 @@
     Let's explore the forces acting on this air parcel and how they affect its motion.
   </p>
 
-  <paragraphs>
+  <note>
     <title>Handling mass</title>
 
     <p>
@@ -43,7 +43,7 @@
         which is equivalent to acceleration and could be called <em>specific</em> force.
     </p>
     
-  </paragraphs>
+  </note>
 
   </introduction>
 
