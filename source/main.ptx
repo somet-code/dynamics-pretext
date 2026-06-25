@@ -5,7 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="atmospheric-dynamics-i">
-    <title>Atmospheric Dynamics I</title>
+    <title>METR 3113</title>
+    <subtitle>Atmospheric Dynamics I</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
