@@ -649,6 +649,33 @@ var ptx_lunr_docs = [
   "body": " Three isobars of pressure with values (middle), (top), and (bottom), where the increment of pressure is positive. The pressure gradient vectors point locally perpendicular to the isobars away from the lower value of pressure denoted by the isobar and toward the higher value of pressure denoted by the isobar. The pressure gradient force vectors point locally perpendicular to the isobars away from the higher value of pressure denoted by the isobar and toward the lower value of pressure denoted by the isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.   Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right.   "
 },
 {
+  "id": "ch3-section-friction-force",
+  "level": "1",
+  "url": "ch3-section-friction-force.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Viscous friction force",
+  "body": " Viscous friction force  Forces acting on the surface of an air parcel can cause the air parcel to deform (change in shape and possibly size) through tension, compression, and\/or shear. We express such deforming forces acting on a unit area of the parcel as stress  [Pa], which is measured using the same units as pressure.  Forces can act on any of the six faces of the air parcel from , and they can act in three orthogonal directions on each face, thereby creating stress. In below, the three vectors attached to each face of the air parcel represent the three orthogonal directions, parallel to the coordinate axes, in which a force can act on a given face.   Vectors represent the three orthogonal directions in which forces acting on the six faces of the air parcel from can be directed, thereby creating stress.   Rectangular prism with forces acting in all three directions on all faces.    "
+},
+{
+  "id": "ch3-section-friction-force-2",
+  "level": "2",
+  "url": "ch3-section-friction-force.html#ch3-section-friction-force-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "deform stress "
+},
+{
+  "id": "ch3-airparcel-stress",
+  "level": "2",
+  "url": "ch3-section-friction-force.html#ch3-airparcel-stress",
+  "type": "Figure",
+  "number": "3.3.1",
+  "title": "",
+  "body": " Vectors represent the three orthogonal directions in which forces acting on the six faces of the air parcel from can be directed, thereby creating stress.   Rectangular prism with forces acting in all three directions on all faces.   "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
