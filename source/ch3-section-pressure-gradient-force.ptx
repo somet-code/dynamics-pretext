@@ -150,7 +150,9 @@
     </p>
 
     <p>
-        We combine these three component accelerations into the <term>pressure gradient force (PGF) per unit mass</term>,
+        We combine the three component accelerations of
+        <xref first="ch3-airparcel-pressure-acceleration-x" last="ch3-airparcel-pressure-acceleration-z" text="type-global" />
+        into the <term>pressure gradient force (PGF) per unit mass</term>,
         or the <term>pressure gradient acceleration</term>:
     </p>
 
