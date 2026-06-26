@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Pressure gradient force",
-  "body": " Pressure gradient force   Pressure [Pa] is the magnitude of a force applied perpendicular to a surface divided by the area of the surface:   ,  where is the pressure and [N] is the magnitude of the force applied perpendicular to a surface with area [ ].   Fluid pressure is compressive, and atmospheric pressure is fluid pressure caused by the combined force of numerous discrete atmospheric particles colliding with a surface of any orientation placed anywhere within the atmosphere.  The air parcel from experiences such combined compressive forces perpendicular to each of its six faces, as represented by the force vectors in below. The pressure at its center results. Note if the air parcel was a different shape, it still would experience these forces perpendicular to its boundaries, which would result in the same central pressure.   Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from , creating pressure measured at its center.   Rectangular prism with pressure measured at center point and forces compressing all faces.    For simplicity, consider only the forces acting on the left and right sides of the air parcel from , denoted and , respectively, as shown in below.   The air parcel from with only the combined compressive forces and acting on the left and right faces of the air parcel, respectively.   Rectangular prism with pressure measured at center point and forces compressing the left and right faces.    We can create a linear approximation of each of these forces using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces and neglecting the higher order terms.        where is evaluated at the center of the air parcel, i.e., . Note is positive since it points in the -direction and is negative since it points in the -direction.  Adding and produces the net force in the -direction :     Since , we can write the net force per unit mass in the -direction by dividing by :     Similarly, we can write the net forces per unit mass in the and -directions as     and     Note that each of these accelerations depends on a spatial derivative of pressure, or a pressure gradient , but not on a specific value of pressure.  We combine these three component accelerations into the pressure gradient force (PGF) per unit mass , or the pressure gradient acceleration :     where is the PGF and is the pressure gradient acceleration.  A gradient vector points from lower values toward higher values of the scalar quantity of interest, in the direction of fastest increase. Visually, a gradient vector points locally perpendicular to isopleths (contours of constant value) of the scalar quantity of interest toward higher values, and its magnitude is determined by the strength of the gradient: Closer spacing of isopleths indicates larger gradients.  It follows that the pressure gradient vector points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to isobars (contours of constant pressure), and its magnitude increases as the strength of the pressure gradient increases. But the negative sign in means that the pressure gradient force vector and, likewise, the pressure gradient acceleration vector point in the opposite direction as the pressure gradient vector. These principles are visualized in below.   Three isobars of pressure with values (middle), (top), and (bottom), where the increment of pressure is positive. The pressure gradient vectors point locally perpendicular to the isobars away from the lower value of pressure denoted by the isobar and toward the higher value of pressure denoted by the isobar. The pressure gradient force vectors point locally perpendicular to the isobars away from the higher value of pressure denoted by the isobar and toward the lower value of pressure denoted by the isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.   Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right.    "
+  "body": " Pressure gradient force   Pressure [Pa] is the magnitude of a force applied perpendicular to a surface divided by the area of the surface:   ,  where is the pressure and [N] is the magnitude of the force applied perpendicular to a surface with area [ ].   Fluid pressure is compressive, and atmospheric pressure is fluid pressure caused by the combined force of numerous discrete atmospheric particles colliding with a surface of any orientation placed anywhere within the atmosphere.  The air parcel from experiences such combined compressive forces perpendicular to each of its six faces, as represented by the force vectors in below. The pressure at its center results. Note if the air parcel was a different shape, it still would experience these forces perpendicular to its boundaries, which would result in the same central pressure.   Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from , creating pressure measured at its center.   Rectangular prism with pressure measured at center point and forces compressing all faces.    For simplicity, consider only the forces acting on the left and right sides of the air parcel from , denoted and , respectively, as shown in below.   The air parcel from with only the combined compressive forces and acting on the left and right faces of the air parcel, respectively.   Rectangular prism with pressure measured at center point and forces compressing the left and right faces.    We can create a linear approximation of each of these forces using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces and neglecting the higher order terms.        where is evaluated at the center of the air parcel, i.e., . Note is positive since it points in the -direction and is negative since it points in the -direction.  Adding and produces the net force in the -direction :     Since , we can write the net force per unit mass in the -direction by dividing by :     Similarly, we can write the net forces per unit mass in the and -directions as     and     Note that each of these accelerations depends on a spatial derivative of pressure, or a pressure gradient , but not on a specific value of pressure.  We combine the three component accelerations of into the pressure gradient force (PGF) per unit mass , or the pressure gradient acceleration :     where is the PGF and is the pressure gradient acceleration.  A gradient vector points from lower values toward higher values of the scalar quantity of interest, in the direction of fastest increase. Visually, a gradient vector points locally perpendicular to isopleths (contours of constant value) of the scalar quantity of interest toward higher values, and its magnitude is determined by the strength of the gradient: Closer spacing of isopleths indicates larger gradients.  It follows that the pressure gradient vector points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to isobars (contours of constant pressure), and its magnitude increases as the strength of the pressure gradient increases. But the negative sign in means that the pressure gradient force vector and, likewise, the pressure gradient acceleration vector point in the opposite direction as the pressure gradient vector. These principles are visualized in below.   Three isobars of pressure with values (middle), (top), and (bottom), where the increment of pressure is positive. The pressure gradient vectors point locally perpendicular to the isobars away from the lower value of pressure denoted by the isobar and toward the higher value of pressure denoted by the isobar. The pressure gradient force vectors point locally perpendicular to the isobars away from the higher value of pressure denoted by the isobar and toward the lower value of pressure denoted by the isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.   Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right.    "
 },
 {
   "id": "ch3-section-pressure-gradient-force-2",
@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Viscous friction force",
-  "body": " Viscous friction force  Forces acting on the surface of an air parcel can cause the air parcel to deform (change in shape and possibly size) through tension, compression, and\/or shear. We express such deforming forces acting on a unit area of the parcel as stress  [Pa], which is measured using the same units as pressure.  Forces can act on any of the six faces of the air parcel from , and they can act in three orthogonal directions on each face, thereby creating stress. In below, the three vectors attached to each face of the air parcel represent the three orthogonal directions, parallel to the coordinate axes, in which a force can act on a given face.   Vectors represent the three orthogonal directions in which forces acting on the six faces of the air parcel from can be directed, thereby creating stress.   Rectangular prism with forces acting in all three directions on all faces.    "
+  "body": " Viscous friction force  Forces acting on the surface of an air parcel can cause the air parcel to deform (change in shape and possibly size) through tension, compression, and\/or shear. We express such deforming forces acting on a unit area of the parcel as stress  [Pa], which is measured using the same units as pressure.  Forces can act on any of the six faces of the air parcel from , and they can act in three orthogonal directions on each face, thereby creating stress. In below, the three vectors attached to each face of the air parcel represent the three orthogonal directions, parallel to the coordinate axes, in which a force can act on a given face.   Vectors represent the three orthogonal directions in which forces acting on the six faces of the air parcel from can be directed, thereby creating stress.   Rectangular prism with forces acting in all three directions on all faces.    While stress is the result of external forces, it translates internally through the air parcel via viscosity. Viscosity expresses how much a fluid like air resists deformation due to interactions such as collisions between its own particles. Its value depends on the fluid's molecular makeup as well as its thermodynamic state, and it often is measured using the dynamic viscosity  [Pa s], where larger values of reflect higher viscosity.  When faster-moving particles of a fluid collide with slower-moving particles, they transfer some of their momentum to the slower-moving particles. This causes the faster-moving particles to slow down while the slower-moving particles speed up. Thus, through momentum transfer between adjacent particles, viscosity minimizes velocity differences within a fluid.  If the air parcel of is at rest relative to its environment, it only experiences deformation due to the forces of discrete particles randomly colliding with its bounding surface, which collectively are expressed per unit area as pressure and are compressive, as discussed previously in . But if there is relative motion between the air parcel and its environment due to fluid flow, the air parcel can experience additional (normal and tangential) stresses due to fluid velocity gradients (i.e., wind shear ) that translate through it via viscosity. We deem the sum total of these additional deforming forces the viscous friction force or sometimes simply the viscous force , the friction force , or the frictional force .  The components of the viscous friction force per unit mass are given by     where [ ] is the kinematic viscosity .  We combine the three component accelerations of into the viscous friction force per unit mass , or the viscous friction acceleration :     where is the viscous friction force and is the viscous friction acceleration.  The complete derivation of and is beyond the scope of this course: See Kundu et al. (2016) for a detailed derivation. Martin (2006) presents a simplified derivation of in his Subsection 2.1.3; since the viscous friction force can be neglected in most meteorological applications, as discussed below, I refer you to his derivation rather than reproduce it here.  The dependence of the viscous friction force on as shown in means that the viscous friction force is present only in a moving fluid. Furthermore, the second-order derivatives encompassed by the Laplacian of velocity and shown explicitly in mean that the viscous friction force is present only in moving fluids with nonlinear velocity profiles.  For altitudes relevant to the large majority of meteorological applications, the dynamic viscosity of air is largest next to Earth's surface where the air is densest, pressure is highest, and temperature in the troposphere generally is warmest: According to the U.S. Standard Atmosphere (1976) , under average conditions, Pa s next to Earth's surface and decreases linearly through the troposphere. Consequently, the viscous friction force is negligibly small in atmospheric motions occurring more than a few millimeters above the surface. But the extreme wind shear that occurs in this layer due to viscosity leads to turbulence, which translates the effects of the viscous friction force upward through a much greater depth: up to a few kilometers during the daytime! Turbulence is not of focus in this course, but it is an interesting and meteorologically significant (not to mention aeronautically significant!) topic that you will return to in future courses.  "
 },
 {
   "id": "ch3-section-friction-force-2",
@@ -676,13 +676,49 @@ var ptx_lunr_docs = [
   "body": " Vectors represent the three orthogonal directions in which forces acting on the six faces of the air parcel from can be directed, thereby creating stress.   Rectangular prism with forces acting in all three directions on all faces.   "
 },
 {
+  "id": "ch3-section-friction-force-5",
+  "level": "2",
+  "url": "ch3-section-friction-force.html#ch3-section-friction-force-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Viscosity dynamic viscosity "
+},
+{
+  "id": "ch3-section-friction-force-7",
+  "level": "2",
+  "url": "ch3-section-friction-force.html#ch3-section-friction-force-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "wind shear viscous friction force viscous force friction force frictional force "
+},
+{
+  "id": "ch3-section-friction-force-10",
+  "level": "2",
+  "url": "ch3-section-friction-force.html#ch3-section-friction-force-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "kinematic viscosity "
+},
+{
+  "id": "ch3-section-friction-force-11",
+  "level": "2",
+  "url": "ch3-section-friction-force.html#ch3-section-friction-force-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "viscous friction force per unit mass viscous friction acceleration "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
   "type": "References",
   "number": "4",
   "title": "References",
-  "body": " References   Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b    "
+  "body": " References   Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
 },
 {
   "id": "holton-hakim-6",
@@ -694,11 +730,20 @@ var ptx_lunr_docs = [
   "body": " 3rd edition  "
 },
 {
+  "id": "kundu-cohen-dowling-7",
+  "level": "2",
+  "url": "references.html#kundu-cohen-dowling-7",
+  "type": "Note",
+  "number": "4.2.1",
+  "title": "",
+  "body": " 6th edition  "
+},
+{
   "id": "stull-5",
   "level": "2",
   "url": "references.html#stull-5",
   "type": "Note",
-  "number": "4.4.1",
+  "number": "4.5.1",
   "title": "",
   "body": " Version 1.02b  "
 },
