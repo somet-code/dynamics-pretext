@@ -16,6 +16,20 @@
         </note>
     </biblio>
 
+    <biblio type="bibtex" xml:id="kundu-cohen-dowling">
+        <author>Kundu, P. K.</author>
+        <author>Cohen, I. M.</author>
+        <author>Dowling, D. R.</author>
+        <title>Fluid Mechanics</title>
+        <publisher>Academic Press</publisher>
+        <year>2016</year>
+        <note>
+            <p>
+                6th edition
+            </p>
+        </note>
+    </biblio>
+
     <biblio type="bibtex" xml:id="marshall-plumb">
         <author>Marshall, J.</author>
         <author>Plumb, R. A.</author>
@@ -41,6 +55,16 @@
                 Version 1.02b
             </p>
         </note>
+    </biblio>
+
+    <biblio type="bibtex" xml:id="us-standard-atmosphere-1976">
+        <author>National Oceanic and Atmospheric Administration</author>
+        <author>National Aeronautics and Space Administration</author>
+        <author>United States Air Force</author>
+        <title>U.S. Standard Atmosphere, 1976</title>
+        <publisher>U.S. Government Printing Office</publisher>
+        <year>1976</year>
+
     </biblio>
 
 </references>

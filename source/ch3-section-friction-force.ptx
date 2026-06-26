@@ -32,4 +32,154 @@
         </image>
     </figure>
 
+    <p>
+        While stress is the result of external forces,
+        it translates internally through the air parcel via viscosity.
+        <term>Viscosity</term> expresses how much a fluid like air resists deformation due to interactions such as collisions between its own particles.
+        Its value depends on the fluid's molecular makeup as well as its thermodynamic state,
+        and it often is measured using the <term>dynamic viscosity</term> <m>\mu</m> [Pa s],
+        where larger values of <m>\mu</m> reflect higher viscosity.
+    </p>
+
+    <p>
+        When faster-moving particles of a fluid collide with slower-moving particles,
+        they transfer some of their momentum to the slower-moving particles.
+        This causes the faster-moving particles to slow down while the slower-moving particles speed up.
+        Thus, through momentum transfer between adjacent particles,
+        viscosity minimizes velocity differences within a fluid.
+    </p>
+
+    <p>
+        If the air parcel of <xref ref="ch3-air-parcel" text="type-global" /> is at rest relative to its environment,
+        it only experiences deformation due to the forces of discrete particles randomly colliding with its bounding surface,
+        which collectively are expressed per unit area as pressure and are compressive,
+        as discussed previously in <xref ref="ch3-section-pressure-gradient-force" text="type-global" />.
+        But if there is relative motion between the air parcel and its environment due to fluid flow,
+        the air parcel can experience additional (normal and tangential) stresses
+        due to fluid velocity gradients (i.e., <term>wind shear</term>)
+        that translate through it via viscosity.
+        We deem the sum total of these additional deforming forces the <term>viscous friction force</term>
+        or sometimes simply the <term>viscous force</term>,
+        the <term>friction force</term>,
+        or the <term>frictional force</term>.
+    </p>
+    
+    <p>
+        The components of the viscous friction force per unit mass are given by
+    </p>
+
+    <p>
+        <md>
+            <mrow xml:id="ch3-friction-acceleration-x" number="yes">
+                \frac{F_{rx}}{m}
+                =
+                a_{r,x}
+                =
+                \nu \left[
+                    \frac{\partial^2 u}{\partial x^2}
+                    +
+                    \frac{\partial^2 u}{\partial y^2}
+                    +
+                    \frac{\partial^2 u}{\partial z^2}
+                \right]
+            </mrow>
+            <mrow xml:id="ch3-friction-acceleration-y" number="yes">
+                \frac{F_{ry}}{m}
+                =
+                a_{r,y}
+                =
+                \nu \left[
+                    \frac{\partial^2 v}{\partial x^2}
+                    +
+                    \frac{\partial^2 v}{\partial y^2}
+                    +
+                    \frac{\partial^2 v}{\partial z^2}
+                \right]
+            </mrow>
+            <mrow xml:id="ch3-friction-acceleration-z" number="yes">
+                \frac{F_{rz}}{m}
+                =
+                a_{r,z}
+                =
+                \nu \left[
+                    \frac{\partial^2 w}{\partial x^2}
+                    +
+                    \frac{\partial^2 w}{\partial y^2}
+                    +
+                    \frac{\partial^2 w}{\partial z^2}
+                \right]
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        where <m>\nu = \dfrac{\mu}{\rho}</m> [<m>\text{m}^{2} \, \text{s}^{-1}</m>] is the <term>kinematic viscosity</term>.
+    </p>
+
+    <p>
+        We combine the three component accelerations of
+        <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+        into the <term>viscous friction force per unit mass</term>,
+        or the <term>viscous friction acceleration</term>:
+    </p>
+
+    <p>
+        <md xml:id="ch3-friction-acceleration" number="yes">
+            \frac{\vec{F}_r}{m}
+            =
+            \vec{a}_r
+            =
+            \nu \nabla^2 \vec{u} 
+        </md>
+    </p>
+
+    <p>
+        where <m>\vec{F}_r</m> is the viscous friction force and <m>\vec{a}_r</m> is the viscous friction acceleration.
+    </p>
+
+    <p>
+        The complete derivation of
+        <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+        and
+        <xref ref="ch3-friction-acceleration" text="type-global" />
+        is beyond the scope of this course: See
+        <xref ref="kundu-cohen-dowling" text="custom">Kundu et al. (2016)</xref>
+        for a detailed derivation.
+        <xref ref="martin" text="custom">Martin (2006)</xref>
+        presents a simplified derivation of
+        <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+        in his Subsection 2.1.3;
+        since the viscous friction force can be neglected in most meteorological applications,
+        as discussed below,
+        I refer you to his derivation rather than reproduce it here.
+    </p>
+
+    <p>
+        The dependence of the viscous friction force on <m>\vec{u}</m>
+        as shown in <xref ref="ch3-friction-acceleration" text="type-global" />
+        means that the viscous friction force is present only in a moving fluid.
+        Furthermore,
+        the second-order derivatives encompassed by the Laplacian of velocity and shown explicitly in
+        <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+        mean that the viscous friction force is present only in moving fluids with nonlinear velocity profiles.
+    </p>
+
+    <p>
+        For altitudes relevant to the large majority of meteorological applications,
+        the dynamic viscosity of air is largest next to Earth's surface where the air is densest,
+        pressure is highest,
+        and temperature in the troposphere generally is warmest:
+        According to the <xref ref="us-standard-atmosphere-1976" text="custom">U.S. Standard Atmosphere (1976)</xref>,
+        under average conditions,
+        <m>\mu = 1.8 \times 10^{-5}</m> Pa s next to Earth's surface and decreases linearly through the troposphere.
+        Consequently, the viscous friction force is negligibly small in atmospheric motions occurring more than a few millimeters above the surface.
+        But the extreme wind shear that occurs in this layer due to viscosity leads to turbulence,
+        which translates the effects of the viscous friction force upward through a much greater depth:
+        up to a few kilometers during the daytime!
+        Turbulence is not of focus in this course,
+        but it is an interesting and meteorologically significant
+        (not to mention aeronautically significant!)
+        topic that you will return to in future courses.
+    </p>
+
 </section>
