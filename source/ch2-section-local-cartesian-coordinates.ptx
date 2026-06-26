@@ -232,7 +232,7 @@
                 and vertical (<m>w</m>) velocity components (right),
                 respectively,
                 of the local Cartesian coordinate system.
-                Reproduced from Fig. 1.1 of <url href="https://www.eoas.ubc.ca/books/Practical_Meteorology/">Stull (2017)</url>
+                Reproduced from Fig. 1.1 of <xref ref="stull" text="custom">Stull (2017)</xref>
                 under <url href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</url>.
             </caption>
             <image source="images/ch2-local-cartesian-coordinates-stull.png" width="100%">
