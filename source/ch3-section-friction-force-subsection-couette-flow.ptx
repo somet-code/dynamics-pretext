@@ -8,7 +8,7 @@
     which is the flow of a viscous fluid bounded between two surfaces moving tangentially relative to each other,
     often is used to visualize <term>shear stress</term>
     (also called <term>tangential stress</term>).
-    The set-up of steady planar Couette flow is shown in FIG below.
+    The set-up of steady planar Couette flow is shown in <xref ref="ch3-couette-flow" text="type-global" /> below.
   </p>
 
   <figure xml:id="ch3-couette-flow">
