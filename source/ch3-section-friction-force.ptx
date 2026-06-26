@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch3-section-friction-force" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Viscous friction force</title>
+
+    <p>
+        Forces acting on the surface of an air parcel can cause the air parcel to <term>deform</term> (change in shape and possibly size)
+        through tension, compression, and/or shear.
+        We express such deforming forces acting on a unit area of the parcel as <term>stress</term> <m>\tau</m> [Pa],
+        which is measured using the same units as pressure.
+    </p>
+
+    <p>
+        Forces can act on any of the six faces of the air parcel from <xref ref="ch3-air-parcel" text="type-global" />,
+        and they can act in three orthogonal directions on each face, thereby creating stress.
+        In <xref ref="ch3-airparcel-stress" text="type-global" /> below,
+        the three vectors attached to each face of the air parcel represent the three orthogonal directions,
+        parallel to the coordinate axes,
+        in which a force can act on a given face.
+    </p>
+
+    <figure xml:id="ch3-airparcel-stress">
+        <caption>
+            Vectors represent the three orthogonal directions in which forces acting on the six faces of the air parcel from
+            <xref ref="ch3-air-parcel" text="type-global" /> can be directed,
+            thereby creating stress.
+        </caption>
+        <image source="images/ch3-airparcel-stress.png" width="60%">
+            <shortdescription>
+                Rectangular prism with forces acting in all three directions on all faces.
+            </shortdescription>
+        </image>
+    </figure>
+
+</section>
