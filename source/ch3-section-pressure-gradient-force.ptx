@@ -206,7 +206,7 @@
             Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart),
             indicating a stronger (weaker) pressure gradient.
         </caption>
-        <image source="images/ch3-isobars.png" width="60%">
+        <image source="images/ch3-isobars.png" width="80%">
             <shortdescription>
                 Three isobars spaced further apart on the left and closer together on the right,
                 with pressure gradient and pressure gradient vectors shown at the left and right.
