@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch3-section-friction-force-subsection-couette-flow" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Couette flow</title>
+
+  <p>
+    <term>Couette flow</term>,
+    which is the flow of a viscous fluid bounded between two surfaces moving tangentially relative to each other,
+    often is used to visualize <term>shear stress</term>
+    (also called <term>tangential stress</term>).
+    The set-up of steady planar Couette flow is shown in FIG below.
+  </p>
+
+  <figure xml:id="ch3-couette-flow">
+    <caption>
+        Vertical cross-section in the <m>xz</m>-plane depicting two surfaces (gray rectangles)
+        of infinite length (in the <m>x</m>-direction)
+        and width (in the <m>y</m>-direction, not shown but perpendicular to the screen)
+        separated by vertical distance <m>h</m> and bounding a horizontally infinite viscous fluid of depth <m>h</m>.
+        The lower surface is fixed (as indicated by the hatching) and the upper surface moves to the right at <m>u_0</m>.
+        The blue dashed arrows represent steady planar Couette flow in the fluid.
+        The solid blue lines give the vertical profile of the horizontal velocity <m>u(z)</m>.
+    </caption>
+    <image source="images/ch3-couette-flow.png" width="100%">
+        <shortdescription>
+            Fluid bounded between two surfaces moving tangentially relative to each other,
+            with the lower surface fixed and the upper surface moving to the right,
+            with horizontal flow in the fluid between the two surfaces.
+        </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    The upper surface drags the fluid particles directly below it:
+    You could think of these particles as constituting an infinitesimally thin layer of fluid directly below the upper surface.
+    This causes the layer of fluid in contact with the plate to move to the right at <m>u_0</m> with the plate.
+    The upper layer of fluid drags the layer of fluid directly below it due to viscosity,
+    and that layer of fluid drags the layer of fluid directly below it due to viscosity,
+    and so on.
+    Likewise,
+    the lower surface drags the fluid particles directly above it,
+    causing that layer of fluid to also be motionless.
+    The lower layer of fluid drags the layer of fluid directly above it due to viscosity,
+    and that layer of fluid drags the layer of fluid directly above it due to viscosity,
+    and so on.
+    After a time,
+    <term>steady state</term>
+    (i.e., <m>\dfrac{\partial u}{\partial t} = 0</m>)
+    is achieved through this downward momentum transfer by the fluid particles.
+    The resulting vertical profile of the horizontal velocity is
+  </p>
+
+  <p>
+    <md xml:id="ch3-couette-flow-velocity-profile" number="yes">
+        u(z) = u_0 \frac{z}{h}
+    </md>
+  </p>
+
+  <p>
+    The shear stress for a Newtonian fluid<mdash />which air can be approximated as<mdash />has been determined empirically
+    to be linearly related to velocity gradients within the fluid,
+    as expressed by <term>Newton's law of viscosity</term>.
+    For planar Couette flow, this produces
+  </p>
+
+  <p>
+    <md xml:id="ch3-newton-law-viscosity" number="yes">
+        \tau_{xz} = \mu \frac{\partial u}{\partial z}
+    </md>
+  </p>
+
+  <p>
+    where the first subscript <m>x</m> indicates the direction of the normal vector of the cross-sectional area upon which stress is acting
+    (also the flow velocity component under consideration)
+    and the second subscript <m>z</m> indicates the direction in which the stress acts
+    (also the direction in which the flow is sheared).
+    <m>\tau_{xz}</m> represents the external force per unit area that must be applied to the plate to keep it moving at a constant rate despite the viscous fluid dragging it back.
+  </p>
+
+  <p>
+    Note that <m>\tau_{xz}</m> in this simple case of steady planar Couette flow is constant since
+    <md>
+        \frac{\partial u}{\partial z} = \frac{u_0}{h}
+    </md>.
+    Thus, it follows that no viscous friction force is experienced by the fluid:
+    Since <m>u</m> is a linear function of <m>z</m>,
+    <md>
+        \frac{\partial^2 u}{\partial z^2} = 0
+    </md>.
+  </p>
+
+  <p>
+    But if <m>u(z)</m> was nonlinear,
+    such as is the case soon after the upper surface begins moving forward and before steady state is achieved,
+    <md>
+        \frac{\partial^2 u}{\partial z^2} \neq 0
+    </md>
+    and the fluid would experience a non-zero viscous friction force that progressively nudges it toward steady planar Couette flow.
+  </p>
+
+</subsection>
