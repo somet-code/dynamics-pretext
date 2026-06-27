@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch3-section-newtons-laws" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Newton's laws of motion</title>
+
+    <p>
+        Now that we've explored the forces acting on the air parcel of <xref ref="ch3-air-parcel" text="type-global" />,
+        we can combine them using Newton's laws of motion.
+    </p>
+
+    <p>
+        <url href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/">Newton's laws of motion</url>
+        often are phrased in some variation of the following.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    <m>1^{\text{st}}</m> law:
+                    An object remains at rest or in motion at constant velocity unless acted on by a non-zero net external force.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>2^{\text{nd}}</m> law:
+                    The net external force acting on an object equals the time rate of change of the object's momentum.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>3^{\text{rd}}</m> law:
+                    Whenever one object exerts a force on a second object,
+                    the second object exerts an equal and opposite force on the first object.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <xref ref="stull" text="custom">Stull (2017)</xref> (p. 292)
+        shares translations of these laws from Newton's <pubtitle>The Mathematical Principles of Natural Philosophy</pubtitle>.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    <m>1^{\text{st}}</m> law:
+                    Every body perseveres in its state of being at rest or of moving uniformly straight forward,
+                    except inasmuch as it is compelled by impressed forces to change its state.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>2^{\text{nd}}</m> law:
+                    Change in motion is proportional to the motive force impressed and takes place following the straight line along which that force is impressed.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>3^{\text{rd}}</m> law:
+                    To any action, there is always a contrary, equal reaction;
+                    in other words, the actions of two bodies each upon the other are always equal and opposite in direction.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Newton's <m>1^{\text{st}}</m> law of motion has come to define <term>inertia</term>,
+        which is the tendency described above.
+    </p>
+
+    <p>
+        Newton's <m>2^{\text{nd}}</m> law motion follows from the <m>1^{\text{st}}</m> law and can be expressed mathematically as
+    </p>
+
+    <p>
+        <md xml:id="ch3-newtons-2nd-law" number="yes">
+            \vec{F}_{net} = \frac{D \vec{p}}{Dt}
+        </md>
+    </p>
+
+    <p>
+        where <m>\vec{F}_{net} = \sum\limits_i \vec{F}_i</m>
+        is the net force that results from the sum of all forces <m>\vec{F}_i</m>
+        acting on the object of interest and <m>\vec{p} = m\vec{u}</m> [<m>\text{kg} \, \text{m} \, \text{s}^{-1}</m>]
+        is the object's momentum.
+    </p>
+
+    <p>
+        Substituting the definition of momentum into <xref ref="ch3-newtons-2nd-law" text="type-global" />
+        and applying the product rule produces
+    </p>
+
+    <p>
+        <md xml:id="ch3-newtons-2nd-law-product-rule" number="yes">
+            \vec{F}_{net} = \frac{D \left( m\vec{u} \right)}{Dt} = m \frac{D \vec{u}}{Dt} + \vec{u} \frac{Dm}{Dt}
+        </md>
+    </p>
+
+    <p>
+        If the object's mass is <term>conserved</term> (constant),
+        which is the usual assumption,
+    </p>
+
+    <p>
+        <md xml:id="ch3-mass-conservation" number="yes">
+            \frac{Dm}{Dt} = 0
+        </md>
+    </p>
+
+    <p>
+        and consequently <xref ref="ch3-newtons-2nd-law-product-rule" text="type-global" />
+        reduces to the simpler, more common form of Newton's <m>2^{\text{nd}}</m> law of motion:
+    </p>
+
+    <p>
+        <md xml:id="ch3-newtons-2nd-law-simplified" number="yes">
+            \vec{F}_{net} = m\vec{a}
+        </md>
+    </p>
+
+    <p>
+        where <m>\vec{a} = \dfrac{D \vec{u}}{Dt}</m> is the object's acceleration.
+    </p>
+
+    <p>
+        Dividing <xref ref="ch3-newtons-2nd-law-simplified" text="type-global" />
+        by the object's mass <m>m</m> isolates the object's acceleration:
+    </p>
+
+    <p>
+        <md xml:id="ch3-newtons-2nd-law-simplified-acceleration" number="yes">
+            \frac{\vec{F}_{net}}{m} = \vec{a}
+        </md>
+    </p>
+
+    <p>
+        Using acceleration rather than force is preferable in meteorology since it is not reasonable to measure the mass of air parcel
+        (our object of interest).
+    </p>
+
+    <p>
+        For an air parcel as described in this chapter,
+        assuming its mass is constant (the typical assumption and one that we will revisit later when exploring mass conservation),
+        we can combine the effects of the <term>fundamental forces</term> on it to expand the left side of
+        <xref ref="ch3-newtons-2nd-law-simplified-acceleration" text="type-global" /> as follows:
+    </p>
+
+    <p>
+        <md xml:id="ch3-equation-motion-start" number="yes">
+            \frac{\vec{F}_{net}}{m}
+            = \frac{\vec{F}_g
+            + \vec{F}_{PG}
+            + \vec{F}_r}{m}
+            = \vec{a}
+            = \vec{g^*}
+            -\frac{1}{\rho} \nabla p
+            + \nu \nabla^2 \vec{u}
+        </md>
+    </p>
+
+    <p>
+        Furthermore, since the acceleration of the air parcel is given by <m>\vec{a} = \dfrac{D \vec{u}}{Dt}</m>,
+        <xref ref="ch3-equation-motion-start" text="type-global" /> can be written as
+    </p>
+
+    <p>
+        <md xml:id="ch3-equation-motion-basic" number="yes">
+            \frac{D \vec{u}}{Dt} = \vec{g^*} -\frac{1}{\rho} \nabla p + \nu \nabla^2 \vec{u}
+        </md>
+    </p>
+
+    <p>
+        which we call the <term>vector equation of motion</term> or the <term>vector momentum equation</term>,
+        or simply the singular <term>equation of motion</term> or <term>momentum equation</term>.
+    </p>
+
+    <p>
+        <xref ref="ch3-equation-motion-basic" text="type-global" />
+        is a statement of <term>momentum conservation</term>
+        since it gives the net external force (per unit mass) that could cause an air parcel's momentum to change.
+        And if the individual forces that make up the net external force are not present or cancel each other out,
+        the air parcel's momentum would not change.
+    </p>
+
+    <p>
+        While <xref ref="ch3-equation-motion-basic" text="type-global" />
+        is an excellent start to applying Newton's <m>2^{\text{nd}}</m> law of motion to the motions of air parcels in Earth's atmosphere,
+        it is incomplete for our purposes:
+        That is because it is valid only for a non-accelerating coordinate system.
+        But we want to analyze air parcel motions using the local Cartesian coordinate system,
+        which is attached to the rotating Earth and therefore accelerates along with Earth!
+        We will tackle the complication of Earth's rotation and consequent acceleration of the local Cartesian coordinate system in Chapter 4.
+    </p>
+
+</section>
