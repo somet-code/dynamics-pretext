@@ -748,6 +748,60 @@ var ptx_lunr_docs = [
   "body": "Newton's law of viscosity "
 },
 {
+  "id": "ch3-section-newtons-laws",
+  "level": "1",
+  "url": "ch3-section-newtons-laws.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Newton’s laws of motion",
+  "body": " Newton's laws of motion  Now that we've explored the forces acting on the air parcel of , we can combine them using Newton's laws of motion.   Newton's laws of motion often are phrased in some variation of the following.      law: An object remains at rest or in motion at constant velocity unless acted on by a non-zero net external force.     law: The net external force acting on an object equals the time rate of change of the object's momentum.     law: Whenever one object exerts a force on a second object, the second object exerts an equal and opposite force on the first object.      Stull (2017) (p. 292) shares translations of these laws from Newton's The Mathematical Principles of Natural Philosophy .      law: Every body perseveres in its state of being at rest or of moving uniformly straight forward, except inasmuch as it is compelled by impressed forces to change its state.     law: Change in motion is proportional to the motive force impressed and takes place following the straight line along which that force is impressed.     law: To any action, there is always a contrary, equal reaction; in other words, the actions of two bodies each upon the other are always equal and opposite in direction.     Newton's law of motion has come to define inertia , which is the tendency described above.  Newton's law motion follows from the law and can be expressed mathematically as     where is the net force that results from the sum of all forces acting on the object of interest and [ ] is the object's momentum.  Substituting the definition of momentum into and applying the product rule produces     If the object's mass is conserved (constant), which is the usual assumption,     and consequently reduces to the simpler, more common form of Newton's law of motion:     where is the object's acceleration.  Dividing by the object's mass isolates the object's acceleration:     Using acceleration rather than force is preferable in meteorology since it is not reasonable to measure the mass of air parcel (our object of interest).  For an air parcel as described in this chapter, assuming its mass is constant (the typical assumption and one that we will revisit later when exploring mass conservation), we can combine the effects of the fundamental forces on it to expand the left side of as follows:     Furthermore, since the acceleration of the air parcel is given by , can be written as     which we call the vector equation of motion or the vector momentum equation , or simply the singular equation of motion or momentum equation .   is a statement of momentum conservation since it gives the net external force (per unit mass) that could cause an air parcel's momentum to change. And if the individual forces that make up the net external force are not present or cancel each other out, the air parcel's momentum would not change.  While is an excellent start to applying Newton's law of motion to the motions of air parcels in Earth's atmosphere, it is incomplete for our purposes: That is because it is valid only for a non-accelerating coordinate system. But we want to analyze air parcel motions using the local Cartesian coordinate system, which is attached to the rotating Earth and therefore accelerates along with Earth! We will tackle the complication of Earth's rotation and consequent acceleration of the local Cartesian coordinate system in Chapter 4.  "
+},
+{
+  "id": "ch3-section-newtons-laws-7",
+  "level": "2",
+  "url": "ch3-section-newtons-laws.html#ch3-section-newtons-laws-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "inertia "
+},
+{
+  "id": "ch3-section-newtons-laws-13",
+  "level": "2",
+  "url": "ch3-section-newtons-laws.html#ch3-section-newtons-laws-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "conserved "
+},
+{
+  "id": "ch3-section-newtons-laws-21",
+  "level": "2",
+  "url": "ch3-section-newtons-laws.html#ch3-section-newtons-laws-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "fundamental forces "
+},
+{
+  "id": "ch3-section-newtons-laws-25",
+  "level": "2",
+  "url": "ch3-section-newtons-laws.html#ch3-section-newtons-laws-25",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vector equation of motion vector momentum equation equation of motion momentum equation "
+},
+{
+  "id": "ch3-section-newtons-laws-26",
+  "level": "2",
+  "url": "ch3-section-newtons-laws.html#ch3-section-newtons-laws-26",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "momentum conservation "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
