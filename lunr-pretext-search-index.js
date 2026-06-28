@@ -268,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Finite differencing",
-  "body": " Finite differencing  Rarely do we know the form of the differentiable function that describes a given state variable. But thanks to meteorological instruments and numerical and artificial intelligence (AI) weather models, we do have discrete measurements of various state variable in space and time, and so we can apply finite differencing to approximate derivatives using discrete differences between measurements.  Consider the one-dimensional case first. If we have measurements of a state variable at a central point and two other points and each spaced from the central point, as shown in below, we can make the approximations     and     Note that is equivalent to the difference quotient of precalculus.   Adapted from Martin Figure 1.6. Example of centered differencing. Central point and equally-spaced surrounding points and , where is distance from . increases to the right.   A point in the middle of two equally-spaced points.    The reasoning of centered differencing can be applied to partial derivatives by only allowing one independent variable to change. For example, if we have a state variable , we can use centered differencing to approximate its first and second partial derivatives with respect to as     and     respectively.  Furthermore, it is not required that surrounding points be spaced at equal distances around a central point. For example,     and     are valid algorithms for approximating ordinary and partial derivatives, respectively, including in cases when and are not spaced at equal distances from . This more general case is shown in below. In fact, either or (but not both) could coincide with and these algorithms still would be valid!  Once again, is equivalent to the difference quotient of precalculus.   Reproduction of , but the surrounding points and are not equally spaced from the point .   A point in the middle of two unequally-spaced points.    "
+  "body": " Finite differencing  Rarely do we know the form of the differentiable function that describes a given state variable. But thanks to meteorological instruments and numerical and artificial intelligence (AI) weather models, we do have discrete measurements of various state variable in space and time, and so we can apply finite differencing to approximate derivatives using discrete differences between measurements.  Consider the one-dimensional case first. If we have measurements of a state variable at a central point and two other points and each spaced from the central point, as shown in below, we can make the approximations     and     Note that is equivalent to the difference quotient of precalculus.   Adapted from Martin Figure 1.6. Example of centered differencing. Central point and equally-spaced surrounding points and , where is distance from . increases to the right.   A point in the middle of two equally-spaced points.    The method of approximating shown in is called centered differencing , and its formula comes from subtracting the Taylor Series expansion of at evaluated at from the Taylor series expansion of at evaluated at and then neglecting higher-order terms. See Martin (2006) Subsection 1.2.3 for derivations of and .  The reasoning of centered differencing can be applied to partial derivatives by only allowing one independent variable to change. For example, if we have a state variable , we can use centered differencing to approximate its first and second partial derivatives with respect to as     and     respectively.  Furthermore, it is not required that surrounding points be spaced at equal distances around a central point. For example,     and     are valid algorithms for approximating ordinary and partial derivatives, respectively, including in cases when and are not spaced at equal distances from . This more general case is shown in below. In fact, either or (but not both) could coincide with and these algorithms still would be valid!  Once again, is equivalent to the difference quotient of precalculus.   Reproduction of , but the surrounding points and are not equally spaced from the central point .   A point in the middle of two unequally-spaced points.    "
 },
 {
   "id": "ch1-section-finite-differencing-2",
@@ -298,13 +298,22 @@ var ptx_lunr_docs = [
   "body": " Adapted from Martin Figure 1.6. Example of centered differencing. Central point and equally-spaced surrounding points and , where is distance from . increases to the right.   A point in the middle of two equally-spaced points.   "
 },
 {
+  "id": "ch1-section-finite-differencing-9",
+  "level": "2",
+  "url": "ch1-section-finite-differencing.html#ch1-section-finite-differencing-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "centered differencing "
+},
+{
   "id": "ch1-finite-difference",
   "level": "2",
   "url": "ch1-section-finite-differencing.html#ch1-finite-difference",
   "type": "Figure",
   "number": "1.3.2",
   "title": "",
-  "body": " Reproduction of , but the surrounding points and are not equally spaced from the point .   A point in the middle of two unequally-spaced points.   "
+  "body": " Reproduction of , but the surrounding points and are not equally spaced from the central point .   A point in the middle of two unequally-spaced points.   "
 },
 {
   "id": "ch1-section-selected-references",
