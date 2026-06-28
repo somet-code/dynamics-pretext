@@ -147,9 +147,9 @@
           <term>convective derivative</term>,
           and <term>individual derivative</term>)
           that gives the rate at which <m>f</m> is changing with respect to time <m>t</m> within a moving air parcel,
-          following the air parcel as it moves through the atmosphere.
+          following the air parcel as it moves through Earth's atmosphere.
           We can think of the Lagrangian derivative as describing sources and sinks of <m>f</m> within the air parcel.
-          Sometimes it is described as the time rate of change "following the motion" or "with the flow."
+          Sometimes it is described as the time rate of change of <m>f</m> "following the motion" or "with the flow."
           It is named after <url href="https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange">Joseph-Louis Lagrange</url>,
           who succeeded and collaborated with Euler and also made significant contributions to these fields.
         </p>
@@ -204,13 +204,21 @@
     (i.e., it is the <term>diabatic heating rate</term> caused by radiative heating or cooling,
     latent heat release or absorption,
     conduction,
-    and/or mixing),
+    and/or mixing of air parcel and environmental air),
     and <m>-\vec{u} \cdot \nabla T</m> is <term>temperature advection</term>,
-    where <m>-\vec{u} \cdot \nabla T \gt 0</m> for <em>warm</em> advection and <m>-\vec{u} \cdot \nabla T \lt 0</m> for <em>cold</em> advection.
+    where
+    <md>
+      -\vec{u} \cdot \nabla T \gt 0
+    </md>
+    for <em>warm</em> advection and
+    <md>
+      -\vec{u} \cdot \nabla T \lt 0
+    </md>
+    for <em>cold</em> advection.
   </p>
 
   <p>
-    The difference between the Lagrangian and Eulerian frameworks is visualized in <xref ref="ch1-eulerian-lagrangian" text="type-global" /> below.
+    The difference between Eulerian and Lagrangian derivatives is visualized in <xref ref="ch1-eulerian-lagrangian" text="type-global" /> below.
   </p>
 
   <figure xml:id="ch1-eulerian-lagrangian">
@@ -259,8 +267,9 @@
   <p>
     In summary, <xref ref="eqn-total-derivative-vector-final" text="type-global" />
     and <xref ref="eqn-total-derivative-vector-rearrange" text="type-global" />
-    give us two distinct but related frameworks by which we can measure change in state variables:
-    the <term>Lagrangian framework</term> and the <term>Eulerian framework</term>.
+    give us two distinct but related frameworks by which we can measure the time rate of change of state variables:
+    the <term>Eulerian framework</term> (i.e., the time rate of change measured at a fixed geographic location)
+    and the <term>Lagrangian framework</term> (i.e., the time rate of change measured within a moving air parcel).
   </p>
 
 </subsection>

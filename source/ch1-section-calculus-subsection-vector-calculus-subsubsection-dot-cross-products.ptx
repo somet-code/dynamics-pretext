@@ -23,7 +23,7 @@
         </li>
         <li>
             <p>
-                the distributive property of cross products over addition
+                the distributive property of a cross product over addition
                 <md>
                     \vec{a} \times \left( \vec{b} + \vec{c} \right) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}
                 </md>;

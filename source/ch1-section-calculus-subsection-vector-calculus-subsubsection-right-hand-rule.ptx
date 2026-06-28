@@ -5,7 +5,8 @@
 
   <p>
     The <term>right-hand rule</term> is a convention used to define the orientations of coordinate axes and vectors.
-    The <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the Cartesian coordinate system are oriented perpendicular to each other following the right-hand rule
+    The <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the three-dimensional Cartesian coordinate system
+    are oriented perpendicular to each other following the right-hand rule
     (<xref ref="ch1-right-hand-rule-a" text="type-global" />),
     and the right-hand rule determines the direction of the vector that results from the cross product of two other vectors
     (<xref ref="ch1-right-hand-rule-b" text="type-global" />).
@@ -18,8 +19,8 @@
     <sidebyside>
         <figure xml:id="ch1-right-hand-rule-a">
             <caption>
-                The right-hand rule applied to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the Cartesian coordinate system,
-                where the arrows show the sense of the right-hand rule for any combination of two axes.
+                The right-hand rule applied to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the three-dimensional Cartesian coordinate system,
+                where the curved arrows show the sense of the right-hand rule for any combination of two axes.
             </caption>
             <image source="images/ch1-right-hand-rule-a.png" width="50%">
                 <shortdescription>
@@ -58,7 +59,7 @@
     <sidebyside>
         <figure xml:id="ch1-right-hand-rule-hands-a">
             <caption>
-                The right-hand rule using the four fingers that point together in the direction of vector <m>\vec{A}</m>,
+                The right-hand rule using the four non-thumb fingers that point together in the direction of vector <m>\vec{A}</m>,
                 the palm that points in the direction of vector <m>\vec{B}</m>,
                 and the thumb that points in the direction of the vector that results from the cross product <m>\vec{A} \times \vec{B}</m> of a human's right hand.
                 Reproduced with modified vector annotations from
