@@ -6,24 +6,28 @@
   <p>
     Earth's atmosphere is composed of a mixture of gases:
     molecular nitrogen (<m>\mathrm{N}_2</m>), molecular oxygen (<m>\mathrm{O}_2</m>), water vapor (<m>\mathrm{H}_2\mathrm{O}</m>), and others.
-    Individual gas particles (which include both atoms and molecules) are very small, and much empty space generally lies between them on average.
+    Individual gas particles are very small,
+    and much empty space generally lies between them on average.
     Each gas particle moves continuously and randomly,
-    although larger-scale organized motion like the wind can be superimposed on a collection of gas particles and dominate their overall motion.
+    although larger-scale organized motion like wind can be superimposed on a collection of gas particles and dominate their overall motion.
   </p>
 
   <p>
-    Smaller numbers of suspended liquid and solid particles like cloud droplets, ice crystals,
+    Relatively few suspended liquid and solid particles like cloud droplets, ice crystals,
     and particulate matter occupy a small bit of the empty space between gas particles,
-    with concentrations varying amounts in space and time.
-    Briefly, precipitation particles reside in the atmosphere as they make their way from their parent clouds to the ground.
+    with concentrations that vary in space and time.
+    Briefly, precipitation particles reside in the atmosphere as they fall out of their parent clouds toward the ground.
   </p>
 
   <p>
-    Keeping track of the somewhat random motions of numerous discrete particles in Earth's atmosphere is unnecessary for our purposes,
-    since even the smallest atmospheric motions we are interested in occur on scales multiple orders of magnitude larger than microscopic intermolecular distances.
+    Keeping track of the partially random motions of numerous discrete particles in Earth's atmosphere is unnecessary for our purposes,
+    since even the smallest atmospheric motions we are interested in occur on scales multiple orders of magnitude larger than microscopic interparticle distances
+    and affect many particles at once.
     Instead, we make use of the <term>continuum approximation</term>:
     We assume the atmosphere's mass is continuously distributed in space rather than held in discrete particles.
-    This approximation commonly is made for fluids of sufficient density.
+    This approximation is made for fluids when the length scale of a motion of interest
+    is much larger than the average distance between particles making up the fluid,
+    which is true for most atmospheric motions of interest.
   </p>
 
   <p>
@@ -36,7 +40,8 @@
   <figure xml:id="ch1-volume-element">
     <caption>
       A volume element in the shape of a rectangular prism.
-      Its edges are parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes and have lengths <m>\delta x</m>, <m>\delta y</m>, and <m>\delta z</m>, respectively.
+      Its edges are parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the three-dimensional Cartesian coordinate system
+      and have lengths <m>\delta x</m>, <m>\delta y</m>, and <m>\delta z</m>, respectively.
       Its center has coordinates <m>(x_0, y_0, z_0)</m>.
     </caption>
     <image source="images/ch1-volume-element.png" width="60%">
@@ -48,8 +53,9 @@
 
   <p>
     We assume the discrete particles contained within a volume element are distributed homogeneously through it.
-    Local averages of temperature, pressure, density, velocity, and other <term>state variables</term> describe the volume elements
-    at any moment in time<mdash />without reference to the volume element's history<mdash />and
+    Local averages of temperature, pressure, density, velocity, and other <term>state variables</term>
+    computed for the collection of particles contained within a volume element
+    describe the volume element at any moment in time<mdash />without reference to its history<mdash />and
     are assumed to be uniform throughout the volume element.
     A representative value of any state variable is measured at the center of the volume element.
     For example, the pressure <m>p</m> measured at the central point of a volume element<m>(x_0, y_0, z_0)</m>
@@ -74,12 +80,12 @@
     <md>
       \vec{u} = u \, \hat{i} + v \, \hat{j} + w \, \hat{k}
     </md>
-    (and we assume all discrete particles within the element move at this velocity);
-    other volume elements remain fixed to specific locations on Earth's surface or within its atmosphere while many mobile volume elements flow through their open boundaries with velocity <m>\vec{u}</m>.
-    The former volume elements, whose paths through the atmosphere can be tracked over time, often are called <term>air parcels</term>, <term>air particles</term>, <term>material elements</term>, or <term>material volumes</term>,
+    (and we assume all discrete particles within the element move at this velocity).
+    Other volume elements remain fixed to specific locations on Earth's surface or within its atmosphere while many mobile volume elements flow through their open boundaries with velocity <m>\vec{u}</m>.
+    The former volume elements, whose paths through the atmosphere can be tracked over time, are called <term>air parcels</term>, <term>air particles</term>, <term>material elements</term>, or <term>material volumes</term>,
     and the portion of the atmosphere through which they move is called their <term>environment</term>.
-    The latter volume elements, whose locations are centered at permanent locations in the Earth system for all time, often are called <term>control volumes</term>.
-    These different behaviors of fluid elements lead to two different but connected frameworks from which we can conceptualize atmospheric flow:
+    The latter volume elements, which are centered at permanent locations in the Earth system for all time, are called <term>control volumes</term>.
+    These different types of volume elements lead to two different but connected frameworks from which we can conceptualize atmospheric flow:
     the Lagrangian framework and the Eulerian framework.
     We will explore these frameworks in <xref ref="ch1-section-calculus-subsection-total-differentiation" text="type-global" />.
   </p>
