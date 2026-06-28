@@ -6,11 +6,11 @@
   <introduction>
     <p>
       <term>Mechanics</term> is the study of motion.
-      The sub-field of <term>kinematics</term> deals with simply describing motion using position, velocity, and acceleration,
+      The sub-field of <term>kinematics</term> deals with simply <em>describing</em> motion using position, displacement, velocity, and acceleration,
       without questioning why motion happens in the first place.
-      The sub-field of <term>dynamics</term> goes further: It seeks to explain the causes of motion.
+      The sub-field of <term>dynamics</term> goes further: It seeks to explain the <em>causes</em> of motion.
       Dynamical explanations for why motion occurs use forces and related concepts like momentum and energy within the contexts of various physical laws.
-      Since dynamics deals with the causes motion, it enables us to explain how motions come to be
+      Since dynamics deals with the causes motion, it enables us to explain how motions come about
       and<mdash />perhaps more importantly to meteorologists<mdash />predict how they will evolve in the future.
     </p>
     
@@ -22,7 +22,8 @@
       which<mdash />at least to a point<mdash />can resist forces applied parallel to their surfaces and return to their original shapes once the forces are removed,
       fluids cannot resist such forces and instead immediately and continuously <term>deform</term> and <term>flow</term> in response to them.
       This property causes fluids to take on the shapes of their containers rather than a preferred shape like solids.
-      And because their particles are in constant random motion, gases expand to occupy the entire volume of any container!
+      And because their particles are in constant random motion in addition to any organized motion that might be imposed on them,
+      gases expand to occupy the entire volume of any container.
     </p>
 
     <p>
@@ -33,7 +34,7 @@
     <p>
       In this atmospheric dynamics course, we will explore the causes of
       organized atmospheric motion<mdash />i.e., <term>wind</term><mdash />using the principles of momentum, mass, and energy conservation.
-      While their corresponding physical laws are written as mathematical formulas,
+      While their corresponding physical laws are written as mathematical equations,
       it is the physical interpretations of these equations that give them meaning and power to explain and predict atmospheric motions.
     </p>
   </introduction>
