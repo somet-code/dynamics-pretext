@@ -26,7 +26,8 @@
     Instead, we make use of the <term>continuum approximation</term>:
     We assume the atmosphere's mass is continuously distributed in space rather than held in discrete particles.
     This approximation is made for fluids when the length scale of a motion of interest
-    is much larger than the average distance between particles making up the fluid,
+    is much larger than the average distance between particles making up the fluid
+    (see the <url href="https://en.wikipedia.org/wiki/Knudsen_number" text="cutom">Knudsen number</url>),
     which is true for most atmospheric motions of interest.
   </p>
 
