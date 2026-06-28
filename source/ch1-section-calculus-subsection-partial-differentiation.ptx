@@ -21,7 +21,7 @@
   <p>
     To isolate the rate at which <m>f</m> is changing as <m>x</m> changes,
     we take the <term>partial derivative</term> of <m>f</m> with respect to <m>x</m>.
-    This partial derivative can be denoted by <m>f_x</m> or <m>\dfrac{\partial f}{\partial x}</m>;
+    This partial derivative is denoted by <m>f_x</m> or <m>\dfrac{\partial f}{\partial x}</m>;
     the latter notation is preferred in this text.
   </p>
 
@@ -80,7 +80,7 @@
 
   <p>
     While the subscripts often will be omitted for brevity,
-    we will use them whenever greater clarity on which independent variables are held constant is needed.
+    we will use them whenever greater clarity about which independent variables are held constant is needed.
   </p>
 
 </subsection>
