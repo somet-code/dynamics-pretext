@@ -57,6 +57,18 @@
     </figure>
 
     <p>
+        The method of approximating <m>\left. \dfrac{df}{dx} \right|_{x=x_0}</m>
+        shown in <xref ref="eqn-difference-quotient" text="type-global" />
+        is called <term>centered differencing</term>,
+        and its formula comes from subtracting the Taylor Series expansion of <m>f(x)</m> at <m>x = x_0</m>
+        evaluated at <m>x = x_1</m> from the Taylor series expansion of <m>f(x)</m> at <m>x = x_0</m>
+        evaluated at <m>x = x_2</m> and then neglecting higher-order terms.
+        See <xref ref="martin" text="custom">Martin (2006)</xref> Subsection 1.2.3 for derivations of
+        <xref ref="eqn-difference-quotient" text="type-global" />
+        and <xref ref="eqn-difference-quotient-second" text="type-global" />.
+    </p>
+
+    <p>
         The reasoning of centered differencing can be applied to partial derivatives by only allowing one independent variable to change.
         For example, if we have a state variable <m>f = f(x,y,z,t)</m>,
         we can use centered differencing to approximate its first and second partial derivatives with respect to <m>x</m> as
@@ -124,7 +136,7 @@
     <figure xml:id="ch1-finite-difference">
         <caption>
             Reproduction of <xref ref="ch1-centered-difference" text="type-global" />,
-            but the surrounding points <m>x_1</m> and <m>x_2</m> are not equally spaced from the point <m>x_0</m>.
+            but the surrounding points <m>x_1</m> and <m>x_2</m> are not equally spaced from the central point <m>x_0</m>.
         </caption>
         <image source="images/ch1-finite-difference.png" width="60%">
             <shortdescription>
