@@ -19,7 +19,7 @@
             or within its atmosphere
             (<xref ref="ch2-local-cartesian-coordinates-b" text="type-global" />).
             This point is identified by geographic coordinates <m>(\lambda, \phi, a+z)</m>.
-            Note this point rotates along with Earth about Earth's polar axis.
+            Note this point rotates along with Earth about Earth's polar axis!
         </p>
 
         <figure xml:id="ch2-local-cartesian-coordinates">
@@ -218,7 +218,7 @@
         </figure>
 
         <p>
-            A very simplified depiction of the correspondence between the coordinates and velocity components of the local Cartesian Coordinate system is shown in
+            A very simplified depiction of the correspondence between the directions and velocity components of the local Cartesian Coordinate system is shown in
             <xref ref="ch2-local-cartesian-coordinates-stull" text="type-global" /> below.
         </p>
 

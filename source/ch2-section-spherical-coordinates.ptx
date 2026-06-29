@@ -22,7 +22,8 @@
                 <p>
                     <m>\theta</m> is the <term>polar angle</term> (also called the <term>azimuthal angle</term>):
                     the angle measured counter-clockwise from the <m>+x</m>-axis to the projection of the point into the <m>xy</m>-plane.
-                    This same polar angle is used in standard polar and cylindrical coordinate systems.
+                    This same polar angle is used in standard polar (two-dimensional)
+                    and cylindrical (three-dimensional) coordinate systems.
                 </p>
             </li>
             <li>
@@ -36,32 +37,38 @@
 
     <p>
         Earth is nearly spherical and can be approximated as a sphere in most meteorological applications.
-        We use <term>Earth's mean radius</term> $a$ as the radius of this hypothetical spherical Earth.
-        Holton &amp; Hakim (2013) give the value of <m>a</m> as 6370 km,
+        We use <term>Earth's mean radius</term> <m>a</m> as the radius of this hypothetical spherical Earth.
+        <xref ref="holton-hakim" text="custom">Holton &amp; Hakim</xref> give the value of <m>a</m> as 6370 km,
         while other sources give slightly different values.
         We will use Holton &amp; Hakim's value of <m>a</m> in this course.
     </p>
 
     <p>
         Rather than use the standard spherical coordinate system to describe the locations of volume elements on Earth's surface and within its atmosphere,
-        we instead use a <m>geographic coordinate system</m> in which the location of an element is given by the coordinates <m>(\lambda, \phi, z)</m>.
+        we instead use a <term>geographic coordinate system</term> in which the location of an element is given by the coordinates <m>(\lambda, \phi, z)</m>.
     </p>
 
     <p>
         <ul>
             <li>
                 <p>
-                    <m>\lambda</m> is <term>longitude</term>: the angle measured horizontally counter-clockwise from the Prime Meridian.
+                    <m>\lambda</m> is <term>longitude</term>:
+                    the angle measured horizontally counter-clockwise from the Prime Meridian
+                    to the projection of the element's center point onto Earth's surface.
                 </p>
             </li>
             <li>
                 <p>
-                    <m>\phi</m> is <term>latitude</term>: the angle measured horizontally toward the North Pole from the Equator.
+                    <m>\phi</m> is <term>latitude</term>:
+                    the angle measured horizontally toward the North Pole from the Equator
+                    to the projection of the element's center point onto Earth's surface.
                 </p>
             </li>
             <li>
                 <p>
-                    <m>z</m> is <term>height</term>: the radial distance measured from Earth's center.
+                    <m>z</m> is <term>height</term>:
+                    the radial distance measured from Earth's center
+                    to the element's center point.
                 </p>
             </li>
         </ul>
@@ -92,7 +99,6 @@
         <m>z</m> is referred to as <term>elevation</term> when it describes the height of a point on Earth's surface,
         <term>altitude</term> when it describes the height of a point within Earth's atmosphere,
         and <term>depth</term> when it describes the height of a point within Earth's oceans or otherwise below its surface.
-        In this last case, <m>z</m> would be negative.
     </p>
 
     <p>

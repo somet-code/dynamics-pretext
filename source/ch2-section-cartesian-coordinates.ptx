@@ -9,7 +9,7 @@
         to identify the locations of volume elements in three-dimensional space.
         The location of the center of any volume element is given by the ordered triple <m>(x, y, z)</m>,
         where <m>x</m>, <m>y</m>, and <m>z</m> are its coordinates.
-        These coordinates are signed distances from the origin measured parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes,
+        These coordinates are signed distances from the origin measured parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes, respectively,
         which are mutually orthogonal and oriented relative to each other following the right-hand rule.
         Additionally, the <term>unit direction vectors</term> <m>\hat{i}</m>,
         <m>\hat{j}</m>,
@@ -19,7 +19,7 @@
     </p>
 
     <p>
-        An arbitrary vector <m>\vec{A}</m> is written in Cartesian coordinates in <term>component form</term>
+        An arbitrary vector <m>\vec{A}</m> is written in Cartesian coordinates in <term>component form</term> as
         <md>
             \vec{A} = \langle A_x, A_y, A_z \rangle
         </md>
@@ -37,14 +37,15 @@
         <md>
             \vec{r} = x \, \hat{i} + y \, \hat{j} + z \, \hat{k}
         </md>
-        is drawn in Cartesian 3-space with its tail fixed to the origin and its tip attached to a volume element of interest with coordinates <m>(x,y,z)</m>.
+        is drawn in Cartesian 3-space with its tail fixed to the origin
+        and its tip attached to the center of a volume element of interest with coordinates <m>(x,y,z)</m>.
     </p>
 
     <p>
         <ul>
             <li>
                 <p>
-                    If the volume element can move through space with time <m>t</m>,
+                    If the volume element can move through space over time <m>t</m>,
                     its position vector is
                     <md>
                         \vec{r}(t) = x(t) \, \hat{i} + y(t) \, \hat{j} + z(t) \, \hat{k}
@@ -81,6 +82,7 @@
             A volume element depicted as a rectangular prism in Cartesian 3-space with central coordinates <m>(x, y, z)</m>
             and position vector <m>\vec{r} = x \, \hat{i} + y \, \hat{j} + z \, \hat{k}</m>.
             Dashed lines shown signed distances of the volume element from the origin drawn parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes.
+            These signed distances correspond to the element's coordinates and its position vector's components.
         </caption>
         <image source="images/ch2-cartesian-coordinates.png"  width="60%">
             <shortdescription>

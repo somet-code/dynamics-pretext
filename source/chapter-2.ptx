@@ -7,18 +7,20 @@
     <p>
         A <term>coordinate system</term> enables us to uniquely identify any point's location in space via an ordered tuple of <term>coordinates</term>,
         which are signed distances from the <term>origin</term> measured parallel to <term>coordinate axes</term>.
+        When combined, a point's coordinates give its location in space relative to the origin.
     </p>
 
     <p>
         A point's location in space relative to the origin also can be identified by a <term>position vector</term>,
         which is a vector with tail fixed to the origin and tip attached to the point of interest.
-        Furthermore, a position vector is not static: It traces out the path the point takes as it moves through space over time.
+        If the point moves through space over time, its position vector is not static:
+        Its tip traces out the point's path through space.
     </p>
 
     <p>
         You have learned in previous math courses how to use the Cartesian,
         cylindrical,
-        and spherical coordinate systems to describe locations in <term>three-dimensional space</term> ("3-space").
+        and spherical coordinate systems to describe the locations of points in <term>three-dimensional space</term> ("3-space").
         We will review relevant concepts below and then extend them.
     </p>
   </introduction>
