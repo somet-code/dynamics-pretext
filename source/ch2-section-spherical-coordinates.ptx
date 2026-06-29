@@ -44,8 +44,10 @@
     </p>
 
     <p>
-        Rather than use the standard spherical coordinate system to describe the locations of volume elements on Earth's surface and within its atmosphere,
-        we instead use a <term>geographic coordinate system</term> in which the location of an element is given by the coordinates <m>(\lambda, \phi, z)</m>.
+        Rather than use the standard spherical coordinate system to describe the locations of volume elements on Earth's surface
+        and within its atmosphere,
+        we instead use a <term>geographic coordinate system</term>
+        in which the location of an element is given by the coordinates <m>(\lambda, \phi, h)</m>.
     </p>
 
     <p>
@@ -66,7 +68,7 @@
             </li>
             <li>
                 <p>
-                    <m>z</m> is <term>height</term>:
+                    <m>h</m> is <term>height</term>:
                     the radial distance measured from Earth's center
                     to the element's center point.
                 </p>
