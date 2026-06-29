@@ -148,7 +148,8 @@
           and <term>individual derivative</term>)
           that gives the rate at which <m>f</m> is changing with respect to time <m>t</m> within a moving air parcel,
           following the air parcel as it moves through Earth's atmosphere.
-          We can think of the Lagrangian derivative as describing sources and sinks of <m>f</m> within the air parcel.
+          We can think of the Lagrangian derivative as describing <term>sources</term> and <term>sinks</term>
+          of <m>f</m> within the air parcel.
           Sometimes it is described as the time rate of change of <m>f</m> "following the motion" or "with the flow."
           It is named after <url href="https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange">Joseph-Louis Lagrange</url>,
           who succeeded and collaborated with Euler and also made significant contributions to these fields.
