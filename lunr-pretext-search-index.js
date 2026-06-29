@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Eulerian derivative local derivative Lagrangian derivative total derivative material derivative substantial derivative advective derivative convective derivative individual derivative advection convective derivative "
+  "body": "Eulerian derivative local derivative Lagrangian derivative total derivative material derivative substantial derivative advective derivative convective derivative individual derivative sources sinks advection convective derivative "
 },
 {
   "id": "ch1-section-calculus-subsection-total-differentiation-24",
