@@ -37,7 +37,8 @@
 
     <p>
         Earth is nearly spherical and can be approximated as a sphere in most meteorological applications.
-        We use <term>Earth's mean radius</term> <m>a</m> as the radius of this hypothetical spherical Earth.
+        We use <term>Earth's mean radius</term> <m>a</m> as the radius of this hypothetical spherical Earth;
+        it also defines Earth's mean sea level.
         <xref ref="holton-hakim" text="custom">Holton &amp; Hakim</xref> give the value of <m>a</m> as 6370 km,
         while other sources give slightly different values.
         We will use Holton &amp; Hakim's value of <m>a</m> in this course.
