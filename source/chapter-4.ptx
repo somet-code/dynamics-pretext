@@ -1,0 +1,6 @@
+<chapter xml:id="chapter-4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Non-inertial Reference Frames and Apparent Forces</title>
+
+  <xi:include href="ch4-section-relative-motion.ptx" />
+
+</chapter>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch4-section-relative-motion" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Relative motion</title>
+
+    <p>
+        Imagine you are standing outside the National Weather Center watching traffic on Jenkins Ave.
+        You use a radar speed gun to measure the speed of a car driving toward you.
+        (Assuming perfect conditions, this matches the speed displayed on the car's speedometer, using the Doppler effect like weather radar!)
+    </p>
+
+    <p>
+        Simultaneously,
+        a fellow student who is walking toward you along Jenkins Ave.
+        uses another radar speed gun to measure the speed of the same car as it drives toward them.
+    </p>
+
+    <p>
+        Using <m>O</m> to represent you the stationary observer,
+        <m>W</m> to represent the walking observer,
+        and <m>C</m> to represent the car, we have
+    </p>
+
+    <p>
+        <md xml:id="eqn-relative-motion" number="yes">
+            \vec{v}_{C/O} = \vec{v}_{C/W} + \vec{v}_{W/O}
+        </md>
+    </p>
+
+    <p>
+        where <m>\vec{v}_{C/O}</m> is the velocity of the car as measured by you,
+        <m>\vec{v}_{C/W}</m> is the velocity of the car as measured by the walking observer,
+        and <m>\vec{v}_{W/O}</m> is the velocity at which the fellow student walks toward you.
+    </p>
+
+    <p>
+        This brief overview of
+        <term>relative motion</term><mdash />that different observers can measure different velocities
+        for the same moving object due to their own motions<mdash />is extended below using the concept of reference frames.
+    </p>
+
+</section>
