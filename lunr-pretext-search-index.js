@@ -820,20 +820,110 @@ var ptx_lunr_docs = [
   "body": "momentum conservation "
 },
 {
+  "id": "ch3-section-selected-references",
+  "level": "1",
+  "url": "ch3-section-selected-references.html",
+  "type": "Section",
+  "number": "3.5",
+  "title": "Selected references",
+  "body": " Selected references     Chapter 2 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 1 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 6 of Marshall and Plumb (2007)     Chapter 4 of Bluestein (1992)     Chapters 1 and 4 of Kundu et al. (2016)      "
+},
+{
+  "id": "ch4-section-relative-motion",
+  "level": "1",
+  "url": "ch4-section-relative-motion.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Relative motion",
+  "body": " Relative motion  Imagine you are standing outside the National Weather Center watching traffic on Jenkins Ave. You use a radar speed gun to measure the speed of a car driving toward you. (Assuming perfect conditions, this matches the speed displayed on the car's speedometer, using the Doppler effect like weather radar!)  Simultaneously, a fellow student who is walking toward you along Jenkins Ave. uses another radar speed gun to measure the speed of the same car as it drives toward them.  Using to represent you the stationary observer, to represent the walking observer, and to represent the car, we have     where is the velocity of the car as measured by you the stationary observer, is the velocity of the car as measured by the walking observer, and is the velocity at which the fellow student walks toward you.  This brief overview of relative motion that different observers can measure different velocities for the same moving object due to their own motions is extended below using the concept of reference frames.  "
+},
+{
+  "id": "ch4-section-relative-motion-7",
+  "level": "2",
+  "url": "ch4-section-relative-motion.html#ch4-section-relative-motion-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "relative motion "
+},
+{
+  "id": "ch4-section-reference-frames",
+  "level": "1",
+  "url": "ch4-section-reference-frames.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Inertial and non-inertial reference frames",
+  "body": " Inertial and non-inertial reference frames  A reference frame is a coordinate system used to investigate the behavior of a phenomenon of interest in terms of its position, velocity, and acceleration. For example, meteorologists most often use the local Cartesian coordinate system described in as a frame of reference to investigate atmospheric phenomena.  A non-accelerating reference frame is called an inertial reference frame or an absolute reference frame . An inertial reference frame can be stationary, or it can translate at constant velocity (i.e., its speed and direction of travel cannot change).  An accelerating reference frame is called a non-inertial reference frame . Such a reference frame changes speed and\/or direction relative to an inertial reference frame.  To visualize the relationship between inertial and non-inertial reference frames, consider a fair weather cumulus cloud as shown in below. As an observer stands on Earth's surface, they perceive the cloud to be drifting slowly with the wind at velocity because they and the cloud both are rotating along with the planet ( ); in other words, they view the cloud from a non-inertial reference frame. But a stationary observer in space perceives the cloud to be zipping along rapidly with Earth's rotation with its slow wind-driven drift super-imposed ( ) because they view the cloud from an inertial reference frame.      An observer on Earth's surface who is stationary relative to the rotating planet observes a fair-weather cumulus cloud drifting slowly with the wind at horizontal velocity .   Person standing beneath a cumulus cloud that is moving to the right with the wind.     A stationary observer in space sees the cloud's wind-driven drift superimposed on its rapid rotation with the planet, which rotates with angular velocity and thereby gives the cloud an additional tangential velocity.   Astronaut views a cloud on Earth from space. The cloud both drifts to the east with the wind and rotates with the planet.      Newton's and laws of motion the basis for fluid dynamics and which we overviewed in are directly valid only in inertial reference frames. Therefore, from mathematically depicts the acceleration of an air parcel as viewed from an inertial reference frame. In other words, the stationary observer in space could apply from to explain the motion of the cloud. But we live on the rotating Earth, and therefore in almost all cases, we observe the weather as we and atmospheric phenomena rotate along with it. Thus, it imperative that we be able to quantify atmospheric motions from this non-inertial reference frame.  Luckily, we can do this by accounting for additional forces called inertial forces , apparent forces , or fictitious forces in Newton's and laws of motion that are induced by accelerations of non-inertial reference frames.  While non-inertial reference frames can accelerate by translating through space at a variable rate, rotating, or both, we will focus on a reference frame that accelerates only by rotating as this is most relevant to investigating atmospheric motions on Earth and the inertial forces that arise in it.  Since Earth rotates, the local Cartesian coordinate system described in is a non-inertial reference frame that constantly changes orientation in space. But we do not intuit Earth's rotation as we live our lives and view the weather because we and everything else on the planet rotate at the same rate. Consequently, motions on Earth including in Earth's atmosphere appear to us to be inertial: objects at rest or moving at constant velocity appear to remain so unless acted upon by an external force. (But remember their acceleration along with the planet would be quite apparent to a stationary observer in space!) As we go along in this topic, we will assign these motions that appear inertial to us but really are non-inertial velocity , where the subscript \"rot\" indicates they are viewed from the rotating reference frame.  If instead we were to observe these same motions on Earth from a fixed point in space, we would see that they include rotation along with the planet, and we would assign them velocity = + , where [ ] is Earth's angular velocity and [ ] is the tangential velocity imposed by Earth's rotation.  We derive these and related useful expressions below.  "
+},
+{
+  "id": "ch4-section-reference-frames-2",
+  "level": "2",
+  "url": "ch4-section-reference-frames.html#ch4-section-reference-frames-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "reference frame "
+},
+{
+  "id": "ch4-section-reference-frames-3",
+  "level": "2",
+  "url": "ch4-section-reference-frames.html#ch4-section-reference-frames-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "inertial reference frame absolute reference frame "
+},
+{
+  "id": "ch4-section-reference-frames-4",
+  "level": "2",
+  "url": "ch4-section-reference-frames.html#ch4-section-reference-frames-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "non-inertial reference frame "
+},
+{
+  "id": "ch4-relative-motion",
+  "level": "2",
+  "url": "ch4-section-reference-frames.html#ch4-relative-motion",
+  "type": "Figure",
+  "number": "4.2.1",
+  "title": "",
+  "body": "    An observer on Earth's surface who is stationary relative to the rotating planet observes a fair-weather cumulus cloud drifting slowly with the wind at horizontal velocity .   Person standing beneath a cumulus cloud that is moving to the right with the wind.     A stationary observer in space sees the cloud's wind-driven drift superimposed on its rapid rotation with the planet, which rotates with angular velocity and thereby gives the cloud an additional tangential velocity.   Astronaut views a cloud on Earth from space. The cloud both drifts to the east with the wind and rotates with the planet.     "
+},
+{
+  "id": "ch4-section-reference-frames-8",
+  "level": "2",
+  "url": "ch4-section-reference-frames.html#ch4-section-reference-frames-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "inertial forces apparent forces fictitious forces "
+},
+{
+  "id": "ch4-section-reference-frames-11",
+  "level": "2",
+  "url": "ch4-section-reference-frames.html#ch4-section-reference-frames-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Earth's angular velocity "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
   "type": "References",
-  "number": "4",
+  "number": "5",
   "title": "References",
-  "body": " References   Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
+  "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
 },
 {
   "id": "holton-hakim-6",
   "level": "2",
   "url": "references.html#holton-hakim-6",
   "type": "Note",
-  "number": "4.1.1",
+  "number": "5.2.1",
   "title": "",
   "body": " 3rd edition  "
 },
@@ -842,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#kundu-cohen-dowling-7",
   "type": "Note",
-  "number": "4.2.1",
+  "number": "5.3.1",
   "title": "",
   "body": " 6th edition  "
 },
@@ -851,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#stull-5",
   "type": "Note",
-  "number": "4.5.1",
+  "number": "5.6.1",
   "title": "",
   "body": " Version 1.02b  "
 },
