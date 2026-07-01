@@ -51,5 +51,6 @@
   <xi:include href="ch3-section-pressure-gradient-force.ptx" />
   <xi:include href="ch3-section-friction-force.ptx" />
   <xi:include href="ch3-section-newtons-laws.ptx" />
+  <xi:include href="ch3-section-selected-references.ptx" />
 
 </chapter>
