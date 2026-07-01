@@ -2,5 +2,6 @@
   <title>Non-inertial Reference Frames and Apparent Forces</title>
 
   <xi:include href="ch4-section-relative-motion.ptx" />
+  <xi:include href="ch4-section-reference-frames.ptx" />
 
 </chapter>

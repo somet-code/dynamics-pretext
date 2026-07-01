@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch4-section-reference-frames" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Inertial and non-inertial reference frames</title>
+
+    <p>
+        A <term>reference frame</term> is a coordinate system used to investigate the behavior of a phenomenon of interest
+        in terms of its position, velocity, and acceleration.
+        For example, meteorologists most often use the local Cartesian coordinate system described in
+        <xref ref="ch2-section-local-cartesian-coordinates" text="type-global" />
+        as a frame of reference to investigate atmospheric phenomena.
+    </p>
+
+    <p>
+        A non-accelerating reference frame is called an <term>inertial reference frame</term> or an <term>absolute reference frame</term>.
+        An inertial reference frame can be stationary,
+        or it can translate at constant velocity
+        (i.e., its speed and direction of travel cannot change).
+    </p>
+
+    <p>
+        An accelerating reference frame is called a <term>non-inertial reference frame</term>.
+        Such a reference frame changes speed and/or direction relative to an inertial reference frame.
+    </p>
+
+    <p>
+        To visualize the relationship between inertial and non-inertial reference frames,
+        consider a fair weather cumulus cloud as shown in <xref ref="ch4-relative-motion" text="type-global" /> below.
+        As an observer stands on Earth's surface, they perceive the cloud to be drifting slowly with the wind at velocity <m>\vec{v}</m>
+        because they and the cloud both are rotating along with the planet (<xref ref="ch4-relative-motion-a" text="type-global" />);
+        in other words, they view the cloud from a non-inertial reference frame.
+        But a stationary observer in space perceives the cloud to be zipping along rapidly with Earth's rotation
+        with its slow wind-driven drift super-imposed (<xref ref="ch4-relative-motion-b" text="type-global" />)
+        because they view the cloud from an inertial reference frame.
+    </p>
+
+    <figure xml:id="ch4-relative-motion">
+        <caption />
+        <sidebyside>
+            <figure xml:id="ch4-relative-motion-a">
+                <caption>
+                    An observer on Earth's surface who is stationary relative to the rotating planet
+                    observes a fair-weather cumulus cloud drifting slowly with the wind at horizontal velocity <m>\vec{v}</m>.
+                </caption>
+                <image source="images/ch4-relative-motion-a.png" width="50%">
+                    <shortdescription>
+                        Person standing beneath a cumulus cloud that is moving to the right with the wind.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch4-relative-motion-b">
+                <caption>
+                    A stationary observer in space sees the cloud's wind-driven drift superimposed on its rapid rotation with the planet,
+                    which rotates with angular velocity <m>\vec{\Omega}</m> and thereby gives the cloud an additional tangential velocity.
+                </caption>
+                <image source="images/ch4-relative-motion-b.png" width="50%">
+                    <shortdescription>
+                        Astronaut views a cloud on Earth from space. The cloud both drifts to the east with the wind
+                        and rotates with the planet.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
+
+    <p>
+        Newton's <m>1^{\text{st}}</m> and <m>2^{\text{nd}}</m> laws of motion<mdash />the basis for fluid dynamics
+        and which we overviewed in <xref ref="ch3-section-newtons-laws" text="type-global" /><mdash />are directly valid
+        only in inertial reference frames.
+        Therefore, <xref ref="ch3-equation-motion-basic" text="type-global" />
+        from <xref ref="ch3-section-newtons-laws" text="type-global" />
+        mathematically depicts the acceleration of an air parcel <m>\dfrac{D \vec{u}}{Dt}</m>
+        as viewed from an inertial reference frame.
+        In other words, the stationary observer in space could apply <xref ref="ch3-equation-motion-basic" text="type-global" />
+        from <xref ref="ch3-section-newtons-laws" text="type-global" />
+        to explain the motion of the cloud.
+        But we live on the rotating Earth,
+        and therefore in almost all cases,
+        we observe the weather as we and atmospheric phenomena rotate along with it.
+        Thus, it imperative that we be able to quantify atmospheric motions from this non-inertial reference frame.
+    </p>
+
+    <p>
+        Luckily, we can do this by accounting for additional forces<mdash />called <term>inertial forces</term>,
+        <term>apparent forces</term>,
+        or <term>fictitious forces</term><mdash />in Newton's <m>1^{\text{st}}</m> and <m>2^{\text{nd}}</m> laws of motion
+        that are induced by accelerations of non-inertial reference frames.
+    </p>
+
+    <p>
+        While non-inertial reference frames can accelerate by translating through space at a variable rate,
+        rotating,
+        or both,
+        we will focus on a reference frame that accelerates only by rotating<mdash />as this is
+        most relevant to investigating atmospheric motions on Earth<mdash />and the inertial forces that arise in it.
+    </p>
+
+    <p>
+        Since Earth rotates,
+        the local Cartesian coordinate system described in <xref ref="ch2-section-local-cartesian-coordinates" text="type-global" />
+        is a non-inertial reference frame that constantly changes orientation in space.
+        But we do not intuit Earth's rotation as we live our lives and view the weather
+        because we and everything else on the planet rotate at the same rate.
+        Consequently, motions on Earth<mdash />including in Earth's atmosphere<mdash /><em>appear to us</em> to be inertial:
+        objects at rest or moving at constant velocity <em>appear to</em> remain so unless acted upon by an external force.
+        (But remember their acceleration along with the planet would be quite apparent to a stationary observer in space!)
+        As we go along in this topic,
+        we will assign these motions that appear inertial to us but really are non-inertial velocity <m>\vec{u}_{rot}</m>,
+        where the subscript "rot" indicates they are viewed from the rotating reference frame.
+    </p>
+
+    <p>
+        If instead we were to observe these same motions on Earth from a fixed point in space,
+        we would see that they include rotation along with the planet,
+        and we would assign them velocity <m>\vec{u}_{abs}</m> = <m>\vec{u}_{rot}</m> + <m>\vec{\Omega} \times \vec{r}</m>,
+        where <m>\vec{\Omega}</m> [<m>\text{rad} \, \text{s}^{-1}</m>] is <term>Earth's angular velocity</term>
+        and <m>\vec{\Omega} \times \vec{r}</m> [<m>\text{m} \, \text{s}^{-1}</m>] is the tangential velocity imposed by Earth's rotation.
+    </p>
+
+    <p>
+        We derive these and related useful expressions in the next sections.
+    </p>
+
+</section>
