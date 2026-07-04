@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rotating reference frame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="METR 3113">
+<meta property="book:author" content="Dr. Amanda Kis">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.8';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="Atmospheric Dynamics I" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="atmospheric-dynamics-i.html"><span class="title">METR 3113</span> <span class="subtitle">Atmospheric Dynamics I</span></a></h1>
+<p class="byline">Dr. Amanda Kis</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch4-section-reference-frames.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-4.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Continuum Approximation and Calculus in Geophysical Fluid Dynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-continuum-approximation.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Continuum approximation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1-section-calculus.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Partial differentiation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector algebra and calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Right-hand rule</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-del" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Del</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-finite-differencing.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Finite differencing</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Fundamental Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-gravitational-force.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Gravitational force</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-pressure-gradient-force.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Pressure gradient force</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3-section-friction-force.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Viscous friction force</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3-section-friction-force.html#ch3-section-friction-force-subsection-couette-flow" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Couette flow</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-newtons-laws.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Newton’s laws of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-selected-references.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Non-inertial Reference Frames and Apparent Forces</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-relative-motion.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Relative motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-reference-frames.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Inertial and non-inertial reference frames</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch4-section-rotating-reference-frame.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Rotating reference frame</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ch4-section-rotating-reference-frame">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rotating reference frame</span>
+</h2>
+<div class="para" id="ch4-section-rotating-reference-frame-2">Consider a vector <span class="process-math">\(\vec{A}\)</span> in three-dimensional space. Any coordinate system (e.g., Cartesian, local Cartesian, cylindrical, standard spherical) could serve as a reference frame to investigate <span class="process-math">\(\vec{A}\text{.}\)</span> While the unit direction vectors of coordinate systems differ, and consequently the components of a given vector differ among coordinate systems, all coordinate systems can be used to describe the same vector.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-3">Consider two Cartesian coordinate systems: One is non-accelerating, and the other is rotating relative to the first with constant angular velocity <span class="process-math">\(\vec{\Omega}\text{.}\)</span> The former is an inertial reference frame and will be indicated by the subscript "abs". The latter is a non-inertial reference frame and will be indicated by the subscript "rot".<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-4">The inertial coordinate system is assigned unit direction vectors <span class="process-math">\(\hat{i}_{abs}\text{,}\)</span> <span class="process-math">\(\hat{j}_{abs}\text{,}\)</span> and <span class="process-math">\(\hat{k}_{abs}\text{,}\)</span> and the rotating coordinate system is assigned unit direction vectors <span class="process-math">\(\hat{i}_{rot}\text{,}\)</span> <span class="process-math">\(\hat{j}_{rot}\text{,}\)</span> and <span class="process-math">\(\hat{k}_{rot}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-5">In the inertial coordinate system<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-6">
+<div class="displaymath process-math" id="eqn-inertial-vector">
+\begin{equation}
+\vec{A}
+=
+A_{x,abs} \, \hat{i}_{abs}
++ A_{y,abs} \, \hat{j}_{abs}
++ A_{z,abs} \, \hat{k}_{abs}\tag{4.3.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-7">and in the rotating coordinate system<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-8">
+<div class="displaymath process-math" id="eqn-noninertial-vector">
+\begin{equation}
+\vec{A}
+=
+A_{x,rot} \, \hat{i}_{rot}
++ A_{y,rot} \, \hat{j}_{rot}
++ A_{z,rot} \, \hat{k}_{rot}\tag{4.3.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-9">Both <a href="ch4-section-rotating-reference-frame.html#eqn-inertial-vector" class="xref" data-knowl="./knowl/xref/eqn-inertial-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.1">(4.3.1)</a> and <a href="ch4-section-rotating-reference-frame.html#eqn-noninertial-vector" class="xref" data-knowl="./knowl/xref/eqn-noninertial-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.2">(4.3.2)</a> are equally valid expressions for <span class="process-math">\(\vec{A}\text{:}\)</span> Even though the values of their components differ, they each describe the same vector.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-10">Let <span class="process-math">\(\vec{A}\)</span> change with time, i.e., let <span class="process-math">\(\vec{A} = \vec{A}(t)\text{.}\)</span> In the inertial coordinate system, which itself is not accelerating and therefore has unchanging unit direction vectors,<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-11">
+<div class="displaymath process-math" id="eqn-inertial-derivative-general">
+\begin{equation}
+\frac{D \vec{A}}{Dt}
+=
+\frac{D A_{x,abs}}{Dt} \, \hat{i}_{abs}
++ \frac{D A_{y,abs}}{Dt} \, \hat{j}_{abs}
++ \frac{D A_{z,abs}}{Dt} \, \hat{k}_{abs}\tag{4.3.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-12">We call the expression on the right-hand side of <a href="ch4-section-rotating-reference-frame.html#eqn-inertial-derivative-general" class="xref" data-knowl="./knowl/xref/eqn-inertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.3">(4.3.3)</a> <span class="process-math">\(\left( \dfrac{D\vec{A}}{Dt} \right)_{abs}\)</span> since it describes how <span class="process-math">\(\vec{A}\)</span> is changing with time relative to the inertial coordinate system:<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-13">
+<div class="displaymath process-math" id="eqn-inertial-derivative-specific">
+\begin{equation}
+\left( \frac{D \vec{A}}{Dt} \right)_{abs}
+=
+\frac{D A_{x,abs}}{Dt} \, \hat{i}_{abs}
++ \frac{D A_{y,abs}}{Dt} \, \hat{j}_{abs}
++ \frac{D A_{z,abs}}{Dt} \, \hat{k}_{abs}\tag{4.3.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-14">
+<a href="ch4-section-rotating-reference-frame.html#eqn-inertial-derivative-general" class="xref" data-knowl="./knowl/xref/eqn-inertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.3">(4.3.3)</a> and <a href="ch4-section-rotating-reference-frame.html#eqn-inertial-derivative-specific" class="xref" data-knowl="./knowl/xref/eqn-inertial-derivative-specific.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.4">(4.3.4)</a> make it clear that<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-15">
+<div class="displaymath process-math" id="eqn-inertial-derivative-equality">
+\begin{equation}
+\frac{D \vec{A}}{Dt} = \left( \dfrac{D\vec{A}}{Dt} \right)_{abs}\tag{4.3.5}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-16">Since the rotating coordinate system itself accelerates, its unit direction vectors change orientation with time relative to the inertial coordinate system, and so by product rule,<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-17">
+<div class="displaymath process-math" id="ch4-section-rotating-reference-frame-17-1">
+\begin{align}
+\frac{D \vec{A}}{Dt} \amp
+= \frac{D A_{x,rot}}{Dt} \, \hat{i}_{rot} + A_{x,rot} \, \frac{D \hat{i}_{rot}}{Dt}\notag\\
+\amp \quad + \frac{D A_{y,rot}}{Dt} \, \hat{j}_{rot} + A_{y,rot} \, \frac{D \hat{j}_{rot}}{Dt}\notag\\
+\amp \quad + \frac{D A_{z,rot}}{Dt} \, \hat{k}_{rot} + A_{z,rot} \, \frac{D \hat{k}_{rot}}{Dt}\notag\\
+\amp = 
+\left( 
+\frac{D A_{x,rot}}{Dt} \, \hat{i}_{rot}
++ \frac{D A_{y,rot}}{Dt} \, \hat{j}_{rot}
++ \frac{D A_{z,rot}}{Dt} \, \hat{k}_{rot}
+\right)\notag\\
+\amp \quad +
+\left( 
+A_{x,rot} \, \frac{D \hat{i}_{rot}}{Dt}
++ A_{y,rot} \, \frac{D \hat{j}_{rot}}{Dt}
++ A_{z,rot} \, \frac{D \hat{k}_{rot}}{Dt}
+\right)\tag{4.3.6}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-18">We call the first expression in parentheses on the right-hand side of <a href="ch4-section-rotating-reference-frame.html#ch4-section-rotating-reference-frame-17-1" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.6">(4.3.6)</a> <span class="process-math">\(\left( \dfrac{D\vec{A}}{Dt} \right)_{rot}\)</span> since it describes how <span class="process-math">\(\vec{A}\)</span> is changing relative to the rotating coordinate system:<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-19">
+<div class="displaymath process-math" id="eqn-noninertial-derivative-specific-intermediate">
+\begin{equation}
+\left( \frac{D \vec{A}}{Dt} \right)_{rot}
+=
+\frac{D A_{x,rot}}{Dt} \, \hat{i}_{rot}
++ \frac{D A_{y,rot}}{Dt} \, \hat{j}_{rot}
++ \frac{D A_{z,rot}}{Dt} \, \hat{k}_{rot}\tag{4.3.7}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-20">But because of the second expression in parentheses on the right-hand side of <a href="ch4-section-rotating-reference-frame.html#ch4-section-rotating-reference-frame-17-1" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.6">(4.3.6)</a>, <a href="ch4-section-rotating-reference-frame.html#ch4-section-rotating-reference-frame-17-1" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.6">(4.3.6)</a> and <a href="ch4-section-rotating-reference-frame.html#eqn-noninertial-derivative-specific-intermediate" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-specific-intermediate.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.7">(4.3.7)</a> make it clear that<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-21">
+<div class="displaymath process-math" id="eqn-noninertial-derivative-inequality">
+\begin{equation}
+\frac{D \vec{A}}{Dt} \neq \left( \dfrac{D\vec{A}}{Dt} \right)_{rot}\tag{4.3.8}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-22">The second expression on in parentheses on the right-hand side of <a href="ch4-section-rotating-reference-frame.html#ch4-section-rotating-reference-frame-17-1" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.6">(4.3.6)</a> arises because the unit direction vectors rotate with their coordinate system at <span class="process-math">\(\vec{\Omega}\text{.}\)</span> It follows from the definition of tangential velocity <span class="process-math">\(\vec{v}_T\)</span> for uniform circular motion<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-23">
+<div class="displaymath process-math" id="ch4-section-rotating-reference-frame-23-1">
+\begin{equation*}
+\vec{v_T} = \vec{\Omega} \times \vec{r}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-24">that<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-25">
+<div class="displaymath process-math" id="ch4-section-rotating-reference-frame-25-1">
+\begin{equation*}
+\frac{D \hat{i}_{rot}}{Dt} = \vec{\Omega} \times \hat{i}_{rot}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-26">
+<div class="displaymath process-math" id="ch4-section-rotating-reference-frame-26-1">
+\begin{equation*}
+\frac{D \hat{j}_{rot}}{Dt} = \vec{\Omega} \times \hat{j}_{rot}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-27">
+<div class="displaymath process-math" id="ch4-section-rotating-reference-frame-27-1">
+\begin{equation*}
+\frac{D \hat{k}_{rot}}{Dt} = \vec{\Omega} \times \hat{k}_{rot}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-28">(The full derivation of these terms is shown in Appendix I.) Therefore, the second expression in parenthesis on the right-hand side of <a href="ch4-section-rotating-reference-frame.html#ch4-section-rotating-reference-frame-17-1" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.6">(4.3.6)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-29">
+<div class="displaymath process-math" id="ch4-section-rotating-reference-frame-29-1">
+\begin{align*}
+A_{x,rot} \, \frac{D \hat{i}_{rot}}{Dt}
++ A_{y,rot} \, \frac{D \hat{j}_{rot}}{Dt}
++ A_{z,rot} \, \frac{D \hat{k}_{rot}}{Dt}
+\amp =
+A_{x,rot} \left( \vec{\Omega} \times \hat{i}_{rot} \right)
++ A_{y,rot} \left( \vec{\Omega} \times \hat{j}_{rot} \right)
++ A_{z,rot} \left( \vec{\Omega} \times \hat{k}_{rot} \right)\\
+\amp =
+\vec{\Omega} \times
+\left( A_{x,rot} \, \hat{i}_{rot} \right)
++ \vec{\Omega} \times \left( A_{y,rot} \, \hat{j}_{rot} \right)
++ \vec{\Omega} \times \left( A_{z,rot} \, \hat{k}_{rot} \right)\\
+\amp =
+\vec{\Omega} \times
+\left( A_{x,rot} \, \hat{i}_{rot}
++ A_{y,rot} \, \hat{j}_{rot}
++ A_{z,rot} \, \hat{k}_{rot} \right)\\
+\amp = 
+\vec{\Omega} \times \vec{A}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-30">where the scalar multiplication property of the cross product<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-31">
+<div class="displaymath process-math" id="ch4-section-rotating-reference-frame-31-1">
+\begin{equation*}
+k \left( \vec{a} \times \vec{b} \right) = \vec{a} \times \left( k \, \vec{b} \right)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-32">as well as its distributive property over addition have been used (review these properties in <a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal" title="Subsubsection 1.2.2.3: Properties of dot and cross products">Subsubsection 1.2.2.3</a>).<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-33">Thus, <a href="ch4-section-rotating-reference-frame.html#ch4-section-rotating-reference-frame-17-1" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.6">(4.3.6)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-34">
+<div class="displaymath process-math" id="eqn-noninertial-derivative-specific">
+\begin{equation}
+\frac{D\vec{A}}{Dt}
+=
+\left( \frac{D\vec{A}}{Dt} \right)_{rot}
++
+\vec{\Omega} \times \vec{A}\tag{4.3.9}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-35">and equating <a href="ch4-section-rotating-reference-frame.html#eqn-inertial-derivative-equality" class="xref" data-knowl="./knowl/xref/eqn-inertial-derivative-equality.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.5">(4.3.5)</a> and <a href="ch4-section-rotating-reference-frame.html#eqn-noninertial-derivative-specific" class="xref" data-knowl="./knowl/xref/eqn-noninertial-derivative-specific.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.9">(4.3.9)</a> reveals<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-rotating-reference-frame-36">
+<div class="displaymath process-math" id="eqn-derivative-equality">
+\begin{equation}
+\left( \frac{D\vec{A}}{Dt} \right)_{abs}
+=
+\left( \frac{D\vec{A}}{Dt} \right)_{rot}
++
+\vec{\Omega} \times \vec{A}\tag{4.3.10}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-rotating-reference-frame-37">
+<a href="ch4-section-rotating-reference-frame.html#eqn-derivative-equality" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.10">(4.3.10)</a> says the time rate of change of an arbitrary vector <span class="process-math">\(\vec{A}\)</span> relative to an inertial reference frame is due to the time rate of change of the vector relative to a rotating reference frame as well as to the rotation of that reference frame; in particular, it results from their sum.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-rotating-reference-frame-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 4.3: Rotating reference frame"><a href="#ch4-section-rotating-reference-frame" title="Copy heading and permalink for Section 4.3: Rotating reference frame" aria-label="Copy heading and permalink for Section 4.3: Rotating reference frame">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch4-section-reference-frames.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
