@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch4-section-rotating-reference-frame" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Rotating reference frame</title>
+
+    <p>
+        Consider a vector <m>\vec{A}</m> in three-dimensional space.
+        Any coordinate system (e.g., Cartesian, local Cartesian, cylindrical, standard spherical)
+        could serve as a reference frame to investigate <m>\vec{A}</m>.
+        While the unit direction vectors of coordinate systems differ,
+        and consequently the components of a given vector differ among coordinate systems,
+        all coordinate systems can be used to describe the same vector.
+    </p>
+
+    <p>
+        Consider two Cartesian coordinate systems:
+        One is non-accelerating,
+        and the other is rotating relative to the first with constant angular velocity <m>\vec{\Omega}</m>.
+        The former is an inertial reference frame and will be indicated by the subscript "abs".
+        The latter is a non-inertial reference frame and will be indicated by the subscript "rot".
+    </p>
+
+    <p>
+        The inertial coordinate system is assigned unit direction vectors <m>\hat{i}_{abs}</m>,
+        <m>\hat{j}_{abs}</m>,
+        and <m>\hat{k}_{abs}</m>,
+        and the rotating coordinate system is assigned unit direction vectors <m>\hat{i}_{rot}</m>,
+        <m>\hat{j}_{rot}</m>,
+        and <m>\hat{k}_{rot}</m>.
+    </p>
+
+    <p>
+        In the inertial coordinate system
+    </p>
+
+    <p>
+        <md xml:id="eqn-inertial-vector" number="yes">
+            \vec{A}
+            =
+            A_{x,abs} \, \hat{i}_{abs}
+            + A_{y,abs} \, \hat{j}_{abs}
+            + A_{z,abs} \, \hat{k}_{abs}
+        </md>
+    </p>
+
+    <p>
+        and in the rotating coordinate system
+    </p>
+
+    <p>
+        <md xml:id="eqn-noninertial-vector" number="yes">
+            \vec{A}
+            =
+            A_{x,rot} \, \hat{i}_{rot}
+            + A_{y,rot} \, \hat{j}_{rot}
+            + A_{z,rot} \, \hat{k}_{rot}
+        </md>
+    </p>
+
+    <p>
+        Both <xref ref="eqn-inertial-vector" text="type-global" />
+        and <xref ref="eqn-noninertial-vector" text="type-global" />
+        are equally valid expressions for <m>\vec{A}</m>:
+        Even though the values of their components differ,
+        they each describe the same vector.
+    </p>
+
+    <p>
+        Let <m>\vec{A}</m> change with time,
+        i.e., let <m>\vec{A} = \vec{A}(t)</m>.
+        In the inertial coordinate system,
+        which itself is not accelerating and therefore has unchanging unit direction vectors,
+    </p>
+
+    <p>
+        <md xml:id="eqn-inertial-derivative-general" number="yes">
+            \frac{D \vec{A}}{Dt}
+            =
+            \frac{D A_{x,abs}}{Dt} \, \hat{i}_{abs}
+            + \frac{D A_{y,abs}}{Dt} \, \hat{j}_{abs}
+            + \frac{D A_{z,abs}}{Dt} \, \hat{k}_{abs}
+        </md>
+    </p>
+
+    <p>
+        We call the expression on the right-hand side of <xref ref="eqn-inertial-derivative-general" text="type-global" />
+        <m>\left( \dfrac{D\vec{A}}{Dt} \right)_{abs}</m>
+        since it describes how <m>\vec{A}</m> is changing with time relative to the inertial coordinate system:
+    </p>
+
+    <p>
+        <md xml:id="eqn-inertial-derivative-specific" number="yes">
+            \left( \frac{D \vec{A}}{Dt} \right)_{abs}
+            =
+            \frac{D A_{x,abs}}{Dt} \, \hat{i}_{abs}
+            + \frac{D A_{y,abs}}{Dt} \, \hat{j}_{abs}
+            + \frac{D A_{z,abs}}{Dt} \, \hat{k}_{abs}
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-inertial-derivative-general" text="type-global" />
+        and <xref ref="eqn-inertial-derivative-specific" text="type-global" />
+        make it clear that
+    </p>
+
+    <p>
+        <md xml:id="eqn-inertial-derivative-equality" number="yes">
+            \frac{D \vec{A}}{Dt} = \left( \dfrac{D\vec{A}}{Dt} \right)_{abs}
+        </md>
+    </p>
+
+    <p>
+        Since the rotating coordinate system itself accelerates,
+        its unit direction vectors change orientation with time relative to the inertial coordinate system,
+        and so by product rule,
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{D \vec{A}}{Dt} \amp
+                = \frac{D A_{x,rot}}{Dt} \, \hat{i}_{rot} + A_{x,rot} \, \frac{D \hat{i}_{rot}}{Dt}
+            </mrow>
+            <mrow>\amp \quad + \frac{D A_{y,rot}}{Dt} \, \hat{j}_{rot} + A_{y,rot} \, \frac{D \hat{j}_{rot}}{Dt}</mrow>
+            <mrow>\amp \quad + \frac{D A_{z,rot}}{Dt} \, \hat{k}_{rot} + A_{z,rot} \, \frac{D \hat{k}_{rot}}{Dt}</mrow>
+            <mrow>\amp = 
+                \left( 
+                    \frac{D A_{x,rot}}{Dt} \, \hat{i}_{rot}
+                    + \frac{D A_{y,rot}}{Dt} \, \hat{j}_{rot}
+                    + \frac{D A_{z,rot}}{Dt} \, \hat{k}_{rot}
+                \right)
+            </mrow>
+            <mrow xml:id="eqn-noninertial-derivative-general" number="yes">
+                \amp \quad +
+                \left( 
+                    A_{x,rot} \, \frac{D \hat{i}_{rot}}{Dt}
+                    + A_{y,rot} \, \frac{D \hat{j}_{rot}}{Dt}
+                    + A_{z,rot} \, \frac{D \hat{k}_{rot}}{Dt}
+                \right)
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        We call the first expression in parentheses on the right-hand side of <xref ref="eqn-noninertial-derivative-general" text="type-global" />
+        <m>\left( \dfrac{D\vec{A}}{Dt} \right)_{rot}</m>
+        since it describes how <m>\vec{A}</m> is changing relative to the rotating coordinate system:
+    </p>
+
+    <p>
+        <md xml:id="eqn-noninertial-derivative-specific-intermediate" number="yes">
+            \left( \frac{D \vec{A}}{Dt} \right)_{rot}
+            =
+            \frac{D A_{x,rot}}{Dt} \, \hat{i}_{rot}
+            + \frac{D A_{y,rot}}{Dt} \, \hat{j}_{rot}
+            + \frac{D A_{z,rot}}{Dt} \, \hat{k}_{rot}
+        </md>
+    </p>
+
+    <p>
+        But because of the second expression in parentheses on the right-hand side of
+        <xref ref="eqn-noninertial-derivative-general" text="type-global" />,
+        <xref ref="eqn-noninertial-derivative-general" text="type-global" />
+        and <xref ref="eqn-noninertial-derivative-specific-intermediate" text="type-global" />
+        make it clear that
+    </p>
+
+    <p>
+        <md xml:id="eqn-noninertial-derivative-inequality" number="yes">
+            \frac{D \vec{A}}{Dt} \neq \left( \dfrac{D\vec{A}}{Dt} \right)_{rot}
+        </md>
+    </p>
+
+    <p>
+        The second expression on in parentheses on the right-hand side of
+        <xref ref="eqn-noninertial-derivative-general" text="type-global" />
+        arises because the unit direction vectors rotate with their coordinate system at <m>\vec{\Omega}</m>.
+        It follows from the definition of tangential velocity <m>\vec{v}_T</m> for uniform circular motion
+    </p>
+
+    <p>
+        <md>
+            \vec{v_T} = \vec{\Omega} \times \vec{r}
+        </md>
+    </p>
+
+    <p>
+        that
+    </p>
+    
+    <p>
+        <md>
+             \frac{D \hat{i}_{rot}}{Dt} = \vec{\Omega} \times \hat{i}_{rot}
+        </md>
+    </p>
+
+    <p>
+        <md>
+            \frac{D \hat{j}_{rot}}{Dt} = \vec{\Omega} \times \hat{j}_{rot}
+        </md>
+    </p>
+
+    <p>
+        <md>
+            \frac{D \hat{k}_{rot}}{Dt} = \vec{\Omega} \times \hat{k}_{rot}
+        </md>
+    </p>
+
+    <p>
+        (The full derivation of these terms is shown in Appendix I.)
+        Therefore,
+        the second expression in parenthesis on the right-hand side of
+        <xref ref="eqn-noninertial-derivative-general" text="type-global" />
+        becomes
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                A_{x,rot} \, \frac{D \hat{i}_{rot}}{Dt}
+                + A_{y,rot} \, \frac{D \hat{j}_{rot}}{Dt}
+                + A_{z,rot} \, \frac{D \hat{k}_{rot}}{Dt}
+                \amp =
+                A_{x,rot} \left( \vec{\Omega} \times \hat{i}_{rot} \right)
+                + A_{y,rot} \left( \vec{\Omega} \times \hat{j}_{rot} \right)
+                + A_{z,rot} \left( \vec{\Omega} \times \hat{k}_{rot} \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \vec{\Omega} \times
+                \left( A_{x,rot} \, \hat{i}_{rot} \right)
+                + \vec{\Omega} \times \left( A_{y,rot} \, \hat{j}_{rot} \right)
+                + \vec{\Omega} \times \left( A_{z,rot} \, \hat{k}_{rot} \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \vec{\Omega} \times
+                 \left( A_{x,rot} \, \hat{i}_{rot}
+                + A_{y,rot} \, \hat{j}_{rot}
+                + A_{z,rot} \, \hat{k}_{rot} \right)
+            </mrow>
+            <mrow>
+                \amp = 
+                \vec{\Omega} \times \vec{A}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        where the scalar multiplication property of the cross product
+    </p>
+
+    <p>
+        <md>
+            k \left( \vec{a} \times \vec{b} \right) = \vec{a} \times \left( k \, \vec{b} \right)
+        </md>
+    </p>
+
+    <p>
+        as well as its distributive property over addition have been used
+        (review these properties in <xref ref="ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" text="type-global" />).
+    </p>
+
+    <p>
+        Thus, <xref ref="eqn-noninertial-derivative-general" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-noninertial-derivative-specific" number="yes">
+            \frac{D\vec{A}}{Dt}
+            =
+            \left( \frac{D\vec{A}}{Dt} \right)_{rot}
+            +
+            \vec{\Omega} \times \vec{A}
+        </md>
+    </p>
+
+    <p>
+        and equating <xref ref="eqn-inertial-derivative-equality" text="type-global" />
+        and <xref ref="eqn-noninertial-derivative-specific" text="type-global" />
+        reveals
+    </p>
+
+    <p>
+        <md xml:id="eqn-derivative-equality" number="yes">
+            \left( \frac{D\vec{A}}{Dt} \right)_{abs}
+            =
+            \left( \frac{D\vec{A}}{Dt} \right)_{rot}
+            +
+            \vec{\Omega} \times \vec{A}
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-derivative-equality" text="type-global" />
+        says the time rate of change of an arbitrary vector <m>\vec{A}</m> relative to an inertial reference frame
+        is due to the time rate of change of the vector relative to a rotating reference frame
+        as well as to the rotation of that reference frame;
+        in particular, it results from their sum.
+    </p>
+
+</section>
