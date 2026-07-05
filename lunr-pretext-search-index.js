@@ -937,6 +937,15 @@ var ptx_lunr_docs = [
   "body": "sidereal day solar day "
 },
 {
+  "id": "ch4-section-inertial-accelerations",
+  "level": "1",
+  "url": "ch4-section-inertial-accelerations.html",
+  "type": "Section",
+  "number": "4.5",
+  "title": "Inertial accelerations",
+  "body": " Inertial accelerations  "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
