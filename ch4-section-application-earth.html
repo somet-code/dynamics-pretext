@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Application of a rotating reference frame to Earth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="METR 3113">
+<meta property="book:author" content="Dr. Amanda Kis">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.8';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="Atmospheric Dynamics I" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="atmospheric-dynamics-i.html"><span class="title">METR 3113</span> <span class="subtitle">Atmospheric Dynamics I</span></a></h1>
+<p class="byline">Dr. Amanda Kis</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch4-section-rotating-reference-frame.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-4.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Continuum Approximation and Calculus in Geophysical Fluid Dynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-continuum-approximation.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Continuum approximation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1-section-calculus.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Partial differentiation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector algebra and calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Right-hand rule</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-del" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Del</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-finite-differencing.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Finite differencing</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Fundamental Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-gravitational-force.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Gravitational force</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-pressure-gradient-force.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Pressure gradient force</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3-section-friction-force.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Viscous friction force</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3-section-friction-force.html#ch3-section-friction-force-subsection-couette-flow" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Couette flow</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-newtons-laws.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Newton’s laws of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-selected-references.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Non-inertial Reference Frames and Apparent Forces</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-relative-motion.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Relative motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-reference-frames.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Inertial and non-inertial reference frames</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-rotating-reference-frame.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Rotating reference frame</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch4-section-application-earth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Application of a rotating reference frame to Earth</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ch4-section-application-earth">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Application of a rotating reference frame to Earth</span>
+</h2>
+<div class="para" id="ch4-section-application-earth-2">While either side of <a href="ch4-section-rotating-reference-frame.html#eqn-derivative-equality" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.10">(4.3.10)</a> is equivalent to <span class="process-math">\(\dfrac{D\vec{A}}{Dt}\text{,}\)</span> we are most interested in the expression on its right-hand side because we live on the rotating Earth and view atmospheric phenomena as we and the phenomena rotate along with the planet. Going forward, associate the rotating coordinate system with Earth by interpreting <span class="process-math">\(\vec{\Omega}\)</span> as Earth’s angular velocity, which is directed parallel to Earth’s axis of rotation and points from the South Pole toward the North Pole. The associated angular speed is<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-3">
+<div class="displaymath process-math" id="ch4-section-application-earth-3-1">
+\begin{equation*}
+\Omega = \frac{2\pi}{t_D} = 7.292 \times 10^{-5} \, \text{rad s}^{-1}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-4">where <span class="process-math">\(t_D = 86156.09\)</span> s is the length of a <dfn class="terminology">sidereal day</dfn>, which is the time it takes for Earth to rotate once relative to the distant stars. (A sidereal day is slightly shorter than a <dfn class="terminology">solar day</dfn> because Earth orbits the Sun as it rotates on its axis of rotation.)<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-5">
+<span class="process-math">\(\vec{A}\)</span> in <a href="ch4-section-rotating-reference-frame.html#eqn-derivative-equality" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.10">(4.3.10)</a> is arbitrary, so we can replace it with any vector of interest. Let’s replace <span class="process-math">\(\vec{A}\)</span> with position vector <span class="process-math">\(\vec{r}\)</span> that points from Earth’s center to an air parcel of interest as it moves through Earth’s atmosphere:<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-6">
+<div class="displaymath process-math" id="eqn-derivative-equality-position">
+\begin{equation}
+\left( \frac{D\vec{r}}{Dt} \right)_{abs}
+=
+\left( \frac{D\vec{r}}{Dt} \right)_{rot}
++ \vec{\Omega} \times \vec{r}\tag{4.4.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-7">As we reviewed in <a href="ch2-section-cartesian-coordinates.html" class="internal" title="Section 2.1: Cartesian coordinate system">Section 2.1</a>,<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-8">
+<div class="displaymath process-math" id="ch4-section-application-earth-8-1">
+\begin{equation*}
+\frac{D\vec{r}}{Dt} = \vec{u}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-9">Inserting this definition into <a href="ch4-section-application-earth.html#eqn-derivative-equality-position" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality-position.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.1">(4.4.1)</a> produces<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-10">
+<div class="displaymath process-math" id="eqn-derivative-equality-velocity">
+\begin{equation}
+\vec{u}_{abs}
+=
+\vec{u}_{rot}
++
+\vec{\Omega} \times \vec{r}\tag{4.4.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-11">
+<span class="process-math">\(\vec{u}_{abs} = u_{abs} \, \hat{i}_{abs} + v_{abs} \, \hat{j}_{abs} + w_{abs} \, \hat{k}_{abs}\)</span> is the velocity of the air parcel measured relative to the inertial reference frame. According to <a href="ch4-section-application-earth.html#eqn-derivative-equality-velocity" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality-velocity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.2">(4.4.2)</a>, <span class="process-math">\(\vec{u}_{abs}\)</span> is equivalent to the velocity of the air parcel measured relative to the rotating reference frame <span class="process-math">\(\vec{u}_{rot} = u_{rot} \, \hat{i}_{rot} + v_{rot} \, \hat{j}_{rot} + w_{rot} \, \hat{k}_{rot}\)</span> (i.e., the velocity of the air parcel relative to Earth, which is the wind) summed with the tangential velocity imparted to the air parcel by the rotation of the reference frame <span class="process-math">\(\vec{u}_T = \vec{\Omega} \times \vec{r}\)</span> (i.e., the velocity of the air parcel due to Earth’s rotation). The relationship in <a href="ch4-section-application-earth.html#eqn-derivative-equality-velocity" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality-velocity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.2">(4.4.2)</a> could be written as<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-12">
+<div class="displaymath process-math" id="eqn-derivative-equality-velocity-relative">
+\begin{equation}
+\vec{u}_{air \, parcel/abs}
+=
+\vec{u}_{air \, parcel/rot}
++
+\vec{u}_{rot/abs}\tag{4.4.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-13">to emphasize <span class="process-math">\(\vec{\Omega} \times \vec{r}\)</span> is velocity caused by the rotation of the non-inertial coordinate system relative to the inertial coordinate system as well as to more clearly highlight the direct correspondence between the terms in <a href="ch4-section-application-earth.html#eqn-derivative-equality-velocity" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality-velocity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.2">(4.4.2)</a> and the terms in <a href="ch4-section-relative-motion.html#eqn-relative-motion" class="xref" data-knowl="./knowl/xref/eqn-relative-motion.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.1.1">(4.1.1)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-14">Note <span class="process-math">\(\vec{\Omega} \times \vec{r}\)</span> simply depends on the air parcel’s position given by <span class="process-math">\(\vec{r}\)</span> and not on its movement relative to Earth. This means <span class="process-math">\(\vec{\Omega} \times \vec{r} \neq \vec{0}\)</span> whether or not the air parcel is moving relative to Earth. Consequently, even if the air parcel is stationary on Earth’s surface or in its atmosphere, it will rotate along with Earth and therefore move through space.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-15">Now let’s replace <span class="process-math">\(\vec{A}\)</span> in <a href="ch4-section-rotating-reference-frame.html#eqn-derivative-equality" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.10">(4.3.10)</a> with <span class="process-math">\(\vec{u}_{abs}\)</span> to produce a statement about the air parcel’s acceleration.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-16">
+<div class="displaymath process-math" id="eqn-derivative-equality-acceleration">
+\begin{equation}
+\left( \frac{D\vec{u}_{abs}}{Dt} \right)_{abs}
+=
+\left( \frac{D\vec{u}_{abs}}{Dt} \right)_{rot}
++ \vec{\Omega} \times \vec{u_{abs}}\tag{4.4.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-17">We substitute <a href="ch4-section-application-earth.html#eqn-derivative-equality-velocity" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality-velocity.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.2">(4.4.2)</a> into the right-hand side of <a href="ch4-section-application-earth.html#eqn-derivative-equality-acceleration" class="xref" data-knowl="./knowl/xref/eqn-derivative-equality-acceleration.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.4">(4.4.4)</a> and expand.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-18">
+<div class="displaymath process-math" id="ch4-section-application-earth-18-1">
+\begin{align}
+\left( \frac{D\vec{u}_{abs}}{Dt} \right)_{abs}
+\amp =
+\left(
+\frac{D \left( \vec{u}_{rot}
++ \vec{\Omega} \times \vec{r} \right) }{Dt}
+\right)_{rot}
++
+\vec{\Omega} \times
+\left(
+\vec{u}_{rot}
++ \vec{\Omega} \times \vec{r}
+\right)\notag\\
+\amp =
+\left(
+\frac{D \vec{u}_{rot}}{Dt}
+\right)_{rot}
++
+\vec{\Omega} \times
+\left(
+\frac{D \vec{r}}{Dt}
+\right)_{rot}
++
+\vec{\Omega} \times \vec{u}_{rot}
++
+\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)\notag\\
+\amp =
+\left(
+\frac{D \vec{u}_{rot}}{Dt}
+\right)_{rot}
++
+\vec{\Omega} \times \vec{u}_{rot}
++
+\vec{\Omega} \times \vec{u}_{rot}
++
+\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)\notag\\
+\amp =
+\left(
+\frac{D \vec{u}_{rot}}{Dt}
+\right)_{rot}
++
+2\vec{\Omega} \times \vec{u}_{rot}
++
+\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)\tag{4.4.5}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-application-earth-19">In most presentations of this derivation, the "rot" subscript usually is dropped after this point for brevity, and the left-hand side of <a href="ch4-section-application-earth.html#ch4-section-application-earth-18-1" class="xref" data-knowl="./knowl/xref/eqn-motion-vector-subscripts.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.5">(4.4.5)</a> usually is written <span class="process-math">\(\left( \dfrac{D\vec{u}}{Dt} \right)_{abs}\)</span> and represents the acceleration of the air parcel relative to the inertial coordinate system. The first term on the right-hand side of <a href="ch4-section-application-earth.html#ch4-section-application-earth-18-1" class="xref" data-knowl="./knowl/xref/eqn-motion-vector-subscripts.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.5">(4.4.5)</a>, which now will be written <span class="process-math">\(\dfrac{D\vec{u}}{Dt}\text{,}\)</span> is the acceleration of the air parcel relative to the rotating coordinate system, i.e., relative to Earth. Then we have<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-application-earth-20">
+<div class="displaymath process-math" id="eqn-motion-vector">
+\begin{equation}
+\left( \frac{D\vec{u}}{Dt} \right)_{abs}
+=
+\frac{D\vec{u}}{Dt}
++ 2\vec{\Omega} \times \vec{u}
++ \vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)\tag{4.4.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-application-earth-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 4.4: Application of a rotating reference frame to Earth"><a href="#ch4-section-application-earth" title="Copy heading and permalink for Section 4.4: Application of a rotating reference frame to Earth" aria-label="Copy heading and permalink for Section 4.4: Application of a rotating reference frame to Earth">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch4-section-rotating-reference-frame.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
