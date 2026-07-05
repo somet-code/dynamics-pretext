@@ -11,7 +11,8 @@
         where <m>x</m>, <m>y</m>, and <m>z</m> are its coordinates.
         These coordinates are signed distances from the origin measured parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes, respectively,
         which are mutually orthogonal and oriented relative to each other following the right-hand rule.
-        Additionally, the <term>unit direction vectors</term> <m>\hat{i}</m>,
+        Additionally, the <term>unit direction vectors</term> of the <term>standard basis</term>
+        <m>\hat{i}</m>,
         <m>\hat{j}</m>,
         and <m>\hat{k}</m> are parallel to the <m>x</m>-,
         <m>y</m>-,
