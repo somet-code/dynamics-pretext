@@ -4,5 +4,6 @@
   <xi:include href="ch4-section-relative-motion.ptx" />
   <xi:include href="ch4-section-reference-frames.ptx" />
   <xi:include href="ch4-section-rotating-reference-frame.ptx" />
+  <xi:include href="ch4-section-application-earth.ptx" />
 
 </chapter>

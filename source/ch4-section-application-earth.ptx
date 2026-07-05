@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch4-section-application-earth" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Application of a rotating reference frame to Earth</title>
+
+    <p>
+        While either side of <xref ref="eqn-derivative-equality" text="type-global" />
+        is equivalent to <m>\dfrac{D\vec{A}}{Dt}</m>,
+        we are most interested in the expression on its right-hand side
+        because we live on the rotating Earth and view atmospheric phenomena as we and the phenomena rotate along with the planet.
+        Going forward, associate the rotating coordinate system with Earth by interpreting <m>\vec{\Omega}</m> as Earth's angular velocity,
+        which is directed parallel to Earth's axis of rotation and points from the South Pole toward the North Pole.
+        The associated angular speed is
+    </p>
+
+    <p>
+        <md>
+            \Omega = \frac{2\pi}{t_D} = 7.292 \times 10^{-5} \, \text{rad s}^{-1}
+        </md>
+    </p>
+    
+    <p>
+        where <m>t_D = 86156.09</m> s is the length of a <term>sidereal day</term>,
+        which is the time it takes for Earth to rotate once relative to the distant stars.
+        (A sidereal day is slightly shorter than a <term>solar day</term>
+        because Earth orbits the Sun as it rotates on its axis of rotation.)
+    </p>
+
+    <p>
+        <m>\vec{A}</m> in <xref ref="eqn-derivative-equality" text="type-global" /> is arbitrary,
+        so we can replace it with any vector of interest.
+        Let's replace <m>\vec{A}</m> with position vector <m>\vec{r}</m>
+        that points from Earth's center to an air parcel of interest as it moves through Earth's atmosphere:
+    </p>
+
+    <p>
+        <md xml:id="eqn-derivative-equality-position" number="yes">
+            \left( \frac{D\vec{r}}{Dt} \right)_{abs}
+            =
+            \left( \frac{D\vec{r}}{Dt} \right)_{rot}
+            + \vec{\Omega} \times \vec{r}
+        </md>
+    </p>
+
+    <p>
+        As we reviewed in <xref ref="ch2-section-cartesian-coordinates" text="type-global" />,
+    </p>
+
+    <p>
+        <md>
+            \frac{D\vec{r}}{Dt} = \vec{u}
+        </md>
+    </p>
+
+    <p>
+        Inserting this definition into <xref ref="eqn-derivative-equality-position" text="type-global" /> produces
+    </p>
+
+    <p>
+        <md xml:id="eqn-derivative-equality-velocity" number="yes">
+            \vec{u}_{abs}
+            =
+            \vec{u}_{rot}
+            +
+            \vec{\Omega} \times \vec{r}
+        </md>
+    </p>
+
+    <p>
+        <m>\vec{u}_{abs} = u_{abs} \, \hat{i}_{abs} + v_{abs} \, \hat{j}_{abs} + w_{abs} \, \hat{k}_{abs}</m>
+        is the velocity of the air parcel measured relative to the inertial reference frame.
+        According to <xref ref="eqn-derivative-equality-velocity" text="type-global" />,
+        <m>\vec{u}_{abs}</m> is equivalent to the velocity of the air parcel measured relative to the rotating reference frame
+        <m>\vec{u}_{rot} = u_{rot} \, \hat{i}_{rot} + v_{rot} \, \hat{j}_{rot} + w_{rot} \, \hat{k}_{rot}</m>
+        (i.e., the velocity of the air parcel relative to Earth, which is the wind)
+        summed with the tangential velocity imparted to the air parcel by the rotation of the reference frame
+        <m>\vec{u}_T = \vec{\Omega} \times \vec{r}</m>
+        (i.e., the velocity of the air parcel due to Earth's rotation).
+        The relationship in <xref ref="eqn-derivative-equality-velocity" text="type-global" /> could be written as
+    </p>
+
+    <p>
+        <md xml:id="eqn-derivative-equality-velocity-relative" number="yes">
+            \vec{u}_{air \, parcel/abs}
+            =
+            \vec{u}_{air \, parcel/rot}
+            +
+            \vec{u}_{rot/abs}
+        </md>
+    </p>
+
+    <p>
+        to emphasize <m>\vec{\Omega} \times \vec{r}</m>
+        is velocity caused by the rotation of the non-inertial coordinate system relative to the inertial coordinate system
+        as well as to more clearly highlight the direct correspondence between the terms in
+        <xref ref="eqn-derivative-equality-velocity" text="type-global" />
+        and the terms in <xref ref="eqn-relative-motion" text="type-global" />.
+    </p>
+
+    <p>
+        Note <m>\vec{\Omega} \times \vec{r}</m> simply depends on the air parcel's position given by <m>\vec{r}</m>
+        and not on its movement relative to Earth.
+        This means <m>\vec{\Omega} \times \vec{r} \neq \vec{0}</m> whether or not the air parcel is moving relative to Earth.
+        Consequently,
+        even if the air parcel is stationary on Earth's surface or in its atmosphere, it will rotate along with Earth
+        and therefore move through space.
+    </p>
+
+    <p>
+        Now let's replace <m>\vec{A}</m> in <xref ref="eqn-derivative-equality" text="type-global" />
+        with <m>\vec{u}_{abs}</m> to produce a statement about the air parcel's acceleration.
+    </p>
+
+    <p>
+        <md xml:id="eqn-derivative-equality-acceleration" number="yes">
+            \left( \frac{D\vec{u}_{abs}}{Dt} \right)_{abs}
+            =
+            \left( \frac{D\vec{u}_{abs}}{Dt} \right)_{rot}
+            + \vec{\Omega} \times \vec{u_{abs}}
+        </md>
+    </p>
+
+    <p>
+        We substitute <xref ref="eqn-derivative-equality-velocity" text="type-global" />
+        into the right-hand side of <xref ref="eqn-derivative-equality-acceleration" text="type-global" />
+        and expand.
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \left( \frac{D\vec{u}_{abs}}{Dt} \right)_{abs}
+                \amp =
+                \left(
+                    \frac{D \left( \vec{u}_{rot}
+                    + \vec{\Omega} \times \vec{r} \right) }{Dt}
+                \right)_{rot}
+                +
+                \vec{\Omega} \times
+                \left(
+                    \vec{u}_{rot}
+                    + \vec{\Omega} \times \vec{r}
+                \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \left(
+                    \frac{D \vec{u}_{rot}}{Dt}
+                \right)_{rot}
+                +
+                \vec{\Omega} \times
+                \left(
+                    \frac{D \vec{r}}{Dt}
+                \right)_{rot}
+                +
+                \vec{\Omega} \times \vec{u}_{rot}
+                +
+                \vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \left(
+                    \frac{D \vec{u}_{rot}}{Dt}
+                \right)_{rot}
+                +
+                \vec{\Omega} \times \vec{u}_{rot}
+                +
+                \vec{\Omega} \times \vec{u}_{rot}
+                +
+                \vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+            </mrow>
+            <mrow xml:id="eqn-motion-vector-subscripts" number="yes">
+                \amp =
+                \left(
+                    \frac{D \vec{u}_{rot}}{Dt}
+                \right)_{rot}
+                +
+                2\vec{\Omega} \times \vec{u}_{rot}
+                +
+                \vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        In most presentations of this derivation,
+        the "rot" subscript usually is dropped after this point for brevity,
+        and the left-hand side of <xref ref="eqn-motion-vector-subscripts" text="type-global" />
+        usually is written <m>\left( \dfrac{D\vec{u}}{Dt} \right)_{abs}</m>
+        and represents the acceleration of the air parcel relative to the inertial coordinate system.
+        The first term on the right-hand side of <xref ref="eqn-motion-vector-subscripts" text="type-global" />,
+        which now will be written <m>\dfrac{D\vec{u}}{Dt}</m>,
+        is the acceleration of the air parcel relative to the rotating coordinate system,
+        i.e., relative to Earth.
+        Then we have
+    </p>
+
+    <p>
+        <md xml:id="eqn-motion-vector" number="yes">
+            \left( \frac{D\vec{u}}{Dt} \right)_{abs}
+            =
+            \frac{D\vec{u}}{Dt}
+            + 2\vec{\Omega} \times \vec{u}
+            + \vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+        </md>
+    </p>
+
+</section>
