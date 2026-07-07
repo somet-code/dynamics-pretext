@@ -53,15 +53,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.8';
+eBookConfig.runestone_version = '8.1.9';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/prefix-runtime.846a0d6fafaa99e0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bbcfc02849ebc023.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -221,7 +221,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="ch3-section-newtons-laws-8">Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law motion follows from the <span class="process-math">\(1^{\text{st}}\)</span> law and can be expressed mathematically as<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-newtons-laws-9">
-<div class="displaymath process-math" id="ch3-newtons-2nd-law">
+<div class="displaymath process-math" id="eqn-newtons-2nd-law">
 \begin{equation}
 \vec{F}_{net} = \frac{D \vec{p}}{Dt}\tag{3.4.1}
 \end{equation}
@@ -230,10 +230,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="ch3-section-newtons-laws-10">where <span class="process-math">\(\vec{F}_{net} = \sum\limits_i \vec{F}_i\)</span> is the net force that results from the sum of all forces <span class="process-math">\(\vec{F}_i\)</span> acting on the object of interest and <span class="process-math">\(\vec{p} = m\vec{u}\)</span> [<span class="process-math">\(\text{kg} \, \text{m} \, \text{s}^{-1}\)</span>] is the object’s momentum.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-newtons-laws-11">Substituting the definition of momentum into <a href="ch3-section-newtons-laws.html#ch3-newtons-2nd-law" class="xref" data-knowl="./knowl/xref/ch3-newtons-2nd-law.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.1">(3.4.1)</a> and applying the product rule produces<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-newtons-laws-11">Substituting the definition of momentum into <a href="ch3-section-newtons-laws.html#eqn-newtons-2nd-law" class="xref" data-knowl="./knowl/xref/eqn-newtons-2nd-law.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.1">(3.4.1)</a> and applying the product rule produces<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-newtons-laws-12">
-<div class="displaymath process-math" id="ch3-newtons-2nd-law-product-rule">
+<div class="displaymath process-math" id="eqn-newtons-2nd-law-product-rule">
 \begin{equation}
 \vec{F}_{net} = \frac{D \left( m\vec{u} \right)}{Dt} = m \frac{D \vec{u}}{Dt} + \vec{u} \frac{Dm}{Dt}\tag{3.4.2}
 \end{equation}
@@ -243,17 +243,17 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="ch3-section-newtons-laws-13">If the object’s mass is <dfn class="terminology">conserved</dfn> (constant), which is the usual assumption,<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-newtons-laws-14">
-<div class="displaymath process-math" id="ch3-mass-conservation">
+<div class="displaymath process-math" id="eqn-mass-conservation">
 \begin{equation}
 \frac{Dm}{Dt} = 0\tag{3.4.3}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-newtons-laws-15">and consequently <a href="ch3-section-newtons-laws.html#ch3-newtons-2nd-law-product-rule" class="xref" data-knowl="./knowl/xref/ch3-newtons-2nd-law-product-rule.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.2">(3.4.2)</a> reduces to the simpler, more common form of Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law of motion:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-newtons-laws-15">and consequently <a href="ch3-section-newtons-laws.html#eqn-newtons-2nd-law-product-rule" class="xref" data-knowl="./knowl/xref/eqn-newtons-2nd-law-product-rule.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.2">(3.4.2)</a> reduces to the simpler, more common form of Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law of motion:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-newtons-laws-16">
-<div class="displaymath process-math" id="ch3-newtons-2nd-law-simplified">
+<div class="displaymath process-math" id="eqn-newtons-2nd-law-simplified">
 \begin{equation}
 \vec{F}_{net} = m\vec{a}\tag{3.4.4}
 \end{equation}
@@ -262,10 +262,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="ch3-section-newtons-laws-17">where <span class="process-math">\(\vec{a} = \dfrac{D \vec{u}}{Dt}\)</span> is the object’s acceleration.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-newtons-laws-18">Dividing <a href="ch3-section-newtons-laws.html#ch3-newtons-2nd-law-simplified" class="xref" data-knowl="./knowl/xref/ch3-newtons-2nd-law-simplified.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.4">(3.4.4)</a> by the object’s mass <span class="process-math">\(m\)</span> isolates the object’s acceleration:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-newtons-laws-18">Dividing <a href="ch3-section-newtons-laws.html#eqn-newtons-2nd-law-simplified" class="xref" data-knowl="./knowl/xref/eqn-newtons-2nd-law-simplified.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.4">(3.4.4)</a> by the object’s mass <span class="process-math">\(m\)</span> isolates the object’s acceleration:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-newtons-laws-19">
-<div class="displaymath process-math" id="ch3-newtons-2nd-law-simplified-acceleration">
+<div class="displaymath process-math" id="eqn-newtons-2nd-law-simplified-acceleration">
 \begin{equation}
 \frac{\vec{F}_{net}}{m} = \vec{a}\tag{3.4.5}
 \end{equation}
@@ -274,10 +274,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="ch3-section-newtons-laws-20">Using acceleration rather than force is preferable in meteorology since it is not reasonable to measure the mass of air parcel (our object of interest).<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-newtons-laws-21">For an air parcel as described in this chapter, assuming its mass is constant (the typical assumption and one that we will revisit later when exploring mass conservation), we can combine the effects of the <dfn class="terminology">fundamental forces</dfn> on it to expand the left side of <a href="ch3-section-newtons-laws.html#ch3-newtons-2nd-law-simplified-acceleration" class="xref" data-knowl="./knowl/xref/ch3-newtons-2nd-law-simplified-acceleration.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.5">(3.4.5)</a> as follows:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-newtons-laws-21">For an air parcel as described in this chapter, assuming its mass is constant (the typical assumption and one that we will revisit later when exploring mass conservation), we can combine the effects of the <dfn class="terminology">fundamental forces</dfn> on it to expand the left side of <a href="ch3-section-newtons-laws.html#eqn-newtons-2nd-law-simplified-acceleration" class="xref" data-knowl="./knowl/xref/eqn-newtons-2nd-law-simplified-acceleration.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.5">(3.4.5)</a> as follows:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-newtons-laws-22">
-<div class="displaymath process-math" id="ch3-equation-motion-start">
+<div class="displaymath process-math" id="eqn-equation-motion-start">
 \begin{equation}
 \frac{\vec{F}_{net}}{m}
 = \frac{\vec{F}_g
@@ -291,10 +291,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-newtons-laws-23">Furthermore, since the acceleration of the air parcel is given by <span class="process-math">\(\vec{a} = \dfrac{D \vec{u}}{Dt}\text{,}\)</span> <a href="ch3-section-newtons-laws.html#ch3-equation-motion-start" class="xref" data-knowl="./knowl/xref/ch3-equation-motion-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.6">(3.4.6)</a> can be written as<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-newtons-laws-23">Furthermore, since the acceleration of the air parcel is given by <span class="process-math">\(\vec{a} = \dfrac{D \vec{u}}{Dt}\text{,}\)</span> <a href="ch3-section-newtons-laws.html#eqn-equation-motion-start" class="xref" data-knowl="./knowl/xref/eqn-equation-motion-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.6">(3.4.6)</a> can be written as<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-newtons-laws-24">
-<div class="displaymath process-math" id="ch3-equation-motion-basic">
+<div class="displaymath process-math" id="eqn-motion-basic">
 \begin{equation}
 \frac{D \vec{u}}{Dt} = \vec{g^*} -\frac{1}{\rho} \nabla p + \nu \nabla^2 \vec{u}\tag{3.4.7}
 \end{equation}
@@ -304,9 +304,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="ch3-section-newtons-laws-25">which we call the <dfn class="terminology">vector equation of motion</dfn> or the <dfn class="terminology">vector momentum equation</dfn>, or simply the singular <dfn class="terminology">equation of motion</dfn> or <dfn class="terminology">momentum equation</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ch3-section-newtons-laws-26">
-<a href="ch3-section-newtons-laws.html#ch3-equation-motion-basic" class="xref" data-knowl="./knowl/xref/ch3-equation-motion-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.7">(3.4.7)</a> is a statement of <dfn class="terminology">momentum conservation</dfn> since it gives the net external force (per unit mass) that could cause an air parcel’s momentum to change. And if the individual forces that make up the net external force are not present or cancel each other out, the air parcel’s momentum would not change.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<a href="ch3-section-newtons-laws.html#eqn-motion-basic" class="xref" data-knowl="./knowl/xref/eqn-motion-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.7">(3.4.7)</a> is a statement of <dfn class="terminology">momentum conservation</dfn> since it gives the net external force (per unit mass) that could cause an air parcel’s momentum to change. And if the individual forces that make up the net external force are not present or cancel each other out, the air parcel’s momentum would not change.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-newtons-laws-27">While <a href="ch3-section-newtons-laws.html#ch3-equation-motion-basic" class="xref" data-knowl="./knowl/xref/ch3-equation-motion-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.7">(3.4.7)</a> is an excellent start to applying Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law of motion to the motions of air parcels in Earth’s atmosphere, it is incomplete for our purposes: That is because it is valid only for a non-accelerating coordinate system. But we want to analyze air parcel motions using the local Cartesian coordinate system, which is attached to the rotating Earth and therefore accelerates along with Earth! We will tackle the complication of Earth’s rotation and consequent acceleration of the local Cartesian coordinate system in Chapter 4.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-newtons-laws-27">While <a href="ch3-section-newtons-laws.html#eqn-motion-basic" class="xref" data-knowl="./knowl/xref/eqn-motion-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.7">(3.4.7)</a> is an excellent start to applying Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law of motion to the motions of air parcels in Earth’s atmosphere, it is incomplete for our purposes: That is because it is valid only for a non-accelerating coordinate system. But we want to analyze air parcel motions using the local Cartesian coordinate system, which is attached to the rotating Earth and therefore accelerates along with Earth! We will tackle the complication of Earth’s rotation and consequent acceleration of the local Cartesian coordinate system in Chapter 4.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-newtons-laws-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section 3.4: Newton’s laws of motion"><a href="#ch3-section-newtons-laws" title="Copy heading and permalink for Section 3.4: Newton’s laws of motion" aria-label="Copy heading and permalink for Section 3.4: Newton’s laws of motion">🔗</a></div>
 </section>

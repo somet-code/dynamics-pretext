@@ -53,15 +53,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.8';
+eBookConfig.runestone_version = '8.1.9';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/prefix-runtime.846a0d6fafaa99e0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bbcfc02849ebc023.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -191,7 +191,7 @@ p = \frac{F_{\perp}}{A}\text{,}
 <div class="para" id="ch3-section-pressure-gradient-force-10">We can create a linear approximation of each of these forces using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces and neglecting the higher order terms.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-pressure-gradient-force-11">
-<div class="displaymath process-math" id="ch3-airparcel-pressure-force-left">
+<div class="displaymath process-math" id="eqn-airparcel-pressure-force-left">
 \begin{equation}
 F_L = \left(
 p_0 + \frac{\partial p}{\partial x} \frac{(-\delta x)}{2}
@@ -204,7 +204,7 @@ p_0 - \frac{\partial p}{\partial x} \frac{\delta x}{2}
 <div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-pressure-gradient-force-12">
-<div class="displaymath process-math" id="ch3-airparcel-pressure-force-right">
+<div class="displaymath process-math" id="eqn-airparcel-pressure-force-right">
 \begin{equation}
 F_R = -\left(
 p_0 + \frac{\partial p}{\partial x} \frac{\delta x}{2}
@@ -226,27 +226,27 @@ p_0 + \frac{\partial p}{\partial x} \frac{\delta x}{2}
 <div class="para" id="ch3-section-pressure-gradient-force-14">Adding <span class="process-math">\(F_L\)</span> and <span class="process-math">\(F_R\)</span> produces the net force in the <span class="process-math">\(x\)</span>-direction <span class="process-math">\(F_x\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-pressure-gradient-force-15">
-<div class="displaymath process-math" id="ch3-airparcel-pressure-force-x">
+<div class="displaymath process-math" id="eqn-airparcel-pressure-force-x">
 \begin{equation}
 F_x = F_L + F_R = -\frac{\partial p}{\partial x} \delta x \, \delta y \, \delta z\tag{3.2.3}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-pressure-gradient-force-16">Since <span class="process-math">\(m = \rho \, \delta x \, \delta y \, \delta z\text{,}\)</span> we can write the net force per unit mass in the <span class="process-math">\(x\)</span>-direction by dividing <a href="ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-force-x" class="xref" data-knowl="./knowl/xref/ch3-airparcel-pressure-force-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.3">(3.2.3)</a> by <span class="process-math">\(m\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-pressure-gradient-force-16">Since <span class="process-math">\(m = \rho \, \delta x \, \delta y \, \delta z\text{,}\)</span> we can write the net force per unit mass in the <span class="process-math">\(x\)</span>-direction by dividing <a href="ch3-section-pressure-gradient-force.html#eqn-airparcel-pressure-force-x" class="xref" data-knowl="./knowl/xref/eqn-airparcel-pressure-force-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.3">(3.2.3)</a> by <span class="process-math">\(m\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-pressure-gradient-force-17">
-<div class="displaymath process-math" id="ch3-airparcel-pressure-acceleration-x">
+<div class="displaymath process-math" id="eqn-airparcel-pressure-acceleration-x">
 \begin{equation}
 \frac{F_x}{m} = a_x = -\frac{1}{\rho} \frac{\partial p}{\partial x}\tag{3.2.4}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-pressure-gradient-force-18">Similarly, we can write the net forces per unit mass in the <span class="process-math">\(y-\)</span> and <span class="process-math">\(z\)</span>-directions as<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-pressure-gradient-force-18">Similarly, we can write the net forces per unit mass in the <span class="process-math">\(y\)</span>- and <span class="process-math">\(z\)</span>-directions as<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-pressure-gradient-force-19">
-<div class="displaymath process-math" id="ch3-airparcel-pressure-acceleration-y">
+<div class="displaymath process-math" id="eqn-airparcel-pressure-acceleration-y">
 \begin{equation}
 \frac{F_y}{m} = a_y = -\frac{1}{\rho} \frac{\partial p}{\partial y}\tag{3.2.5}
 \end{equation}
@@ -256,7 +256,7 @@ F_x = F_L + F_R = -\frac{\partial p}{\partial x} \delta x \, \delta y \, \delta 
 <div class="para" id="ch3-section-pressure-gradient-force-20">and<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-pressure-gradient-force-21">
-<div class="displaymath process-math" id="ch3-airparcel-pressure-acceleration-z">
+<div class="displaymath process-math" id="eqn-airparcel-pressure-acceleration-z">
 \begin{equation}
 \frac{F_z}{m} = a_z = -\frac{1}{\rho} \frac{\partial p}{\partial z}\tag{3.2.6}
 \end{equation}
@@ -265,10 +265,10 @@ F_x = F_L + F_R = -\frac{\partial p}{\partial x} \delta x \, \delta y \, \delta 
 </div>
 <div class="para" id="ch3-section-pressure-gradient-force-22">Note that each of these accelerations depends on a spatial derivative of pressure, or a <dfn class="terminology">pressure gradient</dfn>, but not on a specific value of pressure.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-pressure-gradient-force-23">We combine the three component accelerations of <a href="ch3-section-pressure-gradient-force.html#ch3-airparcel-pressure-acceleration-x" class="xref" data-knowl="./knowl/xref/ch3-airparcel-pressure-acceleration-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.4">(3.2.4)–(3.2.6)</a> into the <dfn class="terminology">pressure gradient force (PGF) per unit mass</dfn>, or the <dfn class="terminology">pressure gradient acceleration</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-pressure-gradient-force-23">We combine the three component accelerations of <a href="ch3-section-pressure-gradient-force.html#eqn-airparcel-pressure-acceleration-x" class="xref" data-knowl="./knowl/xref/eqn-airparcel-pressure-acceleration-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.4">(3.2.4)–(3.2.6)</a> into the <dfn class="terminology">pressure gradient force (PGF) per unit mass</dfn>, or the <dfn class="terminology">pressure gradient acceleration</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch3-section-pressure-gradient-force-24">
-<div class="displaymath process-math" id="ch3-pressure-gradient-acceleration">
+<div class="displaymath process-math" id="eqn-pressure-gradient-acceleration">
 \begin{equation}
 \frac{\vec{F}_{PG}}{m}
 = \vec{a}_{PG}
@@ -284,7 +284,7 @@ F_x = F_L + F_R = -\frac{\partial p}{\partial x} \delta x \, \delta y \, \delta 
 </div>
 <div class="para" id="ch3-section-pressure-gradient-force-26">A gradient vector points from lower values toward higher values of the scalar quantity of interest, in the direction of fastest increase. Visually, a gradient vector points locally perpendicular to<dfn class="terminology">isopleths</dfn> (contours of constant value) of the scalar quantity of interest toward higher values, and its magnitude is determined by the strength of the gradient: Closer spacing of isopleths indicates larger gradients.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch3-section-pressure-gradient-force-27">It follows that the pressure gradient vector <span class="process-math">\(\nabla p\)</span> points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to <dfn class="terminology">isobars</dfn> (contours of constant pressure), and its magnitude increases as the strength of the pressure gradient increases. But the negative sign in <a href="ch3-section-pressure-gradient-force.html#ch3-pressure-gradient-acceleration" class="xref" data-knowl="./knowl/xref/ch3-pressure-gradient-acceleration.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.7">(3.2.7)</a> means that the pressure gradient force vector <span class="process-math">\(\vec{F}_{PG}\)</span> and, likewise, the pressure gradient acceleration vector <span class="process-math">\(\vec{a}_{PG}\)</span> point in the opposite direction as the pressure gradient vector. These principles are visualized in <a href="ch3-section-pressure-gradient-force.html#ch3-isobars" class="xref" data-knowl="./knowl/xref/ch3-isobars.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.3">Figure 3.2.3</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch3-section-pressure-gradient-force-27">It follows that the pressure gradient vector <span class="process-math">\(\nabla p\)</span> points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to <dfn class="terminology">isobars</dfn> (contours of constant pressure), and its magnitude increases as the strength of the pressure gradient increases. But the negative sign in <a href="ch3-section-pressure-gradient-force.html#eqn-pressure-gradient-acceleration" class="xref" data-knowl="./knowl/xref/eqn-pressure-gradient-acceleration.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.7">(3.2.7)</a> means that the pressure gradient force vector <span class="process-math">\(\vec{F}_{PG}\)</span> and, likewise, the pressure gradient acceleration vector <span class="process-math">\(\vec{a}_{PG}\)</span> point in the opposite direction as the pressure gradient vector. These principles are visualized in <a href="ch3-section-pressure-gradient-force.html#ch3-isobars" class="xref" data-knowl="./knowl/xref/ch3-isobars.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.3">Figure 3.2.3</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#ch3-section-pressure-gradient-force-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="ch3-isobars"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch3-isobars.png" class="contained" alt="Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Three isobars of pressure with values <span class="process-math">\(p\)</span> (middle), <span class="process-math">\(p - \Delta p\)</span> (top), and <span class="process-math">\(p + \Delta p\)</span> (bottom), where the increment of pressure <span class="process-math">\(\Delta p\)</span> is positive. The pressure gradient vectors <span class="process-math">\(\nabla p\)</span> point locally perpendicular to the isobars away from the lower value of pressure denoted by the <span class="process-math">\(p - \Delta p\)</span> isobar and toward the higher value of pressure denoted by the <span class="process-math">\(p + \Delta p\)</span> isobar. The pressure gradient force vectors <span class="process-math">\(\vec{F}_{PG}\)</span> point locally perpendicular to the isobars away from the higher value of pressure denoted by the <span class="process-math">\(p + \Delta p\)</span> isobar and toward the lower value of pressure denoted by the <span class="process-math">\(p - \Delta p\)</span> isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.<div class="autopermalink" data-description="Figure 3.2.3"><a href="#ch3-isobars" title="Copy heading and permalink for Figure 3.2.3" aria-label="Copy heading and permalink for Figure 3.2.3">🔗</a></div></figcaption>

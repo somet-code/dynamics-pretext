@@ -53,15 +53,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.8';
+eBookConfig.runestone_version = '8.1.9';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/prefix-runtime.846a0d6fafaa99e0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bbcfc02849ebc023.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -162,6 +162,41 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Inertial accelerations</span>
 </h2>
+<div class="para" id="ch4-section-inertial-accelerations-2">We now know that the vector equation of motion, <a href="ch3-section-newtons-laws.html#eqn-motion-basic" class="xref" data-knowl="./knowl/xref/eqn-motion-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.4.7">(3.4.7)</a> of <a href="ch3-section-newtons-laws.html" class="internal" title="Section 3.4: Newton’s laws of motion">Section 3.4</a> (reproduced in <a href="ch4-section-inertial-accelerations.html#eqn-motion-basic-subscript" class="xref" data-knowl="./knowl/xref/eqn-motion-basic-subscript.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.1">(4.5.1)</a> below with the inclusion of an appropriate subscript), depicts the acceleration of an air parcel relative to an inertial reference frame.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-inertial-accelerations-3">
+<div class="displaymath process-math" id="eqn-motion-basic-subscript">
+\begin{equation}
+\left( \frac{D \vec{u}}{Dt} \right)_{abs} = \vec{g^*} -\frac{1}{\rho} \nabla p + \nu \nabla^2 \vec{u}\tag{4.5.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-inertial-accelerations-4">
+<a href="ch4-section-inertial-accelerations.html#eqn-motion-basic-subscript" class="xref" data-knowl="./knowl/xref/eqn-motion-basic-subscript.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.1">(4.5.1)</a> becomes the <dfn class="terminology">vector equation of motion in rotating coordinates</dfn>, as given by <a href="ch4-section-inertial-accelerations.html#eqn-motion-vector-rotating" class="xref" data-knowl="./knowl/xref/eqn-motion-vector-rotating.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.2">(4.5.2)</a> below, when <a href="ch4-section-application-earth.html#eqn-motion-vector" class="xref" data-knowl="./knowl/xref/eqn-motion-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.6">(4.4.6)</a> is substituted for the left-hand side.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch4-section-inertial-accelerations-5">
+<div class="displaymath process-math" id="eqn-motion-vector-rotating">
+\begin{equation}
+\frac{D \vec{u}}{Dt}
+=
+-2\vec{\Omega} \times \vec{u} 
+- \vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
++ \vec{g^*}
+- \frac{1}{\rho} \nabla p
++ \nu \nabla^2 \vec{u}\tag{4.5.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-inertial-accelerations-6">Note that the two additional accelerations accompanying <span class="process-math">\(\dfrac{D \vec{u}}{Dt}\)</span> in <a href="ch4-section-application-earth.html#eqn-motion-vector" class="xref" data-knowl="./knowl/xref/eqn-motion-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.6">(4.4.6)</a> that are caused by coordinate system rotation have been moved to the right-hand side of <a href="ch4-section-inertial-accelerations.html#eqn-motion-vector-rotating" class="xref" data-knowl="./knowl/xref/eqn-motion-vector-rotating.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.2">(4.5.2)</a> so that <span class="process-math">\(\dfrac{D\vec{u}}{Dt}\)</span> is isolated. This is done to clarify that they contribute to air parcel acceleration as measured in the rotating reference frame.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-inertial-accelerations-7">The term on the left-hand side of <a href="ch4-section-inertial-accelerations.html#eqn-motion-vector-rotating" class="xref" data-knowl="./knowl/xref/eqn-motion-vector-rotating.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.2">(4.5.2)</a> gives the acceleration of an air parcel relative to Earth. The terms on the right-hand side give the causes of that acceleration.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-inertial-accelerations-8">The first term on the right-hand side of <a href="ch4-section-inertial-accelerations.html#eqn-motion-vector-rotating" class="xref" data-knowl="./knowl/xref/eqn-motion-vector-rotating.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.2">(4.5.2)</a>, <span class="process-math">\(-2 \vec{\Omega} \times \vec{u}\text{,}\)</span> is the <dfn class="terminology">Coriolis force per unit mass</dfn>, where <span class="process-math">\(\vec{F}_{COR}\)</span> is the Coriolis force, or the <dfn class="terminology">Coriolis acceleration</dfn> <span class="process-math">\(\vec{a}_{COR}\text{.}\)</span> The second term on the right-hand side, <span class="process-math">\(-\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)\text{,}\)</span> is the <dfn class="terminology">centrifugal force per unit mass</dfn>, where <span class="process-math">\(\vec{F}_{CENT}\)</span> is the centrifugal force, or the <dfn class="terminology">centrifugal acceleration</dfn> <span class="process-math">\(\vec{a}_{CENT}\text{.}\)</span> These "extra" inertial forces per unit mass must be included with Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law of motion to describe motions in Earth’s atmosphere as viewed from the rotating planet.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch4-section-inertial-accelerations-9">Accelerations corresponding to the fundamental forces of <a href="chapter-3.html" class="internal" title="Chapter 3: Fundamental Forces">Chapter 3</a>—the gravitational, pressure gradient, and viscous friction forces—appear identically in both <a href="ch4-section-inertial-accelerations.html#eqn-motion-basic-subscript" class="xref" data-knowl="./knowl/xref/eqn-motion-basic-subscript.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.1">(4.5.1)</a> and <a href="ch4-section-inertial-accelerations.html#eqn-motion-vector-rotating" class="xref" data-knowl="./knowl/xref/eqn-motion-vector-rotating.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.2">(4.5.2)</a>. These forces are called "fundamental" because they are present in identical form in Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law of motion written for both inertial and non-inertial reference frames.<div class="autopermalink" data-description="Paragraph"><a href="#ch4-section-inertial-accelerations-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="autopermalink" data-description="Section 4.5: Inertial accelerations"><a href="#ch4-section-inertial-accelerations" title="Copy heading and permalink for Section 4.5: Inertial accelerations" aria-label="Copy heading and permalink for Section 4.5: Inertial accelerations">🔗</a></div>
 </section>
 </div>
