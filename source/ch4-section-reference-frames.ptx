@@ -67,11 +67,11 @@
         Newton's <m>1^{\text{st}}</m> and <m>2^{\text{nd}}</m> laws of motion<mdash />the basis for fluid dynamics
         and which we overviewed in <xref ref="ch3-section-newtons-laws" text="type-global" /><mdash />are directly valid
         only in inertial reference frames.
-        Therefore, <xref ref="ch3-equation-motion-basic" text="type-global" />
+        Therefore, <xref ref="eqn-motion-basic" text="type-global" />
         from <xref ref="ch3-section-newtons-laws" text="type-global" />
         mathematically depicts the acceleration of an air parcel <m>\dfrac{D \vec{u}}{Dt}</m>
         as viewed from an inertial reference frame.
-        In other words, the stationary observer in space could apply <xref ref="ch3-equation-motion-basic" text="type-global" />
+        In other words, the stationary observer in space could apply <xref ref="eqn-motion-basic" text="type-global" />
         from <xref ref="ch3-section-newtons-laws" text="type-global" />
         to explain the motion of the cloud.
         But we live on the rotating Earth,

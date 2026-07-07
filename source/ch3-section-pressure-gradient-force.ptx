@@ -74,7 +74,7 @@
     </p>
 
     <p>
-        <md xml:id="ch3-airparcel-pressure-force-left" number="yes">
+        <md xml:id="eqn-airparcel-pressure-force-left" number="yes">
             F_L = \left(
                 p_0 + \frac{\partial p}{\partial x} \frac{(-\delta x)}{2}
             \right) \delta y \, \delta z
@@ -85,7 +85,7 @@
     </p>
 
     <p>
-        <md xml:id="ch3-airparcel-pressure-force-right" number="yes">
+        <md xml:id="eqn-airparcel-pressure-force-right" number="yes">
             F_R = -\left(
                 p_0 + \frac{\partial p}{\partial x} \frac{\delta x}{2}
             \right) \delta y \, \delta z
@@ -106,7 +106,7 @@
     </p>
 
     <p>
-        <md xml:id="ch3-airparcel-pressure-force-x" number="yes">
+        <md xml:id="eqn-airparcel-pressure-force-x" number="yes">
             F_x = F_L + F_R = -\frac{\partial p}{\partial x} \delta x \, \delta y \, \delta z
         </md>
     </p>
@@ -114,11 +114,11 @@
     <p>
         Since <m>m = \rho \, \delta x \, \delta y \, \delta z</m>,
         we can write the net force per unit mass in the <m>x</m>-direction by dividing
-        <xref ref="ch3-airparcel-pressure-force-x" text="type-global" /> by <m>m</m>:
+        <xref ref="eqn-airparcel-pressure-force-x" text="type-global" /> by <m>m</m>:
     </p>
 
     <p>
-        <md xml:id="ch3-airparcel-pressure-acceleration-x" number="yes">
+        <md xml:id="eqn-airparcel-pressure-acceleration-x" number="yes">
             \frac{F_x}{m} = a_x = -\frac{1}{\rho} \frac{\partial p}{\partial x}
         </md>
     </p>
@@ -128,7 +128,7 @@
     </p>
 
     <p>
-        <md xml:id="ch3-airparcel-pressure-acceleration-y" number="yes">
+        <md xml:id="eqn-airparcel-pressure-acceleration-y" number="yes">
             \frac{F_y}{m} = a_y = -\frac{1}{\rho} \frac{\partial p}{\partial y}
         </md>
     </p>
@@ -138,7 +138,7 @@
     </p>
 
     <p>
-        <md xml:id="ch3-airparcel-pressure-acceleration-z" number="yes">
+        <md xml:id="eqn-airparcel-pressure-acceleration-z" number="yes">
             \frac{F_z}{m} = a_z = -\frac{1}{\rho} \frac{\partial p}{\partial z}
         </md>
     </p>
@@ -151,13 +151,13 @@
 
     <p>
         We combine the three component accelerations of
-        <xref first="ch3-airparcel-pressure-acceleration-x" last="ch3-airparcel-pressure-acceleration-z" text="type-global" />
+        <xref first="eqn-airparcel-pressure-acceleration-x" last="eqn-airparcel-pressure-acceleration-z" text="type-global" />
         into the <term>pressure gradient force (PGF) per unit mass</term>,
         or the <term>pressure gradient acceleration</term>:
     </p>
 
     <p>
-        <md xml:id="ch3-pressure-gradient-acceleration" number="yes">
+        <md xml:id="eqn-pressure-gradient-acceleration" number="yes">
             \frac{\vec{F}_{PG}}{m}
             = \vec{a}_{PG}
             = -\frac{1}{\rho} \left[
@@ -184,7 +184,7 @@
         It follows that the pressure gradient vector <m>\nabla p</m> points from lower to higher values of pressure,
         in the direction of fastest increase, locally perpendicular to <term>isobars</term> (contours of constant pressure),
         and its magnitude increases as the strength of the pressure gradient increases.
-        But the negative sign in <xref ref="ch3-pressure-gradient-acceleration" text="type-global" />
+        But the negative sign in <xref ref="eqn-pressure-gradient-acceleration" text="type-global" />
         means that the pressure gradient force vector <m>\vec{F}_{PG}</m> and,
         likewise, the pressure gradient acceleration vector <m>\vec{a}_{PG}</m>
         point in the opposite direction as the pressure gradient vector.

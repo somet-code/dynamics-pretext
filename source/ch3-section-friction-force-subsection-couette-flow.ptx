@@ -51,7 +51,7 @@
   </p>
 
   <p>
-    <md xml:id="ch3-couette-flow-velocity-profile" number="yes">
+    <md xml:id="eqn-couette-flow-velocity-profile" number="yes">
         u(z) = u_0 \frac{z}{h}
     </md>
   </p>
@@ -64,7 +64,7 @@
   </p>
 
   <p>
-    <md xml:id="ch3-newton-law-viscosity" number="yes">
+    <md xml:id="eqn-newton-law-viscosity" number="yes">
         \tau_{xz} = \mu \frac{\partial u}{\partial z}
     </md>
   </p>

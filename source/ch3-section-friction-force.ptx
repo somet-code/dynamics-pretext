@@ -72,7 +72,7 @@
 
         <p>
             <md>
-                <mrow xml:id="ch3-friction-acceleration-x" number="yes">
+                <mrow xml:id="eqn-friction-acceleration-x" number="yes">
                     \frac{F_{rx}}{m}
                     =
                     a_{r,x}
@@ -85,7 +85,7 @@
                         \frac{\partial^2 u}{\partial z^2}
                     \right]
                 </mrow>
-                <mrow xml:id="ch3-friction-acceleration-y" number="yes">
+                <mrow xml:id="eqn-friction-acceleration-y" number="yes">
                     \frac{F_{ry}}{m}
                     =
                     a_{r,y}
@@ -98,7 +98,7 @@
                         \frac{\partial^2 v}{\partial z^2}
                     \right]
                 </mrow>
-                <mrow xml:id="ch3-friction-acceleration-z" number="yes">
+                <mrow xml:id="eqn-friction-acceleration-z" number="yes">
                     \frac{F_{rz}}{m}
                     =
                     a_{r,z}
@@ -120,13 +120,13 @@
 
         <p>
             We combine the three component accelerations of
-            <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
             into the <term>viscous friction force per unit mass</term>,
             or the <term>viscous friction acceleration</term>:
         </p>
 
         <p>
-            <md xml:id="ch3-friction-acceleration" number="yes">
+            <md xml:id="eqn-friction-acceleration" number="yes">
                 \frac{\vec{F}_r}{m}
                 =
                 \vec{a}_r
@@ -141,15 +141,15 @@
 
         <p>
             The complete derivation of
-            <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
             and
-            <xref ref="ch3-friction-acceleration" text="type-global" />
+            <xref ref="eqn-friction-acceleration" text="type-global" />
             is beyond the scope of this course: See
             <xref ref="kundu-cohen-dowling" text="custom">Kundu et al. (2016)</xref>
             for a detailed derivation.
             <xref ref="martin" text="custom">Martin (2006)</xref>
             presents a simplified derivation of
-            <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
             in his Subsection 2.1.3;
             since the viscous friction force can be neglected in most meteorological applications,
             as discussed below,
@@ -158,11 +158,11 @@
 
         <p>
             The dependence of the viscous friction force on <m>\vec{u}</m>
-            as shown in <xref ref="ch3-friction-acceleration" text="type-global" />
+            as shown in <xref ref="eqn-friction-acceleration" text="type-global" />
             means that the viscous friction force is present only in a moving fluid.
             Furthermore,
             the second-order derivatives encompassed by the Laplacian of velocity and shown explicitly in
-            <xref first="ch3-friction-acceleration-x" last="ch3-friction-acceleration-z" text="type-global" />
+            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
             mean that the viscous friction force is present only in moving fluids with nonlinear velocity profiles.
         </p>
 

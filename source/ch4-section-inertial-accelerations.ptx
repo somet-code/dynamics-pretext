@@ -5,7 +5,7 @@
 
     <p>
         We now know that the vector equation of motion,
-        <xref ref="ch3-equation-motion-basic" text="type-global" /> of <xref ref="ch3-section-newtons-laws" text="type-global" />
+        <xref ref="eqn-motion-basic" text="type-global" /> of <xref ref="ch3-section-newtons-laws" text="type-global" />
         (reproduced in <xref ref="eqn-motion-basic-subscript" text="type-global" /> below with the inclusion of an appropriate subscript),
         depicts the acceleration of an air parcel relative to an inertial reference frame.
     </p>
