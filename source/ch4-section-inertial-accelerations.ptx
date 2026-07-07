@@ -3,4 +3,75 @@
 <section xml:id="ch4-section-inertial-accelerations" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Inertial accelerations</title>
 
+    <p>
+        We now know that the vector equation of motion,
+        <xref ref="ch3-equation-motion-basic" text="type-global" /> of <xref ref="ch3-section-newtons-laws" text="type-global" />
+        (reproduced in <xref ref="eqn-motion-basic-subscript" text="type-global" /> below with the inclusion of an appropriate subscript),
+        depicts the acceleration of an air parcel relative to an inertial reference frame.
+    </p>
+
+    <p>
+        <md xml:id="eqn-motion-basic-subscript" number="yes">
+                \left( \frac{D \vec{u}}{Dt} \right)_{abs} = \vec{g^*} -\frac{1}{\rho} \nabla p + \nu \nabla^2 \vec{u}
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-motion-basic-subscript" text="type-global" />
+        becomes the <term>vector equation of motion in rotating coordinates</term>,
+        as given by <xref ref="eqn-motion-vector-rotating" text="type-global" /> below,
+        when <xref ref="eqn-motion-vector" text="type-global" /> is substituted for the left-hand side.
+    </p>
+
+    <p>
+        <md xml:id="eqn-motion-vector-rotating" number="yes">
+            \frac{D \vec{u}}{Dt}
+            =
+            -2\vec{\Omega} \times \vec{u} 
+            - \vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+            + \vec{g^*}
+            - \frac{1}{\rho} \nabla p
+            + \nu \nabla^2 \vec{u}
+        </md>
+    </p>
+
+    <p>
+        Note that the two additional accelerations accompanying <m>\dfrac{D \vec{u}}{Dt}</m>
+        in <xref ref="eqn-motion-vector" text="type-global" />
+        that are caused by coordinate system rotation have been moved to the right-hand side of
+        <xref ref="eqn-motion-vector-rotating" text="type-global" />
+        so that <m>\dfrac{D\vec{u}}{Dt}</m> is isolated.
+        This is done to clarify that they contribute to air parcel acceleration as measured in the rotating reference frame.
+    </p>
+
+    <p>
+        The term on the left-hand side of <xref ref="eqn-motion-vector-rotating" text="type-global" />
+        gives the acceleration of an air parcel relative to Earth.
+        The terms on the right-hand side give the causes of that acceleration.
+    </p>
+
+    <p>
+        The first term on the right-hand side of <xref ref="eqn-motion-vector-rotating" text="type-global" />,
+        <m>-2 \vec{\Omega} \times \vec{u}</m>,
+        is the <term>Coriolis force per unit mass</term>,
+        where <m>\vec{F}_{COR}</m> is the Coriolis force,
+        or the <term>Coriolis acceleration</term> <m>\vec{a}_{COR}</m>.
+        The second term on the right-hand side,
+        <m>-\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)</m>,
+        is the <term>centrifugal force per unit mass</term>,
+        where <m>\vec{F}_{CENT}</m> is the centrifugal force,
+        or the <term>centrifugal acceleration</term> <m>\vec{a}_{CENT}</m>.
+        These "extra" inertial forces per unit mass must be included with Newton's <m>2^{\text{nd}}</m> law of motion
+        to describe motions in Earth's atmosphere as viewed from the rotating planet.
+    </p>
+
+    <p>
+        Accelerations corresponding to the fundamental forces of
+        <xref ref="chapter-3" text="type-global" /><mdash />the gravitational, pressure gradient, and viscous friction forces<mdash />appear
+        identically in both <xref ref="eqn-motion-basic-subscript" text="type-global" />
+        and <xref ref="eqn-motion-vector-rotating" text="type-global" />.
+        These forces are called "fundamental" because they are present in identical form in Newton's <m>2^{\text{nd}}</m> law of motion
+        written for both inertial and non-inertial reference frames.
+    </p>
+
 </section>
