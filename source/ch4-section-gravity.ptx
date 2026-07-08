@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch4-section-gravity" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Gravity</title>
+
+    <p>
+        Any object on Earth's surface or in its atmosphere constantly is subject to both the gravitational and centrifugal forces,
+        even if the object is not moving relative to Earth.
+        Since the gravitational and centrifugal forces always are present,
+        their corresponding accelerations typically are summed to produce the <term>gravity acceleration</term> <m>\vec{g}</m>,
+        often called <term>effective gravity</term>,
+        <term>apparent gravity</term>,
+        or simply <term>gravity</term>.
+    </p>
+
+    <p>
+        <md xml:id="eqn-gravity" number="yes">
+            \vec{g}
+            =
+            -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+            + \vec{g^*}
+            =
+            -g \hat{k}  
+        </md>   
+    </p>
+
+    <p>
+        where <m>g = g(z)</m> is the magnitude of the gravity acceleration.
+    </p>
+
+    <p>
+        Applying this definition to the vector equation of motion in rotating coordinates,
+        <xref ref="eqn-motion-vector-rotating" text="type-global" />,
+        produces
+    </p>
+
+    <p>
+        <md xml:id="eqn-motion-vector-rotating-gravity" number="yes">
+            \frac{D \vec{u}}{Dt} =
+            - 2\vec{\Omega} \times \vec{u} 
+            + \vec{g}
+            - \frac{1}{\rho} \nabla p
+            + \nu \nabla^2 \vec{u}
+        </md>
+    </p>
+
+    <p>
+        While <xref ref="eqn-motion-vector-rotating-gravity" tex="type-global" />
+        is simpler than <xref ref="eqn-motion-vector-rotating" tex="type-global" />,
+        the summation of the gravitational and centrifugal accelerations is done for more than just mathematical convenience:
+        It reveals why Earth is an oblate spheroid rather than a perfect sphere!
+    </p>
+
+    <p>
+        Objects at the poles feel the full strength of the inward-directed gravitational force
+        since <m>\vec{F}_{CENT} = \vec{0}</m> at the poles.
+        In contrast, objects at other latitudes feel the centrifugal force partially oppose the gravitational force,
+        and this effect is maximized at the Equator
+        because the centrifugal force directly opposes the gravitational force and has largest magnitude at the Equator.
+        These scenarios are shown in FIG below.
+    </p>
+
+    <p>
+        Earth's surface is an oblate spheroid in response to the combined action of these forces.
+        As shown in FIG below,
+        the oblate spheroid has smallest radius at the poles where the gravitational force attracts Earth's surface to the planet's center unopposed.
+        It has largest radius at the Equator where the centrifugal force most strongly opposes the gravitational force.
+        According to <xref ref="stull" text="custom">Stull (2017)</xref>,
+        Earth's polar radius is about 6356.755 km,
+        and its equatorial radius is about 6378.140 km:
+        a difference of just over 21 km.
+        This difference is only about 0.33% of the two radii and can be ignored in most of our applications
+        in favor of treating Earth as a sphere with mean radius of about <m>a = 6370</m> km.
+    </p>
+
+</section>

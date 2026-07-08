@@ -7,5 +7,6 @@
   <xi:include href="ch4-section-application-earth.ptx" />
   <xi:include href="ch4-section-inertial-accelerations.ptx" />
   <xi:include href="ch4-section-centrifugal-acceleration.ptx" />
+  <xi:include href="ch4-section-gravity.ptx" />
 
 </chapter>
