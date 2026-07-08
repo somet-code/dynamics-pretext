@@ -45,8 +45,8 @@
     </p>
 
     <p>
-        While <xref ref="eqn-motion-vector-rotating-gravity" tex="type-global" />
-        is simpler than <xref ref="eqn-motion-vector-rotating" tex="type-global" />,
+        While <xref ref="eqn-motion-vector-rotating-gravity" text="type-global" />
+        is simpler than <xref ref="eqn-motion-vector-rotating" text="type-global" />,
         the summation of the gravitational and centrifugal accelerations is done for more than just mathematical convenience:
         It reveals why Earth is an oblate spheroid rather than a perfect sphere!
     </p>
