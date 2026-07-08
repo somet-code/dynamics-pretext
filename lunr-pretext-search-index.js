@@ -943,7 +943,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.5",
   "title": "Inertial accelerations",
-  "body": " Inertial accelerations  We now know that the vector equation of motion, of (reproduced in below with the inclusion of an appropriate subscript), depicts the acceleration of an air parcel relative to an inertial reference frame.      becomes the vector equation of motion in rotating coordinates , as given by below, when is substituted for the left-hand side.     Note that the two additional accelerations accompanying in that are caused by coordinate system rotation have been moved to the right-hand side of so that is isolated. This is done to clarify that they contribute to air parcel acceleration as measured in the rotating reference frame.  The term on the left-hand side of gives the acceleration of an air parcel relative to Earth. The terms on the right-hand side give the causes of that acceleration.  The first term on the right-hand side of , , is the Coriolis force per unit mass , where is the Coriolis force, or the Coriolis acceleration  . The second term on the right-hand side, , is the centrifugal force per unit mass , where is the centrifugal force, or the centrifugal acceleration  . These \"extra\" inertial forces per unit mass must be included with Newton's law of motion to describe motions in Earth's atmosphere as viewed from the rotating planet.  Accelerations corresponding to the fundamental forces of the gravitational, pressure gradient, and viscous friction forces appear identically in both and . These forces are called \"fundamental\" because they are present in identical form in Newton's law of motion written for both inertial and non-inertial reference frames.  "
+  "body": " Inertial accelerations  We now know that the vector equation of motion, of (reproduced in below with the inclusion of an appropriate subscript), depicts the acceleration of an air parcel relative to an inertial reference frame.      becomes the vector equation of motion in rotating coordinates , as given by below, when is substituted for the left-hand side.     Note that the two additional accelerations accompanying in that are caused by coordinate system rotation have been moved to the right-hand side of so that is isolated. This is done to clarify that they contribute to air parcel acceleration as measured in the rotating reference frame.  The term on the left-hand side of gives the acceleration of an air parcel relative to Earth. The terms on the right-hand side give the causes of that acceleration.  The first term on the right-hand side of , , is the Coriolis force per unit mass , where is the Coriolis force, or the Coriolis acceleration  .     The second term on the right-hand side, , is the centrifugal force per unit mass , where is the centrifugal force, or the centrifugal acceleration  .     These \"extra\" inertial forces per unit mass must be included with Newton's law of motion to describe motions in Earth's atmosphere as viewed from the rotating planet.  Accelerations corresponding to the fundamental forces of the gravitational, pressure gradient, and viscous friction forces appear identically in both and . These forces are called \"fundamental\" because they are present in identical form in Newton's law of motion written for both inertial and non-inertial reference frames.  "
 },
 {
   "id": "ch4-section-inertial-accelerations-4",
@@ -961,7 +961,34 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Coriolis force per unit mass Coriolis acceleration centrifugal force per unit mass centrifugal acceleration "
+  "body": "Coriolis force per unit mass Coriolis acceleration "
+},
+{
+  "id": "ch4-section-inertial-accelerations-10",
+  "level": "2",
+  "url": "ch4-section-inertial-accelerations.html#ch4-section-inertial-accelerations-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "centrifugal force per unit mass centrifugal acceleration "
+},
+{
+  "id": "ch4-section-centrifugal-acceleration",
+  "level": "1",
+  "url": "ch4-section-centrifugal-acceleration.html",
+  "type": "Section",
+  "number": "4.6",
+  "title": "Centrifugal acceleration",
+  "body": " Centrifugal acceleration  There are two common position vectors used in meteorology:     which points from Earth's center to a point of interest and     which points perpendicular from Earth's axis of rotation to the point of interest. below shows and and the relationship between them.   Equatorial projection showing the position vectors and pointing to a location of interest on Earth's surface at latitude in and pointing to a location of interest in Earth's atmosphere at latitude in . The points have the same longitude that, while not shown, corresponds to the right-half of the curve of Earth's surface. The Equator is labeled EQ and the North Pole is labeled NP.      Two position vectors pointing to a location on Earth's surface.       Two position vectors pointing to a location in Earth's atmosphere.      Because the cross product of two vectors depends only on the perpendicular components of those vectors, and can be interchanged in the centrifugal acceleration formula:     Furthermore, replacing with in the centrifugal acceleration formula leads to the following simplification:     This simplified form makes it clear that the magnitude of the centrifugal acceleration acting on an air parcel is directly proportional to the radial distance of the air parcel from Earth's axis of rotation, which is why the centrifugal acceleration acts most strongly at the Equator, becomes weaker with proximity to poles, and is at the poles.  Additionally, the centrifugal acceleration can be written as a gradient of the rotational kinetic energy per unit mass of a body at radial distance from the axis of rotation, :     Thus, we have several equivalent ways to express the centrifugal acceleration, and we can choose to use the form that is most practical for a given context.     "
+},
+{
+  "id": "ch4-radii",
+  "level": "2",
+  "url": "ch4-section-centrifugal-acceleration.html#ch4-radii",
+  "type": "Figure",
+  "number": "4.6.1",
+  "title": "",
+  "body": " Equatorial projection showing the position vectors and pointing to a location of interest on Earth's surface at latitude in and pointing to a location of interest in Earth's atmosphere at latitude in . The points have the same longitude that, while not shown, corresponds to the right-half of the curve of Earth's surface. The Equator is labeled EQ and the North Pole is labeled NP.      Two position vectors pointing to a location on Earth's surface.       Two position vectors pointing to a location in Earth's atmosphere.     "
 },
 {
   "id": "references",
