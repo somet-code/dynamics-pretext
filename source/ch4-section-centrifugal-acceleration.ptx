@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch4-section-centrifugal-acceleration" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Centrifugal acceleration</title>
+
+    <p>
+        There are two common position vectors used in meteorology:
+    </p>
+
+    <p>
+        <md xml:id="eqn-position-vector-central" number="yes">
+            \vec{r} = (a+z) \, \hat{k}
+        </md>
+    </p>
+
+    <p>
+        which points from Earth's center to a point of interest and
+    </p>
+
+    <p>
+        <md xml:id="eqn-position-vector-axis" number="yes">
+            \vec{R} = (a+z)\cos{\phi}(-\sin{\phi} \, \hat{j} + \cos{\phi} \, \hat{k})
+        </md>
+    </p>
+
+    <p>
+        which points perpendicular from Earth's axis of rotation to the point of interest.
+        <xref ref="ch4-radii" text="type-global" /> below shows
+        <m>\vec{r}</m> and <m>\vec{R}</m> and the relationship between them.
+    </p>
+
+    <figure xml:id="ch4-radii">
+        <caption>
+            Equatorial projection showing the position vectors <m>\vec{r}</m> and <m>\vec{R}</m>
+            pointing to a location of interest on Earth's surface at latitude <m>\phi</m>
+            in <xref ref="ch4-radii-a" text="local" /> and
+            pointing to a location of interest in Earth's atmosphere at latitude <m>\phi</m>
+            in <xref ref="ch4-radii-b" text="local" />.
+            The points have the same longitude <m>\lambda</m> that,
+            while not shown,
+            corresponds to the right-half of the curve of Earth's surface.
+            The Equator is labeled EQ and the North Pole is labeled NP.
+        </caption>
+        <sidebyside>
+            <figure xml:id="ch4-radii-a">
+                <caption />
+                <image source="images/ch4-radii-a.png" width="50%">
+                    <shortdescription>
+                        Two position vectors pointing to a location on Earth's surface.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch4-radii-b">
+                <caption />
+                <image source="images/ch4-radii-b.png" width="50%">
+                    <shortdescription>
+                        Two position vectors pointing to a location in Earth's atmosphere.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
+
+    <p>
+        Because the cross product of two vectors depends only on the perpendicular components of those vectors,
+        <m>\vec{r}</m> and <m>\vec{R}</m> can be interchanged in the centrifugal acceleration formula:
+    </p>
+
+    <p>
+        <md xml:id="eqn-centrifugal-acceleration-relationship" number="yes">
+            -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+            =
+            -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{R} \right)
+        </md>
+    </p>
+
+    <p>
+        Furthermore, replacing <m>\vec{r}</m> with <m>\vec{R}</m>
+        in the centrifugal acceleration formula leads to the following simplification:
+    </p>
+
+    <p>
+        <md xml:id="eqn-centrifugal-acceleration-relationship-simple" number="yes">
+            -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{R} \right)
+            =
+            \Omega^2 \vec{R}
+        </md>
+    </p>
+
+    <p>
+        This simplified form makes it clear that the magnitude of the centrifugal acceleration acting on an air parcel
+        is directly proportional to the radial distance of the air parcel from Earth's axis of rotation,
+        which is why the centrifugal acceleration acts most strongly at the Equator,
+        becomes weaker with proximity to poles,
+        and is <m>\vec{0}</m> at the poles.
+    </p>
+
+    <p>
+        Additionally,
+        the centrifugal acceleration can be written as a gradient of the rotational kinetic energy per unit mass
+        of a body at radial distance <m>R</m> from the axis of rotation, <m>\dfrac{\Omega^2 R^2}{2}</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-centrifugal-acceleration-relationship-gradient" number="yes">
+            -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{R} \right)
+            =
+            \nabla \left( \frac{\Omega^2 R^2}{2} \right)
+        </md>
+    </p>
+
+    <p>
+        Thus,
+        we have several equivalent ways to express the centrifugal acceleration,
+        and we can choose to use the form that is most practical for a given context.
+    </p>
+
+    <p>
+        <md xml:id="eqn-centrifugal-acceleration-relationship-full" number="yes">
+            \vec{a}_{CENT}
+            =
+            -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+            =
+            -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{R} \right)
+            =
+            \Omega^2 \vec{R}
+            =
+            \nabla \left( \frac{\Omega^2 R^2}{2} \right)
+        </md>
+    </p>
+
+</section>
