@@ -56,11 +56,29 @@
         is the <term>Coriolis force per unit mass</term>,
         where <m>\vec{F}_{COR}</m> is the Coriolis force,
         or the <term>Coriolis acceleration</term> <m>\vec{a}_{COR}</m>.
+    </p>
+
+    <p>
+        <md xml:id="eqn-coriolis-acceleration" number="yes">
+            \frac{\vec{F}_{COR}}{m} = \vec{a}_{COR} = -2 \vec{\Omega} \times \vec{u}
+        </md>
+    </p>
+
+    <p>
         The second term on the right-hand side,
         <m>-\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)</m>,
         is the <term>centrifugal force per unit mass</term>,
         where <m>\vec{F}_{CENT}</m> is the centrifugal force,
         or the <term>centrifugal acceleration</term> <m>\vec{a}_{CENT}</m>.
+    </p>
+
+    <p>
+        <md xml:id="eqn-centrifugal-acceleration" number="yes">
+            \frac{\vec{F}_{CENT}}{m} = \vec{a}_{CENT} = -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
+        </md>
+    </p>
+
+    <p>
         These "extra" inertial forces per unit mass must be included with Newton's <m>2^{\text{nd}}</m> law of motion
         to describe motions in Earth's atmosphere as viewed from the rotating planet.
     </p>
