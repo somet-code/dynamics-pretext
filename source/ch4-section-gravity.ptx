@@ -57,12 +57,12 @@
         In contrast, objects at other latitudes feel the centrifugal force partially oppose the gravitational force,
         and this effect is maximized at the Equator
         because the centrifugal force directly opposes the gravitational force and has largest magnitude at the Equator.
-        These scenarios are shown in FIG below.
+        These scenarios are shown in <xref ref="ch4-gravity-panels" text="type-global" /> below.
     </p>
 
     <p>
         Earth's surface is an oblate spheroid in response to the combined action of these forces.
-        As shown in FIG below,
+        As shown in <xref ref="ch4-gravity" text="type-global" /> below,
         the oblate spheroid has smallest radius at the poles where the gravitational force attracts Earth's surface to the planet's center unopposed.
         It has largest radius at the Equator where the centrifugal force most strongly opposes the gravitational force.
         According to <xref ref="stull" text="custom">Stull (2017)</xref>,
@@ -72,5 +72,117 @@
         This difference is only about 0.33% of the two radii and can be ignored in most of our applications
         in favor of treating Earth as a sphere with mean radius of about <m>a = 6370</m> km.
     </p>
+
+    <figure xml:id="ch4-gravity-panels">
+        <caption>
+            Equatorial project showing points at five locations:
+            the North Pole <xref ref="ch4-gravity-panels-a" text="local" />,
+            the Equator <xref ref="ch4-gravity-panels-b" text="local" />,
+            and three intermediate Northern Hemisphere latitudes
+            <xref first="ch4-gravity-panels-c" last="ch4-gravity-panels-e" text="local" />.
+            The unlabeled dashed vector results from the sum of the gravitational and centrifugal forces,
+            which are solid and labeled with the vector expressions for their corresponding accelerations,
+            <m>\vec{g^*}</m> and <m>-\vec{\Omega} \times (\vec{\Omega} \times \vec{r})</m>, respectively.
+            The lengths of the vectors are exaggerated so they can be seen in the small panels.
+        </caption>
+        <sbsgroup>
+            <sidebyside>
+                <figure xml:id="ch4-gravity-panels-a">
+                    <caption />
+                    <image source="images/ch4-gravity-panels-a.png" width="50%">
+                        <shortdescription>
+                            Circle representing Earth,
+                            with a horizontal line in its middle for the Equator,
+                            a vertical line in its middle for its polar axis,
+                            and the gravitational acceleration vector pointing from the North Pole to the Equator.
+                        </shortdescription>
+                    </image>
+                </figure>
+                <figure xml:id="ch4-gravity-panels-b">
+                    <caption />
+                    <image source="images/ch4-gravity-panels-b.png" width="50%">
+                        <shortdescription>
+                            Circle representing Earth,
+                            with a horizontal line in its middle for the Equator,
+                            a vertical line in its middle for its polar axis,
+                            the gravitational acceleration vector pointing along the Equator toward Earth's center,
+                            the centrifugal acceleration vector pointing along the Equator away from Earth's center,
+                            and a dashed vector for the gravity acceleration pointing along the Equator toward Earth's center.
+                        </shortdescription>
+                    </image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="ch4-gravity-panels-c">
+                    <caption />
+                    <image source="images/ch4-gravity-panels-c.png" width="50%">
+                        <shortdescription>
+                            Circle representing Earth,
+                            with a horizontal line in its middle for the Equator,
+                            a vertical line in its middle for its polar axis,
+                            the gravitational acceleration vector pointing from Earth's surface to its center,
+                            the centrifugal acceleration vector pointing away from Earth's polar axis,
+                            and a dashed vector for the gravity acceleration pointing slightly to the right of Earth's center.
+                        </shortdescription>
+                    </image>
+                </figure>
+                <figure xml:id="ch4-gravity-panels-d">
+                    <caption />
+                    <image source="images/ch4-gravity-panels-d.png" width="50%">
+                        <shortdescription>
+                            Circle representing Earth,
+                            with a horizontal line in its middle for the Equator,
+                            a vertical line in its middle for its polar axis,
+                            the gravitational acceleration vector pointing from Earth's surface to its center,
+                            the centrifugal acceleration vector pointing away from Earth's polar axis,
+                            and a dashed vector for the gravity acceleration pointing slightly to the right of Earth's center.
+                        </shortdescription>
+                    </image>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure xml:id="ch4-gravity-panels-e">
+                    <caption />
+                    <image source="images/ch4-gravity-panels-e.png" width="100%">
+                        <shortdescription>
+                            Circle representing Earth,
+                            with a horizontal line in its middle for the Equator,
+                            a vertical line in its middle for its polar axis,
+                            the gravitational acceleration vector pointing from Earth's surface to its center,
+                            the centrifugal acceleration vector pointing away from Earth's polar axis,
+                            and a dashed vector for the gravity acceleration pointing slightly to the right of Earth's center.
+                        </shortdescription>
+                    </image>
+                </figure>
+            </sidebyside>
+        </sbsgroup>
+    </figure>
+
+    <figure xml:id="ch4-gravity">
+        <caption>
+            Equatorial projection of Earth's oblate spheroid shape (solid black oval)
+            and approximate spherical shape (dashed gray circle).
+            Vectors representing the gravitational force,
+            centrifugal force,
+            and gravity are shown at an intermediate latitude in the Northern Hemisphere
+            and are labeled with the vector expressions for their corresponding accelerations,
+            <m>\vec{g^*}</m>,
+            <m>-\vec{\Omega} \times (\vec{\Omega} \times \vec{r})</m>,
+            and <m>\vec{g}</m>,
+            respectively.
+            The oblateness of the planet is exaggerated for visual clarity.
+        </caption>
+        <image source="images/ch4-gravity.png" width="60%">
+            <shortdescription>
+                A solid oval representing an oblate spheroidal Earth,
+                a dashed circle representing a spherical Earth,
+                with a horizontal dashed line in its middle for the Equator
+                and a vertical dashed line in its middle for its polar axis,
+                the gravitational acceleration vector pointing from Earth's surface to its center,
+                the centrifugal acceleration vector pointing away from Earth's polar axis,
+                and a dashed vector for the gravity acceleration pointing slightly to the right of Earth's center.
+            </shortdescription>
+        </image>
+    </figure>
 
 </section>
