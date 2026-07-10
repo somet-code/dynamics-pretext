@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch4-section-geopotential" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Geopotential and geopotential height</title>
+
+    <p>
+        <term>Geopotential</term> <m>\Phi</m> [<m>\text{J} \, \text{kg}^{-1}</m>]
+        is defined as the mechanical work that must be done against gravity to lift a 1 kg mass (such as an air parcel)
+        from Earth's mean sea level to geometric height <m>z</m>.
+        Alternatively, <m>\Phi</m> can be interpreted as the gravity potential energy per unit mass an object possesses at geometric height <m>z</m>.
+        It follows that every geometric height <m>z</m> is associated with a unique value of <m>\Phi</m>.
+    </p>
+
+    <p>
+        Recall from your calculus and/or physics courses that the mechanical <term>work</term> <m>W</m> [J]
+        done against a one-dimensional force <m>F(x)</m> to move an object from <m>x = a</m> to <m>x = b</m> is given by
+    </p>
+
+    <p>
+        <md xml:id="eqn-work-general" number="yes">
+            W = \int_a^b F(x) \, dx
+        </md>
+    </p>
+
+    <p>
+        Since Newton's <m>2^{\text{nd}}</m> law of motion tells us we can write the magnitude of a force as <m>F = ma</m>,
+        <xref ref="eqn-work-general" text="type-global" /> can be written
+    </p>
+
+    <p>
+        <md xml:id="eqn-work-acceleration" number="yes">
+            W = \int_a^b m(x) \, a(x) \, dx
+        </md>
+    </p>
+
+    <p>
+        Assuming constant mass, <xref ref="eqn-work-acceleration" text="type-global" /> can be written
+    </p>
+
+    <p>
+        <md xml:id="eqn-work-acceleration-constant-mass" number="yes">
+            W = m \int_a^b a(x) \, dx
+        </md>
+    </p>
+
+    <p>
+        and so the <term>work per unit mass</term> (i.e., the <term>specific work</term>)
+        <m>w</m> [<m>\text{J} \, \text{kg}^{-1}</m>] is given by
+    </p>
+
+    <p>
+        <md xml:id="eqn-work-specific" number="yes">
+            w = \frac{W}{m} = \int_a^b a(x) \, dx
+        </md>
+    </p>
+
+    <p>
+        Note that <m>x</m> is a dummy variable since it does not appear in the final integrated result.
+        We could replace <m>x</m> with another variable,
+        such as <m>\gamma</m> or <m>\eta</m> or <m>\zeta</m>,
+        and the result would be the same.
+    </p>
+
+    <p>
+        We can apply <xref ref="eqn-work-specific" text="type-global" />
+        to the verbal definition of <m>\Phi</m> discussed above to produce its integral definition.
+    </p>
+
+    <p>
+        <md xml:id="eqn-geopotential" number="yes">
+            \Phi = \int_0^z g(\zeta) \, d\zeta
+        </md>
+    </p>
+
+    <p>
+        where the dummy variable <m>\zeta</m> has been used for clarity.
+    </p>
+
+    <p>
+        Since <m>\zeta</m> "disappears" in the integration,
+        <xref ref="eqn-geopotential" text="type-global" /> reveals that <m>\Phi = \Phi(z)</m>.
+        It follows that
+    </p>
+    
+    <p>
+        <md xml:id="eqn-geopotential-gradient" number="yes">
+            \nabla \Phi = \frac{d \Phi}{dz} \, \hat{k}
+        </md>
+    </p>
+
+    <p>
+        and
+    </p>
+
+    <p>
+        <md xml:id="eqn-geopotential-derivative" number="yes">
+            \frac{d \Phi}{dz} = \frac{d}{dz} \int_0^z g(\zeta) \, d\zeta = g(z)
+        </md>
+    </p>
+
+    <p>
+        by the <m>1^\text{st}</m> part of the fundamental theorem of calculus.
+        Since <m>\vec{g} = -g \, \hat{k}</m>,
+    </p>
+
+    <p>
+        <md xml:id="eqn-gravity-geopotential-gradient" number="yes">
+            \vec{g} = -\nabla \Phi
+        </md>
+    </p>
+
+    <p>
+        and we can write <xref ref="eqn-motion-vector-rotating-gravity" text="type-global" /> as
+    </p>
+
+    <p>
+        <md xml:id="eqn-motion-vector-rotating-geopotential" number="yes">
+            \frac{D \vec{u}}{Dt} =
+            - 2\vec{\Omega} \times \vec{u} 
+            - \nabla \Phi
+            - \frac{1}{\rho} \nabla p
+            + \nu \nabla^2 \vec{u}
+        </md>
+    </p>
+
+    <p>
+        Since surfaces of constant geopotential are parallel to Earth's oblate spheroid surface,
+        it can be useful to define <term>geopotential height</term> <m>Z</m> [m] for use rather than geometric height.
+    </p>
+
+    <p>
+        <md xml:id="eqn-geopotential-height" number="yes">
+            Z = \frac{\Phi}{g_0}
+        </md>
+    </p>
+
+    <p>
+        where <m>g_0 = g(0) = 9.81 \, \text{m} \, \text{s}^{-2}</m>
+        is the magnitude of the gravity acceleration at Earth's mean sea level.
+        You will see this value frequently,
+        as it is a reasonable approximation to true gravity for heights in the troposphere relevant to the large majority of our weather.
+    </p>
+
+    <p>
+        Since <m>\Phi = \Phi(z)</m>,
+        it follows from <xref ref="eqn-geopotential-height" text="type-global" />
+        that <m>Z = Z(z)</m>,
+        and so every geometric height <m>z</m> is associated with a unique value of geopotential height<m>Z</m>.
+        While both <m>z</m> and <m>Z</m> are measured in meters,
+        the former may be referred to as "<term>geometric meters</term>"
+        and the latter may be referred to as "<term>geopotential meters</term>"
+        to clarify which measure of height is being used.
+    </p>
+
+</section>
