@@ -1027,6 +1027,78 @@ var ptx_lunr_docs = [
   "body": " Equatorial projection of Earth's oblate spheroid shape (solid black oval) and approximate spherical shape (dashed gray circle). Vectors representing the gravitational force, centrifugal force, and gravity are shown at an intermediate latitude in the Northern Hemisphere and are labeled with the vector expressions for their corresponding accelerations, , , and , respectively. The oblateness of the planet is exaggerated for visual clarity.   A solid oval representing an oblate spheroidal Earth, a dashed circle representing a spherical Earth, with a horizontal dashed line in its middle for the Equator and a vertical dashed line in its middle for its polar axis, the gravitational acceleration vector pointing from Earth's surface to its center, the centrifugal acceleration vector pointing away from Earth's polar axis, and a dashed vector for the gravity acceleration pointing slightly to the right of Earth's center.   "
 },
 {
+  "id": "ch4-section-geopotential",
+  "level": "1",
+  "url": "ch4-section-geopotential.html",
+  "type": "Section",
+  "number": "4.8",
+  "title": "Geopotential and geopotential height",
+  "body": " Geopotential and geopotential height   Geopotential  [ ] is defined as the mechanical work that must be done against gravity to lift a 1 kg mass (such as an air parcel) from Earth's mean sea level to geometric height . Alternatively, can be interpreted as the gravity potential energy per unit mass an object possesses at geometric height . It follows that every geometric height is associated with a unique value of .  Recall from your calculus and\/or physics courses that the mechanical work  [J] done against a one-dimensional force to move an object from to is given by     Since Newton's law of motion tells us we can write the magnitude of a force as , can be written     Assuming constant mass, can be written     and so the work per unit mass (i.e., the specific work ) [ ] is given by     Note that is a dummy variable since it does not appear in the final integrated result. We could replace with another variable, such as or or , and the result would be the same.  We can apply to the verbal definition of discussed above to produce its integral definition.     where the dummy variable has been used for clarity.  Since \"disappears\" in the integration, reveals that . It follows that     and     by the part of the fundamental theorem of calculus. Since ,     and we can write as     Since surfaces of constant geopotential are parallel to Earth's oblate spheroid surface, it can be useful to define geopotential height  [m] for use rather than geometric height.     where is the magnitude of the gravity acceleration at Earth's mean sea level. You will see this value frequently, as it is a reasonable approximation to true gravity for heights in the troposphere relevant to the large majority of our weather.  Since , it follows from that , and so every geometric height is associated with a unique value of geopotential height . While both and are measured in meters, the former may be referred to as \" geometric meters \" and the latter may be referred to as \" geopotential meters \" to clarify which measure of height is being used.  "
+},
+{
+  "id": "ch4-section-geopotential-2",
+  "level": "2",
+  "url": "ch4-section-geopotential.html#ch4-section-geopotential-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Geopotential "
+},
+{
+  "id": "ch4-section-geopotential-3",
+  "level": "2",
+  "url": "ch4-section-geopotential.html#ch4-section-geopotential-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "work "
+},
+{
+  "id": "ch4-section-geopotential-9",
+  "level": "2",
+  "url": "ch4-section-geopotential.html#ch4-section-geopotential-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "work per unit mass specific work "
+},
+{
+  "id": "ch4-section-geopotential-23",
+  "level": "2",
+  "url": "ch4-section-geopotential.html#ch4-section-geopotential-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geopotential height "
+},
+{
+  "id": "ch4-section-geopotential-26",
+  "level": "2",
+  "url": "ch4-section-geopotential.html#ch4-section-geopotential-26",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geometric meters geopotential meters "
+},
+{
+  "id": "ch4-section-inertial-forces-authors-note",
+  "level": "1",
+  "url": "ch4-section-inertial-forces-authors-note.html",
+  "type": "Section",
+  "number": "4.9",
+  "title": "Author’s note on inertial forces",
+  "body": " Author's note on inertial forces  Inertial forces like the centrifugal and Coriolis forces often are described as \"fictitious\" or \"apparent\" in contrast to the \"real\" fundamental forces like the pressure gradient, gravitational, and viscous friction forces. This is because \"real\" forces are present in identical mathematical form in both inertial and non-inertial reference frames, while \"fictitious\" forces are present only in non-inertial reference frames.  Inertial forces also often are described as mathematical \"corrections\" that enable us to apply Newton's laws of motion to non-inertial reference frames like Earth, as if our planet's rotation was simply a mathematical inconvenience.  But inertial forces are very real to us who live in a non-inertial reference frame! Consider riding in a Gravitron : The centrifugal force is part of what keeps you safe by preventing you from sliding down the wall. This is the same force that makes you lean into the car door as you ride in a car that is banking around a turn. Likewise, you experience an inertial force that presses you against your seat as you ride in a car that is speeding up as it moves forward.  Inertial forces also significantly influence atmospheric motions and the motions of objects that travel long distances through Earth's atmosphere or stay within it for a long time, like airplanes and missiles. The centrifugal and Coriolis forces are part of our reality, and they must be taken into account by pilots and ballistics experts as well as by meteorologists.  "
+},
+{
+  "id": "ch4-section-selected-references",
+  "level": "1",
+  "url": "ch4-section-selected-references.html",
+  "type": "Section",
+  "number": "4.10",
+  "title": "Selected references",
+  "body": " Selected references     Chapters 2 and 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapters 1 and 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 6 of Marshall and Plumb (2007)      "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
