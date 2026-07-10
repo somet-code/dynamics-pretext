@@ -9,5 +9,6 @@
   <xi:include href="ch4-section-centrifugal-acceleration.ptx" />
   <xi:include href="ch4-section-gravity.ptx" />
   <xi:include href="ch4-section-geopotential.ptx" />
+  <xi:include href="ch4-section-inertial-forces-authors-note.ptx" />
 
 </chapter>
