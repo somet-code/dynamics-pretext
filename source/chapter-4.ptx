@@ -10,5 +10,6 @@
   <xi:include href="ch4-section-gravity.ptx" />
   <xi:include href="ch4-section-geopotential.ptx" />
   <xi:include href="ch4-section-inertial-forces-authors-note.ptx" />
+  <xi:include href="ch4-section-selected-references.ptx" />
 
 </chapter>
