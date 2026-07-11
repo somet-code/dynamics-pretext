@@ -4,7 +4,184 @@
   <title>Expanding the total derivative of <m>\hat{i}</m></title>
 
   <p>
-    We can use the chain rule to expand <m>\dfrac{D \hat{i}}{Dt}</m>:
+    The orientations of the unit direction vectors of the local Cartesian coordinate system can change
+    depending on where their anchoring point is placed on the turntable or above or below it.
+    Furthermore, they and their point rotate along with the turntable.
+    Consequently, <m>\hat{i} = \hat{i}(\lambda, R, z)</m>,
+    <m>\hat{j} = \hat{j}(\lambda, R, z)</m>,
+    and <m>\hat{k} = \hat{k}(\lambda, R, z)</m>,
+    and <m>\lambda = \lambda(t)</m>,
+    <m>R = R(t)</m>,
+    and <m>z = z(t)</m>.
+  </p>
+
+  <p>
+    We will start by using the chain rule to expand <m>\dfrac{D \hat{i}}{Dt}</m>.
+    This will give us insight into how <m>\hat{i}</m> changes orientation as the turntable rotates.
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-i-full" number="yes"> 
+      \frac{D \hat{i}}{Dt}
+      =
+      \frac{\partial \hat{i}}{\partial \lambda}
+      \frac{D \lambda}{Dt}
+      +
+      \frac{\partial \hat{i}}{\partial R}
+      \frac{DR}{Dt}
+      +
+      \frac{\partial \hat{i}}{\partial z}
+      \frac{Dz}{Dt}
+    </md>
+  </p>
+
+  <p>
+    The second term on the right-hand side of <xref ref="eqn-total-derivative-i-full" text="type-global" />
+    is <m>\vec{0}</m> since <m>\hat{i}</m> does not change orientation if placed at a different radius
+    while holding <m>\lambda</m> and <m>z</m> constant,
+    and therefore <m>\dfrac{\partial \hat{i}}{\partial R} = \vec{0}</m>.
+    Furthermore, the point does not move from the edge of the turntable and so <m>\dfrac{DR}{Dt} = 0</m>.
+    Likewise, the third term on the right-hand side of <xref ref="eqn-total-derivative-i-full" text="type-global" />
+    is <m>\vec{0}</m> since <m>\hat{i}</m> does not change orientation if placed at a different height above or below the turntable
+    while holding <m>\lambda</m> and <m>R</m> constant,
+    and therefore <m>\dfrac{\partial \hat{i}}{\partial z} = \vec{0}</m>.
+    Furthermore, the point does not move above or below the edge of the turntable and so <m>\dfrac{Dz}{Dt} = 0</m>.
+    Therefore, <xref ref="eqn-total-derivative-i-full" text="type-global" /> reduces to
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-i-reduced" number="yes"> 
+      \frac{D \hat{i}}{Dt}
+      =
+      \frac{\partial \hat{i}}{\partial \lambda}
+      \frac{D \lambda}{Dt}
+    </md>
+  </p>
+
+  <p>
+    To evaluate <m>\dfrac{\partial \hat{i}}{\partial \lambda}</m>,
+    we consider the change in <m>\hat{i}</m>'s orientation
+    when its anchoring point is fixed to the edge of the turntable
+    and sweeps through angular displacement <m>\delta \lambda</m> over time <m>\delta t</m>,
+    as shown in <xref ref="aa-turntable-i-start" text="type-global" /> below.
+    <m>\hat{i}_1</m> is the initial position of <m>\hat{i}</m>,
+    and <m>\hat{i}_2</m> is the final position of <m>\hat{i}</m> after time <m>\delta t</m> has passed
+    and it has swept through angular displacement <m>\delta \lambda</m>.
+  </p>
+
+  <figure xml:id="aa-turntable-i-start">
+    <caption>
+      Unit direction vectors <m>\hat{i}_1</m> and <m>\hat{i}_2</m> at two nearby points at radius <m>R</m> to the turntable of
+      <xref ref="aa-turntable-setup" text="type-global" />
+      and separated by angular displacement <m>\delta \lambda</m>.
+    </caption>
+    <image source="images/aa-turntable-i-start.png" width="60%">
+      <shortdescription>
+        Two unit direction vectors at two nearby points
+        on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+      </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    Fixing the tails of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> to the same point in
+    <xref ref="aa-turntable-i-zoom" text="type-global" /> below
+    reveals that <m>\delta \lambda</m> is the angle swept out between them
+    and <m>\vec{\delta i}</m> is the vector difference between them.
+  </p>
+
+  <figure xml:id="aa-turntable-i-zoom">
+    <caption>
+      Reproduction of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> from <xref ref="aa-turntable-i-start" text="type-global" />.
+      When the tails of the vectors are fixed together,
+      they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta i}</m>.
+    </caption>
+    <image source="images/aa-turntable-i-zoom.png" width="40%">
+      <shortdescription>
+        Two unit direction vectors with their tails fixed together
+        and the angle swept out between them and their vector difference annotated.
+      </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    Reproducing <xref ref="aa-turntable-i-start" text="type-global" />
+    with the tail of <m>\hat{i}_1</m> moved to the tail of <m>\hat{i}_2</m> and <m>\vec{\delta i}</m> additionally included
+    in <xref ref="aa-turntable-i-end" text="type-global" /> below makes these relationships even clearer.
+  </p>
+
+  <figure xml:id="aa-turntable-i-end">
+    <caption>
+      Reproduction of <xref ref="aa-turntable-i-start" text="type-global" />
+      with the tail of <m>\hat{i}_1</m> fixed to the tail of <m>\hat{i}_2</m>.
+      As shown in <xref ref="aa-turntable-i-zoom" text="type-global" />,
+      <m>\hat{i}_1</m> and <m>\hat{i}_2</m> are separated by angle <m>\delta \lambda</m>
+      and their vector difference is <m>\vec{\delta i}</m>.
+    </caption>
+    <image source="images/aa-turntable-i-end.png" width="60%">
+      <shortdescription>
+        Two unit direction vectors with their tails fixed together
+        on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+      </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    We can use the arc length formula to approximate <m>|\vec{\delta i}|</m>,
+    and we can take advantage of the fact that,
+    since <m>\hat{i}</m> is a unit direction vector,
+    <m>|\hat{i}| = 1</m>.
+  </p>
+
+  <p>
+    <md number="yes">
+      |\vec{\delta i}|
+      = |\hat{i_1}| \, \delta \lambda
+      = |\hat{i_2}| \, \delta \lambda
+      = |\hat{i}| \, \delta \lambda
+      = \delta \lambda
+    </md>
+  </p>
+
+  <p>
+    Therefore,
+  </p>
+
+  <p>
+    <md number="yes">
+      \frac{|\vec{\delta i}|}{\delta t}
+      =
+      \frac{|\vec{\delta i}|}{\delta \lambda}
+      \frac{\delta \lambda}{\delta t}
+      =
+      \frac{\delta \lambda}{\delta \lambda}
+      \frac{\delta \lambda}{\delta t}
+      =
+      \frac{\delta \lambda}{\delta t}
+    </md>
+  </p>
+
+  <p>
+    From <xref ref="aa-turntable-i-end" text="type-global" />,
+    we can see that as <m>\delta t \to 0</m>,
+    <m>\delta \lambda \to 0</m> and <m>\vec{\delta i}</m> points directly inward toward the center of the turntable,
+    which coincides with the <m>\hat{j}</m> direction. So
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-i-final" number="yes"> 
+      \lim_{\delta t \to 0}
+      \frac{\vec{\delta i}}{\delta t}
+      =
+      \frac{D \hat{i}}{D t}
+      =
+      \lim_{\delta t \to 0}
+      \frac{\delta \lambda}{\delta t} \, \hat{j}
+      =
+      \frac{D\lambda}{Dt} \, \hat{j}
+      =
+      \Omega \, \hat{j}
+    </md>
   </p>
 
 </subsection>
