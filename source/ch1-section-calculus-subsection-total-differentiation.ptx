@@ -10,8 +10,8 @@
   </p>
 
   <p>
-    If the air parcel's position changes with time as it moves through the atmosphere,
-    then <m>x = x(t)</m>, <m>y = y(t)</m>, and <m>z = z(t)</m>.
+    Since the air parcel's position changes with time as it moves through the atmosphere,
+    <m>x = x(t)</m>, <m>y = y(t)</m>, and <m>z = z(t)</m>.
     Consequently, <m>f</m> is a differentiable function of <m>t</m>,
     and so we can quantify the time rate of change of <m>f</m> within the air parcel by calculating <m>\dfrac{df}{dt}</m>.
     We do this using the <term>chain rule for multivariable functions</term>:
