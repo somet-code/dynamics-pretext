@@ -40,12 +40,14 @@
     is <m>\vec{0}</m> since <m>\hat{i}</m> does not change orientation if placed at a different radius
     while holding <m>\lambda</m> and <m>z</m> constant,
     and therefore <m>\dfrac{\partial \hat{i}}{\partial R} = \vec{0}</m>.
-    Furthermore, the point does not move from the edge of the turntable and so <m>\dfrac{DR}{Dt} = 0</m>.
+    Furthermore, the point does not move from the edge of the turntable,
+    and so <m>\dfrac{DR}{Dt} = 0</m>.
     Likewise, the third term on the right-hand side of <xref ref="eqn-total-derivative-i-full" text="type-global" />
     is <m>\vec{0}</m> since <m>\hat{i}</m> does not change orientation if placed at a different height above or below the turntable
     while holding <m>\lambda</m> and <m>R</m> constant,
     and therefore <m>\dfrac{\partial \hat{i}}{\partial z} = \vec{0}</m>.
-    Furthermore, the point does not move above or below the edge of the turntable and so <m>\dfrac{Dz}{Dt} = 0</m>.
+    Furthermore, the point does not move above or below the edge of the turntable,
+    and so <m>\dfrac{Dz}{Dt} = 0</m>.
     Therefore, <xref ref="eqn-total-derivative-i-full" text="type-global" /> reduces to
   </p>
 
@@ -79,12 +81,13 @@
       <shortdescription>
         Two unit direction vectors at two nearby points
         on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+        The vectors point tangent to the edge of the disk.
       </shortdescription>
     </image>
   </figure>
 
   <p>
-    Fixing the tails of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> to the same point in
+    Fixing the tails of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> together in
     <xref ref="aa-turntable-i-zoom" text="type-global" /> below
     reveals that <m>\delta \lambda</m> is the angle swept out between them
     and <m>\vec{\delta i}</m> is the vector difference between them.
@@ -165,7 +168,8 @@
     From <xref ref="aa-turntable-i-end" text="type-global" />,
     we can see that as <m>\delta t \to 0</m>,
     <m>\delta \lambda \to 0</m> and <m>\vec{\delta i}</m> points directly inward toward the center of the turntable,
-    which coincides with the <m>\hat{j}</m> direction. So
+    which coincides with the <m>\hat{j}</m> direction.
+    So
   </p>
 
   <p>
