@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="aa-section-turntable-subsection-all" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Putting everything together for the turntable</title>
+
+  <p>
+    Given that <m>\vec{\Omega} = \Omega \, \hat{k}</m>,
+    we can find <m>\vec{\Omega} \times \hat{i}</m>,
+    <m>\vec{\Omega} \times \hat{j}</m>,
+    and <m>\vec{\Omega} \times \hat{k}</m>
+    and verify they match the results of
+    <xref ref="eqn-total-derivative-i-final" text="type-global" />,
+    <xref ref="eqn-total-derivative-j-final" text="type-global" />,
+    and <xref ref="eqn-total-derivative-k-final" text="type-global" />,
+    respectively.
+  </p>
+
+  <p>
+    <md number="yes">
+        \vec{\Omega} \times \hat{i}
+        =
+        \Omega \, \hat{j}
+        =
+        \frac{D \hat{i}}{Dt}
+    </md>
+  </p>
+
+  <p>
+    <md number="yes">
+        \vec{\Omega} \times \hat{j}
+        =
+        -\Omega \, \hat{i}
+        =
+        \frac{D \hat{j}}{Dt}
+    </md>
+  </p>
+
+  <p>
+    <md number="yes">
+        \vec{\Omega} \times \hat{k}
+        =
+        \vec{0}
+        =
+        \frac{D \hat{k}}{Dt}
+    </md>
+  </p>
+
+  <p>
+    Therefore, the derivation is complete.
+  </p>
+
+</subsection>
