@@ -27,14 +27,15 @@
     is <m>\vec{0}</m> since <m>\hat{j}</m> does not change orientation if placed at a different radius
     while holding <m>\lambda</m> and <m>z</m> constant,
     and therefore <m>\dfrac{\partial \hat{j}}{\partial R} = \vec{0}</m>.
-    And as noted in the previous sub-section,
+    Furthermore, as noted in <xref ref="aa-section-turntable-subsection-i" text="type-global" />,
     the point does not move from the edge of the turntable,
     and so <m>\dfrac{DR}{Dt} = 0</m>.
     Likewise, the third term on the right-hand size of <xref ref="eqn-total-derivative-j-full" text="type-global" />
     is <m>\vec{0}</m> since <m>\hat{j}</m> does not change orientation if placed at a different height above or below the turntable
     while holding <m>\lambda</m> and <m>R</m> constant,
     and therefore <m>\dfrac{\partial \hat{j}}{\partial z} = \vec{0}</m>.
-    Furthermore, the point does not move above or below the edge of the turntable,
+    Furthermore, as noted in <xref ref="aa-section-turntable-subsection-i" text="type-global" />,
+    the point does not move above or below the edge of the turntable,
     and so <m>\dfrac{Dz}{Dt} = 0</m>.
     Therefore, <xref ref="eqn-total-derivative-j-full" text="type-global" /> reduces to
   </p>
