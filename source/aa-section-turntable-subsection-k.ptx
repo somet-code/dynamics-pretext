@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="aa-section-turntable-subsection-k" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Expanding the total derivative of <m>\hat{k}</m></title>
+
+  <p>
+    <m>\hat{k}</m> always points out of the screen
+    no matter where it is placed in the plane of the turntable or above or below the turntable
+    and no matter the angle through which the turntable rotates.
+    Therefore,
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-k-final" number="yes"> 
+        \frac{D \hat{k}}{Dt} = \vec{0}
+    </md>
+  </p>
+
+</subsection>
