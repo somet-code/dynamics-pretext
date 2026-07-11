@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="aa-section-turntable" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Derivation for a turntable</title>
+
+  <introduction>
+    <p>
+        Visualize a turntable of radius <m>R</m> that is rotating with constant angular velocity <m>\vec{\Omega}</m>.
+        As shown in <xref ref="aa-turntable-setup" text="type-global" /> below,
+        <m>\vec{\Omega}</m> points perpendicular to the turntable and is directed out of the page.
+    </p>
+
+    <p>
+        We can apply a local Cartesian coordinate system to any given point on the turntable,
+        and for visual simplicity, we will do below so for a point on the edge of the turntable.
+        All the unit direction vectors discussed below have an implied subscript "rot"
+        since they are attached to the turntable,
+        which is a rotating reference frame.
+    </p>
+
+    <figure xml:id="aa-turntable-setup">
+        <caption>
+            View from above of a turntable of radius <m>R</m> rotating at constant angular velocity <m>\vec{\Omega}</m>.
+            The unit direction vectors of a local Cartesian coordinate system fixed to the turntable are shown at a point on the edge of the turntable.
+            Vector <m>\vec{\Omega}</m> shows the turntable's constant angular velocity.
+        </caption>
+        <image source="images/aa-turntable-setup.png" width="60%">
+            <shortdescription>
+                Circular disk rotating counter-clockwise about its center viewed from above,
+                with radius and unit direction vectors for a point on its edge.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Consider a point fixed to the edge of the turntable:
+        <m>\hat{i}</m> points to the local right,
+        <m>\hat{j}</m> points directly inward toward the center of the turntable,
+        and <m>\hat{k}</m> points in the same direction as <m>\vec{\Omega}</m>.
+        Therefore,
+        we can write <m>\vec{\Omega} = \Omega \, \hat{k}</m>,
+        where <m>\lambda</m> [<m>\text{rad}</m>] is the angular displacement and
+        <m>\Omega = \dfrac{D \lambda}{Dt}</m> [<m>\text{rad} \, \text{s}^{-1}</m>]
+        is the angular speed.
+        By these definitions,
+        during a period of time <m>\delta t</m>,
+        the turntable rotates through angular displacement <m>\delta \lambda</m>.
+    </p>
+
+    <p>
+        Note that any point on the turntable can be produced simply by decreasing the value of <m>R</m>;
+        more generally,
+        any point on the same plane as the turntable can be produced simply by changing the value of <m>R</m>.
+        Thus, the following derivations apply to any point in the plane of the turntable.
+    </p>
+
+    <p>
+        Furthermore, note that any point above or below the turntable can be produced simply by "lifting"
+        the unit direction vectors upward in the direction of <m>\vec{\Omega}</m>
+        or "pushing" the unit direction vectors downward in the direction of <m>-\vec{\Omega}</m>,
+        respectively, as this does not change their orientations.
+        Thus, the following derivations apply to any point above or below the plane of the turntable.
+    </p>
+  </introduction>
+
+  <xi:include href="aa-section-turntable-subsection-i.ptx" />
+
+</section>
