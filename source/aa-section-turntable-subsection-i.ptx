@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="aa-section-turntable-subsection-i" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Expanding the total derivative of <m>\hat{i}</m></title>
+
+  <p>
+    We can use the chain rule to expand <m>\dfrac{D \hat{i}}{Dt}</m>:
+  </p>
+
+</subsection>
