@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Derivation for a turntable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="METR 3113">
+<meta property="book:author" content="Dr. Amanda Kis">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.8b6d53d5a91823a0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.2901d6466316ff22.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="Atmospheric Dynamics I" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="atmospheric-dynamics-i.html"><span class="title">METR 3113</span> <span class="subtitle">Atmospheric Dynamics I</span></a></h1>
+<p class="byline">Dr. Amanda Kis</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="backmatter-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Continuum Approximation and Calculus in Geophysical Fluid Dynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-continuum-approximation.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Continuum approximation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1-section-calculus.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Partial differentiation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector algebra and calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Right-hand rule</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-del" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Del</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-finite-differencing.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Finite differencing</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Fundamental Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-gravitational-force.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Gravitational force</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-pressure-gradient-force.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Pressure gradient force</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3-section-friction-force.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Viscous friction force</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3-section-friction-force.html#ch3-section-friction-force-subsection-couette-flow" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Couette flow</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-newtons-laws.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Newton’s laws of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-selected-references.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Non-inertial Reference Frames and Apparent Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-relative-motion.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Relative motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-reference-frames.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Inertial and non-inertial reference frames</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-rotating-reference-frame.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Rotating reference frame</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-application-earth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Application of a rotating reference frame to Earth</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-accelerations.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Inertial accelerations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-centrifugal-acceleration.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Centrifugal acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-gravity.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Gravity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-geopotential.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Geopotential and geopotential height</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-forces-authors-note.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Author’s note on inertial forces</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-selected-references.html" class="internal"><span class="codenumber">4.10</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter contains-active">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-appendix contains-active">
+<div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Proof of Cross Product Term in Total Derivative for Rotating Reference Frames</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="aa-section-turntable.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Derivation for a turntable</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-i" class="internal"><span class="codenumber">A.1.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="aa-section-turntable">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">A.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivation for a turntable</span>
+</h2>
+<section class="introduction" id="aa-section-turntable-2">
+<div class="para" id="aa-section-turntable-2-1">Visualize a turntable of radius <span class="process-math">\(R\)</span> that is rotating with constant angular velocity <span class="process-math">\(\vec{\Omega}\text{.}\)</span> As shown in <a href="aa-section-turntable.html#aa-turntable-setup" class="xref" data-knowl="./knowl/xref/aa-turntable-setup.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.1">Figure A.1.1</a> below, <span class="process-math">\(\vec{\Omega}\)</span> points perpendicular to the turntable and is directed out of the screen.<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-2-2">We can apply a local Cartesian coordinate system to any given point on the turntable, and for visual simplicity, we will do below so for a point on the edge of the turntable. All the unit direction vectors discussed below have an implied subscript "rot" since they are attached to the turntable, which is a rotating reference frame.<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="aa-turntable-setup"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/aa-turntable-setup.png" class="contained" alt="Circular disk rotating counter-clockwise about its center viewed from above, with radius and unit direction vectors for a point on its edge."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">A.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>View from above of a turntable of radius <span class="process-math">\(R\)</span> rotating at constant angular velocity <span class="process-math">\(\vec{\Omega}\text{.}\)</span> The unit direction vectors of a local Cartesian coordinate system fixed to the turntable are shown at a point on the edge of the turntable. Vector <span class="process-math">\(\vec{\Omega}\)</span> shows the turntable’s constant angular velocity.<div class="autopermalink" data-description="Figure A.1.1"><a href="#aa-turntable-setup" title="Copy heading and permalink for Figure A.1.1" aria-label="Copy heading and permalink for Figure A.1.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="aa-section-turntable-2-4">Consider a point fixed to the edge of the turntable: <span class="process-math">\(\hat{i}\)</span> points to the local right, <span class="process-math">\(\hat{j}\)</span> points directly inward toward the center of the turntable, and <span class="process-math">\(\hat{k}\)</span> points in the same direction as <span class="process-math">\(\vec{\Omega}\text{.}\)</span> Therefore, we can write <span class="process-math">\(\vec{\Omega} = \Omega \, \hat{k}\text{,}\)</span> where <span class="process-math">\(\lambda\)</span> [<span class="process-math">\(\text{rad}\)</span>] is the angular displacement and <span class="process-math">\(\Omega = \dfrac{D \lambda}{Dt}\)</span> [<span class="process-math">\(\text{rad} \, \text{s}^{-1}\)</span>] is the angular speed. By these definitions, during a period of time <span class="process-math">\(\delta t\text{,}\)</span> the turntable rotates through angular displacement <span class="process-math">\(\delta \lambda\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-2-5">Note that any point on the turntable can be produced simply by decreasing the value of <span class="process-math">\(R\text{;}\)</span> more generally, any point on the same plane as the turntable can be produced simply by changing the value of <span class="process-math">\(R\text{.}\)</span> Thus, the following derivations apply to any point in the plane of the turntable.<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-2-6">Furthermore, note that any point above or below the turntable can be produced simply by "lifting" the unit direction vectors upward in the direction of <span class="process-math">\(\vec{\Omega}\)</span> or "pushing" the unit direction vectors downward in the direction of <span class="process-math">\(-\vec{\Omega}\text{,}\)</span> respectively, as this does not change their orientations. Thus, the following derivations apply to any point above or below the plane of the turntable.<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="aa-section-turntable-subsection-i">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">A.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span>
+</h3>
+<div class="para" id="aa-section-turntable-subsection-i-2">The orientations of the unit direction vectors of the local Cartesian coordinate system can change depending on where their anchoring point is placed on the turntable or above or below it. Furthermore, they and their point rotate along with the turntable. Consequently, <span class="process-math">\(\hat{i} = \hat{i}(\lambda, R, z)\text{,}\)</span> <span class="process-math">\(\hat{j} = \hat{j}(\lambda, R, z)\text{,}\)</span> and <span class="process-math">\(\hat{k} = \hat{k}(\lambda, R, z)\text{,}\)</span> and <span class="process-math">\(\lambda = \lambda(t)\text{,}\)</span> <span class="process-math">\(R = R(t)\text{,}\)</span> and <span class="process-math">\(z = z(t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-subsection-i-3">We will start by using the chain rule to expand <span class="process-math">\(\dfrac{D \hat{i}}{Dt}\text{.}\)</span> This will give us insight into how <span class="process-math">\(\hat{i}\)</span> changes orientation as the turntable rotates.<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="aa-section-turntable-subsection-i-4">
+<div class="displaymath process-math" id="eqn-total-derivative-i-full">
+\begin{equation}
+\frac{D \hat{i}}{Dt}
+=
+\frac{\partial \hat{i}}{\partial \lambda}
+\frac{D \lambda}{Dt}
++
+\frac{\partial \hat{i}}{\partial R}
+\frac{DR}{Dt}
++
+\frac{\partial \hat{i}}{\partial z}
+\frac{Dz}{Dt}\tag{A.1.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-subsection-i-5">The second term on the right-hand side of <a href="aa-section-turntable.html#eqn-total-derivative-i-full" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-i-full.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation A.1.1">(A.1.1)</a> is <span class="process-math">\(\vec{0}\)</span> since <span class="process-math">\(\hat{i}\)</span> does not change orientation if placed at a different radius while holding <span class="process-math">\(\lambda\)</span> and <span class="process-math">\(z\)</span> constant, and therefore <span class="process-math">\(\dfrac{\partial \hat{i}}{\partial R} = \vec{0}\text{.}\)</span> Furthermore, the point does not move from the edge of the turntable and so <span class="process-math">\(\dfrac{DR}{Dt} = 0\text{.}\)</span> Likewise, the third term on the right-hand side of <a href="aa-section-turntable.html#eqn-total-derivative-i-full" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-i-full.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation A.1.1">(A.1.1)</a> is <span class="process-math">\(\vec{0}\)</span> since <span class="process-math">\(\hat{i}\)</span> does not change orientation if placed at a different height above or below the turntable while holding <span class="process-math">\(\lambda\)</span> and <span class="process-math">\(R\)</span> constant, and therefore <span class="process-math">\(\dfrac{\partial \hat{i}}{\partial z} = \vec{0}\text{.}\)</span> Furthermore, the point does not move above or below the edge of the turntable and so <span class="process-math">\(\dfrac{Dz}{Dt} = 0\text{.}\)</span> Therefore, <a href="aa-section-turntable.html#eqn-total-derivative-i-full" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-i-full.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation A.1.1">(A.1.1)</a> reduces to<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="aa-section-turntable-subsection-i-6">
+<div class="displaymath process-math" id="eqn-total-derivative-i-reduced">
+\begin{equation}
+\frac{D \hat{i}}{Dt}
+=
+\frac{\partial \hat{i}}{\partial \lambda}
+\frac{D \lambda}{Dt}\tag{A.1.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-subsection-i-7">To evaluate <span class="process-math">\(\dfrac{\partial \hat{i}}{\partial \lambda}\text{,}\)</span> we consider the change in <span class="process-math">\(\hat{i}\)</span>’s orientation when its anchoring point is fixed to the edge of the turntable and sweeps through angular displacement <span class="process-math">\(\delta \lambda\)</span> over time <span class="process-math">\(\delta t\text{,}\)</span> as shown in <a href="aa-section-turntable.html#aa-turntable-i-start" class="xref" data-knowl="./knowl/xref/aa-turntable-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.2">Figure A.1.2</a> below. <span class="process-math">\(\hat{i}_1\)</span> is the initial position of <span class="process-math">\(\hat{i}\text{,}\)</span> and <span class="process-math">\(\hat{i}_2\)</span> is the final position of <span class="process-math">\(\hat{i}\)</span> after time <span class="process-math">\(\delta t\)</span> has passed and it has swept through angular displacement <span class="process-math">\(\delta \lambda\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="aa-turntable-i-start"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/aa-turntable-i-start.png" class="contained" alt="Two unit direction vectors at two nearby points on the edge of a circular disk rotating counter-clockwise about its center viewed from above."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">A.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Unit direction vectors <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> at two nearby points at radius <span class="process-math">\(R\)</span> to the turntable of <a href="aa-section-turntable.html#aa-turntable-setup" class="xref" data-knowl="./knowl/xref/aa-turntable-setup.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.1">Figure A.1.1</a> and separated by angular displacement <span class="process-math">\(\delta \lambda\text{.}\)</span><div class="autopermalink" data-description="Figure A.1.2"><a href="#aa-turntable-i-start" title="Copy heading and permalink for Figure A.1.2" aria-label="Copy heading and permalink for Figure A.1.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="aa-section-turntable-subsection-i-9">Fixing the tails of <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> to the same point in <a href="aa-section-turntable.html#aa-turntable-i-zoom" class="xref" data-knowl="./knowl/xref/aa-turntable-i-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.3">Figure A.1.3</a> below reveals that <span class="process-math">\(\delta \lambda\)</span> is the angle swept out between them and <span class="process-math">\(\vec{\delta i}\)</span> is the vector difference between them.<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="aa-turntable-i-zoom"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/images/aa-turntable-i-zoom.png" class="contained" alt="Two unit direction vectors with their tails fixed together and the angle swept out between them and their vector difference annotated."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">A.1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Reproduction of <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> from <a href="aa-section-turntable.html#aa-turntable-i-start" class="xref" data-knowl="./knowl/xref/aa-turntable-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.2">Figure A.1.2</a>. When the tails of the vectors are fixed together, they are separated by angle <span class="process-math">\(\delta \lambda\)</span> and their vector difference is <span class="process-math">\(\vec{\delta i}\text{.}\)</span><div class="autopermalink" data-description="Figure A.1.3"><a href="#aa-turntable-i-zoom" title="Copy heading and permalink for Figure A.1.3" aria-label="Copy heading and permalink for Figure A.1.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="aa-section-turntable-subsection-i-11">Reproducing <a href="aa-section-turntable.html#aa-turntable-i-start" class="xref" data-knowl="./knowl/xref/aa-turntable-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.2">Figure A.1.2</a> with the tail of <span class="process-math">\(\hat{i}_1\)</span> moved to the tail of <span class="process-math">\(\hat{i}_2\)</span> and <span class="process-math">\(\vec{\delta i}\)</span> additionally included in <a href="aa-section-turntable.html#aa-turntable-i-end" class="xref" data-knowl="./knowl/xref/aa-turntable-i-end.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.4">Figure A.1.4</a> below makes these relationships even clearer.<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="aa-turntable-i-end"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/aa-turntable-i-end.png" class="contained" alt="Two unit direction vectors with their tails fixed together on the edge of a circular disk rotating counter-clockwise about its center viewed from above."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">A.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Reproduction of <a href="aa-section-turntable.html#aa-turntable-i-start" class="xref" data-knowl="./knowl/xref/aa-turntable-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.2">Figure A.1.2</a> with the tail of <span class="process-math">\(\hat{i}_1\)</span> fixed to the tail of <span class="process-math">\(\hat{i}_2\text{.}\)</span> As shown in <a href="aa-section-turntable.html#aa-turntable-i-zoom" class="xref" data-knowl="./knowl/xref/aa-turntable-i-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.3">Figure A.1.3</a>, <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> are separated by angle <span class="process-math">\(\delta \lambda\)</span> and their vector difference is <span class="process-math">\(\vec{\delta i}\text{.}\)</span><div class="autopermalink" data-description="Figure A.1.4"><a href="#aa-turntable-i-end" title="Copy heading and permalink for Figure A.1.4" aria-label="Copy heading and permalink for Figure A.1.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="aa-section-turntable-subsection-i-13">We can use the arc length formula to approximate <span class="process-math">\(|\vec{\delta i}|\text{,}\)</span> and we can take advantage of the fact that, since <span class="process-math">\(\hat{i}\)</span> is a unit direction vector, <span class="process-math">\(|\hat{i}| = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="aa-section-turntable-subsection-i-14">
+<div class="displaymath process-math" id="aa-section-turntable-subsection-i-14-1">
+\begin{equation}
+|\vec{\delta i}|
+= |\hat{i_1}| \, \delta \lambda
+= |\hat{i_2}| \, \delta \lambda
+= |\hat{i}| \, \delta \lambda
+= \delta \lambda\tag{A.1.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-subsection-i-15">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="aa-section-turntable-subsection-i-16">
+<div class="displaymath process-math" id="aa-section-turntable-subsection-i-16-1">
+\begin{equation}
+\frac{|\vec{\delta i}|}{\delta t}
+=
+\frac{|\vec{\delta i}|}{\delta \lambda}
+\frac{\delta \lambda}{\delta t}
+=
+\frac{\delta \lambda}{\delta \lambda}
+\frac{\delta \lambda}{\delta t}
+=
+\frac{\delta \lambda}{\delta t}\tag{A.1.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aa-section-turntable-subsection-i-17">From <a href="aa-section-turntable.html#aa-turntable-i-end" class="xref" data-knowl="./knowl/xref/aa-turntable-i-end.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure A.1.4">Figure A.1.4</a>, we can see that as <span class="process-math">\(\delta t \to 0\text{,}\)</span> <span class="process-math">\(\delta \lambda \to 0\)</span> and <span class="process-math">\(\vec{\delta i}\)</span> points directly inward toward the center of the turntable, which coincides with the <span class="process-math">\(\hat{j}\)</span> direction. So<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="aa-section-turntable-subsection-i-18">
+<div class="displaymath process-math" id="eqn-total-derivative-i-final">
+\begin{equation}
+\lim_{\delta t \to 0}
+\frac{\vec{\delta i}}{\delta t}
+=
+\frac{D \hat{i}}{D t}
+=
+\lim_{\delta t \to 0}
+\frac{\delta \lambda}{\delta t} \, \hat{j}
+=
+\frac{D\lambda}{Dt} \, \hat{j}
+=
+\Omega \, \hat{j}\tag{A.1.5}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#aa-section-turntable-subsection-i-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection A.1.1: Expanding the total derivative of \hat{i}"><a href="#aa-section-turntable-subsection-i" title="Copy heading and permalink for Subsection A.1.1: Expanding the total derivative of \hat{i}" aria-label="Copy heading and permalink for Subsection A.1.1: Expanding the total derivative of \hat{i}">🔗</a></div>
+</section><div class="autopermalink" data-description="Section A.1: Derivation for a turntable"><a href="#aa-section-turntable" title="Copy heading and permalink for Section A.1: Derivation for a turntable" aria-label="Copy heading and permalink for Section A.1: Derivation for a turntable">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="backmatter-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter-3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
