@@ -7,7 +7,7 @@
     <p>
         Visualize a turntable of radius <m>R</m> that is rotating with constant angular velocity <m>\vec{\Omega}</m>.
         As shown in <xref ref="aa-turntable-setup" text="type-global" /> below,
-        <m>\vec{\Omega}</m> points perpendicular to the turntable and is directed out of the page.
+        <m>\vec{\Omega}</m> points perpendicular to the turntable and is directed out of the screen.
     </p>
 
     <p>
