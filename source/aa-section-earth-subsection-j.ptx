@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="aa-section-earth-subsection-j" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Expanding the total derivative of <m>\hat{j}</m></title>
+
+    <p>
+        We split <m>\hat{j}</m> into its component parallel to the disk at latitude <m>\phi</m>
+    </p>
+
+    <p>
+        <md>
+            \hat{j} \, \sin{\phi}
+        </md>
+    </p>
+
+    <p>
+        and its component perpendicular to the disk
+    </p>
+
+    <p>
+        <md>
+            \hat{j} \, \cos{\phi}
+        </md>
+    </p>
+
+    <p>
+        The component of <m>\hat{j}</m> perpendicular to the disk,
+        <m>\hat{j} \, \cos{\phi}</m>,
+        behaves like <m>\hat{k}</m> for the turntable:
+        Its orientation does not change no matter where it is placed in the plane of the disk
+        or at what height it is placed above or below the disk
+        and no matter the angle through which the disk rotates.
+        Consequently,
+        we only need to consider the component  of <m>\hat{j}</m> parallel to the disk,
+        <m>\hat{j} \, \sin{\phi}</m>.
+    </p>
+
+    <p>
+        The following derivation follows that for the turntable,
+        with <m>\hat{j}</m> replaced by <m>\hat{j} \, \sin{\phi}</m>.
+        Only the most pertinent steps are reproduced,
+        since the reader can refer to
+        <xref ref="aa-section-turntable-subsection-j" text="custom">the corresponding turntable derivation</xref>
+        for all steps.
+    </p>
+
+    <p>
+        To evaluate <m>\dfrac{\partial \hat{j}}{\partial \lambda}</m>,
+        we consider the change in <m>\hat{j} \, \sin{\phi}</m>'s orientation
+        when its anchoring point is fixed to the edge of the disk
+        and sweeps through angular displacement <m>\delta \lambda</m> over time <m>\delta t</m>,
+        as shown in <xref ref="aa-earth-j-start" text="type-global" /> below.
+        <m>\hat{j}_1 \, \sin{\phi}</m> is the initial position of <m>\hat{j} \, \sin{\phi}</m>,
+        and <m>\hat{j}_2 \, \sin{\phi}</m> is the final position of <m>\hat{j} \, \sin{\phi}</m> after time <m>\delta t</m> has passed
+        and it has swept through angular displacement <m>\delta \lambda</m>.
+    </p>
+
+    <figure xml:id="aa-earth-j-start">
+        <caption>
+            North polar projection showing the portions of unit direction vectors
+            <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m>
+            at two nearby points at the edge of the disk of radius <m>R = a \cos{\phi}</m>
+            from <xref ref="aa-earth-setup" text="type-global" />
+            and separated by angular displacement <m>\delta \lambda</m>.
+        </caption>
+        <image source="images/aa-earth-j-start.png" width="60%">
+        <shortdescription>
+            Two portions of unit direction vectors at two nearby points
+            on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+            The vectors point inward toward the center of the disk.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Fixing the tails of <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> together
+        <xref ref="aa-earth-j-zoom" text="type-global" /> below
+        reveals that <m>\delta \lambda</m> is the angle swept out between them
+        and <m>\vec{\delta j}</m> is the vector difference between them.
+    </p>
+
+    <figure xml:id="aa-earth-j-zoom">
+        <caption>
+        Reproduction of <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> from <xref ref="aa-earth-j-start" text="type-global" />.
+        When the tails of the vectors are fixed together,
+        they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta j}</m>.
+        </caption>
+        <image source="images/aa-earth-j-zoom.png" width="40%">
+        <shortdescription>
+            Two portions of unit direction vectors with their tails fixed together
+            and the angle swept out between them and their vector difference annotated.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Reproducing <xref ref="aa-earth-j-start" text="type-global" />
+        with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> moved to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>
+        and <m>\vec{\delta j}</m> additionally included
+        in <xref ref="aa-earth-j-end" text="type-global" /> below makes these relationships even clearer.
+    </p>
+
+    <figure xml:id="aa-earth-j-end">
+        <caption>
+        Reproduction of <xref ref="aa-earth-j-start" text="type-global" />
+        with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> fixed to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>.
+        As shown in <xref ref="aa-earth-j-zoom" text="type-global" />,
+        <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> are separated by angle <m>\delta \lambda</m>
+        and their vector difference is <m>\vec{\delta j}</m>.
+        </caption>
+        <image source="images/aa-earth-j-end.png" width="60%">
+        <shortdescription>
+            Two portions of unit direction vectors with their tails fixed together
+            on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Again, we can use the arc length formula to approximate <m>|\vec{\delta j}|</m>,
+        and we can take advantage of the fact that,
+        since <m>\hat{j}</m> is a unit direction vector,
+        <m>|\hat{j}| = 1</m>.
+    </p>
+
+    <p>
+        <md number="yes">
+            |\vec{\delta j}|
+            = |\hat{j_1}| (\sin{\phi}) \, \delta \lambda
+            = |\hat{j_2}| (\sin{\phi}) \, \delta \lambda
+            = |\hat{j}| (\sin{\phi}) \, \delta \lambda
+            = (\sin{\phi}) \, \delta \lambda
+        </md>
+    </p>
+
+    <p>
+        From <xref ref="aa-earth-j-end" text="type-global" />,
+        we can see that as <m>\delta t \to 0</m>,
+        <m>\delta \lambda \to 0</m> and <m>\vec{\delta j}</m> points to the local west,
+        which coincides with the <m>-\hat{i}</m> direction.
+        So
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-j-final-earth" number="yes"> 
+            \frac{D \hat{j}}{D t}
+            =
+            -\Omega \sin{\phi} \, \hat{i}
+        </md>
+    </p>
+
+</subsection>
