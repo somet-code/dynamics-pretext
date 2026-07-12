@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="aa-section-earth-subsection-i" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Expanding the total derivative of <m>\hat{i}</m></title>
+
+  <p>
+    There are only two differences between the derivation of <m>\dfrac{D \hat{i}}{Dt}</m> for a disk at latitude <m>\phi</m> on Earth
+    and the derivation of <m>\dfrac{D \hat{i}}{Dt}</m> for the turntable.
+    <ul>
+        <li>
+            <p>
+                <m>\vec{\delta i}</m> points in the direction of <m>\hat{j} \, \sin{\phi} - \hat{k} \, \cos{\phi}</m>
+                rather than in the direction of <m>\hat{j}</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                <m>R = a \cos{\phi}</m>.
+            </p>
+        </li>
+    </ul>
+    Therefore,
+  </p>
+
+  <p>
+    <md xml:id="eqn-total-derivative-i-final-earth" number="yes"> 
+        \frac{D \hat{i}}{D t}
+        =
+        \Omega \left(
+        \hat{j} \sin{\phi}
+        - \hat{k} \cos{\phi}
+        \right)
+        =
+        \Omega \sin{\phi} \, \hat{j}
+        - \Omega \cos{\phi} \, \hat{k}
+    </md>
+  </p>
+
+</subsection>
