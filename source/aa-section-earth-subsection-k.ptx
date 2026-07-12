@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="aa-section-earth-subsection-k" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Expanding the total derivative of <m>\hat{k}</m></title>
+
+    <p>
+        As we did for <m>\hat{j}</m> in <xref ref="aa-section-earth-subsection-j" text="type-global" />,
+        we split <m>\hat{k}</m> into its component parallel to the disk at latitude <m>\phi</m>.
+    </p>
+
+   <p>
+        <md>
+            \hat{k} \, \cos{\phi}
+        </md>
+    </p>
+
+    <p>
+        and its component perpendicular to the disk
+    </p>
+
+    <p>
+        <md>
+            \hat{k} \, \sin{\phi}
+        </md>
+    </p>
+
+    <p>
+        The component of <m>\hat{k}</m> perpendicular to the disk,
+        <m>\hat{k} \, \sin{\phi}</m>,
+        behaves like <m>\hat{k}</m> for the turntable:
+        Its orientation does not change no matter where it is placed in the plane of the disk
+        or at what height it is placed above or below the disk
+        and no matter the angle through which the disk rotates.
+        Consequently,
+        we only need to consider the component  of <m>\hat{k}</m> parallel to the disk,
+        <m>\hat{j} \, \sin{\phi}</m>.
+    </p>
+
+    <p>
+        While there is no equivalent derivation for the turntable for <m>\hat{k}</m>,
+        this is similar to the <m>\hat{j}</m> derivation
+        except that <m>\hat{k} \, \cos{\phi}</m> points outward away from the center of the disk
+        rather than inward toward the center of the disk.
+    </p>
+
+    <p>
+        The following derivation follows that for the turntable for <m>\hat{j}</m>,
+        with <m>\hat{j}</m> replaced by <m>\hat{k} \, \cos{\phi}</m>.
+        Only the most pertinent steps are reproduced,
+        since the reader can refer to
+        <xref ref="aa-section-turntable-subsection-j" text="custom">the corresponding turntable derivation</xref>
+        for all steps.
+    </p>
+
+    <p>
+        To evaluate <m>\dfrac{\partial \hat{k}}{\partial \lambda}</m>,
+        we consider the change in <m>\hat{k} \, \cos{\phi}</m>'s orientation
+        when its anchoring point is fixed to the edge of the disk
+        and sweeps through angular displacement <m>\delta \lambda</m> over time <m>\delta t</m>,
+        as shown in <xref ref="aa-earth-k-start" text="type-global" /> below.
+        <m>\hat{k}_1 \, \cos{\phi}</m> is the initial position of <m>\hat{k} \, \cos{\phi}</m>,
+        and <m>\hat{k}_2 \, \cos{\phi}</m> is the final position of <m>\hat{k} \, \cos{\phi}</m> after time <m>\delta t</m> has passed
+        and it has swept through angular displacement <m>\delta \lambda</m>.
+    </p>
+
+    <figure xml:id="aa-earth-k-start">
+        <caption>
+            North polar projection showing the portions of unit direction vectors
+            <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m>
+            at two nearby points at the edge of the disk of radius <m>R = a \cos{\phi}</m>
+            from <xref ref="aa-earth-setup" text="type-global" />
+            and separated by angular displacement <m>\delta \lambda</m>.
+        </caption>
+        <image source="images/aa-earth-k-start.png" width="60%">
+        <shortdescription>
+            Two portions of unit direction vectors at two nearby points
+            on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+            The vectors point outward from the center of the disk.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Fixing the tails of <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m> together
+        in <xref ref="aa-earth-k-zoom" text="type-global" /> below
+        reveals that <m>\delta \lambda</m> is the angle swept out between them
+        and <m>\vec{\delta k}</m> is the vector difference between them.
+    </p>
+
+    <figure xml:id="aa-earth-k-zoom">
+        <caption>
+        Reproduction of <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m> from <xref ref="aa-earth-k-start" text="type-global" />.
+        When the tails of the vectors are fixed together,
+        they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta k}</m>.
+        </caption>
+        <image source="images/aa-earth-k-zoom.png" width="40%">
+        <shortdescription>
+            Two portions of unit direction vectors with their tails fixed together
+            and the angle swept out between them and their vector difference annotated.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Reproducing <xref ref="aa-earth-k-start" text="type-global" />
+        with the tail of <m>\hat{k}_1 \, \cos{\phi}</m> moved to the tail of <m>\hat{k}_2 \, \cos{\phi}</m>
+        and <m>\vec{\delta k}</m> additionally included
+        in <xref ref="aa-earth-k-end" text="type-global" /> below makes these relationships even clearer.
+    </p>
+
+    <figure xml:id="aa-earth-k-end">
+        <caption>
+        Reproduction of <xref ref="aa-earth-k-start" text="type-global" />
+        with the tail of <m>\hat{k}_1 \, \cos{\phi}</m> fixed to the tail of <m>\hat{k}_2 \, \cos{\phi}</m>.
+        As shown in <xref ref="aa-earth-k-zoom" text="type-global" />,
+        <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m> are separated by angle <m>\delta \lambda</m>
+        and their vector difference is <m>\vec{\delta k}</m>.
+        </caption>
+        <image source="images/aa-earth-k-end.png" width="60%">
+        <shortdescription>
+            Two portions of unit direction vectors with their tails fixed together
+            on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Again, we can use the arc length formula to approximate <m>|\vec{\delta k}|</m>,
+        and we can take advantage of the fact that,
+        since <m>\hat{k}</m> is a unit direction vector,
+        <m>|\hat{k}| = 1</m>.
+    </p>
+
+    <p>
+        <md number="yes">
+            |\vec{\delta k}|
+            = |\hat{k_1}| (\cos{\phi}) \, \delta \lambda
+            = |\hat{k_2}| (\cos{\phi}) \, \delta \lambda
+            = |\hat{k}| (\cos{\phi}) \, \delta \lambda
+            = (\cos{\phi}) \, \delta \lambda
+        </md>
+    </p>
+
+    <p>
+        From <xref ref="aa-earth-k-end" text="type-global" />,
+        we can see that as <m>\delta t \to 0</m>,
+        <m>\delta \lambda \to 0</m> and <m>\vec{\delta k}</m> points to the local east,
+        which coincides with the <m>\hat{i}</m> direction.
+        So
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-k-final-earth" number="yes"> 
+            \frac{D \hat{k}}{D t}
+            =
+            \Omega \cos{\phi} \, \hat{i}
+        </md>
+    </p>
+
+</subsection>
