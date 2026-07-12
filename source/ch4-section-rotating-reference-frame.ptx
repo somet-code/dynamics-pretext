@@ -208,7 +208,7 @@
     </p>
 
     <p>
-        (The full derivation of these terms is shown in Appendix I.)
+        (The full derivation of these terms is shown in <xref ref="appendix-cross-product-term-proof" text="type-global" />.)
         Therefore,
         the second expression in parenthesis on the right-hand side of
         <xref ref="eqn-noninertial-derivative-general" text="type-global" />
