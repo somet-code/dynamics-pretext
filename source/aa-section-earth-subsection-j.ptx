@@ -74,7 +74,7 @@
 
     <p>
         Fixing the tails of <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> together
-        <xref ref="aa-earth-j-zoom" text="type-global" /> below
+        in <xref ref="aa-earth-j-zoom" text="type-global" /> below
         reveals that <m>\delta \lambda</m> is the angle swept out between them
         and <m>\vec{\delta j}</m> is the vector difference between them.
     </p>
