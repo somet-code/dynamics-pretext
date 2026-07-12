@@ -11,7 +11,7 @@
   </p>
 
   <p>
-    <md xml:id="eqn-total-derivative-k-final" number="yes"> 
+    <md xml:id="eqn-total-derivative-k-final-turntable" number="yes"> 
         \frac{D \hat{k}}{Dt} = \vec{0}
     </md>
   </p>

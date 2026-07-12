@@ -9,9 +9,9 @@
     <m>\vec{\Omega} \times \hat{j}</m>,
     and <m>\vec{\Omega} \times \hat{k}</m>
     and verify they match the results of
-    <xref ref="eqn-total-derivative-i-final" text="type-global" />,
-    <xref ref="eqn-total-derivative-j-final" text="type-global" />,
-    and <xref ref="eqn-total-derivative-k-final" text="type-global" />,
+    <xref ref="eqn-total-derivative-i-final-turntable" text="type-global" />,
+    <xref ref="eqn-total-derivative-j-final-turntable" text="type-global" />,
+    and <xref ref="eqn-total-derivative-k-final-turntable" text="type-global" />,
     respectively.
   </p>
 

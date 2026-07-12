@@ -21,7 +21,7 @@
   </p>
 
   <p>
-    <md xml:id="eqn-total-derivative-i-full" number="yes"> 
+    <md xml:id="eqn-total-derivative-i-full-turntable" number="yes"> 
       \frac{D \hat{i}}{Dt}
       =
       \frac{\partial \hat{i}}{\partial \lambda}
@@ -36,23 +36,23 @@
   </p>
 
   <p>
-    The second term on the right-hand side of <xref ref="eqn-total-derivative-i-full" text="type-global" />
+    The second term on the right-hand side of <xref ref="eqn-total-derivative-i-full-turntable" text="type-global" />
     is <m>\vec{0}</m> since <m>\hat{i}</m> does not change orientation if placed at a different radius
     while holding <m>\lambda</m> and <m>z</m> constant,
     and therefore <m>\dfrac{\partial \hat{i}}{\partial R} = \vec{0}</m>.
     Furthermore, the point does not move from the edge of the turntable,
     and so <m>\dfrac{DR}{Dt} = 0</m>.
-    Likewise, the third term on the right-hand side of <xref ref="eqn-total-derivative-i-full" text="type-global" />
+    Likewise, the third term on the right-hand side of <xref ref="eqn-total-derivative-i-full-turntable" text="type-global" />
     is <m>\vec{0}</m> since <m>\hat{i}</m> does not change orientation if placed at a different height above or below the turntable
     while holding <m>\lambda</m> and <m>R</m> constant,
     and therefore <m>\dfrac{\partial \hat{i}}{\partial z} = \vec{0}</m>.
     Furthermore, the point does not move above or below the edge of the turntable,
     and so <m>\dfrac{Dz}{Dt} = 0</m>.
-    Therefore, <xref ref="eqn-total-derivative-i-full" text="type-global" /> reduces to
+    Therefore, <xref ref="eqn-total-derivative-i-full-turntable" text="type-global" /> reduces to
   </p>
 
   <p>
-    <md xml:id="eqn-total-derivative-i-reduced" number="yes"> 
+    <md xml:id="eqn-total-derivative-i-reduced-turntable" number="yes"> 
       \frac{D \hat{i}}{Dt}
       =
       \frac{\partial \hat{i}}{\partial \lambda}
@@ -173,7 +173,7 @@
   </p>
 
   <p>
-    <md xml:id="eqn-total-derivative-i-final" number="yes"> 
+    <md xml:id="eqn-total-derivative-i-final-turntable" number="yes"> 
       \lim_{\delta t \to 0}
       \frac{\vec{\delta i}}{\delta t}
       =
