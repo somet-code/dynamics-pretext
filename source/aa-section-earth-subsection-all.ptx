@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="aa-section-earth-subsection-all" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Putting everything together for Earth</title>
+
+    <p>
+        As shown in <xref ref="aa-earth-omega" text="type-global" /> below,
+    </p>
+
+    <p>
+        <md number="yes">
+            \vec{\Omega} = \Omega \cos{\phi} \, \hat{j} + \Omega \sin{\phi} \, \hat{k}
+        </md>
+    </p>
+
+    <p>
+        Thus,
+        we can find <m>\vec{\Omega} \times \hat{i}</m>,
+        <m>\vec{\Omega} \times \hat{j}</m>,
+        and <m>\vec{\Omega} \times \hat{k}</m>
+        and verify they match the results of
+        <xref ref="eqn-total-derivative-i-final-earth" text="type-global" />,
+        <xref ref="eqn-total-derivative-j-final-earth" text="type-global" />,
+        and <xref ref="eqn-total-derivative-k-final-earth" text="type-global" />,
+        respectively.
+    </p>
+
+  <p>
+    <md number="yes">
+        \vec{\Omega} \times \hat{i}
+        =
+        \Omega \sin{\phi} \, \hat{j}
+        - \Omega \cos{\phi} \, \hat{k}
+        =
+        \frac{D \hat{i}}{Dt}
+    </md>
+  </p>
+
+  <p>
+    <md number="yes">
+        \vec{\Omega} \times \hat{j}
+        =
+        -\Omega \sin{\phi} \, \hat{i}
+        =
+        \frac{D \hat{j}}{Dt}
+    </md>
+  </p>
+
+  <p>
+    <md number="yes">
+        \vec{\Omega} \times \hat{k}
+        =
+        \Omega \cos{\phi} \, \hat{i}
+        =
+        \frac{D \hat{k}}{Dt}
+    </md>
+  </p>
+
+  <p>
+    Therefore, the derivation is complete.
+  </p>
+
+    <figure xml:id="aa-earth-omega">
+        <caption>
+            Reproduction of <xref ref="aa-earth-setup" text="type-global" />,
+            with a copy of <m>\vec{\Omega}</m> moved to the point of interest on Earth's surface.
+        </caption>
+        <image source="images/aa-earth-omega.png" width="60%">
+            <shortdescription>
+                A point on Earth's surface with the local Cartesian coordinate system and the Earth's angular velocity vector placed at that point.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>

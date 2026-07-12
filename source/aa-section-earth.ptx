@@ -97,5 +97,6 @@
   <xi:include href="aa-section-earth-subsection-i.ptx" />
   <xi:include href="aa-section-earth-subsection-j.ptx" />
   <xi:include href="aa-section-earth-subsection-k.ptx" />
+  <xi:include href="aa-section-earth-subsection-all.ptx" />
 
 </section>
