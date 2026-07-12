@@ -17,6 +17,7 @@
     <title>Proof of Cross Product Term in Total Derivative for Rotating Reference Frames</title>
 
     <xi:include href="aa-section-turntable.ptx" />
+    <xi:include href="aa-section-earth.ptx" />
     
   </appendix>
 

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="aa-section-earth" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Derivation for Earth</title>
+
+  <introduction>
+    <p>
+        The derivation for Earth is more complicated than the derivation for the turntable
+        since Earth is spherical
+        and therefore the orientations of <m>\hat{j}</m> and <m>\hat{k}</m> depend on latitude <m>\phi</m>.
+    </p>
+
+    <p>
+        But we can connect the derivation for the turntable to Earth by picturing a disk of radius <m>R = a \cos{\phi}</m>,
+        where <m>a</m> is Earth's mean radius,
+        drawn perpendicular to Earth's axis of rotation at latitude <m>\phi</m>,
+        as shown in <xref ref="aa-earth-setup" text="type-global" /> below.
+        Such a disk rotates with Earth's constant angular velocity <m>\vec{\Omega}</m>,
+        and <m>\vec{\Omega}</m> points perpendicular to the disk.
+        Thus, the disk is like the turntable.
+    </p>
+
+    <p>
+        Again, all the unit direction vectors discussed below have an implied subscript "rot"
+        since they are attached to Earth,
+        which is a rotating reference frame.
+    </p>
+
+    <figure xml:id="aa-earth-setup">
+        <caption>
+            Equatorial projection
+            showing the unit direction vectors of a local Cartesian coordinate system fixed to Earth's surface
+            at radius <m>R = a \cos{\phi}</m>,
+            perpendicular to Earth's axis of rotation,
+            where <m>a</m> is Earth's mean radius and <m>\phi</m> is latitude.
+            Vector <m>\vec{\Omega}</m> shows Earth's constant angular velocity.
+        </caption>
+        <image source="images/aa-earth-setup.png" width="60%">
+            <shortdescription>
+                A point on Earth's surface with the local Cartesian coordinate system placed at that point.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        As <xref ref="aa-earth-setup" text="type-global" /> shows,
+        at any point fixed to the edge of such a disk drawn perpendicular to Earth's axis of rotation,
+        <m>\hat{i}</m> is tangent to the disk and points to the local east,
+        <m>\hat{j}</m> points to the local north,
+        and <m>\hat{k}</m> points locally upward.
+        While <m>\hat{i}</m> for Earth directly corresponds to <m>\hat{i}</m> for the turntable,
+        as both are tangent to the rotating disk and point in the direction of rotation,
+        <m>\hat{j}</m> and <m>\hat{k}</m> for Earth do not directly correspond to <m>\hat{j}</m> and <m>\hat{k}</m> for the turntable,
+        as <m>\hat{j}</m> does not point directly inward toward the axis of rotation since it does not lie on the disk,
+        and <m>\hat{k}</m> does not point perpendicular to the disk.
+        Instead, <m>\hat{j}</m> points along Earth's surface toward the North Pole,
+        and <m>\hat{k}</m> points perpendicular to Earth's surface toward space.
+    </p>
+
+    <p>
+        Also note that <m>\hat{k}</m> does not point in the same direction as <m>\vec{\Omega}</m>,
+        as was the case with the turntable.
+        Instead, <m>\vec{\Omega}</m> points partially in the <m>\hat{j}</m> direction and partially in the <m>\hat{k}</m> direction.
+        But we can still define the angular speed <m>\Omega = \dfrac{D \lambda}{Dt}</m> [<m>\text{rad} \, \text{s}^{-1}</m>]
+        where <m>\lambda</m> [<m>\text{rad}</m>] is latitude.
+        By these definitions,
+        during a period of time <m>\delta t</m>,
+        the disk rotates through angular displacement <m>\delta \lambda</m>.
+    </p>
+
+    <p>
+        Note that any point in Earth's atmosphere at latitude <m>\phi</m>
+        can be produced simply by increasing the value of <m>R</m> via <m>R = (a + z) \cos{\phi}</m>,
+        where <m>z \gt 0</m> for a point in the atmosphere,
+        as shown in <xref ref="aa-earth-setup-atmosphere" text="type-global" /> below.
+        Thus, the following derivations apply to any point in Earth's atmosphere as well as on its surface,
+        even though they are presented for a point on Earth's surface for simplicity.
+    </p>
+
+    <p>
+        Finally, remember that a "point" in Earth's atmosphere refers to a volume element.
+    </p>
+
+    <figure xml:id="aa-earth-setup-atmosphere">
+        <caption>
+            Reproduction of <xref ref="aa-earth-setup" text="type-global" />,
+            with <m>a</m> replaced by <m>a + z</m> to apply to a point in Earth's atmosphere at latitude <m>\phi</m>.
+        </caption>
+        <image source="images/aa-earth-setup-atmosphere.png" width="60%">
+            <shortdescription>
+                A point in Earth's atmosphere with the local Cartesian coordinate system placed at that point.
+            </shortdescription>
+        </image>
+    </figure>
+  </introduction>
+
+</section>
