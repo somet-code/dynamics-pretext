@@ -18,9 +18,9 @@
     </p>
 
     <p>
-        <term>Fluid pressure</term> is compressive,
-        and <term>atmospheric pressure</term>
-        is fluid pressure caused by the combined force of numerous discrete atmospheric particles colliding with a surface of any orientation placed anywhere within the atmosphere.
+        <term>Fluid pressure</term> is caused by the combined force of numerous discrete fluid particles colliding with a surface of any orientation placed anywhere within the fluid,
+        and it is compressive.
+        <term>Atmospheric pressure</term> is fluid pressure caused by the collisions of atmospheric particles with surfaces.
     </p>
 
     <p>
@@ -144,6 +144,10 @@
     </p>
 
     <p>
+        respectively.
+    </p>
+
+    <p>
         Note that each of these accelerations depends on a spatial derivative of pressure,
         or a <term>pressure gradient</term>,
         but not on a specific value of pressure.
@@ -174,7 +178,7 @@
     <p>
         A gradient vector points from lower values toward higher values of the scalar quantity of interest,
         in the direction of fastest increase.
-        Visually, a gradient vector points locally perpendicular to<term>isopleths</term> (contours of constant value)
+        Visually, a gradient vector points locally perpendicular to <term>isopleths</term> (contours of constant value)
         of the scalar quantity of interest toward higher values,
         and its magnitude is determined by the strength of the gradient:
         Closer spacing of isopleths indicates larger gradients.
@@ -185,7 +189,7 @@
         in the direction of fastest increase, locally perpendicular to <term>isobars</term> (contours of constant pressure),
         and its magnitude increases as the strength of the pressure gradient increases.
         But the negative sign in <xref ref="eqn-pressure-gradient-acceleration" text="type-global" />
-        means that the pressure gradient force vector <m>\vec{F}_{PG}</m> and,
+        means the pressure gradient force vector <m>\vec{F}_{PG}</m> and,
         likewise, the pressure gradient acceleration vector <m>\vec{a}_{PG}</m>
         point in the opposite direction as the pressure gradient vector.
         These principles are visualized in <xref ref="ch3-isobars" text="type-global" /> below.

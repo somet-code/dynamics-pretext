@@ -17,7 +17,7 @@
         of infinite length (in the <m>x</m>-direction)
         and width (in the <m>y</m>-direction, not shown but perpendicular to the screen)
         separated by vertical distance <m>h</m> and bounding a horizontally infinite viscous fluid of depth <m>h</m>.
-        The lower surface is fixed (as indicated by the hatching) and the upper surface moves to the right at <m>u_0</m>.
+        The lower surface is fixed (as indicated by the hatching) and the upper surface moves to the right at velocity <m>u_0</m>.
         The blue dashed arrows represent steady planar Couette flow in the fluid.
         The solid blue lines give the vertical profile of the horizontal velocity <m>u(z)</m>.
     </caption>
@@ -33,16 +33,16 @@
   <p>
     The upper surface drags the fluid particles directly below it:
     You could think of these particles as constituting an infinitesimally thin layer of fluid directly below the upper surface.
-    This causes the layer of fluid in contact with the plate to move to the right at <m>u_0</m> with the plate.
+    This causes the layer of fluid in contact with the upper surface to move to the right at <m>u_0</m> with the surface.
     The upper layer of fluid drags the layer of fluid directly below it due to viscosity,
     and that layer of fluid drags the layer of fluid directly below it due to viscosity,
-    and so on.
+    and so on to the bottom of the fluid.
     Likewise,
     the lower surface drags the fluid particles directly above it,
     causing that layer of fluid to also be motionless.
     The lower layer of fluid drags the layer of fluid directly above it due to viscosity,
     and that layer of fluid drags the layer of fluid directly above it due to viscosity,
-    and so on.
+    and so on to the top of the fluid.
     After a time,
     <term>steady state</term>
     (i.e., <m>\dfrac{\partial u}{\partial t} = 0</m>)
@@ -74,7 +74,8 @@
     (also the flow velocity component under consideration)
     and the second subscript <m>z</m> indicates the direction in which the stress acts
     (also the direction in which the flow is sheared).
-    <m>\tau_{xz}</m> represents the external force per unit area that must be applied to the plate to keep it moving at a constant rate despite the viscous fluid dragging it back.
+    <m>\tau_{xz}</m> represents the external force per unit area that must be applied to the upper surface to keep it moving at a constant rate
+    despite the viscous fluid dragging it back.
   </p>
 
   <p>

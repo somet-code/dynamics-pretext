@@ -4,7 +4,7 @@
     <title>Gravitational force</title>
 
     <p>
-        The <term>gravitational force</term> <m>\vec{F}_g</m> [N] is an attractive force between two masses.
+        The <term>gravitational force</term> <m>\vec{F}_g</m> [N] is an attractive force between the centers of two masses.
         <term>Newton's law of universal gravitation</term> gives the magnitude of the gravitational force:
     </p>
 
@@ -34,7 +34,7 @@
 
     <p>
         where <m>r</m> now represents the distance between the air parcel's center of mass and Earth's center of mass
-        and <m>\vec{r}</m> points from Earth's center of mass to the air parcel's center of mass.
+        and <m>\vec{r}</m> is the position vector that points from Earth's center of mass to the air parcel's center of mass.
         (Note <m>\dfrac{\vec{r}}{r}</m> is a unit vector, since <m>|\vec{r}| = r</m>.)
         If we further assume Earth is spherical with radius <m>a</m>, <xref ref="eqn-gravitational-force-earth-r" text="type-global" /> becomes
     </p>
@@ -43,6 +43,10 @@
         <md xml:id="eqn-gravitational-force-earth-z" number="yes">
             \vec{F}_g = -G \frac{m \, M_E}{(a+z)^2} \left( \frac{\vec{r}}{r} \right)
         </md>
+    </p>
+
+    <p>
+        where <m>z</m> [m] is air parcel's geometric height.
     </p>
 
     <p>

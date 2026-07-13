@@ -6,7 +6,7 @@
     <introduction>
 
         <p>
-            Forces acting on the surface of an air parcel can cause the air parcel to <term>deform</term> (change in shape and possibly size)
+            Forces acting on the surface of an air parcel can cause the air parcel to <term>deform</term> (change shape and possibly size)
             through tension, compression, and/or shear.
             We express such deforming forces acting on a unit area of the parcel as <term>stress</term> <m>\tau</m> [Pa],
             which is measured using the same units as pressure.
@@ -35,7 +35,7 @@
         </figure>
 
         <p>
-            While stress is the result of external forces,
+            While stress is caused by external forces,
             it translates internally through the air parcel via viscosity.
             <term>Viscosity</term> expresses how much a fluid like air resists deformation due to interactions such as collisions between its own particles.
             Its value depends on the fluid's molecular makeup as well as its thermodynamic state,
@@ -49,6 +49,8 @@
             This causes the faster-moving particles to slow down while the slower-moving particles speed up.
             Thus, through momentum transfer between adjacent particles,
             viscosity minimizes velocity differences within a fluid.
+            The higher the viscosity of the fluid,
+            the more effectively momentum transfer reduces velocity differences within the fluid.
         </p>
 
         <p>
@@ -115,7 +117,11 @@
         </p>
 
         <p>
-            where <m>\nu = \dfrac{\mu}{\rho}</m> [<m>\text{m}^{2} \, \text{s}^{-1}</m>] is the <term>kinematic viscosity</term>.
+            where <m>F_{ri}</m> is the viscous friction force in the <m>i^{\text{th}}</m> direction,
+            <m>a_{ri}</m> is the viscous friction force per unit mass,
+            or the viscous friction acceleration,
+            in the <m>i^{\text{th}}</m> direction, 
+            and <m>\nu = \dfrac{\mu}{\rho}</m> [<m>\text{m}^{2} \, \text{s}^{-1}</m>] is the <term>kinematic viscosity</term>.
         </p>
 
         <p>
@@ -157,13 +163,13 @@
         </p>
 
         <p>
-            The dependence of the viscous friction force on <m>\vec{u}</m>
+            The dependence of the viscous friction force on the air parcel's velocity <m>\vec{u}</m>
             as shown in <xref ref="eqn-friction-acceleration" text="type-global" />
-            means that the viscous friction force is present only in a moving fluid.
+            means the viscous friction force is present only in a moving fluid.
             Furthermore,
-            the second-order derivatives encompassed by the Laplacian of velocity and shown explicitly in
+            the second-order derivatives encompassed by the Laplacian of <m>\vec{u}</m> and shown explicitly in
             <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
-            mean that the viscous friction force is present only in moving fluids with nonlinear velocity profiles.
+            mean the viscous friction force is present only in moving fluids with nonlinear velocity profiles.
         </p>
 
         <p>
@@ -180,8 +186,7 @@
             up to a few kilometers during the daytime!
             Turbulence is not of focus in this course,
             but it is an interesting and meteorologically significant
-            (not to mention aeronautically significant!)
-            topic that you will return to in future courses.
+            topic you will return to in future courses.
         </p>
 
     </introduction>

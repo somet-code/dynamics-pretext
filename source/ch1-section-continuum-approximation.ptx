@@ -42,7 +42,7 @@
     <caption>
       A volume element in the shape of a rectangular prism.
       Its edges are parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the three-dimensional Cartesian coordinate system
-      and have lengths <m>\delta x</m>, <m>\delta y</m>, and <m>\delta z</m>, respectively.
+      and give the element length <m>\delta x</m>, width <m>\delta y</m>, and height <m>\delta z</m>.
       Its center has coordinates <m>(x_0, y_0, z_0)</m>.
     </caption>
     <image source="images/ch1-volume-element.png" width="60%">
