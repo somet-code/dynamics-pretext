@@ -1099,22 +1099,49 @@ var ptx_lunr_docs = [
   "body": " Selected references     Chapters 2 and 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapters 1 and 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 6 of Marshall and Plumb (2007)      "
 },
 {
-  "id": "chapter-5",
+  "id": "ch5-section-expanding-acceleration",
   "level": "1",
-  "url": "chapter-5.html",
-  "type": "Chapter",
-  "number": "5",
-  "title": "Spherical Coordinates",
-  "body": " Spherical Coordinates   The vector equation of motion in rotating coordinates with the gravitational and centrifugal accelerations combined as gravity from is reproduced in below, with a slight rearrangement of the terms.     This form of the vector equation of motion gives the two causes of atmospheric motion relative to the rotating Earth the pressure gradient and gravitational forces and the difficulty of rotation is fully accounted for through the inclusion of the Coriolis and centrifugal accelerations. Pretty nifty!  But there is one more difficulty in using this equation: It makes use of the local Cartesian coordinate system. This is a difficulty because the local Cartesian coordinate system's orientation changes depending on where it applied on Earth's surface or within its atmosphere, because Earth is spherical. (Note: We will ignore Earth's slight deviation from sphericity for simplicity and because treating Earth as spherical does not change our understanding of atmospheric dynamics, but be aware Earth's oblate ellipsoid shape could be accounted for simply by replacing latitude with geodetic latitude and altitude with geodetic altitude; see Wikipedia's Geodetic coordinates page .)  In particular, as below shows, the orientation of the local Cartesian coordinate system's unit direction vectors changes with latitude and longitude because Earth is spherical. Consequently, to expand the acceleration of an air parcel, we must use the product rule since the orientation of its unit direction vectors can change along with its speed:     The three terms in the second set of parentheses in must be expanded into a useful form. This expansion is the focus of much of the rest of this topic.   Reproduction of from . Examples of the local Cartesian coordinate system unit direction vectors , , and when the origin of the coordinate system is placed at different locations on Earth's surface along a line of latitude (horizontal dashed curve) and a line of longitude (vertical dashed curve) as well within Earth's atmosphere. Note the orientations of the unit direction vectors in space change depending on the placement of the origin.   Unit direction vectors at points with different latitude, longitude, and height on Earth's surface and in its atmosphere.     "
+  "url": "ch5-section-expanding-acceleration.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "Expanding the acceleration",
+  "body": " Expanding the acceleration   Expanding the total derivative of  Using the definition of the total derivative,     The first term on the right-hand side of is     since, at a fixed location on Earth or in its atmosphere, the local orientation of a unit direction vector does not change with time. Specifically, always points to the local east.  Furthermore, reveals that     Therefore, reduces to     To evaluate , we make a horizontal slice perpendicular to Earth's axis of rotation at latitude to create a disk of radius . As shown in below, we then consider the change in 's orientation when its anchoring point is placed at two nearby points on Earth's surface with latitude and longitudes separated by angle along arc .   North polar projection showing unit direction vectors and placed on Earth's surface at two nearby points at the edge of the disk of radius and separated by angle and arc .   Two unit direction vectors at two nearby points on the edge of a circular disk viewed from above. The vectors point tangent to the edge of the disk.    Fixing the tails of and together in below reveals that is the angle swept out between them and is the vector difference between them.   Reproduction of and from . When the tails of the vectors are fixed together, they are separated by angle and their vector difference is .   Two unit direction vectors with their tails fixed together and the angle swept out between them and their vector difference annotated.    Reproducing with the tail of moved to the tail of and additionally included in below makes these relationships even clearer.   Reproduction of with the tail of fixed to the tail of . As shown in , and are separated by angle and their vector difference is .   Two unit direction vectors with their tails fixed together and the angle swept out between them and their vector difference annotated.    We can use the arc length formula to express in terms of :     Note that we presented this formula in .  Likewise, we can use the arc length formula to approximate , and we can take advantage of the fact that, since is a unit direction vector, .     Therefore,     From , we can see that as , and points directly inward toward the center of the disk, perpendicular to Earth's axis of rotation. In particular, below shows that points in the direction of . Therefore,     and becomes      Equatorial projection showing the unit direction vectors , , and of the local Cartesian coordinate system fixed to Earth's surface at radius perpendicular to Earth's axis of rotation, where is Earth's mean radius and is latitude. The vector difference points inward and perpendicular to Earth's axis of rotation.   A point on Earth's surface with the local Cartesian coordinate system placed at that point.     "
 },
 {
-  "id": "ch5-local-cartesian-coordinates-sphericity",
+  "id": "ch5-spherical-i-start",
   "level": "2",
-  "url": "chapter-5.html#ch5-local-cartesian-coordinates-sphericity",
+  "url": "ch5-section-expanding-acceleration.html#ch5-spherical-i-start",
   "type": "Figure",
-  "number": "5.0.1",
+  "number": "5.1.1",
   "title": "",
-  "body": " Reproduction of from . Examples of the local Cartesian coordinate system unit direction vectors , , and when the origin of the coordinate system is placed at different locations on Earth's surface along a line of latitude (horizontal dashed curve) and a line of longitude (vertical dashed curve) as well within Earth's atmosphere. Note the orientations of the unit direction vectors in space change depending on the placement of the origin.   Unit direction vectors at points with different latitude, longitude, and height on Earth's surface and in its atmosphere.   "
+  "body": " North polar projection showing unit direction vectors and placed on Earth's surface at two nearby points at the edge of the disk of radius and separated by angle and arc .   Two unit direction vectors at two nearby points on the edge of a circular disk viewed from above. The vectors point tangent to the edge of the disk.   "
+},
+{
+  "id": "ch5-spherical-i-zoom",
+  "level": "2",
+  "url": "ch5-section-expanding-acceleration.html#ch5-spherical-i-zoom",
+  "type": "Figure",
+  "number": "5.1.2",
+  "title": "",
+  "body": " Reproduction of and from . When the tails of the vectors are fixed together, they are separated by angle and their vector difference is .   Two unit direction vectors with their tails fixed together and the angle swept out between them and their vector difference annotated.   "
+},
+{
+  "id": "ch5-spherical-i-middle",
+  "level": "2",
+  "url": "ch5-section-expanding-acceleration.html#ch5-spherical-i-middle",
+  "type": "Figure",
+  "number": "5.1.3",
+  "title": "",
+  "body": " Reproduction of with the tail of fixed to the tail of . As shown in , and are separated by angle and their vector difference is .   Two unit direction vectors with their tails fixed together and the angle swept out between them and their vector difference annotated.   "
+},
+{
+  "id": "ch5-spherical-i-end",
+  "level": "2",
+  "url": "ch5-section-expanding-acceleration.html#ch5-spherical-i-end",
+  "type": "Figure",
+  "number": "5.1.4",
+  "title": "",
+  "body": " Equatorial projection showing the unit direction vectors , , and of the local Cartesian coordinate system fixed to Earth's surface at radius perpendicular to Earth's axis of rotation, where is Earth's mean radius and is latitude. The vector difference points inward and perpendicular to Earth's axis of rotation.   A point on Earth's surface with the local Cartesian coordinate system placed at that point.   "
 },
 {
   "id": "references",

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Expanding the acceleration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="METR 3113">
+<meta property="book:author" content="Dr. Amanda Kis">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="Atmospheric Dynamics I" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="atmospheric-dynamics-i.html"><span class="title">METR 3113</span> <span class="subtitle">Atmospheric Dynamics I</span></a></h1>
+<p class="byline">Dr. Amanda Kis</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="chapter-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-5.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Continuum Approximation and Calculus in Geophysical Fluid Dynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-continuum-approximation.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Continuum approximation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1-section-calculus.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Partial differentiation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector algebra and calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Right-hand rule</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-del" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Del</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-finite-differencing.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Finite differencing</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Fundamental Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-gravitational-force.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Gravitational force</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-pressure-gradient-force.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Pressure gradient force</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3-section-friction-force.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Viscous friction force</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3-section-friction-force.html#ch3-section-friction-force-subsection-couette-flow" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Couette flow</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-newtons-laws.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Newton’s laws of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-selected-references.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Non-inertial Reference Frames and Apparent Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-relative-motion.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Relative motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-reference-frames.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Inertial and non-inertial reference frames</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-rotating-reference-frame.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Rotating reference frame</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-application-earth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Application of a rotating reference frame to Earth</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-accelerations.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Inertial accelerations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-centrifugal-acceleration.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Centrifugal acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-gravity.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Gravity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-geopotential.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Geopotential and geopotential height</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-forces-authors-note.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Author’s note on inertial forces</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-selected-references.html" class="internal"><span class="codenumber">4.10</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-5.html" class="internal"><span class="codenumber">5</span> <span class="title">Spherical Coordinates</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Expanding the acceleration</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-i-hat" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">6</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="appendix-cross-product-term-proof.html" class="internal"><span class="codenumber">A</span> <span class="title">Proof of Cross Product Term in Total Derivative for Rotating Reference Frames</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="aa-section-turntable.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Derivation for a turntable</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-i" class="internal"><span class="codenumber">A.1.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-j" class="internal"><span class="codenumber">A.1.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-k" class="internal"><span class="codenumber">A.1.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-all" class="internal"><span class="codenumber">A.1.4</span> <span class="title">Putting everything together for the turntable</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="aa-section-earth.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Derivation for Earth</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-i" class="internal"><span class="codenumber">A.2.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-j" class="internal"><span class="codenumber">A.2.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-k" class="internal"><span class="codenumber">A.2.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-all" class="internal"><span class="codenumber">A.2.4</span> <span class="title">Putting everything together for Earth</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ch5-section-expanding-acceleration">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Expanding the acceleration</span>
+</h2>
+<section class="subsection" id="ch5-section-expanding-acceleration-subsection-i-hat">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span>
+</h3>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-2">Using the definition of the total derivative,<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-3">
+<div class="displaymath process-math" id="eqn-total-derivative-i-full">
+\begin{equation}
+\frac{D \hat{i}}{Dt}
+=
+\frac{\partial \hat{i}}{\partial t}
++ u \, \frac{\partial \hat{i}}{\partial x}
++ v \, \frac{\partial \hat{i}}{\partial y}
++ w \, \frac{\partial \hat{i}}{\partial z}\tag{5.1.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-4">The first term on the right-hand side of <a href="ch5-section-expanding-acceleration.html#eqn-total-derivative-i-full" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-i-full.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.1.1">(5.1.1)</a> is<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-5">
+<div class="displaymath process-math" id="ch5-section-expanding-acceleration-subsection-i-hat-5-1">
+\begin{equation*}
+\frac{\partial \hat{i}}{\partial t} = \vec{0}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-6">since, at a fixed location on Earth or in its atmosphere, the local orientation of a unit direction vector does not change with time. Specifically, <span class="process-math">\(\hat{i}\)</span> always points to the local east.<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-7">Furthermore, <a href="chapter-5.html#ch5-local-cartesian-coordinates-sphericity" class="xref" data-knowl="./knowl/xref/ch5-local-cartesian-coordinates-sphericity.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.0.1">Figure 5.0.1</a> reveals that<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-8">
+<div class="displaymath process-math" id="ch5-section-expanding-acceleration-subsection-i-hat-8-1">
+\begin{equation*}
+\frac{\partial \hat{i}}{\partial y} = \frac{\partial \hat{i}}{\partial z} = \vec{0}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-9">Therefore, <a href="ch5-section-expanding-acceleration.html#eqn-total-derivative-i-full" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-i-full.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.1.1">(5.1.1)</a> reduces to<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-10">
+<div class="displaymath process-math" id="eqn-total-derivative-i-reduced">
+\begin{equation}
+\frac{D \hat{i}}{Dt}
+= u \, \frac{\partial \hat{i}}{\partial x}\tag{5.1.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-11">To evaluate <span class="process-math">\(\dfrac{\partial \hat{i}}{\partial x}\text{,}\)</span> we make a horizontal slice perpendicular to Earth’s axis of rotation at latitude <span class="process-math">\(\phi\)</span> to create a disk of radius <span class="process-math">\(a \cos{\phi}\text{.}\)</span> As shown in <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-start" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.1">Figure 5.1.1</a> below, we then consider the change in <span class="process-math">\(\hat{i}\)</span>’s orientation when its anchoring point is placed at two nearby points on Earth’s surface with latitude <span class="process-math">\(\phi\)</span> and longitudes separated by angle <span class="process-math">\(\delta \lambda\)</span> along arc <span class="process-math">\(\delta x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch5-spherical-i-start"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch5-spherical-i-start.png" class="contained" alt="Two unit direction vectors at two nearby points on the edge of a circular disk viewed from above. The vectors point tangent to the edge of the disk."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>North polar projection showing unit direction vectors <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> placed on Earth’s surface at two nearby points at the edge of the disk of radius <span class="process-math">\(a \cos{\phi}\)</span> and separated by angle <span class="process-math">\(\delta \lambda\)</span> and arc <span class="process-math">\(\delta x\text{.}\)</span><div class="autopermalink" data-description="Figure 5.1.1"><a href="#ch5-spherical-i-start" title="Copy heading and permalink for Figure 5.1.1" aria-label="Copy heading and permalink for Figure 5.1.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-13">Fixing the tails of <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> together in <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-zoom" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.2">Figure 5.1.2</a> below reveals that <span class="process-math">\(\delta \lambda\)</span> is the angle swept out between them and <span class="process-math">\(\vec{\delta i}\)</span> is the vector difference between them.<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch5-spherical-i-zoom"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/images/ch5-spherical-i-zoom.png" class="contained" alt="Two unit direction vectors with their tails fixed together and the angle swept out between them and their vector difference annotated."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Reproduction of <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> from <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-start" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.1">Figure 5.1.1</a>. When the tails of the vectors are fixed together, they are separated by angle <span class="process-math">\(\delta \lambda\)</span> and their vector difference is <span class="process-math">\(\vec{\delta i}\text{.}\)</span><div class="autopermalink" data-description="Figure 5.1.2"><a href="#ch5-spherical-i-zoom" title="Copy heading and permalink for Figure 5.1.2" aria-label="Copy heading and permalink for Figure 5.1.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-15">Reproducing <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-start" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.1">Figure 5.1.1</a> with the tail of <span class="process-math">\(\hat{i}_1\)</span> moved to the tail of <span class="process-math">\(\hat{i}_2\)</span> and <span class="process-math">\(\vec{\delta i}\)</span> additionally included in <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-middle" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-middle.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.3">Figure 5.1.3</a> below makes these relationships even clearer.<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch5-spherical-i-middle"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch5-spherical-i-middle.png" class="contained" alt="Two unit direction vectors with their tails fixed together and the angle swept out between them and their vector difference annotated."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Reproduction of <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-start" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.1">Figure 5.1.1</a> with the tail of <span class="process-math">\(\hat{i}_1\)</span> fixed to the tail of <span class="process-math">\(\hat{i}_2\text{.}\)</span> As shown in <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-zoom" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.2">Figure 5.1.2</a>, <span class="process-math">\(\hat{i}_1\)</span> and <span class="process-math">\(\hat{i}_2\)</span> are separated by angle <span class="process-math">\(\delta \lambda\)</span> and their vector difference is <span class="process-math">\(\vec{\delta i}\text{.}\)</span><div class="autopermalink" data-description="Figure 5.1.3"><a href="#ch5-spherical-i-middle" title="Copy heading and permalink for Figure 5.1.3" aria-label="Copy heading and permalink for Figure 5.1.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-17">We can use the arc length formula to express <span class="process-math">\(\delta x\)</span> in terms of <span class="process-math">\(\delta \lambda\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-18">
+<div class="displaymath process-math" id="eqn-delta-x">
+\begin{equation}
+\delta x
+= (a \cos{\phi}) \, \delta \lambda\tag{5.1.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-19">Note that we presented this formula in <a href="ch2-section-local-cartesian-coordinates.html" class="internal" title="Section 2.3: Local Cartesian coordinate system">Section 2.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-20">Likewise, we can use the arc length formula to approximate <span class="process-math">\(|\vec{\delta i}|\text{,}\)</span> and we can take advantage of the fact that, since <span class="process-math">\(\hat{i}\)</span> is a unit direction vector, <span class="process-math">\(|\hat{i}| = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-21">
+<div class="displaymath process-math" id="ch5-section-expanding-acceleration-subsection-i-hat-21-1">
+\begin{equation}
+|\vec{\delta i}|
+= |\hat{i_1}| \, \delta \lambda
+= |\hat{i_2}| \, \delta \lambda
+= |\hat{i}| \, \delta \lambda
+= \delta \lambda\tag{5.1.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-22">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-23">
+<div class="displaymath process-math" id="ch5-section-expanding-acceleration-subsection-i-hat-23-1">
+\begin{equation}
+\frac{|\vec{\delta i}|}{\delta x}
+= \frac{\delta \lambda}{(a \cos{\phi}) \, \delta \lambda}
+= \frac{1}{a \cos{\phi}}\tag{5.1.5}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-24">From <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-middle" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-middle.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.3">Figure 5.1.3</a>, we can see that as <span class="process-math">\(\delta \lambda \to 0\text{,}\)</span> <span class="process-math">\(\delta x \to 0\)</span> and <span class="process-math">\(\vec{\delta i}\)</span> points directly inward toward the center of the disk, perpendicular to Earth’s axis of rotation. In particular, <a href="ch5-section-expanding-acceleration.html#ch5-spherical-i-end" class="xref" data-knowl="./knowl/xref/ch5-spherical-i-end.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.1.4">Figure 5.1.4</a> below shows that <span class="process-math">\(\vec{\delta i}\)</span> points in the direction of <span class="process-math">\(\hat{j} \, \sin{\phi} -\hat{k} \, \cos{\phi}\text{.}\)</span> Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-25">
+<div class="displaymath process-math" id="ch5-section-expanding-acceleration-subsection-i-hat-25-1">
+\begin{equation}
+\lim_{\delta x \to 0}
+\frac{\vec{\delta i}}{\delta x}
+=
+\frac{\partial \hat{i}}{\partial x}
+=
+\frac{1}{a \cos{\phi}} (\hat{j} \, \sin{\phi} - \hat{k} \, \cos{\phi})\tag{5.1.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch5-section-expanding-acceleration-subsection-i-hat-26">and <a href="ch5-section-expanding-acceleration.html#eqn-total-derivative-i-reduced" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-i-reduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.1.2">(5.1.2)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch5-section-expanding-acceleration-subsection-i-hat-27">
+<div class="displaymath process-math" id="eqn-total-derivative-i-final">
+\begin{equation}
+\frac{D \hat{i}}{Dt}
+=
+u \frac{\partial \hat{i}}{\partial x}
+=
+\frac{u}{a \cos{\phi}} (\hat{j} \, \sin{\phi} - \hat{k} \, \cos{\phi})\tag{5.1.7}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch5-section-expanding-acceleration-subsection-i-hat-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch5-spherical-i-end"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch5-spherical-i-end.png" class="contained" alt="A point on Earth’s surface with the local Cartesian coordinate system placed at that point."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Equatorial projection showing the unit direction vectors <span class="process-math">\(\hat{i}\text{,}\)</span> <span class="process-math">\(\hat{j}\text{,}\)</span> and <span class="process-math">\(\hat{k}\)</span> of the local Cartesian coordinate system fixed to Earth’s surface at radius <span class="process-math">\(a \cos{\phi}\)</span> perpendicular to Earth’s axis of rotation, where <span class="process-math">\(a\)</span> is Earth’s mean radius and <span class="process-math">\(\phi\)</span> is latitude. The vector difference <span class="process-math">\(\vec{\delta i}\)</span> points inward and perpendicular to Earth’s axis of rotation.<div class="autopermalink" data-description="Figure 5.1.4"><a href="#ch5-spherical-i-end" title="Copy heading and permalink for Figure 5.1.4" aria-label="Copy heading and permalink for Figure 5.1.4">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Subsection 5.1.1: Expanding the total derivative of \hat{i}"><a href="#ch5-section-expanding-acceleration-subsection-i-hat" title="Copy heading and permalink for Subsection 5.1.1: Expanding the total derivative of \hat{i}" aria-label="Copy heading and permalink for Subsection 5.1.1: Expanding the total derivative of \hat{i}">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 5.1: Expanding the acceleration"><a href="#ch5-section-expanding-acceleration" title="Copy heading and permalink for Section 5.1: Expanding the acceleration" aria-label="Copy heading and permalink for Section 5.1: Expanding the acceleration">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="chapter-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
