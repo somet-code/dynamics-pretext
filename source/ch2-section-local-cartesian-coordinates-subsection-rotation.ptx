@@ -23,7 +23,8 @@
     <caption>
         Examples of the local Cartesian coordinate system unit direction vectors
         <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m>
-        when the origin of the coordinate system is placed at different locations on Earth's surface along a line of latitude (horizontal dashed curve)
+        when the origin of the coordinate system is placed at different locations on Earth's surface
+        along a line of latitude (horizontal dashed curve)
         and a line of longitude (vertical dashed curve)
         as well within Earth's atmosphere (dashed line).
         Note the orientations of the unit direction vectors in space change depending on the placement of the origin.
