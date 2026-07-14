@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch5-section-expanding-acceleration-subsection-j-hat" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Expanding the total derivative of <m>\hat{j}</m></title>
+
+    <p>
+        Again using the definition of the total derivative:
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-j-full" number="yes"> 
+            \frac{D \hat{j}}{Dt}
+            =
+            \frac{\partial \hat{j}}{\partial t}
+            + u \, \frac{\partial \hat{j}}{\partial x}
+            + v \, \frac{\partial \hat{j}}{\partial y}
+            + w \, \frac{\partial \hat{j}}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        Again, the first term on the right-hand side of <xref ref="eqn-total-derivative-j-full" text="type-global" /> is
+    </p>
+    
+    <p>
+        <md>
+            \frac{\partial \hat{j}}{\partial t} = \vec{0}
+        </md>
+    </p>
+    
+    <p>
+        since,
+        at a fixed location on Earth or in its atmosphere,
+        the local orientation of a unit direction vector does not change with time.
+        Specifically,
+        <m>\hat{j}</m> always points to the local north. 
+    </p>
+
+    <p>
+        Furthermore,
+        <xref ref="ch5-local-cartesian-coordinates-sphericity" text="type-global" />
+        reveals that
+    </p>
+        
+    <p>
+        <md>
+            \frac{\partial \hat{j}}{\partial z} = \vec{0}
+        </md>
+    </p>
+    
+    <p>
+        Therefore, <xref ref="eqn-total-derivative-j-full" text="type-global" /> reduces to
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-j-reduced" number="yes"> 
+            \frac{D \hat{j}}{Dt}
+            =
+            u \, \frac{\partial \hat{j}}{\partial x}
+            + v \, \frac{\partial \hat{j}}{\partial y}
+        </md>
+    </p>
+
+    <p>
+        To evaluate <m>\dfrac{\partial \hat{j}}{\partial x}</m>,
+        we again make a horizontal slice perpendicular to Earth's axis of rotation at latitude <m>\phi</m>
+        to create a disk of radius <m>a \cos{\phi}</m>.
+        As shown in <xref ref="ch5-spherical-j-x-start" text="type-global" /> below,
+        we then consider the difference in <m>\hat{j}</m>'s orientation
+        when its anchoring point is placed at two nearby points on Earth's surface with latitude <m>\phi</m>
+        and longitudes separated by angle <m>\delta \lambda</m> along arc <m>\delta x</m>.
+    </p>
+
+    <figure xml:id="ch5-spherical-j-x-start">
+        <caption>
+            North polar projection showing portions of unit direction vectors
+            <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m>
+            placed on Earth's surface at two nearby points at the edge of the disk of radius <m>a \cos{\phi}</m>
+            and separated by angle <m>\delta \lambda</m> and arc <m>\delta x</m>.
+        </caption>
+        <image source="images/ch5-spherical-j-x-start.png" width="60%">
+        <shortdescription>
+            Two portions of unit direction vectors at two nearby points
+            on the edge of a circular disk viewed from above.
+            The vectors point tangent to the edge of the disk.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Before going further,
+        note <m>\hat{j} \, \sin{\phi}</m> rather than <m>\hat{j}</m> is shown in <xref ref="ch5-spherical-j-x-start" text="type-global" />
+        because <m>\hat{j} \, \sin{\phi}</m> is the projection of <m>\hat{j}</m> onto the disk,
+        as shown in <xref ref="ch5-spherical-j-x-breakdown" text="type-global" /> below.
+        The remaining portion of <m>\hat{j}</m>,
+        <m>\hat{j} \, \cos{\phi}</m>,
+        does not change with <m>x</m>,
+        as it always points vertically upward from the disk.
+    </p>
+
+    <figure xml:id="ch5-spherical-j-x-breakdown">
+        <caption>
+            Equatorial projection showing the unit direction vectors <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m>
+            of the local Cartesian coordinate system fixed to Earth's surface at radius <m>a \cos{\phi}</m>
+            perpendicular to Earth's axis of rotation,
+            where <m>a</m> is Earth's mean radius and <m>\phi</m> is latitude.
+            The portion of <m>\hat{j}</m> that points inward perpendicular to Earth's axis of rotation
+            is given by <m>\hat{j} \, \sin{\phi}</m>.
+        </caption>
+        <image source="images/ch5-spherical-j-x-breakdown.png" width="60%">
+        <shortdescription>
+            A point on Earth's surface with the local Cartesian coordinate system
+            as well as a vector projection pointing inward perpendicular to Earth's axis of rotation
+            placed at that point.
+        </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
