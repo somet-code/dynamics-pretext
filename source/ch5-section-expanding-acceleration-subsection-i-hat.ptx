@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch5-section-expanding-acceleration-subsection-i-hat" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Expanding the total derivative of <m>\hat{i}</m></title>
+
+    <p>
+        Using the definition of the total derivative,
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-i-full" number="yes"> 
+            \frac{D \hat{i}}{Dt}
+            =
+            \frac{\partial \hat{i}}{\partial t}
+            + u \, \frac{\partial \hat{i}}{\partial x}
+            + v \, \frac{\partial \hat{i}}{\partial y}
+            + w \, \frac{\partial \hat{i}}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        The first term on the right-hand side of <xref ref="eqn-total-derivative-i-full"/> is
+    </p>
+        
+    <p>
+        <md>
+            \frac{\partial \hat{i}}{\partial t} = \vec{0}
+        </md>
+    </p>
+    
+    <p>
+        since,
+        at a fixed location on Earth or in its atmosphere,
+        the local orientation of a unit direction vector does not change with time.
+        Specifically,
+        <m>\hat{i}</m> always points to the local east.
+    </p>
+
+    <p>
+        Furthermore,
+        <xref ref="ch5-local-cartesian-coordinates-sphericity" text="type-global" />
+        reveals that
+    </p>
+
+    <p>
+        <md>
+            \frac{\partial \hat{i}}{\partial y} = \frac{\partial \hat{i}}{\partial z} = \vec{0}
+        </md>
+    </p>
+
+    <p>
+        Therefore, <xref ref="eqn-total-derivative-i-full" text="type-global" /> reduces to
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-i-reduced" number="yes"> 
+            \frac{D \hat{i}}{Dt}
+            = u \, \frac{\partial \hat{i}}{\partial x}
+        </md>
+    </p>
+
+    <p>
+        To evaluate <m>\dfrac{\partial \hat{i}}{\partial x}</m>,
+        we make a horizontal slice perpendicular to Earth's axis of rotation at latitude <m>\phi</m>
+        to create a disk of radius <m>a \cos{\phi}</m>.
+        As shown in <xref ref="ch5-spherical-i-start" text="type-global" /> below,
+        we then consider the change in <m>\hat{i}</m>'s orientation
+        when its anchoring point is placed at two nearby points on Earth's surface with latitude <m>\phi</m>
+        and longitudes separated by angle <m>\delta \lambda</m> along arc <m>\delta x</m>.
+    </p>
+
+    <figure xml:id="ch5-spherical-i-start">
+        <caption>
+            North polar projection showing unit direction vectors <m>\hat{i}_1</m> and <m>\hat{i}_2</m> placed on Earth's surface
+            at two nearby points at the edge of the disk of radius <m>a \cos{\phi}</m>
+            and separated by angle <m>\delta \lambda</m> and arc <m>\delta x</m>.
+        </caption>
+        <image source="images/ch5-spherical-i-start.png" width="60%">
+        <shortdescription>
+            Two unit direction vectors at two nearby points
+            on the edge of a circular disk viewed from above.
+            The vectors point tangent to the edge of the disk.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Fixing the tails of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> together in
+        <xref ref="ch5-spherical-i-zoom" text="type-global" /> below
+        reveals that <m>\delta \lambda</m> is the angle swept out between them
+        and <m>\vec{\delta i}</m> is the vector difference between them.
+    </p>
+
+    <figure xml:id="ch5-spherical-i-zoom">
+        <caption>
+        Reproduction of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> from <xref ref="ch5-spherical-i-start" text="type-global" />.
+        When the tails of the vectors are fixed together,
+        they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta i}</m>.
+        </caption>
+        <image source="images/ch5-spherical-i-zoom.png" width="40%">
+        <shortdescription>
+            Two unit direction vectors with their tails fixed together
+            and the angle swept out between them and their vector difference annotated.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Reproducing <xref ref="ch5-spherical-i-start" text="type-global" />
+        with the tail of <m>\hat{i}_1</m> moved to the tail of <m>\hat{i}_2</m> and <m>\vec{\delta i}</m> additionally included
+        in <xref ref="ch5-spherical-i-middle" text="type-global" /> below makes these relationships even clearer.
+    </p>
+
+    <figure xml:id="ch5-spherical-i-middle">
+        <caption>
+            Reproduction of <xref ref="ch5-spherical-i-start" text="type-global" />
+            with the tail of <m>\hat{i}_1</m> fixed to the tail of <m>\hat{i}_2</m>.
+            As shown in <xref ref="ch5-spherical-i-zoom" text="type-global" />,
+            <m>\hat{i}_1</m> and <m>\hat{i}_2</m> are separated by angle <m>\delta \lambda</m>
+            and their vector difference is <m>\vec{\delta i}</m>.
+        </caption>
+        <image source="images/ch5-spherical-i-middle.png" width="60%">
+        <shortdescription>
+            Two unit direction vectors with their tails fixed together
+            and the angle swept out between them and their vector difference annotated.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        We can use the arc length formula to express <m>\delta x</m> in terms of <m>\delta \lambda</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-delta-x" number="yes">
+            \delta x
+            = (a \cos{\phi}) \, \delta \lambda
+        </md>
+    </p>
+
+    <p>
+        Note that we presented this formula in <xref ref="ch2-section-local-cartesian-coordinates" text="type-global" />.
+    </p>
+
+    <p>
+        Likewise,
+        we can use the arc length formula to approximate <m>|\vec{\delta i}|</m>,
+        and we can take advantage of the fact that,
+        since <m>\hat{i}</m> is a unit direction vector,
+        <m>|\hat{i}| = 1</m>.
+    </p>
+
+    <p>
+        <md number="yes">
+            |\vec{\delta i}|
+            = |\hat{i_1}| \, \delta \lambda
+            = |\hat{i_2}| \, \delta \lambda
+            = |\hat{i}| \, \delta \lambda
+            = \delta \lambda
+        </md>
+    </p>
+
+    <p>
+        Therefore,
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{|\vec{\delta i}|}{\delta x}
+            = \frac{\delta \lambda}{(a \cos{\phi}) \, \delta \lambda}
+            = \frac{1}{a \cos{\phi}}
+        </md>
+    </p>
+
+    <p>
+        From <xref ref="ch5-spherical-i-middle" text="type-global" />,
+        we can see that as <m>\delta \lambda \to 0</m>,
+        <m>\delta x \to 0</m> and <m>\vec{\delta i}</m> points directly inward toward the center of the disk,
+        perpendicular to Earth's axis of rotation.
+        In particular,
+        <xref ref="ch5-spherical-i-end" text="type-global" /> below shows that
+        <m>\vec{\delta i}</m> points in the direction of <m>\hat{j} \, \sin{\phi} -\hat{k} \, \cos{\phi}</m>.
+        Therefore,
+    </p>
+
+    <p>
+        <md number="yes">
+            \lim_{\delta x \to 0}
+            \frac{\vec{\delta i}}{\delta x}
+            =
+            \frac{\partial \hat{i}}{\partial x}
+            =
+            \frac{1}{a \cos{\phi}} (\hat{j} \, \sin{\phi} - \hat{k} \, \cos{\phi})
+        </md>
+    </p>
+
+    <p>
+        and <xref ref="eqn-total-derivative-i-reduced" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-i-final" number="yes"> 
+            \frac{D \hat{i}}{Dt}
+            =
+            u \frac{\partial \hat{i}}{\partial x}
+            =
+            \frac{u}{a \cos{\phi}} (\hat{j} \, \sin{\phi} - \hat{k} \, \cos{\phi})
+        </md>
+    </p>
+
+    <figure xml:id="ch5-spherical-i-end">
+        <caption>
+            Equatorial projection showing the unit direction vectors <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m>
+            of the local Cartesian coordinate system fixed to Earth's surface at radius <m>a \cos{\phi}</m>
+            perpendicular to Earth's axis of rotation,
+            where <m>a</m> is Earth's mean radius and <m>\phi</m> is latitude.
+            The vector difference <m>\vec{\delta i}</m> points inward and perpendicular to Earth's axis of rotation.
+        </caption>
+        <image source="images/ch5-spherical-i-end.png" width="60%">
+        <shortdescription>
+            A point on Earth's surface with the local Cartesian coordinate system
+            as well as a vector difference pointing inward perpendicular to Earth's axis of rotation
+            placed at that point.
+        </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
