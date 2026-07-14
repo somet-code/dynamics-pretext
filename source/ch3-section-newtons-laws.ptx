@@ -4,7 +4,7 @@
     <title>Newton's laws of motion</title>
 
     <p>
-        Now that we've explored the forces acting on the air parcel of <xref ref="ch3-air-parcel" text="type-global" />,
+        Now that we have explored the individual forces acting on the air parcel of <xref ref="ch3-air-parcel" text="type-global" />,
         we can combine them using Newton's laws of motion.
     </p>
 
@@ -144,21 +144,27 @@
 
     <p>
         For an air parcel as described in this chapter,
-        assuming its mass is constant (the typical assumption and one that we will revisit later when exploring mass conservation),
+        assuming its mass is constant (which is the typical assumption,
+        and which we will revisit later when exploring mass conservation),
         we can combine the effects of the <term>fundamental forces</term> on it to expand the left side of
         <xref ref="eqn-newtons-2nd-law-simplified-acceleration" text="type-global" /> as follows:
     </p>
 
     <p>
-        <md xml:id="eqn-equation-motion-start" number="yes">
-            \frac{\vec{F}_{net}}{m}
-            = \frac{\vec{F}_g
-            + \vec{F}_{PG}
-            + \vec{F}_r}{m}
-            = \vec{a}
-            = \vec{g^*}
-            -\frac{1}{\rho} \nabla p
-            + \nu \nabla^2 \vec{u}
+        <md>
+            <mrow>
+                \frac{\vec{F}_{net}}{m}
+                \amp = \frac{\vec{F}_g + \vec{F}_{PG} + \vec{F}_r}{m}
+            </mrow>
+            <mrow>
+                \amp = \vec{g^*} + \vec{a}_{PG} + \vec{a}_r
+            </mrow>
+            <mrow>
+                \amp = \vec{g^*} - \frac{1}{\rho} \nabla p + \nu \nabla^2 \vec{u}
+            </mrow>
+            <mrow xml:id="eqn-equation-motion-start" number="yes">
+                \amp = \vec{a}
+            </mrow>
         </md>
     </p>
 
@@ -190,7 +196,7 @@
         While <xref ref="eqn-motion-basic" text="type-global" />
         is an excellent start to applying Newton's <m>2^{\text{nd}}</m> law of motion to the motions of air parcels in Earth's atmosphere,
         it is incomplete for our purposes:
-        That is because it is valid only for a non-accelerating coordinate system.
+        This is because it is valid only for a non-accelerating coordinate system.
         But we want to analyze air parcel motions using the local Cartesian coordinate system,
         which is attached to the rotating Earth and therefore accelerates along with Earth!
         We will tackle the complication of Earth's rotation and consequent acceleration of the local Cartesian coordinate system in Chapter 4.
