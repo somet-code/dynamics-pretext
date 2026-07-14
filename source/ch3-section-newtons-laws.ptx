@@ -199,7 +199,8 @@
         This is because it is valid only for a non-accelerating coordinate system.
         But we want to analyze air parcel motions using the local Cartesian coordinate system,
         which is attached to the rotating Earth and therefore accelerates along with Earth!
-        We will tackle the complication of Earth's rotation and consequent acceleration of the local Cartesian coordinate system in Chapter 4.
+        We will tackle the complication of Earth's rotation and consequent acceleration of the local Cartesian coordinate system
+        in <xref ref="chapter-4" text="type-global" />.
     </p>
 
 </section>
