@@ -116,4 +116,99 @@
         </image>
     </figure>
 
+    <p>
+        Fixing the tails of <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> together in
+        <xref ref="ch5-spherical-j-x-zoom" text="type-global" /> below
+        reveals that <m>\delta \lambda</m> is the angle swept out between them
+        and <m>\vec{\delta j}</m> is the vector difference between them.
+    </p>
+
+    <figure xml:id="ch5-spherical-j-x-zoom">
+        <caption>
+            Reproduction of <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m>
+            from <xref ref="ch5-spherical-j-x-start" text="type-global" />.
+            When the tails of the vectors are fixed together,
+            they are separated by angle <m>\delta \lambda</m>
+            and their vector difference is <m>\vec{\delta j}</m>.
+        </caption>
+        <image source="images/ch5-spherical-j-x-zoom.png" width="40%">
+        <shortdescription>
+            Two portions of unit direction vectors with their tails fixed together
+            and the angle swept out between them and their vector difference annotated.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Reproducing <xref ref="ch5-spherical-j-x-start" text="type-global" />
+        with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> moved to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>
+        and <m>\vec{\delta j}</m> additionally included
+        in <xref ref="ch5-spherical-j-x-end" text="type-global" /> below makes these relationships even clearer.
+    </p>
+
+    <figure xml:id="ch5-spherical-j-x-end">
+        <caption>
+            Reproduction of <xref ref="ch5-spherical-j-x-start" text="type-global" />
+            with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> fixed to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>.
+            As shown in <xref ref="ch5-spherical-j-x-zoom" text="type-global" />,
+            <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> are separated by angle <m>\delta \lambda</m>
+            and their vector difference is <m>\vec{\delta j}</m>.
+        </caption>
+        <image source="images/ch5-spherical-j-x-end.png" width="60%">
+        <shortdescription>
+            Two portions of unit direction vectors with their tails fixed together
+            and the angle swept out between them and their vector difference annotated.
+        </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        We again can use the arc length formula to approximate <m>|\vec{\delta j}|</m>,
+        and we can take advantage of the fact that,
+        since <m>\hat{j}</m> is a unit direction vector,
+        <m>|\hat{j}| = 1</m>.
+    </p>
+
+    <p>
+        <md>
+            |\vec{\delta j}|
+            = |\hat{j_1}|(\sin{\phi}) \, \delta \lambda
+            = |\hat{j_2}|(\sin{\phi}) \, \delta \lambda
+            = |\hat{j}|(\sin{\phi}) \, \delta \lambda
+            = (\sin{\phi}) \, \delta \lambda
+        </md>
+    </p>
+
+    <p>
+        Therefore,
+    </p>
+
+    <p>
+        <md>
+            \frac{|\vec{\delta j}|}{\delta x}
+            =
+            \frac{(\sin{\phi}) \, \delta \lambda}{(a \cos{\phi}) \, \delta \lambda}
+            =
+            \frac{\tan{\phi}}{a}
+        </md>
+    </p>
+
+    <p>
+        From <xref ref="ch5-spherical-j-x-end" text="type-global" />,
+        we can see that as <m>\delta \lambda \to 0</m>,
+        <m>\delta x \to 0</m> and <m>\vec{\delta j}</m> points in the <m>-\hat{i}</m> direction.
+        So
+    </p>
+
+    <p>
+        <md>
+            \lim_{\delta x \to 0}
+            \frac{\vec{\delta j}}{\delta x}
+            =
+            \frac{\partial \hat{j}}{\partial x}
+            =
+            -\frac{\tan{\phi}}{a} \, \hat{i}
+        </md>
+    </p>
+
 </subsection>
