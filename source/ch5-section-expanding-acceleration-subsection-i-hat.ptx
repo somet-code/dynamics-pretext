@@ -76,11 +76,11 @@
             and separated by angle <m>\delta \lambda</m> and arc <m>\delta x</m>.
         </caption>
         <image source="images/ch5-spherical-i-start.png" width="60%">
-        <shortdescription>
-            Two unit direction vectors at two nearby points
-            on the edge of a circular disk viewed from above.
-            The vectors point tangent to the edge of the disk.
-        </shortdescription>
+            <shortdescription>
+                Two unit direction vectors at two nearby points
+                on the edge of a circular disk viewed from above.
+                The vectors point tangent to the edge of the disk.
+            </shortdescription>
         </image>
     </figure>
 
@@ -98,10 +98,10 @@
             they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta i}</m>.
         </caption>
         <image source="images/ch5-spherical-i-zoom.png" width="40%">
-        <shortdescription>
-            Two unit direction vectors with their tails fixed together
-            and the angle swept out between them and their vector difference annotated.
-        </shortdescription>
+            <shortdescription>
+                Two unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
         </image>
     </figure>
 
@@ -120,10 +120,10 @@
             and their vector difference is <m>\vec{\delta i}</m>.
         </caption>
         <image source="images/ch5-spherical-i-middle.png" width="60%">
-        <shortdescription>
-            Two unit direction vectors with their tails fixed together
-            and the angle swept out between them and their vector difference annotated.
-        </shortdescription>
+            <shortdescription>
+                Two unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
         </image>
     </figure>
 
@@ -217,11 +217,11 @@
             The vector difference <m>\vec{\delta i}</m> points inward and perpendicular to Earth's axis of rotation.
         </caption>
         <image source="images/ch5-spherical-i-end.png" width="60%">
-        <shortdescription>
-            A point on Earth's surface with the local Cartesian coordinate system
-            as well as a vector difference pointing inward perpendicular to Earth's axis of rotation
-            placed at that point.
-        </shortdescription>
+            <shortdescription>
+                A point on Earth's surface with the local Cartesian coordinate system
+                as well as a vector difference pointing inward perpendicular to Earth's axis of rotation
+                placed at that point.
+            </shortdescription>
         </image>
     </figure>
 
