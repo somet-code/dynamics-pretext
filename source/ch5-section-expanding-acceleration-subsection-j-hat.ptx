@@ -82,7 +82,7 @@
             <shortdescription>
                 Two portions of unit direction vectors at two nearby points
                 on the edge of a circular disk viewed from above.
-                The vectors point tangent to the edge of the disk.
+                The vectors point inward toward the center of the disk.
             </shortdescription>
         </image>
     </figure>

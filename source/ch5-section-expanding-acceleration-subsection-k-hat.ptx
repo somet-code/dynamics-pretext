@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch5-section-expanding-acceleration-subsection-k-hat" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Expanding the total derivative of <m>\hat{k}</m></title>
+
+    <p>
+        Again using the definition of the total derivative:
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-k-full" number="yes">
+            \frac{D \hat{k}}{Dt}
+            =
+            \frac{\partial \hat{k}}{\partial t}
+            + u \, \frac{\partial \hat{k}}{\partial x}
+            + v \, \frac{\partial \hat{k}}{\partial y}
+            + w \, \frac{\partial \hat{k}}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        Again, the first term on the right-hand side of <xref ref="eqn-total-derivative-k-full" text="type-global" /> is
+    </p>
+    
+    <p>
+        <md>
+            \frac{\partial \hat{k}}{\partial t} = \vec{0}
+        </md>
+    </p>
+
+    <p>
+        since,
+        at a fixed location on Earth or in its atmosphere,
+        the local orientation of a unit direction vector does not change with time.
+        Specifically,
+        <m>\hat{k}</m> always points locally upward.
+    </p>
+
+    <p>
+        Furthermore,
+        <xref ref="ch5-local-cartesian-coordinates-sphericity" text="type-global" />
+        reveals that
+    </p>
+
+    <p>
+        <md>
+            \frac{\partial \hat{k}}{\partial z} = \vec{0}
+        </md>
+    </p>
+
+    <p>
+        Therefore, <xref ref="eqn-total-derivative-k-full" text="type-global" /> reduces to
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-k-reduced" number="yes"> 
+            \frac{D \hat{k}}{Dt}
+            =
+            u \, \frac{\partial \hat{k}}{\partial x}
+            + v \, \frac{\partial \hat{k}}{\partial y}
+        </md>
+    </p>
+
+    <p>
+        To evaluate <m>\dfrac{\partial \hat{k}}{\partial x}</m>,
+        we again make a horizontal slice perpendicular to Earth's axis of rotation at latitude <m>\phi</m>
+        to create a disk of radius <m>a \cos{\phi}</m>.
+        As shown in <xref ref="ch5-spherical-k-x-start" text="type-global" /> below,
+        we then consider the difference in <m>\hat{k}</m>'s orientation
+        when its anchoring point is placed at two nearby points on Earth's surface with latitude <m>\phi</m>
+        and longitudes separated by angle <m>\delta \lambda</m> along arc <m>\delta x</m>.
+    </p>
+
+    <figure xml:id="ch5-spherical-k-x-start">
+        <caption>
+            North polar projection showing portions of unit direction vectors
+            <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m>
+            placed on Earth's surface at two nearby points at the edge of the disk of radius <m>a \cos{\phi}</m>
+            and separated by angle <m>\delta \lambda</m> and arc <m>\delta x</m>.
+        </caption>
+        <image source="images/ch5-spherical-k-x-start.png" width="60%">
+            <shortdescription>
+                Two portions of unit direction vectors at two nearby points
+                on the edge of a circular disk viewed from above.
+                The vectors point outward away from the center of the disk.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Before going further,
+        note <m>\hat{k} \, \cos{\phi}</m> rather than <m>\hat{k}</m> is shown in <xref ref="ch5-spherical-k-x-start" text="type-global" />
+        because <m>\hat{k} \, \cos{\phi}</m> is the projection of <m>\hat{k}</m> onto the disk,
+        as shown in <xref ref="ch5-spherical-k-x-breakdown" text="type-global" /> below.
+        The remaining portion of <m>\hat{k}</m>,
+        <m>\hat{k} \, \sin{\phi}</m>,
+        does not change with <m>x</m>,
+        as it always points vertically upward from the disk.
+    </p>
+
+    <figure xml:id="ch5-spherical-k-x-breakdown">
+        <caption>
+            Equatorial projection showing the unit direction vectors <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m>
+            of the local Cartesian coordinate system fixed to Earth's surface at radius <m>a \cos{\phi}</m>
+            perpendicular to Earth's axis of rotation,
+            where <m>a</m> is Earth's mean radius and <m>\phi</m> is latitude.
+            The portion of <m>\hat{k}</m> that points outward perpendicular to Earth's axis of rotation
+            is given by <m>\hat{k} \, \cos{\phi}</m>.
+        </caption>
+        <image source="images/ch5-spherical-k-x-breakdown.png" width="60%">
+            <shortdescription>
+                A point on Earth's surface with the local Cartesian coordinate system
+                as well as a vector projection pointing outward perpendicular to Earth's axis of rotation
+                placed at that point.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
