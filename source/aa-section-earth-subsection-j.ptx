@@ -81,9 +81,9 @@
 
     <figure xml:id="aa-earth-j-zoom">
         <caption>
-        Reproduction of <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> from <xref ref="aa-earth-j-start" text="type-global" />.
-        When the tails of the vectors are fixed together,
-        they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta j}</m>.
+            Reproduction of <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> from <xref ref="aa-earth-j-start" text="type-global" />.
+            When the tails of the vectors are fixed together,
+            they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
         <image source="images/aa-earth-j-zoom.png" width="40%">
         <shortdescription>
@@ -102,11 +102,11 @@
 
     <figure xml:id="aa-earth-j-end">
         <caption>
-        Reproduction of <xref ref="aa-earth-j-start" text="type-global" />
-        with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> fixed to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>.
-        As shown in <xref ref="aa-earth-j-zoom" text="type-global" />,
-        <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> are separated by angle <m>\delta \lambda</m>
-        and their vector difference is <m>\vec{\delta j}</m>.
+            Reproduction of <xref ref="aa-earth-j-start" text="type-global" />
+            with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> fixed to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>.
+            As shown in <xref ref="aa-earth-j-zoom" text="type-global" />,
+            <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> are separated by angle <m>\delta \lambda</m>
+            and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
         <image source="images/aa-earth-j-end.png" width="60%">
         <shortdescription>
