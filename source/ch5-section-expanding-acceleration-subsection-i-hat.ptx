@@ -93,9 +93,9 @@
 
     <figure xml:id="ch5-spherical-i-zoom">
         <caption>
-        Reproduction of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> from <xref ref="ch5-spherical-i-start" text="type-global" />.
-        When the tails of the vectors are fixed together,
-        they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta i}</m>.
+            Reproduction of <m>\hat{i}_1</m> and <m>\hat{i}_2</m> from <xref ref="ch5-spherical-i-start" text="type-global" />.
+            When the tails of the vectors are fixed together,
+            they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta i}</m>.
         </caption>
         <image source="images/ch5-spherical-i-zoom.png" width="40%">
         <shortdescription>
