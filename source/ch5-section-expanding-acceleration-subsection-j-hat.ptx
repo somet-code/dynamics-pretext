@@ -79,11 +79,11 @@
             and separated by angle <m>\delta \lambda</m> and arc <m>\delta x</m>.
         </caption>
         <image source="images/ch5-spherical-j-x-start.png" width="60%">
-        <shortdescription>
-            Two portions of unit direction vectors at two nearby points
-            on the edge of a circular disk viewed from above.
-            The vectors point tangent to the edge of the disk.
-        </shortdescription>
+            <shortdescription>
+                Two portions of unit direction vectors at two nearby points
+                on the edge of a circular disk viewed from above.
+                The vectors point tangent to the edge of the disk.
+            </shortdescription>
         </image>
     </figure>
 
@@ -108,11 +108,11 @@
             is given by <m>\hat{j} \, \sin{\phi}</m>.
         </caption>
         <image source="images/ch5-spherical-j-x-breakdown.png" width="60%">
-        <shortdescription>
-            A point on Earth's surface with the local Cartesian coordinate system
-            as well as a vector projection pointing inward perpendicular to Earth's axis of rotation
-            placed at that point.
-        </shortdescription>
+            <shortdescription>
+                A point on Earth's surface with the local Cartesian coordinate system
+                as well as a vector projection pointing inward perpendicular to Earth's axis of rotation
+                placed at that point.
+            </shortdescription>
         </image>
     </figure>
 
@@ -132,10 +132,10 @@
             and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
         <image source="images/ch5-spherical-j-x-zoom.png" width="40%">
-        <shortdescription>
-            Two portions of unit direction vectors with their tails fixed together
-            and the angle swept out between them and their vector difference annotated.
-        </shortdescription>
+            <shortdescription>
+                Two portions of unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
         </image>
     </figure>
 
@@ -155,10 +155,10 @@
             and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
         <image source="images/ch5-spherical-j-x-end.png" width="60%">
-        <shortdescription>
-            Two portions of unit direction vectors with their tails fixed together
-            and the angle swept out between them and their vector difference annotated.
-        </shortdescription>
+            <shortdescription>
+                Two portions of unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
         </image>
     </figure>
 
@@ -170,7 +170,7 @@
     </p>
 
     <p>
-        <md>
+        <md number="yes">
             |\vec{\delta j}|
             = |\hat{j_1}|(\sin{\phi}) \, \delta \lambda
             = |\hat{j_2}|(\sin{\phi}) \, \delta \lambda
@@ -184,7 +184,7 @@
     </p>
 
     <p>
-        <md>
+        <md number="yes">
             \frac{|\vec{\delta j}|}{\delta x}
             =
             \frac{(\sin{\phi}) \, \delta \lambda}{(a \cos{\phi}) \, \delta \lambda}
@@ -201,13 +201,161 @@
     </p>
 
     <p>
-        <md>
+        <md number="yes">
             \lim_{\delta x \to 0}
             \frac{\vec{\delta j}}{\delta x}
             =
             \frac{\partial \hat{j}}{\partial x}
             =
             -\frac{\tan{\phi}}{a} \, \hat{i}
+        </md>
+    </p>
+
+    <p>
+        To evaluate <m>\dfrac{\partial \hat{j}}{\partial y}</m>,
+        we make a vertical slice through Earth's axis of rotation at longitude <m>\lambda</m>.
+        As shown in <xref ref="ch5-spherical-j-y-start" text="type-global" /> below,
+        we then consider the difference in <m>\hat{j}</m>'s orientation
+        when its anchoring point is placed at two nearby points on Earth's surface with longitude <m>\lambda</m>
+        and latitudes separated by angle <m>\delta \phi</m> along arc <m>\delta y</m>.
+    </p>
+
+    <figure xml:id="ch5-spherical-j-y-start">
+        <caption>
+            Equatorial projection showing unit direction vectors <m>\hat{j}_1</m> and <m>\hat{j}_2</m> placed on Earth's surface
+            at two nearby points with longitude <m>\lambda</m>
+            and separated by angle <m>\delta \phi</m> and arc <m>\delta y</m>.
+        </caption>
+        <image source="images/ch5-spherical-j-y-start.png" width="60%">
+            <shortdescription>
+                Two unit direction vectors at two nearby points
+                on the edge of a circular disk viewed from the side.
+                The vectors point tangent to the edge of the disk.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Fixing the tails of <m>\hat{j}_1</m> and <m>\hat{j}_2</m> together in
+        <xref ref="ch5-spherical-j-y-zoom" text="type-global" /> below
+        reveals that <m>\delta \phi</m> is the angle swept out between them
+        and <m>\vec{\delta j}</m> is the vector difference between them.
+    </p>
+
+    <figure xml:id="ch5-spherical-j-y-zoom">
+        <caption>
+            Reproduction of <m>\hat{j}_1</m> and <m>\hat{j}_2</m> from <xref ref="ch5-spherical-j-y-start" text="type-global" />.
+            When the tails of the vectors are fixed together,
+            they are separated by angle <m>\delta \phi</m> and their vector difference is <m>\vec{\delta j}</m>.
+        </caption>
+        <image source="images/ch5-spherical-j-y-zoom.png" width="40%">
+            <shortdescription>
+                Two unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Reproducing <xref ref="ch5-spherical-j-y-start" text="type-global" />
+        with the tail of <m>\hat{j}_1</m> moved to the tail of <m>\hat{j}_2</m> and <m>\vec{\delta j}</m> additionally included
+        in <xref ref="ch5-spherical-j-y-end" text="type-global" /> below makes these relationships even clearer.
+    </p>
+
+    <figure xml:id="ch5-spherical-j-y-end">
+        <caption>
+            Reproduction of <xref ref="ch5-spherical-j-y-start" text="type-global" />
+            with the tail of <m>\hat{j}_1</m> moved to the tail of <m>\hat{j}_2</m>.
+            As shown in <xref ref="ch5-spherical-j-y-zoom" text="type-global" />,
+            <m>\hat{j}_1</m> and <m>\hat{j}_2</m> are separated by angle <m>\delta \phi</m>
+            and their vector difference is <m>\vec{\delta j}</m>.
+        </caption>
+        <image source="images/ch5-spherical-j-y-end.png" width="60%">
+            <shortdescription>
+                Two unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        We again can use the arc length formula to express <m>\delta y</m> in terms of <m>\delta \phi</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-delta-y" number="yes">
+            \delta y
+            =
+            a \, \delta \phi
+        </md>
+    </p>
+
+    <p>
+        Note that we presented this formula in <xref ref="ch2-section-local-cartesian-coordinates" text="type-global" />.
+    </p>
+
+    <p>
+        Likewise,
+        we again can use the arc length formula to approximate <m>|\vec{\delta j}|</m>,
+        and we can take advantage of the fact that,
+        since <m>\hat{j}</m> is a unit direction vector,
+        <m>|\hat{j}| = 1</m>.
+    </p>
+
+    <p>
+        <md number="yes">
+            |\vec{\delta j}|
+            = |\hat{j_1}| \, \delta \phi
+            = |\hat{j_2}| \, \delta \phi
+            = |\hat{j}|\, \delta \phi
+            = \delta \phi
+        </md>
+    </p>
+
+    <p>
+        Therefore,
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{|\vec{\delta j}|}{\delta y}
+            =
+            \frac{\delta \phi}{a \, \delta \phi}
+            = \frac{1}{a}
+        </md>
+    </p>
+
+    <p>
+        From <xref ref="ch5-spherical-j-y-end" text="type-global" />,
+        we can see that as <m>\delta \phi \to 0</m>,
+        <m>\delta y \to 0</m> and <m>\vec{\delta j}</m> points in the <m>-\hat{k}</m> direction.
+        So
+    </p>
+
+    <p>
+        <md number="yes">
+            \lim_{\delta y \to 0}
+            \frac{\vec{\delta j}}{\delta y}
+            =
+            \frac{\partial \hat{j}}{\partial y}
+            =
+            -\frac{1}{a} \hat{k}
+        </md>
+    </p>
+
+    <p>
+        and <xref ref="eqn-total-derivative-j-reduced" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-j-final" number="yes">
+            \frac{D \hat{j}}{Dt}
+            =
+            u \frac{\partial \hat{j}}{\partial x}
+            + v \frac{\partial \hat{j}}{\partial y}
+            =
+            -\frac{u \tan{\phi}}{a} \, \hat{i}
+            -\frac{v}{a} \, \hat{k}
         </md>
     </p>
 
