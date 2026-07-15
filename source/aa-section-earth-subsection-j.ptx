@@ -64,11 +64,11 @@
             and separated by angular displacement <m>\delta \lambda</m>.
         </caption>
         <image source="images/aa-earth-j-start.png" width="60%">
-        <shortdescription>
-            Two portions of unit direction vectors at two nearby points
-            on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
-            The vectors point inward toward the center of the disk.
-        </shortdescription>
+            <shortdescription>
+                Two portions of unit direction vectors at two nearby points
+                on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+                The vectors point inward toward the center of the disk.
+            </shortdescription>
         </image>
     </figure>
 
@@ -86,10 +86,10 @@
             they are separated by angle <m>\delta \lambda</m> and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
         <image source="images/aa-earth-j-zoom.png" width="40%">
-        <shortdescription>
-            Two portions of unit direction vectors with their tails fixed together
-            and the angle swept out between them and their vector difference annotated.
-        </shortdescription>
+            <shortdescription>
+                Two portions of unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
         </image>
     </figure>
 
@@ -109,10 +109,10 @@
             and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
         <image source="images/aa-earth-j-end.png" width="60%">
-        <shortdescription>
-            Two portions of unit direction vectors with their tails fixed together
-            on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
-        </shortdescription>
+            <shortdescription>
+                Two portions of unit direction vectors with their tails fixed together
+                on the edge of a circular disk rotating counter-clockwise about its center viewed from above.
+            </shortdescription>
         </image>
     </figure>
 
