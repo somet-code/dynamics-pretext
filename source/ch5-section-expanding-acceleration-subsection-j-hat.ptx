@@ -131,7 +131,7 @@
             they are separated by angle <m>\delta \lambda</m>
             and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
-        <image source="images/ch5-spherical-j-x-zoom.png" width="40%">
+        <image source="images/ch5-spherical-j-x-zoom.png" width="35%">
             <shortdescription>
                 Two portions of unit direction vectors with their tails fixed together
                 and the angle swept out between them and their vector difference annotated.
@@ -248,7 +248,7 @@
             When the tails of the vectors are fixed together,
             they are separated by angle <m>\delta \phi</m> and their vector difference is <m>\vec{\delta j}</m>.
         </caption>
-        <image source="images/ch5-spherical-j-y-zoom.png" width="40%">
+        <image source="images/ch5-spherical-j-y-zoom.png" width="30%">
             <shortdescription>
                 Two unit direction vectors with their tails fixed together
                 and the angle swept out between them and their vector difference annotated.
