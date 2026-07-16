@@ -116,4 +116,233 @@
         </image>
     </figure>
 
+    <p>
+        Fixing the tails of <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m> together in
+        <xref ref="ch5-spherical-k-x-zoom" text="type-global" /> below
+        reveals that <m>\delta \lambda</m> is the angle swept out between them
+        and <m>\vec{\delta k}</m> is the vector difference between them.
+    </p>
+
+    <figure xml:id="ch5-spherical-k-x-zoom">
+        <caption>
+            Reproduction of <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m>
+            from <xref ref="ch5-spherical-k-x-start" text="type-global" />.
+            When the tails of the vectors are fixed together,
+            they are separated by angle <m>\delta \lambda</m>
+            and their vector difference is <m>\vec{\delta k}</m>.
+        </caption>
+        <image source="images/ch5-spherical-k-x-zoom.png" width="40%">
+            <shortdescription>
+                Two portions of unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Reproducing <xref ref="ch5-spherical-k-x-start" text="type-global" />
+        with the tail of <m>\hat{k}_1 \, \cos{\phi}</m> moved to the tail of <m>\hat{k}_2 \, \cos{\phi}</m>
+        and <m>\vec{\delta k}</m> additionally included
+        in <xref ref="ch5-spherical-k-x-end" text="type-global" /> below makes these relationships even clearer.
+    </p>
+
+    <figure xml:id="ch5-spherical-k-x-end">
+        <caption>
+            Reproduction of <xref ref="ch5-spherical-k-x-start" text="type-global" />
+            with the tail of <m>\hat{k}_1 \, \cos{\phi}</m> fixed to the tail of <m>\hat{k}_2 \, \cos{\phi}</m>.
+            As shown in <xref ref="ch5-spherical-k-x-zoom" text="type-global" />,
+            <m>\hat{k}_1 \, \cos{\phi}</m> and <m>\hat{k}_2 \, \cos{\phi}</m> are separated by angle <m>\delta \lambda</m>
+            and their vector difference is <m>\vec{\delta k}</m>.
+        </caption>
+        <image source="images/ch5-spherical-k-x-end.png" width="60%">
+            <shortdescription>
+                Two portions of unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        We again can use the arc length formula to approximate <m>|\vec{\delta k}|</m>,
+        and we can take advantage of the fact that,
+        since <m>\hat{k}</m> is a unit direction vector,
+        <m>|\hat{k}| = 1</m>.
+    </p>
+
+    <p>
+        <md number="yes">
+            |\vec{\delta k}|
+            = |\hat{k_1}|(\cos{\phi}) \, \delta \lambda
+            = |\hat{k_2}|(\cos{\phi}) \, \delta \lambda
+            = |\hat{k}|(\cos{\phi}) \, \delta \lambda
+            = (\cos{\phi}) \, \delta \lambda
+        </md>
+    </p>
+
+    <p>
+        And as noted in <xref ref="ch5-section-expanding-acceleration-subsection-i-hat" text="type-global" />,
+        <m>\delta x = (a \cos{\phi}) \, \delta \lambda</m>.
+        Therefore,
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{|\vec{\delta k}|}{\delta x}
+            =
+            \frac{(\cos{\phi}) \, \delta \lambda}{(a \cos{\phi}) \, \delta \lambda}
+            =
+            \frac{1}{a}
+        </md>
+    </p>
+
+    <p>
+        From <xref ref="ch5-spherical-k-x-end" text="type-global" />,
+        we can see that as <m>\delta \lambda \to 0</m>,
+        <m>\delta x \to 0</m> and <m>\vec{\delta k}</m> points in the <m>\hat{i}</m> direction.
+        So
+    </p>
+
+    <p>
+        <md number="yes">
+            \lim_{\delta x \to 0}
+            \frac{\vec{\delta k}}{\delta x}
+            =
+            \frac{\partial \hat{k}}{\partial x}
+            =
+            \frac{1}{a} \, \hat{i}
+        </md>
+    </p>
+
+    <p>
+        To evaluate <m>\dfrac{\partial \hat{k}}{\partial y}</m>,
+        we again make a vertical slice through Earth's axis of rotation at longitude <m>\lambda</m>.
+        As shown in <xref ref="ch5-spherical-k-y-start" text="type-global" /> below,
+        we then consider the difference in <m>\hat{k}</m>'s orientation
+        when its anchoring point is placed at two nearby points on Earth's surface with longitude <m>\lambda</m>
+        and latitudes separated by angle <m>\delta \phi</m> along arc <m>\delta y</m>.
+    </p>
+
+    <figure xml:id="ch5-spherical-k-y-start">
+        <caption>
+            Equatorial projection showing unit direction vectors <m>\hat{k}_1</m> and <m>\hat{k}_2</m> placed on Earth's surface
+            at two nearby points with longitude <m>\lambda</m>
+            and separated by angle <m>\delta \phi</m> and arc <m>\delta y</m>.
+        </caption>
+        <image source="images/ch5-spherical-k-y-start.png" width="60%">
+            <shortdescription>
+                Two unit direction vectors at two nearby points
+                on the edge of a circular disk viewed from the side.
+                The vectors point outward away from the edge of the disk.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Fixing the tails of <m>\hat{k}_1</m> and <m>\hat{k}_2</m> together in
+        <xref ref="ch5-spherical-k-y-zoom" text="type-global" /> below
+        reveals that <m>\delta \phi</m> is the angle swept out between them
+        and <m>\vec{\delta k}</m> is the vector difference between them.
+    </p>
+
+    <figure xml:id="ch5-spherical-k-y-zoom">
+        <caption>
+            Reproduction of <m>\hat{k}_1</m> and <m>\hat{k}_2</m> from <xref ref="ch5-spherical-k-y-start" text="type-global" />.
+            When the tails of the vectors are fixed together,
+            they are separated by angle <m>\delta \phi</m> and their vector difference is <m>\vec{\delta k}</m>.
+        </caption>
+        <image source="images/ch5-spherical-k-y-zoom.png" width="30%">
+            <shortdescription>
+                Two unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Reproducing <xref ref="ch5-spherical-k-y-start" text="type-global" />
+        with the tail of <m>\hat{k}_1</m> moved to the tail of <m>\hat{k}_2</m> and <m>\vec{\delta k}</m> additionally included
+        in <xref ref="ch5-spherical-k-y-end" text="type-global" /> below makes these relationships even clearer.
+    </p>
+
+    <figure xml:id="ch5-spherical-k-y-end">
+        <caption>
+            Reproduction of <xref ref="ch5-spherical-k-y-start" text="type-global" />
+            with the tail of <m>\hat{k}_1</m> moved to the tail of <m>\hat{k}_2</m>.
+            As shown in <xref ref="ch5-spherical-k-y-zoom" text="type-global" />,
+            <m>\hat{k}_1</m> and <m>\hat{k}_2</m> are separated by angle <m>\delta \phi</m>
+            and their vector difference is <m>\vec{\delta k}</m>.
+        </caption>
+        <image source="images/ch5-spherical-k-y-end.png" width="60%">
+            <shortdescription>
+                Two unit direction vectors with their tails fixed together
+                and the angle swept out between them and their vector difference annotated.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        We again can use the arc length formula to approximate <m>|\vec{\delta k}|</m>,
+        and we can take advantage of the fact that,
+        since <m>\hat{k}</m> is a unit direction vector,
+        <m>|\hat{k}| = 1</m>.
+    </p>
+
+    <p>
+        <md number="yes">
+            |\vec{\delta k}|
+            = |\hat{k_1}| \, \delta \phi
+            = |\hat{k_2}| \, \delta \phi
+            = |\hat{k}| \, \delta \phi
+            = \delta \phi
+        </md>
+    </p>
+
+    <p>
+        And as noted in <xref ref="ch5-section-expanding-acceleration-subsection-j-hat" text="type-global" />,
+        <m>\delta y = a \, \delta \phi</m>.
+        Therefore,
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{|\vec{\delta k}|}{\delta y}
+            =
+            \frac{\delta \phi}{a \, \delta \phi}
+            = \frac{1}{a}
+        </md>
+    </p>
+
+    <p>
+        From <xref ref="ch5-spherical-k-y-end" text="type-global" />,
+        we can see that as <m>\delta \phi \to 0</m>,
+        <m>\delta y \to 0</m> and <m>\vec{\delta k}</m> points in the <m>\hat{j}</m> direction.
+        So
+    </p>
+
+    <p>
+        <md number="yes">
+            \lim_{\delta y \to 0}
+            \frac{\vec{\delta k}}{\delta y}
+            =
+            \frac{\partial \hat{k}}{\partial y}
+            =
+            \frac{1}{a} \, \hat{j}
+        </md>
+    </p>
+
+    <p>
+        and <xref ref="eqn-total-derivative-k-reduced" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-k-final" number="yes">
+            \frac{D \hat{k}}{Dt}
+            =
+            u \frac{\partial \hat{k}}{\partial x}
+            + v \frac{\partial \hat{k}}{\partial y}
+            =
+            \frac{u}{a} \, \hat{i}
+            + \frac{v}{a} \, \hat{j}
+        </md>
+    </p>
 </subsection>
