@@ -37,7 +37,9 @@
         </caption>
         <image source="images/aa-earth-setup.png" width="60%">
             <shortdescription>
-                A point on Earth's surface with the local Cartesian coordinate system placed at that point.
+                A point on Earth's surface with the local Cartesian coordinate system 
+                and Earth's angular velocity vector
+                placed at that point.
             </shortdescription>
         </image>
     </figure>
