@@ -109,5 +109,6 @@
   <xi:include href="ch5-section-expanding-acceleration.ptx" />
   <xi:include href="ch5-section-expanding-coriolis.ptx" />
   <xi:include href="ch5-section-expanding-friction.ptx" />
+  <xi:include href="ch5-section-equations-of-motion.ptx" />
 
 </chapter>
