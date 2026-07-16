@@ -180,7 +180,8 @@
     </p>
 
     <p>
-        And as noted in the previous subsection, <m>\delta x = (a \cos{\phi}) \, \delta \lambda</m>.
+        And as noted in <xref ref="ch5-section-expanding-acceleration-subsection-i-hat" text="type-global" />,
+        <m>\delta x = (a \cos{\phi}) \, \delta \lambda</m>.
         Therefore,
     </p>
 
