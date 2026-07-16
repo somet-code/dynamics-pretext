@@ -107,5 +107,6 @@
   </introduction>
 
   <xi:include href="ch5-section-expanding-acceleration.ptx" />
+  <xi:include href="ch5-section-expanding-coriolis.ptx" />
 
 </chapter>

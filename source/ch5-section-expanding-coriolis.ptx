@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch5-section-expanding-coriolis" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Expanding the Coriolis acceleration</title>
+
+  <p>
+    As discussed in <xref ref="appendix-cross-product-term-proof" text="type-global" />
+    and shown its <xref ref="aa-earth-setup" text="type-global" /> and <xref ref="aa-earth-setup-atmosphere" text="type-global" />,
+    Earth's angular velocity <m>\vec{\Omega}</m> is directed parallel to Earth's axis of rotation,
+    pointing upward toward the North Pole.
+    Every point on Earth and within Earth's atmosphere is imbued with this same angular velocity.
+    At the North Pole, <m>\vec{\Omega}</m> points in the <m>\hat{k}</m> direction,
+    while at the South pole, <m>\vec{\Omega}</m> points in the <m>-\hat{k}</m> direction.
+    At the Equator, <m>\vec{\Omega}</m> points in the <m>\hat{j}</m> direction.
+    At any other location on Earth's surface or within its atmosphere,
+    <m>\vec{\Omega}</m> points partially in the <m>\hat{j}</m> direction
+    and partially in the <m>\hat{k}</m> direction,
+    as shown in <xref ref="ch5-spherical-coriolis" text="type-global" /> below.
+  </p>
+
+  <figure xml:id="ch5-spherical-coriolis">
+    <caption>
+        Equatorial projection
+        showing the unit direction vectors of the local Cartesian coordinate system fixed to a point of interest on Earth's surface
+        at radius <m>a \cos{\phi}</m>,
+        perpendicular to Earth's axis of rotation,
+        where <m>a</m> is Earth's mean radius and <m>\phi</m> is latitude.
+        Vector <m>\vec{\Omega}</m> shows Earth's constant angular velocity.
+        A copy of <m>\vec{\Omega}</m> is moved to the point of interest on Earth's surface.
+    </caption>
+  </figure>
+
+</section>
