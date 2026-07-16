@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch5-section-expanding-friction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Expanding the viscous friction acceleration</title>
+
+  <p>
+    Any acceleration that depends on air parcel velocity <m>\vec{u}</m>
+    should be expanded to account for Earth's sphericity.
+    While the gravity acceleration <m>\vec{g}</m> and pressure gradient acceleration <m>\vec{a}_{PG}</m> do not depend on <m>\vec{u}</m>,
+    the viscous friction acceleration <m>\vec{a}_r</m>does.
+    Given how involved the above derivations needed to expand <m>\dfrac{D\vec{u}}{Dt}</m> were,
+    you might imagine expanding second-order partial derivatives for <m>\vec{a}_r</m> would be even more tedious<mdash />and you would be right!
+  </p>
+
+  <p>
+    Typically,
+    the expansion of the viscous friction acceleration is neglected since
+    (1) the viscous friction acceleration is very small except within the lowest few millimeters of Earth's atmosphere
+    and (2) the curvature terms that result from its expansion are even smaller than those produced by the expansion of the air parcel acceleration term
+    and therefore are safely neglected in most contexts.
+    We will neglect expanding this acceleration to save time,
+    which is consistent with the large majority of texts.
+  </p>
+
+</section>
