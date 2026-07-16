@@ -1351,6 +1351,15 @@ var ptx_lunr_docs = [
   "body": "prognostic "
 },
 {
+  "id": "ch5-section-selected-references",
+  "level": "1",
+  "url": "ch5-section-selected-references.html",
+  "type": "Section",
+  "number": "5.5",
+  "title": "Selected references",
+  "body": " Selected references     Chapter 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 4 of Bluestein (1992)      "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
