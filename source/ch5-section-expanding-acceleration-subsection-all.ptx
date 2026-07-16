@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch5-section-expanding-acceleration-subsection-all" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Putting everything together</title>
+
+    <p>
+        The acceleration of an air parcel in <xref ref="eqn-total-derivative-spherical-start" text="type-global" /> expands into
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                 \frac{D\vec{u}}{Dt}
+                 \amp = 
+                \left(
+                    \frac{Du}{Dt} \, \hat{i}
+                    + \frac{Dv}{Dt} \, \hat{j}
+                    + \frac{Dw}{Dt} \, \hat{k}
+                \right)
+                +
+                \left(
+                    u \, \frac{D \hat{i}}{Dt}
+                    + v \, \frac{D \hat{j}}{Dt}
+                    + w \, \frac{D \hat{k}}{Dt}
+                \right)
+            </mrow>
+            <mrow>
+                \amp = 
+                \frac{Du}{Dt} \, \hat{i}
+                + \frac{Dv}{Dt} \, \hat{j}
+                + \frac{Dw}{Dt} \, \hat{k}
+            </mrow>
+            <mrow>
+                \amp \quad
+                +
+                u \left(
+                    \frac{u}{a \cos{\phi}} (\hat{j} \, \sin{\phi} - \hat{k} \, \cos{\phi})
+                \right)
+                +
+                v \left(
+                    -\frac{u \tan{\phi}}{a} \, \hat{i}
+                    -\frac{v}{a} \, \hat{k}
+                \right)
+                +
+                w \left(
+                    \frac{u}{a} \, \hat{i}
+                    + \frac{v}{a} \, \hat{j}
+                \right)
+            </mrow>
+            <mrow xml:id="eqn-total-derivative-spherical-final" number="yes">
+                \amp =
+                \left(
+                    \frac{Du}{Dt}
+                    + \frac{uw}{a}
+                    - \frac{uv \tan{\phi}}{a}
+                \right) \hat{i}
+                +
+                \left(
+                    \frac{Dv}{Dt}
+                    + \frac{vw}{a}
+                    + \frac{u^2 \tan{\phi}}{a}
+                \right) \hat{j}
+                +
+                \left(
+                    \frac{Dw}{Dt}
+                    - \frac{u^2 + v^2}{a}
+                \right) \hat{k}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        when applied to the spherical Earth.
+        The "extra" terms inversely proportional to <m>a</m> are called <term>curvature terms</term>,
+        and the above derivations show that they result from Earth's sphericity.
+        Specifically,
+        they are caused by Earth's surface curving away underneath the straight-line trajectory of <m>\vec{u}</m>.
+    </p>
+
+</subsection>
