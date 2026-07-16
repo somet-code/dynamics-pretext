@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch5-section-expanding-acceleration-subsection-a-authors-note" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Author's note on the simplifying use of <m>a</m></title>
+
+    <p>
+        The derivations of the curvature terms shown above assumed the unit direction vectors were placed on Earth's surface,
+        and consequently these terms are inversely proportional to Earth's mean radius <m>a</m>.
+        However,
+        as <xref ref="ch5-local-cartesian-coordinates-sphericity" text="type-global" />shows,
+        the derivations also apply to locations within Earth's atmosphere at geometric height <m>z</m> above Earth's mean sea level.
+        In this case,
+        <m>a</m> would be replaced by <m>a + z</m> in the ensuing derivations
+         and the resulting curvature terms in <xref ref="eqn-total-derivative-spherical-final" text="type-global" />.
+         It is perfectly fine to make this replacement,
+         but be aware that most texts<mdash />including <xref ref="bluestein" text="custom">Bluestein (1992)</xref>,
+         <xref ref="martin" text="custom">Martin (2006)</xref>,
+         and <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref><mdash />use
+         <m>a</m> rather than <m>a + z</m> for simplicity.
+         This simplification is acceptable since the planet is much thicker than its atmosphere,
+         and it especially is acceptable since the majority of atmospheric motions of interest occur close to Earth's surface.
+    </p>
+
+</subsection>
