@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch5-section-selected-references" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Selected references</title>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                Chapter 3 of <xref ref="martin" text="custom">Martin (2006)</xref>: See tentative course schedule for specific readings.
+            </p>
+        </li>
+        <li>
+            <p>
+                Chapter 2 of <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>: See tentative course schedule for specific readings.
+            </p>
+        </li>
+        <li>
+            <p>
+                Chapter 4 of <xref ref="bluestein" text="custom">Bluestein (1992)</xref>
+            </p>
+        </li>
+    </ul>
+  </p>
+
+</section>
