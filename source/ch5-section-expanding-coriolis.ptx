@@ -28,6 +28,77 @@
         Vector <m>\vec{\Omega}</m> shows Earth's constant angular velocity.
         A copy of <m>\vec{\Omega}</m> is moved to the point of interest on Earth's surface.
     </caption>
+    <image source="images/ch5-spherical-coriolis.png" width="60%">
+      <shortdescription>
+        A point on Earth's surface with the local Cartesian coordinate system 
+        and Earth's angular velocity vector
+        placed at that point.
+      </shortdescription>
+    </image>
   </figure>
+
+  <p>
+    As we learned in <xref ref="aa-section-earth-subsection-all" text="type-global" />,
+    <m>\vec{\Omega}</m> expands in spherical coordinates as
+  </p>
+
+  <p>
+    <md xml:id="eqn-omega-spherical" number="yes">
+      \vec{\Omega}
+      =
+      \Omega \cos{\phi} \, \hat{j}
+      + \Omega \sin{\phi} \, \hat{k}
+    </md>
+  </p>
+
+  <p>
+    Consequently, the Coriolis acceleration expands as follows in spherical coordinates:
+  </p>
+
+  <p>
+    <md xml:id="eqn-coriolis-spherical" number="yes">
+      \vec{a}_{COR}
+      =
+      -2 \, \vec{\Omega} \times \vec{u}
+      =
+      \left(
+          2 \Omega v \sin{\phi} - 2 \Omega w \cos{\phi}
+      \right) \, \hat{i}
+      - 2 \Omega u \sin{\phi} \, \hat{j}
+      + 2 \Omega u \cos{\phi} \, \hat{k}
+    </md>
+  </p>
+
+  <p>
+    As we will see in Chapter 8,
+    the terms in <xref ref="eqn-coriolis-spherical" text="type-global" />
+    with <m>\sin{\phi}</m> tend to be much larger than the terms with <m>\cos{\phi}</m>.
+    Taking advantage of the dominance of the <m>\sin{\phi}</m> terms,
+    we define the <term>Coriolis parameter</term>
+  </p>
+
+  <p>
+    <md xml:id="eqn-coriolis-parameter" number="yes">
+      f = 2 \Omega \sin{\phi}
+    </md>
+  </p>
+  
+  <p>
+    Then <xref ref="eqn-coriolis-spherical" text="type-global" /> can be written
+  </p>
+
+  <p>
+    <md xml:id="eqn-coriolis-spherical-parameter" number="yes">
+      \vec{a}_{COR}
+      =
+      -2 \, \vec{\Omega} \times \vec{u}
+      =
+      \left(
+          fv - 2 \Omega w \cos{\phi}
+      \right) \, \hat{i}
+      - fu \, \hat{j}
+      + 2 \Omega u \cos{\phi} \, \hat{k}
+    </md>
+  </p>
 
 </section>
