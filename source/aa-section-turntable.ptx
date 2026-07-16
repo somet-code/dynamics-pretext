@@ -11,7 +11,7 @@
     </p>
 
     <p>
-        We can apply a local Cartesian coordinate system to any given point on the turntable,
+        We can apply the local Cartesian coordinate system to any given point on the turntable,
         and for visual simplicity, we will do below so for a point on the edge of the turntable.
         All the unit direction vectors discussed below have an implied subscript "rot"
         since they are attached to the turntable,
@@ -21,7 +21,7 @@
     <figure xml:id="aa-turntable-setup">
         <caption>
             View from above of a turntable of radius <m>R</m> rotating at constant angular velocity <m>\vec{\Omega}</m>.
-            The unit direction vectors of a local Cartesian coordinate system fixed to the turntable are shown at a point on the edge of the turntable.
+            The unit direction vectors of the local Cartesian coordinate system fixed to the turntable are shown at a point on the edge of the turntable.
             Vector <m>\vec{\Omega}</m> shows the turntable's constant angular velocity.
         </caption>
         <image source="images/aa-turntable-setup.png" width="60%">

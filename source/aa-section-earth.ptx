@@ -29,7 +29,7 @@
     <figure xml:id="aa-earth-setup">
         <caption>
             Equatorial projection
-            showing the unit direction vectors of a local Cartesian coordinate system fixed to Earth's surface
+            showing the unit direction vectors of the local Cartesian coordinate system fixed to Earth's surface
             at radius <m>R = a \cos{\phi}</m>,
             perpendicular to Earth's axis of rotation,
             where <m>a</m> is Earth's mean radius and <m>\phi</m> is latitude.
