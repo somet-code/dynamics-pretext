@@ -44,7 +44,7 @@
         </p>
 
         <p>
-            When faster-moving particles of a fluid collide with slower-moving particles,
+            When faster-moving particles of a fluid collide with slower-moving particles of the same fluid,
             they transfer some of their momentum to the slower-moving particles.
             This causes the faster-moving particles to slow down while the slower-moving particles speed up.
             Thus, through momentum transfer between adjacent particles,
@@ -55,7 +55,7 @@
 
         <p>
             If the air parcel of <xref ref="ch3-air-parcel" text="type-global" /> is at rest relative to its environment,
-            it only experiences deformation due to the forces of discrete particles randomly colliding with its bounding surface,
+            it only experiences deformation due to the forces of discrete particles randomly colliding with its bounding surface(s),
             which collectively are expressed per unit area as pressure and are compressive,
             as discussed previously in <xref ref="ch3-section-pressure-gradient-force" text="type-global" />.
             But if there is relative motion between the air parcel and its environment due to fluid flow,
@@ -75,9 +75,9 @@
         <p>
             <md>
                 <mrow xml:id="eqn-friction-acceleration-x" number="yes">
-                    \frac{F_{rx}}{m}
+                    \frac{F_{fr,x}}{m}
                     =
-                    a_{r,x}
+                    a_{fr,x}
                     =
                     \nu \left[
                         \frac{\partial^2 u}{\partial x^2}
@@ -88,9 +88,9 @@
                     \right]
                 </mrow>
                 <mrow xml:id="eqn-friction-acceleration-y" number="yes">
-                    \frac{F_{ry}}{m}
+                    \frac{F_{fr,y}}{m}
                     =
-                    a_{r,y}
+                    a_{fr,y}
                     =
                     \nu \left[
                         \frac{\partial^2 v}{\partial x^2}
@@ -101,9 +101,9 @@
                     \right]
                 </mrow>
                 <mrow xml:id="eqn-friction-acceleration-z" number="yes">
-                    \frac{F_{rz}}{m}
+                    \frac{F_{fr,z}}{m}
                     =
-                    a_{r,z}
+                    a_{fr,z}
                     =
                     \nu \left[
                         \frac{\partial^2 w}{\partial x^2}
@@ -117,8 +117,8 @@
         </p>
 
         <p>
-            where <m>F_{ri}</m> is the viscous friction force in the <m>i^{\text{th}}</m> direction,
-            <m>a_{ri}</m> is the viscous friction force per unit mass,
+            where <m>F_{fr,i}</m> is the viscous friction force in the <m>i^{\text{th}}</m> direction,
+            <m>a_{fr,i}</m> is the viscous friction force per unit mass,
             or the viscous friction acceleration,
             in the <m>i^{\text{th}}</m> direction, 
             and <m>\nu = \dfrac{\mu}{\rho}</m> [<m>\text{m}^{2} \, \text{s}^{-1}</m>] is the <term>kinematic viscosity</term>.
@@ -133,16 +133,16 @@
 
         <p>
             <md xml:id="eqn-friction-acceleration" number="yes">
-                \frac{\vec{F}_r}{m}
+                \frac{\vec{F}_{fr}}{m}
                 =
-                \vec{a}_r
+                \vec{a}_{fr}
                 =
                 \nu \nabla^2 \vec{u} 
             </md>
         </p>
 
         <p>
-            where <m>\vec{F}_r</m> is the viscous friction force and <m>\vec{a}_r</m> is the viscous friction acceleration.
+            where <m>\vec{F}_{fr}</m> is the viscous friction force and <m>\vec{a}_{fr}</m> is the viscous friction acceleration.
         </p>
 
         <p>
@@ -165,14 +165,17 @@
         <p>
             The dependence of the viscous friction force on the air parcel's velocity <m>\vec{u}</m>
             as shown in <xref ref="eqn-friction-acceleration" text="type-global" />
-            means the viscous friction force is present only in a moving fluid.
+            means the viscous friction force is present only in moving air.
             Furthermore,
-            the second-order derivatives encompassed by the Laplacian of <m>\vec{u}</m> and shown explicitly in
-            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
+            the second-order derivatives encompassed by the Laplacian of <m>\vec{u}</m>,
+            <m>\nabla^2 \vec{u}</m>,
+            and shown explicitly for each component of <m>\vec{u}</m> in
+            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />,
             mean the viscous friction force is present only in moving fluids with nonlinear velocity profiles.
         </p>
 
         <p>
+            Air has extremely low viscosity.
             For altitudes relevant to the large majority of meteorological applications,
             the dynamic viscosity of air is largest next to Earth's surface where the air is densest,
             pressure is highest,
@@ -180,13 +183,21 @@
             According to the <xref ref="us-standard-atmosphere-1976" text="custom">U.S. Standard Atmosphere (1976)</xref>,
             under average conditions,
             <m>\mu = 1.8 \times 10^{-5}</m> Pa s next to Earth's surface and decreases linearly through the troposphere.
-            Consequently, the viscous friction force is negligibly small in atmospheric motions occurring more than a few millimeters above the surface.
-            But the extreme wind shear that occurs in this layer due to viscosity leads to turbulence,
-            which translates the effects of the viscous friction force upward through a much greater depth:
-            up to a few kilometers during the daytime!
+            For comparison,
+            the <url href="https://www.engineeringtoolbox.com/dynamic-absolute-kinematic-viscosity-d_412.html">dynamic viscosity of water</url>
+            is about 100 times larger.
+            Consequently,
+            the viscous friction force is negligibly small in atmospheric motions occurring more than a few millimeters above the surface.
+        </p>
+
+        <p>
+            As a brief note,
+            the extreme wind shear that occurs next to Earth's surface,
+            due to the drag Earth's surface exerts on the air,
+            easily overcomes the air's small viscosity and effects momentum transfer
+            through a much greater depth<mdash />up to a few kilometers during the daytime!<mdash />via <term>turbulence</term>.
             Turbulence is not of focus in this course,
-            but it is an interesting and meteorologically significant
-            topic you will return to in future courses.
+            but it is an interesting and meteorologically significant topic you will return to in future courses.
         </p>
 
     </introduction>

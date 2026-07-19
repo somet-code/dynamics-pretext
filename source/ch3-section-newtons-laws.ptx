@@ -39,7 +39,8 @@
 
     <p>
         <xref ref="stull" text="custom">Stull (2017)</xref> (p. 292)
-        shares translations of these laws from Newton's <pubtitle>The Mathematical Principles of Natural Philosophy</pubtitle>.
+        shares translations of these laws from Newton's <pubtitle>The Mathematical Principles of Natural Philosophy</pubtitle>
+        (directly quoted).
     </p>
 
     <p>
@@ -73,7 +74,7 @@
     </p>
 
     <p>
-        Newton's <m>2^{\text{nd}}</m> law motion follows from the <m>1^{\text{st}}</m> law and can be expressed mathematically as
+        Newton's <m>2^{\text{nd}}</m> law of motion follows from the <m>1^{\text{st}}</m> law and can be expressed mathematically as
     </p>
 
     <p>
@@ -84,7 +85,7 @@
 
     <p>
         where <m>\vec{F}_{net} = \sum\limits_i \vec{F}_i</m>
-        is the net force that results from the sum of all forces <m>\vec{F}_i</m>
+        is the net force that results from the sum of all external forces <m>\vec{F}_i</m>
         acting on the object of interest and <m>\vec{p} = m\vec{u}</m> [<m>\text{kg} \, \text{m} \, \text{s}^{-1}</m>]
         is the object's momentum.
     </p>
@@ -138,15 +139,15 @@
     </p>
 
     <p>
-        Using acceleration rather than force is preferable in meteorology since it is not reasonable to measure the mass of air parcel
+        Using acceleration rather than force is preferable in meteorology since it is not reasonable to measure the mass of an air parcel
         (our object of interest).
     </p>
 
     <p>
         For an air parcel as described in this chapter,
         assuming its mass is constant (which is the typical assumption,
-        and which we will revisit later when exploring mass conservation),
-        we can combine the effects of the <term>fundamental forces</term> on it to expand the left side of
+        and which we will revisit in Chapter 6 when exploring mass conservation),
+        we can combine the effects of the <term>fundamental forces</term> discussed in this chapter on it to expand the left side of
         <xref ref="eqn-newtons-2nd-law-simplified-acceleration" text="type-global" /> as follows:
     </p>
 
@@ -154,10 +155,10 @@
         <md>
             <mrow>
                 \frac{\vec{F}_{net}}{m}
-                \amp = \frac{\vec{F}_g + \vec{F}_{PG} + \vec{F}_r}{m}
+                \amp = \frac{\vec{F}_g + \vec{F}_{PG} + \vec{F}_{fr}}{m}
             </mrow>
             <mrow>
-                \amp = \vec{g^*} + \vec{a}_{PG} + \vec{a}_r
+                \amp = \vec{g^*} + \vec{a}_{PG} + \vec{a}_{fr}
             </mrow>
             <mrow>
                 \amp = \vec{g^*} - \frac{1}{\rho} \nabla p + \nu \nabla^2 \vec{u}
@@ -198,7 +199,7 @@
         it is incomplete for our purposes:
         This is because it is valid only for a non-accelerating coordinate system.
         But we want to analyze air parcel motions using the local Cartesian coordinate system,
-        which is attached to the rotating Earth and therefore accelerates along with Earth!
+        which is attached to the rotating Earth and therefore accelerates along with the planet!
         We will tackle the complication of Earth's rotation and consequent acceleration of the local Cartesian coordinate system
         in <xref ref="chapter-4" text="type-global" />.
     </p>

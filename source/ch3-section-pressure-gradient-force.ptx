@@ -14,11 +14,13 @@
     </p>
 
     <p>
-        where <m>p</m> is the pressure and <m>F_{\perp}</m> [N] is the magnitude of the force applied perpendicular to a surface with area <m>A</m> [<m>\text{m}^{2}</m>].
+        where <m>p</m> is the pressure and <m>F_{\perp}</m> [N] is the magnitude of the force
+        applied perpendicular to a surface with area <m>A</m> [<m>\text{m}^{2}</m>].
     </p>
 
     <p>
-        <term>Fluid pressure</term> is caused by the combined force of numerous discrete fluid particles colliding with a surface of any orientation placed anywhere within the fluid,
+        <term>Fluid pressure</term> is caused by the combined forces of numerous discrete fluid particles
+        colliding with a surface of any orientation placed anywhere within the fluid,
         and it is compressive.
         <term>Atmospheric pressure</term> is fluid pressure caused by the collisions of atmospheric particles with surfaces.
     </p>
@@ -29,7 +31,7 @@
         as represented by the force vectors in <xref ref="ch3-airparcel-pressure-forces" text="type-global" /> below.
         The pressure at its center <m>p_0 = p(x_0, y_0, z_0)</m> results.
         Note if the air parcel was a different shape,
-        it still would experience these forces perpendicular to its boundaries,
+        it still would experience these forces perpendicular to its bounding surface(s),
         which would result in the same central pressure.
     </p>
 
@@ -38,6 +40,7 @@
             Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from
             <xref ref="ch3-air-parcel" text="type-global" />,
             creating pressure <m>p_0 = p(x_0, y_0, z_0)</m> measured at its center.
+            Note the vectors point inward toward the center of the air parcel since atmospheric pressure is compressive.
         </caption>
         <image source="images/ch3-airparcel-pressure-forces.png" width="60%">
             <shortdescription>
@@ -148,7 +151,7 @@
     </p>
 
     <p>
-        Note that each of these accelerations depends on a spatial derivative of pressure,
+        Note each of these accelerations depends on a spatial derivative of pressure,
         or a <term>pressure gradient</term>,
         but not on a specific value of pressure.
     </p>
@@ -180,14 +183,15 @@
         in the direction of fastest increase.
         Visually, a gradient vector points locally perpendicular to <term>isopleths</term> (contours of constant value)
         of the scalar quantity of interest toward higher values,
-        and its magnitude is determined by the strength of the gradient:
-        Closer spacing of isopleths indicates larger gradients.
+        and its magnitude reflects the size of the gradient:
+        Isopleths are spaced closer together where the gradient is larger.
     </p>
 
     <p>
         It follows that the pressure gradient vector <m>\nabla p</m> points from lower to higher values of pressure,
         in the direction of fastest increase, locally perpendicular to <term>isobars</term> (contours of constant pressure),
-        and its magnitude increases as the strength of the pressure gradient increases.
+        and its magnitude increases as the size of the pressure gradient increases,
+        leading to a stronger PGF.
         But the negative sign in <xref ref="eqn-pressure-gradient-acceleration" text="type-global" />
         means the pressure gradient force vector <m>\vec{F}_{PG}</m> and,
         likewise, the pressure gradient acceleration vector <m>\vec{a}_{PG}</m>

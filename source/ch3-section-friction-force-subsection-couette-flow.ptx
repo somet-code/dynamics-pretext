@@ -17,7 +17,8 @@
         of infinite length (in the <m>x</m>-direction)
         and width (in the <m>y</m>-direction, not shown but perpendicular to the screen)
         separated by vertical distance <m>h</m> and bounding a horizontally infinite viscous fluid of depth <m>h</m>.
-        The lower surface is fixed (as indicated by the hatching) and the upper surface moves to the right at velocity <m>u_0</m>.
+        The lower surface is fixed (as indicated by the hatching)
+        and the upper surface moves to the right in the <m>+x</m>-direction at velocity <m>u_0</m>.
         The blue dashed arrows represent steady planar Couette flow in the fluid.
         The solid blue lines give the vertical profile of the horizontal velocity <m>u(z)</m>.
     </caption>
@@ -97,6 +98,7 @@
         \frac{\partial^2 u}{\partial z^2} \neq 0
     </md>
     and the fluid would experience a non-zero viscous friction force that progressively nudges it toward steady planar Couette flow.
+    Thus, viscosity acts to dampen velocity gradients.
   </p>
 
 </subsection>
