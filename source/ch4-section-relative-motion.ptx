@@ -5,8 +5,9 @@
 
     <p>
         Imagine you are standing outside the National Weather Center watching traffic on Jenkins Ave.
-        You use a radar speed gun to measure the speed of a car driving toward you.
-        (Assuming perfect conditions, this matches the speed displayed on the car's speedometer, using the Doppler effect like weather radar!)
+        For fun, you use a radar speed gun to measure the speed of a car driving toward you.
+        (Assuming perfect conditions, this matches the speed displayed on the car's speedometer
+        and is measured using the Doppler effect like weather radar!)
     </p>
 
     <p>
@@ -36,7 +37,9 @@
     <p>
         This brief overview of
         <term>relative motion</term><mdash />that different observers can measure different velocities
-        for the same moving object due to their own motions<mdash />is extended below using the concept of reference frames.
+        for the same moving object due to their own motions<mdash />is extended
+        in <xref ref="ch4-section-reference-frames" text="custom">the next section</xref>
+        using the concept of reference frames.
     </p>
 
 </section>

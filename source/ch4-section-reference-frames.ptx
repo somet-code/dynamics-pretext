@@ -29,8 +29,8 @@
         As an observer stands on Earth's surface, they perceive the cloud to be drifting slowly with the wind at velocity <m>\vec{v}</m>
         because they and the cloud both are rotating along with the planet (<xref ref="ch4-relative-motion-a" text="type-global" />);
         in other words, they view the cloud from a non-inertial reference frame.
-        But a stationary observer in space perceives the cloud to be zipping along rapidly with Earth's rotation
-        with its slow wind-driven drift super-imposed (<xref ref="ch4-relative-motion-b" text="type-global" />)
+        But a stationary observer in space perceives the cloud to be zipping along rapidly with Earth's rotation,
+        with its much slower wind-driven drift superimposed (<xref ref="ch4-relative-motion-b" text="type-global" />),
         because they view the cloud from an inertial reference frame.
     </p>
 
@@ -39,7 +39,7 @@
         <sidebyside>
             <figure xml:id="ch4-relative-motion-a">
                 <caption>
-                    An observer on Earth's surface who is stationary relative to the rotating planet
+                    An observer standing on Earth's surface who is stationary relative to the rotating planet
                     observes a fair-weather cumulus cloud drifting slowly with the wind at horizontal velocity <m>\vec{v}</m>.
                 </caption>
                 <image source="images/ch4-relative-motion-a.png" width="50%">
@@ -75,8 +75,7 @@
         from <xref ref="ch3-section-newtons-laws" text="type-global" />
         to explain the motion of the cloud.
         But we live on the rotating Earth,
-        and therefore in almost all cases,
-        we observe the weather as we and atmospheric phenomena rotate along with it.
+        and therefore we observe the weather as we and atmospheric phenomena alike rotate along with the planet.
         Thus, it imperative that we be able to quantify atmospheric motions from this non-inertial reference frame.
     </p>
 
@@ -98,23 +97,24 @@
     <p>
         Since Earth rotates,
         the local Cartesian coordinate system described in <xref ref="ch2-section-local-cartesian-coordinates" text="type-global" />
-        is a non-inertial reference frame that constantly changes orientation in space.
+        is a non-inertial reference frame that accelerates by constantly changing orientation in space.
         But we do not intuit Earth's rotation as we live our lives and view the weather
         because we and everything else on the planet rotate at the same rate.
         Consequently, motions on Earth<mdash />including in Earth's atmosphere<mdash /><em>appear to us</em> to be inertial:
-        objects at rest or moving at constant velocity <em>appear to</em> remain so unless acted upon by an external force.
+        Objects at rest or moving at constant velocity <em>appear to</em> remain so unless acted upon by an external force.
         (But remember their acceleration along with the planet would be quite apparent to a stationary observer in space!)
         As we go along in this topic,
-        we will assign these motions that appear inertial to us but really are non-inertial velocity <m>\vec{u}_{rot}</m>,
-        where the subscript "rot" indicates they are viewed from the rotating reference frame.
+        we will assign to these motions that appear inertial to us but really are non-inertial velocity <m>\vec{u}_{rot}</m>,
+        where the subscript "rot" indicates they are viewed from the (non-inertial) rotating reference frame.
     </p>
 
     <p>
         If instead we were to observe these same motions on Earth from a fixed point in space,
-        we would see that they include rotation along with the planet,
-        and we would assign them velocity <m>\vec{u}_{abs}</m> = <m>\vec{u}_{rot}</m> + <m>\vec{\Omega} \times \vec{r}</m>,
+        we would see they include rotation along with the planet,
+        and we would assign to them velocity <m>\vec{u}_{abs}</m> = <m>\vec{u}_{rot}</m> + <m>\vec{\Omega} \times \vec{r}</m>,
         where <m>\vec{\Omega}</m> [<m>\text{rad} \, \text{s}^{-1}</m>] is <term>Earth's angular velocity</term>
         and <m>\vec{\Omega} \times \vec{r}</m> [<m>\text{m} \, \text{s}^{-1}</m>] is the tangential velocity imposed by Earth's rotation.
+        The subscript "abs" indicates the motions are viewed from the inertial (absolute) reference frame.
     </p>
 
     <p>
