@@ -63,6 +63,9 @@
         are equally valid expressions for <m>\vec{A}</m>:
         Even though the values of their components differ,
         they each describe the same vector.
+        In other words,
+        although the values of their components differ,
+        they each have the same magnitude and point with the same orientation.
     </p>
 
     <p>
@@ -113,7 +116,7 @@
     <p>
         Since the rotating coordinate system itself accelerates,
         its unit direction vectors change orientation with time relative to the inertial coordinate system,
-        and so by product rule,
+        and so by the product rule,
     </p>
 
     <p>
@@ -173,7 +176,7 @@
     </p>
 
     <p>
-        The second expression on in parentheses on the right-hand side of
+        The second expression in parentheses on the right-hand side of
         <xref ref="eqn-noninertial-derivative-general" text="type-global" />
         arises because the unit direction vectors rotate with their coordinate system at <m>\vec{\Omega}</m>.
         It follows from the definition of tangential velocity <m>\vec{v}_T</m> for uniform circular motion
@@ -181,7 +184,7 @@
 
     <p>
         <md>
-            \vec{v_T} = \vec{\Omega} \times \vec{r}
+            \vec{v_T} = \frac{D\vec{r}}{Dt} = \vec{\Omega} \times \vec{r}
         </md>
     </p>
 

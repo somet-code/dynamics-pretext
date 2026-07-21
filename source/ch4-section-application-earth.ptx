@@ -74,7 +74,15 @@
         <m>\vec{u}_{rot} = u_{rot} \, \hat{i}_{rot} + v_{rot} \, \hat{j}_{rot} + w_{rot} \, \hat{k}_{rot}</m>
         (i.e., the velocity of the air parcel relative to Earth, which is the wind)
         summed with the tangential velocity imparted to the air parcel by the rotation of the reference frame
-        <m>\vec{u}_T = \vec{\Omega} \times \vec{r}</m>
+    </p>
+
+    <p>
+        <md xml:id="eqn-tangential-velocity">
+            \vec{u}_T = \vec{\Omega} \times \vec{r}
+        </md>
+    </p>
+
+    <p>
         (i.e., the velocity of the air parcel due to Earth's rotation).
         The relationship in <xref ref="eqn-derivative-equality-velocity" text="type-global" /> could be written as
     </p>
