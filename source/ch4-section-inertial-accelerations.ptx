@@ -40,8 +40,9 @@
         in <xref ref="eqn-motion-vector" text="type-global" />
         that are caused by coordinate system rotation have been moved to the right-hand side of
         <xref ref="eqn-motion-vector-rotating" text="type-global" />
-        so that <m>\dfrac{D\vec{u}}{Dt}</m> is isolated.
-        This is done to clarify that they contribute to air parcel acceleration as measured in the rotating reference frame.
+        to isolate the air parcel acceleration relative to Earth <m>\dfrac{D\vec{u}}{Dt}</m>.
+        This is done to clarify that these two accelerations
+        contribute to air parcel acceleration as measured in the rotating reference frame.
     </p>
 
     <p>
@@ -65,7 +66,7 @@
     </p>
 
     <p>
-        The second term on the right-hand side,
+        The second term on the right-hand side of <xref ref="eqn-motion-vector-rotating" text="type-global" />,
         <m>-\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)</m>,
         is the <term>centrifugal force per unit mass</term>,
         where <m>\vec{F}_{CENT}</m> is the centrifugal force,
@@ -79,17 +80,24 @@
     </p>
 
     <p>
-        These "extra" inertial forces per unit mass must be included with Newton's <m>2^{\text{nd}}</m> law of motion
-        to describe motions in Earth's atmosphere as viewed from the rotating planet.
+        Keep in mind this centrifugal force is caused by Earth's rotation on its polar axis.
+    </p>
+
+    <p>
+        These two "extra" inertial forces<mdash />the Coriolis force and the centrifugal force<mdash />must be included
+        with Newton's <m>2^{\text{nd}}</m> law of motion to describe motions in Earth's atmosphere as viewed from the rotating planet.
     </p>
 
     <p>
         Accelerations corresponding to the fundamental forces of
         <xref ref="chapter-3" text="type-global" /><mdash />the gravitational, pressure gradient, and viscous friction forces<mdash />appear
-        identically in both <xref ref="eqn-motion-basic-subscript" text="type-global" />
+        identically on the right-hand side of both <xref ref="eqn-motion-basic-subscript" text="type-global" />
         and <xref ref="eqn-motion-vector-rotating" text="type-global" />.
         These forces are called "fundamental" because they are present in identical form in Newton's <m>2^{\text{nd}}</m> law of motion
         written for both inertial and non-inertial reference frames.
+        In other words,
+        whether the reference frame being used to describe air parcel motions is accelerating or not,
+        these forces will be present!
     </p>
 
 </section>
