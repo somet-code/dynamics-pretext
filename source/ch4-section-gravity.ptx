@@ -4,9 +4,10 @@
     <title>Gravity</title>
 
     <p>
-        Any object on Earth's surface or in its atmosphere constantly is subject to both the gravitational and centrifugal forces,
+        Any object on Earth's surface or in its atmosphere constantly is subjected to both the gravitational and centrifugal forces,
         even if the object is not moving relative to Earth.
         Since the gravitational and centrifugal forces always are present,
+        and neither depends on air parcel motion,
         their corresponding accelerations typically are summed to produce the <term>gravity acceleration</term> <m>\vec{g}</m>,
         often called <term>effective gravity</term>,
         <term>apparent gravity</term>,
@@ -20,7 +21,7 @@
             -\vec{\Omega} \times \left( \vec{\Omega} \times \vec{r} \right)
             + \vec{g^*}
             =
-            -g \hat{k}  
+            -g \, \hat{k}  
         </md>   
     </p>
 
@@ -63,8 +64,13 @@
     <p>
         Earth's surface is an oblate spheroid in response to the combined action of these forces.
         As shown in <xref ref="ch4-gravity" text="type-global" /> below,
-        the oblate spheroid has smallest radius at the poles where the gravitational force attracts Earth's surface to the planet's center unopposed.
-        It has largest radius at the Equator where the centrifugal force most strongly opposes the gravitational force.
+        the oblate spheroid has smallest radius at the poles
+        where the gravitational force attracts Earth's surface to the planet's center unopposed by the centrifugal force.
+        It has largest radius at the Equator
+        where the centrifugal force most strongly opposes the inward pull of the gravitational force.
+    </p>
+
+    <p>
         According to <xref ref="stull" text="custom">Stull (2017)</xref>,
         Earth's polar radius is about 6356.755 km,
         and its equatorial radius is about 6378.140 km:
