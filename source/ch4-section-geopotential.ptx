@@ -34,7 +34,8 @@
     </p>
 
     <p>
-        Assuming constant mass, <xref ref="eqn-work-acceleration" text="type-global" /> can be written
+        Assuming constant mass (as we usually do),
+        <xref ref="eqn-work-acceleration" text="type-global" /> can be written
     </p>
 
     <p>
@@ -73,12 +74,13 @@
     </p>
 
     <p>
-        where the dummy variable <m>\zeta</m> has been used for clarity.
+        where the dummy variable <m>\zeta</m> has been used to emphasize the presence of geometric height <m>z</m>
+        only in the upper bound.
     </p>
 
     <p>
         Since <m>\zeta</m> "disappears" in the integration,
-        <xref ref="eqn-geopotential" text="type-global" /> reveals that <m>\Phi = \Phi(z)</m>.
+        <xref ref="eqn-geopotential" text="type-global" /> reveals <m>\Phi = \Phi(z)</m>.
         It follows that
     </p>
     
@@ -99,7 +101,9 @@
     </p>
 
     <p>
-        by the <m>1^\text{st}</m> part of the fundamental theorem of calculus.
+        by the <url href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus#First_part">
+            <m>1^\text{st}</m> part of the fundamental theorem of calculus
+        </url>.
         Since <m>\vec{g} = -g \, \hat{k}</m>,
     </p>
 
@@ -110,7 +114,7 @@
     </p>
 
     <p>
-        and we can write <xref ref="eqn-motion-vector-rotating-gravity" text="type-global" /> as
+        and therefore we can write <xref ref="eqn-motion-vector-rotating-gravity" text="type-global" /> as
     </p>
 
     <p>
@@ -124,8 +128,11 @@
     </p>
 
     <p>
-        Since surfaces of constant geopotential are parallel to Earth's oblate spheroid surface,
-        it can be useful to define <term>geopotential height</term> <m>Z</m> [m] for use rather than geometric height.
+        Since surfaces of constant geopotential
+        (called <term>geopotential surfaces</term> or <term>equipotential surfaces</term>)
+        are parallel to Earth's oblate spheroid surface,
+        it can be useful to define <term>geopotential height</term> <m>Z</m> [m]
+        as an alternative measure of the vertical distance above Earth's mean sea level rather than geometric height.
     </p>
 
     <p>
@@ -138,14 +145,15 @@
         where <m>g_0 = g(0) = 9.81 \, \text{m} \, \text{s}^{-2}</m>
         is the magnitude of the gravity acceleration at Earth's mean sea level.
         You will see this value frequently,
-        as it is a reasonable approximation to true gravity for heights in the troposphere relevant to the large majority of our weather.
+        as it is a reasonable approximation to true gravity for heights in the troposphere,
+        which are relevant to the large majority of our weather.
     </p>
 
     <p>
         Since <m>\Phi = \Phi(z)</m>,
         it follows from <xref ref="eqn-geopotential-height" text="type-global" />
         that <m>Z = Z(z)</m>,
-        and so every geometric height <m>z</m> is associated with a unique value of geopotential height<m>Z</m>.
+        and so every geometric height <m>z</m> is associated with a unique value of geopotential height <m>Z</m>.
         While both <m>z</m> and <m>Z</m> are measured in meters,
         the former may be referred to as "<term>geometric meters</term>"
         and the latter may be referred to as "<term>geopotential meters</term>"
