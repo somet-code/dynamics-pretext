@@ -9,8 +9,9 @@
     Earth's angular velocity <m>\vec{\Omega}</m> is directed parallel to Earth's axis of rotation,
     pointing upward toward the North Pole.
     Every point on Earth and within Earth's atmosphere is imbued with this same angular velocity.
-    At the North Pole, <m>\vec{\Omega}</m> points in the <m>\hat{k}</m> direction,
-    while at the South pole, <m>\vec{\Omega}</m> points in the <m>-\hat{k}</m> direction.
+    Because the unit direction vectors of the local Cartesian coordinate system change orientation with location on Earth,
+    at the North Pole, <m>\vec{\Omega}</m> points in the <m>\hat{k}</m> direction,
+    while at the South Pole, <m>\vec{\Omega}</m> points in the <m>-\hat{k}</m> direction.
     At the Equator, <m>\vec{\Omega}</m> points in the <m>\hat{j}</m> direction.
     At any other location on Earth's surface or within its atmosphere,
     <m>\vec{\Omega}</m> points partially in the <m>\hat{j}</m> direction
@@ -22,7 +23,7 @@
     <caption>
         Equatorial projection
         showing the unit direction vectors of the local Cartesian coordinate system fixed to a point of interest on Earth's surface
-        at radius <m>a \cos{\phi}</m>,
+        at radius <m>a \cos{\phi}</m>
         perpendicular to Earth's axis of rotation,
         where <m>a</m> is Earth's mean radius and <m>\phi</m> is latitude.
         Vector <m>\vec{\Omega}</m> shows Earth's constant angular velocity.
@@ -56,16 +57,20 @@
   </p>
 
   <p>
-    <md xml:id="eqn-coriolis-spherical" number="yes">
-      \vec{a}_{COR}
-      =
-      -2 \, \vec{\Omega} \times \vec{u}
-      =
-      \left(
-          2 \Omega v \sin{\phi} - 2 \Omega w \cos{\phi}
-      \right) \, \hat{i}
-      - 2 \Omega u \sin{\phi} \, \hat{j}
-      + 2 \Omega u \cos{\phi} \, \hat{k}
+    <md>
+      <mrow>
+        \vec{a}_{COR}
+        \amp =
+        -2 \, \vec{\Omega} \times \vec{u}
+      </mrow>
+      <mrow xml:id="eqn-coriolis-spherical" number="yes">
+        \amp =
+        \left(
+            2 \Omega v \sin{\phi} - 2 \Omega w \cos{\phi}
+        \right) \hat{i}
+        - 2 \Omega u \sin{\phi} \, \hat{j}
+        + 2 \Omega u \cos{\phi} \, \hat{k}
+      </mrow>
     </md>
   </p>
 
@@ -75,6 +80,7 @@
     with <m>\sin{\phi}</m> tend to be much larger than the terms with <m>\cos{\phi}</m>.
     Taking advantage of the dominance of the <m>\sin{\phi}</m> terms,
     we define the <term>Coriolis parameter</term>
+    (also called the <term>Coriolis frequency</term> or <term>Coriolis coefficient</term>)
   </p>
 
   <p>
@@ -88,16 +94,20 @@
   </p>
 
   <p>
-    <md xml:id="eqn-coriolis-spherical-parameter" number="yes">
-      \vec{a}_{COR}
-      =
-      -2 \, \vec{\Omega} \times \vec{u}
-      =
-      \left(
-          fv - 2 \Omega w \cos{\phi}
-      \right) \, \hat{i}
-      - fu \, \hat{j}
-      + 2 \Omega u \cos{\phi} \, \hat{k}
+    <md>
+      <mrow>
+        \vec{a}_{COR}
+        \amp =
+        -2 \, \vec{\Omega} \times \vec{u}
+      </mrow>
+      <mrow xml:id="eqn-coriolis-spherical-parameter" number="yes">
+        \amp =
+        \left(
+            fv - 2 \Omega w \cos{\phi}
+        \right) \hat{i}
+        - fu \, \hat{j}
+        + 2 \Omega u \cos{\phi} \, \hat{k}
+      </mrow>
     </md>
   </p>
 
