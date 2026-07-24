@@ -74,6 +74,7 @@
             North polar projection showing unit direction vectors <m>\hat{i}_1</m> and <m>\hat{i}_2</m> placed on Earth's surface
             at two nearby points at the edge of the disk of radius <m>a \cos{\phi}</m>
             and separated by angle <m>\delta \lambda</m> and arc <m>\delta x</m>.
+            The disk is bounded by circle of latitude <m>\phi</m>.
         </caption>
         <image source="images/ch5-spherical-i-start.png" width="60%">
             <shortdescription>
@@ -114,7 +115,7 @@
     <figure xml:id="ch5-spherical-i-middle">
         <caption>
             Reproduction of <xref ref="ch5-spherical-i-start" text="type-global" />
-            with the tail of <m>\hat{i}_1</m> fixed to the tail of <m>\hat{i}_2</m>.
+            with the tail of <m>\hat{i}_1</m> moved to the tail of <m>\hat{i}_2</m>.
             As shown in <xref ref="ch5-spherical-i-zoom" text="type-global" />,
             <m>\hat{i}_1</m> and <m>\hat{i}_2</m> are separated by angle <m>\delta \lambda</m>
             and their vector difference is <m>\vec{\delta i}</m>.
@@ -179,7 +180,16 @@
         perpendicular to Earth's axis of rotation.
         In particular,
         <xref ref="ch5-spherical-i-end" text="type-global" /> below shows that
-        <m>\vec{\delta i}</m> points in the direction of <m>\hat{j} \, \sin{\phi} -\hat{k} \, \cos{\phi}</m>.
+        <m>\vec{\delta i}</m> points in the direction of
+    </p>
+
+    <p>
+        <md>
+            \hat{j} \, \sin{\phi} -\hat{k} \, \cos{\phi}
+        </md>
+    </p>
+
+    <p>
         Therefore,
     </p>
 
@@ -202,7 +212,7 @@
         <md xml:id="eqn-total-derivative-i-final" number="yes"> 
             \frac{D \hat{i}}{Dt}
             =
-            u \frac{\partial \hat{i}}{\partial x}
+            u \, \frac{\partial \hat{i}}{\partial x}
             =
             \frac{u}{a \cos{\phi}} (\hat{j} \, \sin{\phi} - \hat{k} \, \cos{\phi})
         </md>

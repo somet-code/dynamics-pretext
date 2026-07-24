@@ -27,14 +27,14 @@
 
     <p>
         This form of the vector equation of motion gives
-        the two causes of atmospheric motion relative to the rotating Earth<mdash />the pressure gradient and gravitational forces<mdash />and
-        the difficulty of rotation is fully accounted for through the inclusion of the Coriolis and centrifugal accelerations.
+        the two causes of atmospheric motion relative to the rotating Earth<mdash />the pressure gradient and gravitational forces<mdash />with
+        the difficulty of rotation fully accounted for through the inclusion of the Coriolis and centrifugal accelerations.
         Pretty nifty!
     </p>
 
     <p>
-        But there is one more difficulty in using this equation:
-        It makes use of the local Cartesian coordinate system.
+        But there is one more difficulty that must be addressed:
+        This equation makes use of the local Cartesian coordinate system.
         This is a difficulty because
         the local Cartesian coordinate system's orientation changes depending on where it applied on Earth's surface or within its atmosphere,
         because Earth is spherical.
@@ -62,9 +62,9 @@
                 \amp = \frac{D}{Dt} \left( u \, \hat{i} + v \, \hat{j} + w \, \hat{k} \right)
             </mrow>
             <mrow>
-                \amp = \frac{Du}{Dt} \hat{i} + u \frac{D\hat{i}}{Dt}
-                    + \frac{Dv}{Dt} \hat{j} + v \frac{D\hat{j}}{Dt}
-                    + \frac{Dw}{Dt} \hat{k} + w \frac{D\hat{k}}{Dt}
+                \amp = \frac{Du}{Dt} \, \hat{i} + u \, \frac{D\hat{i}}{Dt}
+                    + \frac{Dv}{Dt} \, \hat{j} + v \, \frac{D\hat{j}}{Dt}
+                    + \frac{Dw}{Dt} \, \hat{k} + w \, \frac{D\hat{k}}{Dt}
             </mrow>
             <mrow xml:id="eqn-total-derivative-spherical-start" number="yes">
                 \amp =
@@ -82,7 +82,7 @@
     <p>
         The three terms in the second set of parentheses in <xref ref="eqn-total-derivative-spherical-start" text="type-global" />
         must be expanded into a useful form.
-        This expansion is the focus of much of the rest of this topic.
+        This expansion is the focus of much of the rest of this chapter.
     </p>
 
     <figure xml:id="ch5-local-cartesian-coordinates-sphericity">
@@ -94,7 +94,7 @@
             when the origin of the coordinate system is placed at different locations on Earth's surface
             along a line of latitude (horizontal dashed curve)
             and a line of longitude (vertical dashed curve)
-            as well within Earth's atmosphere.
+            as well within Earth's atmosphere (dashed line).
             Note the orientations of the unit direction vectors in space change depending on the placement of the origin.
         </caption>
         <image source="images/ch5-local-cartesian-coordinates-sphericity.png" width="60%">

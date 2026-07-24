@@ -4,7 +4,7 @@
     <title>Expanding the total derivative of <m>\hat{j}</m></title>
 
     <p>
-        Again using the definition of the total derivative:
+        Again using the definition of the total derivative,
     </p>
 
     <p>
@@ -77,6 +77,7 @@
             <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m>
             placed on Earth's surface at two nearby points at the edge of the disk of radius <m>a \cos{\phi}</m>
             and separated by angle <m>\delta \lambda</m> and arc <m>\delta x</m>.
+            The disk is bounded by circle of latitude <m>\phi</m>.
         </caption>
         <image source="images/ch5-spherical-j-x-start.png" width="60%">
             <shortdescription>
@@ -89,7 +90,7 @@
 
     <p>
         Before going further,
-        note <m>\hat{j} \, \sin{\phi}</m> rather than <m>\hat{j}</m> is shown in <xref ref="ch5-spherical-j-x-start" text="type-global" />
+        note that <m>\hat{j} \, \sin{\phi}</m> rather than <m>\hat{j}</m> is shown in <xref ref="ch5-spherical-j-x-start" text="type-global" />
         because <m>\hat{j} \, \sin{\phi}</m> is the projection of <m>\hat{j}</m> onto the disk,
         as shown in <xref ref="ch5-spherical-j-x-breakdown" text="type-global" /> below.
         The remaining portion of <m>\hat{j}</m>,
@@ -149,7 +150,7 @@
     <figure xml:id="ch5-spherical-j-x-end">
         <caption>
             Reproduction of <xref ref="ch5-spherical-j-x-start" text="type-global" />
-            with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> fixed to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>.
+            with the tail of <m>\hat{j}_1 \, \sin{\phi}</m> moved to the tail of <m>\hat{j}_2 \, \sin{\phi}</m>.
             As shown in <xref ref="ch5-spherical-j-x-zoom" text="type-global" />,
             <m>\hat{j}_1 \, \sin{\phi}</m> and <m>\hat{j}_2 \, \sin{\phi}</m> are separated by angle <m>\delta \lambda</m>
             and their vector difference is <m>\vec{\delta j}</m>.
@@ -217,7 +218,7 @@
         To evaluate <m>\dfrac{\partial \hat{j}}{\partial y}</m>,
         we make a vertical slice through Earth's axis of rotation at longitude <m>\lambda</m>.
         As shown in <xref ref="ch5-spherical-j-y-start" text="type-global" /> below,
-        we then consider the difference in <m>\hat{j}</m>'s orientation
+        we then consider the change in <m>\hat{j}</m>'s orientation
         when its anchoring point is placed at two nearby points on Earth's surface with longitude <m>\lambda</m>
         and latitudes separated by angle <m>\delta \phi</m> along arc <m>\delta y</m>.
     </p>
@@ -353,8 +354,8 @@
         <md xml:id="eqn-total-derivative-j-final" number="yes">
             \frac{D \hat{j}}{Dt}
             =
-            u \frac{\partial \hat{j}}{\partial x}
-            + v \frac{\partial \hat{j}}{\partial y}
+            u \, \frac{\partial \hat{j}}{\partial x}
+            + v \, \frac{\partial \hat{j}}{\partial y}
             =
             -\frac{u \tan{\phi}}{a} \, \hat{i}
             -\frac{v}{a} \, \hat{k}

@@ -72,7 +72,7 @@
     <p>
         when applied to the spherical Earth.
         The "extra" terms inversely proportional to <m>a</m> are called <term>curvature terms</term>,
-        and the above derivations show that they result from Earth's sphericity.
+        and the above derivations show they result from Earth's sphericity.
         Specifically,
         they are caused by Earth's surface curving away underneath the straight-line trajectory of <m>\vec{u}</m>.
     </p>

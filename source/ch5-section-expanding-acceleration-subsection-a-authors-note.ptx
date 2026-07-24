@@ -13,12 +13,14 @@
         <m>a</m> would be replaced by <m>a + z</m> in the ensuing derivations
          and the resulting curvature terms in <xref ref="eqn-total-derivative-spherical-final" text="type-global" />.
          It is perfectly fine to make this replacement,
+         as using <m>a + z</m> is more accurate than using <m>a</m> for locations in the atmosphere,
          but be aware that most texts<mdash />including <xref ref="bluestein" text="custom">Bluestein (1992)</xref>,
          <xref ref="martin" text="custom">Martin (2006)</xref>,
          and <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref><mdash />use
          <m>a</m> rather than <m>a + z</m> for simplicity.
          This simplification is acceptable since the planet is much thicker than its atmosphere,
-         and it especially is acceptable since the majority of atmospheric motions of interest occur close to Earth's surface.
+         and it especially is acceptable since the majority of atmospheric motions of interest occur close to Earth's surface
+         within the troposphere.
     </p>
 
 </subsection>
