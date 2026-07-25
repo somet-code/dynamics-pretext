@@ -7,9 +7,9 @@
     Any acceleration that depends on air parcel velocity <m>\vec{u}</m>
     should be expanded to account for Earth's sphericity.
     While the gravity acceleration <m>\vec{g}</m> and pressure gradient acceleration <m>\vec{a}_{PG}</m> do not depend on <m>\vec{u}</m>,
-    the viscous friction acceleration <m>\vec{a}_r</m>does.
-    Given how involved the above derivations needed to expand <m>\dfrac{D\vec{u}}{Dt}</m> were,
-    you might imagine expanding second-order partial derivatives for <m>\vec{a}_r</m> would be even more tedious<mdash />and you would be right!
+    the viscous friction acceleration <m>\vec{a}_{fr}</m> does.
+    Given how involved the previous derivations needed to expand <m>\dfrac{D\vec{u}}{Dt}</m> were,
+    you might imagine expanding second-order partial derivatives for <m>\vec{a}_{fr}</m> would be even more tedious<mdash />and you would be right!
   </p>
 
   <p>

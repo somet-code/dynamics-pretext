@@ -106,26 +106,31 @@
   </p>
 
   <p>
+    Note these equations are considered to be in <em>Lagrangian form</em> when the components of air parcel acceleration appear explicitly,
+    and they are considered to be in <em>Eulerian form</em> when the components of acceleration and (negative) advection at a fixed location on Earth instead appear explicitly.
+  </p>
+
+  <p>
+    <xref ref="eqn-motion-x" text="type-global" /> is the <term>zonal equation of motion</term> or the <term>zonal momentum equation</term>,
+    <xref ref="eqn-motion-y" text="type-global" /> is the <term>meridional equation of motion</term> or the <term>meridional momentum equation</term>,
+    and <xref ref="eqn-motion-z" text="type-global" /> is the <term>vertical equation of motion</term> or the <term>vertical momentum equation</term>.
     <xref ref="eqn-motion-x" text="type-global" /> and <xref ref="eqn-motion-y" text="type-global" />
     collectively are referred to as the <term>horizontal equations of motion</term>
-    or the <term>horizontal momentum equations</term>,
-    and <xref ref="eqn-motion-z" text="type-global" />
-    is referred to as the <term>vertical equation of motion</term>
-    or the <term>vertical momentum equation</term>.
+    or the <term>horizontal momentum equations</term>
   </p>
 
   <p>
     All atmospheric motions on any scale are governed by <xref first="eqn-motion-x" last="eqn-motion-z" text="type-global" />.
-    And since these equations give the <em>time</em> rate of change of an air parcel's velocity,
+    And since these equations give the <em>time</em> rate of change of velocity,
     they are <term>prognostic</term> and therefore allow us to predict atmospheric motions at future times!
   </p>
 
   <p>
     But these equations are complicated,
     and as you go along in your meteorology career,
-    you will see how it is convenient to modify them in ways that help us better apply them to understanding different types of motions,
+    you will see how it is convenient to modify them in ways that help us better apply them to understanding different types of motion,
     such as by making simplifying assumptions,
-    combining them in different ways to produce more directly useful related quantities,
+    combining them in different ways to produce more directly useful quantities,
     and rewriting them using different coordinate systems that better fit certain atmospheric motions.
     We will get a taste of such modifications in future chapters,
     and you certainly will get practice with these in future courses!
