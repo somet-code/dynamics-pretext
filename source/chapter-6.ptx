@@ -21,5 +21,6 @@
   </introduction>
 
   <xi:include href="ch6-section-lagrangian.ptx" />
+  <xi:include href="ch6-section-eulerian.ptx" />
 
 </chapter>

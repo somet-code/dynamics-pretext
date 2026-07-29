@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<section xml:id="ch6-section-eulerian" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Eulerian perspective</title>
+
+  <p>
+    While conservation of mass is a reasonable assumption for a moving air parcel so long as it does not exchange mass with its environment,
+    it is not reasonable to say mass is unchanging at any given location in Earth's atmosphere that is fixed relative to the planet.
+    This is because properties of the fluid atmosphere,
+    including its mass,
+    are transported over Earth's surface and through locations in the atmosphere by wind flow,
+    and differences between inflow and outflow rates lead to changes in the atmosphere's properties as measured at a given location.
+  </p>
+
+  <p>
+    A <url href="https://en.wikipedia.org/wiki/Continuity_equation">continuity equation</url>
+    describes how a quantity of interest is transported through space by continuous fluid flow.
+    When a continuity equation does not include sources or sinks, it is a statement of <term>local conservation</term>,
+    or conservation at a fixed location.
+  </p>
+
+  <p>
+    A continuity equation has the form
+  </p>
+
+  <p>
+    <md xml:id="eqn-continuity-general" number="yes">
+      \frac{\partial \rho_f}{\partial t} + \nabla \cdot (\rho_f \, \vec{u}) = \sigma_f
+    </md>
+  </p>
+
+  <p>
+    where <m>f</m> is the quantity of interest,
+    <m>\rho_f</m> is the density of <m>f</m>
+    (i.e., the amount of <m>f</m> per unit volume),
+    <m>\vec{j} = \rho_f \, \vec{u}</m> is the <term>flux</term> of <m>f</m>
+    (the amount of <m>f</m> that passes through a surface of unit area each second),
+    and <m>\sigma_f</m> is the combination of any local sources and sinks of <m>f</m>.
+    Note the Eulerian derivative <m>\dfrac{\partial \rho_f}{\partial t}</m>
+    gives the local time rate of change of <m>\rho_f</m>,
+    i.e., the time tendency of <m>\rho_f</m> at a fixed location in space.
+  </p>
+
+  <p>
+    If mass <m>m</m> is the quantity of interest,
+    and we assume there are no local sources or sinks of atmospheric mass so <m>\sigma_f = 0</m>,
+    <xref ref="eqn-continuity-general" text="type-global" /> becomes
+  </p>
+
+  <p>
+    <md xml:id="eqn-continuity-mass" number="yes">
+      \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \, \vec{u}) = 0
+    </md>
+  </p>
+
+  <p>
+    where we drop the subscript because <m>\rho</m> [<m>\text{kg} \, \text{m}^{-3}</m>] is the usual density of the air.
+    In this case, <m>\rho \, \vec{u}</m> [<m>\text{kg} \, \text{m}^{-2} \, \text{s}^{-1}</m>]
+    is the <term>mass flux</term>.
+    <xref ref="eqn-continuity-mass" text="type-global" />
+    is the <term>mass continuity equation</term>,
+    also known as the <term>mass divergence form</term>,
+    the <term>mass flux form</term>,
+    or simply the <term>flux form</term>,
+    of mass conservation.
+    Sometimes in meteorology we simply refer to <xref ref="eqn-continuity-mass" text="type-global" />
+    as "the continuity equation".
+  </p>
+
+  <p>
+    We can gain physical understanding of <xref ref="eqn-continuity-mass" text="type-global" />
+    by considering a control volume with constant volume in the shape of a rectangular prism
+    and fixed to a location on Earth centered at <m>(x_0, y_0, z_0)</m>,
+    as shown in <xref ref="ch6-control-volume-mass" text="type-global" /> below.
+    It is important to keep in mind that this control volume is <em>not</em> the air parcel of <xref ref="ch6-section-lagrangian" text="type-global" />:
+    For one, the air parcel can move through the atmosphere, while this control volume's location is fixed relative to Earth.
+    And the air parcel does not exchange mass with its environment,
+    but this control volume can exchange mass with its environment as wind flows through its faces.
+  </p>
+
+    <figure xml:id="ch6-control-volume-mass">
+        <caption>
+            A control volume with constant volume in the shape of a rectangular prism fixed relative to Earth.
+            Its edges are parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the local Cartesian coordinate system
+            and have lengths <m>\delta x</m>, <m>\delta y</m>, and <m>\delta z</m>, respectively.
+            Its center has coordinates <m>(x_0, y_0, z_0)</m>.
+            The edges of the control volume are dashed to emphasize its difference from an air parcel,
+            in particular its open boundaries that enable it to exchange mass with its environment.
+        </caption>
+        <image source="images/ch6-control-volume-mass.png" width="60%">
+            <shortdescription>
+                Rectangular prism with center point and length, width, and height
+                and dashed edges to emphasize its open boundaries.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Mass fluxes in the positive directions through each of the control volume's faces
+        are represented by the vectors in <xref ref="ch6-control-volume-mass-flux" text="type-global" /> below.
+        The mass flux at its center, <m>\rho \vec{u}</m>, results.
+    </p>
+
+    <figure xml:id="ch6-control-volume-mass-flux">
+        <caption>
+            Vectors represent mass fluxes through the six faces of the control volume from <xref ref="ch6-control-volume-mass" text="type-global" />;
+            mass flux <m>\rho \, \vec{u}</m> results at its center.
+        </caption>
+        <image source="images/ch6-control-volume-mass-flux.png" width="60%">
+            <shortdescription>
+                Rectangular prism with dashed edges to emphasize its open boundaries
+                and vectors representing mass fluxes through its six faces.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        For simplicity,
+        consider only the mass fluxes through the left and right sides of the control volume
+        from <xref ref="ch6-control-volume-mass-flux" text="type-global" />,
+        denoted <m>j_L</m> and <m>j_R</m>, respectively,
+        as shown in <xref ref="ch6-control-volume-mass-flux-x" text="type-global" /> below.
+        Another way to think about this scenario is <m>j_L</m> is the mass inflow rate per unit area in the <m>x</m>-direction
+        and <m>j_R</m> is the mass outflow rate per unit area in the <m>x</m>-direction.
+    </p>
+
+    <figure xml:id="ch6-control-volume-mass-flux-x">
+        <caption>
+            The control volume from <xref ref="ch6-control-volume-mass-flux" text="type-global" />
+            with only the mass fluxes <m>j_L</m> and <m>j_R</m> through its left and right faces, respectively.
+            <m>j_L</m> is the mass inflow rate per unit area in the <m>x</m>-direction
+            and <m>j_R</m> is the mass outflow rate per unit area in the <m>x</m>-direction.
+            The resulting mass flux in the <m>x</m>-direction measured at the center of the control volume is <m>\rho \, u</m>.
+        </caption>
+        <image source="images/ch6-control-volume-mass-flux-x.png" width="60%">
+            <shortdescription>
+                Rectangular prism with dashed edges to emphasize its open boundaries
+                and vectors representing mass fluxes through its left and right faces.
+            </shortdescription>
+        </image>
+    </figure>
+
+</section>
