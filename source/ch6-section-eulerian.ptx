@@ -50,13 +50,13 @@
 
   <p>
     <md xml:id="eqn-continuity-mass" number="yes">
-      \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \, \vec{u}) = 0
+      \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0
     </md>
   </p>
 
   <p>
     where we drop the subscript because <m>\rho</m> [<m>\text{kg} \, \text{m}^{-3}</m>] is the usual density of the air.
-    In this case, <m>\rho \, \vec{u}</m> [<m>\text{kg} \, \text{m}^{-2} \, \text{s}^{-1}</m>]
+    In this case, <m>\rho \vec{u}</m> [<m>\text{kg} \, \text{m}^{-2} \, \text{s}^{-1}</m>]
     is the <term>mass flux</term>.
     <xref ref="eqn-continuity-mass" text="type-global" />
     is the <term>mass continuity equation</term>,
@@ -105,7 +105,7 @@
     <figure xml:id="ch6-control-volume-mass-flux">
         <caption>
             Vectors represent mass fluxes through the six faces of the control volume from <xref ref="ch6-control-volume-mass" text="type-global" />;
-            mass flux <m>\rho \, \vec{u}</m> results at its center.
+            mass flux <m>\rho \vec{u}</m> results at its center.
         </caption>
         <image source="images/ch6-control-volume-mass-flux.png" width="60%">
             <shortdescription>
@@ -131,7 +131,7 @@
             with only the mass fluxes <m>j_L</m> and <m>j_R</m> through its left and right faces, respectively.
             <m>j_L</m> is the mass inflow rate per unit area in the <m>x</m>-direction
             and <m>j_R</m> is the mass outflow rate per unit area in the <m>x</m>-direction.
-            The resulting mass flux in the <m>x</m>-direction measured at the center of the control volume is <m>\rho \, u</m>.
+            The resulting mass flux in the <m>x</m>-direction measured at the center of the control volume is <m>\rho u</m>.
         </caption>
         <image source="images/ch6-control-volume-mass-flux-x.png" width="60%">
             <shortdescription>
@@ -140,5 +140,185 @@
             </shortdescription>
         </image>
     </figure>
+
+    <p>
+      We can create a linear approximation for each of these fluxes
+      using a Taylor series expansion of mass flux from the center of the control volume to its left and right faces
+      and neglecting the higher order terms.
+    </p>
+
+    <p>
+      <md xml:id="eqn-eulerian-mass-inflow-start" number="yes">
+        j_L
+        = \rho u + \frac{\partial (\rho u)}{\partial x} \frac{(-\delta x)}{2}
+        = \rho u - \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}
+      </md>
+    </p>
+
+    <p>
+      <md xml:id="eqn-eulerian-mass-outflow-start" number="yes">
+        j_R
+        = -\left[
+          \rho u + \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}
+        \right]
+      </md>
+    </p>
+
+    <p>
+      where <m>\dfrac{\partial (\rho u)}{\partial x}</m> is evaluated at the center of the control volume, i.e.
+    </p>
+    
+    <p>
+      <md>
+        \frac{\partial (\rho u)}{\partial x} = \left. \frac{\partial (\rho u)}{\partial x} \right|_{(x_0,y_0,z_0)}
+      </md>
+    </p>
+
+    <p>
+      Note <m>j_L</m> is positive since it corresponds to mass inflow that would increase the mass of the control volume
+      and <m>j_R</m> is negative since it corresponds to mass outflow that would decrease the mass of the control volume.
+    </p>
+
+    <p>
+      Since mass flux gives the time rate at which mass flows through a unit area,
+      we can multiply each mass flux in <xref ref="eqn-eulerian-mass-inflow-start" text="type-global" />
+      and <xref ref="eqn-eulerian-mass-outflow-start" text="type-global" />
+      by the area of the left and right faces of the control volume,
+      <m>\delta y \, \delta z</m>,
+      to find the rates (in <m>\text{kg} \, \text{s}^{-1}</m>)
+      at which mass flows into the left face and out of the right face, respectively.
+    </p>
+
+    <p>
+      <md xml:id="eqn-eulerian-mass-inflow" number="yes">
+        (j_L) \, \delta y \, \delta z
+        = \left[
+          \rho u - \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}
+        \right] \delta y \, \delta z
+      </md>
+    </p>
+
+    <p>
+      <md xml:id="eqn-eulerian-mass-outflow" number="yes">
+        (j_R) \, \delta y \, \delta z
+        = -\left[
+          \rho u + \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}
+        \right] \delta y \, \delta z
+      </md>
+    </p>
+
+    <p>
+      Adding <xref ref="eqn-eulerian-mass-inflow" text="type-global" />
+      and <xref ref="eqn-eulerian-mass-outflow" text="type-global" />
+      produces the net rate at which mass flows into the control volume in the $x$-direction <m>j_x</m>:
+    </p>
+
+    <p>
+      <md>
+        <mrow>
+          \frac{\partial m_x}{\partial t}
+          \amp =
+          (j_x) \, \delta y \, \delta z
+        </mrow>
+        <mrow>
+          \amp =
+          (j_L) \, \delta y \, \delta z + (j_R) \, \delta y \, \delta z
+        </mrow>
+        <mrow xml:id="eqn-eulerian-mass-net-x" number="yes">
+          \amp =
+          -\frac{\partial (\rho u)}{\partial x} \, \delta x \, \delta y \, \delta z
+        </mrow>
+      </md>
+    </p>
+
+    <p>
+      Similarly,
+      we can write the net rates at which mass flows into the control volume in the <m>y</m>- and <m>z</m>-directions as
+    </p>
+
+    <p>
+      <md xml:id="eqn-eulerian-mass-net-y" number="yes">
+        \frac{\partial m_y}{\partial t}
+        =
+        (j_y) \, \delta x \, \delta z
+        =
+        -\frac{\partial (\rho v)}{\partial y} \, \delta x \, \delta y \, \delta z
+      </md>
+    </p>
+
+    <p>
+      and
+    </p>
+
+    <p>
+      <md xml:id="eqn-eulerian-mass-net-z" number="yes">
+        \frac{\partial m_z}{\partial t}
+        =
+        (j_z) \, \delta x \, \delta y
+        = -\frac{\partial (\rho w)}{\partial z} \, \delta x \, \delta y \, \delta z
+      </md>
+    </p>
+
+    <p>
+      respectively.
+    </p>
+
+    <p>
+      We combine the three flow rates
+      of <xref ref="eqn-eulerian-mass-net-x" text="type-global" /><ndash /><xref ref="eqn-eulerian-mass-net-z" text="type-global" />
+      into the net rate of mass inflow into the control volume,
+      which gives the time rate of change of the mass of the control volume:
+    </p>
+
+    <p>
+      <md>
+        <mrow>
+          \frac{\partial m}{\partial t}
+          \amp =
+          -\left[
+            \frac{\partial (\rho u)}{\partial x} +
+            \frac{\partial (\rho v)}{\partial y} +
+            \frac{\partial (\rho w)}{\partial z}
+          \right] \delta x \, \delta y \, \delta z
+        </mrow>
+        <mrow xml:id="eqn-eulerian-mass-net" number="yes">
+          \amp =
+          -\nabla \cdot (\rho \vec{u}) \, \delta x \, \delta y \, \delta z
+        </mrow>
+      </md>
+    </p>
+
+    <p>
+      Since <m>m = \rho V</m>
+      and the volume of the control volume <m>V = \delta x \, \delta y \, \delta z</m> is constant,
+      <xref ref="eqn-eulerian-mass-net" text="type-global" /> becomes
+    </p>
+
+    <p>
+      <md xml:id="eqn-eulerian-mass-net-density" number="yes">
+        \frac{\partial (\rho V)}{\partial t}
+        =
+        V \, \frac{\partial \rho}{\partial t}
+        =
+        \delta x \, \delta y \, \delta z \, \frac{\partial \rho}{\partial t}
+        =
+        -\nabla \cdot (\rho \vec{u}) \, \delta x \, \delta y \, \delta z
+      </md>
+    </p>
+
+    <p>
+      Dividing <xref ref="eqn-eulerian-mass-net-density" text="type-global" />
+      by <m>V = \delta x \, \delta y \, \delta z</m>
+      and rearranging produces <xref ref="eqn-continuity-mass" text="type-global" />,
+      the mass continuity equation.
+    </p>
+
+    <p>
+      Note that <xref ref="eqn-mass-conservation-lagrangian-2" text="type-global" />
+      and <xref ref="eqn-continuity-mass" text="type-global" />
+      are equivalent through the definition of the total derivative.
+      In consequence, both frequently are referred to
+      as equations of "mass continuity"<mdash />albeit different forms of mass continuity<mdash />in different texts.
+    </p>
 
 </section>
