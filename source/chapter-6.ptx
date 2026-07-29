@@ -20,4 +20,6 @@
     </p>
   </introduction>
 
+  <xi:include href="ch6-section-lagrangian.ptx" />
+
 </chapter>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch6-section-lagrangian" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Lagrangian perspective</title>
+
+  <p>
+    As introduced in <xref ref="ch1-section-calculus-subsection-total-differentiation" text="custom">Chapter 1</xref>,
+    a property <m>f</m> is <term>conserved</term> for an air parcel if
+  </p>
+
+  <p>
+    <md>
+        \dfrac{Df}{Dt} = 0
+    </md>
+    
+  </p>
+
+  <p>
+    If an air parcel does not exchange mass with its environment<mdash />a common assumption<mdash />its mass <m>m</m> is conserved and
+  </p>
+
+  <p>
+    <md xml:id="eqn-mass-conservation-simple" number="yes">
+      \frac{Dm}{Dt} = 0
+    </md>
+  </p>
+
+  <p>
+    We introduced <term>mass conservation</term> for an air parcel in <xref ref="ch3-section-newtons-laws" text="custom">Chapter 3</xref>
+    when rewriting Newton's <m>2^{\text{nd}}</m> law to make it more relevant for atmospheric motions.
+    Now we will build on it.
+  </p>
+
+  <p>
+    Since <m>m = \rho V</m>,
+    where <m>\rho</m> is the air parcel's density and <m>V</m> is its volume,
+    <xref ref="eqn-mass-conservation-simple" text="type-global" /> becomes
+  </p>
+
+  <p>
+    <md xml:id="eqn-mass-conservation-density" number="yes">
+      \frac{D(\rho V)}{Dt} = 0
+    </md>
+  </p>
+
+  <p>
+    Applying the product rule to <xref ref="eqn-mass-conservation-density" text="type-global" /> gives
+  </p>
+
+  <p>
+    <md xml:id="eqn-mass-conservation-density-expanded" number="yes">
+      V \frac{D \rho}{Dt} + \rho \frac{DV}{Dt} = 0
+    </md>
+  </p>
+
+  <p>
+    which shows that,
+    although the air parcel's mass can be unchanging with time,
+    its density and volume can change with time in proportion to each other.
+  </p>
+
+  <p>
+    Dividing <xref ref="eqn-mass-conservation-density-expanded" text="type-global" /> by <m>\rho V</m> produces
+  </p>
+
+  <p>
+    <md xml:id="eqn-mass-conservation-density-expanded-divided" number="yes">
+      \frac{1}{\rho}\frac{D \rho}{Dt} + \frac{1}{V}\frac{DV}{Dt} = 0
+    </md>
+  </p>
+
+  <p>
+    Since the air parcel we have been discussing since <xref ref="chapter-3" text="type-global" />
+    is a rectangular prism with length <m>\delta x</m>, width <m>\delta y</m> and height <m>\delta z</m>,
+    its volume is <m>V = \delta x \, \delta y \, \delta z</m>.
+    We can expand the second term in <xref ref="eqn-mass-conservation-density-expanded-divided" text="type-global" />
+    by inserting this definition and applying the product rule.
+  </p>
+
+  <p>
+    <md>
+        <mrow>
+            \frac{1}{V} \frac{DV}{Dt} \amp = \frac{1}{\delta x \, \delta y \, \delta z} \frac{D(\delta x \, \delta y \, \delta z)}{Dt}
+        </mrow>
+        <mrow>
+            \amp = \frac{1}{\delta x \, \delta y \, \delta z}
+            \left[
+                \delta y \, \delta z \frac{D \delta x}{Dt}
+                + \delta x \, \delta z \frac{D \delta y}{Dt}
+                + \delta x \, \delta y \frac{D \delta z}{Dt}
+            \right]
+        </mrow>
+        <mrow>
+            \amp = \frac{1}{\delta x} \frac{D \delta x}{Dt} + \frac{1}{\delta y} \frac{D \delta y}{Dt} + \frac{1}{\delta z} \frac{D \delta z}{Dt}
+        </mrow>
+    </md>
+  </p>
+
+  <p>
+    Since <m>\dfrac{D \delta x}{Dt} = \delta u</m>,
+    <m>\dfrac{D \delta y}{Dt} = \delta v</m>,
+    and <m>\dfrac{D \delta z}{Dt} = \delta w</m>,
+  </p>
+
+  <p>
+    <md>
+        \frac{1}{V} \frac{DV}{Dt}
+        =
+        \frac{\delta u}{\delta x}
+        + \frac{\delta v}{\delta y}
+        + \frac{\delta w}{\delta z}
+    </md>
+  </p>
+
+  <p>
+    As <m>\delta x \to 0</m>, <m>\delta y \to 0</m>, and <m>\delta z \to 0</m>
+    (which is an acceptable assumption for an infinitesimally small air parcel),
+  </p>
+
+  <p>
+    <md>
+        \frac{1}{V} \frac{DV}{Dt}
+        = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}
+        = \nabla \cdot \vec{u}
+    </md>
+  </p>
+
+  <p>
+    Therefore, <xref ref="eqn-mass-conservation-simple" text="type-global" /> becomes
+  </p>
+
+  <p>
+    <md xml:id="eqn-mass-conservation-lagrangian-1" number="yes">
+      \frac{1}{\rho} \frac{D \rho}{Dt} + \nabla \cdot \vec{u} = 0
+    </md>
+  </p>
+
+  <p>
+    which often is rearranged to produce the form
+  </p>
+
+  <p>
+    <md xml:id="eqn-mass-conservation-lagrangian-2" number="yes">
+      \frac{D \rho}{Dt} + \rho \nabla \cdot \vec{u} = 0
+    </md>
+  </p>
+
+  <p>
+    Either of <xref ref="eqn-mass-conservation-lagrangian-1" text="type-global" />
+    and <xref ref="eqn-mass-conservation-lagrangian-2" text="type-global" />
+    is called the <term>velocity divergence form of mass conservation</term>
+    since <m>\nabla \cdot \vec{u}</m> is the velocity divergence,
+    i.e., the divergence of the three-dimensional wind.
+  </p>
+
+  <p>
+    Keep in mind that mass conservation does not hold if an air parcel exchanges mass with its environment.
+    If, for example, water is added to an air parcel through evaporation
+    or removed from it as precipitation particles form within the air parcel and fall out of it,
+    <xref ref="eqn-mass-conservation-lagrangian-1" text="type-global" />
+    and <xref ref="eqn-mass-conservation-lagrangian-2" text="type-global" />
+    must be modified to include source or sink terms.
+    In cases like these, we can use <m>\sigma</m>
+    [<m>\text{kg} \, \text{m}^{-3} \, \text{s}^{-1}</m>]
+    to represent a combination of any sources and sinks within the air parcel that cause its mass (and therefore its density) to change.
+    For example, <xref ref="eqn-mass-conservation-lagrangian-2" text="type-global" /> would become:
+  </p>
+
+  <p>
+    <md xml:id="eqn-mass-conservation-lagrangian-2-source" number="yes">
+      \frac{D \rho}{Dt} + \rho \nabla \cdot \vec{u} = \sigma
+    </md>
+  </p>
+
+</section>
