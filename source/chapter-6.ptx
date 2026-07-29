@@ -1,0 +1,23 @@
+<chapter xml:id="chapter-6" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Mass Conservation</title>
+
+  <introduction>
+    <p>
+        The three scalar component equations of motion presented in <xref first="eqn-motion-x" last="eqn-motion-z" text="type-global" />
+        of Chapter 5 have five unknown dependent variables<mdash /><m>u</m>, <m>v</m>, <m>w</m>, <m>p</m>, and <m>\rho</m><mdash />that are
+        functions of the four independent variables <m>x</m>, <m>y</m>, <m>z</m>, and <m>t</m>.
+        Since there are two more unknowns than there are equations,
+        and we would like to uniquely solve for each unknown to describe the state and evolution of the atmosphere,
+        we must produce two further independent equations in the unknowns.
+    </p>
+
+    <p>
+        In Chapter 6,
+        we will consider mass to obtain an additional necessary equation.
+        We further will consider energy in Chapter 7 to close the system.
+        When we have closed the system (by having as many equations as unknowns),
+        we have fully captured the atmospheric dynamics described by the system.
+    </p>
+  </introduction>
+
+</chapter>
