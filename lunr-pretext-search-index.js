@@ -1405,6 +1405,24 @@ var ptx_lunr_docs = [
   "body": "velocity divergence form of mass conservation "
 },
 {
+  "id": "ch6-section-eulerian",
+  "level": "1",
+  "url": "ch6-section-eulerian.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "Eulerian perspective",
+  "body": " Eulerian perspective  While conservation of mass is a reasonable assumption for a moving air parcel so long as it does not exchange mass with its environment, it is not reasonable to say mass is unchanging at any given location in Earth's atmosphere that is fixed relative to the planet. This is because properties of the fluid atmosphere, including its mass, are transported over Earth's surface and through locations in the atmosphere by wind flow, and differences between inflow and outflow rates lead to changes in the atmosphere's properties as measured at a given location.  A continuity equation describes how a quantity of interest is transported through space by continuous fluid flow. When a continuity equation does not include sources or sinks, it is a statement of local conservation , or conservation at a fixed location.  "
+},
+{
+  "id": "ch6-section-eulerian-3",
+  "level": "2",
+  "url": "ch6-section-eulerian.html#ch6-section-eulerian-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "local conservation "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
