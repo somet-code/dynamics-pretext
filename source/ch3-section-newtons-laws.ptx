@@ -146,7 +146,7 @@
     <p>
         For an air parcel as described in this chapter,
         assuming its mass is constant (which is the typical assumption,
-        and which we will revisit in Chapter 6 when exploring mass conservation),
+        and which we will revisit in <xref ref="chapter-6" text="type-global" />),
         we can combine the effects of the <term>fundamental forces</term> discussed in this chapter on it to expand the left side of
         <xref ref="eqn-newtons-2nd-law-simplified-acceleration" text="type-global" /> as follows:
     </p>
