@@ -9,7 +9,7 @@
             We combine the <xref ref="ch2-section-cartesian-coordinates" text="custom">Cartesian coordinate system</xref>
             with the <xref ref="ch2-section-spherical-coordinates" text="custom">geographic coordinate system</xref>
             described previously to create the <term>local Cartesian coordinate system</term>.
-            The word "local" has the same meaning here as it does for the local derivative of <xref ref="chapter-1" text="custom">Chapter 1</xref>:
+            The word "local" has the same meaning here as it does for the local derivative of <xref ref="chapter-1" text="type-global" />:
             It refers to a fixed location on Earth.
         </p>
 
