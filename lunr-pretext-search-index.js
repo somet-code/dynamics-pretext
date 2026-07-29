@@ -583,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Pressure gradient force",
-  "body": " Pressure gradient force   Pressure [Pa] is the magnitude of a force applied perpendicular to a surface divided by the area of the surface:   ,  where is the pressure and [N] is the magnitude of the force applied perpendicular to a surface with area [ ].   Fluid pressure is caused by the combined forces of numerous discrete fluid particles colliding with a surface of any orientation placed anywhere within the fluid, and it is compressive. Atmospheric pressure is fluid pressure caused by the collisions of atmospheric particles with surfaces.  The air parcel from experiences such combined compressive forces perpendicular to each of its six faces, as represented by the force vectors in below. The pressure at its center results. Note if the air parcel was a different shape, it still would experience these forces perpendicular to its bounding surface(s), which would result in the same central pressure.   Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from , creating pressure measured at its center. Note the vectors point inward toward the center of the air parcel since atmospheric pressure is compressive.   Rectangular prism with pressure measured at center point and forces compressing all faces.    For simplicity, consider only the forces acting on the left and right sides of the air parcel from , denoted and , respectively, as shown in below.   The air parcel from with only the combined compressive forces and acting on the left and right faces of the air parcel, respectively.   Rectangular prism with pressure measured at center point and forces compressing the left and right faces.    We can create a linear approximation of each of these forces using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces and neglecting the higher order terms.        where is evaluated at the center of the air parcel, i.e., . Note is positive since it points in the -direction and is negative since it points in the -direction.  Adding and produces the net force in the -direction :     Since , we can write the net force per unit mass in the -direction by dividing by :     Similarly, we can write the net forces per unit mass in the - and -directions as     and     respectively.  Note each of these accelerations depends on a spatial derivative of pressure, or a pressure gradient , but not on a specific value of pressure.  We combine the three component accelerations of into the pressure gradient force (PGF) per unit mass , or the pressure gradient acceleration :     where is the PGF and is the pressure gradient acceleration.  A gradient vector points from lower values toward higher values of the scalar quantity of interest, in the direction of fastest increase. Visually, a gradient vector points locally perpendicular to isopleths (contours of constant value) of the scalar quantity of interest toward higher values, and its magnitude reflects the size of the gradient: Isopleths are spaced closer together where the gradient is larger.  It follows that the pressure gradient vector points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to isobars (contours of constant pressure), and its magnitude increases as the size of the pressure gradient increases, leading to a stronger PGF. But the negative sign in means the pressure gradient force vector and, likewise, the pressure gradient acceleration vector point in the opposite direction as the pressure gradient vector. These principles are visualized in below.   Three isobars of pressure with values (middle), (top), and (bottom), where the increment of pressure is positive. The pressure gradient vectors point locally perpendicular to the isobars away from the lower value of pressure denoted by the isobar and toward the higher value of pressure denoted by the isobar. The pressure gradient force vectors point locally perpendicular to the isobars away from the higher value of pressure denoted by the isobar and toward the lower value of pressure denoted by the isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.   Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right.    "
+  "body": " Pressure gradient force   Pressure [Pa] is the magnitude of a force applied perpendicular to a surface divided by the area of the surface:   ,  where is the pressure and [N] is the magnitude of the force applied perpendicular to a surface with area [ ].   Fluid pressure is caused by the combined forces of numerous discrete fluid particles colliding with a surface of any orientation placed anywhere within the fluid, and it is compressive. Atmospheric pressure is fluid pressure caused by the collisions of atmospheric particles with surfaces.  The air parcel from experiences such combined compressive forces perpendicular to each of its six faces, as represented by the force vectors in below. The pressure at its center results. Note if the air parcel was a different shape, it still would experience these forces perpendicular to its bounding surface(s), which would result in the same central pressure.   Vectors represent the combined compressive forces from discrete atmospheric particles colliding with the six faces of the air parcel from , creating pressure measured at its center. Note the vectors point inward toward the center of the air parcel since atmospheric pressure is compressive.   Rectangular prism with pressure measured at center point and forces compressing all faces.    For simplicity, consider only the forces acting on the left and right sides of the air parcel from , denoted and , respectively, as shown in below.   The air parcel from with only the combined compressive forces and acting on the left and right faces of the air parcel, respectively.   Rectangular prism with pressure measured at center point and forces compressing the left and right faces.    We can create a linear approximation of each of these forces using a Taylor series expansion of pressure from the center of the air parcel to its left and right faces and neglecting the higher order terms.        where is evaluated at the center of the air parcel, i.e.,     Note is positive since it points in the -direction and is negative since it points in the -direction.  Adding and produces the net force in the -direction :     Since , we can write the net force per unit mass in the -direction by dividing by :     Similarly, we can write the net forces per unit mass in the - and -directions as     and     respectively.  Note each of these accelerations depends on a spatial derivative of pressure, or a pressure gradient , but not on a specific value of pressure.  We combine the three component accelerations of into the pressure gradient force (PGF) per unit mass , or the pressure gradient acceleration :     where is the PGF and is the pressure gradient acceleration.  A gradient vector points from lower values toward higher values of the scalar quantity of interest, in the direction of fastest increase. Visually, a gradient vector points locally perpendicular to isopleths (contours of constant value) of the scalar quantity of interest toward higher values, and its magnitude reflects the size of the gradient: Isopleths are spaced closer together where the gradient is larger.  It follows that the pressure gradient vector points from lower to higher values of pressure, in the direction of fastest increase, locally perpendicular to isobars (contours of constant pressure), and its magnitude increases as the size of the pressure gradient increases, leading to a stronger PGF. But the negative sign in means the pressure gradient force vector and, likewise, the pressure gradient acceleration vector point in the opposite direction as the pressure gradient vector. These principles are visualized in below.   Three isobars of pressure with values (middle), (top), and (bottom), where the increment of pressure is positive. The pressure gradient vectors point locally perpendicular to the isobars away from the lower value of pressure denoted by the isobar and toward the higher value of pressure denoted by the isobar. The pressure gradient force vectors point locally perpendicular to the isobars away from the higher value of pressure denoted by the isobar and toward the lower value of pressure denoted by the isobar. Both vectors are longer (shorter) on the right (left) side of the image where the isobars are spaced closer together (spread further apart), indicating a stronger (weaker) pressure gradient.   Three isobars spaced further apart on the left and closer together on the right, with pressure gradient and pressure gradient vectors shown at the left and right. The vectors are shorter on the left and longer on the right.    "
 },
 {
   "id": "ch3-section-pressure-gradient-force-2",
@@ -622,36 +622,36 @@ var ptx_lunr_docs = [
   "body": " The air parcel from with only the combined compressive forces and acting on the left and right faces of the air parcel, respectively.   Rectangular prism with pressure measured at center point and forces compressing the left and right faces.   "
 },
 {
-  "id": "ch3-section-pressure-gradient-force-23",
+  "id": "ch3-section-pressure-gradient-force-25",
   "level": "2",
-  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-23",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-25",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "pressure gradient "
 },
 {
-  "id": "ch3-section-pressure-gradient-force-24",
+  "id": "ch3-section-pressure-gradient-force-26",
   "level": "2",
-  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-24",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-26",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "pressure gradient force (PGF) per unit mass pressure gradient acceleration "
 },
 {
-  "id": "ch3-section-pressure-gradient-force-27",
+  "id": "ch3-section-pressure-gradient-force-29",
   "level": "2",
-  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-27",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-29",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "isopleths "
 },
 {
-  "id": "ch3-section-pressure-gradient-force-28",
+  "id": "ch3-section-pressure-gradient-force-30",
   "level": "2",
-  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-28",
+  "url": "ch3-section-pressure-gradient-force.html#ch3-section-pressure-gradient-force-30",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1411,7 +1411,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Eulerian perspective",
-  "body": " Eulerian perspective  While conservation of mass is a reasonable assumption for a moving air parcel so long as it does not exchange mass with its environment, it is not reasonable to say mass is unchanging at any given location in Earth's atmosphere that is fixed relative to the planet. This is because properties of the fluid atmosphere, including its mass, are transported over Earth's surface and through locations in the atmosphere by wind flow, and differences between inflow and outflow rates lead to changes in the atmosphere's properties as measured at a given location.  A continuity equation describes how a quantity of interest is transported through space by continuous fluid flow. When a continuity equation does not include sources or sinks, it is a statement of local conservation , or conservation at a fixed location.  "
+  "body": " Eulerian perspective  While conservation of mass is a reasonable assumption for a moving air parcel so long as it does not exchange mass with its environment, it is not reasonable to say mass is unchanging at any given location in Earth's atmosphere that is fixed relative to the planet. This is because properties of the fluid atmosphere, including its mass, are transported over Earth's surface and through locations in the atmosphere by wind flow, and differences between inflow and outflow rates lead to changes in the atmosphere's properties as measured at a given location.  A continuity equation describes how a quantity of interest is transported through space by continuous fluid flow. When a continuity equation does not include sources or sinks, it is a statement of local conservation , or conservation at a fixed location.  A continuity equation has the form     where is the quantity of interest, is the density of (i.e., the amount of per unit volume), is the flux of (the amount of that passes through a surface of unit area each second), and is the combination of any local sources and sinks of . Note the Eulerian derivative gives the local time rate of change of , i.e., the time tendency of at a fixed location in space.  If mass is the quantity of interest, and we assume there are no local sources or sinks of atmospheric mass so , becomes     where we drop the subscript because [ ] is the usual density of the air. In this case, [ ] is the mass flux . is the mass continuity equation , also known as the mass divergence form , the mass flux form , or simply the flux form , of mass conservation. Sometimes in meteorology we simply refer to as \"the continuity equation\".  We can gain physical understanding of by considering a control volume with constant volume in the shape of a rectangular prism and fixed to a location on Earth centered at , as shown in below. It is important to keep in mind that this control volume is not the air parcel of : For one, the air parcel can move through the atmosphere, while this control volume's location is fixed relative to Earth. And the air parcel does not exchange mass with its environment, but this control volume can exchange mass with its environment as wind flows through its faces.   A control volume with constant volume in the shape of a rectangular prism fixed relative to Earth. Its edges are parallel to the -, -, and -axes of the local Cartesian coordinate system and have lengths , , and , respectively. Its center has coordinates . The edges of the control volume are dashed to emphasize its difference from an air parcel, in particular its open boundaries that enable it to exchange mass with its environment.   Rectangular prism with center point and length, width, and height and dashed edges to emphasize its open boundaries.    Mass fluxes in the positive directions through each of the control volume's faces are represented by the vectors in below. The mass flux at its center, , results.   Vectors represent mass fluxes through the six faces of the control volume from ; mass flux results at its center.   Rectangular prism with dashed edges to emphasize its open boundaries and vectors representing mass fluxes through its six faces.    For simplicity, consider only the mass fluxes through the left and right sides of the control volume from , denoted and , respectively, as shown in below. Another way to think about this scenario is is the mass inflow rate per unit area in the -direction and is the mass outflow rate per unit area in the -direction.   The control volume from with only the mass fluxes and through its left and right faces, respectively. is the mass inflow rate per unit area in the -direction and is the mass outflow rate per unit area in the -direction. The resulting mass flux in the -direction measured at the center of the control volume is .   Rectangular prism with dashed edges to emphasize its open boundaries and vectors representing mass fluxes through its left and right faces.    We can create a linear approximation for each of these fluxes using a Taylor series expansion of mass flux from the center of the control volume to its left and right faces and neglecting the higher order terms.        where is evaluated at the center of the control volume, i.e.     Note is positive since it corresponds to mass inflow that would increase the mass of the control volume and is negative since it corresponds to mass outflow that would decrease the mass of the control volume.  Since mass flux gives the time rate at which mass flows through a unit area, we can multiply each mass flux in and by the area of the left and right faces of the control volume, , to find the rates (in ) at which mass flows into the left face and out of the right face, respectively.        Adding and produces the net rate at which mass flows into the control volume in the $x$-direction :     Similarly, we can write the net rates at which mass flows into the control volume in the - and -directions as     and     respectively.  We combine the three flow rates of into the net rate of mass inflow into the control volume, which gives the time rate of change of the mass of the control volume:     Since and the volume of the control volume is constant, becomes     Dividing by and rearranging produces , the mass continuity equation.  Note that and are equivalent through the definition of the total derivative. In consequence, both frequently are referred to as equations of \"mass continuity\" albeit different forms of mass continuity in different texts.  "
 },
 {
   "id": "ch6-section-eulerian-3",
@@ -1421,6 +1421,51 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "local conservation "
+},
+{
+  "id": "ch6-section-eulerian-6",
+  "level": "2",
+  "url": "ch6-section-eulerian.html#ch6-section-eulerian-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "flux "
+},
+{
+  "id": "ch6-section-eulerian-9",
+  "level": "2",
+  "url": "ch6-section-eulerian.html#ch6-section-eulerian-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mass flux mass continuity equation mass divergence form mass flux form flux form "
+},
+{
+  "id": "ch6-control-volume-mass",
+  "level": "2",
+  "url": "ch6-section-eulerian.html#ch6-control-volume-mass",
+  "type": "Figure",
+  "number": "6.2.1",
+  "title": "",
+  "body": " A control volume with constant volume in the shape of a rectangular prism fixed relative to Earth. Its edges are parallel to the -, -, and -axes of the local Cartesian coordinate system and have lengths , , and , respectively. Its center has coordinates . The edges of the control volume are dashed to emphasize its difference from an air parcel, in particular its open boundaries that enable it to exchange mass with its environment.   Rectangular prism with center point and length, width, and height and dashed edges to emphasize its open boundaries.   "
+},
+{
+  "id": "ch6-control-volume-mass-flux",
+  "level": "2",
+  "url": "ch6-section-eulerian.html#ch6-control-volume-mass-flux",
+  "type": "Figure",
+  "number": "6.2.2",
+  "title": "",
+  "body": " Vectors represent mass fluxes through the six faces of the control volume from ; mass flux results at its center.   Rectangular prism with dashed edges to emphasize its open boundaries and vectors representing mass fluxes through its six faces.   "
+},
+{
+  "id": "ch6-control-volume-mass-flux-x",
+  "level": "2",
+  "url": "ch6-section-eulerian.html#ch6-control-volume-mass-flux-x",
+  "type": "Figure",
+  "number": "6.2.3",
+  "title": "",
+  "body": " The control volume from with only the mass fluxes and through its left and right faces, respectively. is the mass inflow rate per unit area in the -direction and is the mass outflow rate per unit area in the -direction. The resulting mass flux in the -direction measured at the center of the control volume is .   Rectangular prism with dashed edges to emphasize its open boundaries and vectors representing mass fluxes through its left and right faces.   "
 },
 {
   "id": "references",
