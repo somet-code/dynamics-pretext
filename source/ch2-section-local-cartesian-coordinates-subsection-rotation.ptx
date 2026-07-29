@@ -16,7 +16,8 @@
     and their corresponding <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m> unit direction vectors,
     respectively,
     change orientation in space depending on the longitude <m>\lambda</m> and latitude <m>\phi</m> of the location at which the origin of the coordinate system is placed,
-    as shown in <xref ref="ch2-local-cartesian-coordinates-sphericity" text="type-global" /> below. We will tackle this complication in Chapter 5.
+    as shown in <xref ref="ch2-local-cartesian-coordinates-sphericity" text="type-global" /> below.
+    We will tackle this complication in <xref ref="chapter-5" text="type-global" />.
   </p>
 
   <figure xml:id="ch2-local-cartesian-coordinates-sphericity">
