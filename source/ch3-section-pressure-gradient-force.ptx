@@ -98,9 +98,15 @@
 
     <p>
         where <m>\dfrac{\partial p}{\partial x}</m> is evaluated at the center of the air parcel, i.e.,
+    </p>
+
+    <p>
         <md>
             \frac{\partial p}{\partial x} = \left. \frac{\partial p}{\partial x} \right|_{(x,y,z)=(x_0,y_0,z_0)}
-        </md>.
+        </md>
+    </p>
+
+    <p>
         Note <m>F_L</m> is positive since it points in the <m>+x</m>-direction and <m>F_R</m> is negative since it points in the <m>-x</m>-direction.
     </p>
 
