@@ -24,5 +24,6 @@
   <xi:include href="ch6-section-eulerian.ptx" />
   <xi:include href="ch6-section-incompressibility.ptx" />
   <xi:include href="ch6-section-looking-ahead.ptx" />
+  <xi:include href="ch6-section-selected-references.ptx" />
 
 </chapter>
