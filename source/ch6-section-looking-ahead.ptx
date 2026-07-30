@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch6-section-looking-ahead" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Looking ahead</title>
+
+  <p>
+    Now we have five unknowns
+    (<m>u</m>, <m>v</m>, <m>w</m>, <m>p</m>, and <m>\rho</m>)
+    and four equations: the three equations of motion (<xref ref="chapter-5" text="type-global" />)
+    and the mass continuity equation (<xref ref="chapter-6" text="type-global" />).
+    In Chapter 7, we will consider energy conservation to obtain the necessary additional equation to close the system.
+  </p>
+
+</section>

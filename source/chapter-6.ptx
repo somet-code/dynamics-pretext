@@ -23,5 +23,6 @@
   <xi:include href="ch6-section-lagrangian.ptx" />
   <xi:include href="ch6-section-eulerian.ptx" />
   <xi:include href="ch6-section-incompressibility.ptx" />
+  <xi:include href="ch6-section-looking-ahead.ptx" />
 
 </chapter>
