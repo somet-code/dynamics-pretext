@@ -1468,6 +1468,78 @@ var ptx_lunr_docs = [
   "body": " The control volume from with only the mass fluxes and through its left and right faces, respectively. is the mass inflow rate per unit area in the -direction and is the mass outflow rate per unit area in the -direction. The resulting mass flux in the -direction measured at the center of the control volume is .   Rectangular prism with dashed edges to emphasize its open boundaries and vectors representing mass fluxes through its left and right faces.   "
 },
 {
+  "id": "ch6-section-incompressibility",
+  "level": "1",
+  "url": "ch6-section-incompressibility.html",
+  "type": "Section",
+  "number": "6.3",
+  "title": "Incompressibility",
+  "body": " Incompressibility  An incompressible fluid has constant density following the motion. In other words, air parcels filled with an incompressible fluid maintain constant density, as expressed by the mathematical statement of density conservation      Under the assumption of incompressibility, reduces to     which expands to     which is a statement of velocity non-divergence since (along with its scalar equivalent) is the expression for velocity divergence .  These equivalent statements of non-divergence of velocity (or velocity non-divergence ) produce a relationship between the divergence of the horizontal wind field and the vertical wind , which allows the vertical wind to be diagnosed from the horizontal wind field if the air is assumed to be incompressible.     where     is the horizontal divergence , or the divergence of the horizontal wind. Sometimes, we write     where the \"h\" subscript on emphasizes this is the horizontal divergence, or the divergence of only the horizontal wind .  While the incompressible form of the mass conservation equation given by or one of its equivalent forms is simple and useful, it can only be applied in certain cases for which holding density constant following the motion does not introduce too much error. This approximation holds well in water of any depth and in shallow atmospheric layers.  But consider that density decreases exponentially with increasing height in Earth's atmosphere: This limits the atmospheric depth over which we can apply the incompressible approximation with anything approaching accuracy. Furthermore, according to the ideal gas law, density varies directly with pressure and inversely with temperature, and so the incompressible approximation should not be applied in areas of sharp pressure or temperature gradients, such as around fronts and outflow boundaries.  Earth's atmosphere truly is (highly!) compressible , and so we should apply the incompressible approximation cautiously and only in certain specific situations, so as to not introduce too much error. When we apply it, we should keep in mind that it can qualitatively tell us something useful about atmospheric motions, but it is too simplistic to be accurate.  "
+},
+{
+  "id": "ch6-section-incompressibility-2",
+  "level": "2",
+  "url": "ch6-section-incompressibility.html#ch6-section-incompressibility-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "incompressible density conservation "
+},
+{
+  "id": "ch6-section-incompressibility-8",
+  "level": "2",
+  "url": "ch6-section-incompressibility.html#ch6-section-incompressibility-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "velocity divergence "
+},
+{
+  "id": "ch6-section-incompressibility-9",
+  "level": "2",
+  "url": "ch6-section-incompressibility.html#ch6-section-incompressibility-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "non-divergence of velocity velocity non-divergence "
+},
+{
+  "id": "ch6-section-incompressibility-13",
+  "level": "2",
+  "url": "ch6-section-incompressibility.html#ch6-section-incompressibility-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "horizontal divergence "
+},
+{
+  "id": "ch6-section-incompressibility-18",
+  "level": "2",
+  "url": "ch6-section-incompressibility.html#ch6-section-incompressibility-18",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "compressible "
+},
+{
+  "id": "ch6-section-looking-ahead",
+  "level": "1",
+  "url": "ch6-section-looking-ahead.html",
+  "type": "Section",
+  "number": "6.4",
+  "title": "Looking ahead",
+  "body": " Looking ahead  Now we have five unknowns ( , , , , and ) and four equations: the three equations of motion ( ) and the mass continuity equation ( ). In Chapter 7, we will consider energy conservation to obtain the necessary additional equation to close the system.  "
+},
+{
+  "id": "ch6-section-selected-references",
+  "level": "1",
+  "url": "ch6-section-selected-references.html",
+  "type": "Section",
+  "number": "6.5",
+  "title": "Selected references",
+  "body": " Selected references     Chapter 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 6 of Marshall and Plumb (2007)      "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",

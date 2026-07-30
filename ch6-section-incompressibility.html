@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Coordinate Systems</title>
+<title>Incompressibility</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -81,7 +81,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch1-section-selected-references.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="atmospheric-dynamics-i.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch2-section-cartesian-coordinates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch6-section-eulerian.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-6.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch6-section-looking-ahead.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -119,9 +119,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
 <li class="toc-item toc-section">
@@ -178,12 +178,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-selected-references.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Selected references</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="chapter-6.html" class="internal"><span class="codenumber">6</span> <span class="title">Mass Conservation</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-lagrangian.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Lagrangian perspective</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-eulerian.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Eulerian perspective</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-incompressibility.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Incompressibility</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch6-section-incompressibility.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Incompressibility</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-looking-ahead.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Looking ahead</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-selected-references.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Selected references</span></a></div></li>
 </ul>
@@ -219,24 +219,94 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="chapter-2">
-<h2 class="heading">
-<span class="type">Chapter</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coordinate Systems</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ch6-section-incompressibility">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Incompressibility</span>
 </h2>
-<section class="introduction" id="chapter-2-2">
-<div class="para" id="chapter-2-2-1">A <dfn class="terminology">coordinate system</dfn> enables us to uniquely identify any point’s location in space via an ordered tuple of <dfn class="terminology">coordinates</dfn>, which are signed distances from the <dfn class="terminology">origin</dfn> measured parallel to <dfn class="terminology">coordinate axes</dfn>. When combined, a point’s coordinates give its location in space relative to the origin.<div class="autopermalink" data-description="Paragraph"><a href="#chapter-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-incompressibility-2">An <dfn class="terminology">incompressible</dfn> fluid has constant density following the motion. In other words, air parcels filled with an incompressible fluid maintain constant density, as expressed by the mathematical statement of <dfn class="terminology">density conservation</dfn><div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="chapter-2-2-2">A point’s location in space relative to the origin also can be identified by a <dfn class="terminology">position vector</dfn>, which is a vector with tail fixed to the origin and tip attached to the point of interest. If the point moves through space over time, its position vector is not static: Its tip traces out the point’s path through space.<div class="autopermalink" data-description="Paragraph"><a href="#chapter-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch6-section-incompressibility-3">
+<div class="displaymath process-math" id="eqn-incompressibility">
+\begin{equation}
+\frac{D \rho}{Dt} = 0\tag{6.3.1}
+\end{equation}
 </div>
-<div class="para" id="chapter-2-2-3">You have learned in previous math courses how to use the Cartesian, cylindrical, and spherical coordinate systems to describe the locations of points in <dfn class="terminology">three-dimensional space</dfn> ("3-space"). We will review relevant concepts below and then extend them.<div class="autopermalink" data-description="Paragraph"><a href="#chapter-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><nav class="summary-links"><ul>
-<li><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></li>
-<li><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></li>
-<li><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></li>
-<li><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></li>
-</ul></nav><div class="autopermalink" data-description="Chapter 2: Coordinate Systems"><a href="#chapter-2" title="Copy heading and permalink for Chapter 2: Coordinate Systems" aria-label="Copy heading and permalink for Chapter 2: Coordinate Systems">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-4">Under the assumption of incompressibility, <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-2" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.6">(6.1.6)</a> reduces to<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch6-section-incompressibility-5">
+<div class="displaymath process-math" id="eqn-incompressibility-vector">
+\begin{equation}
+\nabla \cdot \vec{u} = 0\tag{6.3.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-6">which expands to<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch6-section-incompressibility-7">
+<div class="displaymath process-math" id="eqn-incompessibility-scalar">
+\begin{equation}
+\frac{\partial u}{\partial x}
++ \frac{\partial v}{\partial y}
++ \frac{\partial w}{\partial z}
+= 0\tag{6.3.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-8">which is a statement of velocity non-divergence since <span class="process-math">\(\nabla \cdot \vec{u}\)</span> (along with its scalar equivalent) is the expression for <dfn class="terminology">velocity divergence</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-9">These equivalent statements of <dfn class="terminology">non-divergence of velocity</dfn> (or <dfn class="terminology">velocity non-divergence</dfn>) produce a relationship between the divergence of the horizontal wind field <span class="process-math">\(\vec{v} = u \, \hat{i} + v \, \hat{j}\)</span> and the vertical wind <span class="process-math">\(w\text{,}\)</span> which allows the vertical wind to be diagnosed from the horizontal wind field if the air is assumed to be incompressible.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch6-section-incompressibility-10">
+<div class="displaymath process-math" id="eqn-incompressibility-vertical-wind">
+\begin{equation}
+\frac{\partial u}{\partial x}
++ \frac{\partial v}{\partial y}
+=
+\delta
+=
+- \frac{\partial w}{\partial z}\tag{6.3.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-11">where<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch6-section-incompressibility-12">
+<div class="displaymath process-math" id="eqn-horizontal-divergence-scalar">
+\begin{equation}
+\delta = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}\tag{6.3.5}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-13">is the <dfn class="terminology">horizontal divergence</dfn>, or the divergence of the horizontal wind. Sometimes, we write<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch6-section-incompressibility-14">
+<div class="displaymath process-math" id="eqn-horizontal-divergence-vector">
+\begin{equation}
+\delta = \nabla_h \cdot \vec{v}\tag{6.3.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-15">where the "h" subscript on <span class="process-math">\(\nabla\)</span> emphasizes this is the <em class="emphasis">horizontal</em> divergence, or the divergence of <em class="emphasis">only the horizontal wind</em>.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-16">While the incompressible form of the mass conservation equation given by <a href="ch6-section-incompressibility.html#eqn-incompessibility-scalar" class="xref" data-knowl="./knowl/xref/eqn-incompessibility-scalar.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.3">(6.3.3)</a> or one of its equivalent forms is simple and useful, it can only be applied in certain cases for which holding density constant following the motion does not introduce too much error. This approximation holds well in water of any depth and in shallow atmospheric layers.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-17">But consider that density decreases exponentially with increasing height in Earth’s atmosphere: This limits the atmospheric depth over which we can apply the incompressible approximation with anything approaching accuracy. Furthermore, according to the ideal gas law, density varies directly with pressure and inversely with temperature, and so the incompressible approximation should not be applied in areas of sharp pressure or temperature gradients, such as around fronts and outflow boundaries.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-incompressibility-18">Earth’s atmosphere truly is (highly!) <dfn class="terminology">compressible</dfn>, and so we should apply the incompressible approximation cautiously and only in certain specific situations, so as to not introduce too much error. When we apply it, we should keep in mind that it can qualitatively tell us something useful about atmospheric motions, but it is too simplistic to be accurate.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-incompressibility-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 6.3: Incompressibility"><a href="#ch6-section-incompressibility" title="Copy heading and permalink for Section 6.3: Incompressibility" aria-label="Copy heading and permalink for Section 6.3: Incompressibility">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="ch1-section-selected-references.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch2-section-cartesian-coordinates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch6-section-eulerian.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch6-section-looking-ahead.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
