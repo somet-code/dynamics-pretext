@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch6-section-incompressibility" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Incompressibility</title>
+
+    <p>
+        An <term>incompressible</term> fluid has constant density following the motion.
+        In other words,
+        air parcels filled with an incompressible fluid maintain constant density,
+        as expressed by the mathematical statement of <term>density conservation</term>
+    </p>
+
+    <p>
+        <md xml:id="eqn-incompressibility" number="yes">
+        \frac{D \rho}{Dt} = 0
+        </md>
+    </p>
+
+    <p>
+        Under the assumption of incompressibility,
+        <xref ref="eqn-mass-conservation-lagrangian-2" /> reduces to
+    </p>
+
+    <p>
+        <md xml:id="eqn-incompressibility-vector" number="yes">
+        \nabla \cdot \vec{u} = 0
+        </md>
+    </p>
+
+    <p>
+        which expands to
+    </p>
+
+    <p>
+        <md xml:id="eqn-incompessibility-scalar" number="yes">
+            \frac{\partial u}{\partial x}
+            + \frac{\partial v}{\partial y}
+            + \frac{\partial w}{\partial z}
+            = 0
+        </md>
+    </p>
+    
+    <p>
+        which is a statement of velocity non-divergence since <m>\nabla \cdot \vec{u}</m>
+        (along with its scalar equivalent)
+        is the expression for <term>velocity divergence</term>.
+    </p>
+
+    <p>
+        These equivalent statements of <term>non-divergence of velocity</term>
+        (or <term>velocity non-divergence</term>)
+        produce a relationship between the divergence of the horizontal wind field <m>\vec{v} = u \, \hat{i} + v \, \hat{j}</m>
+        and the vertical wind <m>w</m>,
+        which allows the vertical wind to be diagnosed from the horizontal wind field if the air is assumed to be incompressible.
+    </p>
+
+    <p>
+        <md xml:id="eqn-incompressibility-vertical-wind" number="yes">
+            \frac{\partial u}{\partial x}
+            + \frac{\partial v}{\partial y}
+            =
+            \delta
+            =
+            - \frac{\partial w}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        where
+    </p>
+
+    <p>
+        <md xml:id="eqn-horizontal-divergence-scalar" number="yes">
+            \delta = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}
+        </md>
+    </p>
+
+    <p>
+        is the <term>horizontal divergence</term>,
+        or the divergence of the horizontal wind.
+        Sometimes,
+        we write
+    </p>
+    
+    <p>
+        <md xml:id="eqn-horizontal-divergence-vector" number="yes">
+            \delta = \nabla_h \cdot \vec{v}
+        </md>
+    </p>
+
+    <p>
+        where the "h" subscript on <m>\nabla</m> emphasizes this is the <em>horizontal</em> divergence,
+        or the divergence of <em>only the horizontal wind</em>.
+    </p>
+
+    <p>
+        While the incompressible form of the mass conservation equation given by <xref ref="eqn-incompessibility-scalar" text="type-global" />
+        or one of its equivalent forms is simple and useful,
+        it can only be applied in certain cases for which holding density constant following the motion does not introduce too much error.
+        This approximation holds well in water of any depth and in shallow atmospheric layers.
+    </p>
+
+    <p>
+        But consider that density decreases exponentially with increasing height in Earth's atmosphere:
+        This limits the atmospheric depth over which we can apply the incompressible approximation with anything approaching accuracy.
+        Furthermore,
+        according to the ideal gas law,
+        density varies directly with pressure and inversely with temperature,
+        and so the incompressible approximation should not be applied in areas of sharp pressure or temperature gradients,
+        such as around fronts and outflow boundaries.
+    </p>
+
+    <p>
+        Earth's atmosphere truly is (highly!) <term>compressible</term>,
+        and so we should apply the incompressible approximation cautiously and only in certain specific situations,
+        so as to not introduce too much error.
+        When we apply it,
+        we should keep in mind that it can qualitatively tell us something useful about atmospheric motions,
+        but it is too simplistic to be accurate.
+    </p>
+
+</section>
