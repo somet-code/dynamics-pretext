@@ -5,17 +5,29 @@
   <title>Eulerian perspective</title>
 
   <p>
-    While conservation of mass is a reasonable assumption for a moving air parcel so long as it does not exchange mass with its environment,
+    While conservation of mass is a reasonable assumption for a moving air parcel as long as it does not exchange mass with its environment,
     it is not reasonable to say mass is unchanging at any given location in Earth's atmosphere that is fixed relative to the planet.
     This is because properties of the fluid atmosphere,
     including its mass,
     are transported over Earth's surface and through locations in the atmosphere by wind flow,
     and differences between inflow and outflow rates lead to changes in the atmosphere's properties as measured at a given location.
+    This can be expressed as
+  </p>
+
+  <p>
+    <md xml:id="eqn-continuity-basic" number="yes">
+      \frac{\partial f}{\partial t} = \text{Inflow Rate} - \text{Outflow Rate}
+    </md>
+  </p>
+
+  <p>
+    where <m>f</m> is the property of interest and the right-hand side is the difference between its inflow and outflow rates.
   </p>
 
   <p>
     A <url href="https://en.wikipedia.org/wiki/Continuity_equation">continuity equation</url>
-    describes how a quantity of interest is transported through space by continuous fluid flow.
+    is a more detailed form of <xref ref="eqn-continuity-basic" text="type-global" />
+    that describes how a property of interest is transported through space by continuous fluid flow.
     When a continuity equation does not include sources or sinks, it is a statement of <term>local conservation</term>,
     or conservation at a fixed location.
   </p>
@@ -31,7 +43,7 @@
   </p>
 
   <p>
-    where <m>f</m> is the quantity of interest,
+    where <m>f</m> is the property of interest,
     <m>\rho_f</m> is the density of <m>f</m>
     (i.e., the amount of <m>f</m> per unit volume),
     <m>\vec{j} = \rho_f \vec{u}</m> is the <term>flux</term> of <m>f</m>
@@ -43,7 +55,7 @@
   </p>
 
   <p>
-    If mass <m>m</m> is the quantity of interest,
+    If mass <m>m</m> is the property of interest,
     and we assume there are no local sources or sinks of atmospheric mass so <m>\sigma_f = 0</m>,
     <xref ref="eqn-continuity-general" text="type-global" /> becomes
   </p>
