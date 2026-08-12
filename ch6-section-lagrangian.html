@@ -53,15 +53,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.16';
+eBookConfig.runestone_version = '8.2.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.279b1f0077454c32.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.db8001875cb726c2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -244,7 +244,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-lagrangian-6">We introduced <dfn class="terminology">mass conservation</dfn> for an air parcel in <a href="ch3-section-newtons-laws.html" class="internal" title="Section 3.4: Newton’s laws of motion">Chapter 3</a> when rewriting Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law to make it more relevant for atmospheric motions. Now we will build on it.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-lagrangian-6">We introduced <dfn class="terminology">mass conservation</dfn> for an air parcel in <a href="ch3-section-newtons-laws.html" class="internal" title="Section 3.4: Newton’s laws of motion">Chapter 3</a> when simplifying Newton’s <span class="process-math">\(2^{\text{nd}}\)</span> law. Now we will build on it.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ch6-section-lagrangian-7">Since <span class="process-math">\(m = \rho V\text{,}\)</span> where <span class="process-math">\(\rho\)</span> is the air parcel’s density and <span class="process-math">\(V\)</span> is its volume, <a href="ch6-section-lagrangian.html#eqn-mass-conservation-simple" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-simple.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.1">(6.1.1)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -266,14 +266,14 @@ V \frac{D \rho}{Dt} + \rho \frac{DV}{Dt} = 0\tag{6.1.3}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-lagrangian-11">which shows that, although the air parcel’s mass can be unchanging with time, its density and volume can change with time in proportion to each other.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-lagrangian-11">which shows that, although the air parcel’s mass can be unchanging with time, its density and volume can change with time in proportion to each other to maintain constant mass.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ch6-section-lagrangian-12">Dividing <a href="ch6-section-lagrangian.html#eqn-mass-conservation-density-expanded" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-density-expanded.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.3">(6.1.3)</a> by <span class="process-math">\(\rho V\)</span> produces<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch6-section-lagrangian-13">
 <div class="displaymath process-math" id="eqn-mass-conservation-density-expanded-divided">
 \begin{equation}
-\frac{1}{\rho}\frac{D \rho}{Dt} + \frac{1}{V}\frac{DV}{Dt} = 0\tag{6.1.4}
+\frac{1}{\rho} \frac{D \rho}{Dt} + \frac{1}{V} \frac{DV}{Dt} = 0\tag{6.1.4}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -295,7 +295,7 @@ V \frac{D \rho}{Dt} + \rho \frac{DV}{Dt} = 0\tag{6.1.3}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-lagrangian-16">Since <span class="process-math">\(\dfrac{D \delta x}{Dt} = \delta u\text{,}\)</span> <span class="process-math">\(\dfrac{D \delta y}{Dt} = \delta v\text{,}\)</span> and <span class="process-math">\(\dfrac{D \delta z}{Dt} = \delta w\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-lagrangian-16">Since <span class="process-math">\(\dfrac{D \delta x}{Dt} = \delta u\text{,}\)</span> <span class="process-math">\(\dfrac{D \delta y}{Dt} = \delta v\text{,}\)</span> and <span class="process-math">\(\dfrac{D \delta z}{Dt} = \delta w\)</span> give the time rates at which the dimensions of the air parcel are lengthening or shortening,<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch6-section-lagrangian-17">
 <div class="displaymath process-math" id="ch6-section-lagrangian-17-1">
@@ -309,7 +309,7 @@ V \frac{D \rho}{Dt} + \rho \frac{DV}{Dt} = 0\tag{6.1.3}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-lagrangian-18">As <span class="process-math">\(\delta x \to 0\text{,}\)</span> <span class="process-math">\(\delta y \to 0\text{,}\)</span> and <span class="process-math">\(\delta z \to 0\)</span> (which is an acceptable assumption for an infinitesimally small air parcel),<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-lagrangian-18">As <span class="process-math">\(\delta x \to 0\text{,}\)</span> <span class="process-math">\(\delta y \to 0\text{,}\)</span> and <span class="process-math">\(\delta z \to 0\)</span> (which is an acceptable assumption for an immeasurably small air parcel),<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch6-section-lagrangian-19">
 <div class="displaymath process-math" id="ch6-section-lagrangian-19-1">
@@ -321,7 +321,7 @@ V \frac{D \rho}{Dt} + \rho \frac{DV}{Dt} = 0\tag{6.1.3}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-lagrangian-20">Therefore, <a href="ch6-section-lagrangian.html#eqn-mass-conservation-simple" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-simple.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.1">(6.1.1)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-lagrangian-20">Therefore, <a href="ch6-section-lagrangian.html#eqn-mass-conservation-density-expanded-divided" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-density-expanded-divided.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.4">(6.1.4)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch6-section-lagrangian-21">
 <div class="displaymath process-math" id="eqn-mass-conservation-lagrangian-1">
@@ -331,7 +331,7 @@ V \frac{D \rho}{Dt} + \rho \frac{DV}{Dt} = 0\tag{6.1.3}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-lagrangian-22">which often is rearranged to produce the form<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-lagrangian-22">which often is multiplied by <span class="process-math">\(\rho\)</span> to produce the form<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch6-section-lagrangian-23">
 <div class="displaymath process-math" id="eqn-mass-conservation-lagrangian-2">
@@ -341,7 +341,7 @@ V \frac{D \rho}{Dt} + \rho \frac{DV}{Dt} = 0\tag{6.1.3}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-lagrangian-24">Either of <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-1" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.5">(6.1.5)</a> and <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-2" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.6">(6.1.6)</a> is called the <dfn class="terminology">velocity divergence form of mass conservation</dfn> since <span class="process-math">\(\nabla \cdot \vec{u}\)</span> is the velocity divergence, i.e., the divergence of the three-dimensional wind.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-lagrangian-24">Either of <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-1" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.5">(6.1.5)</a> and <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-2" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.6">(6.1.6)</a> is called the <dfn class="terminology">velocity divergence form of mass conservation</dfn> since <span class="process-math">\(\nabla \cdot \vec{u}\)</span> is the <dfn class="terminology">velocity divergence</dfn>, i.e., the divergence of the three-dimensional wind. Velocity divergence quantifies the rate at which outflow of wind causes an air parcel to expand.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ch6-section-lagrangian-25">Keep in mind that mass conservation does not hold if an air parcel exchanges mass with its environment. If, for example, water is added to an air parcel through evaporation or removed from it as precipitation particles form within the air parcel and fall out of it, <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-1" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.5">(6.1.5)</a> and <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-2" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.6">(6.1.6)</a> must be modified to include source or sink terms. In cases like these, we can use <span class="process-math">\(\sigma\)</span> [<span class="process-math">\(\text{kg} \, \text{m}^{-3} \, \text{s}^{-1}\)</span>] to represent a combination of any sources and sinks within the air parcel that cause its mass (and therefore its density) to change. For example, <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-2" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.6">(6.1.6)</a> would become:<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-lagrangian-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
