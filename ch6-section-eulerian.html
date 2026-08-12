@@ -224,112 +224,122 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Eulerian perspective</span>
 </h2>
-<div class="para" id="ch6-section-eulerian-2">While conservation of mass is a reasonable assumption for a moving air parcel so long as it does not exchange mass with its environment, it is not reasonable to say mass is unchanging at any given location in Earth’s atmosphere that is fixed relative to the planet. This is because properties of the fluid atmosphere, including its mass, are transported over Earth’s surface and through locations in the atmosphere by wind flow, and differences between inflow and outflow rates lead to changes in the atmosphere’s properties as measured at a given location.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-2">While conservation of mass is a reasonable assumption for a moving air parcel as long as it does not exchange mass with its environment, it is not reasonable to say mass is unchanging at any given location in Earth’s atmosphere that is fixed relative to the planet. This is because properties of the fluid atmosphere, including its mass, are transported over Earth’s surface and through locations in the atmosphere by wind flow, and differences between inflow and outflow rates lead to changes in the atmosphere’s properties as measured at a given location. This can be expressed as<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-3">A <a class="external" href="https://en.wikipedia.org/wiki/Continuity_equation" target="_blank">continuity equation</a> describes how a quantity of interest is transported through space by continuous fluid flow. When a continuity equation does not include sources or sinks, it is a statement of <dfn class="terminology">local conservation</dfn>, or conservation at a fixed location.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ch6-section-eulerian-3">
+<div class="displaymath process-math" id="eqn-continuity-basic">
+\begin{equation}
+\frac{\partial f}{\partial t} = \text{Inflow Rate} - \text{Outflow Rate}\tag{6.2.1}
+\end{equation}
 </div>
-<div class="para" id="ch6-section-eulerian-4">A continuity equation has the form<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-5">
+<div class="para" id="ch6-section-eulerian-4">where <span class="process-math">\(f\)</span> is the property of interest and the right-hand side is the difference between its inflow and outflow rates. In other words, the right-hand side is the net flow of <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-eulerian-5">A <a class="external" href="https://en.wikipedia.org/wiki/Continuity_equation" target="_blank">continuity equation</a> is a more detailed form of <a href="ch6-section-eulerian.html#eqn-continuity-basic" class="xref" data-knowl="./knowl/xref/eqn-continuity-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.1">(6.2.1)</a> that describes how a property of interest is transported through space by continuous fluid flow. When a continuity equation does not include sources or sinks, it is a statement of <dfn class="terminology">local conservation</dfn>, or conservation at a fixed location.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch6-section-eulerian-6">A continuity equation has the form<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch6-section-eulerian-7">
 <div class="displaymath process-math" id="eqn-continuity-general">
 \begin{equation}
-\frac{\partial \rho_f}{\partial t} + \nabla \cdot (\rho_f \vec{u}) = \sigma_f\tag{6.2.1}
+\frac{\partial \rho_f}{\partial t} + \nabla \cdot (\rho_f \vec{u}) = \sigma_f\tag{6.2.2}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-6">where <span class="process-math">\(f\)</span> is the quantity of interest, <span class="process-math">\(\rho_f\)</span> is the density of <span class="process-math">\(f\)</span> (i.e., the amount of <span class="process-math">\(f\)</span> per unit volume), <span class="process-math">\(\vec{j} = \rho_f \vec{u}\)</span> is the <dfn class="terminology">flux</dfn> of <span class="process-math">\(f\)</span> (the amount of <span class="process-math">\(f\)</span> that passes through a surface of unit area each second), and <span class="process-math">\(\sigma_f\)</span> is the combination of any local sources and sinks of <span class="process-math">\(f\text{.}\)</span> Note the Eulerian derivative <span class="process-math">\(\dfrac{\partial \rho_f}{\partial t}\)</span> gives the local time rate of change of <span class="process-math">\(\rho_f\text{,}\)</span> i.e., the time tendency of <span class="process-math">\(\rho_f\)</span> at a fixed location in space.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-8">where <span class="process-math">\(f\)</span> is the property of interest, <span class="process-math">\(\rho_f\)</span> is the density of <span class="process-math">\(f\)</span> (i.e., the amount of <span class="process-math">\(f\)</span> per unit volume), <span class="process-math">\(\vec{j} = \rho_f \vec{u}\)</span> is the <dfn class="terminology">flux</dfn> of <span class="process-math">\(f\)</span> (the amount of <span class="process-math">\(f\)</span> that passes through a surface of unit area each second), <span class="process-math">\(\nabla \cdot (\rho_f \vec{u})\)</span> is the divergence of the flux of <span class="process-math">\(f\text{,}\)</span> and <span class="process-math">\(\sigma_f\)</span> is the combination of any local sources and sinks of <span class="process-math">\(f\text{.}\)</span> Note the Eulerian derivative <span class="process-math">\(\dfrac{\partial \rho_f}{\partial t}\)</span> gives the local time rate of change of <span class="process-math">\(\rho_f\text{,}\)</span> i.e., the time tendency of <span class="process-math">\(\rho_f\)</span> at a fixed location in space.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-7">If mass <span class="process-math">\(m\)</span> is the quantity of interest, and we assume there are no local sources or sinks of atmospheric mass so <span class="process-math">\(\sigma_f = 0\text{,}\)</span> <a href="ch6-section-eulerian.html#eqn-continuity-general" class="xref" data-knowl="./knowl/xref/eqn-continuity-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.1">(6.2.1)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-9">If mass <span class="process-math">\(m\)</span> is the property of interest, and we assume there are no local sources or sinks of atmospheric mass so <span class="process-math">\(\sigma_f = 0\text{,}\)</span> <a href="ch6-section-eulerian.html#eqn-continuity-general" class="xref" data-knowl="./knowl/xref/eqn-continuity-general.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-8">
+<div class="para logical" id="ch6-section-eulerian-10">
 <div class="displaymath process-math" id="eqn-continuity-mass">
 \begin{equation}
-\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0\tag{6.2.2}
+\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0\tag{6.2.3}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-9">where we drop the subscript because <span class="process-math">\(\rho\)</span> [<span class="process-math">\(\text{kg} \, \text{m}^{-3}\)</span>] is the usual density of the air. In this case, <span class="process-math">\(\vec{j} = \rho \vec{u}\)</span> [<span class="process-math">\(\text{kg} \, \text{m}^{-2} \, \text{s}^{-1}\)</span>] is the <dfn class="terminology">mass flux</dfn>. <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a> is the <dfn class="terminology">mass continuity equation</dfn>, also known as the <dfn class="terminology">mass divergence form</dfn>, the <dfn class="terminology">mass flux form</dfn>, or simply the <dfn class="terminology">flux form</dfn>, of mass conservation. Sometimes in meteorology we simply refer to <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a> as "the continuity equation".<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-11">where we drop the subscript because <span class="process-math">\(\rho\)</span> [<span class="process-math">\(\text{kg} \, \text{m}^{-3}\)</span>] is the usual density of the air. In this case, <span class="process-math">\(\vec{j} = \rho \vec{u}\)</span> [<span class="process-math">\(\text{kg} \, \text{m}^{-2} \, \text{s}^{-1}\)</span>] is the <dfn class="terminology">mass flux</dfn>. <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.3">(6.2.3)</a> is the <dfn class="terminology">mass continuity equation</dfn>, also known as the <dfn class="terminology">mass divergence form</dfn>, the <dfn class="terminology">mass flux form</dfn>, or simply the <dfn class="terminology">flux form</dfn>, of mass conservation. Sometimes in meteorology we simply refer to <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.3">(6.2.3)</a> as "the continuity equation".<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-10">We can gain physical understanding of <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a> by considering a control volume with constant volume in the shape of a rectangular prism and fixed to a location on Earth centered at <span class="process-math">\((x_0, y_0, z_0)\text{,}\)</span> as shown in <a href="ch6-section-eulerian.html#ch6-control-volume-mass" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.1">Figure 6.2.1</a> below. It is important to keep in mind that this control volume is <em class="emphasis">not</em> the air parcel of <a href="ch6-section-lagrangian.html" class="internal" title="Section 6.1: Lagrangian perspective">Section 6.1</a>: For one, the air parcel can move through the atmosphere, while this control volume’s location is fixed relative to Earth. And the air parcel does not exchange mass with its environment, but this control volume can exchange mass with its environment as wind flows through its faces.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-12">We can gain physical understanding of <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.3">(6.2.3)</a> by considering a control volume with constant volume in the shape of a rectangular prism and fixed to a location on Earth centered at <span class="process-math">\((x_0, y_0, z_0)\text{,}\)</span> as shown in <a href="ch6-section-eulerian.html#ch6-control-volume-mass" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.1">Figure 6.2.1</a> below. It is important to keep in mind that this control volume is <em class="emphasis">not</em> the air parcel of <a href="ch6-section-lagrangian.html" class="internal" title="Section 6.1: Lagrangian perspective">Section 6.1</a>: For one, the air parcel can move through the atmosphere, while this control volume’s location is fixed relative to Earth. And the air parcel does not exchange mass with its environment, but this control volume can exchange mass with its environment as wind flows through its faces.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="ch6-control-volume-mass"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch6-control-volume-mass.png" class="contained" alt="Rectangular prism with center point and length, width, and height and dashed edges to emphasize its open boundaries."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A control volume with constant volume in the shape of a rectangular prism fixed relative to Earth. Its edges are parallel to the <span class="process-math">\(x\)</span>-, <span class="process-math">\(y\)</span>-, and <span class="process-math">\(z\)</span>-axes of the local Cartesian coordinate system and have lengths <span class="process-math">\(\delta x\text{,}\)</span> <span class="process-math">\(\delta y\text{,}\)</span> and <span class="process-math">\(\delta z\text{,}\)</span> respectively. Its center has coordinates <span class="process-math">\((x_0, y_0, z_0)\text{.}\)</span> The edges of the control volume are dashed to emphasize its difference from an air parcel, in particular its open boundaries that enable it to exchange mass with its environment via wind flow.<div class="autopermalink" data-description="Figure 6.2.1"><a href="#ch6-control-volume-mass" title="Copy heading and permalink for Figure 6.2.1" aria-label="Copy heading and permalink for Figure 6.2.1">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="ch6-section-eulerian-12">Mass fluxes in the positive directions through each of the control volume’s faces are represented by the vectors in <a href="ch6-section-eulerian.html#ch6-control-volume-mass-flux" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass-flux.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.2">Figure 6.2.2</a> below. The mass flux at its center, <span class="process-math">\(\rho \vec{u}\text{,}\)</span> results.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-14">Mass fluxes in the positive directions through each of the control volume’s faces are represented by the vectors in <a href="ch6-section-eulerian.html#ch6-control-volume-mass-flux" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass-flux.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.2">Figure 6.2.2</a> below. The mass flux at its center, <span class="process-math">\(\rho \vec{u}\text{,}\)</span> results.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="ch6-control-volume-mass-flux"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch6-control-volume-mass-flux.png" class="contained" alt="Rectangular prism with dashed edges to emphasize its open boundaries and vectors representing mass fluxes through its six faces."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vectors represent mass fluxes through the six faces of the control volume from <a href="ch6-section-eulerian.html#ch6-control-volume-mass" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.1">Figure 6.2.1</a>; the resulting mass flux <span class="process-math">\(\rho \vec{u}\)</span> results at its center.<div class="autopermalink" data-description="Figure 6.2.2"><a href="#ch6-control-volume-mass-flux" title="Copy heading and permalink for Figure 6.2.2" aria-label="Copy heading and permalink for Figure 6.2.2">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="ch6-section-eulerian-14">For simplicity, consider only the mass fluxes through the left and right sides of the control volume from <a href="ch6-section-eulerian.html#ch6-control-volume-mass-flux" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass-flux.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.2">Figure 6.2.2</a>, denoted <span class="process-math">\(j_L\)</span> and <span class="process-math">\(j_R\text{,}\)</span> respectively, as shown in <a href="ch6-section-eulerian.html#ch6-control-volume-mass-flux-x" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass-flux-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.3">Figure 6.2.3</a> below. Another way to think about this scenario is <span class="process-math">\(j_L\)</span> is the mass inflow rate per unit area in the <span class="process-math">\(x\)</span>-direction and <span class="process-math">\(j_R\)</span> is the mass outflow rate per unit area in the <span class="process-math">\(x\)</span>-direction.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-16">For simplicity, consider only the mass fluxes through the left and right sides of the control volume from <a href="ch6-section-eulerian.html#ch6-control-volume-mass-flux" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass-flux.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.2">Figure 6.2.2</a>, denoted <span class="process-math">\(j_L\)</span> and <span class="process-math">\(j_R\text{,}\)</span> respectively, as shown in <a href="ch6-section-eulerian.html#ch6-control-volume-mass-flux-x" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass-flux-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.3">Figure 6.2.3</a> below. Another way to think about this scenario is <span class="process-math">\(j_L\)</span> is the mass inflow rate per unit area in the <span class="process-math">\(x\)</span>-direction and <span class="process-math">\(j_R\)</span> is the mass outflow rate per unit area in the <span class="process-math">\(x\)</span>-direction.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="ch6-control-volume-mass-flux-x"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch6-control-volume-mass-flux-x.png" class="contained" alt="Rectangular prism with dashed edges to emphasize its open boundaries and vectors representing mass fluxes through its left and right faces."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The control volume from <a href="ch6-section-eulerian.html#ch6-control-volume-mass-flux" class="xref" data-knowl="./knowl/xref/ch6-control-volume-mass-flux.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.2.2">Figure 6.2.2</a> with only the mass fluxes <span class="process-math">\(j_L\)</span> and <span class="process-math">\(j_R\)</span> through its left and right faces, respectively. <span class="process-math">\(j_L\)</span> is the mass inflow rate per unit area in the <span class="process-math">\(x\)</span>-direction and <span class="process-math">\(j_R\)</span> is the mass outflow rate per unit area in the <span class="process-math">\(x\)</span>-direction. The resulting mass flux in the <span class="process-math">\(x\)</span>-direction measured at the center of the control volume is <span class="process-math">\(\rho u\text{.}\)</span><div class="autopermalink" data-description="Figure 6.2.3"><a href="#ch6-control-volume-mass-flux-x" title="Copy heading and permalink for Figure 6.2.3" aria-label="Copy heading and permalink for Figure 6.2.3">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="ch6-section-eulerian-16">We can create a linear approximation for each of these fluxes using a Taylor series expansion of mass flux from the center of the control volume to its left and right faces and neglecting the higher order terms.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-18">We can create a linear approximation for each of these fluxes using a Taylor series expansion of mass flux from the center of the control volume to its left and right faces and neglecting the higher order terms.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-17">
+<div class="para logical" id="ch6-section-eulerian-19">
 <div class="displaymath process-math" id="eqn-eulerian-mass-inflow-start">
 \begin{equation}
 j_L
 = \rho u + \frac{\partial (\rho u)}{\partial x} \frac{(-\delta x)}{2}
-= \rho u - \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}\tag{6.2.3}
+= \rho u - \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}\tag{6.2.4}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-18">
+<div class="para logical" id="ch6-section-eulerian-20">
 <div class="displaymath process-math" id="eqn-eulerian-mass-outflow-start">
 \begin{equation}
 j_R
 = -\left[
 \rho u + \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}
-\right]\tag{6.2.4}
+\right]\tag{6.2.5}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-19">where <span class="process-math">\(\dfrac{\partial (\rho u)}{\partial x}\)</span> is evaluated at the center of the control volume, i.e.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-21">where <span class="process-math">\(\dfrac{\partial (\rho u)}{\partial x}\)</span> is evaluated at the center of the control volume, i.e.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-20">
-<div class="displaymath process-math" id="ch6-section-eulerian-20-1">
+<div class="para logical" id="ch6-section-eulerian-22">
+<div class="displaymath process-math" id="ch6-section-eulerian-22-1">
 \begin{equation*}
 \frac{\partial (\rho u)}{\partial x} = \left. \frac{\partial (\rho u)}{\partial x} \right|_{(x_0,y_0,z_0)}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-21">Note <span class="process-math">\(j_L\)</span> is positive since it corresponds to mass inflow that would increase the mass of the control volume and <span class="process-math">\(j_R\)</span> is negative since it corresponds to mass outflow that would decrease the mass of the control volume.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-23">Note <span class="process-math">\(j_L\)</span> is positive since it corresponds to mass inflow that would increase the mass of the control volume and <span class="process-math">\(j_R\)</span> is negative since it corresponds to mass outflow that would decrease the mass of the control volume.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-22">Since mass flux gives the time rate at which mass flows through a unit area, we can multiply each mass flux in <a href="ch6-section-eulerian.html#eqn-eulerian-mass-inflow-start" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-inflow-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.3">(6.2.3)</a> and <a href="ch6-section-eulerian.html#eqn-eulerian-mass-outflow-start" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-outflow-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.4">(6.2.4)</a> by the area of the left and right faces of the control volume, <span class="process-math">\(\delta y \, \delta z\text{,}\)</span> to find the rates (in <span class="process-math">\(\text{kg} \, \text{s}^{-1}\)</span>) at which mass flows into the left face and out of the right face, respectively.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-24">Since mass flux gives the time rate at which mass flows through a unit area, we can multiply each mass flux in <a href="ch6-section-eulerian.html#eqn-eulerian-mass-inflow-start" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-inflow-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.4">(6.2.4)</a> and <a href="ch6-section-eulerian.html#eqn-eulerian-mass-outflow-start" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-outflow-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.5">(6.2.5)</a> by the area of the left and right faces of the control volume, <span class="process-math">\(\delta y \, \delta z\text{,}\)</span> to find the rates (in <span class="process-math">\(\text{kg} \, \text{s}^{-1}\)</span>) at which mass flows into the left face and out of the right face, respectively.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-23">
+<div class="para logical" id="ch6-section-eulerian-25">
 <div class="displaymath process-math" id="eqn-eulerian-mass-inflow">
 \begin{equation}
 (j_L) \, \delta y \, \delta z
 = \left[
 \rho u - \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}
-\right] \delta y \, \delta z\tag{6.2.5}
+\right] \delta y \, \delta z\tag{6.2.6}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-24">
+<div class="para logical" id="ch6-section-eulerian-26">
 <div class="displaymath process-math" id="eqn-eulerian-mass-outflow">
 \begin{equation}
 (j_R) \, \delta y \, \delta z
 = -\left[
 \rho u + \frac{\partial (\rho u)}{\partial x} \frac{\delta x}{2}
-\right] \delta y \, \delta z\tag{6.2.6}
+\right] \delta y \, \delta z\tag{6.2.7}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-25">Adding <a href="ch6-section-eulerian.html#eqn-eulerian-mass-inflow" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-inflow.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.5">(6.2.5)</a> and <a href="ch6-section-eulerian.html#eqn-eulerian-mass-outflow" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-outflow.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.6">(6.2.6)</a> produces the net rate at which mass flows into the control volume in the <span class="process-math">\(x\)</span>-direction:<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-27">Adding <a href="ch6-section-eulerian.html#eqn-eulerian-mass-inflow" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-inflow.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.6">(6.2.6)</a> and <a href="ch6-section-eulerian.html#eqn-eulerian-mass-outflow" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-outflow.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.7">(6.2.7)</a> produces the net rate at which mass flows into the control volume in the <span class="process-math">\(x\)</span>-direction (i.e., the rate at which mass accumulates in the control volume due to wind flow in the <span class="process-math">\(x\)</span>-direction):<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-26">
-<div class="displaymath process-math" id="ch6-section-eulerian-26-1">
+<div class="para logical" id="ch6-section-eulerian-28">
+<div class="displaymath process-math" id="ch6-section-eulerian-28-1">
 \begin{align}
 \frac{\partial m_x}{\partial t}
 \amp =
@@ -337,46 +347,46 @@ j_R
 \amp =
 (j_L) \, \delta y \, \delta z + (j_R) \, \delta y \, \delta z\notag\\
 \amp =
--\frac{\partial (\rho u)}{\partial x} \, \delta x \, \delta y \, \delta z\tag{6.2.7}
+-\frac{\partial (\rho u)}{\partial x} \, \delta x \, \delta y \, \delta z\tag{6.2.8}
 \end{align}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-27">where <span class="process-math">\(j_x = j_L + j_R\)</span> is the mass flux in the <span class="process-math">\(x\)</span>-direction.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-29">where <span class="process-math">\(m_x\)</span> is the mass in the control volume that results from convergent wind flow in the <span class="process-math">\(x\)</span>-direction and <span class="process-math">\(j_x = j_L + j_R\)</span> is the mass flux in the <span class="process-math">\(x\)</span>-direction. In other words, <span class="process-math">\(j_x\)</span> is the difference between mass inflow and mass outflow in the <span class="process-math">\(x\)</span>-direction, or the net mass flow in the <span class="process-math">\(x\)</span>-direction.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-28">Similarly, we can write the net rates at which mass flows into the control volume in the <span class="process-math">\(y\)</span>- and <span class="process-math">\(z\)</span>-directions as<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-30">Similarly, we can write the net rates at which mass flows into the control volume in the <span class="process-math">\(y\)</span>- and <span class="process-math">\(z\)</span>-directions as<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-29">
+<div class="para logical" id="ch6-section-eulerian-31">
 <div class="displaymath process-math" id="eqn-eulerian-mass-net-y">
 \begin{equation}
 \frac{\partial m_y}{\partial t}
 =
 (j_y) \, \delta x \, \delta z
 =
--\frac{\partial (\rho v)}{\partial y} \, \delta x \, \delta y \, \delta z\tag{6.2.8}
+-\frac{\partial (\rho v)}{\partial y} \, \delta x \, \delta y \, \delta z\tag{6.2.9}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-30">and<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-32">and<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-31">
+<div class="para logical" id="ch6-section-eulerian-33">
 <div class="displaymath process-math" id="eqn-eulerian-mass-net-z">
 \begin{equation}
 \frac{\partial m_z}{\partial t}
 =
 (j_z) \, \delta x \, \delta y
-= -\frac{\partial (\rho w)}{\partial z} \, \delta x \, \delta y \, \delta z\tag{6.2.9}
+= -\frac{\partial (\rho w)}{\partial z} \, \delta x \, \delta y \, \delta z\tag{6.2.10}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-32">respectively, where <span class="process-math">\(j_y\)</span> is the mass flux in the <span class="process-math">\(y\)</span>-direction and <span class="process-math">\(j_z\)</span> is the mass flux in the <span class="process-math">\(z\)</span>-direction.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-34">respectively, where <span class="process-math">\(j_y\)</span> is the mass flux in the <span class="process-math">\(y\)</span>-direction and <span class="process-math">\(j_z\)</span> is the mass flux in the <span class="process-math">\(z\)</span>-direction.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-33">We combine the three flow rates of <a href="ch6-section-eulerian.html#ch6-section-eulerian-26-1" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.7">(6.2.7)</a>–<a href="ch6-section-eulerian.html#eqn-eulerian-mass-net-z" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.9">(6.2.9)</a> into the net rate of mass inflow into the control volume, which gives the time rate of change of the mass of the control volume:<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-35">We sum the three flow rates of <a href="ch6-section-eulerian.html#ch6-section-eulerian-28-1" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.8">(6.2.8)</a>–<a href="ch6-section-eulerian.html#eqn-eulerian-mass-net-z" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.10">(6.2.10)</a> into the net rate of mass inflow into the control volume, which gives the time rate of change of the mass of the control volume:<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-34">
-<div class="displaymath process-math" id="ch6-section-eulerian-34-1">
+<div class="para logical" id="ch6-section-eulerian-36">
+<div class="displaymath process-math" id="ch6-section-eulerian-36-1">
 \begin{align}
 \frac{\partial m}{\partial t}
 \amp =
@@ -386,14 +396,14 @@ j_R
 \frac{\partial (\rho w)}{\partial z}
 \right] \delta x \, \delta y \, \delta z\notag\\
 \amp =
--\nabla \cdot (\rho \vec{u}) \, \delta x \, \delta y \, \delta z\tag{6.2.10}
+-\nabla \cdot (\rho \vec{u}) \, \delta x \, \delta y \, \delta z\tag{6.2.11}
 \end{align}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-35">Since <span class="process-math">\(m = \rho V\)</span> and the volume of the control volume <span class="process-math">\(V = \delta x \, \delta y \, \delta z\)</span> is constant, <a href="ch6-section-eulerian.html#ch6-section-eulerian-34-1" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.10">(6.2.10)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-37">Since <span class="process-math">\(m = \rho V\)</span> and the volume of the control volume <span class="process-math">\(V = \delta x \, \delta y \, \delta z\)</span> is constant, <a href="ch6-section-eulerian.html#ch6-section-eulerian-36-1" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.11">(6.2.11)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ch6-section-eulerian-36">
+<div class="para logical" id="ch6-section-eulerian-38">
 <div class="displaymath process-math" id="eqn-eulerian-mass-net-density">
 \begin{equation}
 \frac{\partial (\rho V)}{\partial t}
@@ -402,14 +412,14 @@ V \, \frac{\partial \rho}{\partial t}
 =
 \delta x \, \delta y \, \delta z \, \frac{\partial \rho}{\partial t}
 =
--\nabla \cdot (\rho \vec{u}) \, \delta x \, \delta y \, \delta z\tag{6.2.11}
+-\nabla \cdot (\rho \vec{u}) \, \delta x \, \delta y \, \delta z\tag{6.2.12}
 \end{equation}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-37">Dividing <a href="ch6-section-eulerian.html#eqn-eulerian-mass-net-density" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net-density.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.11">(6.2.11)</a> by <span class="process-math">\(V = \delta x \, \delta y \, \delta z\)</span> and rearranging produces <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a>, the mass continuity equation.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-39">Dividing <a href="ch6-section-eulerian.html#eqn-eulerian-mass-net-density" class="xref" data-knowl="./knowl/xref/eqn-eulerian-mass-net-density.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.12">(6.2.12)</a> by <span class="process-math">\(V = \delta x \, \delta y \, \delta z\)</span> and rearranging produces <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.3">(6.2.3)</a>, the mass continuity equation.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch6-section-eulerian-38">Note that <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-2" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.6">(6.1.6)</a> and <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a> are equivalent through the definition of the total derivative. In consequence, both frequently are referred to as equations of "mass continuity"—albeit different forms of mass continuity—in different texts.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch6-section-eulerian-40">Note that <a href="ch6-section-lagrangian.html#eqn-mass-conservation-lagrangian-2" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-lagrangian-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1.6">(6.1.6)</a> and <a href="ch6-section-eulerian.html#eqn-continuity-mass" class="xref" data-knowl="./knowl/xref/eqn-continuity-mass.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.3">(6.2.3)</a> are equivalent through the definition of the total derivative. In consequence, both frequently are referred to as equations of "mass continuity"—albeit different forms of mass continuity—in different texts.<div class="autopermalink" data-description="Paragraph"><a href="#ch6-section-eulerian-40" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Section 6.2: Eulerian perspective"><a href="#ch6-section-eulerian" title="Copy heading and permalink for Section 6.2: Eulerian perspective" aria-label="Copy heading and permalink for Section 6.2: Eulerian perspective">🔗</a></div>
 </section>
