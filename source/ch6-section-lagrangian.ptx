@@ -27,7 +27,7 @@
 
   <p>
     We introduced <term>mass conservation</term> for an air parcel in <xref ref="ch3-section-newtons-laws" text="custom">Chapter 3</xref>
-    when rewriting Newton's <m>2^{\text{nd}}</m> law to make it more relevant for atmospheric motions.
+    when simplifying Newton's <m>2^{\text{nd}}</m> law.
     Now we will build on it.
   </p>
 
@@ -56,7 +56,7 @@
   <p>
     which shows that,
     although the air parcel's mass can be unchanging with time,
-    its density and volume can change with time in proportion to each other.
+    its density and volume can change with time in proportion to each other to maintain constant mass.
   </p>
 
   <p>
@@ -65,7 +65,7 @@
 
   <p>
     <md xml:id="eqn-mass-conservation-density-expanded-divided" number="yes">
-      \frac{1}{\rho}\frac{D \rho}{Dt} + \frac{1}{V}\frac{DV}{Dt} = 0
+      \frac{1}{\rho} \frac{D \rho}{Dt} + \frac{1}{V} \frac{DV}{Dt} = 0
     </md>
   </p>
 
@@ -99,7 +99,8 @@
   <p>
     Since <m>\dfrac{D \delta x}{Dt} = \delta u</m>,
     <m>\dfrac{D \delta y}{Dt} = \delta v</m>,
-    and <m>\dfrac{D \delta z}{Dt} = \delta w</m>,
+    and <m>\dfrac{D \delta z}{Dt} = \delta w</m>
+    give the time rates at which the dimensions of the air parcel are lengthening or shortening,
   </p>
 
   <p>
@@ -114,7 +115,7 @@
 
   <p>
     As <m>\delta x \to 0</m>, <m>\delta y \to 0</m>, and <m>\delta z \to 0</m>
-    (which is an acceptable assumption for an infinitesimally small air parcel),
+    (which is an acceptable assumption for an immeasurably small air parcel),
   </p>
 
   <p>
@@ -126,7 +127,7 @@
   </p>
 
   <p>
-    Therefore, <xref ref="eqn-mass-conservation-simple" text="type-global" /> becomes
+    Therefore, <xref ref="eqn-mass-conservation-density-expanded-divided" text="type-global" /> becomes
   </p>
 
   <p>
@@ -136,7 +137,7 @@
   </p>
 
   <p>
-    which often is rearranged to produce the form
+    which often is multiplied by <m>\rho</m> to produce the form
   </p>
 
   <p>
@@ -149,8 +150,9 @@
     Either of <xref ref="eqn-mass-conservation-lagrangian-1" text="type-global" />
     and <xref ref="eqn-mass-conservation-lagrangian-2" text="type-global" />
     is called the <term>velocity divergence form of mass conservation</term>
-    since <m>\nabla \cdot \vec{u}</m> is the velocity divergence,
+    since <m>\nabla \cdot \vec{u}</m> is the <term>velocity divergence</term>,
     i.e., the divergence of the three-dimensional wind.
+    Velocity divergence quantifies the rate at which outflow of wind causes an air parcel to expand.
   </p>
 
   <p>

@@ -5,8 +5,7 @@
 
     <p>
         An <term>incompressible</term> fluid has constant density following the motion.
-        In other words,
-        air parcels filled with an incompressible fluid maintain constant density,
+        It follows that air parcels filled with an incompressible fluid maintain constant density,
         as expressed by the mathematical statement of <term>density conservation</term>
     </p>
 
@@ -41,9 +40,17 @@
     </p>
     
     <p>
-        which is a statement of velocity non-divergence since <m>\nabla \cdot \vec{u}</m>
-        (along with its scalar equivalent)
-        is the expression for <term>velocity divergence</term>.
+        This is a statement of no velocity divergence since
+    </p>
+    
+    <p>
+        <md>
+            \nabla \cdot \vec{u} = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        is velocity divergence.
     </p>
 
     <p>
@@ -71,7 +78,7 @@
 
     <p>
         <md xml:id="eqn-horizontal-divergence-scalar" number="yes">
-            \delta = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}
+            \delta = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = \nabla \cdot \vec{v}
         </md>
     </p>
 
@@ -96,7 +103,7 @@
     <p>
         While the incompressible form of the mass conservation equation given by <xref ref="eqn-incompessibility-scalar" text="type-global" />
         or one of its equivalent forms is simple and useful,
-        it can only be applied in certain cases for which holding density constant following the motion does not introduce too much error.
+        it can only be applied in certain cases for which holding density constant following air parcel motion does not introduce too much error.
         This approximation holds well in water of any depth and in shallow atmospheric layers.
     </p>
 
