@@ -22,6 +22,7 @@
 
   <p>
     where <m>f</m> is the property of interest and the right-hand side is the difference between its inflow and outflow rates.
+    In other words, the right-hand side is the net flow of <m>f</m>.
   </p>
 
   <p>
@@ -48,6 +49,7 @@
     (i.e., the amount of <m>f</m> per unit volume),
     <m>\vec{j} = \rho_f \vec{u}</m> is the <term>flux</term> of <m>f</m>
     (the amount of <m>f</m> that passes through a surface of unit area each second),
+    <m>\nabla \cdot (\rho_f \vec{u})</m> is the divergence of the flux of <m>f</m>,
     and <m>\sigma_f</m> is the combination of any local sources and sinks of <m>f</m>.
     Note the Eulerian derivative <m>\dfrac{\partial \rho_f}{\partial t}</m>
     gives the local time rate of change of <m>\rho_f</m>,
@@ -222,7 +224,8 @@
     <p>
       Adding <xref ref="eqn-eulerian-mass-inflow" text="type-global" />
       and <xref ref="eqn-eulerian-mass-outflow" text="type-global" />
-      produces the net rate at which mass flows into the control volume in the <m>x</m>-direction:
+      produces the net rate at which mass flows into the control volume in the <m>x</m>-direction
+      (i.e., the rate at which mass accumulates in the control volume due to wind flow in the <m>x</m>-direction):
     </p>
 
     <p>
@@ -244,7 +247,10 @@
     </p>
 
     <p>
-      where <m>j_x = j_L + j_R</m> is the mass flux in the <m>x</m>-direction.
+      where <m>m_x</m> is the mass in the control volume that results from convergent wind flow in the <m>x</m>-direction
+      and <m>j_x = j_L + j_R</m> is the mass flux in the <m>x</m>-direction.
+      In other words, <m>j_x</m> is the difference between mass inflow and mass outflow in the <m>x</m>-direction,
+      or the net mass flow in the <m>x</m>-direction.
     </p>
 
     <p>
@@ -281,7 +287,7 @@
     </p>
 
     <p>
-      We combine the three flow rates
+      We sum the three flow rates
       of <xref ref="eqn-eulerian-mass-net-x" text="type-global" /><ndash /><xref ref="eqn-eulerian-mass-net-z" text="type-global" />
       into the net rate of mass inflow into the control volume,
       which gives the time rate of change of the mass of the control volume:
