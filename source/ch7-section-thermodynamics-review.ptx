@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch7-section-thermodynamics-review" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Review of dry thermodynamics</title>
+
+  <introduction>
+    <p>
+      I encourage you to revisit <xref ref="petty" text="custom">Petty (2008)</xref> for further discussions of concepts in this chapter,
+      as many concepts are referenced from his text.
+    </p>
+
+    <p>
+      Additionally, much of what is discussed in this chapter is review from previous meteorology courses,
+      especially courses that include or are devoted to thermodynamics.
+      We will not discuss all concepts in this chapter in class since many are review.
+      Please read through this chapter fully and,
+      if anything seems unfamiliar or fuzzy,
+      cross-reference with <xref ref="petty" text="custom">Petty (2008)</xref> and your previous course notes.
+    </p>
+  </introduction>
+
+  <xi:include href="ch7-section-thermodynamics-review-subsection-ideal-gas.ptx" />
+
+</section>

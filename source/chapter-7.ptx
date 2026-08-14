@@ -1,0 +1,5 @@
+<chapter xml:id="chapter-7" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Dry Thermodynamics, Energy Conservation, and Static Stability</title>
+
+  <xi:include href="ch7-section-thermodynamics-review.ptx" />
+</chapter>
