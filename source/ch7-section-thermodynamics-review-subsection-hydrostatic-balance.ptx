@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Hydrostatic balance</title>
+
+    <p>
+        For an air parcel in <term>hydrostatic balance</term>
+        (also called <term>hydrostatic equilibrium</term>),
+        the upward-directed vertical pressure gradient force balances the downward-directed gravity force
+        (<xref ref="ch7-hydrostatic-balance" text="type-global" />),
+        and other forces can be neglected.
+        Since the air parcel does not accelerate, the vertical equation of motion
+        (<xref ref="eqn-motion-z" text="type-global" /> of Chapter 5)
+        reduces to
+    </p>
+
+    <p>
+        <md number="yes">
+            0 = -\frac{1}{\rho}\frac{\partial p}{\partial z} - g
+        </md>
+    </p>
+
+    <p>
+        This balance typically is rearranged
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance" number="yes">
+            \frac{\partial p}{\partial z} = -\rho g
+        </md>
+    </p>
+
+    <p>
+        where the negative sign indicates pressure decreases with increasing height in the atmosphere.
+    </p>
+
+    <figure xml:id="ch7-hydrostatic-balance">
+        <caption>
+            An air parcel with edges parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes
+            of the local Cartesian coordinate system.
+            Since the air parcel is in hydrostatic balance,
+            the gravity force <m>\vec{F}_g</m> points downward in the <m>-\hat{k}</m>-direction
+            and the vertical component of the pressure gradient force <m>\vec{F}_{PG,z}</m> points upward in the <m>+\hat{k}</m>-direction
+            with equal magnitude.
+            Other forces acting on the air parcel in the vertical are neglected.
+        </caption>
+        <image source="images/ch1-volume-element.png" width="60%">
+            <shortdescription>
+                Rectangular prism with length, width, and height
+                and vectors representing the gravity force pulling downward on the prism
+                and the vertical pressure gradient force pushing upward on the prism with equal strength.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        When <xref ref="eqn-hydrostatic-balance" text="type-global" /> is separated and integrated,
+        it reveals that the pressure measured at some geometric height
+        is the weight of the atmospheric column above a unit area of measurement at that height.
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                - \partial p \amp = \rho g \, \partial z
+            </mrow>
+            <mrow>
+                - \int_{p(z)}^{p(\infty)} \partial p \amp = \int_z^{\infty} \rho g \, \partial z
+            </mrow>
+            <mrow>
+                \int_{p(\infty)}^{p(z)} \partial p \amp = \int_z^{\infty} \rho g \, \partial z
+            </mrow>
+            <mrow>
+                p(z) - p(\infty) \amp = \int_z^{\infty} \rho g \, \partial z
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Since <m>p(\infty) = 0</m>, this produces
+    </p>
+
+    <p>
+        <md number="yes">
+            p(z) = \int_z^{\infty} \rho g \, \partial z
+        </md>
+    </p>
+
+    <p>
+        where <m>\displaystyle \int_z^{\infty} \rho g \, \partial z</m>
+        is the weight of a column of air with horizontal cross-section of unit area above geometric height <m>z</m>.
+    </p>
+
+    <p>
+        Likewise,
+        separation and integration of <xref ref="eqn-hydrostatic-balance" text="type-global" />
+        between geometric heights <m>z_1</m> and <m>z_2</m>,
+        where <m>z_1 \lt z_2</m>,
+        reveals the difference in pressure measured at two geometric heights
+        is the weight of the atmospheric column with horizontal cross-section of unit area contained between those heights:
+    </p>
+
+    <p>
+        <md number="yes">
+            p(z_1) - p(z_2) = \int_{z_1}^{z_2} \rho g \, \partial z
+        </md>
+    </p>
+
+    <p>
+        where <m>p(z_1) > p(z_2)</m>.
+    </p>
+
+    <p>
+        <xref ref="eqn-hydrostatic-balance" text="type-global" /> also could be written
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance-geopotential-1" number="yes">
+            \frac{\partial p}{\partial z} = -\rho \frac{\partial \Phi}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        or even
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance-geopotential-2" number="yes">
+            \frac{\partial \Phi}{\partial p} = -\frac{1}{\rho}
+        </md>
+    </p>
+
+    <p>
+        using the definition of geopotential <m>\Phi</m> presented in <xref ref="ch4-section-geopotential" text="type-global" />.
+    </p>
+
+    <p>
+        Note
+    </p>
+
+    <p>
+        <ol>
+            <li>
+                <p>
+                    <xref ref="eqn-hydrostatic-balance" text="type-global" />
+                    is <term>diagnostic</term> (descriptive)
+                    rather than <term>prognostic</term> (predictive)
+                    like the vertical equation of motion because it has no dependence on <m>t</m>, and
+                </p>
+            </li>
+            <li>
+                <p>
+                    vertical motion <m>w</m> can no longer be solved for using <xref ref="eqn-hydrostatic-balance" text="type-global" />
+                    since <m>w</m> does not appear in the equation.
+                </p>
+            </li>
+        </ol>
+    </p>
+
+    <p>
+        Hydrostatic balance would apply perfectly to the atmosphere if the air was at rest.
+        When we apply hydrostatic balance to a fluid in motion, we call it the <term>hydrostatic approximation</term>
+        (emphasis on <em>approximation</em>)
+        since it is no longer perfectly accurate.
+        But under most atmospheric conditions,
+        excepting those with very large vertical accelerations,
+        the hydrostatic approximation is accurate.
+        Consequently,
+        we often approximate atmospheric pressure as the weight per unit area of the atmosphere above the height at which pressure is measured.
+    </p>
+
+</subsection>

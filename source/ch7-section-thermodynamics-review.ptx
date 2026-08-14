@@ -20,5 +20,6 @@
   </introduction>
 
   <xi:include href="ch7-section-thermodynamics-review-subsection-ideal-gas.ptx" />
+  <xi:include href="ch7-section-thermodynamics-review-subsection-hydrostatic-balance.ptx" />
 
 </section>
