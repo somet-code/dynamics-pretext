@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Spherical coordinate systems",
-  "body": " Spherical coordinate systems  You learned in your multivariable calculus course about a standard spherical coordinate system that builds upon the Cartesian coordinate system. In this spherical coordinate system, the location of a point in three-dimensional space is given by the coordinates .      is the radial distance : the distance measured outward to the point from the origin.     is the polar angle (also called the azimuthal angle ): the angle measured counter-clockwise from the -axis to the projection of the point into the -plane. This same polar angle is used in standard polar (two-dimensional) and cylindrical (three-dimensional) coordinate systems.     is the zenith angle : the angle measured downward from the -axis to the line connecting the origin to the point.     Earth is nearly spherical and can be approximated as a sphere in most meteorological applications. We use Earth's mean radius  as the radius of this hypothetical spherical Earth; it also defines Earth's mean sea level. Holton & Hakim give the value of as 6370 km, while other sources give slightly different values. We will use Holton & Hakim's value of in this course.  Rather than use the standard spherical coordinate system to describe the locations of volume elements on Earth's surface and within its atmosphere, we instead use a geographic coordinate system in which the location of an element is given by the coordinates .      is longitude : the angle measured horizontally counter-clockwise from the Prime Meridian to the projection of the element's center point onto Earth's surface.     is latitude : the angle measured horizontally toward the North Pole from the Equator to the projection of the element's center point onto Earth's surface.     is height : the radial distance measured from Earth's center to the element's center point.     Curves of longitude ( meridians ) and curves of latitude ( parallels ) are shown in below.   Parallels of latitude (left) and meridians of longitude (right) labeled at 30° increments relative to the Equator and Prime Meridian, respectively. Reproduced from Djexplo via Wikimedia Commons under CC0 1.0 Universal Public Domain Dedication .   Curves of latitude and longtiude on a spherical Earth at 30° increments relative to the Equator and Prime Meridian, respectively.    Meteorologists typically express as the sum of Earth's mean radius and geometric height  , which is the signed radial distance above Earth's mean sea level, as . is referred to as elevation when it describes the height of a point on Earth's surface, altitude when it describes the height of a point within Earth's atmosphere, and depth when it describes the height of a point within Earth's oceans or otherwise below its surface.  An example of a volume element within Earth's atmosphere with coordinates according to the geographic coordinate system described above is shown in below.   A volume element within Earth's atmosphere depicted as a rectangular prism in geographic 3-space with central coordinates . Earth is depicted as a sphere. Thick black labeled curves show the Equator and Prime Meridian. Dashed curves show the meridian and parallel for the volume element. Dashed lines show Earth's mean radius and angles corresponding to longitude and latitude for the volume element. The dotted line shows the volume element's geometric height . Note the volume element would be located on Earth's surface if .   The position of a volume element in Earth's atmosphere in geographic 3-space, with latitude and longitude and geometric height.    "
+  "body": " Spherical coordinate systems  You learned in your multivariable calculus course about a standard spherical coordinate system that builds upon the Cartesian coordinate system. In this spherical coordinate system, the location of a point in three-dimensional space is given by the coordinates .      is the radial distance : the distance measured outward to the point from the origin.     is the polar angle (also called the azimuthal angle ): the angle measured counter-clockwise from the -axis to the projection of the point into the -plane. This same polar angle is used in standard polar (two-dimensional) and cylindrical (three-dimensional) coordinate systems.     is the zenith angle : the angle measured downward from the -axis to the line connecting the origin to the point.     Earth is nearly spherical and can be approximated as a sphere in most meteorological applications. We use Earth's mean radius  as the radius of this hypothetical spherical Earth; it also defines Earth's mean sea level. Holton and Hakim (2013) give the value of as 6370 km, while other sources give slightly different values. We will use Holton and Hakim's value of in this course.  Rather than use the standard spherical coordinate system to describe the locations of volume elements on Earth's surface and within its atmosphere, we instead use a geographic coordinate system in which the location of an element is given by the coordinates .      is longitude : the angle measured horizontally counter-clockwise from the Prime Meridian to the projection of the element's center point onto Earth's surface.     is latitude : the angle measured horizontally toward the North Pole from the Equator to the projection of the element's center point onto Earth's surface.     is height : the radial distance measured from Earth's center to the element's center point.     Curves of longitude ( meridians ) and curves of latitude ( parallels ) are shown in below.   Parallels of latitude (left) and meridians of longitude (right) labeled at 30° increments relative to the Equator and Prime Meridian, respectively. Reproduced from Djexplo via Wikimedia Commons under CC0 1.0 Universal Public Domain Dedication .   Curves of latitude and longtiude on a spherical Earth at 30° increments relative to the Equator and Prime Meridian, respectively.    Meteorologists typically express as the sum of Earth's mean radius and geometric height  , which is the signed radial distance above Earth's mean sea level, as . is referred to as elevation when it describes the height of a point on Earth's surface, altitude when it describes the height of a point within Earth's atmosphere, and depth when it describes the height of a point within Earth's oceans or otherwise below its surface.  An example of a volume element within Earth's atmosphere with coordinates according to the geographic coordinate system described above is shown in below.   A volume element within Earth's atmosphere depicted as a rectangular prism in geographic 3-space with central coordinates . Earth is depicted as a sphere. Thick black labeled curves show the Equator and Prime Meridian. Dashed curves show the meridian and parallel for the volume element. Dashed lines show Earth's mean radius and angles corresponding to longitude and latitude for the volume element. The dotted line shows the volume element's geometric height . Note the volume element would be located on Earth's surface if .   The position of a volume element in Earth's atmosphere in geographic 3-space, with latitude and longitude and geometric height.    "
 },
 {
   "id": "ch2-section-spherical-coordinates-2",
@@ -1531,20 +1531,173 @@ var ptx_lunr_docs = [
   "body": " Selected references     Chapter 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 6 of Marshall and Plumb (2007)      "
 },
 {
+  "id": "ch7-section-thermodynamics-review",
+  "level": "1",
+  "url": "ch7-section-thermodynamics-review.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Review of dry thermodynamics",
+  "body": " Review of dry thermodynamics   I encourage you to revisit Petty (2008) for further discussions of concepts in this chapter, as many concepts are referenced from his text.  Additionally, much of what is discussed in this chapter is review from previous meteorology courses, especially courses that include or are devoted to thermodynamics. We will not discuss all concepts in this chapter in class since many are review. Please read through this chapter fully and, if anything seems unfamiliar or fuzzy, cross-reference with Petty (2008) and your previous course notes.    Ideal gases and the ideal gas law  An ideal gas consists of point particles that move randomly and continuously but do not interact with each other except possibly through perfectly elastic collisions. The condition of non-interaction means ideal gas particles are not attracted to each other and do not undergo phase change.  In theory, any gas can be described by an equation of state that relates its pressure, temperature, and volume. An ideal gas has a simplified equation of state called the ideal gas law . The ideal gas law comes from a combination of Avagadro's law , Boyle's law , and Charles's law and traditionally is written     where [Pa] is the pressure of the ideal gas, [ ] is its volume, [mol] is the amount of substance in the gas, [K] is the gas's temperature, and is the universal gas constant .  For many reasons, air is not an ideal gas. For one, its particles have spatial extent. Organized motion often is imposed on them by external forces, resulting in wind. Some of its particles are attracted to each other and to other substances; arguably most importantly for meteorologists, water molecules regularly experience strong intermolecular attractions as well as attractions to surfaces that result in phase change.  Luckily, since air molecules are small and attractions usually are weak, air can be treated as an ideal gas with great accuracy under typical atmospheric conditions. Furthermore, we easily can modify its equations to account for the presence of water vapor, such as by replacing temperature with virtual temperature.  Meteorologists typically express the ideal gas law for air as     or     where [ ] is the air density, [ ] is its specific volume, and [ ] is a gas constant appropriate to the particular gas mixture making up the air.  For perfectly dry air (air with no water vapor), we write and as     and     respectively, where is the gas constant for dry air .  Although as briefly discussed above we can modify the ideal gas law to apply to pure water vapor and humid (moist) air, for simplicity, the following discussions will refer to perfectly dry air. Please refer to your notes from other courses particularly your thermodynamics course and Petty (2008) for discussions about applying the ideal gas law to pure water vapor and humid air.    Hydrostatic balance  For an air parcel in hydrostatic balance (also called hydrostatic equilibrium ), the upward-directed vertical pressure gradient force balances the downward-directed gravity force ( ), and other forces can be neglected. Since the air parcel does not accelerate, the vertical equation of motion ( of Chapter 5) reduces to     This balance typically is rearranged     where the negative sign indicates pressure decreases with increasing height in the atmosphere.   An air parcel with edges parallel to the -, -, and -axes of the local Cartesian coordinate system. Since the air parcel is in hydrostatic balance, the gravity force points downward in the -direction and the vertical component of the pressure gradient force points upward in the -direction with equal magnitude. Other forces acting on the air parcel in the vertical are neglected.   Rectangular prism with length, width, and height and vectors representing the gravity force pulling downward on the prism and the vertical pressure gradient force pushing upward on the prism with equal strength.    When is separated and integrated, it reveals that the pressure measured at some geometric height is the weight of the atmospheric column above a unit area of measurement at that height.     Since , this produces     where is the weight of a column of air with horizontal cross-section of unit area above geometric height .  Likewise, separation and integration of between geometric heights and , where , reveals the difference in pressure measured at two geometric heights is the weight of the atmospheric column with horizontal cross-section of unit area contained between those heights:     where .   also could be written     or even     using the definition of geopotential presented in .  Note      is diagnostic (descriptive) rather than prognostic (predictive) like the vertical equation of motion because it has no dependence on , and    vertical motion can no longer be solved for using since does not appear in the equation.     Hydrostatic balance would apply perfectly to the atmosphere if the air was at rest. When we apply hydrostatic balance to a fluid in motion, we call it the hydrostatic approximation (emphasis on approximation ) since it is no longer perfectly accurate. But under most atmospheric conditions, excepting those with very large vertical accelerations, the hydrostatic approximation is accurate. Consequently, we often approximate atmospheric pressure as the weight per unit area of the atmosphere above the height at which pressure is measured.    Hypsometric equation  We return to hydrostatic balance as expressed by and rearrange the ideal gas law for perfectly dry air ( ) to replace :      is a separable equation. We separate its variables     and integrate it     where . Since pressure decreases with increasing height according to (and this is observed in nature), , and consequently, it can be helpful to reverse the order of integration on the left-hand side of , which also eliminates the negative sign.     (Note that many texts, including Martin (2006) and Holton and Hakim (2013) , write as . This is valid alternative notation.)  If , , and are held constant, we can integrate easily. While holding and constant is reasonable in the troposphere since they vary little within it, decreases with increasing height linearly on average in the troposphere and cools by over (as will be discussed in SUBSECTION below). To avoid writing as a linear function of , which would complicate integration, we typically set in , where     is the pressure-weighted column-average temperature . Serendipitously, this assumption does not introduce much error! Then, integrating produces     By defining geometric height thickness (usually simply called thickness ) as the vertical depth between two pressure levels,     where is the geometric height of pressure level and is the geometric height of pressure level , produces the hypsometric equation .     According to , the warmer the column-average temperature between pressure levels and , the greater the thickness of the column of air bounded between those levels. Physically, this is because the faster-moving molecules of warmer air travel greater distances in any given amount of time and expand the column of air. (This also lowers the density of warmer air relative to otherwise-identical colder air.)  Returning to , we can separate it somewhat differently:     In this case, the right-hand side is equivalent to . Then we can integrate     (with the order of integration reversed on the left-hand side as before) and apply the pressure-weighted column-average temperature as before to produce     where     is geopotential thickness , with as the geopotential at pressure level , as the geopotential at pressure level , and .  Dividing by and inserting the definition of geopotential height further produces     The interpretation of is essentially the same as the interpretation of : According to , the warmer the column-average temperature between pressure levels and , the greater the geopotential height thickness      of the column of air bounded between those levels. As expected, is the geopotential height of pressure level , is the geopotential height of pressure level , and .  FIG below visualizes how a warmer column of air has greater (geometric height, geopotential, and geopotential height) thickness than a colder column of air bounded by the same pressure levels.   Two columns of perfectly dry air are bounded below by pressure level and above by pressure level , where . The column on the left is colder (indicated by blue shading) while the column on the right is warmer (indicated by red shading). The colder column has smaller geometric height, geopotential, and geopotential height thickness than the warmer column, as indicated by its shorter height.   A shorter and colder blue column on the left and a taller and warmer red column on the right, each bounded by the same pressure levels.     "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-ideal-gas-2",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ideal gas "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-ideal-gas-3",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "equation of state ideal gas law "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-ideal-gas-5",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "universal gas constant "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-ideal-gas-8",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ideal gas law for air "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-ideal-gas-13",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "perfectly dry air "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-ideal-gas-17",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "gas constant for dry air "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hydrostatic-balance-2",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hydrostatic balance hydrostatic equilibrium "
+},
+{
+  "id": "ch7-hydrostatic-balance",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-hydrostatic-balance",
+  "type": "Figure",
+  "number": "7.1.1",
+  "title": "",
+  "body": " An air parcel with edges parallel to the -, -, and -axes of the local Cartesian coordinate system. Since the air parcel is in hydrostatic balance, the gravity force points downward in the -direction and the vertical component of the pressure gradient force points upward in the -direction with equal magnitude. Other forces acting on the air parcel in the vertical are neglected.   Rectangular prism with length, width, and height and vectors representing the gravity force pulling downward on the prism and the vertical pressure gradient force pushing upward on the prism with equal strength.   "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "diagnostic prognostic "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hydrostatic-balance-23",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hydrostatic approximation "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hypsometric-equation-13",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hypsometric-equation-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "pressure-weighted column-average temperature "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hypsometric-equation-15",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hypsometric-equation-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geometric height thickness thickness "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hypsometric-equation-17",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hypsometric-equation-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypsometric equation "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hypsometric-equation-28",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hypsometric-equation-28",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geopotential thickness "
+},
+{
+  "id": "ch7-section-thermodynamics-review-subsection-hypsometric-equation-31",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hypsometric-equation-31",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geopotential height thickness "
+},
+{
+  "id": "ch7-thickness",
+  "level": "2",
+  "url": "ch7-section-thermodynamics-review.html#ch7-thickness",
+  "type": "Figure",
+  "number": "7.1.2",
+  "title": "",
+  "body": " Two columns of perfectly dry air are bounded below by pressure level and above by pressure level , where . The column on the left is colder (indicated by blue shading) while the column on the right is warmer (indicated by red shading). The colder column has smaller geometric height, geopotential, and geopotential height thickness than the warmer column, as indicated by its shorter height.   A shorter and colder blue column on the left and a taller and warmer red column on the right, each bounded by the same pressure levels.   "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
   "type": "References",
-  "number": "7",
+  "number": "8",
   "title": "References",
-  "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
+  "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Petty, G. W.  A First Course in Atmospheric Thermodynamics  Sundog Publishing  2008    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
 },
 {
   "id": "holton-hakim-6",
   "level": "2",
   "url": "references.html#holton-hakim-6",
   "type": "Note",
-  "number": "7.2.1",
+  "number": "8.2.1",
   "title": "",
   "body": " 3rd edition  "
 },
@@ -1553,7 +1706,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#kundu-cohen-dowling-7",
   "type": "Note",
-  "number": "7.3.1",
+  "number": "8.3.1",
   "title": "",
   "body": " 6th edition  "
 },
@@ -1562,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#stull-5",
   "type": "Note",
-  "number": "7.6.1",
+  "number": "8.7.1",
   "title": "",
   "body": " Version 1.02b  "
 },
