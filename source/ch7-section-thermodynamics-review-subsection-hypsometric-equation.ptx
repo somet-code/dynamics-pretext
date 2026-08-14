@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-hypsometric-equation" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Hypsometric equation</title>
+
+    <p>
+        We return to hydrostatic balance as expressed by <xref ref="eqn-hydrostatic-balance" text="type-global" />
+        and rearrange the ideal gas law for perfectly dry air (<xref ref="eqn-ideal-gas-law-density-dry" text="type-global" />)
+        to replace <m>\rho = \dfrac{p}{R_dT}</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance-ideal-separable" number="yes">
+            \frac{\partial p}{\partial z}
+            =
+            -\frac{pg}{R_dT}
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-hydrostatic-balance-ideal-separable" text="type-global" />
+        is a separable equation.
+        We separate its variables
+    </p>
+
+    <p>
+        <md number="yes">
+            -\frac{R_dT}{g} \, \frac{1}{p} \, \partial p
+            =
+            \partial z
+        </md>
+    </p>
+
+    <p>
+        and integrate it
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance-ideal-separated-start" number="yes">
+            - \int_{p_1}^{p_2} \frac{R_dT}{g} \, \frac{1}{p} \, \partial p
+            =
+            \int_{z_1}^{z_2} \, \partial z
+        </md>
+    </p>
+
+    <p>
+        where <m>z_1 \lt z_2</m>.
+        Since pressure decreases with increasing height according to <xref ref="eqn-hydrostatic-balance" text="type-global" />
+        (and this is observed in nature),
+        <m>p_1 \gt p_2</m>,
+        and consequently,
+        it can be helpful to reverse the order of integration on the left-hand side of <xref ref="eqn-hydrostatic-balance-ideal-separated-start" text="type-global" />,
+        which also eliminates the negative sign.
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance-ideal-separated" number="yes">
+            \int_{p_2}^{p_1} \frac{R_dT}{g} \, \frac{1}{p} \, \partial p
+            =
+            \int_{z_1}^{z_2} \, \partial z
+        </md>
+    </p>
+
+    <p>
+        (Note that many texts,
+        including <xref ref="martin" text="custom">Martin (2006)</xref>
+        and <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>,
+        write <m>\dfrac{1}{p} \, \partial p</m>
+        as <m>\partial \ln{p}</m>.
+        This is valid alternative notation.)
+    </p>
+
+    <p>
+        If <m>R_d</m>, <m>T</m>, and <m>g</m> are held constant,
+        we can integrate <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" /> easily.
+        While holding <m>R_d</m> and <m>g</m> constant is reasonable in the troposphere since they vary little within it,
+        <m>T</m> decreases with increasing height linearly on average in the troposphere and cools by over <m>60 \, \text{K}</m>
+        (as will be discussed in SUBSECTION below).
+        To avoid writing <m>T</m> as a linear function of <m>z</m>,
+        which would complicate integration,
+        we typically set <m>T = \bar{T}</m> in <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" />,
+        where
+    </p>
+
+    <p>
+        <md number="yes">
+            \bar{T} = \frac{1}{z_2 - z_1} \int_{z_1}^{z_2} T \, \partial z    \bar{T}
+            =
+            \frac
+            {\int_{p_2}^{p_1} T \, \frac{1}{p} \, \partial p}
+            {\int_{p_2}^{p_1} \frac{1}{p} \, \partial p}
+        </md>
+    </p>
+
+    <p>
+        is the <term>pressure-weighted column-average temperature</term>.
+        Serendipitously,
+        this assumption does not introduce much error!
+        Then,
+        integrating <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" /> produces
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-equation-ideal-separated-solved" number="yes">
+            \frac{R_d \bar{T}}{g} \ln{\left( \frac{p_1}{p_2} \right)}
+            =
+            z_2 - z_1
+        </md>
+    </p>
+
+    <p>
+        By defining <term>geometric height thickness</term>
+        (usually simply called <term>thickness</term>)
+        as the vertical depth between two pressure levels,
+    </p>
+
+    <p>
+        <md number="yes">
+            \Delta z = z_2 - z_1
+        </md>
+    </p>
+
+    <p>
+        where <m>z_1</m> is the geometric height of pressure level <m>p_1</m>
+        and <m>z_2</m> is the geometric height of pressure level <m>p_2</m>,
+        <xref ref="eqn-hydrostatic-equation-ideal-separated-solved" text="type-global" />
+        produces the <term>hypsometric equation</term>.
+    </p>
+
+    <p>
+        <md xml:id="eqn-hypsometric-equation" number="yes">
+            \Delta z
+            =
+            \frac{R_d \bar{T}}{g} \ln{\left( \frac{p_1}{p_2} \right)}
+        </md>
+    </p>
+
+    <p>
+        According to <xref ref="eqn-hypsometric-equation" text="type-global" />,
+        the warmer the column-average temperature <m>\bar{T}</m>
+        between pressure levels <m>p_1</m> and <m>p_2</m>,
+        the greater the thickness <m>\Delta z</m> of the column of air bounded between those levels.
+        Physically,
+        this is because the faster-moving molecules of warmer air travel greater distances in any given amount of time and expand the column of air. (This also lowers the density of warmer air relative to otherwise-identical colder air.)
+    </p>
+
+    <p>
+        Returning to <xref ref="eqn-hydrostatic-balance-ideal-separable" text="type-global" />,
+        we can separate it somewhat differently:
+    </p>
+
+    <p>
+        <md number="yes">
+            -R_dT \, \frac{1}{p} \, \partial p
+            =
+            g \, \partial z
+        </md>
+    </p>
+
+    <p>
+        In this case,
+        the right-hand side is equivalent to <m>\partial \Phi</m>.
+        Then we can integrate
+    </p>
+
+    <p>
+        <md number="yes">
+            \int_{p_2}^{p_1} R_dT \, \frac{1}{p} \, \partial p
+            =
+            \int_{\Phi_1}^{\Phi_2} \partial \Phi
+        </md>
+    </p>
+
+    <p>
+        (with the order of integration reversed on the left-hand side as before)
+        and apply the pressure-weighted column-average temperature as before to produce
+    </p>
+
+    <p>
+        <md xml:id="eqn-hypsometric-equation-geopotential" number="yes">
+            \Delta \Phi
+            =
+            R_d \bar{T} \ln{\left( \frac{p_1}{p_2} \right)}
+        </md>
+    </p>
+
+    <p>
+        where
+    </p>
+    
+    <p>
+        <md>
+            \Delta \Phi = \Phi_2 - \Phi_1
+        </md>
+    </p>
+
+    <p>
+        is <term>geopotential thickness</term>,
+        with <m>\Phi_1</m> as the geopotential at pressure level <m>p_1</m>,
+        <m>\Phi_2</m> as the geopotential at pressure level <m>p_2</m>,
+        and <m>\Phi_1 \lt \Phi_2</m>.
+    </p>
+
+    <p>
+        Dividing <xref ref="eqn-hypsometric-equation-geopotential" text="type-global" /> by <m>g_0</m>
+        and inserting the definition of geopotential height <m>Z = \dfrac{\Phi}{g_0}</m> further produces
+    </p>
+
+    <p>
+        <md xml:id="eqn-hypsometric-equation-geopotential-height" number="yes">
+            \Delta Z
+            =
+            \frac{R_d \bar{T}}{g_0} \ln{\left( \frac{p_1}{p_2} \right)}
+        </md>
+    </p>
+
+    <p>
+        The interpretation of <xref ref="eqn-hypsometric-equation-geopotential-height" text="type-global" />
+        is essentially the same as the interpretation of <xref ref="eqn-hypsometric-equation" text="type-global" />:
+        According to <xref ref="eqn-hypsometric-equation-geopotential-height" text="type-global" />,
+        the warmer the column-average temperature <m>\bar{T}</m>
+        between pressure levels <m>p_1</m> and <m>p_2</m>,
+        the greater the <term>geopotential height thickness</term>
+    </p>
+
+    <p>
+        <md>
+            \Delta Z = Z_2 - Z_1
+        </md>
+    </p>
+
+    <p>
+        of the column of air bounded between those levels.
+        As expected,
+        <m>Z_1</m> is the geopotential height of pressure level <m>p_1</m>,
+        <m>Z_2</m> is the geopotential height of pressure level <m>p_2</m>,
+        and <m>Z_1 \lt Z_2</m>.
+    </p>
+
+    <p>
+        FIG below
+        visualizes how a warmer column of air has greater
+        (geometric height, geopotential, and geopotential height) thickness
+        than a colder column of air bounded by the same pressure levels.
+    </p>
+
+    <figure xml:id="ch7-thickness">
+        <caption>
+            Two columns of perfectly dry air are bounded below by pressure level <m>p_1</m>
+            and above by pressure level <m>p_2</m>,
+            where <m>p_1 \gt p_2</m>.
+            The column on the left is colder (indicated by blue shading)
+            while the column on the right is warmer (indicated by red shading).
+            The colder column has smaller geometric height, geopotential, and geopotential height thickness than the warmer column,
+            as indicated by its shorter height.
+        </caption>
+        <image source="images/ch7-thickness.png" width="60%">
+            <shortdescription>
+                A shorter and colder blue column on the left and a taller and warmer red column on the right,
+                each bounded by the same pressure levels.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
