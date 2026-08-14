@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-ideal-gas" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Ideal gases and the ideal gas law</title>
+
+    <p>
+        An <term>ideal gas</term> consists of point particles that move randomly and continuously
+        but do not interact with each other except possibly through perfectly elastic collisions.
+        The condition of non-interaction means ideal gas particles are not attracted to each other and do not undergo phase change.
+    </p>
+
+    <p>
+        In theory,
+        any gas can be described by an <term>equation of state</term>
+        that relates its pressure, temperature, and volume.
+        An ideal gas has a simplified equation of state called the <term>ideal gas law</term>.
+        The ideal gas law comes from a combination of <url href="https://en.wikipedia.org/wiki/Avogadro%27s_law">Avagadro's law</url>,
+        <url href="https://en.wikipedia.org/wiki/Boyle%27s_law">Boyle's law</url>,
+        and <url href="https://en.wikipedia.org/wiki/Charles%27s_law">Charles's law</url>
+        and traditionally is written
+    </p>
+
+    <p>
+        <md xml:id="eqn-ideal-gas-law-traditional" number="yes">
+            pV = nR^*T
+        </md>
+    </p>
+
+    <p>
+        where <m>p</m> [Pa] is the pressure of the ideal gas,
+        <m>V</m> [<m>\text{m}^3</m>] is its volume,
+        <m>n</m> [mol] is the amount of substance in the gas,
+        <m>T</m> [K] is the gas's temperature,
+        and <m>R^* = 8.314 \, \text{J} \, \text{K}^{-1} \, \text{mol}^{-1}</m> is the <term>universal gas constant</term>.
+    </p>
+
+    <p>
+        For many reasons, air is not an ideal gas.
+        For one, its particles have spatial extent.
+        Organized motion often is imposed on them by external forces, resulting in wind.
+        Some of its particles are attracted to each other and to other substances;
+        arguably most importantly for meteorologists,
+        water molecules regularly experience strong intermolecular attractions as well as attractions to surfaces that result in phase change.
+    </p>
+
+    <p>
+        Luckily, since air molecules are small and attractions usually are weak,
+        air can be treated as an ideal gas with great accuracy under typical atmospheric conditions.
+        Furthermore, we easily can modify its equations to account for the presence of water vapor,
+        such as by replacing temperature with virtual temperature.
+    </p>
+
+    <p>
+        Meteorologists typically express the <term>ideal gas law for air</term> as
+    </p>
+
+    <p>
+        <md xml:id="eqn-ideal-gas-law-density" number="yes">
+            p = \rho R T
+        </md>
+    </p>
+
+    <p>
+        or
+    </p>
+
+    <p>
+        <md xml:id="eqn-ideal-gas-law-specific-volume" number="yes">
+            p \alpha = R T
+        </md>
+    </p>
+
+    <p>
+        where <m>\rho</m> [<m>\text{kg} \text{m}^{-3}</m>] is the air density,
+        <m>\alpha = \dfrac{1}{\rho}</m> [<m>\text{m}^{3} \text{kg}^{-1}</m>] is its specific volume,
+        and <m>R</m> [<m>\text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>] is a gas constant appropriate to the particular gas mixture making up the air.
+    </p>
+
+    <p>
+        For <term>perfectly dry air</term> (air with no water vapor),
+        we write <xref ref="eqn-ideal-gas-law-density" text="type-global" />
+        and <xref ref="eqn-ideal-gas-law-specific-volume" text="type-global" />
+        as
+    </p>
+
+    <p>
+        <md xml:id="eqn-ideal-gas-law-density-dry" number="yes">
+            p = \rho R_d T
+        </md>
+    </p>
+
+    <p>
+        and
+    </p>
+
+    <p>
+        <md xml:id="eqn-ideal-gas-law-specific-volume-dry" number="yes">
+            p \alpha = R_d T
+        </md>
+    </p>
+
+    <p>
+        respectively,
+        where <m>R_d = 287 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m> is the <term>gas constant for dry air</term>.
+    </p>
+
+    <p>
+        Although as briefly discussed above we can modify the ideal gas law to apply to pure water vapor and humid (moist) air,
+        for simplicity,
+        the following discussions will refer to perfectly dry air.
+        Please refer to your notes from other courses<mdash />particularly your thermodynamics course<mdash />and
+        <xref ref="petty" text="custom">Petty (2008)</xref>
+        for discussions about applying the ideal gas law to pure water vapor and humid air.
+    </p>
+</subsection>
