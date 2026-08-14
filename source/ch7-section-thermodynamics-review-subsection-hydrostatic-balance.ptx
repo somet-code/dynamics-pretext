@@ -44,7 +44,7 @@
             with equal magnitude.
             Other forces acting on the air parcel in the vertical are neglected.
         </caption>
-        <image source="images/ch1-volume-element.png" width="60%">
+        <image source="images/ch7-hydrostatic-balance.png" width="60%">
             <shortdescription>
                 Rectangular prism with length, width, and height
                 and vectors representing the gravity force pulling downward on the prism
