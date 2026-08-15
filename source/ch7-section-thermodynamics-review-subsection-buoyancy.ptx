@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-buoyancy" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Buoyancy</title>
+
+    <p>
+        <term>Weight</term> is the gravity force experienced by an object due to its mass <m>m</m> [kg].
+        The magnitude of weight <m>W</m> [N] is given by
+    </p>
+
+    <p>
+        <md number="yes">
+            W = mg
+        </md>
+    </p>
+
+    <p>
+        where <m>g</m> [<m>\text{m} \, \text{s}^{-2}</m>] is the gravity acceleration.
+    </p>
+
+    <p>
+        The definition of the buoyancy force follows from <term>Archimedes' Principle</term>,
+        which states that the upward force exerted on an object immersed in a fluid by the surrounding fluid
+        equals the magnitude of the weight of the fluid the object has displaced.
+        The magnitude of the weight of the displaced fluid <m>W_{fluid}</m> is
+    </p>
+
+    <p>
+        <md xml:id="eqn-weight-displaced-fluid-start" number="yes">
+            W_{fluid} = m_{fluid} \, g
+        </md>
+    </p>
+
+    <p>
+        where <m>m_{fluid}</m> is the mass of the displaced fluid.
+        If a volume <m>V</m> [<m>\text{m}^{3}</m>] of fluid
+        with constant density <m>\rho_{fluid}</m> [<m>\text{kg} \, \text{m}^{-3}</m>]
+        is displaced by an object with volume <m>V</m>,
+        <m>m_{fluid} = \rho_{fluid} \, V</m>
+        and <xref ref="eqn-weight-displaced-fluid-start" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-weight-displaced-fluid" number="yes">
+            W_{fluid} = \rho_{fluid} \, V g
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-weight-displaced-fluid" text="type-global" /> gives the upward force the immersed object experiences.
+    </p>
+
+    <p>
+        The immersed object also experiences the downward force of gravity as expressed through its own weight <m>W_{object}</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-weight-object-start" number="yes">
+            W_{object} = -m_{object} \, g
+        </md>
+    </p>
+
+    <p>
+        where <m>m_{object}</m> is the mass of the object.
+        As noted above,
+        the object has the same volume <m>V</m> as the fluid it displaces.
+        If the object has constant density <m>\rho_{object}</m>,
+        <m>m_{object} = \rho_{object} \, V</m>
+        and <xref ref="eqn-weight-object-start" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-weight-object" number="yes">
+            W_{object} = -\rho_{object} \, V g
+        </md>
+    </p>
+
+    <p>
+        The <term>buoyancy force</term> is the sum of these vertically-directed forces acting on the immersed object:
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                F_B \amp = W_{fluid} + W_{object}
+            </mrow>
+            <mrow>
+                \amp = \rho_{fluid} \, V g - \rho_{object} \, V g
+            </mrow>
+            <mrow xml:id="eqn-buoyancy-force" number="yes">
+                \amp = (\rho_{fluid} - \rho_{object}) \, V g
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        It follows from <xref ref="eqn-buoyancy-force" text="type-global" />
+        that if the object is less dense than the fluid it displaces
+        (i.e., <m>\rho_{object} \lt \rho_{fluid}</m>),
+        then the buoyancy force acting on it is directed upward
+        (i.e., <m>F_B \gt 0</m>).
+        Likewise,
+        if the object is denser than the fluid it displaces
+        (i.e., <m>\rho_{object} \gt \rho_{fluid}</m>),
+        then the buoyancy force acting on it is directed downward
+        (i.e., <m>F_B \lt 0</m>).
+    </p>
+
+    <p>
+        In meteorology,
+        we typically take the immersed object to be an air parcel
+        and the fluid within which it is immersed to be the air surrounding it,
+        i.e., its environment.
+        Following the notation of <xref ref="martin" text="custom">Martin (2006)</xref>,
+        we replace <m>\rho_{fluid} = \rho</m> for the environmental density
+        and <m>\rho_{object} = \rho'</m> for the air parcel density.
+        Then <xref ref="eqn-buoyancy-force" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-buoyancy-force-meteorology" number="yes">
+            F_B = (\rho - \rho') \, V g
+        </md>
+    </p>
+
+    <p>
+        Since measuring the masses of air parcels is not feasible,
+        it is convenient to deal with forces per unit mass,
+        i.e., accelerations.
+        It follows that we divide <xref ref="eqn-buoyancy-force-meteorology" text="type-global" />
+        by the mass of the air parcel <m>m' = \rho' \, V</m>
+        to produce the <term>buoyancy acceleration</term> <m>a_B</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-buoyancy-acceleration-density" number="yes">
+            a_B
+            =
+            \frac{F_B}{m'}
+            =
+            \frac{(\rho - \rho') \, V g}{\rho' \, V}
+            =
+            \left(
+                \frac{\rho - \rho'}{\rho'}
+            \right) g
+        </md>
+    </p>
+
+    <p>
+        Assuming the air parcel (1) is perfectly dry
+        and (2) has pressure that instantaneously adjusts to the environmental pressure
+        (i.e., <m>p' = p</m>, which is a common and accurate assumption under most conditions),
+        we can rewrite <xref ref="eqn-buoyancy-acceleration-density" text="type-global" />
+        using <xref ref="eqn-ideal-gas-law-density" text="type-global" />:
+    </p>
+
+    <p>
+        <md xml:id="eqn-buoyancy-acceleration-temperature" number="yes">
+            a_B
+            =
+            \left(
+                \frac{T' - T}{T}
+            \right) g
+        </md>
+    </p>
+
+    <p>
+        where <m>T</m> is the environmental temperature
+        and <m>T'</m> is the air parcel temperature.
+        Furthermore,
+        using the definition of potential temperature given in <xref ref="eqn-potential-temperature" text="type-global" />,
+        we can rewrite <xref ref="eqn-buoyancy-acceleration-temperature" text="type-global" />
+        in terms of <m>\theta</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-buoyancy-acceleration-potential-temperature" number="yes">
+            a_B
+            =
+            \left(
+                \frac{\theta' - \theta}{\theta}
+            \right) g
+        </md>
+    </p>
+
+    <p>
+        where <m>\theta</m> is the environmental potential temperature
+        and <m>\theta'</m> is the air parcel potential temperature.
+    </p>
+
+    <p>
+        <xref first="eqn-buoyancy-acceleration-density" last="eqn-buoyancy-acceleration-potential-temperature"/>
+        lead to the following three cases,
+        which are depicted in <xref ref="ch7-buoyancy" text="type-global" /> below.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    When a perfectly dry air parcel is denser and therefore colder and potentially colder than its environment
+                    (i.e., <m>\rho' \gt \rho</m>, <m>T' \lt T</m>, and <m>\theta' \lt \theta</m>),
+                    the air parcel is <term>negatively buoyant</term>.
+                    In other words, <m>F_B</m> and <m>a_B</m> are directed downward (i.e., are negative).
+                </p>
+            </li>
+            <li>
+                <p>
+                    When a perfectly dry air parcel is less dense and therefore warmer and potentially warmer than its environment
+                    (i.e., <m>\rho' \lt \rho</m>, <m>T' \gt T</m>, and <m>\theta' \gt \theta</m>),
+                    the air parcel is <term>positively buoyant</term>.
+                    In other words, <m>F_B</m> and <m>a_B</m> are directed upward (i.e., are positive).
+                </p>
+            </li>
+            <li>
+                <p>
+                    When a perfectly dry air parcel has the same density and therefore the same temperature and potential temperature as its environment
+                    (i.e., <m>\rho' = \rho</m>, <m>T' = T</m>, and <m>\theta' = \theta</m>),
+                    the air parcel is <term>neutrally buoyant</term>.
+                    In other words, <m>F_B</m> and <m>a_B</m> are 0.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <figure xml:id="ch7-buoyancy">
+        <caption>
+            An air parcel with edges parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the local Cartesian coordinate system,
+            shown for cases of negative buoyancy (left), positive buoyancy (middle), and neutral buoyancy (right),
+            where the vector labeled <m>\vec{F}_B</m> represents the buoyancy force acting on the air parcel.
+            <m>\vec{F}_B</m> is directed downward for the case of negative buoyancy,
+            upward for the case of positive buoyancy,
+            and is absent for the case of neutral buoyancy.
+        </caption>
+        <image source="images/ch7-buoyancy.png" width="80%">
+            <shortdescription>
+                Rectangular prism with length, width, and height
+                and vector representing the buoyancy force
+                pulling downward on the prism (left)
+                and upward on the prism (middle).
+                The vector is absent for the prism on the right.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
