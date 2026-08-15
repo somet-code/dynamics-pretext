@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-standard-atmosphere" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Standard atmosphere</title>
+
+    <p>
+        The American Meteorological Society (AMS)
+        <url href="https://glossary.ametsoc.org/wiki/Standard_atmosphere">defines</url>
+        a <term>standard atmosphere</term> as
+        "a hypothetical vertical distribution of atmospheric temperature, pressure and density
+        that, by international agreement, is taken to be representative of the atmosphere."
+        A standard atmosphere is subject to the assumptions that the air can be treated as an ideal gas and is in hydrostatic balance
+        (at least at lower altitudes).
+        Some standard atmospheres<mdash />including the U.S. Standard Atmosphere<mdash />are
+        further subject to the assumptions that the air is dry and homogeneously mixed
+        (at least at lower altitudes)
+        and the atmosphere rotates along with Earth,
+        is horizontally homogeneous,
+        is calm,
+        and is a representative average over the diurnal and seasonal cycles.
+    </p>
+
+    <p>
+        Several common<mdash />and nearly identical<mdash />standard atmospheres apply to locations in the middle latitudes,
+        including the International Organization for Standardization (ISO) International Standard Atmosphere (ISA);
+        the <url href="https://www.ngdc.noaa.gov/stp/space-weather/online-publications/miscellaneous/us-standard-atmosphere-1976/us-standard-atmosphere_st76-1562_noaa.pdf">U.S. Standard Atmosphere</url>;
+        and the International Civil Aviation Organization (ICAO) Standard Atmosphere.
+        The U.S. Standard Atmosphere extends through the largest depth
+        (<m>z_{min} = -5 \, \text{km}</m>, <m>z_{max} = 1000 \, \text{km}</m>)
+        and is largely consistent with other commonly used standard atmospheres,
+        and therefore it is chosen for brief presentation here.
+    </p>
+
+    <p>
+        The lower portion
+        (through <m>z = 130 \, \text{km}</m>)
+        of the U.S. Standard Atmosphere's vertical temperature profile is shown in <xref ref="ch7-standard-atmosphere" text="type-global" /> below.
+        Differing temperature behaviors lead to the identification of
+        four main layer<mdash />the troposphere, stratosphere, mesosphere, and thermosphere<mdash />and
+        three isothermal layers called "pauses"<mdash />the tropopause, stratopause, and mesopause.
+    </p>
+
+    <p>
+        Notice temperature on average cools with increasing height in the troposphere,
+        at <m>6.5\text{°C} \, \text{km}^{-1}</m> according to the U.S. Standard Atmosphere.
+        The troposphere is the atmospheric layer in which nearly all weather occurs
+        and in which we spend all (or, if we fly, nearly all) of our time.
+        This average temperature behavior in the troposphere motivates the definition of a lapse rate
+        as a rate of temperature <em>decrease</em>with increasing height.
+    </p>
+
+    <figure xml:id="ch7-standard-atmosphere">
+        <caption>
+            The golden curve shows the vertical temperature profile of the U.S. Standard Atmosphere through the lowest 130 km of Earth's atmosphere.
+            Layers are labeled.
+            The figure has been modified from
+            NOAA JetStream's <url href="https://www.noaa.gov/jetstream/atmosphere/layers-of-atmosphere">Layers of the Atmosphere</url>
+            (in the public domain)
+            with the addition of gray shading to show the vertical extents of the pauses.
+        </caption>
+        <image source="images/ch7-standard-atmosphere.png" width="80%">
+            <shortdescription>
+                Diagram of the layers of Earth's atmosphere with their names and vertical temperature profiles.
+                according to the U.S. Standard Atmosphere.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
