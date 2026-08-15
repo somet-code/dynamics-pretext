@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-first-law" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title><m>1^{\text{st}}</m> law of thermodynamics</title>
+
+    <p>
+        An air parcel often is conceptualized as a <term>closed thermodynamic system</term>,
+        which is a thermodynamic system that does not exchange mass with its environment but may exchange energy with it through heat and work.
+    </p>
+
+    <p>
+        The <term><m>1^{\text{st}}</m> law of thermodynamics</term>
+        is a statement of energy conservation for a closed thermodynamic system.
+        It dictates that
+        heat added to a closed thermodynamic system from its environment through absorption results in an increase in the system's internal (stored) energy
+        and/or causes the system to do work on its environment.
+        This verbal statement is expressed mathematically as
+    </p>
+
+    <p>
+        <md xml:id="eqn-first-law-general" number="yes">
+            \delta q = du + \delta w
+        </md>
+    </p>
+
+    <p>
+        where <m>q</m> [<m>\text{J} \, \text{kg}^{-1}</m>] is <term>heat per unit mass</term> (i.e., <term>specific heat</term>),
+        <m>u</m> [<m>\text{J} \, \text{kg}^{-1}</m>] is <term>internal energy per unit mass</term> (i.e, <term>specific internal energy</term>),
+        and <m>w</m> [<m>\text{J} \, \text{kg}^{-1}</m>] is mechanical <term>work per unit mass</term> (i.e., <term>specific work</term>).
+        <xref ref="eqn-first-law-general" text="type-global" />
+        is the form of the <m>1^{\text{st}}</m> law of thermodynamics presented in <xref ref="petty" text="custom">Petty (2008)</xref>.
+        Further presentations of the <m>1^{\text{st}}</m> law specific to the atmosphere also are consistent with Petty (2008),
+        and the reader should revisit that text for discussion of the <m>1^{\text{st}}</m> law of thermodynamics and related topics.
+    </p>
+
+    <p>
+        Note that both the <term>inexact differential</term> <m>\delta f</m>
+        and the <term>exact differential</term> <m>df</m>
+        are used in <xref ref="eqn-first-law-general" text="type-global" /> to represent infinitesimal changes.
+        These notations are used in thermodynamics to remind readers that macroscopic (integral) changes in <term>process variables</term>
+        like <m>q</m> and <m>w</m> are <term>path dependent</term>,
+        while macroscopic changes in <term>state variables</term>
+        like <m>u</m> are <term>path independent</term>,
+        respectively.
+        In the context of the <m>1^{\text{st}}</m> law of thermodynamics,
+        this means <m>\Delta u = u_2 - u_1</m> but <m>\Delta q \neq q_2 - q_1</m> and <m>\Delta w \neq w_2 - w_1</m>.
+        Revisit <xref ref="petty" text="custom">Petty (2008)</xref>
+        for discussion of state and process variables and exact and inexact differentials.
+    </p>
+
+    <p>
+        Also note that work is positive (negative) when it is done by (on) the closed thermodynamic system on (by) its environment.
+    </p>
+
+    <p>
+        If a gas does only <term>pressure-volume work</term> on its environment,
+    </p>
+
+    <p>
+        <md number="yes">
+            \delta w = p \, d\alpha
+        </md>
+    </p>
+
+    <p>
+        where <m>\delta w \gt 0</m> for expansion and <m>\delta w \lt 0</m> for contraction.
+        Furthermore,
+        according to Joule's <m>2^{\text{nd}}</m> law,
+        the internal energy of an ideal gas depends only on its temperature since its particles are not attracted to each other,
+        and so
+    </p>
+
+    <p>
+        <md number="yes">
+            du \propto dT
+        </md>
+    </p>
+
+    <p>
+        Applying these assumptions to <xref ref="eqn-first-law-general" text="type-global" /> for a perfectly dry air parcel produces
+    </p>
+
+    <p>
+        <md xml:id="eqn-first-law" number="yes">
+            \delta q = c_v \, dT + p \, d\alpha
+        </md>
+    </p>
+
+    <p>
+        where <m>c_v = 717 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>
+        is the <term>specific heat capacity of dry air at constant volume</term>.
+    </p>
+
+    <p>
+        Substitution of the differential of <xref ref="eqn-ideal-gas-law-specific-volume" text="type-global" />
+        into <xref ref="eqn-first-law" text="type-global" />
+        and subsequent rearrangement produce the related form
+    </p>
+
+    <p>
+        <md xml:id="eqn-first-law-alt" number="yes">
+            \delta q = c_p \, dT - \alpha \, dp
+        </md>
+    </p>
+
+    <p>
+        where <m>c_p = c_v + R_d = 1004 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>
+        is the <term>specific heat capacity of dry air at constant pressure</term>.
+        <m>c_p \gt c_v</m>
+        since heat added to an air parcel during an isobaric process causes the air parcel to expand as well as warm,
+        and so less energy is available for warming.
+    </p>
+
+    <p>
+        Using the ideal gas law and the definition
+    </p>
+
+    <p>
+        <md xml:id="eqn-entropy" number="yes">
+            ds = \frac{\delta q}{T}
+        </md>
+    </p>
+
+    <p>
+        where <m>s</m> [<m>\text{J} \, \text{kg}^{-1}</m>]
+        is the <term>entropy per unit mass</term> (i.e., <term>specific entropy</term>)
+        for a <term>reversible thermodynamic process</term>,
+        we can write <xref ref="eqn-first-law" text="type-global" />
+        and <xref ref="eqn-first-law-alt" text="type-global" />
+        as
+    </p>
+
+    <p>
+        <md xml:id="eqn-first-law-entropy" number="yes">
+            ds = \frac{c_v}{T} \, dT + \frac{R_d}{\alpha} \, d\alpha
+        </md>
+    </p>
+
+    <p>
+        and
+    </p>
+
+    <p>
+        <md xml:id="eqn-first-law-alt-entropy" number="yes">
+            ds = \frac{c_p}{T} \, dT - \frac{R_d}{p} \, dp
+        </md>
+    </p>
+
+    <p>
+        respectively.
+    </p>
+
+    <p>
+        As we can see,
+        there are many ways to modify the <m>1^{\text{st}}</m> law of thermodynamics,
+        and the most useful form can be chosen for a given application.
+    </p>
+
+    </subsection>
