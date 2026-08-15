@@ -23,5 +23,6 @@
   <xi:include href="ch7-section-thermodynamics-review-subsection-hydrostatic-balance.ptx" />
   <xi:include href="ch7-section-thermodynamics-review-subsection-hypsometric-equation.ptx" />
   <xi:include href="ch7-section-thermodynamics-review-subsection-first-law.ptx" />
+  <xi:include href="ch7-section-thermodynamics-review-subsection-adiabatic.ptx" />
 
 </section>

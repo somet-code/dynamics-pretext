@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-adiabatic" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Lapse rates and adiabatic processes</title>
+
+    <p>
+        A <term>lapse rate</term> is the rate of temperature decrease with increasing height.
+        In other words,
+        it is the rate at which temperature cools with increasing height.
+        By this definition,
+        a lapse rate is positive (negative) when temperature cools (warms) with increasing height.
+    </p>
+
+    <p>
+        For a location at geometric height <m>z</m> within Earth's atmosphere,
+        the <term>environmental lapse rate</term> is defined as
+    </p>
+
+    <p>
+        <md number="yes">
+            \Gamma = -\frac{\partial T}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        (Note: Some sources use <m>\gamma</m> rather than <m>\Gamma</m>.)
+    </p>
+
+    <p>
+        The environmental lapse rate can be used to characterize special atmospheric layers by their temperature behavior.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    A temperature <term>inversion</term> is a layer of the atmosphere in which temperature warms with increasing height,
+                    and so <m>\Gamma \lt 0</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    An <term>isothermal</term> layer is a layer of the atmosphere in which temperature is constant with height,
+                    and so <m>\Gamma = 0 \, \text{K} \, \text{m}^{-1}</m> (or any other appropriate unit).
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        An <term>adiabatic</term> process is one in which a closed thermodynamic system does not exchange energy with its environment via heat
+        (although it still can exchange energy with its environment via work).
+        Thus, <m>\delta q = 0</m> for an adiabatic process.
+    </p>
+
+    <p>
+        We apply the adiabatic assumption to <xref ref="eqn-first-law-alt" text="type-global" />,
+        divide by <m>\delta z</m>,
+        and let <m>\delta z \to 0</m> to produce
+    </p>
+
+    <p>
+        <md xml:id="eqn-first-law-alt-adiabatic" number="yes">
+             0 = c_p \frac{dT}{dz} - \alpha \frac{dp}{dz}
+        </md>
+    </p>
+
+    <p>
+        (The ordinary derivative can be used if we assume the air parcel only moves in the vertical;
+        otherwise, a partial derivative can be used.)
+    </p>
+
+    <p>
+        Since <m>\alpha = \dfrac{1}{\rho}</m>,
+        the second term in <xref ref="eqn-first-law-alt-adiabatic" text="type-global" />
+        can be replaced with <m>g</m> by assuming the air parcel is in hydrostatic balance:
+    </p>
+
+    <p>
+        <md xml:id="eqn-first-law-alt-adiabatic-hydrostatic" number="yes">
+             0 = c_p \frac{dT}{dz} + g
+        </md>
+    </p>
+
+    <p>
+        Rearranging <xref ref="eqn-first-law-alt-adiabatic-hydrostatic" text="type-global" />
+        to solve for <m>-\dfrac{dT}{dz}</m> gives
+    </p>
+
+    <p>
+        <md xml:id="eqn-dry-adiabatic-lapse-rate" number="yes">
+            \Gamma_d = -\frac{dT}{dz} = \frac{g}{c_p}
+        </md>
+    </p>
+
+    <p>
+        where <m>\Gamma_d</m> [<m>\text{K} \, \text{m}^{-1}</m>]
+        is the <term>dry adiabatic lapse rate (DALR)</term>.
+        The DALR gives the rate at which a perfectly dry air parcel cools with increasing height as it rises adiabatically
+        while remaining in hydrostatic balance.
+        (Likewise, it gives the rate at which a perfectly dry air parcel warms with decreasing height as it sinks adiabatically
+        while remaining in hydrostatic balance.)
+    </p>
+
+</subsection>
