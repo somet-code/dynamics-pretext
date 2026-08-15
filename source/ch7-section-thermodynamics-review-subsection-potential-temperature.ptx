@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-potential-temperature" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Poisson's equation and potential temperature</title>
+
+    <p>
+        <xref ref="eqn-dry-adiabatic-lapse-rate" text="type-global" />
+        gives the rate at which a perfectly dry air parcel cools with increasing height as it rises adiabatically
+        (or the rate at which it warms with decreasing height as it sinks adiabatically).
+        But it does not give the actual temperature of such an air parcel at any point during its ascent
+        (or descent).
+    </p>
+
+    <p>
+        To find the temperature <m>T</m> a perfectly dry air parcel would have after moving adiabatically
+        from its initial pressure level <m>p_0</m> with initial temperature <m>T_0</m>
+        to pressure level <m>p</m>,
+        set <m>\delta q = 0</m> in <xref ref="eqn-first-law-alt" text="type-global" />,
+        rearrange <xref ref="eqn-ideal-gas-law-specific-volume" text="type-global" /> to replace <m>\alpha = \dfrac{R_dT}{p}</m>,
+        separate,
+        and integrate.
+        This results in <term>Poisson's equation</term>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-poissons-equation" number="yes">
+            \frac{T}{T_0}
+            =
+            \left(
+                \frac{p}{p_0}
+            \right)^\frac{R_d}{c_p}
+        </md>
+    </p>
+
+    <p>
+        Note that <xref ref="petty" text="custom">Petty (2008)</xref> and other texts substitute
+        <m>\kappa = \dfrac{R_d}{c_p}</m>
+        into <xref ref="eqn-poissons-equation" text="type-global"/>.
+    </p>
+
+    <p>
+        <xref ref="eqn-poissons-equation" text="type-global"/>
+        is used to define <term>potential temperature</term> <m>\theta [K]</m>
+        by replacing <m>T_0</m> with <m>\theta</m>
+        and rearranging to solve for <m>\theta</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-potential-temperature" number="yes">
+            \theta
+            =
+            T \left(
+                \frac{p_0}{p}
+            \right)^\frac{R_d}{c_p}
+        </md>
+    </p>
+
+    <p>
+        We interpret <m>\theta</m> as the temperature a perfectly dry air parcel would have
+        after moving adiabatically to pressure level <m>p_0</m> from its current pressure level <m>p</m> where it has temperature <m>T</m>.
+        Thus,
+        for any given value of <m>p_0</m>,
+        a perfectly dry air parcel has a unique, conserved value of <m>\theta</m>.
+    </p>
+
+    <p>
+        Usually,
+        we set <m>p_0 = 1000 \, \text{hPa}</m> as a mathematically simple approximation to Earth's standard mean sea level pressure,
+        although any convenient reference value can be used.
+    </p>
+
+</subsection>

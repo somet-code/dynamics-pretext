@@ -25,5 +25,6 @@
   <xi:include href="ch7-section-thermodynamics-review-subsection-first-law.ptx" />
   <xi:include href="ch7-section-thermodynamics-review-subsection-adiabatic.ptx" />
   <xi:include href="ch7-section-thermodynamics-review-subsection-standard-atmosphere.ptx" />
+  <xi:include href="ch7-section-thermodynamics-review-subsection-potential-temperature.ptx" />
 
 </section>
