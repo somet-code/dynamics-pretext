@@ -75,7 +75,7 @@
         we can integrate <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" /> easily.
         While holding <m>R_d</m> and <m>g</m> constant is reasonable in the troposphere since they vary little within it,
         <m>T</m> decreases with increasing height linearly on average in the troposphere and cools by over <m>60 \, \text{K}</m>
-        (as will be discussed in SUBSECTION below).
+        (as will be discussed in <xref ref="ch7-section-thermodynamics-review-subsection-standard-atmosphere" text="type-global" /> below).
         To avoid writing <m>T</m> as a linear function of <m>z</m>,
         which would complicate integration,
         we typically set <m>T = \bar{T}</m> in <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" />,
@@ -238,7 +238,7 @@
     </p>
 
     <p>
-        FIG below
+        <xref ref="ch7-thickness" text="type-global" /> below
         visualizes how a warmer column of air has greater
         (geometric height, geopotential, and geopotential height) thickness
         than a colder column of air bounded by the same pressure levels.
