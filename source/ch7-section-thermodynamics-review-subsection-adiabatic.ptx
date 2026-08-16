@@ -17,7 +17,7 @@
     </p>
 
     <p>
-        <md number="yes">
+        <md xml:id="eqn-environmental-lapse-rate" number="yes">
             \Gamma = -\frac{\partial T}{\partial z}
         </md>
     </p>
