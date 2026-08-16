@@ -27,5 +27,6 @@
   <xi:include href="ch7-section-thermodynamics-review-subsection-standard-atmosphere.ptx" />
   <xi:include href="ch7-section-thermodynamics-review-subsection-potential-temperature.ptx" />
   <xi:include href="ch7-section-thermodynamics-review-subsection-buoyancy.ptx" />
+  <xi:include href="ch7-section-thermodynamics-review-subsection-stability.ptx" />
 
 </section>

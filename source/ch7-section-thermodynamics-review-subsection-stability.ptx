@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-thermodynamics-review-subsection-stability" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Static stability</title>
+
+    <p>
+        Differentiating the definition of potential temperature
+        <xref ref="eqn-potential-temperature" text="type-global" />
+        with respect to <m>z</m> produces
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{\partial \theta}{\partial z}
+                \amp =
+                \frac{\partial}{\partial z}
+                \left(
+                    T \left(
+                    \frac{p_0}{p}
+                    \right)^\frac{R_d}{c_p}
+                \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \left(
+                    \frac{p_0}{p}
+                \right)^\frac{R_d}{c_p}
+                \frac{\partial T}{\partial z}
+                +
+                \frac{R_d}{c_p} T
+                \left(
+                    \frac{p_0}{p}
+                \right)^{\frac{R_d}{c_p}-1}
+                \left(
+                    - \frac{p_0}{p^2}
+                \right)
+                \frac{\partial p}{\partial z}
+            </mrow>
+            <mrow>
+                \amp =
+                \left(
+                    \frac{p_0}{p}
+                \right)^\frac{R_d}{c_p}
+                \frac{\partial T}{\partial z}
+                -
+                \frac{R_d}{c_p} T
+                \left(
+                    \frac{p_0}{p}
+                \right)^\frac{R_d}{c_p}
+                \frac{1}{p}
+                \frac{\partial p}{\partial z}
+            </mrow>
+            <mrow xml:id="eqn-stability-start" number="yes">
+                \amp =
+                \frac{\theta}{T}
+                \frac{\partial T}{\partial z}
+                -
+                \frac{R_d}{c_p}
+                \frac{\theta}{p}
+                \frac{\partial p}{\partial z}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Assuming the atmosphere is in hydrostatic balance,
+        <xref ref="eqn-stability-start" text="type-global" /> can be written
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{\partial \theta}{\partial z}
+                \amp =
+                \frac{\theta}{T}
+                \frac{\partial T}{\partial z}
+                -
+                \frac{R_d}{c_p}
+                \frac{\theta}{p}
+                (-\rho g)
+            </mrow>
+            <mrow xml:id="eqn-stability-middle" number="yes">
+                \amp =
+                \frac{\theta}{T}
+                \frac{\partial T}{\partial z}
+                +
+                \frac{R_d}{c_p}
+                \frac{\theta}{p}
+                \rho g
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Substituting the ideal gas law <xref ref="eqn-ideal-gas-law-density" text="type-global" />
+        into <xref ref="eqn-stability-middle" text="type-global" /> produces
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{\partial \theta}{\partial z}
+                \amp =
+                \frac{\theta}{T}
+                \frac{\partial T}{\partial z}
+                +
+                \frac{R_d}{c_p}
+                \frac{\theta}{p}
+                \left(
+                    \frac{p}{R_dT}
+                \right)
+                g
+            </mrow>
+            <mrow>
+                \frac{\partial \theta}{\partial z}
+                \amp =
+                \frac{\theta}{T}
+                \frac{\partial T}{\partial z}
+                +
+                \frac{\theta}{T}
+                \frac{g}{c_p}
+            </mrow>
+            <mrow xml:id="eqn-stability-end" number="yes">
+                \frac{T}{\theta}  \frac{\partial \theta}{\partial z}
+                \amp =
+                \frac{\partial T}{\partial z} + \frac{g}{c_p}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Finally,
+        substituting the definitions of the environmental lapse rate <xref ref="eqn-environmental-lapse-rate" text="type-global" />
+        and the DALR <xref ref="eqn-dry-adiabatic-lapse-rate" text="type-global" />
+        into <xref ref="eqn-stability-end" text="type-global" /> produces
+    </p>
+
+    <p>
+        <md xml:id="eqn-stability" number="yes">
+            \frac{T}{\theta}
+            \frac{\partial \theta}{\partial z}
+            =
+            \Gamma_d - \Gamma
+        </md>
+    </p>
+
+    <p>
+        This leads to three cases for <term>local stability</term>,
+        which according to <xref ref="petty" text="custom">Petty (2008)</xref>
+        is the stability of atmospheric layers to small vertical displacements of air parcels within them.
+        The term "local" is used to emphasize that air parcel vertical displacements are small
+        and so only information about the local environmental lapse rate is needed.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    When <m>\Gamma_d \gt \Gamma</m>
+                    (i.e., when a perfectly dry air parcel rising adiabatically cools faster with increasing height than its environment),
+                    <m>\dfrac{\partial \theta}{\partial z} \gt 0</m>.
+                    The air parcel is negatively buoyant,
+                    and thus <m>\dfrac{\partial \theta}{\partial z} \gt 0</m>
+                    is a statement of <term>static stability</term>.
+                    In other words,
+                    the layer of air surrounding the air parcel is <term>stably stratified</term>.
+                    In this type of layer,
+                    the air parcel will tend to return to its original location if slightly disturbed.
+                </p>
+            </li>
+            <li>
+                <p>
+                    When <m>\Gamma_d \lt \Gamma</m>
+                    (i.e., when a dry air parcel rising adiabatically cools slower with increasing height than its environment),
+                    <m>\dfrac{\partial \theta}{\partial z} \lt 0</m>.
+                    The air parcel is positively buoyant,
+                    and thus <m>\dfrac{\partial \theta}{\partial z} \lt 0</m>
+                    is a statement of <term>static instability</term>.
+                    In other words,
+                    the layer of air surrounding the air parcel is <term>unstably stratified</term>.
+                    In this type of layer,
+                    the air parcel will convect freely away from its original location.
+                </p>
+            </li>
+            <li>
+                <p>
+                    When <m>\Gamma_d = \Gamma</m>
+                    (i.e., when a dry air parcel rising adiabatically cools at the same rate with increasing height as its environment),
+                    <m>\dfrac{\partial \theta}{\partial z} = 0</m>.
+                    The air parcel is neutrally buoyant,
+                    and thus <m>\dfrac{\partial \theta}{\partial z} = 0</m>
+                    is a statement of <term>static neutrality</term>.
+                    In other words,
+                    the layer of air is <term>neutrally stratified</term>.
+                    In this type of layer,
+                    the air parcel will move to wherever it is displaced and remain there,
+                    or it will continue moving with constant speed in the direction of displacement.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+</subsection>
