@@ -54,7 +54,8 @@
     </figure>
 
     <p>
-        When <xref ref="eqn-hydrostatic-balance" text="type-global" /> is separated and integrated,
+        When the equation of hydrostatic balance <xref ref="eqn-hydrostatic-balance" text="type-global" />
+        is separated and integrated,
         it reveals that the pressure measured at some geometric height
         is the weight of the atmospheric column above a unit area of measurement at that height.
     </p>
@@ -93,7 +94,7 @@
 
     <p>
         Likewise,
-        separation and integration of <xref ref="eqn-hydrostatic-balance" text="type-global" />
+        separation and integration of the equation of hydrostatic balance <xref ref="eqn-hydrostatic-balance" text="type-global" />
         between geometric heights <m>z_1</m> and <m>z_2</m>,
         where <m>z_1 \lt z_2</m>,
         reveals the difference in pressure measured at two geometric heights
@@ -111,7 +112,7 @@
     </p>
 
     <p>
-        <xref ref="eqn-hydrostatic-balance" text="type-global" /> also could be written
+        The equation of hydrostatic balance<xref ref="eqn-hydrostatic-balance" text="type-global" /> also could be written
     </p>
 
     <p>
@@ -142,15 +143,17 @@
         <ol>
             <li>
                 <p>
-                    <xref ref="eqn-hydrostatic-balance" text="type-global" />
+                    The equation of hydrostatic balance <xref ref="eqn-hydrostatic-balance" text="type-global" />
                     is <term>diagnostic</term> (descriptive)
                     rather than <term>prognostic</term> (predictive)
-                    like the vertical equation of motion because it has no dependence on <m>t</m>, and
+                    like the vertical equation of motion <xref ref="eqn-motion-z" text="type-global" />
+                    because it has no dependence on <m>t</m>, and
                 </p>
             </li>
             <li>
                 <p>
-                    vertical motion <m>w</m> can no longer be solved for using <xref ref="eqn-hydrostatic-balance" text="type-global" />
+                    Vertical motion <m>w</m> can no longer be solved for using
+                    the equation of hydrostatic balance <xref ref="eqn-hydrostatic-balance" text="type-global" />
                     since <m>w</m> does not appear in the equation.
                 </p>
             </li>

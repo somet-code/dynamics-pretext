@@ -5,7 +5,7 @@
 
     <p>
         We return to hydrostatic balance as expressed by <xref ref="eqn-hydrostatic-balance" text="type-global" />
-        and rearrange the ideal gas law for perfectly dry air (<xref ref="eqn-ideal-gas-law-density-dry" text="type-global" />)
+        and rearrange the ideal gas law for perfectly dry air <xref ref="eqn-ideal-gas-law-density-dry" text="type-global" />
         to replace <m>\rho = \dfrac{p}{R_dT}</m>:
     </p>
 
