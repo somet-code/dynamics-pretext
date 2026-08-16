@@ -201,6 +201,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-standard-atmosphere" class="internal"><span class="codenumber">7.1.6</span> <span class="title">Standard atmosphere</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-potential-temperature" class="internal"><span class="codenumber">7.1.7</span> <span class="title">Poisson’s equation and potential temperature</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-buoyancy" class="internal"><span class="codenumber">7.1.8</span> <span class="title">Buoyancy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability" class="internal"><span class="codenumber">7.1.9</span> <span class="title">Static stability</span></a></div></li>
 </ul>
 </li></ul>
 </li>
@@ -344,7 +345,7 @@ p \alpha = R_d T\tag{7.1.5}
 <figure class="figure figure-like" id="ch7-hydrostatic-balance"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/ch7-hydrostatic-balance.png" class="contained" alt="Rectangular prism with length, width, and height and vectors representing the gravity force pulling downward on the prism and the vertical pressure gradient force pushing upward on the prism with equal strength."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>An air parcel with edges parallel to the <span class="process-math">\(x\)</span>-, <span class="process-math">\(y\)</span>-, and <span class="process-math">\(z\)</span>-axes of the local Cartesian coordinate system. Since the air parcel is in hydrostatic balance, the gravity force <span class="process-math">\(\vec{F}_g\)</span> points downward in the <span class="process-math">\(-\hat{k}\)</span>-direction and the vertical component of the pressure gradient force <span class="process-math">\(\vec{F}_{PG,z}\)</span> points upward in the <span class="process-math">\(+\hat{k}\)</span>-direction with equal magnitude. Other forces acting on the air parcel in the vertical are neglected.<div class="autopermalink" data-description="Figure 7.1.1"><a href="#ch7-hydrostatic-balance" title="Copy heading and permalink for Figure 7.1.1" aria-label="Copy heading and permalink for Figure 7.1.1">🔗</a></div></figcaption>
 </figure>
-<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-8">When <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> is separated and integrated, it reveals that the pressure measured at some geometric height is the weight of the atmospheric column above a unit area of measurement at that height.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-8">When the equation of hydrostatic balance <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> is separated and integrated, it reveals that the pressure measured at some geometric height is the weight of the atmospheric column above a unit area of measurement at that height.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-9">
 <div class="displaymath process-math" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-9-1">
@@ -369,7 +370,7 @@ p(z) = \int_z^{\infty} \rho g \, \partial z\tag{7.1.8}
 </div>
 <div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-12">where <span class="process-math">\(\displaystyle \int_z^{\infty} \rho g \, \partial z\)</span> is the weight of a column of air with horizontal cross-section of unit area above geometric height <span class="process-math">\(z\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-13">Likewise, separation and integration of <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> between geometric heights <span class="process-math">\(z_1\)</span> and <span class="process-math">\(z_2\text{,}\)</span> where <span class="process-math">\(z_1 \lt z_2\text{,}\)</span> reveals the difference in pressure measured at two geometric heights is the weight of the atmospheric column with horizontal cross-section of unit area contained between those heights:<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-13">Likewise, separation and integration of the equation of hydrostatic balance <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> between geometric heights <span class="process-math">\(z_1\)</span> and <span class="process-math">\(z_2\text{,}\)</span> where <span class="process-math">\(z_1 \lt z_2\text{,}\)</span> reveals the difference in pressure measured at two geometric heights is the weight of the atmospheric column with horizontal cross-section of unit area contained between those heights:<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-14">
 <div class="displaymath process-math" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-14-1">
@@ -381,8 +382,7 @@ p(z_1) - p(z_2) = \int_{z_1}^{z_2} \rho g \, \partial z\tag{7.1.9}
 </div>
 <div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-15">where <span class="process-math">\(p(z_1) &gt; p(z_2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-16">
-<a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> also could be written<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-16">The equation of hydrostatic balance<a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> also could be written<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-17">
 <div class="displaymath process-math" id="eqn-hydrostatic-balance-geopotential-1">
@@ -409,13 +409,12 @@ p(z_1) - p(z_2) = \int_{z_1}^{z_2} \rho g \, \partial z\tag{7.1.9}
 <div class="para logical" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22">
 <ol class="decimal" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1">
 <li id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-1">
-<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-1-1">
-<a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> is <dfn class="terminology">diagnostic</dfn> (descriptive) rather than <dfn class="terminology">prognostic</dfn> (predictive) like the vertical equation of motion because it has no dependence on <span class="process-math">\(t\text{,}\)</span> and<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-1-1">The equation of hydrostatic balance <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> is <dfn class="terminology">diagnostic</dfn> (descriptive) rather than <dfn class="terminology">prognostic</dfn> (predictive) like the vertical equation of motion <a href="ch5-section-equations-of-motion.html#ch5-section-equations-of-motion-5-1" class="xref" data-knowl="./knowl/xref/eqn-motion-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.4.3">(5.4.3)</a> because it has no dependence on <span class="process-math">\(t\text{,}\)</span> and<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 1"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-2">
-<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-2-1">vertical motion <span class="process-math">\(w\)</span> can no longer be solved for using <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> since <span class="process-math">\(w\)</span> does not appear in the equation.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-2-1">Vertical motion <span class="process-math">\(w\)</span> can no longer be solved for using the equation of hydrostatic balance <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> since <span class="process-math">\(w\)</span> does not appear in the equation.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 2"><a href="#ch7-section-thermodynamics-review-subsection-hydrostatic-balance-22-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
@@ -430,7 +429,7 @@ p(z_1) - p(z_2) = \int_{z_1}^{z_2} \rho g \, \partial z\tag{7.1.9}
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hypsometric equation</span>
 </h3>
-<div class="para" id="ch7-section-thermodynamics-review-subsection-hypsometric-equation-2">We return to hydrostatic balance as expressed by <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> and rearrange the ideal gas law for perfectly dry air (<a href="ch7-section-thermodynamics-review.html#eqn-ideal-gas-law-density-dry" class="xref" data-knowl="./knowl/xref/eqn-ideal-gas-law-density-dry.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.4">(7.1.4)</a>) to replace <span class="process-math">\(\rho = \dfrac{p}{R_dT}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hypsometric-equation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-hypsometric-equation-2">We return to hydrostatic balance as expressed by <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> and rearrange the ideal gas law for perfectly dry air <a href="ch7-section-thermodynamics-review.html#eqn-ideal-gas-law-density-dry" class="xref" data-knowl="./knowl/xref/eqn-ideal-gas-law-density-dry.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.4">(7.1.4)</a> to replace <span class="process-math">\(\rho = \dfrac{p}{R_dT}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-hypsometric-equation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch7-section-thermodynamics-review-subsection-hypsometric-equation-3">
 <div class="displaymath process-math" id="eqn-hydrostatic-balance-ideal-separable">
@@ -721,7 +720,7 @@ ds = \frac{c_p}{T} \, dT - \frac{R_d}{p} \, dp\tag{7.1.31}
 <div class="para" id="ch7-section-thermodynamics-review-subsection-adiabatic-3">For a location at geometric height <span class="process-math">\(z\)</span> within Earth’s atmosphere, the <dfn class="terminology">environmental lapse rate</dfn> is defined as<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-adiabatic-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ch7-section-thermodynamics-review-subsection-adiabatic-4">
-<div class="displaymath process-math" id="ch7-section-thermodynamics-review-subsection-adiabatic-4-1">
+<div class="displaymath process-math" id="eqn-environmental-lapse-rate">
 \begin{equation}
 \Gamma = -\frac{\partial T}{\partial z}\tag{7.1.32}
 \end{equation}
@@ -1003,6 +1002,151 @@ a_B
 <figure class="figure figure-like" id="ch7-buoyancy"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch7-buoyancy.png" class="contained" alt="Rectangular prism with length, width, and height and vector representing the buoyancy force pulling downward on the prism (left) and upward on the prism (middle). The vector is absent for the prism on the right."></div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>An air parcel with edges parallel to the <span class="process-math">\(x\)</span>-, <span class="process-math">\(y\)</span>-, and <span class="process-math">\(z\)</span>-axes of the local Cartesian coordinate system, shown for cases of negative buoyancy (left), positive buoyancy (middle), and neutral buoyancy (right), where the vector labeled <span class="process-math">\(\vec{F}_B\)</span> represents the buoyancy force acting on the air parcel. <span class="process-math">\(\vec{F}_B\)</span> is directed downward for the case of negative buoyancy, upward for the case of positive buoyancy, and is absent for the case of neutral buoyancy.<div class="autopermalink" data-description="Figure 7.1.4"><a href="#ch7-buoyancy" title="Copy heading and permalink for Figure 7.1.4" aria-label="Copy heading and permalink for Figure 7.1.4">🔗</a></div></figcaption>
 </figure><div class="autopermalink" data-description="Subsection 7.1.8: Buoyancy"><a href="#ch7-section-thermodynamics-review-subsection-buoyancy" title="Copy heading and permalink for Subsection 7.1.8: Buoyancy" aria-label="Copy heading and permalink for Subsection 7.1.8: Buoyancy">🔗</a></div>
+</section>
+<section class="subsection" id="ch7-section-thermodynamics-review-subsection-stability">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Static stability</span>
+</h3>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-2">Differentiating the definition of potential temperature <a href="ch7-section-thermodynamics-review.html#eqn-potential-temperature" class="xref" data-knowl="./knowl/xref/eqn-potential-temperature.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.37">(7.1.37)</a> with respect to <span class="process-math">\(z\)</span> produces<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch7-section-thermodynamics-review-subsection-stability-3">
+<div class="displaymath process-math" id="ch7-section-thermodynamics-review-subsection-stability-3-1">
+\begin{align}
+\frac{\partial \theta}{\partial z}
+\amp =
+\frac{\partial}{\partial z}
+\left(
+T \left(
+\frac{p_0}{p}
+\right)^\frac{R_d}{c_p}
+\right)\notag\\
+\amp =
+\left(
+\frac{p_0}{p}
+\right)^\frac{R_d}{c_p}
+\frac{\partial T}{\partial z}
++
+\frac{R_d}{c_p} T
+\left(
+\frac{p_0}{p}
+\right)^{\frac{R_d}{c_p}-1}
+\left(
+- \frac{p_0}{p^2}
+\right)
+\frac{\partial p}{\partial z}\notag\\
+\amp =
+\left(
+\frac{p_0}{p}
+\right)^\frac{R_d}{c_p}
+\frac{\partial T}{\partial z}
+-
+\frac{R_d}{c_p} T
+\left(
+\frac{p_0}{p}
+\right)^\frac{R_d}{c_p}
+\frac{1}{p}
+\frac{\partial p}{\partial z}\notag\\
+\amp =
+\frac{\theta}{T}
+\frac{\partial T}{\partial z}
+-
+\frac{R_d}{c_p}
+\frac{\theta}{p}
+\frac{\partial p}{\partial z}\tag{7.1.48}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-4">Assuming the atmosphere is in hydrostatic balance, <a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability-3-1" class="xref" data-knowl="./knowl/xref/eqn-stability-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.48">(7.1.48)</a> can be written<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch7-section-thermodynamics-review-subsection-stability-5">
+<div class="displaymath process-math" id="ch7-section-thermodynamics-review-subsection-stability-5-1">
+\begin{align}
+\frac{\partial \theta}{\partial z}
+\amp =
+\frac{\theta}{T}
+\frac{\partial T}{\partial z}
+-
+\frac{R_d}{c_p}
+\frac{\theta}{p}
+(-\rho g)\notag\\
+\amp =
+\frac{\theta}{T}
+\frac{\partial T}{\partial z}
++
+\frac{R_d}{c_p}
+\frac{\theta}{p}
+\rho g\tag{7.1.49}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-6">Substituting the ideal gas law <a href="ch7-section-thermodynamics-review.html#eqn-ideal-gas-law-density" class="xref" data-knowl="./knowl/xref/eqn-ideal-gas-law-density.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.2">(7.1.2)</a> into <a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability-5-1" class="xref" data-knowl="./knowl/xref/eqn-stability-middle.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.49">(7.1.49)</a> produces<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch7-section-thermodynamics-review-subsection-stability-7">
+<div class="displaymath process-math" id="ch7-section-thermodynamics-review-subsection-stability-7-1">
+\begin{align}
+\frac{\partial \theta}{\partial z}
+\amp =
+\frac{\theta}{T}
+\frac{\partial T}{\partial z}
++
+\frac{R_d}{c_p}
+\frac{\theta}{p}
+\left(
+\frac{p}{R_dT}
+\right)
+g\notag\\
+\frac{\partial \theta}{\partial z}
+\amp =
+\frac{\theta}{T}
+\frac{\partial T}{\partial z}
++
+\frac{\theta}{T}
+\frac{g}{c_p}\notag\\
+\frac{T}{\theta}  \frac{\partial \theta}{\partial z}
+\amp =
+\frac{\partial T}{\partial z} + \frac{g}{c_p}\tag{7.1.50}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-8">Finally, substituting the definitions of the environmental lapse rate <a href="ch7-section-thermodynamics-review.html#eqn-environmental-lapse-rate" class="xref" data-knowl="./knowl/xref/eqn-environmental-lapse-rate.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.32">(7.1.32)</a> and the DALR <a href="ch7-section-thermodynamics-review.html#eqn-dry-adiabatic-lapse-rate" class="xref" data-knowl="./knowl/xref/eqn-dry-adiabatic-lapse-rate.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.35">(7.1.35)</a> into <a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability-7-1" class="xref" data-knowl="./knowl/xref/eqn-stability-end.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.50">(7.1.50)</a> produces<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch7-section-thermodynamics-review-subsection-stability-9">
+<div class="displaymath process-math" id="eqn-stability">
+\begin{equation}
+\frac{T}{\theta}
+\frac{\partial \theta}{\partial z}
+=
+\Gamma_d - \Gamma\tag{7.1.51}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-10">This leads to three cases for <dfn class="terminology">local stability</dfn>, which according to <a href="references.html#petty" class="xref" data-knowl="./knowl/xref/petty.html" data-reveal-label="Reveal" data-close-label="Close" title="Bibliographic Entry 8.6: A First Course in Atmospheric Thermodynamics">[Petty (2008)]</a> is the stability of atmospheric layers to small vertical displacements of air parcels within them. The term "local" is used to emphasize that air parcel vertical displacements are small and so only information about the local environmental lapse rate is needed.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch7-section-thermodynamics-review-subsection-stability-11">
+<ul class="disc" id="ch7-section-thermodynamics-review-subsection-stability-11-1">
+<li id="ch7-section-thermodynamics-review-subsection-stability-11-1-1">
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-11-1-1-1">When <span class="process-math">\(\Gamma_d \gt \Gamma\)</span> (i.e., when a perfectly dry air parcel rising adiabatically cools faster with increasing height than its environment), <span class="process-math">\(\dfrac{\partial \theta}{\partial z} \gt 0\text{.}\)</span> The air parcel is negatively buoyant, and thus <span class="process-math">\(\dfrac{\partial \theta}{\partial z} \gt 0\)</span> is a statement of <dfn class="terminology">static stability</dfn>. In other words, the layer of air surrounding the air parcel is <dfn class="terminology">stably stratified</dfn>. In this type of layer, the air parcel will tend to return to its original location if slightly disturbed.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-11-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch7-section-thermodynamics-review-subsection-stability-11-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch7-section-thermodynamics-review-subsection-stability-11-1-2">
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-11-1-2-1">When <span class="process-math">\(\Gamma_d \lt \Gamma\)</span> (i.e., when a dry air parcel rising adiabatically cools slower with increasing height than its environment), <span class="process-math">\(\dfrac{\partial \theta}{\partial z} \lt 0\text{.}\)</span> The air parcel is positively buoyant, and thus <span class="process-math">\(\dfrac{\partial \theta}{\partial z} \lt 0\)</span> is a statement of <dfn class="terminology">static instability</dfn>. In other words, the layer of air surrounding the air parcel is <dfn class="terminology">unstably stratified</dfn>. In this type of layer, the air parcel will convect freely away from its original location.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-11-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch7-section-thermodynamics-review-subsection-stability-11-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch7-section-thermodynamics-review-subsection-stability-11-1-3">
+<div class="para" id="ch7-section-thermodynamics-review-subsection-stability-11-1-3-1">When <span class="process-math">\(\Gamma_d = \Gamma\)</span> (i.e., when a dry air parcel rising adiabatically cools at the same rate with increasing height as its environment), <span class="process-math">\(\dfrac{\partial \theta}{\partial z} = 0\text{.}\)</span> The air parcel is neutrally buoyant, and thus <span class="process-math">\(\dfrac{\partial \theta}{\partial z} = 0\)</span> is a statement of <dfn class="terminology">static neutrality</dfn>. In other words, the layer of air is <dfn class="terminology">neutrally stratified</dfn>. In this type of layer, the air parcel will move to wherever it is displaced and remain there, or it will continue moving with constant speed in the direction of displacement.<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-11-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch7-section-thermodynamics-review-subsection-stability-11-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch7-section-thermodynamics-review-subsection-stability-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 7.1.9: Static stability"><a href="#ch7-section-thermodynamics-review-subsection-stability" title="Copy heading and permalink for Subsection 7.1.9: Static stability" aria-label="Copy heading and permalink for Subsection 7.1.9: Static stability">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 7.1: Review of dry thermodynamics"><a href="#ch7-section-thermodynamics-review" title="Copy heading and permalink for Section 7.1: Review of dry thermodynamics" aria-label="Copy heading and permalink for Section 7.1: Review of dry thermodynamics">🔗</a></div>
 </section>
 </div>
