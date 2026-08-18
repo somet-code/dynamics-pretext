@@ -1909,6 +1909,96 @@ var ptx_lunr_docs = [
   "body": "static stability stably stratified static instability unstably stratified static neutrality neutrally stratified "
 },
 {
+  "id": "ch7-section-thermodynamic-energy-equation",
+  "level": "1",
+  "url": "ch7-section-thermodynamic-energy-equation.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Thermodynamic energy equation",
+  "body": " Thermodynamic energy equation  The thermodynamic energy equation (also called the thermal energy equation ) is produced by dividing the form of the law of thermodynamics given by by and letting for a perfectly dry air parcel.     where [ ] is the diabatic heating rate per unit mass , which encompasses the rate at which an air parcel warms or cools due to radiation, conduction, latent heating, and\/or frictional dissipation. Note that (as in Holton and Hakim (2013) ) often is used in place of . We will adopt going forward, consistent with Martin (2006) .  The thermodynamic energy equation says that the rate at which heat is added diabatically to a perfectly dry air parcel is proportional to the sum of the rate at which the air parcel's internal energy increases as it warms and the rate at which it does work on its environment by expanding.  Performing the same steps on the related form of the law of thermodynamics given by produces     The thermodynamic energy equation also can be written in terms of potential temperature. Differentiating the formula for the potential temperature of a perfectly dry air parcel given by with respect to , rearranging, and substituting the ideal gas law produce     Substituting into and rearranging produces     Furthermore, substituting the differential of specific entropy into produces     which leads to the relationship between specific entropy and potential temperature      when integrated over time. Thus, surfaces of constant potential temperature also are surfaces of constant specific entropy and so are called isentropic surfaces .  For an adiabatic process, tells us , which means is conserved for a perfectly dry air parcel undergoing an adiabatic process. It further follows from that in this case, so also is conserved. Thus, a reversible dry adiabatic process is called an isentropic process .  "
+},
+{
+  "id": "ch7-section-thermodynamic-energy-equation-2",
+  "level": "2",
+  "url": "ch7-section-thermodynamic-energy-equation.html#ch7-section-thermodynamic-energy-equation-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "thermodynamic energy equation thermal energy equation "
+},
+{
+  "id": "ch7-section-thermodynamic-energy-equation-4",
+  "level": "2",
+  "url": "ch7-section-thermodynamic-energy-equation.html#ch7-section-thermodynamic-energy-equation-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "diabatic heating rate per unit mass "
+},
+{
+  "id": "ch7-section-thermodynamic-energy-equation-16",
+  "level": "2",
+  "url": "ch7-section-thermodynamic-energy-equation.html#ch7-section-thermodynamic-energy-equation-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "isentropic surfaces "
+},
+{
+  "id": "ch7-section-thermodynamic-energy-equation-17",
+  "level": "2",
+  "url": "ch7-section-thermodynamic-energy-equation.html#ch7-section-thermodynamic-energy-equation-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "isentropic process "
+},
+{
+  "id": "ch7-section-mechanical-energy-equation",
+  "level": "1",
+  "url": "ch7-section-mechanical-energy-equation.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Mechanical energy equation",
+  "body": " Mechanical energy equation  You learned in your physics course that a change in the mechanical energy (sum of macroscopic kinetic and potential energies) of a closed system is accomplished through work done on the system by non-conservative forces. You may have seen this statement of mechanical energy conservation expressed as     where [J] is the change in kinetic energy , [J] is the change in potential energy , and [J] is work done on the system by non-conservative forces.  We can build a similar statement of mechanical energy conservation using the equation of motion.  Following the derivation of Martin (2006) , we dot the vector equation of motion with to produce the following component equations:           where the property has been applied to the first term on the left-hand side of each equation.  We add , which leads to cancellation of all products originating from the curvature and Coriolis terms.     Physically, these terms cancel because they do no work on the wind, and therefore they do not change its kinetic or potential energies.  The term on the left-hand side of represents the time rate of change of the total kinetic energy per unit mass of an air parcel. Considering this alongside the statement of mechanical energy conservation , the terms on the right-hand side of must represent the sum of the negative of the time rate of change of the air parcel's potential energy per unit mass and the time rate of change of the non-conservative work per unit mass being done on the air parcel.  We proceed by rewriting a term on the right-hand side of to make this connection clearer. Since , by the definition of geopotential,     and so can be written      is the mechanical energy equation . It is not a \"new\" or \"separate\" equation: It is a combination and restructuring of the equations of motion. Even so, it reveals what can cause the mechanical energy per unit mass of an air parcel which is the sum of its kinetic energy per unit mass and its gravity potential energy per unit mass to change.  Note the similarities between and . The left-hand side of each equation gives the change in the macroscopic kinetic and potential energies of the air parcel and the right-hand side gives the sum of the work done by non-conservative forces on the air parcel. (Keep in mind that these quantities are intensive (per unit mass) in but are extensive (dependent on mass) in .)   Martin (2006) refers to the first term on the right-hand side of as pressure work . It represents the work (per unit mass) done by the pressure gradient force on the air parcel, and it is proportional to pressure advection . Consequently, it is positive (negative) for flow directed from higher pressure toward lower pressure (lower pressure toward higher pressure). In other words, it is positive (negative) for positive (negative) pressure advection.  The second term on the right-hand side of represents the dissipation of energy by viscous friction.  See Holton and Hakim (2013) for an alternative derivation of with viscous friction effects neglected.  "
+},
+{
+  "id": "ch7-section-mechanical-energy-equation-2",
+  "level": "2",
+  "url": "ch7-section-mechanical-energy-equation.html#ch7-section-mechanical-energy-equation-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mechanical energy mechanical energy conservation "
+},
+{
+  "id": "ch7-section-mechanical-energy-equation-19",
+  "level": "2",
+  "url": "ch7-section-mechanical-energy-equation.html#ch7-section-mechanical-energy-equation-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mechanical energy equation "
+},
+{
+  "id": "ch7-section-mechanical-energy-equation-20",
+  "level": "2",
+  "url": "ch7-section-mechanical-energy-equation.html#ch7-section-mechanical-energy-equation-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "intensive extensive "
+},
+{
+  "id": "ch7-section-mechanical-energy-equation-21",
+  "level": "2",
+  "url": "ch7-section-mechanical-energy-equation.html#ch7-section-mechanical-energy-equation-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "pressure work "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
