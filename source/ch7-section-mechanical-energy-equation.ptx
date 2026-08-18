@@ -174,7 +174,16 @@
     refers to the first term on the right-hand side of <xref ref="eqn-mechanical-energy-equation" text="type-global" />
     as <term>pressure work</term>.
     It represents the work (per unit mass) done by the pressure gradient force on the air parcel,
-    and it is proportional to pressure advection <m>-\vec{u} \cdot \nabla p</m>.
+    and it is proportional to pressure advection
+  </p>
+
+  <p>
+    <md>
+        -\vec{u} \cdot \nabla p
+    </md>
+  </p>
+
+  <p>
     Consequently,
     it is positive (negative) for flow directed from higher pressure toward lower pressure (lower pressure toward higher pressure).
     In other words,
