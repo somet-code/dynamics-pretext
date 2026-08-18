@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch7-section-thermodynamic-energy-equation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Thermodynamic energy equation</title>
+
+  <p>
+    The <term>thermodynamic energy equation</term>
+    (also called the <term>thermal energy equation</term>)
+    is produced by dividing the form of the <m>1^{\text{st}}</m> law of thermodynamics
+    given by <xref ref="eqn-first-law" text="type-global" />
+    by <m>\delta t</m> and letting <m>\delta t \to 0</m> for a perfectly dry air parcel.
+  </p>
+
+  <p>
+    <md xml:id="eqn-thermodyanmic-energy-equation" number="yes">
+        \dot{Q} = c_v \frac{DT}{Dt} + p \frac{D \alpha}{Dt}
+    </md>
+  </p>
+
+  <p>
+    where <m>\dot{Q}</m> [<m>\text{J} \, \text{kg}^{-1} \, \text{s}^{-1}</m>] is the <term>diabatic heating rate per unit mass</term>,
+    which encompasses the rate at which an air parcel warms or cools due to radiation, conduction, latent heating, and/or frictional dissipation.
+    Note that <m>J</m> (as in <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>)
+    often is used in place of <m>\dot{Q}</m>.
+    We will adopt <m>\dot{Q}</m> going forward,
+    consistent with <xref ref="martin" text="custom">Martin (2006)</xref>.
+  </p>
+
+  <p>
+    The thermodynamic energy equation <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />
+    says that the rate at which heat is added diabatically to a perfectly dry air parcel
+    is proportional to the sum of the rate at which the air parcel's internal energy increases as it warms
+    and the rate at which it does work on its environment by expanding.
+  </p>
+
+  <p>
+    Performing the same steps on the related form of the <m>1^{\text{st}}</m> law of thermodynamics
+    given by <xref ref="eqn-first-law-alt" text="type-global" /> produces
+  </p>
+
+  <p>
+    <md xml:id="eqn-thermodynamic-energy-equation-alt" number="yes">
+        \dot{Q} = c_p \frac{DT}{Dt} - \alpha \frac{Dp}{Dt}
+    </md>
+  </p>
+
+  <p>
+    The thermodynamic energy equation also can be written in terms of potential temperature.
+    Differentiating the formula for the potential temperature of a perfectly dry air parcel
+    given by<xref ref="eqn-potential-temperature" text="type-global" /> with respect to <m>t</m>,
+    rearranging,
+    and substituting the ideal gas law <xref ref="eqn-ideal-gas-law-specific-volume-dry" text="type-global" />
+    produce
+  </p>
+
+  <p>
+    <md xml:id="eqn-potential-temperature-derivative" number="yes">
+        c_p \frac{DT}{Dt} - \alpha \frac{Dp}{Dt}
+        =
+        c_p \frac{T}{\theta} \frac{D \theta}{Dt}
+    </md>
+  </p>
+
+  <p>
+    Substituting <xref ref="eqn-potential-temperature-derivative" text="type-global" />
+    into <xref ref="eqn-thermodynamic-energy-equation-alt" text="type-global" />
+    and rearranging produces
+  </p>
+
+  <p>
+    <md xml:id="eqn-thermodynamic-energy-equation-entropy-start" number="yes">
+        \frac{\dot{Q}}{T}
+        =
+        \frac{c_p}{\theta}
+        \frac{D \theta}{Dt}
+    </md>
+  </p>
+
+  <p>
+    Furthermore,
+    substituting the differential of specific entropy <xref ref="eqn-entropy" text="type-global" />
+    into <xref ref="eqn-thermodynamic-energy-equation-entropy-start" text="type-global" />
+    produces
+  </p>
+
+  <p>
+    <md xml:id="eqn-thermodynamic-energy-equation-entropy" number="yes">
+        \frac{Ds}{Dt}
+        =
+        \frac{c_p}{\theta}
+        \frac{D \theta}{Dt}
+    </md>
+  </p>
+
+  <p>
+    which leads to the relationship between specific entropy <m>s</m> and potential temperature <m>\theta</m>
+  </p>
+
+  <p>
+    <md number="yes">
+        s = c_p \ln{\theta}
+    </md>
+  </p>
+
+  <p>
+    when integrated over time.
+    Thus,
+    surfaces of constant potential temperature also are surfaces of constant specific entropy
+    and so are called <term>isentropic surfaces</term>.
+  </p>
+
+  <p>
+    For an adiabatic process, <xref ref="eqn-thermodynamic-energy-equation-entropy-start" text="type-global" />
+    tells us <m>\dfrac{D \theta}{Dt} = 0</m>,
+    which means <m>\theta</m> is conserved for a perfectly dry air parcel undergoing an adiabatic process.
+    It further follows from <xref ref="eqn-thermodynamic-energy-equation-entropy" text="type-global" />
+    that <m>\dfrac{Ds}{Dt} = 0</m> in this case,
+    so <m>s</m> also is conserved.
+    Thus, a reversible dry adiabatic process is called an <term>isentropic process</term>.
+  </p>
+
+</section>

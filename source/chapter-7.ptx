@@ -2,4 +2,5 @@
   <title>Dry Thermodynamics, Energy Conservation, and Static Stability</title>
 
   <xi:include href="ch7-section-thermodynamics-review.ptx" />
+  <xi:include href="ch7-section-thermodynamic-energy-equation.ptx" />
 </chapter>
