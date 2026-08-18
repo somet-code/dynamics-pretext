@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch7-section-mechanical-energy-equation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Mechanical energy equation</title>
+
+  <p>
+    You learned in your physics course
+    that a change in the <term>mechanical energy</term> (sum of macroscopic kinetic and potential energies) of a closed system
+    is accomplished through work done on the system by non-conservative forces.
+    You may have seen this statement of <term>mechanical energy conservation</term> expressed as
+  </p>
+
+  <p>
+    <md xml:id="eqn-mechanical-energy-conservation-simple" number="yes">
+        \Delta K + \Delta U = W_{nc}
+    </md>
+  </p>
+
+  <p>
+    where <m>\Delta K = K_2 - K_1</m> [J] is the change in kinetic energy <m>K</m>,
+    <m>\Delta U = U_2 - U_1</m> [J] is the change in potential energy <m>U</m>,
+    and <m>W_{nc}</m> [J] is work done on the system by non-conservative forces.
+  </p>
+
+  <p>
+    We can build a similar statement of mechanical energy conservation using the equation of motion.
+  </p>
+
+  <p>
+    Following the derivation of <xref ref="martin" text="custom">Martin (2006)</xref>,
+    we dot the vector equation of motion with <m>\vec{u}</m> to produce the following component equations:
+  </p>
+
+  <p>
+    <md xml:id="eqn-mechanical-energy-equation-x" number="yes">
+        \frac{D}{Dt} \left( \frac{u^2}{2} \right)
+        +
+        \frac{u^2 w}{a}
+        -
+        \frac{u^2 v \tan{\phi}}{a}
+        =
+        -\frac{u}{\rho} \frac{\partial p}{\partial x}
+        +
+        fuv
+        -
+        2 \Omega uw \cos{\phi}
+        +
+        \nu u \nabla^2 u
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-mechanical-energy-equation-y" number="yes">
+        \frac{D}{Dt} \left( \frac{v^2}{2} \right)
+        +
+        \frac{v^2 w}{a}
+        +
+        \frac{u^2 v \tan{\phi}}{a}
+        =
+        -\frac{v}{\rho}\frac{\partial p}{\partial y}
+        -
+        fuv
+        +
+        \nu v \nabla^2 v
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-mechanical-energy-equation-z" number="yes">
+        \frac{D}{Dt} \left( \frac{w^2}{2} \right)
+        -
+        \frac{w \left(u^2 +v^2 \right)}{a}
+        =
+        -\frac{w}{\rho}\frac{\partial p}{\partial z}
+        -
+        gw
+        +
+        2 \Omega u w \cos{\phi}
+        +
+        \nu w \nabla^2 w
+    </md>
+  </p>
+
+  <p>
+    where the property <m>\dfrac{d}{dx} \left( \dfrac{y^2}{2} \right) = y \dfrac{dy}{dx}</m>
+    has been applied to the first term on the left-hand side of each equation.
+  </p>
+
+  <p>
+    We add <xref first="eqn-mechanical-energy-equation-x" last="eqn-mechanical-energy-equation-z" />,
+    which leads to cancellation of all products originating from the curvature and Coriolis terms.
+  </p>
+
+  <p>
+    <md xml:id="eqn-mechanical-energy-equation-start" number="yes">
+        \frac{D}{Dt} \left(
+        \frac{u^2 + v^2 + w^2}{2}
+        \right)
+        =
+        -\frac{1}{\rho} \vec{u} \cdot \nabla p
+        - gw
+        +
+        \nu \vec{u} \cdot \nabla^2 \vec{u}
+    </md>
+  </p>
+
+  <p>
+    Physically,
+    these terms cancel because they do no work on the wind,
+    and therefore they do not change its kinetic or potential energies.
+  </p>
+
+  <p>
+    The term on the left-hand side of <xref ref="eqn-mechanical-energy-equation-start" text="type-global" />
+    represents the time rate of change of the total kinetic energy per unit mass of an air parcel.
+    Considering this alongside the statement of mechanical energy conservation <xref ref="eqn-mechanical-energy-conservation-simple" text="type-global" />,
+    the terms on the right-hand side of <xref ref="eqn-mechanical-energy-equation-start" text="type-global" />
+    must represent the sum of the negative of the time rate of change of the air parcel's potential energy per unit mass
+    and the time rate of change of the non-conservative work per unit mass being done on the air parcel.
+  </p>
+
+  <p>
+    We proceed by rewriting a term on the right-hand side of <xref ref="eqn-mechanical-energy-equation-start" text="type-global" />
+    to make this connection clearer.
+    Since <m>w = \dfrac{Dz}{Dt}</m>,
+    by the definition of geopotential,
+  </p>
+
+  <p>
+    <md>
+        gw = g \frac{Dz}{Dt} = \frac{D \Phi}{Dt}
+    </md>
+  </p>
+
+  <p>
+    and so <xref ref="eqn-mechanical-energy-equation-start" text="type-global" /> can be written
+  </p>
+
+  <p>
+    <md xml:id="eqn-mechanical-energy-equation" number="yes">
+        \frac{D}{Dt} \left(
+        \frac{u^2 + v^2 + w^2}{2}
+        + \Phi
+        \right)
+        =
+        -\frac{1}{\rho} \vec{u} \cdot \nabla p
+        +
+        \nu \vec{u} \cdot \nabla^2 \vec{u}
+    </md>
+  </p>
+
+  <p>
+    <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    is the <term>mechanical energy equation</term>.
+    It is not a "new" or "separate" equation: It is a combination and restructuring of the equations of motion.
+    Even so,
+    it reveals what can cause
+    the mechanical energy per unit mass of an air parcel<mdash />which is the sum of its
+    kinetic energy per unit mass <m>\dfrac{u^2 + v^2 + w^2}{2}</m>
+    and its gravity potential energy per unit mass <m>\Phi</m><mdash />to change.
+  </p>
+
+  <p>
+    Note the similarities between <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    and <xref ref="eqn-mechanical-energy-conservation-simple" text="type-global" />.
+    The left-hand side of each equation gives the change in the macroscopic kinetic and potential energies of the air parcel
+    and the right-hand side gives the sum of the work done by non-conservative forces on the air parcel.
+    (Keep in mind that these quantities are <term>intensive</term> (per unit mass) in <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    but are <term>extensive</term> (dependent on mass) in <xref ref="eqn-mechanical-energy-conservation-simple" text="type-global" />.)
+  </p>
+
+  <p>
+    <xref ref="martin" text="custom">Martin (2006)</xref>
+    refers to the first term on the right-hand side of <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    as <term>pressure work</term>.
+    It represents the work (per unit mass) done by the pressure gradient force on the air parcel,
+    and it is proportional to pressure advection <m>-\vec{u} \cdot \nabla p</m>.
+    Consequently,
+    it is positive (negative) for flow directed from higher pressure toward lower pressure (lower pressure toward higher pressure).
+    In other words,
+    it is positive (negative) for positive (negative) pressure advection.
+  </p>
+
+  <p>
+    The second term on the right-hand side of <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    represents the dissipation of energy by viscous friction.
+  </p>
+
+  <p>
+    See <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>
+    for an alternative derivation of <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    with viscous friction effects neglected.
+  </p>
+
+</section>

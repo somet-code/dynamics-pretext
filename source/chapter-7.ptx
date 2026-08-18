@@ -3,4 +3,5 @@
 
   <xi:include href="ch7-section-thermodynamics-review.ptx" />
   <xi:include href="ch7-section-thermodynamic-energy-equation.ptx" />
+  <xi:include href="ch7-section-mechanical-energy-equation.ptx" />
 </chapter>
