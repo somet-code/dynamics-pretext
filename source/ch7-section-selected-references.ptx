@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch7-section-selected-references" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Selected references</title>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                Chapters 1<ndash />6 and 8 of <xref ref="petty" text="custom">Petty (2008)</xref>
+            </p>
+        </li>
+        <li>
+            <p>
+                Chapter 3 of <xref ref="martin" text="custom">Martin (2006)</xref>: See tentative course schedule for specific readings.
+            </p>
+        </li>
+        <li>
+            <p>
+                Chapters 1 and 2 of <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>: See tentative course schedule for specific readings.
+            </p>
+        </li>
+        <li>
+            <p>
+                Chapters 3 and 6 of <xref ref="marshall-plumb" text="custom">Marshall and Plumb (2007)</xref>
+            </p>
+        </li>
+    </ul>
+  </p>
+
+</section>
