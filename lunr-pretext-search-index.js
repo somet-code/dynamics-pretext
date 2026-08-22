@@ -1960,7 +1960,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "Mechanical energy equation",
-  "body": " Mechanical energy equation  You learned in your physics course that a change in the mechanical energy (sum of macroscopic kinetic and potential energies) of a closed system is accomplished through work done on the system by non-conservative forces. You may have seen this statement of mechanical energy conservation expressed as     where [J] is the change in kinetic energy , [J] is the change in potential energy , and [J] is work done on the system by non-conservative forces.  We can build a similar statement of mechanical energy conservation using the equation of motion.  Following the derivation of Martin (2006) , we dot the vector equation of motion with to produce the following component equations:           where the property has been applied to the first term on the left-hand side of each equation.  We add , which leads to cancellation of all products originating from the curvature and Coriolis terms.     Physically, these terms cancel because they do no work on the wind, and therefore they do not change its kinetic or potential energies.  The term on the left-hand side of represents the time rate of change of the total kinetic energy per unit mass of an air parcel. Considering this alongside the statement of mechanical energy conservation , the terms on the right-hand side of must represent the sum of the negative of the time rate of change of the air parcel's potential energy per unit mass and the time rate of change of the non-conservative work per unit mass being done on the air parcel.  We proceed by rewriting a term on the right-hand side of to make this connection clearer. Since , by the definition of geopotential,     and so can be written      is the mechanical energy equation . It is not a \"new\" or \"separate\" equation: It is a combination and restructuring of the equations of motion. Even so, it reveals what can cause the mechanical energy per unit mass of an air parcel which is the sum of its kinetic energy per unit mass and its gravity potential energy per unit mass to change.  Note the similarities between and . The left-hand side of each equation gives the change in the macroscopic kinetic and potential energies of the air parcel and the right-hand side gives the sum of the work done by non-conservative forces on the air parcel. (Keep in mind that these quantities are intensive (per unit mass) in but are extensive (dependent on mass) in .)   Martin (2006) refers to the first term on the right-hand side of as pressure work . It represents the work (per unit mass) done by the pressure gradient force on the air parcel, and it is proportional to pressure advection . Consequently, it is positive (negative) for flow directed from higher pressure toward lower pressure (lower pressure toward higher pressure). In other words, it is positive (negative) for positive (negative) pressure advection.  The second term on the right-hand side of represents the dissipation of energy by viscous friction.  See Holton and Hakim (2013) for an alternative derivation of with viscous friction effects neglected.  "
+  "body": " Mechanical energy equation  You learned in your physics course that a change in the mechanical energy (sum of macroscopic kinetic and potential energies) of a closed system is accomplished through work done on the system by non-conservative forces. You may have seen this statement of mechanical energy conservation expressed as     where [J] is the change in kinetic energy , [J] is the change in potential energy , and [J] is work done on the system by non-conservative forces.  We can build a similar statement of mechanical energy conservation using the equation of motion.  Following the derivation of Martin (2006) , we dot the vector equation of motion with to produce the following component equations:           where the property has been applied to the first term on the left-hand side of each equation.  We add , which leads to cancellation of all products originating from the curvature and Coriolis terms.     Physically, these terms cancel because they do no work on the wind, and therefore they do not change its kinetic or potential energies.  The term on the left-hand side of represents the time rate of change of the total kinetic energy per unit mass of an air parcel. Considering this alongside the statement of mechanical energy conservation , the terms on the right-hand side of must represent the sum of the negative of the time rate of change of the air parcel's potential energy per unit mass and the time rate of change of the non-conservative work per unit mass being done on the air parcel.  We proceed by rewriting a term on the right-hand side of to make this connection clearer. Since , by the definition of geopotential,     and so can be written      is the mechanical energy equation . It is not a \"new\" or \"separate\" equation: It is a combination and restructuring of the equations of motion. Even so, it reveals what can cause the mechanical energy per unit mass of an air parcel which is the sum of its kinetic energy per unit mass and its gravity potential energy per unit mass to change.  Note the similarities between and . The left-hand side of each equation gives the change in the macroscopic kinetic and potential energies of the air parcel and the right-hand side gives the sum of the work done by non-conservative forces on the air parcel. (Keep in mind that these quantities are intensive (per unit mass) in but are extensive (dependent on mass) in .)   Martin (2006) refers to the first term on the right-hand side of as pressure work . It represents the work (per unit mass) done by the pressure gradient force on the air parcel, and it is proportional to pressure advection     Consequently, it is positive (negative) for flow directed from higher pressure toward lower pressure (lower pressure toward higher pressure). In other words, it is positive (negative) for positive (negative) pressure advection.  The second term on the right-hand side of represents the dissipation of energy by viscous friction.  See Holton and Hakim (2013) for an alternative derivation of with viscous friction effects neglected.  "
 },
 {
   "id": "ch7-section-mechanical-energy-equation-2",
@@ -1997,6 +1997,60 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "pressure work "
+},
+{
+  "id": "ch7-section-total-energy-equation",
+  "level": "1",
+  "url": "ch7-section-total-energy-equation.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Total energy equation",
+  "body": " Total energy equation  We can sum the thermodynamic energy equation given by and the mechanical energy equation given by to express the time rate of change of an air parcel's total energy.  Following the derivation presented in Martin (2006) , we first rearrange so its terms sum to 0.     Then we add this quantity to . This is equivalent to adding 0 to , so its value is unchanged.     The negative of the pressure work term expands as follows:     Since     and     since can be treated as constant, it follows that becomes     which can be written more simply as     by combining all terms that have the total derivative applied to them.   is the total energy equation (or simply the energy equation ).  See Holton and Hakim (2013) for an alternative derivation with viscous friction effects neglected.   Bernoulli's principle  You may have learned in a physics course about Bernoulli's principle , which is a statement of energy conservation for steady, adiabatic flow of an incompressible and inviscid (zero viscosity) fluid. For this type of fluid flow, the sum of the fluid's kinetic, potential, and pressure energies is constant. This usually is expressed using per unit volume quantities as in .:     where [ ] is the flow speed, [m] is the fluid's geometric height, [Pa] is the fluid pressure, and [ ] is the fluid density. Dividing by produces the same statement using specific (per unit mass) quantities:     where geopotential [ ].  By applying the steady state ( ), adiabatic ( ), and inviscid ( ) assumptions to the total energy equation given in , we can derive a related form of Bernoulli's principle:     The first term of corresponds to the first term of , since both give the kinetic energy of the fluid flow per unit mass. The second term of corresponds directly to the second term of , and the fourth term of corresponds directly to the third term of . If the air further is assumed to be incompressible, further reduces to      says that, if the atmosphere is at rest and incompressible, an increase in geometric height (equivalent to an increase in geopotential and geopotential height) results in a hydrostatic decrease in pressure. If the atmosphere is in motion, the decrease in pressure will be even larger than hydrostatic! Even without an increase in geometric height, says that the faster the air moves, the lower its pressure becomes.   "
+},
+{
+  "id": "ch7-section-total-energy-equation-18",
+  "level": "2",
+  "url": "ch7-section-total-energy-equation.html#ch7-section-total-energy-equation-18",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "total energy equation energy equation "
+},
+{
+  "id": "ch7-section-total-energy-equation-subsection-bernoulli-2",
+  "level": "2",
+  "url": "ch7-section-total-energy-equation.html#ch7-section-total-energy-equation-subsection-bernoulli-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Bernoulli's principle inviscid "
+},
+{
+  "id": "ch7-section-governing-equations",
+  "level": "1",
+  "url": "ch7-section-governing-equations.html",
+  "type": "Section",
+  "number": "7.5",
+  "title": "Governing equations",
+  "body": " Governing equations  At the end of Chapter 6 , we noted that we were looking for a fifth equation related to the unknowns , , , , and , and we have found it in the thermodynamic energy equation or one of its related forms. (Or we could use the total energy equation instead, since it subsumes the thermodynamic energy equation.) But inclusion of this equation introduces another unknown: . (We do not consider an additional unknown since it is the reciprocal of , which already is accounted for.) Luckily, the ideal gas law or one of its related forms closes the system!  The equations of momentum, mass and energy conservation as well as the ideal gas law together are called the governing equations or primitive equations . All are prognostic except for the ideal gas law, which is diagnostic.  You will see different formulations of the equations in this system some simpler and some more complicated depending on the context.  Simplifications often are made to aid physical understanding and increase the efficiency of calculations. You will make many simplifying assumptions as you apply the governing equations throughout your meteorological career, and it is important to keep track of these assumptions so you can understand the limits they impose on your applications.  More terms are retained as greater accuracy is needed, or as the speed and cost of numerical computations matters less. In fact, it is possible to expand this system to include more state variables for more detail! For example, if one wishes to include moist thermodynamics, they will have to include a moisture variable like mixing ratio . If one wishes to include cloud and precipitation processes, they will need to include even more variables like the mixing ratios of liquid water and ice . And of course, additional equations must be included for each additional state variable. For example, separate continuity equations would be included for each water state in the above case.  For this text, we will stick with the formulations of the governing equations discussed in this topic and previous topics. And in Chapter 8, we will learn how to simplify them to aid understanding of common atmospheric phenomena.  "
+},
+{
+  "id": "ch7-section-governing-equations-3",
+  "level": "2",
+  "url": "ch7-section-governing-equations.html#ch7-section-governing-equations-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "governing equations primitive equations "
+},
+{
+  "id": "ch7-section-selected-references",
+  "level": "1",
+  "url": "ch7-section-selected-references.html",
+  "type": "Section",
+  "number": "7.6",
+  "title": "Selected references",
+  "body": " Selected references     Chapters 1 6 and 8 of Petty (2008)     Chapter 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapters 1 and 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapters 3 and 6 of Marshall and Plumb (2007)      "
 },
 {
   "id": "references",
