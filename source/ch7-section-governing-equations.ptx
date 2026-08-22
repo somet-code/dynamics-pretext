@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch7-section-governing-equations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Governing equations</title>
+
+  <p>
+    At the <xref ref="ch6-section-looking-ahead" text="custom">end of Chapter 6</xref>,
+    we noted that we were looking for a fifth equation related to the unknowns
+    <m>u</m>, <m>v</m>, <m>w</m>, <m>p</m>, and <m>\rho</m>,
+    and we have found it in the thermodynamic energy equation <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />
+    or one of its related forms.
+    (Or we could use the total energy equation <xref ref="eqn-total-energy-equation" text="type-global" /> instead,
+    since it subsumes the thermodynamic energy equation.)
+    But inclusion of this equation introduces another unknown: <m>T</m>.
+    (We do not consider <m>\alpha</m> an additional unknown since it is the reciprocal of <m>\rho</m>,
+    which already is accounted for.)
+    Luckily, the ideal gas law <xref ref="eqn-ideal-gas-law-density" text="type-global" />
+    or one of its related forms closes the system!
+  </p>
+
+  <p>
+    The equations of momentum, mass and energy conservation as well as the ideal gas law together are called the <term>governing equations</term>
+    or <term>primitive equations</term>.
+    All are prognostic except for the ideal gas law,
+    which is diagnostic.
+  </p>
+
+  <p>
+    You will see different formulations of the equations
+    in this system<mdash />some simpler and some more complicated<mdash />depending on the context.
+  </p>
+
+  <p>
+    Simplifications often are made to aid physical understanding and increase the efficiency of calculations.
+    You will make many simplifying assumptions as you apply the governing equations throughout your meteorological career,
+    and it is important to keep track of these assumptions so you can understand the limits they impose on your applications.
+  </p>
+
+  <p>
+    More terms are retained as greater accuracy is needed,
+    or as the speed and cost of numerical computations matters less.
+    In fact,
+    it is possible to expand this system to include more state variables for more detail!
+    For example,
+    if one wishes to include moist thermodynamics,
+    they will have to include a moisture variable like mixing ratio <m>w</m>.
+    If one wishes to include cloud and precipitation processes,
+    they will need to include even more variables like the mixing ratios of liquid water <m>w_l</m> and ice <m>w_i</m>.
+    And of course,
+    additional equations must be included for each additional state variable.
+    For example,
+    separate continuity equations would be included for each water state in the above case.
+  </p>
+
+  <p>
+    For this text,
+    we will stick with the formulations of the governing equations discussed in this topic and previous topics.
+    And in Chapter 8,
+    we will learn how to simplify them to aid understanding of common atmospheric phenomena.
+  </p>
+
+</section>

@@ -5,4 +5,5 @@
   <xi:include href="ch7-section-thermodynamic-energy-equation.ptx" />
   <xi:include href="ch7-section-mechanical-energy-equation.ptx" />
   <xi:include href="ch7-section-total-energy-equation.ptx" />
+  <xi:include href="ch7-section-governing-equations.ptx" />
 </chapter>
