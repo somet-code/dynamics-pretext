@@ -4,7 +4,7 @@
     <title>Poisson's equation and potential temperature</title>
 
     <p>
-        <xref ref="eqn-dry-adiabatic-lapse-rate" text="type-global" />
+        The DALR <xref ref="eqn-dry-adiabatic-lapse-rate" text="type-global" />
         gives the rate at which a perfectly dry air parcel cools with increasing height as it rises adiabatically
         (or the rate at which it warms with decreasing height as it sinks adiabatically).
         But it does not give the actual temperature of such an air parcel at any point during its ascent
@@ -15,8 +15,8 @@
         To find the temperature <m>T</m> a perfectly dry air parcel would have after moving adiabatically
         from its initial pressure level <m>p_0</m> with initial temperature <m>T_0</m>
         to pressure level <m>p</m>,
-        set <m>\delta q = 0</m> in <xref ref="eqn-first-law-alt" text="type-global" />,
-        rearrange <xref ref="eqn-ideal-gas-law-specific-volume" text="type-global" /> to replace <m>\alpha = \dfrac{R_dT}{p}</m>,
+        set <m>\delta q = 0</m> in the related form of the <m>1^{\text{st}}</m> law of thermodynamics <xref ref="eqn-first-law-alt" text="type-global" />,
+        rearrange the ideal gas law <xref ref="eqn-ideal-gas-law-specific-volume" text="type-global" /> to replace <m>\alpha</m>,
         separate,
         and integrate.
         This results in <term>Poisson's equation</term>:
@@ -39,7 +39,7 @@
     </p>
 
     <p>
-        <xref ref="eqn-poissons-equation" text="type-global"/>
+        Poisson's equation <xref ref="eqn-poissons-equation" text="type-global"/>
         is used to define <term>potential temperature</term> <m>\theta [K]</m>
         by replacing <m>T_0</m> with <m>\theta</m>
         and rearranging to solve for <m>\theta</m>:

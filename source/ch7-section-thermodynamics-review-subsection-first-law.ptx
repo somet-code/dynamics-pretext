@@ -5,11 +5,11 @@
 
     <p>
         An air parcel often is conceptualized as a <term>closed thermodynamic system</term>,
-        which is a thermodynamic system that does not exchange mass with its environment but may exchange energy with it through heat and work.
+        which is a thermodynamic system that does not exchange mass with its environment but can exchange energy with it through heat and work.
     </p>
 
     <p>
-        The <term><m>1^{\text{st}}</m> law of thermodynamics</term>
+        The <term><m>\boldsymbol{1^{\text{st}}}</m> law of thermodynamics</term>
         is a statement of energy conservation for a closed thermodynamic system.
         It dictates that
         heat added to a closed thermodynamic system from its environment through absorption results in an increase in the system's internal (stored) energy
@@ -63,9 +63,13 @@
     </p>
 
     <p>
-        where <m>\delta w \gt 0</m> for expansion and <m>\delta w \lt 0</m> for contraction.
+        where <m>d\alpha \gt 0</m> and consequently <m>\delta w \gt 0</m> for expansion
+        and <m>d\alpha \lt 0</m> and consequently <m>\delta w \lt 0</m> for contraction.
+    </p>
+
+    <p>
         Furthermore,
-        according to Joule's <m>2^{\text{nd}}</m> law,
+        according to <term>Joule's <m>\boldsymbol{2^{\text{nd}}}</m> law</term>,
         the internal energy of an ideal gas depends only on its temperature since its particles are not attracted to each other,
         and so
     </p>
@@ -87,12 +91,14 @@
     </p>
 
     <p>
-        where <m>c_v = 717 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>
-        is the <term>specific heat capacity of dry air at constant volume</term>.
+        where <m>c_v</m> is the <term>specific heat capacity of dry air at constant volume</term>.
+        Under stand conditions,
+        <m>c_v = 717 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>;
+        this value often is used for perfectly dry air.
     </p>
 
     <p>
-        Substitution of the differential of <xref ref="eqn-ideal-gas-law-specific-volume" text="type-global" />
+        Substitution of the differential of the ideal gas law <xref ref="eqn-ideal-gas-law-specific-volume" text="type-global" />
         into <xref ref="eqn-first-law" text="type-global" />
         and subsequent rearrangement produce the related form
     </p>
@@ -104,11 +110,14 @@
     </p>
 
     <p>
-        where <m>c_p = c_v + R_d = 1004 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>
+        where <m>c_p = c_v + R_d</m>
         is the <term>specific heat capacity of dry air at constant pressure</term>.
         <m>c_p \gt c_v</m>
         since heat added to an air parcel during an isobaric process causes the air parcel to expand as well as warm,
         and so less energy is available for warming.
+        Under standard conditions,
+        <m>c_p = 1004 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>;
+        this value often is used for perfectly dry air.
     </p>
 
     <p>

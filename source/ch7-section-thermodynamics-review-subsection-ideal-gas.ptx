@@ -105,7 +105,10 @@
 
     <p>
         respectively,
-        where <m>R_d = 287 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m> is the <term>gas constant for dry air</term>.
+        where <m>R_d</m> is the <term>gas constant for dry air</term>.
+        Under standard conditions,
+        <m>R_d = 287 \, \text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>;
+        this value often is used for perfectly dry air.
     </p>
 
     <p>

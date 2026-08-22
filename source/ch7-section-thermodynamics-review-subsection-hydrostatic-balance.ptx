@@ -167,7 +167,7 @@
         since it is no longer perfectly accurate.
         But under most atmospheric conditions,
         excepting those with very large vertical accelerations,
-        the hydrostatic approximation is accurate.
+        the hydrostatic approximation is close to realistic.
         Consequently,
         we often approximate atmospheric pressure as the weight per unit area of the atmosphere above the height at which pressure is measured.
     </p>

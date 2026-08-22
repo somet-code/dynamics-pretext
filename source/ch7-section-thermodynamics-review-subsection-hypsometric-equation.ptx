@@ -77,7 +77,7 @@
         <m>T</m> decreases with increasing height linearly on average in the troposphere and cools by over <m>60 \, \text{K}</m>
         (as will be discussed in <xref ref="ch7-section-thermodynamics-review-subsection-standard-atmosphere" text="type-global" /> below).
         To avoid writing <m>T</m> as a linear function of <m>z</m>,
-        which complicate (but does not prevent) integration,
+        which complicates (but does not prevent) integration,
         we typically set <m>T = \bar{T}</m> in <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" />,
         where
     </p>

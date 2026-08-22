@@ -6,8 +6,8 @@
     <p>
         The American Meteorological Society (AMS)
         <url href="https://glossary.ametsoc.org/wiki/Standard_atmosphere">defines</url>
-        a <term>standard atmosphere</term> as
-        "a hypothetical vertical distribution of atmospheric temperature, pressure and density
+        a <term>standard atmosphere</term> as a
+        "hypothetical vertical distribution of atmospheric temperature, pressure and density
         that, by international agreement, is taken to be representative of the atmosphere."
         A standard atmosphere is subject to the assumptions that the air can be treated as an ideal gas and is in hydrostatic balance
         (at least at lower altitudes).
@@ -22,9 +22,9 @@
 
     <p>
         Several common<mdash />and nearly identical<mdash />standard atmospheres apply to locations in the middle latitudes,
-        including the International Organization for Standardization (ISO) International Standard Atmosphere (ISA);
+        including the International Organization for Standardization (ISO) <url href="https://www.iso.org/standard/7472.html">International Standard Atmosphere</url> (ISA);
         the <url href="https://www.ngdc.noaa.gov/stp/space-weather/online-publications/miscellaneous/us-standard-atmosphere-1976/us-standard-atmosphere_st76-1562_noaa.pdf">U.S. Standard Atmosphere</url>;
-        and the International Civil Aviation Organization (ICAO) Standard Atmosphere.
+        and the International Civil Aviation Organization (ICAO) <url href="https://ntrs.nasa.gov/citations/19930083952">Standard Atmosphere</url>.
         The U.S. Standard Atmosphere extends through the largest depth
         (<m>z_{min} = -5 \, \text{km}</m>, <m>z_{max} = 1000 \, \text{km}</m>)
         and is largely consistent with other commonly used standard atmospheres,
@@ -46,7 +46,7 @@
         The troposphere is the atmospheric layer in which nearly all weather occurs
         and in which we spend all (or, if we fly, nearly all) of our time.
         This average temperature behavior in the troposphere motivates the definition of a lapse rate
-        as a rate of temperature <em>decrease</em>with increasing height.
+        as a rate of temperature <em>decrease</em> with increasing height.
     </p>
 
     <figure xml:id="ch7-standard-atmosphere">

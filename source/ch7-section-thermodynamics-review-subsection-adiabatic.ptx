@@ -4,9 +4,9 @@
     <title>Lapse rates and adiabatic processes</title>
 
     <p>
-        A <term>lapse rate</term> is the rate of temperature decrease with increasing height.
+        A temperature <term>lapse rate</term> is the rate of temperature decrease with increasing height.
         In other words,
-        it is the rate at which temperature cools with increasing height.
+        it is the rate at which temperature <em>cools</em> with increasing height.
         By this definition,
         a lapse rate is positive (negative) when temperature cools (warms) with increasing height.
     </p>
@@ -27,7 +27,7 @@
     </p>
 
     <p>
-        The environmental lapse rate can be used to characterize special atmospheric layers by their temperature behavior.
+        The environmental lapse rate can be used to characterize special atmospheric layers by their temperature behavior in the vertical.
     </p>
 
     <p>
@@ -54,7 +54,8 @@
     </p>
 
     <p>
-        We apply the adiabatic assumption to <xref ref="eqn-first-law-alt" text="type-global" />,
+        We apply the adiabatic assumption to the related form of the <m>1^{\text{st}}</m> law of thermodynamics
+        <xref ref="eqn-first-law-alt" text="type-global" />,
         divide by <m>\delta z</m>,
         and let <m>\delta z \to 0</m> to produce
     </p>
@@ -66,7 +67,7 @@
     </p>
 
     <p>
-        (The ordinary derivative can be used if we assume the air parcel only moves in the vertical;
+        (The ordinary derivative can be used if we assume the air parcel experiences changes in temperature and pressure due only to vertical movement;
         otherwise, a partial derivative can be used.)
     </p>
 
