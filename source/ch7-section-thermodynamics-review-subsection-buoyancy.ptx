@@ -36,7 +36,15 @@
         If a volume <m>V</m> [<m>\text{m}^{3}</m>] of fluid
         with constant density <m>\rho_{fluid}</m> [<m>\text{kg} \, \text{m}^{-3}</m>]
         is displaced by an object with volume <m>V</m>,
-        <m>m_{fluid} = \rho_{fluid} \, V</m>
+    </p>
+
+    <p>
+        <md number="yes">
+            m_{fluid} = \rho_{fluid} \, V
+        </md>
+    </p>
+    
+    <p>
         and <xref ref="eqn-weight-displaced-fluid-start" text="type-global" /> becomes
     </p>
 
@@ -47,11 +55,11 @@
     </p>
 
     <p>
-        <xref ref="eqn-weight-displaced-fluid" text="type-global" /> gives the upward force the immersed object experiences.
+        <xref ref="eqn-weight-displaced-fluid" text="type-global" /> gives the upward force the surrounding fluid exerts on the immersed object.
     </p>
 
     <p>
-        The immersed object also experiences the downward force of gravity as expressed through its own weight <m>W_{object}</m>:
+        The immersed object also experiences the downward force of gravity as expressed by its own weight <m>W_{object}</m>:
     </p>
 
     <p>
@@ -65,7 +73,15 @@
         As noted above,
         the object has the same volume <m>V</m> as the fluid it displaces.
         If the object has constant density <m>\rho_{object}</m>,
-        <m>m_{object} = \rho_{object} \, V</m>
+    </p>
+
+    <p>
+        <md number="yes">
+            m_{object} = \rho_{object} \, V
+        </md>
+    </p>
+    
+    <p>
         and <xref ref="eqn-weight-object-start" text="type-global" /> becomes
     </p>
 
@@ -76,7 +92,7 @@
     </p>
 
     <p>
-        The <term>buoyancy force</term> is the sum of these vertically-directed forces acting on the immersed object:
+        The <term>buoyancy force</term> <m>F_B</m> is the sum of these vertically-directed forces acting on the immersed object:
     </p>
 
     <p>
@@ -127,7 +143,7 @@
         Since measuring the masses of air parcels is not feasible,
         it is convenient to deal with forces per unit mass,
         i.e., accelerations.
-        It follows that we divide <xref ref="eqn-buoyancy-force-meteorology" text="type-global" />
+        It follows that we divide the buoyancy force <xref ref="eqn-buoyancy-force-meteorology" text="type-global" />
         by the mass of the air parcel <m>m' = \rho' \, V</m>
         to produce the <term>buoyancy acceleration</term> <m>a_B</m>:
     </p>
@@ -150,8 +166,8 @@
         Assuming the air parcel (1) is perfectly dry
         and (2) has pressure that instantaneously adjusts to the environmental pressure
         (i.e., <m>p' = p</m>, which is a common and accurate assumption under most conditions),
-        we can rewrite <xref ref="eqn-buoyancy-acceleration-density" text="type-global" />
-        using <xref ref="eqn-ideal-gas-law-density" text="type-global" />:
+        we can rewrite the buoyancy acceleration <xref ref="eqn-buoyancy-acceleration-density" text="type-global" />
+        using the ideal gas law <xref ref="eqn-ideal-gas-law-density" text="type-global" />:
     </p>
 
     <p>
@@ -169,8 +185,8 @@
         and <m>T'</m> is the air parcel temperature.
         Furthermore,
         using the definition of potential temperature given in <xref ref="eqn-potential-temperature" text="type-global" />,
-        we can rewrite <xref ref="eqn-buoyancy-acceleration-temperature" text="type-global" />
-        in terms of <m>\theta</m>:
+        we can rewrite the buoyancy acceleration <xref ref="eqn-buoyancy-acceleration-temperature" text="type-global" />
+        in terms of potential temperature <m>\theta</m>:
     </p>
 
     <p>
@@ -189,6 +205,7 @@
     </p>
 
     <p>
+        The alternative forms of the buoyancy acceleration given by
         <xref first="eqn-buoyancy-acceleration-density" last="eqn-buoyancy-acceleration-potential-temperature"/>
         lead to the following three cases,
         which are depicted in <xref ref="ch7-buoyancy" text="type-global" /> below.
@@ -201,7 +218,8 @@
                     When a perfectly dry air parcel is denser and therefore colder and potentially colder than its environment
                     (i.e., <m>\rho' \gt \rho</m>, <m>T' \lt T</m>, and <m>\theta' \lt \theta</m>),
                     the air parcel is <term>negatively buoyant</term>.
-                    In other words, <m>F_B</m> and <m>a_B</m> are directed downward (i.e., are negative).
+                    In other words, <m>F_B</m> and <m>a_B</m> are directed downward
+                    (i.e., <m>F_B \lt 0</m> and <m>a_B \lt 0</m>).
                 </p>
             </li>
             <li>
@@ -209,7 +227,8 @@
                     When a perfectly dry air parcel is less dense and therefore warmer and potentially warmer than its environment
                     (i.e., <m>\rho' \lt \rho</m>, <m>T' \gt T</m>, and <m>\theta' \gt \theta</m>),
                     the air parcel is <term>positively buoyant</term>.
-                    In other words, <m>F_B</m> and <m>a_B</m> are directed upward (i.e., are positive).
+                    In other words, <m>F_B</m> and <m>a_B</m> are directed upward
+                    (i.e., <m>F_B \gt 0</m> and <m>a_B \gt 0</m>).
                 </p>
             </li>
             <li>
@@ -217,7 +236,7 @@
                     When a perfectly dry air parcel has the same density and therefore the same temperature and potential temperature as its environment
                     (i.e., <m>\rho' = \rho</m>, <m>T' = T</m>, and <m>\theta' = \theta</m>),
                     the air parcel is <term>neutrally buoyant</term>.
-                    In other words, <m>F_B</m> and <m>a_B</m> are 0.
+                    In other words, <m>F_B = 0</m> and <m>a_B = 0</m>.
                 </p>
             </li>
         </ul>
@@ -228,9 +247,8 @@
             An air parcel with edges parallel to the <m>x</m>-, <m>y</m>-, and <m>z</m>-axes of the local Cartesian coordinate system,
             shown for cases of negative buoyancy (left), positive buoyancy (middle), and neutral buoyancy (right),
             where the vector labeled <m>\vec{F}_B</m> represents the buoyancy force acting on the air parcel.
-            <m>\vec{F}_B</m> is directed downward for the case of negative buoyancy,
-            upward for the case of positive buoyancy,
-            and is absent for the case of neutral buoyancy.
+            <m>\vec{F}_B</m> is directed downward for the case of negative buoyancy and upward for the case of positive buoyancy,
+            and it is absent for the case of neutral buoyancy.
         </caption>
         <image source="images/ch7-buoyancy.png" width="80%">
             <shortdescription>

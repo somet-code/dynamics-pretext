@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <subsection xml:id="ch7-section-thermodynamics-review-subsection-stability" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Static stability</title>
+    <title>Local static stability</title>
 
     <p>
         Differentiating the definition of potential temperature
         <xref ref="eqn-potential-temperature" text="type-global" />
-        with respect to <m>z</m> produces
+        with respect to geometric height <m>z</m> produces
     </p>
 
     <p>
@@ -146,7 +146,7 @@
     </p>
 
     <p>
-        This leads to three cases for <term>local stability</term>,
+        This leads to three cases for <term>local static stability</term>,
         which according to <xref ref="petty" text="custom">Petty (2008)</xref>
         is the stability of atmospheric layers to small vertical displacements of air parcels within them.
         The term "local" is used to emphasize that air parcel vertical displacements are small
@@ -166,7 +166,7 @@
                     In other words,
                     the layer of air surrounding the air parcel is <term>stably stratified</term>.
                     In this type of layer,
-                    the air parcel will tend to return to its original location if slightly disturbed.
+                    the air parcel will tend to return to its original location if slightly disturbed vertically.
                 </p>
             </li>
             <li>
@@ -180,7 +180,7 @@
                     In other words,
                     the layer of air surrounding the air parcel is <term>unstably stratified</term>.
                     In this type of layer,
-                    the air parcel will convect freely away from its original location.
+                    the air parcel will convect freely away from its original location if slightly disturbed vertically.
                 </p>
             </li>
             <li>
@@ -195,7 +195,7 @@
                     the layer of air is <term>neutrally stratified</term>.
                     In this type of layer,
                     the air parcel will move to wherever it is displaced and remain there,
-                    or it will continue moving with constant speed in the direction of displacement.
+                    or it will continue moving with constant speed in the direction of vertical displacement.
                 </p>
             </li>
         </ul>
