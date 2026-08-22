@@ -112,7 +112,7 @@
     </p>
 
     <p>
-        The equation of hydrostatic balance<xref ref="eqn-hydrostatic-balance" text="type-global" /> also could be written
+        The equation of hydrostatic balance <xref ref="eqn-hydrostatic-balance" text="type-global" /> also could be written
     </p>
 
     <p>
@@ -136,7 +136,7 @@
     </p>
 
     <p>
-        Note
+        Note:
     </p>
 
     <p>
@@ -147,7 +147,7 @@
                     is <term>diagnostic</term> (descriptive)
                     rather than <term>prognostic</term> (predictive)
                     like the vertical equation of motion <xref ref="eqn-motion-z" text="type-global" />
-                    because it has no dependence on <m>t</m>, and
+                    because it has no dependence on time <m>t</m>, and
                 </p>
             </li>
             <li>

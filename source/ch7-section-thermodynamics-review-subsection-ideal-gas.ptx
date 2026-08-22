@@ -6,15 +6,18 @@
     <p>
         An <term>ideal gas</term> consists of point particles that move randomly and continuously
         but do not interact with each other except possibly through perfectly elastic collisions.
-        The condition of non-interaction means ideal gas particles are not attracted to each other and do not undergo phase change.
+        The condition of non-interaction means ideal gas particles are not attracted to each other,
+        do not bond together,
+        and do not undergo phase change.
+        In contrast,
+        the particles of a <term>real gas</term> have size and interact with each other via attraction, bonding, and phase change.
     </p>
 
     <p>
-        In theory,
-        any gas can be described by an <term>equation of state</term>
+        Any gas<mdash />ideal or real<mdash />can be described by an <term>equation of state</term>
         that relates its pressure, temperature, and volume.
         An ideal gas has a simplified equation of state called the <term>ideal gas law</term>.
-        The ideal gas law comes from a combination of <url href="https://en.wikipedia.org/wiki/Avogadro%27s_law">Avagadro's law</url>,
+        The ideal gas law comes from a combination of <url href="https://en.wikipedia.org/wiki/Avogadro%27s_law">Avogadro's law</url>,
         <url href="https://en.wikipedia.org/wiki/Boyle%27s_law">Boyle's law</url>,
         and <url href="https://en.wikipedia.org/wiki/Charles%27s_law">Charles's law</url>
         and traditionally is written
@@ -36,17 +39,18 @@
 
     <p>
         For many reasons, air is not an ideal gas.
-        For one, its particles have spatial extent.
+        Its particles have spatial extent.
         Organized motion often is imposed on them by external forces, resulting in wind.
         Some of its particles are attracted to each other and to other substances;
         arguably most importantly for meteorologists,
-        water molecules regularly experience strong intermolecular attractions as well as attractions to surfaces that result in phase change.
+        water molecules regularly experience strong intermolecular attractions as well as attractions to surfaces
+        that result in bonding and phase change.
     </p>
 
     <p>
         Luckily, since air molecules are small and attractions usually are weak,
         air can be treated as an ideal gas with great accuracy under typical atmospheric conditions.
-        Furthermore, we easily can modify its equations to account for the presence of water vapor,
+        Furthermore, we easily can modify its thermodynamic equations to account for the presence of water vapor,
         such as by replacing temperature with virtual temperature.
     </p>
 
@@ -71,8 +75,8 @@
     </p>
 
     <p>
-        where <m>\rho</m> [<m>\text{kg} \text{m}^{-3}</m>] is the air density,
-        <m>\alpha = \dfrac{1}{\rho}</m> [<m>\text{m}^{3} \text{kg}^{-1}</m>] is its specific volume,
+        where <m>\rho</m> [<m>\text{kg} \, \text{m}^{-3}</m>] is the air density,
+        <m>\alpha = \dfrac{1}{\rho}</m> [<m>\text{m}^{3} \, \text{kg}^{-1}</m>] is its specific volume,
         and <m>R</m> [<m>\text{J} \, \text{kg}^{-1} \, \text{K}^{-1}</m>] is a gas constant appropriate to the particular gas mixture making up the air.
     </p>
 

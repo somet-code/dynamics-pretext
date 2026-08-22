@@ -6,7 +6,7 @@
     <p>
         We return to hydrostatic balance as expressed by <xref ref="eqn-hydrostatic-balance" text="type-global" />
         and rearrange the ideal gas law for perfectly dry air <xref ref="eqn-ideal-gas-law-density-dry" text="type-global" />
-        to replace <m>\rho = \dfrac{p}{R_dT}</m>:
+        to replace <m>\rho</m>:
     </p>
 
     <p>
@@ -77,14 +77,14 @@
         <m>T</m> decreases with increasing height linearly on average in the troposphere and cools by over <m>60 \, \text{K}</m>
         (as will be discussed in <xref ref="ch7-section-thermodynamics-review-subsection-standard-atmosphere" text="type-global" /> below).
         To avoid writing <m>T</m> as a linear function of <m>z</m>,
-        which would complicate integration,
+        which complicate (but does not prevent) integration,
         we typically set <m>T = \bar{T}</m> in <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" />,
         where
     </p>
 
     <p>
         <md number="yes">
-            \bar{T} = \frac{1}{z_2 - z_1} \int_{z_1}^{z_2} T \, \partial z    \bar{T}
+            \bar{T}
             =
             \frac
             {\int_{p_2}^{p_1} T \, \frac{1}{p} \, \partial p}
@@ -141,7 +141,8 @@
         between pressure levels <m>p_1</m> and <m>p_2</m>,
         the greater the thickness <m>\Delta z</m> of the column of air bounded between those levels.
         Physically,
-        this is because the faster-moving molecules of warmer air travel greater distances in any given amount of time and expand the column of air. (This also lowers the density of warmer air relative to otherwise-identical colder air.)
+        this is because the faster-moving molecules of warmer air travel greater distances in any given amount of time and expand the column of air.
+        (This also lowers the density of warmer air relative to otherwise-identical colder air.)
     </p>
 
     <p>
@@ -203,7 +204,17 @@
 
     <p>
         Dividing <xref ref="eqn-hypsometric-equation-geopotential" text="type-global" /> by <m>g_0</m>
-        and inserting the definition of geopotential height <m>Z = \dfrac{\Phi}{g_0}</m> further produces
+        and inserting the definition of geopotential height
+    </p>
+
+    <p>
+        <md number="no">
+            Z = \frac{\Phi}{g_0}
+        </md>
+    </p>
+
+    <p>
+        further produces
     </p>
 
     <p>
