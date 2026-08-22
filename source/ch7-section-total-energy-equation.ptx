@@ -165,4 +165,6 @@
     for an alternative derivation with viscous friction effects neglected.
   </p>
 
+  <xi:include href="ch7-section-total-energy-equation-subsection-bernoulli.ptx" />
+
 </section>

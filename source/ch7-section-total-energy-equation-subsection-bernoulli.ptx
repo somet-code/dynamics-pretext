@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch7-section-total-energy-equation-subsection-bernoulli" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Bernoulli's principle</title>
+
+    <p>
+        You may have learned in a physics course about <term>Bernoulli's principle</term>,
+        which is a statement of energy conservation for steady, adiabatic flow of an incompressible and <term>inviscid</term> (zero viscosity) fluid.
+        For this type of fluid flow,
+        the sum of the fluid's kinetic, potential, and pressure energies is constant.
+        This usually is expressed using per unit volume quantities as in <xref ref="eqn-bernoulli-simple" text="type-global" />.:
+    </p>
+
+    <p>
+        <md xml:id="eqn-bernoulli-simple" number="yes">
+            \frac{\rho V^2}{2} + \rho gz + p = constant
+        </md>
+    </p>
+
+    <p>
+        where <m>V</m> [<m>\text{m} \, \text{s}^{-1}</m>] is the flow speed,
+        <m>z</m> [m] is the fluid's geometric height,
+        <m>p</m> [Pa] is the fluid pressure,
+        and <m>\rho</m> [<m>\text{kg} \, \text{m}^{-3}</m>] is the fluid density.
+        Dividing <xref ref="eqn-bernoulli-simple" text="type-global" /> by <m>\rho</m>
+        produces the same statement using specific (per unit mass) quantities:
+    </p>
+
+    <p>
+        <md xml:id="eqn-bernoulli-simple-specific" number="yes">
+            \frac{V^2}{2} + \Phi + p \alpha = constant
+        </md>
+    </p>
+
+    <p>
+        where geopotential <m>\Phi = gz</m> [<m>\text{m}^2 \, \text{s}^{-2}</m>].
+    </p>
+
+    <p>
+        By applying the steady state (<m>\dfrac{\partial p}{\partial t} = 0</m>),
+        adiabatic (<m>\dot{Q} = 0</m>),
+        and inviscid (<m>\nu = 0</m>) assumptions to the total energy equation given in <xref ref="eqn-total-energy-equation" text="type-global" />,
+        we can derive a related form of Bernoulli's principle:
+    </p>
+
+    <p>
+        <md xml:id="eqn-bernoulli-meteorology" number="yes">
+            \frac{u^2 + v^2 + w^2}{2}
+            + \Phi
+            + c_v T
+            + p \alpha
+            =
+            constant
+        </md>
+    </p>
+
+    <p>
+        The first term of <xref ref="eqn-bernoulli-meteorology" text="type-global" />
+        corresponds to the first term of <xref ref="eqn-bernoulli-simple-specific" text="type-global" />,
+        since both give the kinetic energy of the fluid flow per unit mass.
+        The second term of <xref ref="eqn-bernoulli-meteorology" text="type-global" />
+        corresponds directly to the second term of <xref ref="eqn-bernoulli-simple-specific" text="type-global" />,
+        and the fourth term of <xref ref="eqn-bernoulli-meteorology" text="type-global" />
+        corresponds directly to the third term of <xref ref="eqn-bernoulli-simple-specific" text="type-global" />.
+        If the air further is assumed to be incompressible,
+        <xref ref="eqn-bernoulli-meteorology" text="type-global" /> further reduces to
+    </p>
+
+    <p>
+        <md xml:id="eqn-bernoulli-meteorology-incompressible" number="yes">
+            \frac{u^2 + v^2 + w^2}{2}
+            + \Phi
+            + p \alpha
+            =
+            constant
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-bernoulli-meteorology-incompressible" text="type-global" /> says that,
+        if the atmosphere is at rest and incompressible,
+        an increase in geometric height (equivalent to an increase in geopotential and geopotential height)
+        results in a hydrostatic decrease in pressure.
+        If the atmosphere is in motion,
+        the decrease in pressure will be even larger than hydrostatic!
+        Even without an increase in geometric height,
+        <xref ref="eqn-bernoulli-meteorology-incompressible" text="type-global" />
+        says that the faster the air moves,
+        the lower its pressure becomes.
+    </p>
+
+</subsection>
