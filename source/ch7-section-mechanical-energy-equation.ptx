@@ -23,7 +23,7 @@
   </p>
 
   <p>
-    We can build a similar statement of mechanical energy conservation using the equation of motion.
+    We can build a similar statement of mechanical energy conservation using the vector equation of motion.
   </p>
 
   <p>
@@ -88,7 +88,7 @@
 
   <p>
     We add <xref first="eqn-mechanical-energy-equation-x" last="eqn-mechanical-energy-equation-z" />,
-    which leads to cancellation of all products originating from the curvature and Coriolis terms.
+    which leads to cancellation of all products originating from the curvature and Coriolis terms:
   </p>
 
   <p>
@@ -161,8 +161,8 @@
   </p>
 
   <p>
-    Note the similarities between <xref ref="eqn-mechanical-energy-equation" text="type-global" />
-    and <xref ref="eqn-mechanical-energy-conservation-simple" text="type-global" />.
+    Note the similarities between the mechanical energy equation <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    and the equation of mechanical energy conservation <xref ref="eqn-mechanical-energy-conservation-simple" text="type-global" />.
     The left-hand side of each equation gives the change in the macroscopic kinetic and potential energies of the air parcel
     and the right-hand side gives the sum of the work done by non-conservative forces on the air parcel.
     (Keep in mind that these quantities are <term>intensive</term> (per unit mass) in <xref ref="eqn-mechanical-energy-equation" text="type-global" />
@@ -171,9 +171,10 @@
 
   <p>
     <xref ref="martin" text="custom">Martin (2006)</xref>
-    refers to the first term on the right-hand side of <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    refers to the first term on the right-hand side of the mechanical energy equation
+    <xref ref="eqn-mechanical-energy-equation" text="type-global" />
     as <term>pressure work</term>.
-    It represents the work (per unit mass) done by the pressure gradient force on the air parcel,
+    It represents the mechanical work (per unit mass) done by the pressure gradient force on the air parcel,
     and it is proportional to pressure advection
   </p>
 
@@ -191,7 +192,8 @@
   </p>
 
   <p>
-    The second term on the right-hand side of <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    The second term on the right-hand side of the mechanical energy equation
+    <xref ref="eqn-mechanical-energy-equation" text="type-global" />
     represents the dissipation of energy by viscous friction.
   </p>
 

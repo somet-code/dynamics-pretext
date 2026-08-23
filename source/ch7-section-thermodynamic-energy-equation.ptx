@@ -6,9 +6,10 @@
   <p>
     The <term>thermodynamic energy equation</term>
     (also called the <term>thermal energy equation</term>)
-    is produced by dividing the form of the <m>1^{\text{st}}</m> law of thermodynamics
+    is produced by dividing the <m>1^{\text{st}}</m> law of thermodynamics for a perfectly dry air parcel
     given by <xref ref="eqn-first-law" text="type-global" />
-    by <m>\delta t</m> and letting <m>\delta t \to 0</m> for a perfectly dry air parcel.
+    by an infinitesimal time interval <m>\delta t</m> and letting <m>\delta t \to 0</m>.
+    The resulting equation is given by
   </p>
 
   <p>
@@ -28,7 +29,7 @@
 
   <p>
     The thermodynamic energy equation <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />
-    says that the rate at which heat is added diabatically to a perfectly dry air parcel
+    says that the rate at which heat is added diabatically to a perfectly dry air parcel from its environment
     is proportional to the sum of the rate at which the air parcel's internal energy increases as it warms
     and the rate at which it does work on its environment by expanding.
   </p>
@@ -47,7 +48,7 @@
   <p>
     The thermodynamic energy equation also can be written in terms of potential temperature.
     Differentiating the formula for the potential temperature of a perfectly dry air parcel
-    given by<xref ref="eqn-potential-temperature" text="type-global" /> with respect to <m>t</m>,
+    given by <xref ref="eqn-potential-temperature" text="type-global" /> with respect to <m>t</m>,
     rearranging,
     and substituting the ideal gas law <xref ref="eqn-ideal-gas-law-specific-volume-dry" text="type-global" />
     produce

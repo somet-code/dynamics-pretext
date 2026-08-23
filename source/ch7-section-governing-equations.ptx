@@ -11,7 +11,7 @@
     or one of its related forms.
     (Or we could use the total energy equation <xref ref="eqn-total-energy-equation" text="type-global" /> instead,
     since it subsumes the thermodynamic energy equation.)
-    But inclusion of this equation introduces another unknown: <m>T</m>.
+    But inclusion of this equation introduces another unknown: temperature <m>T</m>.
     (We do not consider <m>\alpha</m> an additional unknown since it is the reciprocal of <m>\rho</m>,
     which already is accounted for.)
     Luckily, the ideal gas law <xref ref="eqn-ideal-gas-law-density" text="type-global" />
@@ -32,7 +32,8 @@
 
   <p>
     Simplifications often are made to aid physical understanding and increase the efficiency of calculations.
-    You will make many simplifying assumptions as you apply the governing equations throughout your meteorological career,
+    You will make many simplifying assumptions relevant to particular types of atmospheric motions
+    as you apply the governing equations throughout your meteorological career,
     and it is important to keep track of these assumptions so you can understand the limits they impose on your applications.
   </p>
 
@@ -40,14 +41,17 @@
     More terms are retained as greater accuracy is needed,
     or as the speed and cost of numerical computations matters less.
     In fact,
-    it is possible to expand this system to include more state variables for more detail!
+    it is possible to expand this system to include more state variables
+    than <m>u</m>, <m>v</m>, <m>w</m>, <m>p</m>, <m>\rho</m>, and <m>T</m>
+    for more detail!
     For example,
     if one wishes to include moist thermodynamics,
-    they will have to include a moisture variable like mixing ratio <m>w</m>.
+    they will have to include a moisture variable like the mixing ratio of water vapor <m>w</m>.
     If one wishes to include cloud and precipitation processes,
-    they will need to include even more variables like the mixing ratios of liquid water <m>w_l</m> and ice <m>w_i</m>.
+    they will need to include even more variables like the mixing ratios of liquid water <m>w_l</m> and ice <m>w_i</m>
+    alongside the mixing ratio of water vapor.
     And of course,
-    additional equations must be included for each additional state variable.
+    additional equations must be included for each additional state variable to close the system.
     For example,
     separate continuity equations would be included for each water state in the above case.
   </p>
@@ -56,7 +60,7 @@
     For this text,
     we will stick with the formulations of the governing equations discussed in this topic and previous topics.
     And in Chapter 8,
-    we will learn how to simplify them to aid understanding of common atmospheric phenomena.
+    we will learn how to simplify them to aid understanding of certain types of common atmospheric phenomena.
   </p>
 
 </section>

@@ -4,15 +4,16 @@
   <title>Total energy equation</title>
 
   <p>
-    We can sum the thermodynamic energy equation given by <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />
-    and the mechanical energy equation given by <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    We can sum the thermodynamic energy equation <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />
+    and the mechanical energy equation <xref ref="eqn-mechanical-energy-equation" text="type-global" />
     to express the time rate of change of an air parcel's total energy.
   </p>
 
   <p>
     Following the derivation presented in <xref ref="martin" text="custom">Martin (2006)</xref>,
-    we first rearrange <xref ref="eqn-mechanical-energy-equation" text="type-global" />
-    so its terms sum to 0.
+    we first rearrange the thermodynamic energy equation
+    <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+    so its terms sum to 0:
   </p>
 
   <p>
@@ -31,7 +32,8 @@
   </p>
 
   <p>
-    Then we add this quantity to <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />.
+    Then we add this quantity to the thermodynamic energy equation
+    <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />.
     This is equivalent to adding 0 to <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />,
     so its value is unchanged.
   </p>
