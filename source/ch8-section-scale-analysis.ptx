@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch8-section-scale-analysis" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Scale analysis</title>
+
+  <p>
+    The equations of motion we meticulously derived across
+    <xref ref="chapter-3" text="type-global" />,
+    <xref ref="chapter-4" text="type-global" />, and
+    <xref ref="chapter-5" text="type-global" />,
+    describe any and all motions in Earth's atmosphere.
+    Given that atmospheric motions come in a wide variety of shapes, speeds, and sizes,
+    it should not be surprising that these equations are quite complicated!
+  </p>
+
+  <p>
+    Retaining as many of the terms of the equations of motion as is practical,
+    and approximating them as closely as possible,
+    improves the accuracy of numerical forecasts made by dynamical weather models.
+    But to aid conceptual understanding and mathematical analysis of particular atmospheric phenomena
+    (and if computing resources and run times are of concern,
+    or if certain types of motions should be filtered out of the solutions),
+    it is useful to identify the processes and their corresponding terms in the equations of motion that are most influential for a given phenomenon.
+  </p>
+
+  <p>
+    <term>Scale analysis</term> enables us to isolate the terms in the equations of motion
+    (and other governing equations)
+    that contribute most to an atmospheric phenomenon of interest
+    and thereby gain insight into the behavior and sometimes even the major causes of the phenomenon.
+    To do so,
+    we estimate the "characteristic" (typical, expected, representative) magnitude of each term in the equations of motion
+    for the phenomenon of interest<mdash />where these characteristic magnitudes come from observations of the phenomenon<mdash />and compare them.
+    The terms with largest magnitude are most influential to the phenomenon and are retained,
+    while the other smaller and therefore less influential terms are discarded.
+  </p>
+
+  <p>
+    The characteristic scales used to describe different atmospheric phenomena can differ widely
+    because atmospheric phenomena come in a wide variety of sizes
+    and persist for shorter or longer periods of time.
+    Common weather phenomena and their horizontal length and time scales are shown in
+    <xref ref="ch8-section-scale-analysis" text="type-global" /> below.
+  </p>
+
+  <figure xml:id="ch8-stull-scales">
+    <caption>
+      Characteristic horizontal length scales (in km) and corresponding time scales (in h) for different types of atmospheric motions.
+      Reproduced from Fig. 10.24 of <xref ref="stull" text="custom">Stull (2017)</xref>
+      under <url href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</url>.
+    </caption>
+    <image source="images/ch8-stull-fig10-24.png" width="80%">
+      <shortdescription>
+        Types of atmospheric motions arranged by their characteristic length and time scales on a coordinate plane.
+      </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    Note in <xref ref="ch8-stull-scales" text="type-global" />
+    that phenomena with shorter horizontal length scales also have shorter time scales.
+    Because horizontal length scales separate different types of atmospheric phenomena so well and correlate strongly with their time scales,
+    horizontal length scales are used in many scale designations.
+    For example, <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>
+    designate weather phenomena by the characteristic horizontal length scales shown in
+    <xref ref="table-general-scales" text="type-global" /> below.
+  </p>
+
+  <table xml:id="table-general-scales">
+    <title>Characteristic horizontal length scales (in m) for different types of atmospheric motions,
+        adapted from Holton and Hakim (2013) Table 1.4
+    </title>
+    <tabular halign="center">
+        <row header="yes">
+            <cell>Types of motion</cell>
+            <cell>Characteristic scale [m]</cell>
+        </row>
+        <row>
+            <cell>Molecular mean free path</cell>
+            <cell><m>10^{-7}</m></cell>
+        </row>
+        <row>
+            <cell>Minute turbulent eddies</cell>
+            <cell><m>10^{-2}</m><ndash /><m>10^{-1}</m></cell>
+        </row>
+        <row>
+            <cell>Small eddies</cell>
+            <cell><m>10^{-1}</m><ndash /><m>1</m></cell>
+        </row>
+        <row>
+            <cell>Dust devils</cell>
+            <cell><m>1</m><ndash /><m>10</m></cell>
+        </row>
+        <row>
+            <cell>Wind gusts</cell>
+            <cell><m>10</m><ndash /><m>10^{2}</m></cell>
+        </row>
+        <row>
+            <cell>Tornadoes</cell>
+            <cell><m>10^2</m></cell>
+        </row>
+        <row>
+            <cell>Cumulonimbus clouds</cell>
+            <cell><m>10^3</m></cell>
+        </row>
+        <row>
+            <cell>Fronts and squall lines</cell>
+            <cell><m>10^4</m><ndash /><m>10^5</m></cell>
+        </row>
+        <row>
+            <cell>Tropical cyclones</cell>
+            <cell><m>10^5</m></cell>
+        </row>
+        <row>
+            <cell>Extratropical cyclones</cell>
+            <cell><m>10^6</m></cell>
+        </row>
+        <row>
+            <cell>Planetary waves</cell>
+            <cell><m>10^7</m></cell>
+        </row>
+    </tabular>
+  </table>
+
+  <p>
+    Scales of atmospheric motion are not unique.
+    For example,<xref ref="table-orlanski-scales" text="type-global" /> below
+    shows characteristic horizontal length scales defined by <xref ref="orlanski" text="custom">Orlanski (1975)</xref>,
+    and <xref ref="table-fujita-scales" text="type-global" /> below
+    shows scales defined by <xref ref="fujita" text="custom">Fujita (1981)</xref>.
+    Although the horizontal length scales of Orlanski (1975) and Fujita (1981) are most commonly used,
+    there are many more scales than theirs:
+    For example, in his article, Fujita (1981) summarizes ten other characteristic horizontal length scales proposed by other authors!
+    And <xref ref="stull" text="custom">Stull (2017)</xref>
+    lists related but somewhat different characteristic horizontal length scales in his Table 10-6.
+  </p>
+
+  <table xml:id="table-orlanski-scales">
+    <title>Characteristic horizontal length scales for different types of atmospheric motions, adapted from Orlanski (1975)</title>
+    <tabular halign="center">
+        <row header="yes">
+            <cell>Orlanski scale</cell>
+            <cell>Type of motion</cell>
+            <cell>Characteristic scale</cell>
+        </row>
+        <row>
+            <cell>Micro-<m>\gamma</m></cell>
+            <cell>Plumes, roughness, turbulence</cell>
+            <cell><m>\lt 20 \, \text{m}</m></cell>
+        </row>
+        <row>
+            <cell>Micro-<m>\beta</m></cell>
+            <cell>Dust devils, thermals, wakes</cell>
+            <cell><m>20 \, \text{m}</m><ndash /><m>200 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Micro-<m>\alpha</m></cell>
+            <cell>Tornadoes, deep convection, short gravity waves</cell>
+            <cell><m>200 \, \text{m}</m><ndash /><m>2 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Meso-<m>\gamma</m></cell>
+            <cell>Thunderstorms, clear air turbulence, internal gravity waves, urban effects</cell>
+            <cell><m>2 \, \text{km}</m><ndash /><m>20 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Meso-<m>\beta</m></cell>
+            <cell>Squall lines, nocturnal low-level jet, cloud clusters, inertial waves, mountain and lake disturbances</cell>
+            <cell><m>20 \, \text{km}</m><ndash /><m>200 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Meso-<m>\alpha</m></cell>
+            <cell>Fronts, tropical cyclones</cell>
+            <cell><m>200 \, \text{km}</m><ndash /><m>2000 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Macro-<m>\beta</m></cell>
+            <cell>Extratropical cyclones, baroclinic waves</cell>
+            <cell><m>2000 \, \text{km}</m><ndash /><m>10000 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Macro-<m>\alpha</m></cell>
+            <cell>Ultra long waves</cell>
+            <cell><m>\gt 10000 \, \text{km}</m></cell>
+        </row>
+    </tabular>
+  </table>
+
+  <table xml:id="table-fujita-scales">
+    <title>
+        Characteristic horizontal scales for different types of atmospheric motions,
+        adapted from Fujita (1981).
+        Although not shown,
+        the miso-, meso-, and maso-scale categories are further broken into <m>\alpha</m> and <m>\beta</m> subcategories,
+        where <m>\alpha</m> denotes larger features than <m>\beta</m>.
+    </title>
+    <tabular halign="center">
+        <row header="yes">
+            <cell>Fujita scale</cell>
+            <cell>Type of motion</cell>
+            <cell>Characteristic scale</cell>
+        </row>
+        <row>
+            <cell>Musoscale</cell>
+            <cell>Lab-made vortex</cell>
+            <cell><m>4 \, \text{mm}</m><ndash /><m>40 \, \text{cm}</m></cell>
+        </row>
+        <row>
+            <cell>Mososcale</cell>
+            <cell>Suction vortex</cell>
+            <cell><m>40 \, \text{cm}</m><ndash /><m>40 \, \text{m}</m></cell>
+        </row>
+        <row>
+            <cell>Misoscale</cell>
+            <cell>Tornado, microburst, burst swath</cell>
+            <cell><m>40 \, \text{m}</m><ndash /><m>4 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Mesoscale</cell>
+            <cell>High pressure dome, gust front, mesocyclone, hurricane</cell>
+            <cell><m>4 \, \text{km}</m><ndash /><m>400 \, \text{km}</m></cell>
+        </row>
+        <row>
+            <cell>Masoscale</cell>
+            <cell>Anticyclone, cyclone, front</cell>
+            <cell><m>\gt 400 \, \text{km}</m></cell>
+        </row>
+    </tabular>
+  </table>
+
+</section>

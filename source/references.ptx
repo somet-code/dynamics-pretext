@@ -11,6 +11,16 @@
         <year>1992</year>
     </biblio>
 
+    <biblio type="bibtex" xml:id="fujita">
+        <author>Fujita, T. T.</author>
+        <title>Tornadoes and Downbursts in the Context of Generalized Planetary Scales</title>
+        <journal>Journal of the Atmospheric Sciences</journal>
+        <volume>38</volume>
+        <number>8</number>
+        <pages>1511-1534</pages>
+        <year>1981</year>
+    </biblio>
+
     <biblio type="bibtex" xml:id="holton-hakim">
         <author>Holton, J. R.</author>
         <author>Hakim, G. J.</author>
@@ -51,6 +61,16 @@
         <title>Mid-latitude Atmospheric Dynamics: A First Course</title>
         <publisher>Wiley</publisher>
         <year>2006</year>
+    </biblio>
+
+    <biblio type="bibtex" xml:id="orlanski">
+        <author>Orlanski, I.</author>
+        <title>A Rational Subdivision of Scales for Atmospheric Processes</title>
+        <journal>Bulletin of the American Meteorological Society</journal>
+        <volume>56</volume>
+        <number>5</number>
+        <pages>527-530</pages>
+        <year>1975</year>
     </biblio>
 
     <biblio type="bibtex" xml:id="petty">
