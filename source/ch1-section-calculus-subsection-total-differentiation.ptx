@@ -167,7 +167,7 @@
               <p>
                 Be careful about the negative sign!
                 The negative sign is part of the advection formula,
-                and therefore <m>-\vec{u} \cdot \nabla f \lt 0</m> for <em>positive</em> advection and
+                and therefore <m>-\vec{u} \cdot \nabla f \gt 0</m> for <em>positive</em> advection and
                 <m>-\vec{u} \cdot \nabla f \lt 0</m> for <em>negative</em> advection.
               </p>
             </li>
