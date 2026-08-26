@@ -2062,20 +2062,110 @@ var ptx_lunr_docs = [
   "body": " Selected references     Chapters 1 6 and 8 of Petty (2008)     Chapter 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapters 1 and 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapters 3 and 6 of Marshall and Plumb (2007)      "
 },
 {
+  "id": "ch8-section-scale-analysis",
+  "level": "1",
+  "url": "ch8-section-scale-analysis.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "Scale analysis",
+  "body": " Scale analysis  The equations of motion we meticulously derived across , , and , describe any and all motions in Earth's atmosphere. Given that atmospheric motions come in a wide variety of shapes, speeds, and sizes, it should not be surprising that these equations are quite complicated!  Retaining as many of the terms of the equations of motion as is practical, and approximating them as closely as possible, improves the accuracy of numerical forecasts made by dynamical weather models. But to aid conceptual understanding and mathematical analysis of particular atmospheric phenomena (and if computing resources and run times are of concern, or if certain types of motions should be filtered out of the solutions), it is useful to identify the processes and their corresponding terms in the equations of motion that are most influential for a given phenomenon.   Scale analysis enables us to isolate the terms in the equations of motion (and other governing equations) that contribute most to an atmospheric phenomenon of interest and thereby gain insight into the behavior and sometimes even the major causes of the phenomenon. To do so, we estimate the \"characteristic\" (typical, expected, representative) magnitude of each term in the equations of motion for the phenomenon of interest where these characteristic magnitudes come from observations of the phenomenon and compare them. The terms with largest magnitude are most influential to the phenomenon and are retained, while the other smaller and therefore less influential terms are discarded.  The characteristic scales used to describe different atmospheric phenomena can differ widely because atmospheric phenomena come in a wide variety of sizes and persist for shorter or longer periods of time. Common weather phenomena and their horizontal length and time scales are shown in below.   Characteristic horizontal length scales (in km) and corresponding time scales (in h) for different types of atmospheric motions. Reproduced from Fig. 10.24 of Stull (2017) under CC BY-NC-SA 4.0 .   Types of atmospheric motions arranged by their characteristic length and time scales on a coordinate plane.    Note in that phenomena with shorter horizontal length scales also have shorter time scales. Because horizontal length scales separate different types of atmospheric phenomena so well and correlate strongly with their time scales, horizontal length scales are used in many scale designations. For example, Holton and Hakim (2013) designate weather phenomena by the characteristic horizontal length scales shown in below.   Characteristic horizontal length scales (in m) for different types of atmospheric motions, adapted from Holton and Hakim (2013) Table 1.4    Types of motion  Characteristic scale [m]    Molecular mean free path     Minute turbulent eddies     Small eddies     Dust devils     Wind gusts     Tornadoes     Cumulonimbus clouds     Fronts and squall lines     Tropical cyclones     Extratropical cyclones     Planetary waves      Scales of atmospheric motion are not unique. For example, below shows characteristic horizontal length scales defined by Orlanski (1975) , and below shows scales defined by Fujita (1981) . Although the horizontal length scales of Orlanski (1975) and Fujita (1981) are most commonly used, there are many more scales than theirs: For example, in his article, Fujita (1981) summarizes ten other characteristic horizontal length scales proposed by other authors! And Stull (2017) lists related but somewhat different characteristic horizontal length scales in his Table 10-6.   Characteristic horizontal length scales for different types of atmospheric motions, adapted from Orlanski (1975)    Orlanski scale  Type of motion  Characteristic scale    Micro-  Plumes, roughness, turbulence     Micro-  Dust devils, thermals, wakes     Micro-  Tornadoes, deep convection, short gravity waves     Meso-  Thunderstorms, clear air turbulence, internal gravity waves, urban effects     Meso-  Squall lines, nocturnal low-level jet, cloud clusters, inertial waves, mountain and lake disturbances     Meso-  Fronts, tropical cyclones     Macro-  Extratropical cyclones, baroclinic waves     Macro-  Ultra long waves       Characteristic horizontal scales for different types of atmospheric motions, adapted from Fujita (1981). Although not shown, the miso-, meso-, and maso-scale categories are further broken into and subcategories, where denotes larger features than .    Fujita scale  Type of motion  Characteristic scale    Musoscale  Lab-made vortex     Mososcale  Suction vortex     Misoscale  Tornado, microburst, burst swath     Mesoscale  High pressure dome, gust front, mesocyclone, hurricane     Masoscale  Anticyclone, cyclone, front      "
+},
+{
+  "id": "ch8-section-scale-analysis-4",
+  "level": "2",
+  "url": "ch8-section-scale-analysis.html#ch8-section-scale-analysis-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Scale analysis "
+},
+{
+  "id": "ch8-stull-scales",
+  "level": "2",
+  "url": "ch8-section-scale-analysis.html#ch8-stull-scales",
+  "type": "Figure",
+  "number": "8.1.1",
+  "title": "",
+  "body": " Characteristic horizontal length scales (in km) and corresponding time scales (in h) for different types of atmospheric motions. Reproduced from Fig. 10.24 of Stull (2017) under CC BY-NC-SA 4.0 .   Types of atmospheric motions arranged by their characteristic length and time scales on a coordinate plane.   "
+},
+{
+  "id": "table-general-scales",
+  "level": "2",
+  "url": "ch8-section-scale-analysis.html#table-general-scales",
+  "type": "Table",
+  "number": "8.1.2",
+  "title": "Characteristic horizontal length scales (in m) for different types of atmospheric motions, adapted from Holton and Hakim (2013) Table 1.4",
+  "body": " Characteristic horizontal length scales (in m) for different types of atmospheric motions, adapted from Holton and Hakim (2013) Table 1.4    Types of motion  Characteristic scale [m]    Molecular mean free path     Minute turbulent eddies     Small eddies     Dust devils     Wind gusts     Tornadoes     Cumulonimbus clouds     Fronts and squall lines     Tropical cyclones     Extratropical cyclones     Planetary waves     "
+},
+{
+  "id": "table-orlanski-scales",
+  "level": "2",
+  "url": "ch8-section-scale-analysis.html#table-orlanski-scales",
+  "type": "Table",
+  "number": "8.1.3",
+  "title": "Characteristic horizontal length scales for different types of atmospheric motions, adapted from Orlanski (1975)",
+  "body": " Characteristic horizontal length scales for different types of atmospheric motions, adapted from Orlanski (1975)    Orlanski scale  Type of motion  Characteristic scale    Micro-  Plumes, roughness, turbulence     Micro-  Dust devils, thermals, wakes     Micro-  Tornadoes, deep convection, short gravity waves     Meso-  Thunderstorms, clear air turbulence, internal gravity waves, urban effects     Meso-  Squall lines, nocturnal low-level jet, cloud clusters, inertial waves, mountain and lake disturbances     Meso-  Fronts, tropical cyclones     Macro-  Extratropical cyclones, baroclinic waves     Macro-  Ultra long waves     "
+},
+{
+  "id": "table-fujita-scales",
+  "level": "2",
+  "url": "ch8-section-scale-analysis.html#table-fujita-scales",
+  "type": "Table",
+  "number": "8.1.4",
+  "title": "Characteristic horizontal scales for different types of atmospheric motions, adapted from Fujita (1981). Although not shown, the miso-, meso-, and maso-scale categories are further broken into <span class=\"process-math\">\\(\\alpha\\)<\/span> and <span class=\"process-math\">\\(\\beta\\)<\/span> subcategories, where <span class=\"process-math\">\\(\\alpha\\)<\/span> denotes larger features than <span class=\"process-math\">\\(\\beta\\text{.}\\)<\/span>",
+  "body": " Characteristic horizontal scales for different types of atmospheric motions, adapted from Fujita (1981). Although not shown, the miso-, meso-, and maso-scale categories are further broken into and subcategories, where denotes larger features than .    Fujita scale  Type of motion  Characteristic scale    Musoscale  Lab-made vortex     Mososcale  Suction vortex     Misoscale  Tornado, microburst, burst swath     Mesoscale  High pressure dome, gust front, mesocyclone, hurricane     Masoscale  Anticyclone, cyclone, front     "
+},
+{
+  "id": "ch8-section-mid-latitude-synoptic-scale-analysis",
+  "level": "1",
+  "url": "ch8-section-mid-latitude-synoptic-scale-analysis.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "Mid-latitude synoptic scale analysis",
+  "body": " Mid-latitude synoptic scale analysis  Characteristic values for synoptic scale motion in the middle latitudes, which are based on observations of mid-latitude synoptic scale phenomena, are shown in below.   Characteristic scales for mid-latitude synoptic scale motions, adapted from Martin (2006) and Holton and Hakim (2013)    Quantity  Symbol  Characteristic scale    Horizontal length      Vertical depth      Horizontal velocity      Vertical velocity      (Advective) time      Horizontal pressure fluctuation      Normalized horizontal pressure fluctuation      Vertical pressure fluctuation      Density       Furthermore, for synoptic scale motion in the middle latitudes, constants that appear in the equations of motion scale according to below.   Characteristic scales for mid-latitude synoptic scale motions, adapted from Martin (2006) and Holton and Hakim (2013)    Constant  Symbol  Characteristic scale    Earth's mean radius      Gravity acceleration      Kinematic viscosity      Latitude      Coriolis parameter       Note that the characteristic horizontal length scale is 100 times larger than the characteristic vertical depth scale . This is the stand-out feature of synoptic scale weather phenomena: These phenomena are very large horizontally but are confined to the troposphere vertically. As we will see below, these scales lead to interesting simplifications of the equations of motion.  Application of these characteristic scales to the horizontal equations of motion (i.e., the zonal and meridional component equations of motion) is shown in Table \\ref*{table:horizontal_scaled} below, and application of these characteristic scales to the vertical equation of motion (i.e., the vertical component equation of motion) is shown in Table \\ref*{table:vertical_scaled} below.   Characteristic scales for mid-latitude synoptic scale motions for terms of the horizontal equations of motion, adapted from Martin (2006) Table 3.1 and Holton and Hakim (2013) Table 2.1     1  2  3  4  5  6  7                        Scales            "
+},
+{
+  "id": "table-synoptic-scales",
+  "level": "2",
+  "url": "ch8-section-mid-latitude-synoptic-scale-analysis.html#table-synoptic-scales",
+  "type": "Table",
+  "number": "8.2.1",
+  "title": "Characteristic scales for mid-latitude synoptic scale motions, adapted from Martin (2006) and Holton and Hakim (2013)",
+  "body": " Characteristic scales for mid-latitude synoptic scale motions, adapted from Martin (2006) and Holton and Hakim (2013)    Quantity  Symbol  Characteristic scale    Horizontal length      Vertical depth      Horizontal velocity      Vertical velocity      (Advective) time      Horizontal pressure fluctuation      Normalized horizontal pressure fluctuation      Vertical pressure fluctuation      Density      "
+},
+{
+  "id": "table-synoptic-scales-constants",
+  "level": "2",
+  "url": "ch8-section-mid-latitude-synoptic-scale-analysis.html#table-synoptic-scales-constants",
+  "type": "Table",
+  "number": "8.2.2",
+  "title": "Characteristic scales for mid-latitude synoptic scale motions, adapted from Martin (2006) and Holton and Hakim (2013)",
+  "body": " Characteristic scales for mid-latitude synoptic scale motions, adapted from Martin (2006) and Holton and Hakim (2013)    Constant  Symbol  Characteristic scale    Earth's mean radius      Gravity acceleration      Kinematic viscosity      Latitude      Coriolis parameter      "
+},
+{
+  "id": "table-horizontal-equations-of-motion-scaled",
+  "level": "2",
+  "url": "ch8-section-mid-latitude-synoptic-scale-analysis.html#table-horizontal-equations-of-motion-scaled",
+  "type": "Table",
+  "number": "8.2.3",
+  "title": "Characteristic scales for mid-latitude synoptic scale motions for terms of the horizontal equations of motion, adapted from Martin (2006) Table 3.1 and Holton and Hakim (2013) Table 2.1",
+  "body": " Characteristic scales for mid-latitude synoptic scale motions for terms of the horizontal equations of motion, adapted from Martin (2006) Table 3.1 and Holton and Hakim (2013) Table 2.1     1  2  3  4  5  6  7                        Scales           "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
   "type": "References",
-  "number": "8",
+  "number": "9",
   "title": "References",
-  "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Petty, G. W.  A First Course in Atmospheric Thermodynamics  Sundog Publishing  2008    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
+  "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Fujita, T. T.  Tornadoes and Downbursts in the Context of Generalized Planetary Scales  Journal of the Atmospheric Sciences  38  8  1511-1534  1981    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Orlanski, I.  A Rational Subdivision of Scales for Atmospheric Processes  Bulletin of the American Meteorological Society  56  5  527-530  1975    Petty, G. W.  A First Course in Atmospheric Thermodynamics  Sundog Publishing  2008    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
 },
 {
   "id": "holton-hakim-6",
   "level": "2",
   "url": "references.html#holton-hakim-6",
   "type": "Note",
-  "number": "8.2.1",
+  "number": "9.3.1",
   "title": "",
   "body": " 3rd edition  "
 },
@@ -2084,7 +2174,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#kundu-cohen-dowling-7",
   "type": "Note",
-  "number": "8.3.1",
+  "number": "9.4.1",
   "title": "",
   "body": " 6th edition  "
 },
@@ -2093,7 +2183,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#stull-5",
   "type": "Note",
-  "number": "8.7.1",
+  "number": "9.9.1",
   "title": "",
   "body": " Version 1.02b  "
 },
