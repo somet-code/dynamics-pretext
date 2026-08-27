@@ -242,4 +242,6 @@
     mid-latitude synoptic scale motions are in geostrophic and hydrostatic balance.
   </p>
 
+  <xi:include href="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance.ptx"/>
+  <xi:include href="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-hydrostatic-balance.ptx"/>
 </section>

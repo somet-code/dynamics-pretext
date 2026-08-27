@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Geostrophic balance</title>
+
+    <p>
+        As shown in <xref ref="table-horizontal-equations-of-motion-scaled" text="type-global" />,
+        the two largest terms in each of the horizontal equations of motion are the Coriolis acceleration term proportional to <m>\sin{\phi}</m>
+        and the pressure gradient acceleration term,
+        each of <m>\mathcal{O}(10^{-3})</m>.
+        All other terms are at least one order of magnitude smaller
+        (i.e., at least 10 times smaller).
+    </p>
+
+    <p>
+        Neglecting all but these two terms in each equation produces the following simpler system:
+    </p>
+
+    <p>
+        <md>
+            <mrow xml:id="eqn-geostrophic-balance-x-start" number="yes">
+                0 \amp = fv - \frac{1}{\rho} \frac{\partial p}{\partial x}
+            </mrow>
+            <mrow xml:id="eqn-geostrophic-balance-y-start" number="yes">
+                0 \amp = -fu - \frac{1}{\rho} \frac{\partial p}{\partial y} 
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-geostrophic-balance-x-start" text="type-global" />
+        and <xref ref="eqn-geostrophic-balance-y-start" text="type-global" />
+        represent a balance between the horizontal Coriolis force and the horizontal pressure gradient force.
+        This balance is called <term>geostrophic balance</term>, <term>geostrophic equilibrium</term>, or <term>geostrophy</term>,
+        and the corresponding horizontal wind produced by this balance is called the <term>geostrophic wind</term>.
+        The geostrophic wind is given by 
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-vector-basic" number="yes">
+            \vec{v}_g = u_g \, \hat{i} + v_g \, \hat{j}
+        </md>
+    </p>
+
+    <p>
+        so we can write <xref ref="eqn-geostrophic-balance-x-start" text="type-global" />
+        and <xref ref="eqn-geostrophic-balance-y-start" text="type-global" />
+        as
+    </p>
+
+    <p>
+        <md>
+            <mrow xml:id="eqn-geostrophic-balance-x" number="yes">
+                0 \amp = f v_g - \frac{1}{\rho} \frac{\partial p}{\partial x}
+            </mrow>
+            <mrow xml:id="eqn-geostrophic-balance-y" number="yes">
+                0 \amp = -f u_g - \frac{1}{\rho} \frac{\partial p}{\partial y} 
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        respectively,
+        each of which can be rearranged to give the geostrophic wind components
+    </p>
+
+    <p>
+        <md>
+            <mrow xml:id="eqn-geostrophic-wind-y" number="yes">
+                v_g \amp = \frac{1}{\rho f} \frac{\partial p}{\partial x}
+            </mrow>
+            <mrow xml:id="eqn-geostrophic-wind-x" number="yes">
+                u_g \amp = -\frac{1}{\rho f} \frac{\partial p}{\partial y}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        <xref ref="eqn-geostrophic-wind-y" text="type-global" /> and <xref ref="eqn-geostrophic-wind-x" text="type-global" />
+        show that the meridional (zonal) component of the geostrophic wind
+        depends on the zonal (meridional) component of the horizontal pressure gradient.
+        This dependency can be written compactly as in vector form as
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-vector" number="yes">
+            \vec{v}_g = \frac{1}{\rho f} \, \hat{k} \times \nabla p
+        </md>
+    </p>
+
+    <p>
+        Given this definition,
+        the geostrophic wind is a horizontal wind that flows locally perpendicular to the pressure gradient and,
+        consequently,
+        locally parallel to surrounding isobars.
+        Since the acceleration terms <m>\dfrac{Du}{Dt}</m> and <m>\dfrac{Dv}{Dt}</m> are neglected in geostrophic balance,
+        the geostrophic wind is non-accelerating and,
+        therefore,
+        flows in a straight line at constant speed.
+        This produces a <term>diagnostic</term> (descriptive) relationship for the wind,
+        not a <term>prognostic</term> (predictive) relationship.
+    </p>
+
+    <p>
+        And the geostrophic wind is only valid for inviscid flow along a flat surface with no vertical motion.
+    </p>
+
+    <p>
+        Clearly,
+        the above constraints do not apply perfectly to motions in Earth's atmosphere:
+        Real winds accelerate by changing speed and direction and have vertical components;
+        air is viscous;
+        and winds flow along and parallel to Earth's curved surface.
+        Furthermore,
+        <m>\vec{v}_g</m>'s inverse proportionality to the Coriolis parameter
+        means that the geostrophic wind cannot apply at the Equator, where <m>f = 0</m>,
+        and the geostrophic wind magnitude greatly overestimates the magnitude of the real wind at tropical latitudes where <m>f</m> is very small.
+    </p>
+
+    <p>
+        But as <xref ref="martin" text="custom">Martin (2006)</xref>
+        and <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref> point out,
+        observed mid-latitude synoptic scale horizontal motions typically are within 10<ndash />15% of the geostrophic wind.
+        Thus,
+        geostrophic balance is a useful concept to apply to mid-latitude synoptic scale horizontal motions,
+        and it is worth determining how close to geostrophic real horizontal winds are
+        so we know when and where to safely apply this approximation.
+        As we will see in the next subsection,
+        the Rossby number allows us to do this.
+    </p>
+
+</subsection>
