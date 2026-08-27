@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-rossby-number" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Rossby number</title>
+
+    <p>
+        Since geostrophic balance neglects air parcel acceleration,
+        it can be useful to determine if air parcel acceleration for various types of atmospheric motions is "small enough"
+        so that geostrophic balance can apply with sufficient accuracy,
+        or if it is "too large" to meaningfully apply geostrophic balance.
+    </p>
+
+    <p>
+        The <term>Rossby number</term> <m>Ro</m>
+        expresses the ratio of the magnitude of an object's acceleration to the Coriolis acceleration.
+        In other words,
+        it expresses how strongly Earth's rotation affects an object's motion.
+    </p>
+
+    <p>
+        <xref ref="table-horizontal-equations-of-motion-scaled" text="type-global" />
+        shows that an air parcel's horizontal acceleration scales as <m>\dfrac{U}{T} = \dfrac{U}{\frac{L}{U}} = \dfrac{U^2}{L}</m>
+        and the horizontal Coriolis acceleration scales as <m>f_0 U</m>.
+        The ratio of the scaled horizontal acceleration to the scaled horizontal Coriolis acceleration gives <m>Ro</m>,
+        as shown in <xref ref="eqn-rossby-number" text="type-global" /> below.
+    </p>
+
+    <p>
+        <md xml:id="eqn-rossby-number" number="yes">
+            Ro
+            =
+            \frac{\frac{U^2}{L}}{f_0U}
+            =
+            \frac{U}{f_0L}
+        </md>
+    </p>
+
+    <p>
+        Note that <xref ref="eqn-rossby-number" text="type-global" />
+        leads to an alternative definition of <m>Ro</m>
+        as the ratio of the timescale of Earth's rotation <m>T_{rot} = \dfrac{1}{f}</m>
+        to the timescale of fluid flow <m>T_{flow} = \dfrac{L}{U}</m>.
+    </p>
+
+    <p>
+        <md number="yes">
+            Ro
+            =
+            \frac{T_{rot}}{T_{flow}}
+            =
+            \frac{\frac{1}{f}}{\frac{L}{U}}
+            =
+            \frac{U}{fL}
+        </md>
+    </p>
+
+    <p>
+        For mid-latitude synoptic scale motion,
+        we expect <m>\dfrac{U^2}{L} \sim 10^{-4} \, \text{m} \, \text{s}^{-2}</m>
+        and <m>f_0 U \sim 10^{-3} \, \text{m} \, \text{s}^{-2}</m>,
+        producing <m>Ro = 10^{-1} = 0.1</m>.
+        This is a low value of <m>Ro</m>,
+        and so we say "low-<m>Ro</m> flows" for which <m>Ro \ll 1</m>
+        approximately are in geostrophic balance.
+        In other words,
+        geostrophic balance reasonably can be used to approximate low-<m>Ro</m> atmospheric motions.
+    </p>
+
+    <p>
+        As you will learn in a later dynamics course,
+        "high-<m>Ro</m>" flows for which <m>Ro \gg 1</m>
+        are not close to geostrophic
+        because air parcels experience accelerations much greater than the Coriolis acceleration,
+        and the Coriolis acceleration consequently can be neglected.
+        For "intermediate-<m>Ro</m>" flows for which <m>Ro \approx 1</m>,
+        air parcel accelerations are of approximately equal magnitude as the Coriolis acceleration,
+        and air parcel acceleration must be incorporated in <xref ref="eqn-geostrophic-balance-x-start" text="type-global" />
+        and <xref ref="eqn-geostrophic-balance-y-start" text="type-global" />.
+    </p>
+
+</subsection>
