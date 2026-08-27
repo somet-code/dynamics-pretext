@@ -125,7 +125,8 @@
         geostrophic balance is a useful concept to apply to mid-latitude synoptic scale horizontal motions,
         and it is worth determining how close to geostrophic real horizontal winds are
         so we know when and where to safely apply this approximation.
-        As we will see in the next subsection,
+        As we will see in the
+        <xref ref="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-rossby-number" text="custom">next subsection</xref>,
         the Rossby number allows us to do this.
     </p>
 
