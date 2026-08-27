@@ -125,10 +125,10 @@
   <p>
     Application of these characteristic scales to the horizontal equations of motion
     (i.e., the zonal <m>x</m> and meridional <m>y</m> component equations of motion)
-    is shown in Table \ref*{table:horizontal_scaled} below,
+    is shown in <xref ref="table-horizontal-equations-of-motion-scaled" text="type-global" /> below,
     and application of these characteristic scales to the vertical equation of motion
     (i.e., the vertical <m>z</m> component equation of motion)
-    is shown in Table \ref*{table:vertical_scaled} below.
+    is shown in <xref ref="table-vertical-equation-of-motion-scaled" text="type-global" /> below.
   </p>
 
   <table xml:id="table-horizontal-equations-of-motion-scaled">
@@ -177,7 +177,69 @@
             <cell><m>\dfrac{\delta p}{\rho L}</m></cell>
             <cell><m>\nu_0 \dfrac{U}{H^2}</m></cell>
         </row>
+        <row>
+            <cell>Magnitude (<m>\text{m} \, \text{ s}^{-2}</m>)</cell>
+            <cell><m>10^{-4}</m></cell>
+            <cell><m>10^{-3}</m></cell>
+            <cell><m>10^{-6}</m></cell>
+            <cell><m>10^{-8}</m></cell>
+            <cell><m>10^{-5}</m></cell>
+            <cell><m>10^{-3}</m></cell>
+            <cell><m>10^{-12}</m></cell>
+        </row>
     </tabular>
   </table>
+
+  <table xml:id="table-vertical-equation-of-motion-scaled">
+    <title>
+        Characteristic scales for mid-latitude synoptic scale motions for terms of the vertical equation of motion,
+        adapted from Martin (2006) Table 3.2 and Holton and Hakim (2013) Table 2.2
+    </title>
+    <tabular halign="center">
+        <row header="yes">
+            <cell></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+            <cell>5</cell>
+            <cell>6</cell>
+        </row>
+        <row>
+            <cell><m>z</m></cell>
+            <cell><m>\dfrac{Dw}{Dt}</m></cell>
+            <cell><m>2 \Omega u \cos{\phi}</m></cell>
+            <cell><m>\dfrac{u^2 + v^2}{a}</m></cell>
+            <cell><m>-\dfrac{1}{\rho} \dfrac{\partial p}{\partial z}</m></cell>
+            <cell><m>g</m></cell>
+            <cell><m>\nu \nabla^2 w</m></cell>
+        </row>
+        <row>
+            <cell>Scales</cell>
+            <cell><m>\dfrac{UW}{L}</m></cell>
+            <cell><m>f_0 U</m></cell>
+            <cell><m>\dfrac{U^2}{a}</m></cell>
+            <cell><m>\dfrac{P_0}{\rho_0 H}</m></cell>
+            <cell><m>g_0</m></cell>
+            <cell><m>\nu_0 \dfrac{W}{H^2}</m></cell>
+        </row>
+        <row>
+            <cell>Magnitude (<m>\text{m} \, \text{ s}^{-2}</m>)</cell>
+            <cell><m>10^{-7}</m></cell>
+            <cell><m>10^{-3}</m></cell>
+            <cell><m>10^{-5}</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>10</m></cell>
+            <cell><m>10^{-15}</m></cell>
+        </row>
+    </tabular>
+  </table>
+
+  <p>
+    As discussed in the next sub-sections,
+    scale analysis reveals that,
+    to a first-order approximation,
+    mid-latitude synoptic scale motions are in geostrophic and hydrostatic balance.
+  </p>
 
 </section>
