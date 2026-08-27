@@ -3,4 +3,30 @@
 <subsection xml:id="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-hydrostatic-balance" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Hydrostatic balance</title>
 
+    <p>
+        The two largest terms in the vertical equation of motion are the gravity acceleration term and the pressure gradient acceleration term.
+        All other terms are at least two orders of magnitude smaller
+        (i.e., at least 100 times smaller).
+    </p>
+
+    <p>
+        Neglecting all but these two terms in the vertical equation of motion produces
+    </p>
+
+    <p>
+        <md number="yes">
+            0 = -\frac{1}{\rho} \frac{\partial p}{\partial z} - g
+        </md>
+    </p>
+
+    <p>
+        which can be rearranged into the familiar formula for hydrostatic balance:
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{\partial p}{\partial z} = -\rho g
+        </md>
+    </p>
+
 </subsection>
