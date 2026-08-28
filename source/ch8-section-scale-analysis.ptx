@@ -7,7 +7,7 @@
     The equations of motion we meticulously derived across
     <xref ref="chapter-3" text="type-global" />,
     <xref ref="chapter-4" text="type-global" />, and
-    <xref ref="chapter-5" text="type-global" />,
+    <xref ref="chapter-5" text="type-global" />
     describe any and all motions in Earth's atmosphere.
     Given that atmospheric motions come in a wide variety of shapes, speeds, and sizes,
     it should not be surprising that these equations are quite complicated!
@@ -19,8 +19,9 @@
     improves the accuracy of numerical forecasts made by dynamical weather models.
     But to aid conceptual understanding and mathematical analysis of particular atmospheric phenomena
     (and if computing resources and run times are of concern,
-    or if certain types of motions should be filtered out of the solutions),
-    it is useful to identify the processes and their corresponding terms in the equations of motion that are most influential for a given phenomenon.
+    or if certain types of motions should be filtered out of the numerical solutions),
+    it is useful to identify the processes and their corresponding terms in the equations of motion
+    that are <em>most</em> influential for a given phenomenon.
   </p>
 
   <p>
@@ -36,11 +37,11 @@
   </p>
 
   <p>
-    The characteristic scales used to describe different atmospheric phenomena can differ widely
+    The characteristic scales used to describe different atmospheric phenomena differ widely
     because atmospheric phenomena come in a wide variety of sizes
     and persist for shorter or longer periods of time.
     Common weather phenomena and their horizontal length and time scales are shown in
-    <xref ref="ch8-section-scale-analysis" text="type-global" /> below.
+    <xref ref="ch8-stull-scales" text="type-global" /> below.
   </p>
 
   <figure xml:id="ch8-stull-scales">
@@ -60,9 +61,9 @@
     Note in <xref ref="ch8-stull-scales" text="type-global" />
     that phenomena with shorter horizontal length scales also have shorter time scales.
     Because horizontal length scales separate different types of atmospheric phenomena so well and correlate strongly with their time scales,
-    horizontal length scales are used in many scale designations.
+    horizontal length scales are used to determine many scale designations.
     For example, <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>
-    designate weather phenomena by the characteristic horizontal length scales shown in
+    designate weather phenomena by their characteristic horizontal length scales shown in
     <xref ref="table-general-scales" text="type-global" /> below.
   </p>
 
@@ -129,7 +130,7 @@
     and <xref ref="table-fujita-scales" text="type-global" /> below
     shows scales defined by <xref ref="fujita" text="custom">Fujita (1981)</xref>.
     Although the horizontal length scales of Orlanski (1975) and Fujita (1981) are most commonly used,
-    there are many more scales than theirs:
+    there are many others:
     For example, in his article, Fujita (1981) summarizes ten other characteristic horizontal length scales proposed by other authors!
     And <xref ref="stull" text="custom">Stull (2017)</xref>
     lists related but somewhat different characteristic horizontal length scales in his Table 10-6.
@@ -151,7 +152,7 @@
         <row>
             <cell>Micro-<m>\beta</m></cell>
             <cell>Dust devils, thermals, wakes</cell>
-            <cell><m>20 \, \text{m}</m><ndash /><m>200 \, \text{km}</m></cell>
+            <cell><m>20 \, \text{m}</m><ndash /><m>200 \, \text{m}</m></cell>
         </row>
         <row>
             <cell>Micro-<m>\alpha</m></cell>

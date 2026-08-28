@@ -79,7 +79,7 @@
         <xref ref="eqn-geostrophic-wind-y" text="type-global" /> and <xref ref="eqn-geostrophic-wind-x" text="type-global" />
         show that the meridional (zonal) component of the geostrophic wind
         depends on the zonal (meridional) component of the horizontal pressure gradient.
-        This dependency can be written compactly as in vector form as
+        This dependency can be written compactly in vector form as
     </p>
 
     <p>
@@ -93,7 +93,7 @@
         the geostrophic wind is a horizontal wind that flows locally perpendicular to the pressure gradient and,
         consequently,
         locally parallel to surrounding isobars.
-        Since the acceleration terms <m>\dfrac{Du}{Dt}</m> and <m>\dfrac{Dv}{Dt}</m> are neglected in geostrophic balance,
+        Since the air parcel horizontal acceleration terms <m>\dfrac{Du}{Dt}</m> and <m>\dfrac{Dv}{Dt}</m> are neglected in geostrophic balance,
         the geostrophic wind is non-accelerating and,
         therefore,
         flows in a straight line at constant speed.
@@ -102,7 +102,7 @@
     </p>
 
     <p>
-        And the geostrophic wind is only valid for inviscid flow along a flat surface with no vertical motion.
+        And the geostrophic wind is only valid for inviscid flow along a flat surface.
     </p>
 
     <p>

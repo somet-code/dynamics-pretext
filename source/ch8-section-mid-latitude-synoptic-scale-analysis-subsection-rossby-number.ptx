@@ -4,23 +4,41 @@
     <title>Rossby number</title>
 
     <p>
-        Since geostrophic balance neglects air parcel acceleration,
-        it can be useful to determine if air parcel acceleration for various types of atmospheric motions is "small enough"
+        Since geostrophic balance neglects air parcel horizontal acceleration,
+        it can be useful to determine if air parcel horizontal acceleration for various types of atmospheric motions is "small enough"
         so that geostrophic balance can apply with sufficient accuracy,
         or if it is "too large" to meaningfully apply geostrophic balance.
     </p>
 
     <p>
         The <term>Rossby number</term> <m>Ro</m>
-        expresses the ratio of the magnitude of an object's acceleration to the Coriolis acceleration.
+        expresses the ratio of the magnitude of an object's horizontal acceleration to the horizontal Coriolis acceleration.
         In other words,
         it expresses how strongly Earth's rotation affects an object's motion.
     </p>
 
     <p>
         <xref ref="table-horizontal-equations-of-motion-scaled" text="type-global" />
-        shows that an air parcel's horizontal acceleration scales as <m>\dfrac{U}{T} = \dfrac{U}{\frac{L}{U}} = \dfrac{U^2}{L}</m>
-        and the horizontal Coriolis acceleration scales as <m>f_0 U</m>.
+        shows that an air parcel's horizontal acceleration scales as
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{U}{T} = \dfrac{U}{\sfrac{L}{U}} = \dfrac{U^2}{L}
+        </md>
+    </p>
+
+    <p>
+        and the horizontal Coriolis acceleration scales as
+    </p>
+
+    <p>
+        <md number="yes">
+            f_0 U
+        </md>
+    </p>
+
+    <p>
         The ratio of the scaled horizontal acceleration to the scaled horizontal Coriolis acceleration gives <m>Ro</m>,
         as shown in <xref ref="eqn-rossby-number" text="type-global" /> below.
     </p>
@@ -29,7 +47,7 @@
         <md xml:id="eqn-rossby-number" number="yes">
             Ro
             =
-            \frac{\frac{U^2}{L}}{f_0U}
+            \frac{\sfrac{U^2}{L}}{f_0U}
             =
             \frac{U}{f_0L}
         </md>
@@ -48,7 +66,7 @@
             =
             \frac{T_{rot}}{T_{flow}}
             =
-            \frac{\frac{1}{f}}{\frac{L}{U}}
+            \frac{\sfrac{1}{f}}{\sfrac{L}{U}}
             =
             \frac{U}{fL}
         </md>
@@ -63,19 +81,22 @@
         and so we say "low-<m>Ro</m> flows" for which <m>Ro \ll 1</m>
         approximately are in geostrophic balance.
         In other words,
-        geostrophic balance reasonably can be used to approximate low-<m>Ro</m> atmospheric motions.
+        geostrophic balance reasonably can be used to approximate low-<m>Ro</m> atmospheric motions
+        like mid-latitude synoptic scale motions.
     </p>
 
     <p>
         As you will learn in a later dynamics course,
         "high-<m>Ro</m>" flows for which <m>Ro \gg 1</m>
         are not close to geostrophic
-        because air parcels experience accelerations much greater than the Coriolis acceleration,
-        and the Coriolis acceleration consequently can be neglected.
+        because air parcels experience horizontal accelerations much greater than the horizontal Coriolis acceleration,
+        and the horizontal Coriolis acceleration consequently can be neglected.
         For "intermediate-<m>Ro</m>" flows for which <m>Ro \approx 1</m>,
-        air parcel accelerations are of approximately equal magnitude as the Coriolis acceleration,
-        and air parcel acceleration must be incorporated in <xref ref="eqn-geostrophic-balance-x-start" text="type-global" />
+        air parcel horizontal accelerations are of approximately equal magnitude as the horizontal Coriolis acceleration,
+        and so air parcel horizontal acceleration must be incorporated in <xref ref="eqn-geostrophic-balance-x-start" text="type-global" />
         and <xref ref="eqn-geostrophic-balance-y-start" text="type-global" />.
+        In this case,
+        geostrophic balance is not quite a reasonable approximation and must be modified to improve its applicability.
     </p>
 
 </subsection>

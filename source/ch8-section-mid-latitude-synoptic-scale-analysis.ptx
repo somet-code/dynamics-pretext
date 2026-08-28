@@ -4,7 +4,7 @@
   <title>Mid-latitude synoptic scale analysis</title>
 
   <p>
-    Characteristic values for synoptic scale motion in the middle latitudes,
+    Characteristic values for synoptic scale motion in the <term>middle latitudes</term> (30°<ndash />60° latitude),
     which are based on observations of mid-latitude synoptic scale phenomena,
     are shown in <xref ref="table-synoptic-scales" text="type-global" /> below.
   </p>
@@ -52,7 +52,7 @@
         </row>
         <row>
             <cell>Normalized horizontal pressure fluctuation</cell>
-            <cell><m>\dfrac{\delta p}{\rho}</m></cell>
+            <cell><m>\sfrac{\delta p}{\rho}</m></cell>
             <cell><m>10^3 \, \text{m}^2 \, \text{s}^{-2}</m></cell>
         </row>
         <row>
@@ -116,7 +116,7 @@
 
   <p>
     Note that the characteristic horizontal length scale <m>L</m> is 100 times larger than the characteristic vertical depth scale <m>H</m>.
-    This is the stand-out feature of synoptic scale weather phenomena:
+    This is a stand-out feature of synoptic scale weather phenomena:
     These phenomena are very large horizontally but are confined to the troposphere vertically.
     As we will see below,
     these scales lead to interesting simplifications of the equations of motion.
