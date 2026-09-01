@@ -4,5 +4,6 @@
   <title>Setup</title>
 
   <xi:include href="ch9-section-setup-subsection-chain-rule.ptx" />
+  <xi:include href="ch9-section-setup-subsection-general-vertical-coordinate.ptx" />
 
 </section>

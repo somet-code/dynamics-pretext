@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-setup-subsection-general-vertical-coordinate" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>General vertical coordinate</title>
+
+    <p>
+        Consider our usual vertical coordinate: <m>z</m>, the geometric height.
+        As shown in <xref ref="ch9-vertical-coordinate-z" text="type-global" /> below, <m>z</m> strictly increases with increasing height.
+    </p>
+
+    <figure xml:id="ch9-vertical-coordinate-z">
+        <caption>
+            Vertical cross-section through several <m>z</m>-surfaces at a single moment in time,
+            with equal increment <m>\delta z</m> between each surface.
+            The <m>+x</m> and <m>+z</m> axes are shown,
+            and the <m>+y</m>-axis points into the page.
+            Given that <m>\delta z \gt 0</m>,
+            the values of the <m>z</m>-surfaces increase in the <m>+z</m>-direction.
+        </caption>
+        <image source="images/ch9-vertical-coordinate-z.png" width="80%">
+            <shortdescription>
+                Four horizontal lines stacked vertically representing geometric heights
+                with an equal increment of height between them.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Say a state variable <m>s = s(x,y,z,t)</m> is strictly monotonic with respect to <m>z</m>
+        (i.e., <m>s</m> either strictly increases or strictly decreases with increasing <m>z</m>).
+        This means <m>z = z(x,y,s,t)</m> since strictly monotonic functions are invertible,
+        and so a state variable <m>f = f(x,y,z,t)</m> becomes <m>f = f(x,y,z(x,y,s,t),t)</m>.
+    </p>
+
+    <p>
+        Furthermore,
+        because <m>s</m> is strictly monotonic with respect to <m>z</m>,
+        we can use <m>s</m> rather than <m>z</m> as the vertical coordinate!
+    </p>
+
+    <p>
+        We can visualize <m>s</m> as a surface,
+        such as an <term>isobaric surface</term> (a surface of constant pressure <m>p</m>) if <m>s</m> is replaced with <m>p</m>
+        or an <term>isentropic surface</term> (a surface of constant potential temperature <m>\theta</m>) if <m>s</m> is replaced with <m>\theta</m>.
+        Such surfaces are "wavy" and evolve with time.
+        A vertical slice through several such surfaces at one moment in time is shown in <xref ref="ch9-vertical-coordinate-z-s" text="type-global" /> below,
+        with the <m>z</m>-surfaces of <xref ref="ch9-vertical-coordinate-z" text="type-global" /> included for reference.
+    </p>
+
+    <figure xml:id="ch9-vertical-coordinate-z-s">
+        <caption>
+            Vertical cross-section through several <m>s</m>-surfaces at a single moment in time,
+            with equal increment <m>\delta s</m> between each surface.
+            The <m>+x</m> and <m>+z</m> axes are shown,
+            and the <m>+y</m>-axis points into the page.
+            If <m>\delta s \gt 0</m>,
+            the values of the <m>s</m>-surfaces increase in the <m>+z</m>-direction;
+            if <m>\delta s \lt 0</m>, the values of the <m>s</m>-surfaces decrease in the <m>+z</m>-direction.
+            The <m>z</m>-surfaces of <xref ref="ch9-vertical-coordinate-z" text="type-global" /> are included in the background for reference.
+        </caption>
+        <image source="images/ch9-vertical-coordinate-z-s.png" width="80%">
+            <shortdescription>
+                Four horizontal lines stacked vertically representing geometric heights
+                with an equal increment of height between them.
+                Four thicker wavy lines representing constant surfaces of another variable are superimposed.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
