@@ -67,4 +67,211 @@
         </image>
     </figure>
 
+    <p>
+        Consider a state variable <m>f = f(x,y,z,t)</m>.
+        As noted above,
+        since <m>z = z(x,y,s,t)</m>,
+        we can write <m>f = f(x,y,z(x,y,s,t),t)</m>.
+        To find, for example, <m>\dfrac{\partial f}{\partial x}</m>,
+        we can treat <m>x</m>, <m>y</m>, <m>z</m>, and <m>t</m> as intermediate variables
+        and <m>x</m>, <m>y</m>, <m>s</m>, and <m>t</m> as independent variables and apply the chain rule for multivariable functions.
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \left(
+                    \frac{\partial f}{\partial x}
+                \right)_{y,s,t}
+                \amp =
+                \left(
+                    \frac{\partial f}{\partial x}
+                \right)_{y,z,t}
+                \left(
+                    \frac{\partial x}{\partial x}
+                \right)_{y,s,t}
+                +
+                \left(
+                    \frac{\partial f}{\partial z}
+                \right)_{x,y,t}
+                \left(
+                    \frac{\partial z}{\partial x}
+                \right)_{y,s,t}
+            </mrow>
+            <mrow xml:id="eqn-chain-rule-x-s-full" number="yes">
+                \amp =
+                \left(
+                    \frac{\partial f}{\partial x}
+                \right)_{y,z,t}
+                +
+                \left(
+                    \frac{\partial f}{\partial z}
+                \right)_{x,y,t}
+                \left(
+                    \frac{\partial z}{\partial x}
+                \right)_{y,s,t}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Note the terms <m>\left( \dfrac{\partial f}{\partial y} \right)_{x,z,t} \left( \dfrac{\partial y}{\partial x} \right)_{y,s,t}</m>
+        and <m>\left( \dfrac{\partial f}{\partial t} \right)_{x,y,z} \left( \dfrac{\partial t}{\partial x} \right)_{y,s,t}</m>
+        are omitted:
+        This is because they are 0 since <m>y</m> and <m>t</m> do not vary with <m>x</m>.
+    </p>
+
+    <p>
+        For brevity,
+        and to align with other texts,
+        the subscripts "y" and "t" are omitted from <xref ref="eqn-chain-rule-x-s-full" text="type-global" />
+        since these variables are held constant for all the partial derivatives that appear in the equation.
+        Then <xref ref="eqn-chain-rule-x-s-full" text="type-global" /> can be written somewhat more succinctly as
+    </p>
+
+    <p>
+        <md xml:id="eqn-chain-rule-x-s-reduced" number="yes">
+            \left(
+                \frac{\partial f}{\partial x}
+            \right)_{s}
+            =
+            \left(
+                \frac{\partial f}{\partial x}
+            \right)_{z}
+            +
+            \left(
+                \frac{\partial f}{\partial z}
+            \right)_{x}
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{s}
+        </md>
+    </p>
+
+    <p>
+        Many texts justify <xref ref="eqn-chain-rule-x-s-reduced" text="type-global" />
+        physically by "zooming in" on a portion of <xref ref="ch9-vertical-coordinate-z-s" text="type-global" />,
+        as the dashed box indicates in <xref ref="ch9-vertical-coordinate-z-s-box" text="type-global" /> below.
+        <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />
+        zooms in on the portion of <xref ref="ch9-vertical-coordinate-z-s-box" text="type-global" /> inside the dashed box.
+    </p>
+
+    <figure xml:id="ch9-vertical-coordinate-z-s-box">
+        <caption>
+            Reproduction of <xref ref="ch9-vertical-coordinate-z-s" text="type-global" />,
+            where the dashed blue box indicates the portion of the figure chosen for closer inspection
+            in <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />.
+        </caption>
+        <image source="images/ch9-vertical-coordinate-z-s-box.png" width="80%">
+            <shortdescription>
+                Four horizontal lines stacked vertically representing geometric heights
+                with an equal increment of height between them.
+                Four thicker wavy lines representing constant surfaces of another variable are superimposed.
+                A dashed box highlights a portion of one wavy line.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <figure xml:id="ch9-vertical-coordinate-z-s-zoom">
+        <caption>
+            Zoomed-in view of the region enclosed by the dashed blue box in <xref ref="ch9-vertical-coordinate-z-s-box" text="type-global" />,
+            with state variable <m>f</m> measured at locations <m>A</m>, <m>B</m>, and <m>C</m>.
+            Locations <m>A</m> and <m>B</m> are separated by horizontal distance <m>\delta x</m>,
+            and locations <m>B</m> and <m>C</m> are separated by vertical distance <m>\delta z</m>.
+            Locations <m>A</m> and <m>C</m> are found along the same surface <m>s</m>.
+        </caption>
+        <image source="images/ch9-vertical-coordinate-z-s-zoom.png" width="80%">
+            <shortdescription>
+                Two parallel horizontal lines representing geometric heights,
+                and a line cutting diagonally across them representing a constant surface of another variable.
+                Intersections are marked by dots,
+                and an additional dot creates a right triangle.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        In <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />,
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{f_C - f_A}{\delta x}
+                \amp =
+                \frac{f_C - f_B + f_B - f_A}{\delta x}
+            </mrow>
+            <mrow>
+                \amp =
+                \frac{f_C - f_B}{\delta x}
+                +
+                \frac{f_B - f_A}{\delta x}
+            </mrow>
+            <mrow number="yes">
+                \amp =
+                \frac{f_C - f_B}{\delta z} \frac{\delta z}{\delta x}
+                +
+                \frac{f_B - f_A}{\delta x}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Note from <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />
+        that <m>\dfrac{f_C - f_B}{\delta z}</m> is calculated at constant <m>x</m>,
+        <m>\dfrac{f_B - f_A}{\delta x}</m> is calculated at constant <m>z</m>,
+        and both <m>\dfrac{f_C - f_A}{\delta x}</m> and <m>\dfrac{\delta z}{\delta x}</m>
+        are calculated along a surface of constant <m>s</m>.
+    </p>
+
+    <p>
+        In the limit as <m>\delta x \to 0</m> (and so <m>\delta z \to 0</m>), we have
+    </p>
+
+    <p>
+        <md number="yes">
+            \left(
+                \frac{\partial f}{\partial x}
+            \right)_{s}
+            =
+            \left(
+                \frac{\partial f}{\partial z}
+            \right)_{x}
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{s}
+            +
+            \left(
+                \frac{\partial f}{\partial x}
+            \right)_{z}
+        </md>
+    </p>
+
+    <p>
+        which is equivalent to <xref ref="eqn-chain-rule-x-s-reduced" text="type-global" />.
+    </p>
+
+    <p>
+        Similar arguments apply for <m>\dfrac{\partial f}{\partial y}</m> and produce
+    </p>
+
+    <p>
+        <md number="yes">
+            \left(
+                \frac{\partial f}{\partial y}
+            \right)_{s}
+            =
+            \left(
+                \frac{\partial f}{\partial y}
+            \right)_{z}
+            +
+            \left(
+                \frac{\partial f}{\partial z}
+            \right)_{y}
+            \left(
+                \frac{\partial z}{\partial y}
+            \right)_{s}
+        </md>
+    </p>
+
 </subsection>
