@@ -256,7 +256,7 @@
     </p>
 
     <p>
-        <md number="yes">
+        <md xml:id="eqn-chain-rule-y-s-reduced" number="yes">
             \left(
                 \frac{\partial f}{\partial y}
             \right)_{s}
