@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch9-section-isobaric-coordinates" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Isobaric coordinates</title>
+
+  <introduction>
+    <p>
+        For meteorologists,
+        pressure <m>p</m> stands out as a clear candidate for an alternative vertical coordinate
+        because it strictly decreases with increasing geometric height <m>z</m>.
+    </p>
+
+    <p>
+        We can replace the general vertical coordinate <m>s</m> with <m>p</m>
+        in <xref ref="eqn-chain-rule-x-s-reduced" text="type-global" />
+        and <xref ref="eqn-chain-rule-y-s-reduced" text="type-global" />:
+    </p>
+
+    <p>
+        <md xml:id="eqn-chain-rule-x-p-reduced" number="yes">
+            \left(
+                \frac{\partial f}{\partial x}
+            \right)_{p}
+            =
+            \left(
+                \frac{\partial f}{\partial x}
+            \right)_{z}
+            +
+            \left(
+                \frac{\partial f}{\partial z}
+            \right)_{x}
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-chain-rule-y-p-reduced" number="yes">
+            \left(
+                \frac{\partial f}{\partial y}
+            \right)_{p}
+            =
+            \left(
+                \frac{\partial f}{\partial y}
+            \right)_{z}
+            +
+            \left(
+                \frac{\partial f}{\partial z}
+            \right)_{y}
+            \left(
+                \frac{\partial z}{\partial y}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        Graphically,
+        we envision surfaces of constant <m>s</m> replaced with isobaric surfaces
+        in <xref ref="ch9-vertical-coordinate-z-s" text="type-global" />
+        and <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />,
+        as shown below in <xref ref="ch9-vertical-coordinate-z-p" text="type-global" />
+        and <xref ref="ch9-vertical-coordinate-z-p-zoom" text="type-global" />,
+        respectively.
+    </p>
+
+    <figure xml:id="ch9-vertical-coordinate-z-p">
+        <caption>
+            Reproduction of <xref ref="ch9-vertical-coordinate-z-s" text="type-global" />,
+            with <m>s</m> replaced by <m>p</m> and subtractions used so <m>\delta p \gt 0</m>
+            but <m>p</m> decreases with increasing <m>z</m>.
+        </caption>
+        <image source="images/ch9-vertical-coordinate-z-p.png" width="80%">
+            <shortdescription>
+                Four horizontal lines stacked vertically representing geometric heights
+                with an equal increment of height between them.
+                Four thicker wavy lines representing isobaric surfaces are superimposed.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <figure xml:id="ch9-vertical-coordinate-z-p-zoom">
+        <caption>
+            Reproduction of <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />,
+            with <m>s</m> replaced by <m>p</m>.
+        </caption>
+        <image source="images/ch9-vertical-coordinate-z-p-zoom.png" width="80%">
+            <shortdescription>
+                Two parallel horizontal lines representing geometric heights,
+                and a line cutting diagonally across them representing an isobaric surface.
+                Intersections are marked by dots,
+                and an additional dot creates a right triangle.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Now that we have a new vertical coordinate<mdash /><m>p</m> rather than <m>z</m><mdash />we must rewrite essential equations.
+        Note that hydrostatic balance is employed frequently in the derivations to do so below.
+        While hydrostatic balance is a reasonable approximation under most atmospheric conditions,
+        keep in mind that its inclusion means that isobaric coordinates should not be used to describe atmospheric phenomena
+        that are not approximately in hydrostatic balance.
+    </p>
+  </introduction>
+
+</section>
