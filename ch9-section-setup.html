@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="METR 3113">
+<meta property="book:author" content="Dr. Amanda Kis">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="Atmospheric Dynamics I" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="atmospheric-dynamics-i.html"><span class="title">METR 3113</span> <span class="subtitle">Atmospheric Dynamics I</span></a></h1>
+<p class="byline">Dr. Amanda Kis</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="chapter-9.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-9.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch9-section-isobaric-coordinates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\newcommand{\sfrac}[2]{{#1}/{#2}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Continuum Approximation and Calculus in Geophysical Fluid Dynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-continuum-approximation.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Continuum approximation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1-section-calculus.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Partial differentiation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector algebra and calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Right-hand rule</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-del" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Del</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-finite-differencing.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Finite differencing</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Fundamental Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-gravitational-force.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Gravitational force</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-pressure-gradient-force.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Pressure gradient force</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3-section-friction-force.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Viscous friction force</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3-section-friction-force.html#ch3-section-friction-force-subsection-couette-flow" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Couette flow</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-newtons-laws.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Newton’s laws of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-selected-references.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Non-inertial Reference Frames and Apparent Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-relative-motion.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Relative motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-reference-frames.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Inertial and non-inertial reference frames</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-rotating-reference-frame.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Rotating reference frame</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-application-earth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Application of a rotating reference frame to Earth</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-accelerations.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Inertial accelerations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-centrifugal-acceleration.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Centrifugal acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-gravity.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Gravity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-geopotential.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Geopotential and geopotential height</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-forces-authors-note.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Author’s note on inertial forces</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-selected-references.html" class="internal"><span class="codenumber">4.10</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-5.html" class="internal"><span class="codenumber">5</span> <span class="title">Spherical Coordinates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Expanding the acceleration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-i-hat" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-j-hat" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-k-hat" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-all" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Putting everything together</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-a-authors-note" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Author’s note on the simplifying use of <span class="process-math">\(a\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-expanding-coriolis.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Expanding the Coriolis acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-expanding-friction.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Expanding the viscous friction acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-equations-of-motion.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Component equations of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-selected-references.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-6.html" class="internal"><span class="codenumber">6</span> <span class="title">Mass Conservation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-lagrangian.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Lagrangian perspective</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-eulerian.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Eulerian perspective</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-incompressibility.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Incompressibility</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-looking-ahead.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Looking ahead</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-selected-references.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-7.html" class="internal"><span class="codenumber">7</span> <span class="title">Dry Thermodynamics, Energy Conservation, and Static Stability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Review of dry thermodynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Ideal gases and the ideal gas law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hydrostatic-balance" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Hydrostatic balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hypsometric-equation" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Hypsometric equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-first-law" class="internal"><span class="codenumber">7.1.4</span> <span class="title"><span class="process-math">\(1^{\text{st}}\)</span> law of thermodynamics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-adiabatic" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Lapse rates and adiabatic processes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-standard-atmosphere" class="internal"><span class="codenumber">7.1.6</span> <span class="title">Standard atmosphere</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-potential-temperature" class="internal"><span class="codenumber">7.1.7</span> <span class="title">Poisson’s equation and potential temperature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-buoyancy" class="internal"><span class="codenumber">7.1.8</span> <span class="title">Buoyancy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability" class="internal"><span class="codenumber">7.1.9</span> <span class="title">Local static stability</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-thermodynamic-energy-equation.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Thermodynamic energy equation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-mechanical-energy-equation.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Mechanical energy equation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch7-section-total-energy-equation.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Total energy equation</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-total-energy-equation.html#ch7-section-total-energy-equation-subsection-bernoulli" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Bernoulli’s principle</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-governing-equations.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Governing equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-selected-references.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-8.html" class="internal"><span class="codenumber">8</span> <span class="title">Synoptic Scale Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch8-section-scale-analysis.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Scale analysis</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Mid-latitude synoptic scale analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Geostrophic balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-rossby-number" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Rossby number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-hydrostatic-balance" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Hydrostatic balance</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-9.html" class="internal"><span class="codenumber">9</span> <span class="title">Isobaric and Other Vertical Coordinates</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="ch9-section-setup.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Setup</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-setup.html#ch9-section-setup-subsection-chain-rule" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Review of the chain rule for multivariable functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-setup.html#ch9-section-setup-subsection-general-vertical-coordinate" class="internal"><span class="codenumber">9.1.2</span> <span class="title">General vertical coordinate</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Isobaric coordinates</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">10</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="appendix-cross-product-term-proof.html" class="internal"><span class="codenumber">A</span> <span class="title">Proof of Cross Product Term in Total Derivative for Rotating Reference Frames</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="aa-section-turntable.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Derivation for a turntable</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-i" class="internal"><span class="codenumber">A.1.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-j" class="internal"><span class="codenumber">A.1.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-k" class="internal"><span class="codenumber">A.1.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-all" class="internal"><span class="codenumber">A.1.4</span> <span class="title">Putting everything together for the turntable</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="aa-section-earth.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Derivation for Earth</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-i" class="internal"><span class="codenumber">A.2.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-j" class="internal"><span class="codenumber">A.2.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-k" class="internal"><span class="codenumber">A.2.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-all" class="internal"><span class="codenumber">A.2.4</span> <span class="title">Putting everything together for Earth</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ch9-section-setup">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Setup</span>
+</h2>
+<section class="subsection" id="ch9-section-setup-subsection-chain-rule">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Review of the chain rule for multivariable functions</span>
+</h3>
+<div class="para" id="ch9-section-setup-subsection-chain-rule-2">Consider a function <span class="process-math">\(f = f(x,y,z,t)\text{.}\)</span> When finding a partial derivative of <span class="process-math">\(f\)</span> in terms of one of its independent variables, the other independent variables are held constant. For example, the independent variables <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(t\)</span> are held constant when finding <span class="process-math">\(\dfrac{\partial f}{\partial x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-chain-rule-3">As discussed in <a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal" title="Subsection 1.2.1: Partial differentiation">Chapter 1</a>, we can use subscripts to make explicit which independent variables are held constant for a particular partial derivative. Returning to the previous example:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-chain-rule-4">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-chain-rule-4-1">
+\begin{equation*}
+\frac{\partial f}{\partial x}
+=
+\left( \frac{\partial f}{\partial x} \right)_{y,z,t}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-chain-rule-5">where the subscripts "y", "z", and "t" indicate that these independent variables are held constant when taking the partial derivative of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-chain-rule-6">Similar reasoning and notation are used when finding <span class="process-math">\(\dfrac{\partial f}{\partial y}\text{,}\)</span> <span class="process-math">\(\dfrac{\partial f}{\partial z}\text{,}\)</span> and <span class="process-math">\(\dfrac{\partial f}{\partial t}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-chain-rule-7">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-chain-rule-7-1">
+\begin{equation*}
+\frac{\partial f}{\partial y}
+=
+\left( \frac{\partial f}{\partial y} \right)_{x,z,t}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-chain-rule-8">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-chain-rule-8-1">
+\begin{equation*}
+\frac{\partial f}{\partial z}
+=
+\left( \frac{\partial f}{\partial z} \right)_{x,y,t}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-chain-rule-9">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-chain-rule-9-1">
+\begin{equation*}
+\frac{\partial f}{\partial t}
+=
+\left( \frac{\partial f}{\partial t} \right)_{x,y,z}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-chain-rule-10">If <span class="process-math">\(x = x(q,r)\text{,}\)</span> <span class="process-math">\(y = y(q,r)\text{,}\)</span> <span class="process-math">\(z = z(q,r)\text{,}\)</span> and <span class="process-math">\(t = t(q,r)\text{,}\)</span> then <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(t\)</span> are considered <dfn class="terminology">intermediate variables</dfn> and <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> are considered <dfn class="terminology">independent variables</dfn>, and we can find <span class="process-math">\(\dfrac{\partial f}{\partial q}\)</span> and <span class="process-math">\(\dfrac{\partial f}{\partial r}\)</span> using the chain rule for multivariable functions. For example:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-chain-rule-11">
+<div class="displaymath process-math" id="eqn-chain-rule-general-basic">
+\begin{equation}
+\frac{\partial f}{\partial q}
+=
+\frac{\partial f}{\partial x}\frac{\partial x}{\partial q}
++
+\frac{\partial f}{\partial y}\frac{\partial y}{\partial q}
++
+\frac{\partial f}{\partial z}\frac{\partial z}{\partial q}
++
+\frac{\partial f}{\partial t}\frac{\partial t}{\partial q}\tag{9.1.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-chain-rule-12">
+<a href="ch9-section-setup.html#eqn-chain-rule-general-basic" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-general-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.1.1">(9.1.1)</a> should be familiar from your multivariable calculus course. But this form hides which intermediate or independent variables are held constant for each partial derivative. Although it requires more writing, we can use subscripts to make explicit which variables are held constant for each partial derivative. Using this notation, <a href="ch9-section-setup.html#eqn-chain-rule-general-basic" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-general-basic.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.1.1">(9.1.1)</a> becomes:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-chain-rule-13">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-chain-rule-13-1">
+\begin{align}
+\left(
+\frac{\partial f}{\partial q}
+\right)_{r}
+\amp =
+\left(
+\frac{\partial f}{\partial x}
+\right)_{y,z,t}
+\left(
+\frac{\partial x}{\partial q}
+\right)_{r}
++
+\left(
+\frac{\partial f}{\partial y}
+\right)_{x,z,t}
+\left(
+\frac{\partial y}{\partial q}
+\right)_{r}\notag\\
+\amp +
+\left(
+\frac{\partial f}{\partial z}
+\right)_{x,y,t}
+\left(
+\frac{\partial z}{\partial q}
+\right)_{r}
++
+\left(
+\frac{\partial f}{\partial t}
+\right)_{x,y,z}
+\left(
+\frac{\partial t}{\partial q}
+\right)_{r}\tag{9.1.2}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-chain-rule-14">We will make use of the chain rule for multivariable functions with subscript notation in the next sub-section.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-chain-rule-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.1.1: Review of the chain rule for multivariable functions"><a href="#ch9-section-setup-subsection-chain-rule" title="Copy heading and permalink for Subsection 9.1.1: Review of the chain rule for multivariable functions" aria-label="Copy heading and permalink for Subsection 9.1.1: Review of the chain rule for multivariable functions">🔗</a></div>
+</section>
+<section class="subsection" id="ch9-section-setup-subsection-general-vertical-coordinate">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">General vertical coordinate</span>
+</h3>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-2">Consider our usual vertical coordinate: <span class="process-math">\(z\text{,}\)</span> the geometric height. As shown in <a href="ch9-section-setup.html#ch9-vertical-coordinate-z" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.1">Figure 9.1.1</a> below, <span class="process-math">\(z\)</span> strictly increases with increasing height.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch9-vertical-coordinate-z"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch9-vertical-coordinate-z.png" class="contained" alt="Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vertical cross-section through several <span class="process-math">\(z\)</span>-surfaces at a single moment in time, with equal increment <span class="process-math">\(\delta z\)</span> between each surface. The <span class="process-math">\(+x\)</span> and <span class="process-math">\(+z\)</span> axes are shown, and the <span class="process-math">\(+y\)</span>-axis points into the page. Given that <span class="process-math">\(\delta z \gt 0\text{,}\)</span> the values of the <span class="process-math">\(z\)</span>-surfaces increase in the <span class="process-math">\(+z\)</span>-direction.<div class="autopermalink" data-description="Figure 9.1.1"><a href="#ch9-vertical-coordinate-z" title="Copy heading and permalink for Figure 9.1.1" aria-label="Copy heading and permalink for Figure 9.1.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-4">Say a state variable <span class="process-math">\(s = s(x,y,z,t)\)</span> is strictly monotonic with respect to <span class="process-math">\(z\)</span> (i.e., <span class="process-math">\(s\)</span> either strictly increases or strictly decreases with increasing <span class="process-math">\(z\)</span>). This means <span class="process-math">\(z = z(x,y,s,t)\)</span> since strictly monotonic functions are invertible, and so a state variable <span class="process-math">\(f = f(x,y,z,t)\)</span> becomes <span class="process-math">\(f = f(x,y,z(x,y,s,t),t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-5">Furthermore, because <span class="process-math">\(s\)</span> is strictly monotonic with respect to <span class="process-math">\(z\text{,}\)</span> we can use <span class="process-math">\(s\)</span> rather than <span class="process-math">\(z\)</span> as the vertical coordinate!<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-6">We can visualize <span class="process-math">\(s\)</span> as a surface, such as an <dfn class="terminology">isobaric surface</dfn> (a surface of constant pressure <span class="process-math">\(p\)</span>) if <span class="process-math">\(s\)</span> is replaced with <span class="process-math">\(p\)</span> or an <dfn class="terminology">isentropic surface</dfn> (a surface of constant potential temperature <span class="process-math">\(\theta\)</span>) if <span class="process-math">\(s\)</span> is replaced with <span class="process-math">\(\theta\text{.}\)</span> Such surfaces are "wavy" and evolve with time. A vertical slice through several such surfaces at one moment in time is shown in <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.2">Figure 9.1.2</a> below, with the <span class="process-math">\(z\)</span>-surfaces of <a href="ch9-section-setup.html#ch9-vertical-coordinate-z" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.1">Figure 9.1.1</a> included for reference.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch9-vertical-coordinate-z-s"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch9-vertical-coordinate-z-s.png" class="contained" alt="Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing constant surfaces of another variable are superimposed."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vertical cross-section through several <span class="process-math">\(s\)</span>-surfaces at a single moment in time, with equal increment <span class="process-math">\(\delta s\)</span> between each surface. The <span class="process-math">\(+x\)</span> and <span class="process-math">\(+z\)</span> axes are shown, and the <span class="process-math">\(+y\)</span>-axis points into the page. If <span class="process-math">\(\delta s \gt 0\text{,}\)</span> the values of the <span class="process-math">\(s\)</span>-surfaces increase in the <span class="process-math">\(+z\)</span>-direction; if <span class="process-math">\(\delta s \lt 0\text{,}\)</span> the values of the <span class="process-math">\(s\)</span>-surfaces decrease in the <span class="process-math">\(+z\)</span>-direction. The <span class="process-math">\(z\)</span>-surfaces of <a href="ch9-section-setup.html#ch9-vertical-coordinate-z" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.1">Figure 9.1.1</a> are included in the background for reference.<div class="autopermalink" data-description="Figure 9.1.2"><a href="#ch9-vertical-coordinate-z-s" title="Copy heading and permalink for Figure 9.1.2" aria-label="Copy heading and permalink for Figure 9.1.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-8">Consider a state variable <span class="process-math">\(f = f(x,y,z,t)\text{.}\)</span> As noted above, since <span class="process-math">\(z = z(x,y,s,t)\text{,}\)</span> we can write <span class="process-math">\(f = f(x,y,z(x,y,s,t),t)\text{.}\)</span> To find, for example, <span class="process-math">\(\dfrac{\partial f}{\partial x}\text{,}\)</span> we can treat <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(t\)</span> as intermediate variables and <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(s\text{,}\)</span> and <span class="process-math">\(t\)</span> as independent variables and apply the chain rule for multivariable functions.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-general-vertical-coordinate-9">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-general-vertical-coordinate-9-1">
+\begin{align}
+\left(
+\frac{\partial f}{\partial x}
+\right)_{y,s,t}
+\amp =
+\left(
+\frac{\partial f}{\partial x}
+\right)_{y,z,t}
+\left(
+\frac{\partial x}{\partial x}
+\right)_{y,s,t}
++
+\left(
+\frac{\partial f}{\partial z}
+\right)_{x,y,t}
+\left(
+\frac{\partial z}{\partial x}
+\right)_{y,s,t}\notag\\
+\amp =
+\left(
+\frac{\partial f}{\partial x}
+\right)_{y,z,t}
++
+\left(
+\frac{\partial f}{\partial z}
+\right)_{x,y,t}
+\left(
+\frac{\partial z}{\partial x}
+\right)_{y,s,t}\tag{9.1.3}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-10">Note the terms <span class="process-math">\(\left( \dfrac{\partial f}{\partial y} \right)_{x,z,t} \left( \dfrac{\partial y}{\partial x} \right)_{y,s,t}\)</span> and <span class="process-math">\(\left( \dfrac{\partial f}{\partial t} \right)_{x,y,z} \left( \dfrac{\partial t}{\partial x} \right)_{y,s,t}\)</span> are omitted: This is because they are 0 since <span class="process-math">\(y\)</span> and <span class="process-math">\(t\)</span> do not vary with <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-11">For brevity, and to align with other texts, the subscripts "y" and "t" are omitted from <a href="ch9-section-setup.html#ch9-section-setup-subsection-general-vertical-coordinate-9-1" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-x-s-full.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.1.3">(9.1.3)</a> since these variables are held constant for all the partial derivatives that appear in the equation. Then <a href="ch9-section-setup.html#ch9-section-setup-subsection-general-vertical-coordinate-9-1" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-x-s-full.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.1.3">(9.1.3)</a> can be written somewhat more succinctly as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-general-vertical-coordinate-12">
+<div class="displaymath process-math" id="eqn-chain-rule-x-s-reduced">
+\begin{equation}
+\left(
+\frac{\partial f}{\partial x}
+\right)_{s}
+=
+\left(
+\frac{\partial f}{\partial x}
+\right)_{z}
++
+\left(
+\frac{\partial f}{\partial z}
+\right)_{x}
+\left(
+\frac{\partial z}{\partial x}
+\right)_{s}\tag{9.1.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-13">Many texts justify <a href="ch9-section-setup.html#eqn-chain-rule-x-s-reduced" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-x-s-reduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.1.4">(9.1.4)</a> physically by "zooming in" on a portion of <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.2">Figure 9.1.2</a>, as the dashed box indicates in <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-box" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-box.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.3">Figure 9.1.3</a> below. <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-zoom" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.4">Figure 9.1.4</a> zooms in on the portion of <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-box" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-box.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.3">Figure 9.1.3</a> inside the dashed box.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch9-vertical-coordinate-z-s-box"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch9-vertical-coordinate-z-s-box.png" class="contained" alt="Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing constant surfaces of another variable are superimposed. A dashed box highlights a portion of one wavy line."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Reproduction of <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.2">Figure 9.1.2</a>, where the dashed blue box indicates the portion of the figure chosen for closer inspection in <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-zoom" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.4">Figure 9.1.4</a>.<div class="autopermalink" data-description="Figure 9.1.3"><a href="#ch9-vertical-coordinate-z-s-box" title="Copy heading and permalink for Figure 9.1.3" aria-label="Copy heading and permalink for Figure 9.1.3">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="ch9-vertical-coordinate-z-s-zoom"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch9-vertical-coordinate-z-s-zoom.png" class="contained" alt="Two parallel horizontal lines representing geometric heights, and a line cutting diagonally across them representing a constant surface of another variable. Intersections are marked by dots, and an additional dot creates a right triangle."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Zoomed-in view of the region enclosed by the dashed blue box in <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-box" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-box.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.3">Figure 9.1.3</a>, with state variable <span class="process-math">\(f\)</span> measured at locations <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> and <span class="process-math">\(C\text{.}\)</span> Locations <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are separated by horizontal distance <span class="process-math">\(\delta x\text{,}\)</span> and locations <span class="process-math">\(B\)</span> and <span class="process-math">\(C\)</span> are separated by vertical distance <span class="process-math">\(\delta z\text{.}\)</span> Locations <span class="process-math">\(A\)</span> and <span class="process-math">\(C\)</span> are found along the same surface <span class="process-math">\(s\text{.}\)</span><div class="autopermalink" data-description="Figure 9.1.4"><a href="#ch9-vertical-coordinate-z-s-zoom" title="Copy heading and permalink for Figure 9.1.4" aria-label="Copy heading and permalink for Figure 9.1.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-16">In <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-zoom" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.4">Figure 9.1.4</a>,<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-general-vertical-coordinate-17">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-general-vertical-coordinate-17-1">
+\begin{align}
+\frac{f_C - f_A}{\delta x}
+\amp =
+\frac{f_C - f_B + f_B - f_A}{\delta x}\notag\\
+\amp =
+\frac{f_C - f_B}{\delta x}
++
+\frac{f_B - f_A}{\delta x}\notag\\
+\amp =
+\frac{f_C - f_B}{\delta z} \frac{\delta z}{\delta x}
++
+\frac{f_B - f_A}{\delta x}\tag{9.1.5}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-18">Note from <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-zoom" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.4">Figure 9.1.4</a> that <span class="process-math">\(\dfrac{f_C - f_B}{\delta z}\)</span> is calculated at constant <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(\dfrac{f_B - f_A}{\delta x}\)</span> is calculated at constant <span class="process-math">\(z\text{,}\)</span> and both <span class="process-math">\(\dfrac{f_C - f_A}{\delta x}\)</span> and <span class="process-math">\(\dfrac{\delta z}{\delta x}\)</span> are calculated along a surface of constant <span class="process-math">\(s\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-19">In the limit as <span class="process-math">\(\delta x \to 0\)</span> (and so <span class="process-math">\(\delta z \to 0\)</span>), we have<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-general-vertical-coordinate-20">
+<div class="displaymath process-math" id="ch9-section-setup-subsection-general-vertical-coordinate-20-1">
+\begin{equation}
+\left(
+\frac{\partial f}{\partial x}
+\right)_{s}
+=
+\left(
+\frac{\partial f}{\partial z}
+\right)_{x}
+\left(
+\frac{\partial z}{\partial x}
+\right)_{s}
++
+\left(
+\frac{\partial f}{\partial x}
+\right)_{z}\tag{9.1.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-21">which is equivalent to <a href="ch9-section-setup.html#eqn-chain-rule-x-s-reduced" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-x-s-reduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.1.4">(9.1.4)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-setup-subsection-general-vertical-coordinate-22">Similar arguments apply for <span class="process-math">\(\dfrac{\partial f}{\partial y}\)</span> and produce<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-setup-subsection-general-vertical-coordinate-23">
+<div class="displaymath process-math" id="eqn-chain-rule-y-s-reduced">
+\begin{equation}
+\left(
+\frac{\partial f}{\partial y}
+\right)_{s}
+=
+\left(
+\frac{\partial f}{\partial y}
+\right)_{z}
++
+\left(
+\frac{\partial f}{\partial z}
+\right)_{y}
+\left(
+\frac{\partial z}{\partial y}
+\right)_{s}\tag{9.1.7}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-setup-subsection-general-vertical-coordinate-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.1.2: General vertical coordinate"><a href="#ch9-section-setup-subsection-general-vertical-coordinate" title="Copy heading and permalink for Subsection 9.1.2: General vertical coordinate" aria-label="Copy heading and permalink for Subsection 9.1.2: General vertical coordinate">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 9.1: Setup"><a href="#ch9-section-setup" title="Copy heading and permalink for Section 9.1: Setup" aria-label="Copy heading and permalink for Section 9.1: Setup">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="chapter-9.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch9-section-isobaric-coordinates.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

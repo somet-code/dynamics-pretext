@@ -2197,11 +2197,101 @@ var ptx_lunr_docs = [
   "body": "Rossby number "
 },
 {
+  "id": "ch9-section-setup",
+  "level": "1",
+  "url": "ch9-section-setup.html",
+  "type": "Section",
+  "number": "9.1",
+  "title": "Setup",
+  "body": " Setup   Review of the chain rule for multivariable functions  Consider a function . When finding a partial derivative of in terms of one of its independent variables, the other independent variables are held constant. For example, the independent variables , , and are held constant when finding .  As discussed in Chapter 1 , we can use subscripts to make explicit which independent variables are held constant for a particular partial derivative. Returning to the previous example:     where the subscripts \"y\", \"z\", and \"t\" indicate that these independent variables are held constant when taking the partial derivative of with respect to .  Similar reasoning and notation are used when finding , , and :           If , , , and , then , , , and are considered intermediate variables and and are considered independent variables , and we can find and using the chain rule for multivariable functions. For example:      should be familiar from your multivariable calculus course. But this form hides which intermediate or independent variables are held constant for each partial derivative. Although it requires more writing, we can use subscripts to make explicit which variables are held constant for each partial derivative. Using this notation, becomes:     We will make use of the chain rule for multivariable functions with subscript notation in the next sub-section.    General vertical coordinate  Consider our usual vertical coordinate: , the geometric height. As shown in below, strictly increases with increasing height.   Vertical cross-section through several -surfaces at a single moment in time, with equal increment between each surface. The and axes are shown, and the -axis points into the page. Given that , the values of the -surfaces increase in the -direction.   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them.    Say a state variable is strictly monotonic with respect to (i.e., either strictly increases or strictly decreases with increasing ). This means since strictly monotonic functions are invertible, and so a state variable becomes .  Furthermore, because is strictly monotonic with respect to , we can use rather than as the vertical coordinate!  We can visualize as a surface, such as an isobaric surface (a surface of constant pressure ) if is replaced with or an isentropic surface (a surface of constant potential temperature ) if is replaced with . Such surfaces are \"wavy\" and evolve with time. A vertical slice through several such surfaces at one moment in time is shown in below, with the -surfaces of included for reference.   Vertical cross-section through several -surfaces at a single moment in time, with equal increment between each surface. The and axes are shown, and the -axis points into the page. If , the values of the -surfaces increase in the -direction; if , the values of the -surfaces decrease in the -direction. The -surfaces of are included in the background for reference.   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing constant surfaces of another variable are superimposed.    Consider a state variable . As noted above, since , we can write . To find, for example, , we can treat , , , and as intermediate variables and , , , and as independent variables and apply the chain rule for multivariable functions.     Note the terms and are omitted: This is because they are 0 since and do not vary with .  For brevity, and to align with other texts, the subscripts \"y\" and \"t\" are omitted from since these variables are held constant for all the partial derivatives that appear in the equation. Then can be written somewhat more succinctly as     Many texts justify physically by \"zooming in\" on a portion of , as the dashed box indicates in below. zooms in on the portion of inside the dashed box.   Reproduction of , where the dashed blue box indicates the portion of the figure chosen for closer inspection in .   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing constant surfaces of another variable are superimposed. A dashed box highlights a portion of one wavy line.     Zoomed-in view of the region enclosed by the dashed blue box in , with state variable measured at locations , , and . Locations and are separated by horizontal distance , and locations and are separated by vertical distance . Locations and are found along the same surface .   Two parallel horizontal lines representing geometric heights, and a line cutting diagonally across them representing a constant surface of another variable. Intersections are marked by dots, and an additional dot creates a right triangle.    In ,     Note from that is calculated at constant , is calculated at constant , and both and are calculated along a surface of constant .  In the limit as (and so ), we have     which is equivalent to .  Similar arguments apply for and produce      "
+},
+{
+  "id": "ch9-section-setup-subsection-chain-rule-10",
+  "level": "2",
+  "url": "ch9-section-setup.html#ch9-section-setup-subsection-chain-rule-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "intermediate variables independent variables "
+},
+{
+  "id": "ch9-vertical-coordinate-z",
+  "level": "2",
+  "url": "ch9-section-setup.html#ch9-vertical-coordinate-z",
+  "type": "Figure",
+  "number": "9.1.1",
+  "title": "",
+  "body": " Vertical cross-section through several -surfaces at a single moment in time, with equal increment between each surface. The and axes are shown, and the -axis points into the page. Given that , the values of the -surfaces increase in the -direction.   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them.   "
+},
+{
+  "id": "ch9-section-setup-subsection-general-vertical-coordinate-6",
+  "level": "2",
+  "url": "ch9-section-setup.html#ch9-section-setup-subsection-general-vertical-coordinate-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "isobaric surface isentropic surface "
+},
+{
+  "id": "ch9-vertical-coordinate-z-s",
+  "level": "2",
+  "url": "ch9-section-setup.html#ch9-vertical-coordinate-z-s",
+  "type": "Figure",
+  "number": "9.1.2",
+  "title": "",
+  "body": " Vertical cross-section through several -surfaces at a single moment in time, with equal increment between each surface. The and axes are shown, and the -axis points into the page. If , the values of the -surfaces increase in the -direction; if , the values of the -surfaces decrease in the -direction. The -surfaces of are included in the background for reference.   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing constant surfaces of another variable are superimposed.   "
+},
+{
+  "id": "ch9-vertical-coordinate-z-s-box",
+  "level": "2",
+  "url": "ch9-section-setup.html#ch9-vertical-coordinate-z-s-box",
+  "type": "Figure",
+  "number": "9.1.3",
+  "title": "",
+  "body": " Reproduction of , where the dashed blue box indicates the portion of the figure chosen for closer inspection in .   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing constant surfaces of another variable are superimposed. A dashed box highlights a portion of one wavy line.   "
+},
+{
+  "id": "ch9-vertical-coordinate-z-s-zoom",
+  "level": "2",
+  "url": "ch9-section-setup.html#ch9-vertical-coordinate-z-s-zoom",
+  "type": "Figure",
+  "number": "9.1.4",
+  "title": "",
+  "body": " Zoomed-in view of the region enclosed by the dashed blue box in , with state variable measured at locations , , and . Locations and are separated by horizontal distance , and locations and are separated by vertical distance . Locations and are found along the same surface .   Two parallel horizontal lines representing geometric heights, and a line cutting diagonally across them representing a constant surface of another variable. Intersections are marked by dots, and an additional dot creates a right triangle.   "
+},
+{
+  "id": "ch9-section-isobaric-coordinates",
+  "level": "1",
+  "url": "ch9-section-isobaric-coordinates.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "Isobaric coordinates",
+  "body": " Isobaric coordinates   For meteorologists, pressure stands out as a clear candidate for an alternative vertical coordinate because it strictly decreases with increasing geometric height .  We can replace the general vertical coordinate with in and :        Graphically, we envision surfaces of constant replaced with isobaric surfaces in and , as shown below in and , respectively.   Reproduction of , with replaced by and subtractions used so but decreases with increasing .   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing isobaric surfaces are superimposed.     Reproduction of , with replaced by .   Two parallel horizontal lines representing geometric heights, and a line cutting diagonally across them representing an isobaric surface. Intersections are marked by dots, and an additional dot creates a right triangle.    Now that we have a new vertical coordinate rather than we must rewrite essential equations. Note that hydrostatic balance is employed frequently in the derivations to do so below. While hydrostatic balance is a reasonable approximation under most atmospheric conditions, keep in mind that its inclusion means that isobaric coordinates should not be used to describe atmospheric phenomena that are not approximately in hydrostatic balance.   "
+},
+{
+  "id": "ch9-vertical-coordinate-z-p",
+  "level": "2",
+  "url": "ch9-section-isobaric-coordinates.html#ch9-vertical-coordinate-z-p",
+  "type": "Figure",
+  "number": "9.2.1",
+  "title": "",
+  "body": " Reproduction of , with replaced by and subtractions used so but decreases with increasing .   Four horizontal lines stacked vertically representing geometric heights with an equal increment of height between them. Four thicker wavy lines representing isobaric surfaces are superimposed.   "
+},
+{
+  "id": "ch9-vertical-coordinate-z-p-zoom",
+  "level": "2",
+  "url": "ch9-section-isobaric-coordinates.html#ch9-vertical-coordinate-z-p-zoom",
+  "type": "Figure",
+  "number": "9.2.2",
+  "title": "",
+  "body": " Reproduction of , with replaced by .   Two parallel horizontal lines representing geometric heights, and a line cutting diagonally across them representing an isobaric surface. Intersections are marked by dots, and an additional dot creates a right triangle.   "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
   "type": "References",
-  "number": "9",
+  "number": "10",
   "title": "References",
   "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Fujita, T. T.  Tornadoes and Downbursts in the Context of Generalized Planetary Scales  Journal of the Atmospheric Sciences  38  8  1511-1534  1981    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Orlanski, I.  A Rational Subdivision of Scales for Atmospheric Processes  Bulletin of the American Meteorological Society  56  5  527-530  1975    Petty, G. W.  A First Course in Atmospheric Thermodynamics  Sundog Publishing  2008    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
 },
@@ -2210,7 +2300,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#holton-hakim-6",
   "type": "Note",
-  "number": "9.3.1",
+  "number": "10.3.1",
   "title": "",
   "body": " 3rd edition  "
 },
@@ -2219,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#kundu-cohen-dowling-7",
   "type": "Note",
-  "number": "9.4.1",
+  "number": "10.4.1",
   "title": "",
   "body": " 6th edition  "
 },
@@ -2228,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#stull-5",
   "type": "Note",
-  "number": "9.9.1",
+  "number": "10.9.1",
   "title": "",
   "body": " Version 1.02b  "
 },
