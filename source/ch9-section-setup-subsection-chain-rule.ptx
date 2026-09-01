@@ -70,7 +70,7 @@
     </p>
 
     <p>
-        <md xml:id="eqn-chain-rule-basic" number="yes">
+        <md xml:id="eqn-chain-rule-general-basic" number="yes">
             \frac{\partial f}{\partial q}
             =
             \frac{\partial f}{\partial x}\frac{\partial x}{\partial q}
@@ -84,10 +84,10 @@
     </p>
 
     <p>
-        <xref ref="eqn-chain-rule-basic" text="type-global" /> should be familiar from your multivariable calculus course.
+        <xref ref="eqn-chain-rule-general-basic" text="type-global" /> should be familiar from your multivariable calculus course.
         But this form hides which intermediate or independent variables are held constant for each partial derivative.
         Although it requires more writing, we can use subscripts to make explicit which variables are held constant for each partial derivative.
-        Using this notation, <xref ref="eqn-chain-rule-basic" text="type-global" /> becomes:
+        Using this notation, <xref ref="eqn-chain-rule-general-basic" text="type-global" /> becomes:
     </p>
 
     <p>
@@ -111,7 +111,7 @@
                     \frac{\partial y}{\partial q}
                 \right)_{r}
             </mrow>
-            <mrow xml:id="eqn-chain-rule-subscript" number="yes">
+            <mrow xml:id="eqn-chain-rule-general-subscript" number="yes">
                 \amp +
                 \left(
                     \frac{\partial f}{\partial z}
