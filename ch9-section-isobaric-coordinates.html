@@ -240,7 +240,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-setup.html#ch9-section-setup-subsection-general-vertical-coordinate" class="internal"><span class="codenumber">9.1.2</span> <span class="title">General vertical coordinate</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Isobaric coordinates</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Isobaric coordinates</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-pgf" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Pressure gradient acceleration</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">10</span> <span class="title">References</span></a></div></li>
@@ -335,7 +338,303 @@ eBookConfig.enable_chatcodes =  false;
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Reproduction of <a href="ch9-section-setup.html#ch9-vertical-coordinate-z-s-zoom" class="xref" data-knowl="./knowl/xref/ch9-vertical-coordinate-z-s-zoom.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.1.4">Figure 9.1.4</a>, with <span class="process-math">\(s\)</span> replaced by <span class="process-math">\(p\text{.}\)</span><div class="autopermalink" data-description="Figure 9.2.2"><a href="#ch9-vertical-coordinate-z-p-zoom" title="Copy heading and permalink for Figure 9.2.2" aria-label="Copy heading and permalink for Figure 9.2.2">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="ch9-section-isobaric-coordinates-2-8">Now that we have a new vertical coordinate—<span class="process-math">\(p\)</span> rather than <span class="process-math">\(z\)</span>—we must rewrite essential equations. Note that hydrostatic balance is employed frequently in the derivations to do so below. While hydrostatic balance is a reasonable approximation under most atmospheric conditions, keep in mind that its inclusion means that isobaric coordinates should not be used to describe atmospheric phenomena that are not approximately in hydrostatic balance.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 9.2: Isobaric coordinates"><a href="#ch9-section-isobaric-coordinates" title="Copy heading and permalink for Section 9.2: Isobaric coordinates" aria-label="Copy heading and permalink for Section 9.2: Isobaric coordinates">🔗</a></div>
+</div></section>
+<section class="subsection" id="ch9-section-isobaric-coordinates-subsection-pgf">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pressure gradient acceleration</span>
+</h3>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-2">Terms in the equations of motion representing the horizontal components of the pressure gradient acceleration were found by holding <span class="process-math">\(z\)</span> constant and allowing <span class="process-math">\(p\)</span> to vary. They must be rewritten now that <span class="process-math">\(p\)</span> is held constant in isobaric coordinates while <span class="process-math">\(z\)</span> varies.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-3">We replace <span class="process-math">\(f\)</span> with <span class="process-math">\(p\)</span> in <a href="ch9-section-isobaric-coordinates.html#eqn-chain-rule-x-p-reduced" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-x-p-reduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.1">(9.2.1)</a> to write the <span class="process-math">\(x\)</span>-component of the pressure gradient acceleration in isobaric coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-4">
+<div class="displaymath process-math" id="eqn-chain-rule-p-p-reduced">
+\begin{equation}
+\left(
+\frac{\partial p}{\partial x}
+\right)_{p}
+=
+\left(
+\frac{\partial p}{\partial x}
+\right)_{z}
++
+\left(
+\frac{\partial p}{\partial z}
+\right)_{x}
+\left(
+\frac{\partial z}{\partial x}
+\right)_{p}\tag{9.2.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-5">But <span class="process-math">\(\left( \dfrac{\partial p}{\partial x} \right)_{p} = 0\)</span> since <span class="process-math">\(p\)</span> does not change on an isobaric surface, and so <a href="ch9-section-isobaric-coordinates.html#eqn-chain-rule-p-p-reduced" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-p-p-reduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.3">(9.2.3)</a> reduces to<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-6">
+<div class="displaymath process-math" id="eqn-chain-rule-p-p-simplified">
+\begin{equation}
+0
+=
+\left(
+\frac{\partial p}{\partial x}
+\right)_{z}
++
+\left(
+\frac{\partial p}{\partial z}
+\right)_{x}
+\left(
+\frac{\partial z}{\partial x}
+\right)_{p}\tag{9.2.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-7">This rearranges to produce the relationship<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-8">
+<div class="displaymath process-math" id="eqn-chain-rule-p-p-rearranged">
+\begin{equation}
+\left(
+\frac{\partial p}{\partial x}
+\right)_{z}
+=
+-\left(
+\frac{\partial p}{\partial z}
+\right)_{x}
+\left(
+\frac{\partial z}{\partial x}
+\right)_{p}\tag{9.2.5}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-9">If we apply hydrostatic balance<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-10">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-pgf-10-1">
+\begin{equation*}
+\frac{\partial p}{\partial z} = -\rho g
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-11">and we note this could be written as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-12">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-pgf-12-1">
+\begin{equation*}
+\left( \frac{\partial p}{\partial z} \right)_x = -\rho g
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-13">since <span class="process-math">\(x\)</span> (and <span class="process-math">\(y\)</span> and <span class="process-math">\(t\)</span>) is held constant when finding the partial derivative with respect to <span class="process-math">\(z\text{,}\)</span> we can rewrite <a href="ch9-section-isobaric-coordinates.html#eqn-chain-rule-p-p-rearranged" class="xref" data-knowl="./knowl/xref/eqn-chain-rule-p-p-rearranged.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.5">(9.2.5)</a> further.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-14">
+<div class="displaymath process-math" id="eqn-pga-isobaric-x-start">
+\begin{equation}
+\left(
+\frac{\partial p}{\partial x}
+\right)_{z}
+=
+-\left(
+-\rho g
+\right)
+\left(
+\frac{\partial z}{\partial x}
+\right)_{p}
+=
+\rho g
+\left(
+\frac{\partial z}{\partial x}
+\right)_{p}\tag{9.2.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-15">Furthermore, since the definition of geopotential gives <span class="process-math">\(\partial \Phi = g \partial z\text{,}\)</span> we have<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-16">
+<div class="displaymath process-math" id="eqn-pga-isobaric-x-end">
+\begin{equation}
+\left(
+\frac{\partial p}{\partial x}
+\right)_{z}
+=
+\rho
+\left(
+\frac{\partial \Phi}{\partial x}
+\right)_{p}\tag{9.2.7}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-17">Likewise,<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-18">
+<div class="displaymath process-math" id="eqn-pga-isobaric-y-end">
+\begin{equation}
+\left(
+\frac{\partial p}{\partial y}
+\right)_{z}
+=
+\rho g
+\left(
+\frac{\partial z}{\partial y}
+\right)_{p}
+=
+\rho
+\left(
+\frac{\partial \Phi}{\partial y}
+\right)_{p}\tag{9.2.8}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-19">It follows from <a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-x-start" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-x-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.6">(9.2.6)</a>–<a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-y-end" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-y-end.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.8">(9.2.8)</a> that the horizontal components of the pressure gradient acceleration are given in isobaric coordinates as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-20">
+<div class="displaymath process-math" id="eqn-pga-isobaric-x">
+\begin{equation}
+-\frac{1}{\rho}
+\left(
+\frac{\partial p}{\partial x}
+\right)_{z}
+=
+-g
+\left(
+\frac{\partial z}{\partial x}
+\right)_{p}
+=
+-\left(
+\frac{\partial \Phi}{\partial x}
+\right)_{p}\tag{9.2.9}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-21">
+<div class="displaymath process-math" id="eqn-pga-isobaric-y">
+\begin{equation}
+-\frac{1}{\rho}
+\left(
+\frac{\partial p}{\partial y}
+\right)_{z}
+=
+-g
+\left(
+\frac{\partial z}{\partial y}
+\right)_{p}
+=
+-\left(
+\frac{\partial \Phi}{\partial y}
+\right)_{p}\tag{9.2.10}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-22">
+<div class="displaymath process-math" id="eqn-pga-isobaric-vector">
+\begin{equation}
+-\frac{1}{\rho} \nabla_z p = -\nabla_p \Phi\tag{9.2.11}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-23">where the subscript "z" indicates that <span class="process-math">\(z\)</span> is used as the vertical coordinate and the subscript "p" indicates that <span class="process-math">\(p\)</span> is used as the vertical coordinate. In other words,<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-24">
+<div class="displaymath process-math" id="eqn-horizontal-gradient-operator-z">
+\begin{equation}
+\nabla_z
+=
+\left( \frac{\partial}{\partial x} \right)_z \hat{i}
++
+\left( \frac{\partial}{\partial y} \right)_z \hat{j}\tag{9.2.12}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-25">is the horizontal gradient operator on a constant geometric height surface and<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-26">
+<div class="displaymath process-math" id="eqn-horizontal-gradient-operator-p">
+\begin{equation}
+\nabla_p
+=
+\left( \frac{\partial}{\partial x} \right)_p \hat{i}
++
+\left( \frac{\partial}{\partial y} \right)_p \hat{j}\tag{9.2.13}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-27">is the horizontal gradient operator on an isobaric surface.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-28">Note that density <span class="process-math">\(\rho\)</span> no longer appears in <a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-x" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.9">(9.2.9)</a>–<a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.11">(9.2.11)</a>. This is an advantage of using isobaric coordinates: Equations are simplified, and we no longer need to consider density, which is not a commonly measured atmospheric variable.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-pgf-29">Since geopotential height is defined as <span class="process-math">\(Z = \dfrac{\Phi}{g_0}\)</span> and <span class="process-math">\(g_0\)</span> is constant, it is possible to write <a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-x" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.9">(9.2.9)</a>–<a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.11">(9.2.11)</a> in terms of <span class="process-math">\(Z\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-30">
+<div class="displaymath process-math" id="eqn-pga-isobaric-x-geopotential-height">
+\begin{equation}
+-\frac{1}{\rho}
+\left(
+\frac{\partial p}{\partial x}
+\right)_{z}
+=
+-\frac{g_0}{g_0}
+\left(
+\frac{\partial \Phi}{\partial x}
+\right)_{p}
+= -g_0
+\left(
+\frac{\partial}{\partial x} \left( \frac{\Phi}{g_0} \right)
+\right)_p
+=
+-g_0
+\left(
+\frac{\partial Z}{\partial x}
+\right)_{p}\tag{9.2.14}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-31">
+<div class="displaymath process-math" id="eqn-pga-isobaric-y-geopotential-height">
+\begin{equation}
+-\frac{1}{\rho}
+\left(
+\frac{\partial p}{\partial y}
+\right)_{z}
+=
+-\frac{g_0}{g_0}
+\left(
+\frac{\partial \Phi}{\partial y}
+\right)_{p}
+= -g_0
+\left(
+\frac{\partial}{\partial y} \left( \frac{\Phi}{g_0} \right)
+\right)_p
+=
+-g_0
+\left(
+\frac{\partial Z}{\partial y}
+\right)_{p}\tag{9.2.15}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-pgf-32">
+<div class="displaymath process-math" id="eqn-pga-isobaric-vector-geopotential-height">
+\begin{equation}
+-\frac{1}{\rho} \nabla_z p = -g_0 \nabla_p Z\tag{9.2.16}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.2.1: Pressure gradient acceleration"><a href="#ch9-section-isobaric-coordinates-subsection-pgf" title="Copy heading and permalink for Subsection 9.2.1: Pressure gradient acceleration" aria-label="Copy heading and permalink for Subsection 9.2.1: Pressure gradient acceleration">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 9.2: Isobaric coordinates"><a href="#ch9-section-isobaric-coordinates" title="Copy heading and permalink for Section 9.2: Isobaric coordinates" aria-label="Copy heading and permalink for Section 9.2: Isobaric coordinates">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
