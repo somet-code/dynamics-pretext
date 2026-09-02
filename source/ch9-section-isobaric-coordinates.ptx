@@ -104,5 +104,6 @@
   </introduction>
 
   <xi:include href="ch9-section-isobaric-coordinates-subsection-pgf.ptx" />
+  <xi:include href="ch9-section-isobaric-coordinates-subsection-geostrophic.ptx" />
 
 </section>

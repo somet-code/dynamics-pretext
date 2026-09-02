@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-isobaric-coordinates-subsection-geostrophic" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Geostrophic wind</title>
+
+    <p>
+        As we learned in <xref ref="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance" text="custom">Chapter 8</xref>,
+        the geostrophic wind is given by
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-vector-reproduced" number="yes">
+            \vec{v}_g = \frac{1}{\rho f} \, \hat{k} \times \nabla_z p
+        </md>
+    </p>
+
+    <p>
+        with components
+    </p>
+    
+    <p>
+        <md>
+            <mrow xml:id="eqn-geostrophic-wind-x-reproduced" number="yes"    >
+                u_g
+                \amp =
+                -\frac{1}{\rho f}
+                \left(
+                    \frac{\partial p}{\partial y}
+                \right)_z
+            </mrow>
+            <mrow xml:id="eqn-geostrophic-wind-y-reproduced" number="yes"    >
+                v_g
+                \amp =
+                \frac{1}{\rho f}
+                \left(
+                    \frac{\partial p}{\partial x}
+                \right)_z
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        where the subscript "z" has been added to
+        <xref ref="eqn-geostrophic-wind-y" text="type-global" /><ndash /><xref ref="eqn-geostrophic-wind-vector" text="type-global" />
+        to emphasize that <m>z</m> is used as the vertical coordinate when writing these equations.
+    </p>
+
+    <p>
+        <xref ref="eqn-pga-isobaric-x" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector" text="type-global" />
+        enable us to rewrite
+        <xref ref="eqn-geostrophic-wind-vector-reproduced" text="type-global" /><ndash /><xref ref="eqn-geostrophic-wind-y-reproduced" text="type-global" />
+        as
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-vector-isobaric" number="yes">
+            \vec{v}_g = \frac{1}{f} \, \hat{k} \times \nabla_p \Phi
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-x-isobaric" number="yes">
+            u_g
+            =
+            -\frac{1}{f}
+            \left(
+                \frac{\partial \Phi}{\partial y}
+            \right)_p
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-y-isobaric" number="yes">
+            v_g
+            =
+            \frac{1}{f}
+            \left(
+                \frac{\partial \Phi}{\partial x}
+            \right)_p
+        </md>
+    </p>
+
+    <p>
+        Alternatively,
+        <xref ref="eqn-pga-isobaric-x-geopotential-height" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector-geopotential-height" text="type-global" />
+        enable us to rewrite
+        <xref ref="eqn-geostrophic-wind-vector-reproduced" text="type-global" /><ndash /><xref ref="eqn-geostrophic-wind-y-reproduced" text="type-global" />
+        as
+    </p>
+        
+    <p>
+        <md xml:id="eqn-geostrophic-wind-vector-isobaric-geopotential-height" number="yes">
+            \vec{v}_g = \frac{g_0}{f} \, \hat{k} \times \nabla_p Z
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-x-isobaric-geopotential-height" number="yes">
+            u_g
+            =
+            -\frac{g_0}{f}
+            \left(
+                \frac{\partial Z}{\partial y}
+            \right)_p
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-geostrophic-wind-y-isobaric-geopotential-height" number="yes">
+            v_g
+            =
+            \frac{g_0}{f}
+            \left(
+                \frac{\partial Z}{\partial x}
+            \right)_p
+        </md>
+    </p>
+
+    <p>
+        Again, note that density no longer appears in
+        <xref ref="eqn-geostrophic-wind-vector-isobaric" text="type-global" /><ndash /><xref ref="eqn-geostrophic-wind-y-isobaric-geopotential-height" text="type-global" />.
+        This is an advantage of using isobaric coordinates.
+    </p>
+</subsection>
