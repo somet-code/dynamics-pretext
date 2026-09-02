@@ -40,7 +40,7 @@
     </p>
 
     <p>
-        <md number="yes">
+        <md xml:id="eqn-chain-rule-p-p-simplified" number="yes">
             0
             =
             \left(
@@ -61,7 +61,7 @@
     </p>
 
     <p>
-        <md number="yes">
+        <md xml:id="eqn-chain-rule-p-p-rearranged" number="yes">
             \left(
                 \frac{\partial p}{\partial x}
             \right)_{z}
@@ -72,6 +72,243 @@
             \left(
                 \frac{\partial z}{\partial x}
             \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        If we apply hydrostatic balance
+    </p>
+
+    <p>
+        <md>
+            \frac{\partial p}{\partial z} = -\rho g
+        </md>
+    </p>
+
+    <p>
+        and we note this could be written as
+    </p>
+
+    <p>
+        <md>
+            \left( \frac{\partial p}{\partial z} \right)_x = -\rho g
+        </md>
+    </p>
+
+    <p>
+        since <m>x</m> (and <m>y</m> and <m>t</m>)
+        is held constant when finding the partial derivative with respect to <m>z</m>,
+        we can rewrite <xref ref="eqn-chain-rule-p-p-rearranged" text="type-global" /> further.
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-x-start" number="yes">
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{z}
+            =
+            -\left(
+                -\rho g
+            \right)
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{p}
+            =
+            \rho g
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        Furthermore, since the definition of geopotential gives <m>\partial \Phi = g \partial z</m>,
+        we have
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-x-end" number="yes">
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{z}
+            =
+            \rho
+            \left(
+                \frac{\partial \Phi}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        Likewise,
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-y-end" number="yes">
+            \left(
+                \frac{\partial p}{\partial y}
+            \right)_{z}
+            =
+            \rho g
+            \left(
+                \frac{\partial z}{\partial y}
+            \right)_{p}
+            =
+            \rho
+            \left(
+                \frac{\partial \Phi}{\partial y}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        It follows from
+        <xref ref="eqn-pga-isobaric-x-start" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-y-end" text="type-global" />
+        that the horizontal components of the pressure gradient acceleration are given in isobaric coordinates as
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-x" number="yes">
+            -\frac{1}{\rho}
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{z}
+            =
+            -g
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{p}
+            =
+            -\left(
+                \frac{\partial \Phi}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-y" number="yes">
+            -\frac{1}{\rho}
+            \left(
+                \frac{\partial p}{\partial y}
+            \right)_{z}
+            =
+            -g
+            \left(
+                \frac{\partial z}{\partial y}
+            \right)_{p}
+            =
+            -\left(
+                \frac{\partial \Phi}{\partial y}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-vector" number="yes">
+            -\frac{1}{\rho} \nabla_z p = -\nabla_p \Phi
+        </md>
+    </p>
+
+    <p>
+        where the subscript "z" indicates that <m>z</m> is used as the vertical coordinate
+        and the subscript "p" indicates that <m>p</m> is used as the vertical coordinate.
+        In other words,
+    </p>
+
+    <p>
+        <md xml:id="eqn-horizontal-gradient-operator-z" number="yes">
+            \nabla_z
+            =
+            \left( \frac{\partial}{\partial x} \right)_z \hat{i}
+            +
+            \left( \frac{\partial}{\partial y} \right)_z \hat{j}
+        </md>
+    </p>
+
+    <p>
+        is the horizontal gradient operator on a constant geometric height surface and
+    </p>
+
+    <p>
+        <md xml:id="eqn-horizontal-gradient-operator-p" number="yes">
+            \nabla_p
+            =
+            \left( \frac{\partial}{\partial x} \right)_p \hat{i}
+            +
+            \left( \frac{\partial}{\partial y} \right)_p \hat{j}
+        </md>
+    </p>
+
+    <p>
+        is the horizontal gradient operator on an isobaric surface.
+    </p>
+
+    <p>
+        Note that density <m>\rho</m> no longer appears in
+        <xref ref="eqn-pga-isobaric-x" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector" text="type-global" />.
+        This is an advantage of using isobaric coordinates:
+        Equations are simplified,
+        and we no longer need to consider density,
+        which is not a commonly measured atmospheric variable.
+    </p>
+
+    <p>
+        Since geopotential height is defined as <m>Z = \dfrac{\Phi}{g_0}</m>
+        and <m>g_0</m> is constant,
+        it is possible to write
+        <xref ref="eqn-pga-isobaric-x" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector" text="type-global" />
+        in terms of <m>Z</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-x-geopotential-height" number="yes">
+            -\frac{1}{\rho}
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{z}
+            =
+            -\frac{g_0}{g_0}
+            \left(
+                \frac{\partial \Phi}{\partial x}
+            \right)_{p}
+            = -g_0
+            \left(
+                \frac{\partial}{\partial x} \left( \frac{\Phi}{g_0} \right)
+            \right)_p
+            =
+            -g_0
+            \left(
+                \frac{\partial Z}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-y-geopotential-height" number="yes">
+            -\frac{1}{\rho}
+            \left(
+                \frac{\partial p}{\partial y}
+            \right)_{z}
+            =
+            -\frac{g_0}{g_0}
+            \left(
+                \frac{\partial \Phi}{\partial y}
+            \right)_{p}
+            = -g_0
+            \left(
+                \frac{\partial}{\partial y} \left( \frac{\Phi}{g_0} \right)
+            \right)_p
+            =
+            -g_0
+            \left(
+                \frac{\partial Z}{\partial y}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        <md xml:id="eqn-pga-isobaric-vector-geopotential-height" number="yes">
+            -\frac{1}{\rho} \nabla_z p = -g_0 \nabla_p Z
         </md>
     </p>
 
