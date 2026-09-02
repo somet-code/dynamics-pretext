@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-isobaric-coordinates-subsection-pgf" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Pressure gradient acceleration</title>
+
+    <p>
+        Terms in the equations of motion representing the horizontal components of the pressure gradient acceleration
+        were found by holding <m>z</m> constant and allowing <m>p</m> to vary.
+        They must be rewritten now that <m>p</m> is held constant in isobaric coordinates while <m>z</m> varies.
+    </p>
+
+    <p>
+        We replace <m>f</m> with <m>p</m>
+        in <xref ref="eqn-chain-rule-x-p-reduced" text="type-global" />
+        to write the <m>x</m>-component of the pressure gradient acceleration in isobaric coordinates.
+    </p>
+
+    <p>
+        <md xml:id="eqn-chain-rule-p-p-reduced" number="yes">
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{p}
+            =
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{z}
+            +
+            \left(
+                \frac{\partial p}{\partial z}
+            \right)_{x}
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        But <m>\left( \dfrac{\partial p}{\partial x} \right)_{p} = 0</m> since <m>p</m> does not change on an isobaric surface,
+        and so <xref ref="eqn-chain-rule-p-p-reduced" text="type-global" /> reduces to
+    </p>
+
+    <p>
+        <md number="yes">
+            0
+            =
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{z}
+            +
+            \left(
+                \frac{\partial p}{\partial z}
+            \right)_{x}
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+    <p>
+        This rearranges to produce the relationship
+    </p>
+
+    <p>
+        <md number="yes">
+            \left(
+                \frac{\partial p}{\partial x}
+            \right)_{z}
+            =
+            -\left(
+                \frac{\partial p}{\partial z}
+            \right)_{x}
+            \left(
+                \frac{\partial z}{\partial x}
+            \right)_{p}
+        </md>
+    </p>
+
+</subsection>
