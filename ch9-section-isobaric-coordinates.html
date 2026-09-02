@@ -242,7 +242,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Isobaric coordinates</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-pgf" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Pressure gradient acceleration</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-pgf" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Pressure gradient acceleration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-geostrophic" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Geostrophic wind</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -634,6 +637,120 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-pgf-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 9.2.1: Pressure gradient acceleration"><a href="#ch9-section-isobaric-coordinates-subsection-pgf" title="Copy heading and permalink for Subsection 9.2.1: Pressure gradient acceleration" aria-label="Copy heading and permalink for Subsection 9.2.1: Pressure gradient acceleration">🔗</a></div>
+</section>
+<section class="subsection" id="ch9-section-isobaric-coordinates-subsection-geostrophic">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geostrophic wind</span>
+</h3>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-geostrophic-2">As we learned in <a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance" class="internal" title="Subsection 8.2.1: Geostrophic balance">Chapter 8</a>, the geostrophic wind is given by<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-3">
+<div class="displaymath process-math" id="eqn-geostrophic-wind-vector-reproduced">
+\begin{equation}
+\vec{v}_g = \frac{1}{\rho f} \, \hat{k} \times \nabla_z p\tag{9.2.17}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-geostrophic-4">with components<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-5">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-geostrophic-5-1">
+\begin{align}
+u_g
+\amp =
+-\frac{1}{\rho f}
+\left(
+\frac{\partial p}{\partial y}
+\right)_z\tag{9.2.18}\\
+v_g
+\amp =
+\frac{1}{\rho f}
+\left(
+\frac{\partial p}{\partial x}
+\right)_z\tag{9.2.19}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-geostrophic-6">where the subscript "z" has been added to <a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance-10-1" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-y.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.2.6">(8.2.6)</a>–<a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#eqn-geostrophic-wind-vector" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.2.8">(8.2.8)</a> to emphasize that <span class="process-math">\(z\)</span> is used as the vertical coordinate when writing these equations.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-geostrophic-7">
+<a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-x" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.9">(9.2.9)</a>–<a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.11">(9.2.11)</a> enable us to rewrite <a href="ch9-section-isobaric-coordinates.html#eqn-geostrophic-wind-vector-reproduced" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-vector-reproduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.17">(9.2.17)</a>–<a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-geostrophic-5-1" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-y-reproduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.19">(9.2.19)</a> as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-8">
+<div class="displaymath process-math" id="eqn-geostrophic-wind-vector-isobaric">
+\begin{equation}
+\vec{v}_g = \frac{1}{f} \, \hat{k} \times \nabla_p \Phi\tag{9.2.20}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-9">
+<div class="displaymath process-math" id="eqn-geostrophic-wind-x-isobaric">
+\begin{equation}
+u_g
+=
+-\frac{1}{f}
+\left(
+\frac{\partial \Phi}{\partial y}
+\right)_p\tag{9.2.21}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-10">
+<div class="displaymath process-math" id="eqn-geostrophic-wind-y-isobaric">
+\begin{equation}
+v_g
+=
+\frac{1}{f}
+\left(
+\frac{\partial \Phi}{\partial x}
+\right)_p\tag{9.2.22}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-geostrophic-11">Alternatively, <a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-x-geopotential-height" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-x-geopotential-height.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.14">(9.2.14)</a>–<a href="ch9-section-isobaric-coordinates.html#eqn-pga-isobaric-vector-geopotential-height" class="xref" data-knowl="./knowl/xref/eqn-pga-isobaric-vector-geopotential-height.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.16">(9.2.16)</a> enable us to rewrite <a href="ch9-section-isobaric-coordinates.html#eqn-geostrophic-wind-vector-reproduced" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-vector-reproduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.17">(9.2.17)</a>–<a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-geostrophic-5-1" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-y-reproduced.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.19">(9.2.19)</a> as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-12">
+<div class="displaymath process-math" id="eqn-geostrophic-wind-vector-isobaric-geopotential-height">
+\begin{equation}
+\vec{v}_g = \frac{g_0}{f} \, \hat{k} \times \nabla_p Z\tag{9.2.23}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-13">
+<div class="displaymath process-math" id="eqn-geostrophic-wind-x-isobaric-geopotential-height">
+\begin{equation}
+u_g
+=
+-\frac{g_0}{f}
+\left(
+\frac{\partial Z}{\partial y}
+\right)_p\tag{9.2.24}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-geostrophic-14">
+<div class="displaymath process-math" id="eqn-geostrophic-wind-y-isobaric-geopotential-height">
+\begin{equation}
+v_g
+=
+\frac{g_0}{f}
+\left(
+\frac{\partial Z}{\partial x}
+\right)_p\tag{9.2.25}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-geostrophic-15">Again, note that density no longer appears in <a href="ch9-section-isobaric-coordinates.html#eqn-geostrophic-wind-vector-isobaric" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-vector-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.20">(9.2.20)</a>–<a href="ch9-section-isobaric-coordinates.html#eqn-geostrophic-wind-y-isobaric-geopotential-height" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-y-isobaric-geopotential-height.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.25">(9.2.25)</a>. This is an advantage of using isobaric coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.2.2: Geostrophic wind"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic" title="Copy heading and permalink for Subsection 9.2.2: Geostrophic wind" aria-label="Copy heading and permalink for Subsection 9.2.2: Geostrophic wind">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.2: Isobaric coordinates"><a href="#ch9-section-isobaric-coordinates" title="Copy heading and permalink for Section 9.2: Isobaric coordinates" aria-label="Copy heading and permalink for Section 9.2: Isobaric coordinates">🔗</a></div>
 </section>
 </div>
