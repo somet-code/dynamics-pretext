@@ -3,169 +3,171 @@
 <section xml:id="ch7-section-total-energy-equation" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Total energy equation</title>
 
-  <p>
-    We can sum the thermodynamic energy equation <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />
-    and the mechanical energy equation <xref ref="eqn-mechanical-energy-equation" text="type-global" />
-    to express the time rate of change of an air parcel's total energy.
-  </p>
+  <introduction>
+    <p>
+      We can sum the thermodynamic energy equation <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />
+      and the mechanical energy equation <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+      to express the time rate of change of an air parcel's total energy.
+    </p>
 
-  <p>
-    Following the derivation presented in <xref ref="martin" text="custom">Martin (2006)</xref>,
-    we first rearrange the thermodynamic energy equation
-    <xref ref="eqn-mechanical-energy-equation" text="type-global" />
-    so its terms sum to 0:
-  </p>
+    <p>
+      Following the derivation presented in <xref ref="martin" text="custom">Martin (2006)</xref>,
+      we first rearrange the thermodynamic energy equation
+      <xref ref="eqn-mechanical-energy-equation" text="type-global" />
+      so its terms sum to 0:
+    </p>
 
-  <p>
-    <md xml:id="eqn-mechanical-energy-equation-zero-sum" number="yes">
-        \frac{D}{Dt} \left(
-        \frac{u^2 + v^2 + w^2}{2}
-        + \Phi
-        \right)
-        +
-        \frac{1}{\rho} \vec{u} \cdot \nabla p
-        -
-        \nu \vec{u} \cdot \nabla^2 \vec{u}
-        =
-        0
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-mechanical-energy-equation-zero-sum" number="yes">
+          \frac{D}{Dt} \left(
+          \frac{u^2 + v^2 + w^2}{2}
+          + \Phi
+          \right)
+          +
+          \frac{1}{\rho} \vec{u} \cdot \nabla p
+          -
+          \nu \vec{u} \cdot \nabla^2 \vec{u}
+          =
+          0
+      </md>
+    </p>
 
-  <p>
-    Then we add this quantity to the thermodynamic energy equation
-    <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />.
-    This is equivalent to adding 0 to <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />,
-    so its value is unchanged.
-  </p>
+    <p>
+      Then we add this quantity to the thermodynamic energy equation
+      <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />.
+      This is equivalent to adding 0 to <xref ref="eqn-thermodyanmic-energy-equation" text="type-global" />,
+      so its value is unchanged.
+    </p>
 
-  <p>
-    <md xml:id="eqn-total-energy-equation-start" number="yes">
-        \dot{Q}
-        =
-        c_v \frac{DT}{Dt}
-        +
-        p \frac{D \alpha}{Dt}
-        + \frac{D}{Dt} \left(
-        \frac{u^2 + v^2 + w^2}{2}
-        + \Phi
-        \right)
-        +
-        \frac{1}{\rho} \vec{u} \cdot \nabla p
-        -
-        \nu \vec{u} \cdot \nabla^2 \vec{u}
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-total-energy-equation-start" number="yes">
+          \dot{Q}
+          =
+          c_v \frac{DT}{Dt}
+          +
+          p \frac{D \alpha}{Dt}
+          + \frac{D}{Dt} \left(
+          \frac{u^2 + v^2 + w^2}{2}
+          + \Phi
+          \right)
+          +
+          \frac{1}{\rho} \vec{u} \cdot \nabla p
+          -
+          \nu \vec{u} \cdot \nabla^2 \vec{u}
+      </md>
+    </p>
 
-  <p>
-    The negative of the pressure work term expands as follows:
-  </p>
+    <p>
+      The negative of the pressure work term expands as follows:
+    </p>
 
-  <p>
-    <md>
-        <mrow>
-            \frac{1}{\rho} \vec{u} \cdot \nabla p
-            \amp =
-            \alpha \left(
-                u \frac{\partial p}{\partial x}
-                +
-                v \frac{\partial p}{\partial y}
-                +
-                w \frac{\partial p}{\partial z}
-            \right)
-        </mrow>
-        <mrow>
-            \amp =
-            \alpha \left(
-                \frac{Dp}{Dt}
-                -
-                \frac{\partial p}{\partial t}
-            \right)
-        </mrow>
-    </md>
-  </p>
+    <p>
+      <md>
+          <mrow>
+              \frac{1}{\rho} \vec{u} \cdot \nabla p
+              \amp =
+              \alpha \left(
+                  u \frac{\partial p}{\partial x}
+                  +
+                  v \frac{\partial p}{\partial y}
+                  +
+                  w \frac{\partial p}{\partial z}
+              \right)
+          </mrow>
+          <mrow>
+              \amp =
+              \alpha \left(
+                  \frac{Dp}{Dt}
+                  -
+                  \frac{\partial p}{\partial t}
+              \right)
+          </mrow>
+      </md>
+    </p>
 
-  <p>
-    Since
-  </p>
+    <p>
+      Since
+    </p>
 
-  <p>
-    <md number="yes">
-        \frac{D (p \alpha)}{Dt}
-        =
-        p \frac{D \alpha}{Dt}
-        +
-        \alpha \frac{Dp}{Dt}
-    </md>
-  </p>
+    <p>
+      <md number="yes">
+          \frac{D (p \alpha)}{Dt}
+          =
+          p \frac{D \alpha}{Dt}
+          +
+          \alpha \frac{Dp}{Dt}
+      </md>
+    </p>
 
-  <p>
-    and
-  </p>
+    <p>
+      and
+    </p>
 
-  <p>
-    <md number="yes">
-        c_v \frac{DT}{Dt} = \frac{D(c_v T)}{Dt}
-    </md>
-  </p>
+    <p>
+      <md number="yes">
+          c_v \frac{DT}{Dt} = \frac{D(c_v T)}{Dt}
+      </md>
+    </p>
 
-  <p>
-    since <m>c_v</m> can be treated as constant,
-    it follows that <xref ref="eqn-total-energy-equation-start" text="type-global" /> becomes
-  </p>
+    <p>
+      since <m>c_v</m> can be treated as constant,
+      it follows that <xref ref="eqn-total-energy-equation-start" text="type-global" /> becomes
+    </p>
 
-  <p>
-    <md>
-        \dot{Q}
-        =
-        \frac{D (c_v T)}{Dt}
-        +
-        \frac{D (p \alpha)}{Dt}
-        + \frac{D}{Dt} \left(
-        \frac{u^2 + v^2 + w^2}{2}
-        + \Phi
-        \right)
-        -
-        \alpha \frac{\partial p}{\partial t}
-        -
-        \nu \vec{u} \cdot \nabla^2 \vec{u}
-    </md>
-  </p>
+    <p>
+      <md>
+          \dot{Q}
+          =
+          \frac{D (c_v T)}{Dt}
+          +
+          \frac{D (p \alpha)}{Dt}
+          + \frac{D}{Dt} \left(
+          \frac{u^2 + v^2 + w^2}{2}
+          + \Phi
+          \right)
+          -
+          \alpha \frac{\partial p}{\partial t}
+          -
+          \nu \vec{u} \cdot \nabla^2 \vec{u}
+      </md>
+    </p>
 
-  <p>
-    which can be written more simply as
-  </p>
+    <p>
+      which can be written more simply as
+    </p>
 
-  <p>
-    <md xml:id="eqn-total-energy-equation" number="yes">
-        \dot{Q}
-        =
-        \frac{D}{Dt} \left(
-            \frac{u^2 + v^2 + w^2}{2}
-            + \Phi
-            + c_v T
-            + p \alpha
-        \right)
-        -
-        \alpha \frac{\partial p}{\partial t}
-        -
-        \nu \vec{u} \cdot \nabla^2 \vec{u}
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-total-energy-equation" number="yes">
+          \dot{Q}
+          =
+          \frac{D}{Dt} \left(
+              \frac{u^2 + v^2 + w^2}{2}
+              + \Phi
+              + c_v T
+              + p \alpha
+          \right)
+          -
+          \alpha \frac{\partial p}{\partial t}
+          -
+          \nu \vec{u} \cdot \nabla^2 \vec{u}
+      </md>
+    </p>
 
-  <p>
-    by combining all terms that have the total derivative <m>\dfrac{D}{Dt}</m> applied to them.
-  </p>
+    <p>
+      by combining all terms that have the total derivative <m>\dfrac{D}{Dt}</m> applied to them.
+    </p>
 
-  <p>
-    <xref ref="eqn-total-energy-equation" text="type-global" />
-    is the <term>total energy equation</term>
-    (or simply the <term>energy equation</term>).
-  </p>
+    <p>
+      <xref ref="eqn-total-energy-equation" text="type-global" />
+      is the <term>total energy equation</term>
+      (or simply the <term>energy equation</term>).
+    </p>
 
-  <p>
-    See <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>
-    for an alternative derivation with viscous friction effects neglected.
-  </p>
+    <p>
+      See <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>
+      for an alternative derivation with viscous friction effects neglected.
+    </p>
+  </introduction>
 
   <xi:include href="ch7-section-total-energy-equation-subsection-bernoulli.ptx" />
 
