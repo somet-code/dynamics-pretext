@@ -245,6 +245,8 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-pgf" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Pressure gradient acceleration</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-geostrophic" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Geostrophic wind</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Hydrostatic balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-total-derivative" class="internal"><span class="codenumber">9.2.4</span> <span class="title">Total derivative</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -751,6 +753,178 @@ v_g
 <div class="para" id="ch9-section-isobaric-coordinates-subsection-geostrophic-15">Again, note that density no longer appears in <a href="ch9-section-isobaric-coordinates.html#eqn-geostrophic-wind-vector-isobaric" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-vector-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.20">(9.2.20)</a>–<a href="ch9-section-isobaric-coordinates.html#eqn-geostrophic-wind-y-isobaric-geopotential-height" class="xref" data-knowl="./knowl/xref/eqn-geostrophic-wind-y-isobaric-geopotential-height.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.25">(9.2.25)</a>. This is an advantage of using isobaric coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 9.2.2: Geostrophic wind"><a href="#ch9-section-isobaric-coordinates-subsection-geostrophic" title="Copy heading and permalink for Subsection 9.2.2: Geostrophic wind" aria-label="Copy heading and permalink for Subsection 9.2.2: Geostrophic wind">🔗</a></div>
+</section>
+<section class="subsection" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hydrostatic balance</span>
+</h3>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-2">We can take the relationship between geopotential <span class="process-math">\(\Phi\)</span> and gravity <span class="process-math">\(g\)</span> presented in <a href="ch4-section-geopotential.html#eqn-geopotential-derivative" class="xref" data-knowl="./knowl/xref/eqn-geopotential-derivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.8.7">(4.8.7)</a> (written here using a partial derivative, which does not impact the relationship since <span class="process-math">\(\Phi\)</span> is a function only of <span class="process-math">\(z\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-3">
+<div class="displaymath process-math" id="eqn-geopotential-derivative-partial">
+\begin{equation}
+\frac{\partial \Phi}{\partial z} = g\tag{9.2.26}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-4">and expand its derivative using the chain rule<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-5">
+<div class="displaymath process-math" id="eqn-geopotential-derivative-partial-expanded">
+\begin{equation}
+\frac{\partial \Phi}{\partial p} \frac{\partial p}{\partial z} = g\tag{9.2.27}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-6">Substituting the usual equation of hydrostatic balance <a href="ch7-section-thermodynamics-review.html#eqn-hydrostatic-balance" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.7">(7.1.7)</a> produces<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-7">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-7-1">
+\begin{equation}
+\frac{\partial \Phi}{\partial p} (-\rho g) = g\tag{9.2.28}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-8">which can be rearranged to produce the equation of hydrostatic balance in isobaric coordinates<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-9">
+<div class="displaymath process-math" id="eqn-hydrostatic-balance-isobaric">
+\begin{equation}
+\frac{\partial \Phi}{\partial p} = -\frac{1}{\rho}\tag{9.2.29}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-10">Using a rearrangement of the ideal gas law, <a href="ch9-section-isobaric-coordinates.html#eqn-hydrostatic-balance-isobaric" class="xref" data-knowl="./knowl/xref/eqn-hydrostatic-balance-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.29">(9.2.29)</a> often is written<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-11">
+<div class="displaymath process-math" id="eqn-hydrostatic-balance-isobaric-ideal">
+\begin{equation}
+\frac{\partial \Phi}{\partial p} = -\frac{R_d T}{p}\tag{9.2.30}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-12">This latter form may be more convenient and consistent with other equations written in isobaric coordinates since it does not reference density.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.2.3: Hydrostatic balance"><a href="#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance" title="Copy heading and permalink for Subsection 9.2.3: Hydrostatic balance" aria-label="Copy heading and permalink for Subsection 9.2.3: Hydrostatic balance">🔗</a></div>
+</section>
+<section class="subsection" id="ch9-section-isobaric-coordinates-subsection-total-derivative">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Total derivative</span>
+</h3>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-2">We proceed similarly to the derivation of the total derivative presented in <a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal" title="Subsection 1.2.4: Total differentiation">Chapter 1</a> by considering a state variable <span class="process-math">\(f = f(x,y,p,t)\)</span> measured within an air parcel (again with the reminder that <span class="process-math">\(f\)</span> could be replaced by a vector quantity). If the air parcel’s position changes with time as it moves through the atmosphere, then <span class="process-math">\(x = x(t)\text{,}\)</span> <span class="process-math">\(y = y(t)\text{,}\)</span> and <span class="process-math">\(p = p(t)\text{,}\)</span> and so <span class="process-math">\(f = f(t)\text{.}\)</span> Then, as in Chapter 1, the chain rule for multivaiable functions produces<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-total-derivative-3">
+<div class="displaymath process-math" id="eqn-total-derivative-isobaric-scalar-start">
+\begin{equation}
+\frac{df}{dt}
+=
+\frac{\partial f}{\partial t}
++ \frac{\partial f}{\partial x}\frac{dx}{dt}
++ \frac{\partial f}{\partial y}\frac{dy}{dt}
++ \frac{\partial f}{\partial p}\frac{dp}{dt}\tag{9.2.31}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-4">Again, <span class="process-math">\(u = \dfrac{dx}{dt}\)</span> and <span class="process-math">\(v = \dfrac{dy}{dt}\)</span> are the zonal and meridional components of the horizontal wind vector <span class="process-math">\(\vec{v} = u\hat{i} + v\hat{j}\text{,}\)</span> respectively. We define the <dfn class="terminology">pressure vertical velocity</dfn> ("<dfn class="terminology">omega</dfn>") as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-total-derivative-5">
+<div class="displaymath process-math" id="eqn-omega">
+\begin{equation}
+\omega = \frac{dp}{dt}\tag{9.2.32}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-6">which describes an air parcel’s vertical motion in terms of the time rate of change of its pressure [<span class="process-math">\(\text{Pa} \, \text{s}^{-1}\)</span>]. This is in contrast to the "usual" vertical velocity <span class="process-math">\(w = \dfrac{dz}{dt}\text{,}\)</span> which describes an air parcel’s vertical motion in terms of the time rate of change of its height [<span class="process-math">\(\text{m} \, \text{s}^{-1}\)</span>].<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-7">Then with <span class="process-math">\(\dfrac{Df}{Dt}\)</span> substituted for <span class="process-math">\(\dfrac{df}{dt}\)</span> as was done in <a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal" title="Subsection 1.2.4: Total differentiation">Chapter 1</a>, <a href="ch9-section-isobaric-coordinates.html#eqn-total-derivative-isobaric-scalar-start" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-isobaric-scalar-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.31">(9.2.31)</a> becomes:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-total-derivative-8">
+<div class="displaymath process-math" id="eqn-total-derivative-isobaric-scalar">
+\begin{equation}
+\frac{Df}{Dt}
+=
+\frac{\partial f}{\partial t}
++ u \frac{\partial f}{\partial x}
++ v \frac{\partial f}{\partial y}
++ \omega \frac{\partial f}{\partial p}\tag{9.2.33}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-9">which could be written as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-total-derivative-10">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-total-derivative-10-1">
+\begin{equation}
+\frac{Df}{Dt}
+=
+\left(
+\frac{\partial f}{\partial t}
+\right)_{x,y,p}
++ u
+\left(
+\frac{\partial f}{\partial x}
+\right)_{y,p,t}
++ v
+\left(
+\frac{\partial f}{\partial y}
+\right)_{x,p,t}
++ \omega
+\left(
+\frac{\partial f}{\partial p}
+\right)_{x,y,t}\tag{9.2.34}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-11">or<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-total-derivative-12">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-total-derivative-12-1">
+\begin{equation}
+\frac{Df}{Dt}
+=
+\left(
+\frac{\partial f}{\partial t}
++ u
+\frac{\partial f}{\partial x}
++ v
+\frac{\partial f}{\partial y}
+\right)_p
++ \omega
+\left(
+\frac{\partial f}{\partial p}
+\right)_{x,y,t}\tag{9.2.35}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-13">with subscripts to emphasize the variables that are held constant for each partial derivative. However, most often the subscripts are omitted for brevity, and one must note the use of <span class="process-math">\(\omega\)</span> rather than <span class="process-math">\(w\)</span> to realize they are looking at the total derivative in isobaric coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-14">The total derivative in isobaric coordinates <a href="ch9-section-isobaric-coordinates.html#eqn-total-derivative-isobaric-scalar" class="xref" data-knowl="./knowl/xref/eqn-total-derivative-isobaric-scalar.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.33">(9.2.33)</a> is written in vector form as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-total-derivative-15">
+<div class="displaymath process-math" id="eqn-total-derivative-isobaric-vector">
+\begin{equation}
+\frac{Df}{Dt}
+=
+\frac{\partial f}{\partial t}
++ \vec{v} \cdot \nabla_p f
++ \omega \frac{\partial f}{\partial p}\tag{9.2.36}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-16">Note that, while <span class="process-math">\(w \gt 0\)</span> for rising motion and <span class="process-math">\(w \lt 0\)</span> for sinking motion, <span class="process-math">\(\omega \lt 0\)</span> for rising motion and <span class="process-math">\(\omega \gt 0\)</span> for sinking motion. This is because, as an air parcel rises, its pressure lowers as it encounters lower pressure environments since <span class="process-math">\(p\)</span> decreases with increasing height in Earth’s atmosphere. Therefore, <span class="process-math">\(\omega \lt 0\)</span> for rising motion while <span class="process-math">\(w \gt 0\text{,}\)</span> and <span class="process-math">\(\omega \gt 0\)</span> for sinking motion while <span class="process-math">\(w \lt 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.2.4: Total derivative"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative" title="Copy heading and permalink for Subsection 9.2.4: Total derivative" aria-label="Copy heading and permalink for Subsection 9.2.4: Total derivative">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.2: Isobaric coordinates"><a href="#ch9-section-isobaric-coordinates" title="Copy heading and permalink for Section 9.2: Isobaric coordinates" aria-label="Copy heading and permalink for Section 9.2: Isobaric coordinates">🔗</a></div>
 </section>
 </div>
