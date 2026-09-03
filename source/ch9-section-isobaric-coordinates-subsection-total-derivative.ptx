@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-isobaric-coordinates-subsection-total-derivative" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Total derivative</title>
+
+    <p>
+        We proceed similarly to the derivation of the total derivative presented in
+        <xref ref="ch1-section-calculus-subsection-total-differentiation" text="custom">Chapter 1</xref>
+        by considering a state variable <m>f = f(x,y,p,t)</m> measured within an air parcel
+        (again with the reminder that <m>f</m> could be replaced by a vector quantity).
+        If the air parcel's position changes with time as it moves through the atmosphere,
+        then <m>x = x(t)</m>, <m>y = y(t)</m>, and <m>p = p(t)</m>, and so <m>f = f(t)</m>.
+        Then, as in Chapter 1, the chain rule for multivaiable functions produces
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-isobaric-scalar-start" number="yes">
+            \frac{df}{dt}
+            =
+            \frac{\partial f}{\partial t}
+            + \frac{\partial f}{\partial x}\frac{dx}{dt}
+            + \frac{\partial f}{\partial y}\frac{dy}{dt}
+            + \frac{\partial f}{\partial p}\frac{dp}{dt}
+        </md>
+    </p>
+
+    <p>
+        Again,
+        <m>u = \dfrac{dx}{dt}</m> and <m>v = \dfrac{dy}{dt}</m> are the zonal and meridional components
+        of the horizontal wind vector <m>\vec{v} = u\hat{i} + v\hat{j}</m>,
+        respectively.
+        We define the <term>pressure vertical velocity</term> ("<term>omega</term>") as
+    </p>
+
+    <p>
+        <md xml:id="eqn-omega" number="yes">
+            \omega = \frac{dp}{dt}
+        </md>
+    </p>
+
+    <p>
+        which describes an air parcel's vertical motion in terms of the time rate of change of its pressure [<m>\text{Pa} \, \text{s}^{-1}</m>].
+        This is in contrast to the "usual" vertical velocity <m>w = \dfrac{dz}{dt}</m>,
+        which describes an air parcel's vertical motion in terms of the time rate of change of its height [<m>\text{m} \, \text{s}^{-1}</m>].
+    </p>
+
+    <p>
+        Then with <m>\dfrac{Df}{Dt}</m> substituted for <m>\dfrac{df}{dt}</m>
+        as was done in <xref ref="ch1-section-calculus-subsection-total-differentiation" text="custom">Chapter 1</xref>,
+        <xref ref="eqn-total-derivative-isobaric-scalar-start" text="type-global" /> becomes:
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-isobaric-scalar" number="yes">
+            \frac{Df}{Dt}
+            =
+            \frac{\partial f}{\partial t}
+            + u \frac{\partial f}{\partial x}
+            + v \frac{\partial f}{\partial y}
+            + \omega \frac{\partial f}{\partial p}
+        </md>
+    </p>
+
+    <p>
+        which could be written as
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{Df}{Dt}
+            =
+            \left(
+                \frac{\partial f}{\partial t}
+            \right)_{x,y,p}
+            + u
+            \left(
+                \frac{\partial f}{\partial x}
+            \right)_{y,p,t}
+            + v
+            \left(
+                \frac{\partial f}{\partial y}
+            \right)_{x,p,t}
+            + \omega
+            \left(
+                \frac{\partial f}{\partial p}
+            \right)_{x,y,t}
+        </md>
+    </p>
+
+    <p>
+        or
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{Df}{Dt}
+            =
+            \left(
+                \frac{\partial f}{\partial t}
+                + u
+                \frac{\partial f}{\partial x}
+                + v
+                \frac{\partial f}{\partial y}
+            \right)_p
+            + \omega
+            \left(
+                \frac{\partial f}{\partial p}
+            \right)_{x,y,t}
+        </md>
+    </p>
+
+    <p>
+        with subscripts to emphasize the variables that are held constant for each partial derivative.
+        However,
+        most often the subscripts are omitted for brevity,
+        and one must note the use of <m>\omega</m> rather than <m>w</m> to realize they are looking at the total derivative in isobaric coordinates.
+    </p>
+
+    <p>
+        The total derivative in isobaric coordinates
+        <xref ref="eqn-total-derivative-isobaric-scalar" text="type-global" />
+        is written in vector form as
+    </p>
+
+    <p>
+        <md xml:id="eqn-total-derivative-isobaric-vector" number="yes">
+            \frac{Df}{Dt}
+            =
+            \frac{\partial f}{\partial t}
+            + \vec{v} \cdot \nabla_p f
+            + \omega \frac{\partial f}{\partial p}
+        </md>
+    </p>
+
+    <p>
+        Note that, while <m>w \gt 0</m> for rising motion and <m>w \lt 0</m> for sinking motion,
+        <m>\omega \lt 0</m> for rising motion and <m>\omega \gt 0</m> for sinking motion.
+        This is because,
+        as an air parcel rises,
+        its pressure lowers as it encounters lower pressure environments since <m>p</m> decreases with increasing height in Earth's atmosphere.
+        Therefore,
+        <m>\omega \lt 0</m> for rising motion while <m>w \gt 0</m>,
+        and <m>\omega \gt 0</m> for sinking motion while <m>w \lt 0</m>.
+    </p>
+
+</subsection>

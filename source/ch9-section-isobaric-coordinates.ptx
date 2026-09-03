@@ -106,5 +106,6 @@
   <xi:include href="ch9-section-isobaric-coordinates-subsection-pgf.ptx" />
   <xi:include href="ch9-section-isobaric-coordinates-subsection-geostrophic.ptx" />
   <xi:include href="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance.ptx" />
+  <xi:include href="ch9-section-isobaric-coordinates-subsection-total-derivative.ptx" />
 
 </section>
