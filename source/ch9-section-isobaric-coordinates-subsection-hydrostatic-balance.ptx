@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Hydrostatic balance</title>
+
+    <p>
+        We can take the relationship between geopotential <m>\Phi</m> and gravity <m>g</m>
+        presented in <xref ref="eqn-geopotential-derivative" text="type-global" />
+        (written here using a partial derivative, which does not impact the relationship since <m>\Phi</m> is a function only of <m>z</m>)
+    </p>
+
+    <p>
+        <md xml:id="eqn-geopotential-derivative-partial" number="yes">
+            \frac{\partial \Phi}{\partial z} = g
+        </md>
+    </p>
+
+    <p>
+        and expand its derivative using the chain rule
+    </p>
+
+    <p>
+        <md xml:id="eqn-geopotential-derivative-partial-expanded" number="yes">
+            \frac{\partial \Phi}{\partial p} \frac{\partial p}{\partial z} = g
+        </md>
+    </p>
+
+    <p>
+        Substituting the usual equation of hydrostatic balance <xref ref="eqn-hydrostatic-balance" text="type-global" /> produces
+    </p>
+
+    <p>
+        <md number="yes">
+            \frac{\partial \Phi}{\partial p} (-\rho g) = g
+        </md>
+    </p>
+
+    <p>
+        which can be rearranged to produce the equation of hydrostatic balance in isobaric coordinates
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance-isobaric" number="yes">
+            \frac{\partial \Phi}{\partial p} = -\frac{1}{\rho}
+        </md>
+    </p>
+
+    <p>
+        Using a rearrangement of the ideal gas law,
+        <xref ref="eqn-hydrostatic-balance-isobaric" text="type-global" /> often is written
+    </p>
+
+    <p>
+        <md xml:id="eqn-hydrostatic-balance-isobaric-ideal" number="yes">
+            \frac{\partial \Phi}{\partial p} = -\frac{R_d T}{p}
+        </md>
+    </p>
+
+    <p>
+        This latter form may be more convenient and consistent with other equations written in isobaric coordinates
+        since it does not reference density.
+    </p>
+
+</subsection>
