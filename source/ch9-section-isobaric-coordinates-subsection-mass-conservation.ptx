@@ -72,7 +72,7 @@
     </p>
 
     <p>
-        <md number="yes">
+        <md xml:id="eqn-mass-isobaric" number="yes">
             m
             =
             \rho V
@@ -90,7 +90,7 @@
 
     <p>
         <md xml:id="eqn-mass-conservation-isobaric-start" number="yes">
-            \frac{D m}{Dt}
+            \frac{Dm}{Dt}
             =
             -\frac{1}{g}\frac{D \left( \delta x \, \delta y \, \delta p \right)}{Dt}
             =
@@ -151,7 +151,151 @@
 
     <p>
         Dividing <xref ref="eqn-mass-conservation-isobaric-intermediate" text="type-global" />
-        by <m>m = -\dfrac{\delta x \, \delta y \, \delta p}{g}</m> produces
+        by <m>m = -\dfrac{\delta x \, \delta y \, \delta p}{g}</m>
+        as given in <xref ref="eqn-mass-isobaric" text="type-global" />
+        produces
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{1}{m} \frac{Dm}{Dt}
+                \amp =
+                \frac{1}{m} \cdot
+                -\frac{1}{g}
+                \left[
+                    \delta y \, \delta p \, \delta u
+                    +
+                    \delta x \, \delta p \, \delta v
+                    +
+                    \delta x \, \delta y \, \delta \omega
+                \right]
+            </mrow>
+            <mrow>
+                \amp =
+                -\frac{g}{\delta x \, \delta y \, \delta p} \cdot
+                -\frac{1}{g}
+                \left[
+                    \delta y \, \delta p \, \delta u
+                    +
+                    \delta x \, \delta p \, \delta v
+                    +
+                    \delta x \, \delta y \, \delta \omega
+                \right]
+            </mrow>
+            <mrow>
+                \amp =
+                \frac{1}{\delta x \, \delta y \, \delta p}
+                \left[
+                    \delta y \, \delta p \, \delta u
+                    +
+                    \delta x \, \delta p \, \delta v
+                    +
+                    \delta x \, \delta y \, \delta \omega
+                \right]
+            </mrow>
+            <mrow>
+                \amp =
+                \frac{\delta u}{\delta x}
+                +
+                \frac{\delta v}{\delta y}
+                +
+                \frac{\delta \omega}{\delta p}
+            </mrow>
+            <mrow xml:id="eqn-mass-conservation-isobaric-deltas" number="yes">
+                \amp = 0
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        As <m>\delta x \to 0</m>, <m>\delta y \to 0</m>, and <m>\delta p \to 0</m>
+        (which is an acceptable assumption for an immeasurably small air parcel),
+        <xref ref="eqn-mass-conservation-isobaric-deltas" text="type-global" /> becomes
+    </p>
+
+    <p>
+        <md xml:id="eqn-mass-conservation-isobaric" number="yes">
+            \frac{\partial u}{\partial x} +
+            \frac{\partial v}{\partial y} +
+            \frac{\partial \omega}{\partial p}
+            = 0
+        </md>
+    </p>
+
+    <p>
+        which can be written as
+    </p>
+
+    <p>
+        <md xml:id="eqn-mass-conservation-isobaric-subscript" number="yes">
+            \left(
+                \frac{\partial u}{\partial x} +
+                \frac{\partial v}{\partial y}
+            \right)_p
+            +
+            \frac{\partial \omega}{\partial p}
+            = 0
+        </md>
+    </p>
+
+    <p>
+        where the subscript "p" emphasizes that the horizontal derivatives are taken on an isobaric surface.
+    </p>
+
+    <p>
+        <xref ref="eqn-mass-conservation-isobaric" text="type-global" />
+        and <xref ref="eqn-mass-conservation-isobaric-subscript" text="type-global" />
+        further can be written as
+    </p>
+
+    <p>
+        <md xml:id="eqn-mass-conservation-isobaric-vector" number="yes">
+            \nabla_p \cdot \vec{v}
+            =
+            \delta_p
+            =
+            -\frac{\partial \omega}{\partial p}
+        </md>
+    </p>
+
+    <p>
+        where <m>\vec{v} = u \, \hat{i} + v \, \hat{j}</m> is the horizontal wind and
+    </p>
+
+    <p>
+        <md xml:id="eqn-horizontal-divergence-isobaric" number="yes">
+            \delta_p
+            =
+            \left(
+                \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}
+            \right)_p
+            =
+            \nabla_p \cdot \vec{v}
+        </md>
+    </p>
+
+    <p>
+        is the <term>horizontal divergence on an isobaric surface</term>.
+    </p>
+
+    <p>
+        Note that <xref ref="eqn-mass-conservation-isobaric" text="type-global" />
+        looks like the incompressible form of mass conservation in height coordinates,
+        <xref ref="eqn-incompessibility-scalar" text="type-global" />
+        of <xref ref="ch6-section-incompressibility" text="custom">Chapter 6</xref>,
+        and <xref ref="eqn-mass-conservation-isobaric-vector" text="type-global" />
+        looks like its rearrangement in terms of <m>\delta</m> in height coordinates,
+        <xref ref="eqn-incompressibility-vertical-wind" text="type-global" />
+        of <xref ref="ch6-section-incompressibility" text="custom">Chapter 6</xref>.
+        But in making <xref ref="eqn-mass-conservation-isobaric" text="type-global" />
+        and <xref ref="eqn-mass-conservation-isobaric-vector" text="type-global" />,
+        we did not assume the air parcel is incompressible!
+        Yet <xref ref="eqn-mass-conservation-isobaric" text="type-global" />
+        and <xref ref="eqn-mass-conservation-isobaric-vector" text="type-global" />
+        still enable us to relate the divergence of the horizontal wind to the vertical wind
+        (in this case given by <m>\omega</m>, not <m>w</m>).
+        This simplification of the mass continuity equation without assuming incompressibility is a major benefit of using isobaric coordinates.
     </p>
 
 </subsection>
