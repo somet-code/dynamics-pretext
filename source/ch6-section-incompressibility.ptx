@@ -56,9 +56,9 @@
     <p>
         These equivalent statements of <term>non-divergence of velocity</term>
         (or <term>velocity non-divergence</term>)
-        produce a relationship between the divergence of the horizontal wind field <m>\vec{v} = u \, \hat{i} + v \, \hat{j}</m>
+        produce a relationship between the divergence of the horizontal wind <m>\vec{v} = u \, \hat{i} + v \, \hat{j}</m>
         and the vertical wind <m>w</m>,
-        which allows the vertical wind to be diagnosed from the horizontal wind field if the air is assumed to be incompressible.
+        which allows the vertical wind to be diagnosed from the horizontal wind if the air is assumed to be incompressible.
     </p>
 
     <p>
@@ -77,7 +77,7 @@
     </p>
 
     <p>
-        <md xml:id="eqn-horizontal-divergence-scalar" number="yes">
+        <md xml:id="eqn-horizontal-divergence" number="yes">
             \delta = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = \nabla \cdot \vec{v}
         </md>
     </p>
@@ -90,7 +90,7 @@
     </p>
     
     <p>
-        <md xml:id="eqn-horizontal-divergence-vector" number="yes">
+        <md xml:id="eqn-horizontal-divergence-subscript" number="yes">
             \delta = \nabla_h \cdot \vec{v}
         </md>
     </p>
