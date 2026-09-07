@@ -247,6 +247,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-geostrophic" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Geostrophic wind</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Hydrostatic balance</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-total-derivative" class="internal"><span class="codenumber">9.2.4</span> <span class="title">Total derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-mass-conservation" class="internal"><span class="codenumber">9.2.5</span> <span class="title">Mass conservation</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -925,6 +926,254 @@ v_g
 <div class="para" id="ch9-section-isobaric-coordinates-subsection-total-derivative-16">Note that, while <span class="process-math">\(w \gt 0\)</span> for rising motion and <span class="process-math">\(w \lt 0\)</span> for sinking motion, <span class="process-math">\(\omega \lt 0\)</span> for rising motion and <span class="process-math">\(\omega \gt 0\)</span> for sinking motion. This is because, as an air parcel rises, its pressure lowers as it encounters lower pressure environments since <span class="process-math">\(p\)</span> decreases with increasing height in Earth’s atmosphere. Therefore, <span class="process-math">\(\omega \lt 0\)</span> for rising motion while <span class="process-math">\(w \gt 0\text{,}\)</span> and <span class="process-math">\(\omega \gt 0\)</span> for sinking motion while <span class="process-math">\(w \lt 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 9.2.4: Total derivative"><a href="#ch9-section-isobaric-coordinates-subsection-total-derivative" title="Copy heading and permalink for Subsection 9.2.4: Total derivative" aria-label="Copy heading and permalink for Subsection 9.2.4: Total derivative">🔗</a></div>
+</section>
+<section class="subsection" id="ch9-section-isobaric-coordinates-subsection-mass-conservation">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Mass conservation</span>
+</h3>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-2">Returning to the statement of mass conservation for an air parcel from <a href="ch6-section-lagrangian.html" class="internal" title="Section 6.1: Lagrangian perspective">Chapter 6</a>:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-3">
+<div class="displaymath process-math" id="eqn-mass-conservation-reproduced">
+\begin{equation}
+\frac{Dm}{D t} = 0\tag{9.2.37}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-4">Recall this statement means the air parcel of interest does not exchange mass with its environment.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-5">The air parcel’s mass is given by<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-6">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-6-1">
+\begin{equation}
+m = \rho V\tag{9.2.38}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-7">and as we have done since <a href="chapter-3.html" class="internal" title="Chapter 3: Fundamental Forces">Chapter 3</a>, we assume the air parcel is a rectangular prism with length <span class="process-math">\(\delta x\text{,}\)</span> width <span class="process-math">\(\delta y\text{,}\)</span> and height <span class="process-math">\(\delta z\text{,}\)</span> so its volume is<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-8">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-8-1">
+\begin{equation}
+V = \delta x \, \delta y \, \delta z\tag{9.2.39}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-9">But now that we are using <span class="process-math">\(p\)</span> rather than <span class="process-math">\(z\)</span> as the vertical coordinate and have the hydrostatic approximation at our disposal, we can rearrange the mathematical equation of hydrostatic balance to solve for <span class="process-math">\(\delta z\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-10">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-10-1">
+\begin{equation}
+\delta z= - \frac{\delta p}{\rho g}\tag{9.2.40}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-11">and then we can substitute this expression into <span class="process-math">\(V\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-12">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-12-1">
+\begin{equation}
+V
+=
+\delta x \, \delta y \, \delta z
+=
+\delta x \, \delta y \left( -\frac{\delta p}{\rho g} \right)
+=
+-\frac{\delta x \, \delta y \, \delta p}{\rho g}\tag{9.2.41}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-13">Then<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-14">
+<div class="displaymath process-math" id="eqn-mass-isobaric">
+\begin{equation}
+m
+=
+\rho V
+=
+\rho \left( -\frac{\delta x \, \delta y \, \delta p}{\rho g} \right)
+=
+-\frac{\delta x \, \delta y \, \delta p}{g}\tag{9.2.42}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-15">If we neglect variations in <span class="process-math">\(g\)</span> by assuming changes in <span class="process-math">\(z\)</span> are small, we can treat <span class="process-math">\(g\)</span> as a constant and write the statement of mass conservation for an air parcel as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-16">
+<div class="displaymath process-math" id="eqn-mass-conservation-isobaric-start">
+\begin{equation}
+\frac{Dm}{Dt}
+=
+-\frac{1}{g}\frac{D \left( \delta x \, \delta y \, \delta p \right)}{Dt}
+=
+0\tag{9.2.43}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-17">We expand <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-start" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.43">(9.2.43)</a> by applying the product rule:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-18">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-18-1">
+\begin{align}
+\frac{Dm}{Dt}
+\amp =
+-\frac{1}{g}\frac{D \left( \delta x \, \delta y \, \delta p \right)}{Dt}\notag\\
+\amp =
+-\frac{1}{g}
+\left[
+\delta y \, \delta p \frac{D \delta x}{Dt}
++ 
+\delta x \, \delta p \frac{D \delta y}{Dt}
++
+\delta x \, \delta y \frac{D \delta p}{Dt}
+\right]\notag\\
+\amp = 0\tag{9.2.44}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-19">Since <span class="process-math">\(\dfrac{D \delta x}{Dt} = \delta u\text{,}\)</span> <span class="process-math">\(\dfrac{D \delta y}{Dt} = \delta v\text{,}\)</span> and <span class="process-math">\(\dfrac{D \delta p}{Dt} = \delta \omega\text{,}\)</span> we have<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-20">
+<div class="displaymath process-math" id="eqn-mass-conservation-isobaric-intermediate">
+\begin{equation}
+\frac{Dm}{Dt}
+=
+-\frac{1}{g}
+\left[
+\delta y \, \delta p \, \delta u
++
+\delta x \, \delta p \, \delta v
++
+\delta x \, \delta y \, \delta \omega
+\right]
+= 0\tag{9.2.45}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-21">Dividing <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-intermediate" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-intermediate.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.45">(9.2.45)</a> by <span class="process-math">\(m = -\dfrac{\delta x \, \delta y \, \delta p}{g}\)</span> as given in <a href="ch9-section-isobaric-coordinates.html#eqn-mass-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.42">(9.2.42)</a> produces<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-22">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-22-1">
+\begin{align}
+\frac{1}{m} \frac{Dm}{Dt}
+\amp =
+\frac{1}{m} \cdot
+-\frac{1}{g}
+\left[
+\delta y \, \delta p \, \delta u
++
+\delta x \, \delta p \, \delta v
++
+\delta x \, \delta y \, \delta \omega
+\right]\notag\\
+\amp =
+-\frac{g}{\delta x \, \delta y \, \delta p} \cdot
+-\frac{1}{g}
+\left[
+\delta y \, \delta p \, \delta u
++
+\delta x \, \delta p \, \delta v
++
+\delta x \, \delta y \, \delta \omega
+\right]\notag\\
+\amp =
+\frac{1}{\delta x \, \delta y \, \delta p}
+\left[
+\delta y \, \delta p \, \delta u
++
+\delta x \, \delta p \, \delta v
++
+\delta x \, \delta y \, \delta \omega
+\right]\notag\\
+\amp =
+\frac{\delta u}{\delta x}
++
+\frac{\delta v}{\delta y}
++
+\frac{\delta \omega}{\delta p}\notag\\
+\amp = 0\tag{9.2.46}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-23">As <span class="process-math">\(\delta x \to 0\text{,}\)</span> <span class="process-math">\(\delta y \to 0\text{,}\)</span> and <span class="process-math">\(\delta p \to 0\)</span> (which is an acceptable assumption for an immeasurably small air parcel), <a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-mass-conservation-22-1" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-deltas.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.46">(9.2.46)</a> becomes<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-24">
+<div class="displaymath process-math" id="eqn-mass-conservation-isobaric">
+\begin{equation}
+\frac{\partial u}{\partial x} +
+\frac{\partial v}{\partial y} +
+\frac{\partial \omega}{\partial p}
+= 0\tag{9.2.47}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-25">which can be written as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-26">
+<div class="displaymath process-math" id="eqn-mass-conservation-isobaric-subscript">
+\begin{equation}
+\left(
+\frac{\partial u}{\partial x} +
+\frac{\partial v}{\partial y}
+\right)_p
++
+\frac{\partial \omega}{\partial p}
+= 0\tag{9.2.48}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-27">where the subscript "p" emphasizes that the horizontal derivatives are taken on an isobaric surface.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-28">
+<a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.47">(9.2.47)</a> and <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-subscript" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-subscript.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.48">(9.2.48)</a> further can be written as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-29">
+<div class="displaymath process-math" id="eqn-mass-conservation-isobaric-vector">
+\begin{equation}
+\nabla_p \cdot \vec{v}
+=
+\delta_p
+=
+-\frac{\partial \omega}{\partial p}\tag{9.2.49}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-30">where <span class="process-math">\(\vec{v} = u \, \hat{i} + v \, \hat{j}\)</span> is the horizontal wind and<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-31">
+<div class="displaymath process-math" id="eqn-horizontal-divergence-isobaric">
+\begin{equation}
+\delta_p
+=
+\left(
+\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}
+\right)_p
+=
+\nabla_p \cdot \vec{v}\tag{9.2.50}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-32">is the <dfn class="terminology">horizontal divergence on an isobaric surface</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-33">Note that <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.47">(9.2.47)</a> looks like the incompressible form of mass conservation in height coordinates, <a href="ch6-section-incompressibility.html#eqn-incompessibility-scalar" class="xref" data-knowl="./knowl/xref/eqn-incompessibility-scalar.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.3">(6.3.3)</a> of <a href="ch6-section-incompressibility.html" class="internal" title="Section 6.3: Incompressibility">Chapter 6</a>, and <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.49">(9.2.49)</a> looks like its rearrangement in terms of <span class="process-math">\(\delta\)</span> in height coordinates, <a href="ch6-section-incompressibility.html#eqn-incompressibility-vertical-wind" class="xref" data-knowl="./knowl/xref/eqn-incompressibility-vertical-wind.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.4">(6.3.4)</a> of <a href="ch6-section-incompressibility.html" class="internal" title="Section 6.3: Incompressibility">Chapter 6</a>. But in making <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.47">(9.2.47)</a> and <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.49">(9.2.49)</a>, we did not assume the air parcel is incompressible! Yet <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.47">(9.2.47)</a> and <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.49">(9.2.49)</a> still enable us to relate the divergence of the horizontal wind to the vertical wind (in this case given by <span class="process-math">\(\omega\text{,}\)</span> not <span class="process-math">\(w\)</span>). This simplification of the mass continuity equation without assuming incompressibility is a major benefit of using isobaric coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.2.5: Mass conservation"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation" title="Copy heading and permalink for Subsection 9.2.5: Mass conservation" aria-label="Copy heading and permalink for Subsection 9.2.5: Mass conservation">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.2: Isobaric coordinates"><a href="#ch9-section-isobaric-coordinates" title="Copy heading and permalink for Section 9.2: Isobaric coordinates" aria-label="Copy heading and permalink for Section 9.2: Isobaric coordinates">🔗</a></div>
 </section>
 </div>
