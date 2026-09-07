@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-isobaric-coordinates-subsection-mass-conservation" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Mass conservation</title>
+
+    <p>
+        Returning to the statement of mass conservation for an air parcel from
+        <xref ref="ch6-section-lagrangian" text="custom">Chapter 6</xref>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-mass-conservation-reproduced" number="yes">
+            \frac{Dm}{D t} = 0
+        </md>
+    </p>
+
+    <p>
+        Recall this statement means the air parcel of interest does not exchange mass with its environment.
+    </p>
+
+    <p>
+        The air parcel's mass is given by
+    </p>
+    
+    <p>
+        <md number="yes">
+            m = \rho V
+        </md>
+    </p>
+
+    <p>
+        and as we have done since <xref ref="chapter-3" text="type-global" />,
+        we assume the air parcel is a rectangular prism with length <m>\delta x</m>, width <m>\delta y</m>, and height <m>\delta z</m>,
+        so its volume is
+    </p>
+        
+    <p>
+        <md number="yes">
+            V = \delta x \, \delta y \, \delta z
+        </md>
+    </p>
+    
+    <p>
+        But now that we are using <m>p</m> rather than <m>z</m> as the vertical coordinate and have the hydrostatic approximation at our disposal,
+        we can rearrange the mathematical equation of hydrostatic balance to solve for <m>\delta z</m>
+    </p>
+
+    <p>
+        <md number="yes">
+            \delta z= - \frac{\delta p}{\rho g}
+        </md>
+    </p>
+
+    <p>
+        and then we can substitute this expression into <m>V</m>:
+    </p>
+
+    <p>
+        <md number="yes">
+            V
+            =
+            \delta x \, \delta y \, \delta z
+            =
+            \delta x \, \delta y \left( -\frac{\delta p}{\rho g} \right)
+            =
+            -\frac{\delta x \, \delta y \, \delta p}{\rho g}
+        </md>
+    </p>
+
+    <p>
+        Then
+    </p>
+
+    <p>
+        <md number="yes">
+            m
+            =
+            \rho V
+            =
+            \rho \left( -\frac{\delta x \, \delta y \, \delta p}{\rho g} \right)
+            =
+            -\frac{\delta x \, \delta y \, \delta p}{g}
+        </md>
+    </p>
+
+    <p>
+        If we neglect variations in <m>g</m> by assuming changes in <m>z</m> are small,
+        we can treat <m>g</m> as a constant and write the statement of mass conservation for an air parcel as
+    </p>
+
+    <p>
+        <md xml:id="eqn-mass-conservation-isobaric-start" number="yes">
+            \frac{D m}{Dt}
+            =
+            -\frac{1}{g}\frac{D \left( \delta x \, \delta y \, \delta p \right)}{Dt}
+            =
+            0
+        </md>
+    </p>
+
+    <p>
+        We expand <xref ref="eqn-mass-conservation-isobaric-start" text="type-global" /> by applying the product rule:
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{Dm}{Dt}
+                \amp =
+                -\frac{1}{g}\frac{D \left( \delta x \, \delta y \, \delta p \right)}{Dt}
+            </mrow>
+            <mrow>
+                \amp =
+                -\frac{1}{g}
+                \left[
+                    \delta y \, \delta p \frac{D \delta x}{Dt}
+                    + 
+                    \delta x \, \delta p \frac{D \delta y}{Dt}
+                    +
+                    \delta x \, \delta y \frac{D \delta p}{Dt}
+                \right]
+            </mrow>
+            <mrow number="yes">
+                \amp = 0
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Since <m>\dfrac{D \delta x}{Dt} = \delta u</m>,
+        <m>\dfrac{D \delta y}{Dt} = \delta v</m>,
+        and <m>\dfrac{D \delta p}{Dt} = \delta \omega</m>,
+        we have
+    </p>
+
+    <p>
+        <md xml:id="eqn-mass-conservation-isobaric-intermediate" number="yes">
+            \frac{Dm}{Dt}
+            =
+            -\frac{1}{g}
+            \left[
+                \delta y \, \delta p \, \delta u
+                +
+                \delta x \, \delta p \, \delta v
+                +
+                \delta x \, \delta y \, \delta \omega
+            \right]
+            = 0
+        </md>
+    </p>
+
+    <p>
+        Dividing <xref ref="eqn-mass-conservation-isobaric-intermediate" text="type-global" />
+        by <m>m = -\dfrac{\delta x \, \delta y \, \delta p}{g}</m> produces
+    </p>
+
+</subsection>
