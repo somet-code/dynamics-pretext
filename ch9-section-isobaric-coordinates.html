@@ -248,6 +248,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Hydrostatic balance</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-total-derivative" class="internal"><span class="codenumber">9.2.4</span> <span class="title">Total derivative</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-mass-conservation" class="internal"><span class="codenumber">9.2.5</span> <span class="title">Mass conservation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation" class="internal"><span class="codenumber">9.2.6</span> <span class="title">Thermodynamic energy equation</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -1174,6 +1175,203 @@ m
 <div class="para" id="ch9-section-isobaric-coordinates-subsection-mass-conservation-33">Note that <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.47">(9.2.47)</a> looks like the incompressible form of mass conservation in height coordinates, <a href="ch6-section-incompressibility.html#eqn-incompessibility-scalar" class="xref" data-knowl="./knowl/xref/eqn-incompessibility-scalar.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.3">(6.3.3)</a> of <a href="ch6-section-incompressibility.html" class="internal" title="Section 6.3: Incompressibility">Chapter 6</a>, and <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.49">(9.2.49)</a> looks like its rearrangement in terms of <span class="process-math">\(\delta\)</span> in height coordinates, <a href="ch6-section-incompressibility.html#eqn-incompressibility-vertical-wind" class="xref" data-knowl="./knowl/xref/eqn-incompressibility-vertical-wind.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.4">(6.3.4)</a> of <a href="ch6-section-incompressibility.html" class="internal" title="Section 6.3: Incompressibility">Chapter 6</a>. But in making <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.47">(9.2.47)</a> and <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.49">(9.2.49)</a>, we did not assume the air parcel is incompressible! Yet <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.47">(9.2.47)</a> and <a href="ch9-section-isobaric-coordinates.html#eqn-mass-conservation-isobaric-vector" class="xref" data-knowl="./knowl/xref/eqn-mass-conservation-isobaric-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.49">(9.2.49)</a> still enable us to relate the divergence of the horizontal wind to the vertical wind (in this case given by <span class="process-math">\(\omega\text{,}\)</span> not <span class="process-math">\(w\)</span>). This simplification of the mass continuity equation without assuming incompressibility is a major benefit of using isobaric coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 9.2.5: Mass conservation"><a href="#ch9-section-isobaric-coordinates-subsection-mass-conservation" title="Copy heading and permalink for Subsection 9.2.5: Mass conservation" aria-label="Copy heading and permalink for Subsection 9.2.5: Mass conservation">🔗</a></div>
+</section>
+<section class="subsection" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thermodynamic energy equation</span>
+</h3>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-2">Consider the alternative form of the thermodynamic energy equation, <a href="ch7-section-thermodynamic-energy-equation.html#eqn-thermodynamic-energy-equation-alt" class="xref" data-knowl="./knowl/xref/eqn-thermodynamic-energy-equation-alt.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.2.2">(7.2.2)</a> from <a href="ch7-section-thermodynamic-energy-equation.html" class="internal" title="Section 7.2: Thermodynamic energy equation">Chapter 7</a>:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-3">
+<div class="displaymath process-math" id="eqn-thermodynamic-energy-equation-alt-reproduced">
+\begin{equation}
+\dot{Q} = c_p \frac{DT}{Dt} - \alpha \frac{Dp}{Dt}\tag{9.2.51}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-4">Expanding <span class="process-math">\(\dfrac{DT}{Dt}\)</span> using the <a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-total-derivative" class="internal" title="Subsection 9.2.4: Total derivative">definition of the total derivative in isobaric coordinates</a> and substituting <span class="process-math">\(\omega = \dfrac{Dp}{Dt}\)</span> produce<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-5">
+<div class="displaymath process-math" id="eqn-thermodynamic-energy-equation-alt-isobaric-start">
+\begin{equation}
+\dot{Q}
+= c_p \left(
+\frac{\partial T}{\partial t}
++ u \frac{\partial T}{\partial x}
++ v \frac{\partial T}{\partial y}
++ \omega \frac{\partial T}{\partial p}
+\right)
+- \alpha \omega\tag{9.2.52}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-6">Dividing <a href="ch9-section-isobaric-coordinates.html#eqn-thermodynamic-energy-equation-alt-isobaric-start" class="xref" data-knowl="./knowl/xref/eqn-thermodynamic-energy-equation-alt-isobaric-start.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.52">(9.2.52)</a> by <span class="process-math">\(c_p\)</span> and grouping terms with <span class="process-math">\(\omega\)</span> produce<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-7">
+<div class="displaymath process-math" id="eqn-thermodynamic-energy-equation-alt-isobaric-intermediate">
+\begin{equation}
+\frac{\dot{Q}}{c_p}
+= \left(
+\frac{\partial T}{\partial t}
++ u \frac{\partial T}{\partial x}
++ v \frac{\partial T}{\partial y}
+\right)
+- \left(
+\frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+\right) \omega\tag{9.2.53}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-8">Defining the <dfn class="terminology">static stability parameter in isobaric coordinates</dfn> <span class="process-math">\(\sigma_p\)</span> as<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-9">
+<div class="displaymath process-math" id="eqn-static-stability-parameter-isobaric">
+\begin{equation}
+\sigma_p
+=
+\left(
+\frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+\right)\tag{9.2.54}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-10">and substituing this definition into <a href="ch9-section-isobaric-coordinates.html#eqn-thermodynamic-energy-equation-alt-isobaric-intermediate" class="xref" data-knowl="./knowl/xref/eqn-thermodynamic-energy-equation-alt-isobaric-intermediate.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.53">(9.2.53)</a> produce<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-11">
+<div class="displaymath process-math" id="eqn-thermodynamic-energy-equation-alt-isobaric">
+\begin{equation}
+\frac{\dot{Q}}{c_p}
+=
+\frac{\partial T}{\partial t}
++ u \frac{\partial T}{\partial x}
++ v \frac{\partial T}{\partial y}
+- \sigma_p \, \omega\tag{9.2.55}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-12">or<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-13">
+<div class="displaymath process-math" id="eqn-thermodynamic-energy-equation-alt-isobaric-subscript">
+\begin{equation}
+\frac{\dot{Q}}{c_p}
+= \left(
+\frac{\partial T}{\partial t}
++ u \frac{\partial T}{\partial x}
++ v \frac{\partial T}{\partial y}
+\right)_p
+- \sigma_p \, \omega\tag{9.2.56}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-14">where the subscript "p" emphasizes that the derivatives are taken on an isobaric surface.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-15">It may not be immediately apparent that <span class="process-math">\(\sigma_p\)</span> is a static stability parameter. But consider the dry adiabatic lapse rate<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-16">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-16-1">
+\begin{equation}
+\Gamma_d = \frac{g}{c_p}\tag{9.2.57}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-17">and the environmental lapse rate<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-18">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-18-1">
+\begin{equation}
+\Gamma
+=
+-\frac{\partial T}{\partial z}
+=
+-\frac{\partial T}{\partial p} \frac{\partial p}{\partial z}
+=
+\rho g \frac{\partial T}{\partial p}\tag{9.2.58}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-19">when assuming hydrostatic balance. Then <span class="process-math">\(\sigma_p\)</span> can be rewritten<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-20">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-20-1">
+\begin{align}
+\sigma_p
+\amp =
+\left(
+\frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+\right)\notag\\
+\amp =
+\left(
+\frac{\alpha}{c_p} - \frac{\Gamma}{\rho g}
+\right)\notag\\
+\amp =
+\frac{1}{\rho g} \left(
+\frac{g}{c_p} - \Gamma
+\right)\notag\\
+\amp =
+\frac{1}{\rho g} \left(
+\Gamma_d - \Gamma
+\right)\notag\\
+\amp =
+\frac{\Gamma_d - \Gamma}{\rho g}\tag{9.2.59}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-21">Recall from <a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability" class="internal" title="Subsection 7.1.9: Local static stability">Chapter 7</a> that <span class="process-math">\(\Gamma_d \gt \Gamma\)</span> indicates local static stability, <span class="process-math">\(\Gamma_d \lt \Gamma\)</span> indicates local static instability, and <span class="process-math">\(\Gamma_d = \Gamma\)</span> indicates local static neutrality. Then <a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-20-1" class="xref" data-knowl="./knowl/xref/eqn-static-stability-parameter-isobaric-alt.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.2.59">(9.2.59)</a> makes it apparent that <span class="process-math">\(\sigma_p \gt 0\)</span> indicates local static stability, <span class="process-math">\(\sigma_p \lt 0\)</span> indicates local static instability, and <span class="process-math">\(\sigma_p = 0\)</span> indicates local static neutrality.<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-22">Furthermore, the local stability equation given in <a href="ch7-section-thermodynamics-review.html#eqn-stability" class="xref" data-knowl="./knowl/xref/eqn-stability.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 7.1.53">(7.1.53)</a> of <a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability" class="internal" title="Subsection 7.1.9: Local static stability">Chapter 7</a>,<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-23">
+<div class="displaymath process-math" id="eqn-stability-reproduced">
+\begin{equation}
+\frac{T}{\theta} \frac{\partial \theta}{\partial z}
+=
+\Gamma_d - \Gamma\tag{9.2.60}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-24">can be expanded and rewritten in isobaric coordinates by taking advantage of the assumption of hydrostatic balance:<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-25">
+<div class="displaymath process-math" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-25-1">
+\begin{align}
+\frac{T}{\theta} \frac{\partial \theta}{\partial z} \amp = \Gamma_d - \Gamma\notag\\
+\frac{T}{\theta} \frac{\partial \theta}{\partial p} \frac{\partial p}{\partial z} \amp = \Gamma_d - \Gamma\notag\\
+\frac{T}{\theta} \frac{\partial \theta}{\partial p} (-\rho g) \amp= \Gamma_d - \Gamma\notag\\
+-\frac{T}{\theta} \frac{\partial \theta}{\partial p} \amp = \frac{\Gamma_d - \Gamma}{\rho g}\tag{9.2.61}
+\end{align}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-26">where the negative sign has been retained on the left-hand side since <span class="process-math">\(p\)</span> decreases as <span class="process-math">\(z\)</span> increases and so <span class="process-math">\(-\dfrac{\partial \theta}{\partial p}\)</span> has the same sign as <span class="process-math">\(\frac{\partial \theta}{\partial z}\text{.}\)</span> This equation further makes it clear that <span class="process-math">\(\sigma_p\)</span> can be used to evaluate local stability and provides for the relationship<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-27">
+<div class="displaymath process-math" id="eqn-static-stability-parameter-isobaric-full">
+\begin{equation}
+\sigma_p
+=
+\left(
+\frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+\right)
+=
+-\frac{T}{\theta} \frac{\partial \theta}{\partial p}
+=
+\frac{\Gamma_d - \Gamma}{\rho g}\tag{9.2.62}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 9.2.6: Thermodynamic energy equation"><a href="#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation" title="Copy heading and permalink for Subsection 9.2.6: Thermodynamic energy equation" aria-label="Copy heading and permalink for Subsection 9.2.6: Thermodynamic energy equation">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 9.2: Isobaric coordinates"><a href="#ch9-section-isobaric-coordinates" title="Copy heading and permalink for Section 9.2: Isobaric coordinates" aria-label="Copy heading and permalink for Section 9.2: Isobaric coordinates">🔗</a></div>
 </section>
 </div>
