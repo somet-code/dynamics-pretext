@@ -214,4 +214,24 @@
         </md>
     </p>
 
+    <p>
+        where the negative sign has been retained on the left-hand side since <m>p</m> decreases as <m>z</m> increases
+        and so <m>-\dfrac{\partial \theta}{\partial p}</m> has the same sign as <m>\frac{\partial \theta}{\partial z}</m>.
+        This equation further makes it clear that <m>\sigma_p</m> can be used to evaluate local stability and provides for the relationship
+    </p>
+
+    <p>
+        <md xml:id="eqn-static-stability-parameter-isobaric-full" number="yes">
+            \sigma_p
+            =
+            \left(
+                \frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+            \right)
+            =
+            -\frac{T}{\theta} \frac{\partial \theta}{\partial p}
+            =
+            \frac{\Gamma_d - \Gamma}{\rho g}
+        </md>
+    </p>
+
 </subsection>
