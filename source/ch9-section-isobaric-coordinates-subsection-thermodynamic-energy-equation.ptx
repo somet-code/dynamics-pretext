@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Thermodynamic energy equation</title>
+
+    <p>
+        Consider the alternative form of the thermodynamic energy equation,
+        <xref ref="eqn-thermodynamic-energy-equation-alt" text="type-global" />
+        from <xref ref="ch7-section-thermodynamic-energy-equation" text="custom">Chapter 7</xref>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-thermodynamic-energy-equation-alt-reproduced" number="yes">
+            \dot{Q} = c_p \frac{DT}{Dt} - \alpha \frac{Dp}{Dt}
+        </md>
+    </p>
+
+    <p>
+        Expanding <m>\dfrac{DT}{Dt}</m> using the
+        <xref ref="ch9-section-isobaric-coordinates-subsection-total-derivative" text="custom"> definition of the total derivative in isobaric coordinates</xref>
+        and substituting <m>\omega = \dfrac{Dp}{Dt}</m> produce
+    </p>
+
+    <p>
+        <md xml:id="eqn-thermodynamic-energy-equation-alt-isobaric-start" number="yes">
+            \dot{Q}
+            = c_p \left(
+                \frac{\partial T}{\partial t}
+                + u \frac{\partial T}{\partial x}
+                + v \frac{\partial T}{\partial y}
+                + \omega \frac{\partial T}{\partial p}
+            \right)
+            - \alpha \omega
+        </md>
+    </p>
+
+    <p>
+        Dividing <xref ref="eqn-thermodynamic-energy-equation-alt-isobaric-start" text="type-global" />
+        by <m>c_p</m> and grouping terms with <m>\omega</m> produce
+    </p>
+
+    <p>
+        <md xml:id="eqn-thermodynamic-energy-equation-alt-isobaric-intermediate" number="yes">
+            \frac{\dot{Q}}{c_p}
+            = \left(
+                \frac{\partial T}{\partial t}
+                + u \frac{\partial T}{\partial x}
+                + v \frac{\partial T}{\partial y}
+            \right)
+            - \left(
+                \frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+            \right) \omega
+        </md>
+    </p>
+
+    <p>
+        Defining the <term>static stability parameter in isobaric coordinates</term> <m>\sigma_p</m> as
+    </p>
+
+    <p>
+        <md xml:id="eqn-static-stability-parameter-isobaric" number="yes">
+            \sigma_p
+            =
+            \left(
+                \frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+            \right)
+        </md>
+    </p>
+
+    <p>
+        and substituing this definition into <xref ref="eqn-thermodynamic-energy-equation-alt-isobaric-intermediate" text="type-global" />
+        produce
+    </p>
+
+    <p>
+        <md xml:id="eqn-thermodynamic-energy-equation-alt-isobaric" number="yes">
+            \frac{\dot{Q}}{c_p}
+            =
+            \frac{\partial T}{\partial t}
+            + u \frac{\partial T}{\partial x}
+            + v \frac{\partial T}{\partial y}
+            - \sigma_p \, \omega
+        </md>
+    </p>
+
+    <p>
+        or
+    </p>
+
+    <p>
+        <md xml:id="eqn-thermodynamic-energy-equation-alt-isobaric-subscript" number="yes">
+            \frac{\dot{Q}}{c_p}
+            = \left(
+                \frac{\partial T}{\partial t}
+                + u \frac{\partial T}{\partial x}
+                + v \frac{\partial T}{\partial y}
+            \right)_p
+    - \sigma_p \, \omega
+        </md>
+    </p>
+
+    <p>
+        where the subscript "p" emphasizes that the derivatives are taken on an isobaric surface.
+    </p>
+
+    <p>
+        It may not be immediately apparent that <m>\sigma_p</m> is a static stability parameter.
+        But consider the dry adiabatic lapse rate
+    </p>
+
+    <p>
+        <md number="yes">
+            \Gamma_d = \frac{g}{c_p}
+        </md>
+    </p>
+
+    <p>
+        and the environmental lapse rate
+    </p>
+
+    <p>
+        <md number="yes">
+            \Gamma
+            =
+            -\frac{\partial T}{\partial z}
+            =
+            -\frac{\partial T}{\partial p} \frac{\partial p}{\partial z}
+            =
+            \rho g \frac{\partial T}{\partial p}
+        </md>
+    </p>
+
+    <p>
+        when assuming hydrostatic balance.
+        Then <m>\sigma_p</m> can be rewritten
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \sigma_p
+                \amp =
+                \left(
+                    \frac{\alpha}{c_p} - \frac{\partial T}{\partial p}
+                \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \left(
+                    \frac{\alpha}{c_p} - \frac{\Gamma}{\rho g}
+                \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \frac{1}{\rho g} \left(
+                    \frac{g}{c_p} - \Gamma
+                \right)
+            </mrow>
+            <mrow>
+                \amp =
+                \frac{1}{\rho g} \left(
+                    \Gamma_d - \Gamma
+                \right)
+            </mrow>
+            <mrow xml:id="eqn-static-stability-parameter-isobaric-alt" number="yes">
+                \amp =
+                \frac{\Gamma_d - \Gamma}{\rho g}
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        Recall from <xref ref="ch7-section-thermodynamics-review-subsection-stability" text="custom">Chapter 7</xref>
+        that <m>\Gamma_d \gt \Gamma</m> indicates local static stability,
+        <m>\Gamma_d \lt \Gamma</m> indicates local static instability,
+        and <m>\Gamma_d = \Gamma</m> indicates local static neutrality.
+        Then <xref ref="eqn-static-stability-parameter-isobaric-alt" text="type-global" />
+        makes it apparent that <m>\sigma_p \gt 0</m> indicates local static stability,
+        <m>\sigma_p \lt 0</m> indicates local static instability,
+        and <m>\sigma_p = 0</m> indicates local static neutrality.
+    </p>
+
+    <p>
+        Furthermore, the local stability equation given in <xref ref="eqn-stability" text="type-global" />
+        of <xref ref="ch7-section-thermodynamics-review-subsection-stability" text="custom">Chapter 7</xref>,
+    </p>
+
+    <p>
+        <md xml:id="eqn-stability-reproduced" number="yes">
+            \frac{T}{\theta} \frac{\partial \theta}{\partial z}
+            =
+            \Gamma_d - \Gamma
+        </md>
+    </p>
+
+    <p>
+        can be expanded and rewritten in isobaric coordinates by taking advantage of the assumption of hydrostatic balance:
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \frac{T}{\theta} \frac{\partial \theta}{\partial z} \amp = \Gamma_d - \Gamma
+            </mrow>
+            <mrow>
+                \frac{T}{\theta} \frac{\partial \theta}{\partial p} \frac{\partial p}{\partial z} \amp = \Gamma_d - \Gamma
+            </mrow>
+            <mrow>
+                \frac{T}{\theta} \frac{\partial \theta}{\partial p} (-\rho g) \amp= \Gamma_d - \Gamma
+            </mrow>
+            <mrow number="yes">
+                -\frac{T}{\theta} \frac{\partial \theta}{\partial p} \amp = \frac{\Gamma_d - \Gamma}{\rho g}
+            </mrow>
+        </md>
+    </p>
+
+</subsection>

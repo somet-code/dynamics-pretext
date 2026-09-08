@@ -108,5 +108,6 @@
   <xi:include href="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance.ptx" />
   <xi:include href="ch9-section-isobaric-coordinates-subsection-total-derivative.ptx" />
   <xi:include href="ch9-section-isobaric-coordinates-subsection-mass-conservation.ptx" />
+  <xi:include href="ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation.ptx" />
 
 </section>
