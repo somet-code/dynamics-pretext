@@ -3,5 +3,6 @@
 
   <xi:include href="ch9-section-setup.ptx" />
   <xi:include href="ch9-section-isobaric-coordinates.ptx" />
+  <xi:include href="ch9-section-other-vertical-coordinates.ptx" />
 
 </chapter>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch9-section-other-vertical-coordinates" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Other vertical coordinates</title>
+
+  <p>
+    The reasoning laid out in <xref ref="ch9-section-setup-subsection-general-vertical-coordinate" text="type-global" />
+    and applied to isobaric coordinates in <xref ref="ch9-section-isobaric-coordinates" text="type-global" />
+    can be used for any other vertical coordinate.
+    Common alternative vertical coordinates include potential temperature <m>\theta</m> (<term>isentropic coordinates</term>),
+    <m>\sigma</m> (<term>sigma coordinates</term>),
+    <m>\eta</m> (<term>eta coordinates</term>),
+    and hybrid vertical coordinates like isentropic-sigma and sigma-pressure.
+    Many of these are used in the context of dynamical weather models.
+    As long as a state variable is strictly monotonic in <m>z</m>,
+    it can be used as an alternative vertical coordinate.
+  </p>
+
+</section>
