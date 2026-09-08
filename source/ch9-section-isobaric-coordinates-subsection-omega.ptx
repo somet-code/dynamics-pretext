@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch9-section-isobaric-coordinates-subsection-omega" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Interpretation of <m>\omega</m></title>
+
+    <p>
+        Under hydrostatic conditions,
+        as an air parcel rises,
+        its pressure decreases as it encounters lower pressure environments,
+        and it expands to match the lower environmental pressure.
+        The reverse is true as an air parcel sinks.
+        Therefore,
+        the pressure vertical velocity <m>\omega \lt 0</m> for rising motion while the vertical velocity <m>w \gt 0</m>,
+        and <m>\omega \gt 0</m> for sinking motion while <m>w \lt 0</m>.
+    </p>
+
+    <p>
+        We can make this opposing relationship between <m>\omega</m> and <m>w</m> concrete by using total differentiation to expand <m>\omega</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-omega-total-derivative" number="yes">
+            \omega
+            =
+            \frac{Dp}{Dt}
+            =
+            \frac{\partial p}{\partial t}
+            + u \frac{\partial p}{\partial x}
+            + v \frac{\partial p}{\partial y}
+            + w \frac{\partial p}{\partial z}
+        </md>
+    </p>
+
+    <p>
+        Applying hydrostatic balance,
+    </p>
+
+    <p>
+        <md>
+            <mrow>
+                \omega
+                \amp =
+                \frac{\partial p}{\partial t}
+                + u \frac{\partial p}{\partial x}
+                + v \frac{\partial p}{\partial y}
+                + w (-\rho g)
+            </mrow>
+            <mrow xml:id="eqn-omega-w-relationship-full" number="yes">
+                \amp =
+                \frac{\partial p}{\partial t}
+                + u \frac{\partial p}{\partial x}
+                + v \frac{\partial p}{\partial y}
+                - w \rho g
+            </mrow>
+        </md>
+    </p>
+
+    <p>
+        <xref ref="holton-hakim" text="custom">Holton and Hakim (2013)</xref>
+        show for synoptic scale (i.e., large scale) atmospheric motions
+        that the first three terms on the right-hand side of <xref ref="eqn-omega-w-relationship-full" text="type-global" />
+        are 1<ndash />2 orders of magnitude smaller than the fourth term on the right-hand side so that
+    </p>
+
+    <p>
+        <md xml:id="eqn-omega-w-relationship-approximate" number="yes">
+            \omega \approx -w \rho g
+        </md>
+    </p>
+
+    <p>
+        The negative sign in <xref ref="eqn-omega-w-relationship-approximate" text="type-global" />
+        reflects the opposing relationship <m>\omega</m> has with <m>w</m>.
+    </p>
+
+</subsection>
