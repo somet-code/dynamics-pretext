@@ -46,7 +46,7 @@
     </p>
 
     <p>
-        Using a rearrangement of the ideal gas law,
+        Using a rearrangement of the ideal gas law <xref ref="eqn-ideal-gas-law-density-dry" text="type-global" />,
         <xref ref="eqn-hydrostatic-balance-isobaric" text="type-global" /> often is written
     </p>
 

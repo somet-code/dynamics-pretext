@@ -216,7 +216,7 @@
 
     <p>
         where the negative sign has been retained on the left-hand side since <m>p</m> decreases as <m>z</m> increases
-        and so <m>-\dfrac{\partial \theta}{\partial p}</m> has the same sign as <m>\frac{\partial \theta}{\partial z}</m>.
+        and so <m>-\dfrac{\partial \theta}{\partial p}</m> has the same sign as <m>\dfrac{\partial \theta}{\partial z}</m>.
         This equation further makes it clear that <m>\sigma_p</m> can be used to evaluate local stability and provides for the relationship
     </p>
 

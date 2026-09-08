@@ -122,7 +122,7 @@
     </p>
 
     <p>
-        Furthermore, since the definition of geopotential gives <m>\partial \Phi = g \partial z</m>,
+        Furthermore, since the definition of geopotential gives <m>\partial \Phi = g \, \partial z</m>,
         we have
     </p>
 
@@ -205,7 +205,11 @@
 
     <p>
         <md xml:id="eqn-pga-isobaric-vector" number="yes">
-            -\frac{1}{\rho} \nabla_z p = -\nabla_p \Phi
+            -\frac{1}{\rho} \nabla_z p
+            =
+            -g \nabla_p z
+            =
+            -\nabla_p \Phi
         </md>
     </p>
 
@@ -219,9 +223,9 @@
         <md xml:id="eqn-horizontal-gradient-operator-z" number="yes">
             \nabla_z
             =
-            \left( \frac{\partial}{\partial x} \right)_z \hat{i}
+            \hat{i} \left( \frac{\partial}{\partial x} \right)_z
             +
-            \left( \frac{\partial}{\partial y} \right)_z \hat{j}
+             \hat{j} \left( \frac{\partial}{\partial y} \right)_z
         </md>
     </p>
 
@@ -233,9 +237,9 @@
         <md xml:id="eqn-horizontal-gradient-operator-p" number="yes">
             \nabla_p
             =
-            \left( \frac{\partial}{\partial x} \right)_p \hat{i}
+            \hat{i} \left( \frac{\partial}{\partial x} \right)_p
             +
-            \left( \frac{\partial}{\partial y} \right)_p \hat{j}
+            \hat{j} \left( \frac{\partial}{\partial y} \right)_p
         </md>
     </p>
 
@@ -310,6 +314,11 @@
         <md xml:id="eqn-pga-isobaric-vector-geopotential-height" number="yes">
             -\frac{1}{\rho} \nabla_z p = -g_0 \nabla_p Z
         </md>
+    </p>
+
+    <p>
+        As we see,
+        there are many equivalent ways to write the horizontal pressure gradient acceleration in isobaric coordinates!
     </p>
 
 </subsection>

@@ -98,7 +98,7 @@
         Now that we have a new vertical coordinate<mdash /><m>p</m> rather than <m>z</m><mdash />we must rewrite essential equations.
         Note that hydrostatic balance is employed frequently in the derivations to do so below.
         While hydrostatic balance is a reasonable approximation under most atmospheric conditions,
-        keep in mind that its inclusion means that isobaric coordinates should not be used to describe atmospheric phenomena
+        keep in mind its inclusion means that isobaric coordinates should not be used to describe atmospheric phenomena
         that are not approximately in hydrostatic balance.
     </p>
   </introduction>

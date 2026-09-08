@@ -4,7 +4,7 @@
     <title>Mass conservation</title>
 
     <p>
-        Returning to the statement of mass conservation for an air parcel from
+        Returning to the basic statement of mass conservation for an air parcel from
         <xref ref="ch6-section-lagrangian" text="custom">Chapter 6</xref>:
     </p>
 
@@ -29,7 +29,8 @@
     </p>
 
     <p>
-        and as we have done since <xref ref="chapter-3" text="type-global" />,
+        where <m>\rho</m> is the air parcel's density and <m>V</m> is its volume. 
+        As as we have done since <xref ref="chapter-3" text="type-global" />,
         we assume the air parcel is a rectangular prism with length <m>\delta x</m>, width <m>\delta y</m>, and height <m>\delta z</m>,
         so its volume is
     </p>
@@ -285,7 +286,7 @@
         <xref ref="eqn-incompessibility-scalar" text="type-global" />
         of <xref ref="ch6-section-incompressibility" text="custom">Chapter 6</xref>,
         and <xref ref="eqn-mass-conservation-isobaric-vector" text="type-global" />
-        looks like its rearrangement in terms of <m>\delta</m> in height coordinates,
+        looks like its rearrangement in terms of horizontal divergence<m>\delta</m> in height coordinates,
         <xref ref="eqn-incompressibility-vertical-wind" text="type-global" />
         of <xref ref="ch6-section-incompressibility" text="custom">Chapter 6</xref>.
         But in making <xref ref="eqn-mass-conservation-isobaric" text="type-global" />

@@ -10,7 +10,7 @@
         (again with the reminder that <m>f</m> could be replaced by a vector quantity).
         If the air parcel's position changes with time as it moves through the atmosphere,
         then <m>x = x(t)</m>, <m>y = y(t)</m>, and <m>p = p(t)</m>, and so <m>f = f(t)</m>.
-        Then, as in Chapter 1, the chain rule for multivaiable functions produces
+        Then, as in Chapter 1, the chain rule for multivariable functions produces
     </p>
 
     <p>
@@ -27,7 +27,7 @@
     <p>
         Again,
         <m>u = \dfrac{dx}{dt}</m> and <m>v = \dfrac{dy}{dt}</m> are the zonal and meridional components
-        of the horizontal wind vector <m>\vec{v} = u\hat{i} + v\hat{j}</m>,
+        of the horizontal wind vector <m>\vec{v} = u \, \hat{i} + v \, \hat{j}</m>,
         respectively.
         We define the <term>pressure vertical velocity</term> ("<term>omega</term>") as
     </p>
@@ -113,7 +113,8 @@
         with subscripts to emphasize the variables that are held constant for each partial derivative.
         However,
         most often the subscripts are omitted for brevity,
-        and one must note the use of <m>\omega</m> rather than <m>w</m> to realize they are looking at the total derivative in isobaric coordinates.
+        and one must note the use of pressure vertical velocity <m>\omega</m>
+        rather than vertical velocity <m>w</m> to realize they are looking at the total derivative in isobaric coordinates.
     </p>
 
     <p>
