@@ -11,7 +11,7 @@
     <figure xml:id="ch9-vertical-coordinate-z">
         <caption>
             Vertical cross-section through several <m>z</m>-surfaces at a single moment in time,
-            with equal increment <m>\delta z</m> between each surface.
+            with equal height increment <m>\delta z</m> between each surface.
             The <m>+x</m> and <m>+z</m> axes are shown,
             and the <m>+y</m>-axis points into the page.
             Given that <m>\delta z \gt 0</m>,
@@ -26,10 +26,41 @@
     </figure>
 
     <p>
-        Say a state variable <m>s = s(x,y,z,t)</m> is strictly monotonic with respect to <m>z</m>
+        Say a state variable
+    </p>
+
+    <p>
+        <md>
+            s = s(x,y,z,t)
+        </md>
+    </p>
+    
+    <p>
+        is <term>strictly monotonic</term> with respect to <m>z</m>
         (i.e., <m>s</m> either strictly increases or strictly decreases with increasing <m>z</m>).
-        This means <m>z = z(x,y,s,t)</m> since strictly monotonic functions are invertible,
-        and so a state variable <m>f = f(x,y,z,t)</m> becomes <m>f = f(x,y,z(x,y,s,t),t)</m>.
+        This means
+    </p>
+
+    <p>
+        <md>
+            z = z(x,y,s,t)
+        </md>
+    </p>
+    
+    <p>
+        since strictly monotonic functions are invertible.
+        Consequently,
+        a state variable
+    </p>
+
+    <p>
+        <md>
+            f = f(x,y,z,t)
+        </md>
+        becomes
+        <md>
+            f = f(x,y,z(x,y,s,t),t)
+        </md>
     </p>
 
     <p>
@@ -152,7 +183,7 @@
         Many texts justify <xref ref="eqn-chain-rule-x-s-reduced" text="type-global" />
         physically by "zooming in" on a portion of <xref ref="ch9-vertical-coordinate-z-s" text="type-global" />,
         as the dashed box indicates in <xref ref="ch9-vertical-coordinate-z-s-box" text="type-global" /> below.
-        <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />
+        <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" /> below
         zooms in on the portion of <xref ref="ch9-vertical-coordinate-z-s-box" text="type-global" /> inside the dashed box.
     </p>
 
@@ -220,7 +251,7 @@
         Note from <xref ref="ch9-vertical-coordinate-z-s-zoom" text="type-global" />
         that <m>\dfrac{f_C - f_B}{\delta z}</m> is calculated at constant <m>x</m>,
         <m>\dfrac{f_B - f_A}{\delta x}</m> is calculated at constant <m>z</m>,
-        and both <m>\dfrac{f_C - f_A}{\delta x}</m> and <m>\dfrac{\delta z}{\delta x}</m>
+        and both <m>\dfrac{f_C - f_A}{\delta z}</m> and <m>\dfrac{\delta z}{\delta x}</m>
         are calculated along a surface of constant <m>s</m>.
     </p>
 
@@ -262,15 +293,15 @@
             \right)_{s}
             =
             \left(
-                \frac{\partial f}{\partial y}
-            \right)_{z}
-            +
-            \left(
                 \frac{\partial f}{\partial z}
             \right)_{y}
             \left(
                 \frac{\partial z}{\partial y}
             \right)_{s}
+            +
+            \left(
+                \frac{\partial f}{\partial y}
+            \right)_{z}
         </md>
     </p>
 
