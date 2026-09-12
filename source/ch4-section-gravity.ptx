@@ -85,7 +85,7 @@
             the North Pole <xref ref="ch4-gravity-panels-a" text="local" />,
             the Equator <xref ref="ch4-gravity-panels-b" text="local" />,
             and three intermediate Northern Hemisphere latitudes
-            <xref first="ch4-gravity-panels-c" last="ch4-gravity-panels-e" text="local" />.
+            <xref ref="ch4-gravity-panels-c" text="type-global" /><ndash /><xref ref="ch4-gravity-panels-e" text="type-global" />.
             The unlabeled dashed vector results from the sum of the gravitational and centrifugal forces,
             which are solid and labeled with the vector expressions for their corresponding accelerations,
             <m>\vec{g^*}</m> and <m>-\vec{\Omega} \times (\vec{\Omega} \times \vec{r})</m>, respectively.

@@ -206,7 +206,7 @@
 
     <p>
         The alternative forms of the buoyancy acceleration given by
-        <xref first="eqn-buoyancy-acceleration-density" last="eqn-buoyancy-acceleration-potential-temperature"/>
+        <xref ref="eqn-buoyancy-acceleration-density" text="type-global" /><ndash /><xref ref="eqn-buoyancy-acceleration-potential-temperature" text="type-global" />
         lead to the following three cases,
         which are depicted in <xref ref="ch7-buoyancy" text="type-global" /> below.
     </p>

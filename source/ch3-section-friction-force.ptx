@@ -126,7 +126,7 @@
 
         <p>
             We combine the three component accelerations of
-            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
+            <xref ref="eqn-friction-acceleration-x" text="type-global" /><ndash /><xref ref="eqn-friction-acceleration-z" text="type-global" />
             into the <term>viscous friction force per unit mass</term>,
             or the <term>viscous friction acceleration</term>:
         </p>
@@ -147,7 +147,7 @@
 
         <p>
             The complete derivation of
-            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
+            <xref ref="eqn-friction-acceleration-x" text="type-global" /><ndash /><xref ref="eqn-friction-acceleration-z" text="type-global" />
             and
             <xref ref="eqn-friction-acceleration" text="type-global" />
             is beyond the scope of this course: See
@@ -155,7 +155,7 @@
             for a detailed derivation.
             <xref ref="martin" text="custom">Martin (2006)</xref>
             presents a simplified derivation of
-            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />
+            <xref ref="eqn-friction-acceleration-x" text="type-global" /><ndash /><xref ref="eqn-friction-acceleration-z" text="type-global" />
             in his Subsection 2.1.3;
             since the viscous friction force can be neglected in most meteorological applications,
             as discussed below,
@@ -170,7 +170,7 @@
             the second-order derivatives encompassed by the Laplacian of <m>\vec{u}</m>,
             <m>\nabla^2 \vec{u}</m>,
             and shown explicitly for each component of <m>\vec{u}</m> in
-            <xref first="eqn-friction-acceleration-x" last="eqn-friction-acceleration-z" text="type-global" />,
+            <xref ref="eqn-friction-acceleration-x" text="type-global" /><ndash /><xref ref="eqn-friction-acceleration-z" text="type-global" />,
             mean the viscous friction force is present only in moving fluids with nonlinear velocity profiles.
         </p>
 

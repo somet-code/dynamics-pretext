@@ -164,7 +164,7 @@
 
     <p>
         We combine the three component accelerations of
-        <xref first="eqn-airparcel-pressure-acceleration-x" last="eqn-airparcel-pressure-acceleration-z" text="type-global" />
+        <xref ref="eqn-airparcel-pressure-acceleration-x" text="type-global" /><ndash /><xref ref="eqn-airparcel-pressure-acceleration-z" text="type-global" />
         into the <term>pressure gradient force (PGF) per unit mass</term>,
         or the <term>pressure gradient acceleration</term>:
     </p>

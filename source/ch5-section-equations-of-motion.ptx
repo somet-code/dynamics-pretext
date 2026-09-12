@@ -120,7 +120,8 @@
   </p>
 
   <p>
-    All atmospheric motions on any scale are governed by <xref first="eqn-motion-x" last="eqn-motion-z" text="type-global" />.
+    All atmospheric motions on any scale are governed by
+    <xref ref="eqn-motion-x" text="type-global" /><ndash /><xref ref="eqn-motion-z" text="type-global" />.
     And since these equations give the <em>time</em> rate of change of velocity,
     they are <term>prognostic</term> and therefore allow us to predict atmospheric motions at future times!
   </p>

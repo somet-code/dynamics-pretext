@@ -3,7 +3,8 @@
 
   <introduction>
     <p>
-        The three scalar component equations of motion presented in <xref first="eqn-motion-x" last="eqn-motion-z" text="type-global" />
+        The three scalar component equations of motion presented in
+        <xref ref="eqn-motion-x" text="type-global" /><ndash /><xref ref="eqn-motion-z" text="type-global" />
         of Chapter 5 have five unknown dependent variables<mdash /><m>u</m>, <m>v</m>, <m>w</m>, <m>p</m>, and <m>\rho</m><mdash />that are
         functions of the four independent variables <m>x</m>, <m>y</m>, <m>z</m>, and <m>t</m>.
         Since there are two more unknowns than there are equations,
