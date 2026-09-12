@@ -78,13 +78,13 @@
         (as will be discussed in <xref ref="ch7-section-thermodynamics-review-subsection-standard-atmosphere" text="type-global" /> below).
         To avoid writing <m>T</m> as a linear function of <m>z</m>,
         which complicates (but does not prevent) integration,
-        we typically set <m>T = \bar{T}</m> in <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" />,
+        we typically set <m>T = \overline{T}</m> in <xref ref="eqn-hydrostatic-balance-ideal-separated" text="type-global" />,
         where
     </p>
 
     <p>
         <md number="yes">
-            \bar{T}
+            \overline{T}
             =
             \frac
             {\int_{p_2}^{p_1} T \, \frac{1}{p} \, \partial p}
@@ -102,7 +102,7 @@
 
     <p>
         <md xml:id="eqn-hydrostatic-equation-ideal-separated-solved" number="yes">
-            \frac{R_d \bar{T}}{g} \ln{\left( \frac{p_1}{p_2} \right)}
+            \frac{R_d \overline{T}}{g} \ln{\left( \frac{p_1}{p_2} \right)}
             =
             z_2 - z_1
         </md>
@@ -131,13 +131,13 @@
         <md xml:id="eqn-hypsometric-equation" number="yes">
             \Delta z
             =
-            \frac{R_d \bar{T}}{g} \ln{\left( \frac{p_1}{p_2} \right)}
+            \frac{R_d \overline{T}}{g} \ln{\left( \frac{p_1}{p_2} \right)}
         </md>
     </p>
 
     <p>
         According to <xref ref="eqn-hypsometric-equation" text="type-global" />,
-        the warmer the column-average temperature <m>\bar{T}</m>
+        the warmer the column-average temperature <m>\overline{T}</m>
         between pressure levels <m>p_1</m> and <m>p_2</m>,
         the greater the thickness <m>\Delta z</m> of the column of air bounded between those levels.
         Physically,
@@ -181,7 +181,7 @@
         <md xml:id="eqn-hypsometric-equation-geopotential" number="yes">
             \Delta \Phi
             =
-            R_d \bar{T} \ln{\left( \frac{p_1}{p_2} \right)}
+            R_d \overline{T} \ln{\left( \frac{p_1}{p_2} \right)}
         </md>
     </p>
 
@@ -221,7 +221,7 @@
         <md xml:id="eqn-hypsometric-equation-geopotential-height" number="yes">
             \Delta Z
             =
-            \frac{R_d \bar{T}}{g_0} \ln{\left( \frac{p_1}{p_2} \right)}
+            \frac{R_d \overline{T}}{g_0} \ln{\left( \frac{p_1}{p_2} \right)}
         </md>
     </p>
 
@@ -229,7 +229,7 @@
         The interpretation of <xref ref="eqn-hypsometric-equation-geopotential-height" text="type-global" />
         is essentially the same as the interpretation of <xref ref="eqn-hypsometric-equation" text="type-global" />:
         According to <xref ref="eqn-hypsometric-equation-geopotential-height" text="type-global" />,
-        the warmer the column-average temperature <m>\bar{T}</m>
+        the warmer the column-average temperature <m>\overline{T}</m>
         between pressure levels <m>p_1</m> and <m>p_2</m>,
         the greater the <term>geopotential height thickness</term>
     </p>
