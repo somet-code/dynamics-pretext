@@ -1,0 +1,6 @@
+<chapter xml:id="chapter-10" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Thermal Wind Balance</title>
+
+  <xi:include href="ch10-section-thickness.ptx" />
+
+</chapter>

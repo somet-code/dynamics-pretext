@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch10-section-thickness" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Revisiting thickness</title>
+
+  <p>
+    As we learned in <xref ref="ch8-section-mid-latitude-synoptic-scale-analysis" text="custom">Chapter 8</xref>,
+    mid-latitude synoptic scale atmospheric motions are,
+    to a first-order approximation,
+    in geostrophic balance in the horizontal and in hydrostatic balance in the vertical.
+    As we will learn in the current topic,
+    the combination of these balances leads to an interesting and physically significant outcome for the vertical variation of the geostrophic wind
+    when horizontal temperature gradients are present in Earth's atmosphere.
+  </p>
+
+  <p>
+    Recall from <xref ref="ch7-section-thermodynamics-review-subsection-hypsometric-equation" text="custom">Chapter 7</xref>
+    that the hypsometric equation <xref ref="eqn-hypsometric-equation" text="type-global" />
+    follows from the assumption of hydrostatic balance.
+    It further follows that,
+    since mid-latitude synoptic scale atmospheric motions are approximately in hydrostatic balance,
+    the hypsometric equation can be used effectively to describe such motions.
+  </p>
+
+  <p>
+    The hypsometric equation states that the thickness of a column of air bounded between two pressure levels
+    depends on the column's average temperature <m>\overline{T}</m>.
+    This is true whether thickness is measured using geometric height (<m>\Delta z</m>),
+    geopotential (<m>\Delta \Phi</m>),
+    or geopotential height (<m>\Delta Z</m>).
+  </p>
+
+  <p>
+    Consider two columns of perfectly dry air bounded below by pressure level <m>p_0</m> and above by pressure level <m>p_1</m>,
+    where <m>p_0 \gt p_1</m>.
+    For ease of visualization,
+    we will consider <m>p_0</m> to be the surface pressure so the lower boundary of each column corresponds to the ground.
+  </p>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                If these columns of air are identical
+                in every way<mdash />composition, temperature, pressure, and consequently density<mdash />isobaric surfaces within them
+                are found at the same heights,
+                as shown in FIGa below for the isobaric surface corresponding to pressure level <m>p_1</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                If one of these columns of air is colder on average while the other column of air is warmer on average,
+                the colder column compresses vertically while the warmer column expands vertically:
+                Physically,
+                this is because slower (faster) molecular motion within colder (warmer) column of air causes it to compress (expand)
+                and thereby become denser (less dense) than otherwise identical warmer (colder) column of air.
+            </p>
+
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Assuming the surface pressure <m>p_0</m> remains the same at the lower boundary of each column of air,
+                            the other isobaric surfaces within these columns
+                            will be found at lower (higher) heights within the colder (warmer) column of air,
+                            as shown in FIGb below for the isobaric surface corresponding to pressure level <m>p_1</m>.
+                            This result is consistent with the direct relationship between thickness and column-average temperature
+                            given by the hypsometric equation.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    Let's consider another isobaric surface corresponding to pressure level <m>p_{\sfrac{1}{2}}</m>,
+    where the value <m>p_{\sfrac{1}{2}}</m> is halfway between the values <m>p_0</m> and <m>p_1</m>
+    (i.e., <m>p_{\sfrac{1}{2}}</m> is the midpoint of <m>p_0</m> and <m>p_1</m>,
+    so <m>p_{\sfrac{1}{2}} = \dfrac{1}{2}(p_0 + p_1)</m>), as shown in FIG below.
+    As expected,
+    the isobaric surface corresponding to pressure level <m>p_{\sfrac{1}{2}}</m> is found at identical heights in the identical columns of air
+    (FIGa),
+    while it is found closer to (farther above) the surface in the colder (warmer) column of air (FIGb).
+  </p>
+
+  <p>
+    If we connect equal isobaric surfaces in these columns of air,
+    as shown in FIG below,
+    a curious effect becomes apparent:
+    The tilts of the isobaric surfaces connecting the colder and warmer columns of air increase with increasing height!
+    This results because the column-average temperature is warmer in one column between each pair of pressure levels.
+  </p>
+
+  <p>
+    This effect is shown using three-dimensional isobaric surfaces and a gradual horizontal temperature gradient in
+    FIG below.
+    In particular,
+    FIG
+    depicts a meridional temperature gradient reflective of average tropospheric conditions in the Northern Hemisphere,
+    with warmer air to the south in the tropics and colder air to the north in the polar regions.
+    (A mirror image meridional temperature gradient is found on average in the troposphere in the Southern Hemisphere,
+    with warmer air to the north in the tropics and colder air to the south in the polar regions.)
+    The tilt of isobaric surfaces will continue to increase with increasing height until the meridional temperature gradient reverses direction,
+    as happens at the tropopause.
+  </p>
+
+  <p>
+    The scenarios discussed above and visualized below
+    demonstrate that a horizontal temperature gradient leads to geometric height,
+    geopotential,
+    and geopotential height gradients along isobaric surfaces.
+    These in turn lead to a horizontal pressure gradient force directed toward lower geometric height,
+    geopotential,
+    and geopotential height values,
+    consistent with <xref ref="eqn-pga-isobaric-x" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector" text="type-global" />
+    and <xref ref="eqn-pga-isobaric-x-geopotential-height" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector-geopotential-height" text="type-global" />.
+    of <xref ref="ch9-section-isobaric-coordinates-subsection-pgf" text="custom">Chapter 9</xref>.
+  </p>
+
+</section>
