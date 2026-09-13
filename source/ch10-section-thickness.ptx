@@ -35,6 +35,7 @@
     where <m>p_0 \gt p_1</m>.
     For ease of visualization,
     we will consider <m>p_0</m> to be the surface pressure so the lower boundary of each column corresponds to the ground.
+    <xref ref="ch10-columns" text="type-global" /> below shows this scenario.
   </p>
 
   <p>
@@ -44,7 +45,8 @@
                 If these columns of air are identical
                 in every way<mdash />composition, temperature, pressure, and consequently density<mdash />isobaric surfaces within them
                 are found at the same heights,
-                as shown in FIGa below for the isobaric surface corresponding to pressure level <m>p_1</m>.
+                as shown in <xref ref="ch10-columns-start" text="type-global" /> below
+                for the isobaric surface corresponding to pressure level <m>p_1</m>.
             </p>
         </li>
         <li>
@@ -63,7 +65,8 @@
                             Assuming the surface pressure <m>p_0</m> remains the same at the lower boundary of each column of air,
                             the other isobaric surfaces within these columns
                             will be found at lower (higher) heights within the colder (warmer) column of air,
-                            as shown in FIGb below for the isobaric surface corresponding to pressure level <m>p_1</m>.
+                            as shown in <xref ref="ch10-columns-temp" text="type-global" />below
+                            for the isobaric surface corresponding to pressure level <m>p_1</m>.
                             This result is consistent with the direct relationship between thickness and column-average temperature
                             given by the hypsometric equation.
                         </p>
@@ -78,16 +81,17 @@
     Let's consider another isobaric surface corresponding to pressure level <m>p_{\sfrac{1}{2}}</m>,
     where the value <m>p_{\sfrac{1}{2}}</m> is halfway between the values <m>p_0</m> and <m>p_1</m>
     (i.e., <m>p_{\sfrac{1}{2}}</m> is the midpoint of <m>p_0</m> and <m>p_1</m>,
-    so <m>p_{\sfrac{1}{2}} = \dfrac{1}{2}(p_0 + p_1)</m>), as shown in FIG below.
+    so <m>p_{\sfrac{1}{2}} = \dfrac{1}{2}(p_0 + p_1)</m>), as shown in <xref ref="ch10-columns-average" text="type-global" /> below.
     As expected,
     the isobaric surface corresponding to pressure level <m>p_{\sfrac{1}{2}}</m> is found at identical heights in the identical columns of air
-    (FIGa),
-    while it is found closer to (farther above) the surface in the colder (warmer) column of air (FIGb).
+    (<xref ref="ch10-columns-start-average" text="type-global" />),
+    while it is found closer to (farther above) the surface in the colder (warmer) column of air
+    (<xref ref="ch10-columns-temp-average" text="type-global" />).
   </p>
 
   <p>
     If we connect equal isobaric surfaces in these columns of air,
-    as shown in FIG below,
+    as shown in <xref ref="ch10-columns-average-surfaces" text="type-global" /> below,
     a curious effect becomes apparent:
     The tilts of the isobaric surfaces connecting the colder and warmer columns of air increase with increasing height!
     This results because the column-average temperature is warmer in one column between each pair of pressure levels.
@@ -118,5 +122,111 @@
     and <xref ref="eqn-pga-isobaric-x-geopotential-height" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector-geopotential-height" text="type-global" />.
     of <xref ref="ch9-section-isobaric-coordinates-subsection-pgf" text="custom">Chapter 9</xref>.
   </p>
+
+    <figure xml:id="ch10-columns">
+    <caption>
+      Two columns of perfectly dry air with identical composition are bounded below by pressure level <m>p_0</m>
+      and above by pressure level <m>p_1</m>,
+      where <m>p_0</m> is the surface pressure and <m>p_0 \gt p_1</m>.
+    </caption>
+    <sidebyside>
+      <figure xml:id="ch10-columns-start">
+        <caption>
+          When the columns have equal temperature,
+          they are identical in every way,
+          and <m>p_1</m> is found at the same height for each column.
+        </caption>
+        <image source="images/ch10-columns-start.png" width="50%">
+          <shortdescription>
+            Two gray columns of identical width and height,
+            bounded below by the same pressure level and above by the same pressure level of lesser value.
+            Each pressure level is at the same height for each column.
+          </shortdescription>
+        </image>
+      </figure>
+      <figure xml:id="ch10-columns-temp">
+        <caption>
+          When the column on the left becomes colder (indicated by blue shading)
+          while the column on the right becomes warmer (indicated by red shading),
+          without the surface pressure <m>p_0</m> changing,
+          <m>p_1</m> is found at a lower height for the colder column and is found at a higher height for the warmer column.
+          Thus, the colder column has smaller thickness than the warmer column,
+          as indicated by its shorter height.
+        </caption>
+        <image source="images/ch10-columns-temp.png" width="50%">
+          <shortdescription>
+            Shorter blue column on the left and taller red column on the right,
+            bounded below by the same pressure level and above by the same pressure level of lesser value.
+          </shortdescription>
+        </image>
+      </figure>
+    </sidebyside>
+  </figure>
+
+    <figure xml:id="ch10-columns-average">
+    <caption>
+      Reproduction of <xref ref="ch10-columns" text="type-global" />,
+      with an additional isobaric surface corresponding to pressure level <m>p_{\sfrac{1}{2}}</m>
+      halfway between <m>p_0</m> and <m>p_1</m>,
+      i.e., <m>p_{\sfrac{1}{2}} = \dfrac{1}{2}(p_0 + p_1)</m>.
+    </caption>
+    <sidebyside>
+      <figure xml:id="ch10-columns-start-average">
+        <caption />
+        <image source="images/ch10-columns-start-average.png" width="50%">
+          <shortdescription>
+            Two gray columns of identical width and height,
+            bounded below by the same pressure level and above by the same pressure level of lesser value,
+            with the average pressure level between the other pressure levels.
+            Each pressure level is at the same height for each column.
+          </shortdescription>
+        </image>
+      </figure>
+      <figure xml:id="ch10-columns-temp-average">
+        <caption />
+        <image source="images/ch10-columns-temp-average.png" width="50%">
+          <shortdescription>
+            Shorter blue column on the left and taller red column on the right,
+            bounded below by the same pressure level and above by the same pressure level of lesser value,
+            with the average-valued pressure level between the other pressure levels.
+            Each pressure level is lower in the left column compared to the right column.
+          </shortdescription>
+        </image>
+      </figure>
+    </sidebyside>
+  </figure>
+
+    <figure xml:id="ch10-columns-average-surfaces">
+    <caption>
+      Reproduction of <xref ref="ch10-columns-average" text="type-global" />,
+      with isobaric surfaces connected between the columns of air.
+    </caption>
+    <sidebyside>
+      <figure xml:id="ch10-columns-start-average-surfaces">
+        <caption />
+        <image source="images/ch10-columns-start-average-surfaces.png" width="50%">
+          <shortdescription>
+            Two gray columns of identical width and height,
+            bounded below by the same pressure level and above by the same pressure level of lesser value,
+            with the average-valued pressure level between the other pressure levels.
+            Each pressure level is at the same height for each column.
+            Equal pressure levels are connected by sloping isobaric surfaces.
+          </shortdescription>
+        </image>
+      </figure>
+      <figure xml:id="ch10-columns-temp-average-surfaces">
+        <caption />
+        <image source="images/ch10-columns-temp-average-surfaces.png" width="50%">
+          <shortdescription>
+            Shorter blue column on the left and taller red column on the right,
+            bounded below by the same pressure level and above by the same pressure level of lesser value,
+            with the average-valued pressure level between the other pressure levels.
+            Each pressure level is lower in the left column compared to the right column.
+            Equal pressure levels are connected by sloping isobaric surfaces.
+          </shortdescription>
+        </image>
+      </figure>
+    </sidebyside>
+  </figure>
 
 </section>
