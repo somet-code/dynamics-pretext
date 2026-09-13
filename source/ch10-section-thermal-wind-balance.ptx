@@ -146,10 +146,10 @@
     Another immediate implication of
     <xref ref="eqn-thermal-wind-balance-vector" text="type-global" /><ndash /><xref ref="eqn-thermal-wind-balance-y" text="type-global" />
     is that the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest.
-    An example of this for the Northern Hemisphere is shown in <xref ref="ch10-thermal-wind" text="type-global" /> below.
+    An example of this for the Northern Hemisphere is shown in <xref ref="ch10-thermal-wind-balance" text="type-global" /> below.
   </p>
 
-  <figure xml:id="ch10-thermal-wind">
+  <figure xml:id="ch10-thermal-wind-balance">
     <caption>
         The -12°C and -14°C isotherms are contoured on a 500 hPa map for the Northern Hemisphere.
         At the location between the isotherms marked by the circle,
@@ -161,7 +161,7 @@
         gives the direction and magnitude of the change of <m>\vec{v}_g</m> at 500 hPa,
         not <m>\vec{v}_g</m> at 500 hPa itself.
     </caption>
-    <image source="images/ch10-thermal-wind.png" width="80%">
+    <image source="images/ch10-thermal-wind-balance.png" width="80%">
         <shortdescription>
             The vector representing the local vertical shear of the geostrophic wind points parallel to two isotherms on an isobaric surface
             with colder air to its left in the Northern Hemisphere.
