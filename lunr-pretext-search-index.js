@@ -2431,13 +2431,40 @@ var ptx_lunr_docs = [
   "body": "thermal wind balance "
 },
 {
-  "id": "ch10-thermal-wind",
+  "id": "ch10-thermal-wind-balance",
   "level": "2",
-  "url": "ch10-section-thermal-wind-balance.html#ch10-thermal-wind",
+  "url": "ch10-section-thermal-wind-balance.html#ch10-thermal-wind-balance",
   "type": "Figure",
   "number": "10.2.1",
   "title": "",
   "body": " The -12°C and -14°C isotherms are contoured on a 500 hPa map for the Northern Hemisphere. At the location between the isotherms marked by the circle, the temperature gradient on the 500 hPa isobaric surface is indicated by the vector labeled , the vector points out of the screen, and the local vertical shear of the geostrophic wind depicted by the vector labeled points parallel to the isotherms with colder air to its left. Note gives the direction and magnitude of the change of at 500 hPa, not at 500 hPa itself.   The vector representing the local vertical shear of the geostrophic wind points parallel to two isotherms on an isobaric surface with colder air to its left in the Northern Hemisphere. This means the vector representing the local vertical shear of the geostrophic wind is 90° to the left of the horizontal temperature gradient vector on the isobaric surface.   "
+},
+{
+  "id": "ch10-section-thermal-wind",
+  "level": "1",
+  "url": "ch10-section-thermal-wind.html",
+  "type": "Section",
+  "number": "10.3",
+  "title": "The thermal wind",
+  "body": " The thermal wind  We can integrate with respect to pressure between pressure levels and , where . As with our derivation of the hypsometric equation in Chapter 7 , we can replace with the pressure-weighted column-average temperature , which is a constant. Then this integration produces      gives the thermal wind  and reveals is the vector difference between the geostrophic wind measured at two pressure levels of interest and . In other words, the thermal wind thus defined is the bulk vertical shear of the geostrophic wind . Furthermore, reveals the thermal wind is directly proportional to the pressure-weighted column-average temperature gradient measured at a pressure level of interest.   produces the following thermal wind components:        Moving the quantity in into the gradient and taking advantage of the form of the hypsometric equation in terms of geopotential  produces an alternative form of the thermal wind equation in terms of geopotential thickness between pressure levels and :     with components        Similarly, multiplying and dividing by , moving the quantity into the gradient, and taking advantage of the form of the hypsometric equation in terms of geopotential height  produces another alternative form of the thermal wind equation, this time in terms of geopotential height thickness between pressure levels and :     with components         and reveal the thermal wind is directly proportional to the thickness gradient measured at a pressure level of interest. Furthermore, these equations reveal the thermal wind flows parallel to thickness contours for two pressure levels of interest, similar to how reveals the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest. An example for the Northern Hemisphere of the thermal wind flowing parallel to geopotential height thickness contours is shown in below.   The 552 dam and 558 dam contours of 1000 500 hPa thickness are contoured on a 1000 500 hPa thickness map for the Northern Hemisphere. At the location between the contours marked by the circle, the 1000 500 hPa thickness gradient is indicated by the vector labeled , the vector points out of the screen, and the thermal wind depicted by the vector labeled points parallel to the thickness contours with smaller thickness to its left. Note gives the bulk shear of between 1000 hPa and 500 hPa, i.e., .   The vector representing the thermal wind points parallel to two thickness contours on an isobaric surface with smaller thickness to its left in the Northern Hemisphere. This means the vector representing the thermal wind is 90° to the left of the horizontal geopotential height thickness gradient vector on the isobaric surface.    "
+},
+{
+  "id": "ch10-section-thermal-wind-4",
+  "level": "2",
+  "url": "ch10-section-thermal-wind.html#ch10-section-thermal-wind-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "thermal wind bulk vertical shear of the geostrophic wind "
+},
+{
+  "id": "ch10-thermal-wind",
+  "level": "2",
+  "url": "ch10-section-thermal-wind.html#ch10-thermal-wind",
+  "type": "Figure",
+  "number": "10.3.1",
+  "title": "",
+  "body": " The 552 dam and 558 dam contours of 1000 500 hPa thickness are contoured on a 1000 500 hPa thickness map for the Northern Hemisphere. At the location between the contours marked by the circle, the 1000 500 hPa thickness gradient is indicated by the vector labeled , the vector points out of the screen, and the thermal wind depicted by the vector labeled points parallel to the thickness contours with smaller thickness to its left. Note gives the bulk shear of between 1000 hPa and 500 hPa, i.e., .   The vector representing the thermal wind points parallel to two thickness contours on an isobaric surface with smaller thickness to its left in the Northern Hemisphere. This means the vector representing the thermal wind is 90° to the left of the horizontal geopotential height thickness gradient vector on the isobaric surface.   "
 },
 {
   "id": "references",
