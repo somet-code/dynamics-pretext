@@ -99,9 +99,9 @@
 
   <p>
     This effect is shown using three-dimensional isobaric surfaces and a gradual horizontal temperature gradient in
-    FIG below.
+    <xref ref="ch10-thermal-wind-stull" text="type-global" /> below.
     In particular,
-    FIG
+    <xref ref="ch10-thermal-wind-stull" text="type-global" />
     depicts a meridional temperature gradient reflective of average tropospheric conditions in the Northern Hemisphere,
     with warmer air to the south in the tropics and colder air to the north in the polar regions.
     (A mirror image meridional temperature gradient is found on average in the troposphere in the Southern Hemisphere,
@@ -227,6 +227,34 @@
         </image>
       </figure>
     </sidebyside>
+  </figure>
+
+  <figure xml:id="ch10-thermal-wind-stull">
+    <caption>
+      Four isobaric surfaces corresponding to pressure levels <m>p_0 = 90 \, \text{kPa}</m>,
+      <m>p_1 = 80 \, \text{kPa}</m>,
+      <m>p_2 = 70 \, \text{kPa}</m>,
+      and <m>p_3 = 60 \, \text{kPa}</m>,
+      where <m>1 \, \text{kPa} = 10 \, \text{hPa}</m>.
+      Darker brown shading of the surfaces corresponds to higher pressure. 
+      A horizontal temperature gradient similar to Earth's meridional temperature gradient in the Northern Hemisphere,
+      with cooler air to the north in the polar regions and warmer air to the south in the tropics,
+      causes the isobaric surfaces to increasingly tilt upward with increasing height toward the tropics
+      due to increasing thickness with increasing height.
+      Greater tilt of an isobaric surface creates a stronger horizontal pressure gradient force,
+      which drives a stronger zonal geostrophic wind <m>u_g</m>,
+      as plotted with black vectors for the Northern Hemisphere.
+      Figure and caption modified from Fig. 11.20 of <xref ref="stull" text="custom">Stull (2017)</xref>
+      under <url href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</url>.
+    </caption>
+    <image source="images/ch10-thermal-wind-stull.png" width="80%">
+      <shortdescription>
+        Four isobaric surfaces in the Northern Hemisphere,
+        with increasing distance between them with increasing height in the tropics
+        and smaller distance between them in the polar regions,
+        leading to a faster geostrophic wind with increasing height.
+      </shortdescription>
+    </image>
   </figure>
 
 </section>
