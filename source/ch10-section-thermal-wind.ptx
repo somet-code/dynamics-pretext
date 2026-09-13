@@ -3,174 +3,179 @@
 <section xml:id="ch10-section-thermal-wind" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The thermal wind</title>
 
-  <p>
-    We can integrate <xref ref="eqn-geostrophic-wind-shear-vector" text="type-global" />
-    with respect to pressure <m>p</m> between pressure levels <m>p_1</m> and <m>p_2</m>,
-    where <m>p_1 \gt p_2</m>.
-    As with our
-    <xref ref="ch7-section-thermodynamics-review-subsection-hypsometric-equation" text="custom"> derivation of the hypsometric equation in Chapter 7</xref>,
-    we can replace <m>T</m> with the pressure-weighted column-average temperature <m>\overline{T}</m>,
-    which is a constant.
-    Then this integration produces
-  </p>
+  <introduction>
+    <p>
+      We can integrate <xref ref="eqn-geostrophic-wind-shear-vector" text="type-global" />
+      with respect to pressure <m>p</m> between pressure levels <m>p_1</m> and <m>p_2</m>,
+      where <m>p_1 \gt p_2</m>.
+      As with our
+      <xref ref="ch7-section-thermodynamics-review-subsection-hypsometric-equation" text="custom"> derivation of the hypsometric equation in Chapter 7</xref>,
+      we can replace <m>T</m> with the pressure-weighted column-average temperature <m>\overline{T}</m>,
+      which is a constant.
+      Then this integration produces
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-vector" number="yes">
-        \vec{v}_T = \vec{v}_g(p_2) - \vec{v}_g(p_1)
-        =
-        \frac{R_d}{f}\ln{\left( \frac{p_1}{p_2} \right)} \hat{k} \times \nabla_p \overline{T}
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-vector" number="yes">
+          \vec{v}_T = \vec{v}_g(p_2) - \vec{v}_g(p_1)
+          =
+          \frac{R_d}{f}\ln{\left( \frac{p_1}{p_2} \right)} \hat{k} \times \nabla_p \overline{T}
+      </md>
+    </p>
 
-  <p>
-    <xref ref="eqn-thermal-wind-vector" text="type-global" />
-    gives the <term>thermal wind</term> <m>\vec{v}_T</m>
-    and reveals <m>\vec{v}_T</m>
-    is the vector difference between the geostrophic wind measured at two pressure levels of interest <m>p_1</m> and <m>p_2</m>.
-    In other words,
-    the thermal wind thus defined is the <term>bulk vertical shear of the geostrophic wind</term>.
-    Furthermore,
-    <xref ref="eqn-thermal-wind-vector" text="type-global" />
-    reveals the thermal wind is directly proportional to the pressure-weighted column-average temperature gradient
-    measured at a pressure level of interest.
-  </p>
+    <p>
+      <xref ref="eqn-thermal-wind-vector" text="type-global" />
+      gives the <term>thermal wind</term> <m>\vec{v}_T</m>
+      and reveals <m>\vec{v}_T</m>
+      is the vector difference between the geostrophic wind measured at two pressure levels of interest <m>p_1</m> and <m>p_2</m>.
+      In other words,
+      the thermal wind thus defined is the <term>bulk vertical shear of the geostrophic wind</term>.
+      Furthermore,
+      <xref ref="eqn-thermal-wind-vector" text="type-global" />
+      reveals the thermal wind is directly proportional to the pressure-weighted column-average temperature gradient
+      measured at a pressure level of interest.
+    </p>
 
-  <p>
-    <xref ref="eqn-thermal-wind-vector" text="type-global" /> produces the following thermal wind components:
-  </p>
+    <p>
+      <xref ref="eqn-thermal-wind-vector" text="type-global" /> produces the following thermal wind components:
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-x" number="yes">
-        u_T
-        =
-        -\frac{R_d}{f} \ln{\left( \frac{p_1}{p_2} \right)}
-        \left( \frac{\partial \overline{T}}{\partial y} \right)_p
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-x" number="yes">
+          u_T
+          =
+          -\frac{R_d}{f} \ln{\left( \frac{p_1}{p_2} \right)}
+          \left( \frac{\partial \overline{T}}{\partial y} \right)_p
+      </md>
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-y" number="yes">
-        v_T
-        =
-        \frac{R_d}{f} \ln{\left( \frac{p_1}{p_2} \right)}
-        \left( \frac{\partial \overline{T}}{\partial x} \right)_p
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-y" number="yes">
+          v_T
+          =
+          \frac{R_d}{f} \ln{\left( \frac{p_1}{p_2} \right)}
+          \left( \frac{\partial \overline{T}}{\partial x} \right)_p
+      </md>
+    </p>
 
-  <p>
-    Moving the quantity <m>R_d \ln{\left( \dfrac{p_1}{p_2} \right)}</m>
-    in <xref ref="eqn-thermal-wind-vector" text="type-global" />
-    into the gradient
-    and taking advantage of the form of the hypsometric equation in terms of geopotential <m>\Phi</m>
-    <xref ref="eqn-hypsometric-equation-geopotential" text="type-global" />
-    produces an alternative form of the thermal wind equation in terms of geopotential thickness <m>\Delta \Phi</m>
-    between pressure levels <m>p_1</m> and <m>p_2</m>:
-  </p>
+    <p>
+      Moving the quantity <m>R_d \ln{\left( \dfrac{p_1}{p_2} \right)}</m>
+      in <xref ref="eqn-thermal-wind-vector" text="type-global" />
+      into the gradient
+      and taking advantage of the form of the hypsometric equation in terms of geopotential <m>\Phi</m>
+      <xref ref="eqn-hypsometric-equation-geopotential" text="type-global" />
+      produces an alternative form of the thermal wind equation in terms of geopotential thickness <m>\Delta \Phi</m>
+      between pressure levels <m>p_1</m> and <m>p_2</m>:
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-vector-geopotential" number="yes">
-        \vec{v}_T
-        =
-        \vec{v}_g(p_2) - \vec{v}_g(p_1)
-        =
-        \frac{1}{f} \hat{k} \times \nabla_p (\Delta \Phi)
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-vector-geopotential" number="yes">
+          \vec{v}_T
+          =
+          \vec{v}_g(p_2) - \vec{v}_g(p_1)
+          =
+          \frac{1}{f} \hat{k} \times \nabla_p (\Delta \Phi)
+      </md>
+    </p>
 
-  <p>
-    with components
-  </p>
+    <p>
+      with components
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-geopotential-x" number="yes">
-        u_T
-        =
-        -\frac{1}{f} \left( \frac{\partial (\Delta \Phi)}{\partial y} \right)_p
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-geopotential-x" number="yes">
+          u_T
+          =
+          -\frac{1}{f} \left( \frac{\partial (\Delta \Phi)}{\partial y} \right)_p
+      </md>
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-geopotential-y" number="yes">
-        v_T
-        =
-        \frac{1}{f} \left( \frac{\partial (\Delta \Phi)}{\partial x} \right)_p
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-geopotential-y" number="yes">
+          v_T
+          =
+          \frac{1}{f} \left( \frac{\partial (\Delta \Phi)}{\partial x} \right)_p
+      </md>
+    </p>
 
-  <p>
-    Similarly,
-    multiplying and dividing <xref ref="eqn-thermal-wind-vector" text="type-global" />
-    by <m>g_0</m>,
-    moving the quantity <m>\dfrac{R_d}{g_0} \ln{\left( \dfrac{p_1}{p_2} \right)}</m> into the gradient,
-    and taking advantage of the form of the hypsometric equation in terms of geopotential height <m>Z</m>
-    <xref ref="eqn-hypsometric-equation-geopotential-height" text="type-global" />
-    produces another alternative form of the thermal wind equation,
-    this time in terms of geopotential height thickness <m>\Delta Z</m>
-    between pressure levels <m>p_1</m> and <m>p_2</m>:
-  </p>
+    <p>
+      Similarly,
+      multiplying and dividing <xref ref="eqn-thermal-wind-vector" text="type-global" />
+      by <m>g_0</m>,
+      moving the quantity <m>\dfrac{R_d}{g_0} \ln{\left( \dfrac{p_1}{p_2} \right)}</m> into the gradient,
+      and taking advantage of the form of the hypsometric equation in terms of geopotential height <m>Z</m>
+      <xref ref="eqn-hypsometric-equation-geopotential-height" text="type-global" />
+      produces another alternative form of the thermal wind equation,
+      this time in terms of geopotential height thickness <m>\Delta Z</m>
+      between pressure levels <m>p_1</m> and <m>p_2</m>:
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-vector-geopotential-height" number="yes">
-        \vec{v}_T
-        =
-        \vec{v}_g(p_2) - \vec{v}_g(p_1)
-        =
-        \frac{g_0}{f} \hat{k} \times \nabla_p (\Delta Z)
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-vector-geopotential-height" number="yes">
+          \vec{v}_T
+          =
+          \vec{v}_g(p_2) - \vec{v}_g(p_1)
+          =
+          \frac{g_0}{f} \hat{k} \times \nabla_p (\Delta Z)
+      </md>
+    </p>
 
-  <p>
-    with components
-  </p>
+    <p>
+      with components
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-geopotential-height-x" number="yes">
-        u_T
-        =
-        -\frac{g_0}{f} \left( \frac{\partial (\Delta Z)}{\partial y} \right)_p
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-geopotential-height-x" number="yes">
+          u_T
+          =
+          -\frac{g_0}{f} \left( \frac{\partial (\Delta Z)}{\partial y} \right)_p
+      </md>
+    </p>
 
-  <p>
-    <md xml:id="eqn-thermal-wind-geopotential-height-y" number="yes">
-        v_T
-        =
-        \frac{g_0}{f} \left( \frac{\partial (\Delta Z)}{\partial x} \right)_p
-    </md>
-  </p>
+    <p>
+      <md xml:id="eqn-thermal-wind-geopotential-height-y" number="yes">
+          v_T
+          =
+          \frac{g_0}{f} \left( \frac{\partial (\Delta Z)}{\partial x} \right)_p
+      </md>
+    </p>
 
-  <p>
-    <xref ref="eqn-thermal-wind-vector-geopotential" text="type-global" />
-    and  <xref ref="eqn-thermal-wind-vector-geopotential-height" text="type-global" />
-    reveal the thermal wind is directly proportional to the thickness gradient measured at a pressure level of interest.
-    Furthermore,
-    these equations reveal the thermal wind flows parallel to thickness contours for two pressure levels of interest,
-    similar to how <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
-    reveals the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest.
-    An example for the Northern Hemisphere of the thermal wind flowing parallel to geopotential height thickness contours
-    is shown in <xref ref="ch10-thermal-wind" text="type-global" /> below.
-  </p>
+    <p>
+      <xref ref="eqn-thermal-wind-vector-geopotential" text="type-global" />
+      and  <xref ref="eqn-thermal-wind-vector-geopotential-height" text="type-global" />
+      reveal the thermal wind is directly proportional to the thickness gradient measured at a pressure level of interest.
+      Furthermore,
+      these equations reveal the thermal wind flows parallel to thickness contours for two pressure levels of interest,
+      similar to how <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
+      reveals the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest.
+      An example for the Northern Hemisphere of the thermal wind flowing parallel to geopotential height thickness contours
+      is shown in <xref ref="ch10-thermal-wind" text="type-global" /> below.
+    </p>
 
-  <figure xml:id="ch10-thermal-wind">
-    <caption>
-        The 552 dam and 558 dam contours of 1000<ndash />500 hPa thickness
-        are contoured on a 1000<ndash />500 hPa thickness map for the Northern Hemisphere.
-        At the location between the contours marked by the circle,
-        the 1000<ndash />500 hPa thickness gradient is indicated by the vector labeled <m>\nabla_p (\Delta Z)</m>,
-        the <m>\hat{k}</m> vector points out of the screen,
-        and the thermal wind depicted by the vector labeled <m>\vec{v}_T</m>
-        points parallel to the thickness contours with smaller thickness to its left.
-        Note <m>\vec{v}_T</m> gives the bulk shear of <m>\vec{v}_g</m> between 1000 hPa and 500 hPa,
-        i.e., <m>\vec{v}_T = \vec{v}_{g,500 \, \text{hPa}} - \vec{v}_{g,1000 \, \text{hPa}}</m>.
-    </caption>
-    <image source="images/ch10-thermal-wind.png" width="60%">
-        <shortdescription>
-            The vector representing the thermal wind points parallel to two thickness contours on an isobaric surface
-            with smaller thickness to its left in the Northern Hemisphere.
-            This means the vector representing the thermal wind
-            is 90° to the left of the horizontal geopotential height thickness gradient vector on the isobaric surface.
-        </shortdescription>
-    </image>
-  </figure>
+    <figure xml:id="ch10-thermal-wind">
+      <caption>
+          The 552 dam and 558 dam contours of 1000<ndash />500 hPa thickness
+          are contoured on a 1000<ndash />500 hPa thickness map for the Northern Hemisphere.
+          At the location between the contours marked by the circle,
+          the 1000<ndash />500 hPa thickness gradient is indicated by the vector labeled <m>\nabla_p (\Delta Z)</m>,
+          the <m>\hat{k}</m> vector points out of the screen,
+          and the thermal wind depicted by the vector labeled <m>\vec{v}_T</m>
+          points parallel to the thickness contours with smaller thickness to its left.
+          Note <m>\vec{v}_T</m> gives the bulk shear of <m>\vec{v}_g</m> between 1000 hPa and 500 hPa,
+          i.e., <m>\vec{v}_T = \vec{v}_{g,500 \, \text{hPa}} - \vec{v}_{g,1000 \, \text{hPa}}</m>.
+      </caption>
+      <image source="images/ch10-thermal-wind.png" width="60%">
+          <shortdescription>
+              The vector representing the thermal wind points parallel to two thickness contours on an isobaric surface
+              with smaller thickness to its left in the Northern Hemisphere.
+              This means the vector representing the thermal wind
+              is 90° to the left of the horizontal geopotential height thickness gradient vector on the isobaric surface.
+          </shortdescription>
+      </image>
+    </figure>
+
+  </introduction>
+
+  <xi:include href="ch10-section-thermal-wind-subsection-temperature-advection.ptx" />
 
 </section>

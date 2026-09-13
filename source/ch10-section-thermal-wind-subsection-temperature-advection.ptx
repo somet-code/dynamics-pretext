@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch10-section-thermal-wind-subsection-temperature-advection" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Temperature advection</title>
+
+    <p>
+        As the three alternative forms of the thermal wind given by
+        <xref ref="eqn-thermal-wind-vector" text="type-global" />,
+        <xref ref="eqn-thermal-wind-vector-geopotential" text="type-global" />,
+        and <xref ref="eqn-thermal-wind-vector-geopotential-height" text="type-global" />
+        show,
+        the thermal wind is the vector difference of the geostrophic wind measured at two pressure levels of interest <m>p_1</m> and <m>p_2</m>,
+        where <m>p_1 \gt p_2</m>:
+    </p>
+
+    <p>
+        <md xml:id="eqn-thermal-wind-vector-general" number="yes">
+            \vec{v}_T = \vec{v}_g(p_2) - \vec{v}_g(p_1)
+        </md>
+    </p>
+
+    <p>
+        An example of the geostrophic and thermal winds for
+        <m>p_1 = 1000 \, \text{hPa}</m>
+        and <m>p_2 = 500 \, \text{hPa}</m>
+        for the Northern Hemisphere is shown in <xref ref="ch10-thermal-wind-veer-start" text="type-global" /> below.
+        Note the geostrophic wind drawn in <xref ref="ch10-thermal-wind-veer-start" text="type-global" /> <term>veers</term> (turns clockwise) with increasing height. 
+    </p>
+
+    <figure xml:id="ch10-thermal-wind-veer-start">
+        <caption>
+            Labeled vectors give an example of the 1000 hPa and 500 hPa geostrophic wind
+            (thin purple vectors labeled <m>\vec{v}_{g,1000}</m> and <m>\vec{v}_{g,500}</m>, respectively)
+            and the corresponding thermal wind
+            (thick black vector labeled <m>\vec{v}_T</m>)
+            at a Northern Hemisphere location of interest.
+            Since the 1000 hPa pressure level is found at a lower height than the 500 hPa pressure level,
+            note the geostrophic wind veers (turns clockwise) with increasing height.
+        </caption>
+        <image source="images/ch10-thermal-wind-veer-start.png" width="60%">
+            <shortdescription>
+                Two geostrophic wind vectors drawn with their tails at the same point
+                that turn clockwise with increasing height.
+                The resulting thermal wind vector is drawn
+                with its tail at the tip of the lower geostrophic wind vector
+                and its tip at the tip of the higher geostrophic wind vector.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>
