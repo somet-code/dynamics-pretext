@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch10-section-thermal-wind-balance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Thermal wind balance and the vertical shear of the geostrophic wind</title>
+
+  <p>
+    As with our
+    <xref ref="ch7-section-thermodynamics-review-subsection-hypsometric-equation" text="custom"> derivation of the hypsometric equation in Chapter 7</xref>,
+    we begin with the equation of hydrostatic balance,
+    this time written in isobaric coordinates and with the ideal gas law already inserted for density,
+    as given by <xref ref="eqn-hydrostatic-balance-isobaric-ideal-reproduced" text="type-global" /> below.
+    This is a reproduction of <xref ref="eqn-hydrostatic-balance-isobaric-ideal" text="type-global" />
+    of <xref ref="ch9-section-isobaric-coordinates-subsection-hydrostatic-balance" text="custom">Chapter 9</xref>.
+  </p>
+
+  <p>
+    <md xml:id="eqn-hydrostatic-balance-isobaric-ideal-reproduced" number="yes">
+      \frac{\partial \Phi}{\partial p} = -\frac{R_d T}{p}
+    </md>
+  </p>
+
+  <p>
+    We recall from <xref ref="eqn-geostrophic-wind-vector-isobaric" text="type-global" />
+    of <xref ref="ch9-section-isobaric-coordinates-subsection-geostrophic" text="custom">Chapter 9</xref>
+    that the geostrophic wind in isobaric coordinates can be written in terms of geopotential <m>\Phi</m> as
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-vector-isobaric-reproduced" number="yes">
+      \vec{v}_g = \frac{1}{f} \, \hat{k} \times \nabla_p \Phi
+    </md>
+  </p>
+
+  <p>
+    We differentiate <xref ref="eqn-geostrophic-wind-vector-isobaric-reproduced" text="type-global" />
+    with respect to <m>p</m>,
+    taking advantage of the fact that the Coriolis parameter <m>f</m> is not a function of <m>p</m>
+    and therefore behaves as a constant multiplier:
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-shear-vector-start" number="yes">
+        \frac{\partial \vec{v}_g}{\partial p}
+        =
+        \frac{1}{f} \, \hat{k} \times \nabla_p \frac{\partial \Phi}{\partial p}
+    </md>
+  </p>
+
+  <p>
+    Substituting <xref ref="eqn-hydrostatic-balance-isobaric-ideal-reproduced" text="type-global" />
+    into <xref ref="eqn-geostrophic-wind-shear-vector-start" text="type-global" />
+    produces
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-shear-vector-intermediate" number="yes">
+        \frac{\partial \vec{v}_g}{\partial p}
+        =
+        \frac{1}{f} \, \hat{k} \times \nabla_p \left( -\frac{R_d T}{p} \right)
+    </md>
+  </p>
+
+  <p>
+    Since <m>R_d</m> is treated as a constant and <m>p</m> is constant on an isobaric surface,
+    <xref ref="eqn-geostrophic-wind-shear-vector-intermediate" text="type-global" /> simplifies to
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-shear-vector" number="yes">
+        \frac{\partial \vec{v}_g}{\partial p}
+        =
+        -\frac{R_d}{fp} \, \hat{k} \times \nabla_p T
+    </md>
+  </p>
+
+  <p>
+    which reveals that the <term>local vertical shear of the geostrophic wind</term>
+    given by <m>\dfrac{\partial \vec{v}_g}{\partial p}</m>
+    is proportional to the horizontal temperature gradient <m>\nabla_p T</m>
+    measured on an isobaric surface of interest.
+    It is important to note that <xref ref="eqn-geostrophic-wind-shear-vector" text="type-global" />
+    gives a <em>vertical shear of a horizontal wind</em>,
+    not a wind itself.
+  </p>
+
+  <p>
+    Since pressure decreases with increasing height,
+    it is convenient to multiply both sides of <xref ref="eqn-geostrophic-wind-shear-vector" text="type-global" />
+    by <m>-1</m>, as <m>-\dfrac{\partial \vec{v}_g}{\partial p}</m> is measured vertically upward.
+  </p>
+
+  <p>
+    <md xml:id="eqn-thermal-wind-balance-vector" number="yes">
+        -\frac{\partial \vec{v}_g}{\partial p}
+        =
+        \frac{R_d}{fp} \, \hat{k} \times \nabla_p T
+    </md>
+  </p>
+
+  <p>
+    This relationship given by <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
+    is called <term>thermal wind balance</term>.
+  </p>
+
+  <p>
+    <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
+    produces the following components of the local vertical shear of the geostrophic wind,
+    i.e., the components of thermal wind balance:
+  </p>
+
+  <p>
+    <md xml:id="eqn-thermal-wind-balance-x" number="yes">
+        -\frac{\partial u_g}{\partial p}
+        =
+        -\frac{R_d}{f p} \left( \frac{\partial T}{\partial y} \right)_p
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-thermal-wind-balance-y" number="yes">
+        -\frac{\partial v_g}{\partial p}
+        =
+        \frac{R_d}{f p} \left( \frac{\partial T}{\partial x} \right)_p
+    </md>
+  </p>
+
+  <p>
+    Physically,
+    we can interpret thermal wind balance as given by
+    <xref ref="eqn-thermal-wind-balance-vector" text="type-global" /><ndash /><xref ref="eqn-thermal-wind-balance-y" text="type-global" />
+    as the combination of geostrophic balance in the horizontal and hydrostatic balance in the vertical.
+  </p>
+
+  <p>
+    An immediate implication of
+    <xref ref="eqn-thermal-wind-balance-vector" text="type-global" /><ndash /><xref ref="eqn-thermal-wind-balance-y" text="type-global" />
+    is that,
+    if there is no horizontal temperature gradient on an isobaric surface of interest,
+    there is no vertical shear of the geostrophic wind at the corresponding pressure level.
+    In other words,
+    the geostrophic wind is locally constant with height.
+    We will explore this scenario later in SECTION.
+  </p>
+
+  <p>
+    Another immediate implication of
+    <xref ref="eqn-thermal-wind-balance-vector" text="type-global" /><ndash /><xref ref="eqn-thermal-wind-balance-y" text="type-global" />
+    is that the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest.
+    An example of this for the Northern Hemisphere is shown in <xref ref="ch10-thermal-wind" text="type-global" /> below.
+  </p>
+
+  <figure xml:id="ch10-thermal-wind">
+    <caption>
+        The -12°C and -14°C isotherms are contoured on a 500 hPa map for the Northern Hemisphere.
+        At the location between the isotherms marked by the circle,
+        the temperature gradient on the 500 hPa isobaric surface is indicated by the vector labeled <m>\nabla_p T</m>,
+        the <m>\hat{k}</m> vector points out of the screen,
+        and the local vertical shear of the geostrophic wind depicted by the vector labeled <m>-\dfrac{\partial \vec{v}_g}{\partial p}</m>
+        points parallel to the isotherms with colder air to its left.
+        Note <m>-\dfrac{\partial \vec{v}_g}{\partial p}</m>
+        gives the direction and magnitude of the change of <m>\vec{v}_g</m> at 500 hPa,
+        not <m>\vec{v}_g</m> at 500 hPa itself.
+    </caption>
+    <image source="images/ch10-thermal-wind.png" width="80%">
+        <shortdescription>
+            The vector representing the local vertical shear of the geostrophic wind points parallel to two isotherms on an isobaric surface
+            with colder air to its left in the Northern Hemisphere.
+            This means the vector representing the local vertical shear of the geostrophic wind
+            is 90° to the left of the horizontal temperature gradient vector on the isobaric surface.
+        </shortdescription>
+    </image>
+  </figure>
+
+</section>

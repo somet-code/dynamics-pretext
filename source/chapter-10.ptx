@@ -2,5 +2,6 @@
   <title>Thermal Wind Balance</title>
 
   <xi:include href="ch10-section-thickness.ptx" />
+  <xi:include href="ch10-section-thermal-wind-balance.ptx" />
 
 </chapter>
