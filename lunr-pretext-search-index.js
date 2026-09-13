@@ -2359,11 +2359,92 @@ var ptx_lunr_docs = [
   "body": " Selected references     Chapter 4 of Martin (2006) : See tentative course schedule for specific readings.    Chapters 1 and 3 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 7 of Marshall and Plumb (2007)      "
 },
 {
+  "id": "ch10-section-thickness",
+  "level": "1",
+  "url": "ch10-section-thickness.html",
+  "type": "Section",
+  "number": "10.1",
+  "title": "Revisiting thickness",
+  "body": " Revisiting thickness  As we learned in Chapter 8 , mid-latitude synoptic scale atmospheric motions are, to a first-order approximation, in geostrophic balance in the horizontal and in hydrostatic balance in the vertical. As we will learn in the current topic, the combination of these balances leads to an interesting and physically significant outcome for the vertical variation of the geostrophic wind when horizontal temperature gradients are present in Earth's atmosphere.  Recall from Chapter 7 that the hypsometric equation follows from the assumption of hydrostatic balance. It further follows that, since mid-latitude synoptic scale atmospheric motions are approximately in hydrostatic balance, the hypsometric equation can be used effectively to describe such motions.  The hypsometric equation states that the thickness of a column of air bounded between two pressure levels depends on the column's average temperature . This is true whether thickness is measured using geometric height ( ), geopotential ( ), or geopotential height ( ).  Consider two columns of perfectly dry air bounded below by pressure level and above by pressure level , where . For ease of visualization, we will consider to be the surface pressure so the lower boundary of each column corresponds to the ground. below shows this scenario.     If these columns of air are identical in every way composition, temperature, pressure, and consequently density isobaric surfaces within them are found at the same heights, as shown in below for the isobaric surface corresponding to pressure level .    If one of these columns of air is colder on average while the other column of air is warmer on average, the colder column compresses vertically while the warmer column expands vertically: Physically, this is because slower (faster) molecular motion within colder (warmer) column of air causes it to compress (expand) and thereby become denser (less dense) than otherwise identical warmer (colder) column of air.     Assuming the surface pressure remains the same at the lower boundary of each column of air, the other isobaric surfaces within these columns will be found at lower (higher) heights within the colder (warmer) column of air, as shown in below for the isobaric surface corresponding to pressure level . This result is consistent with the direct relationship between thickness and column-average temperature given by the hypsometric equation.        Let's consider another isobaric surface corresponding to pressure level , where the value is halfway between the values and (i.e., is the midpoint of and , so ), as shown in below. As expected, the isobaric surface corresponding to pressure level is found at identical heights in the identical columns of air ( ), while it is found closer to (farther above) the surface in the colder (warmer) column of air ( ).  If we connect equal isobaric surfaces in these columns of air, as shown in below, a curious effect becomes apparent: The tilts of the isobaric surfaces connecting the colder and warmer columns of air increase with increasing height! This results because the column-average temperature is warmer in one column between each pair of pressure levels.  This effect is shown using three-dimensional isobaric surfaces and a gradual horizontal temperature gradient in below. In particular, depicts a meridional temperature gradient reflective of average tropospheric conditions in the Northern Hemisphere, with warmer air to the south in the tropics and colder air to the north in the polar regions. (A mirror image meridional temperature gradient is found on average in the troposphere in the Southern Hemisphere, with warmer air to the north in the tropics and colder air to the south in the polar regions.) The tilt of isobaric surfaces will continue to increase with increasing height until the meridional temperature gradient reverses direction, as happens at the tropopause.  The scenarios discussed above and visualized below demonstrate that a horizontal temperature gradient leads to geometric height, geopotential, and geopotential height gradients along isobaric surfaces. These in turn lead to a horizontal pressure gradient force directed toward lower geometric height, geopotential, and geopotential height values, consistent with and . of Chapter 9 .   Two columns of perfectly dry air with identical composition are bounded below by pressure level and above by pressure level , where is the surface pressure and .    When the columns have equal temperature, they are identical in every way, and is found at the same height for each column.   Two gray columns of identical width and height, bounded below by the same pressure level and above by the same pressure level of lesser value. Each pressure level is at the same height for each column.     When the column on the left becomes colder (indicated by blue shading) while the column on the right becomes warmer (indicated by red shading), without the surface pressure changing, is found at a lower height for the colder column and is found at a higher height for the warmer column. Thus, the colder column has smaller thickness than the warmer column, as indicated by its shorter height.   Shorter blue column on the left and taller red column on the right, bounded below by the same pressure level and above by the same pressure level of lesser value.       Reproduction of , with an additional isobaric surface corresponding to pressure level halfway between and , i.e., .      Two gray columns of identical width and height, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average pressure level between the other pressure levels. Each pressure level is at the same height for each column.       Shorter blue column on the left and taller red column on the right, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average-valued pressure level between the other pressure levels. Each pressure level is lower in the left column compared to the right column.       Reproduction of , with isobaric surfaces connected between the columns of air.      Two gray columns of identical width and height, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average-valued pressure level between the other pressure levels. Each pressure level is at the same height for each column. Equal pressure levels are connected by sloping isobaric surfaces.       Shorter blue column on the left and taller red column on the right, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average-valued pressure level between the other pressure levels. Each pressure level is lower in the left column compared to the right column. Equal pressure levels are connected by sloping isobaric surfaces.       Four isobaric surfaces corresponding to pressure levels , , , and , where . Darker brown shading of the surfaces corresponds to higher pressure. A horizontal temperature gradient similar to Earth's meridional temperature gradient in the Northern Hemisphere, with cooler air to the north in the polar regions and warmer air to the south in the tropics, causes the isobaric surfaces to increasingly tilt upward with increasing height toward the tropics due to increasing thickness with increasing height. Greater tilt of an isobaric surface creates a stronger horizontal pressure gradient force, which drives a stronger zonal geostrophic wind , as plotted with black vectors for the Northern Hemisphere. Figure and caption modified from Fig. 11.20 of Stull (2017) under CC BY-NC-SA 4.0 .   Four isobaric surfaces in the Northern Hemisphere, with increasing distance between them with increasing height in the tropics and smaller distance between them in the polar regions, leading to a faster geostrophic wind with increasing height.    "
+},
+{
+  "id": "ch10-columns",
+  "level": "2",
+  "url": "ch10-section-thickness.html#ch10-columns",
+  "type": "Figure",
+  "number": "10.1.1",
+  "title": "",
+  "body": " Two columns of perfectly dry air with identical composition are bounded below by pressure level and above by pressure level , where is the surface pressure and .    When the columns have equal temperature, they are identical in every way, and is found at the same height for each column.   Two gray columns of identical width and height, bounded below by the same pressure level and above by the same pressure level of lesser value. Each pressure level is at the same height for each column.     When the column on the left becomes colder (indicated by blue shading) while the column on the right becomes warmer (indicated by red shading), without the surface pressure changing, is found at a lower height for the colder column and is found at a higher height for the warmer column. Thus, the colder column has smaller thickness than the warmer column, as indicated by its shorter height.   Shorter blue column on the left and taller red column on the right, bounded below by the same pressure level and above by the same pressure level of lesser value.     "
+},
+{
+  "id": "ch10-columns-average",
+  "level": "2",
+  "url": "ch10-section-thickness.html#ch10-columns-average",
+  "type": "Figure",
+  "number": "10.1.2",
+  "title": "",
+  "body": " Reproduction of , with an additional isobaric surface corresponding to pressure level halfway between and , i.e., .      Two gray columns of identical width and height, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average pressure level between the other pressure levels. Each pressure level is at the same height for each column.       Shorter blue column on the left and taller red column on the right, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average-valued pressure level between the other pressure levels. Each pressure level is lower in the left column compared to the right column.     "
+},
+{
+  "id": "ch10-columns-average-surfaces",
+  "level": "2",
+  "url": "ch10-section-thickness.html#ch10-columns-average-surfaces",
+  "type": "Figure",
+  "number": "10.1.3",
+  "title": "",
+  "body": " Reproduction of , with isobaric surfaces connected between the columns of air.      Two gray columns of identical width and height, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average-valued pressure level between the other pressure levels. Each pressure level is at the same height for each column. Equal pressure levels are connected by sloping isobaric surfaces.       Shorter blue column on the left and taller red column on the right, bounded below by the same pressure level and above by the same pressure level of lesser value, with the average-valued pressure level between the other pressure levels. Each pressure level is lower in the left column compared to the right column. Equal pressure levels are connected by sloping isobaric surfaces.     "
+},
+{
+  "id": "ch10-thermal-wind-stull",
+  "level": "2",
+  "url": "ch10-section-thickness.html#ch10-thermal-wind-stull",
+  "type": "Figure",
+  "number": "10.1.4",
+  "title": "",
+  "body": " Four isobaric surfaces corresponding to pressure levels , , , and , where . Darker brown shading of the surfaces corresponds to higher pressure. A horizontal temperature gradient similar to Earth's meridional temperature gradient in the Northern Hemisphere, with cooler air to the north in the polar regions and warmer air to the south in the tropics, causes the isobaric surfaces to increasingly tilt upward with increasing height toward the tropics due to increasing thickness with increasing height. Greater tilt of an isobaric surface creates a stronger horizontal pressure gradient force, which drives a stronger zonal geostrophic wind , as plotted with black vectors for the Northern Hemisphere. Figure and caption modified from Fig. 11.20 of Stull (2017) under CC BY-NC-SA 4.0 .   Four isobaric surfaces in the Northern Hemisphere, with increasing distance between them with increasing height in the tropics and smaller distance between them in the polar regions, leading to a faster geostrophic wind with increasing height.   "
+},
+{
+  "id": "ch10-section-thermal-wind-balance",
+  "level": "1",
+  "url": "ch10-section-thermal-wind-balance.html",
+  "type": "Section",
+  "number": "10.2",
+  "title": "Thermal wind balance and the vertical shear of the geostrophic wind",
+  "body": " Thermal wind balance and the vertical shear of the geostrophic wind  As with our derivation of the hypsometric equation in Chapter 7 , we begin with the equation of hydrostatic balance, this time written in isobaric coordinates and with the ideal gas law already inserted for density, as given by below. This is a reproduction of of Chapter 9 .     We recall from of Chapter 9 that the geostrophic wind in isobaric coordinates can be written in terms of geopotential as     We differentiate with respect to , taking advantage of the fact that the Coriolis parameter is not a function of and therefore behaves as a constant multiplier:     Substituting into produces     Since is treated as a constant and is constant on an isobaric surface, simplifies to     which reveals that the local vertical shear of the geostrophic wind given by is proportional to the horizontal temperature gradient measured on an isobaric surface of interest. It is important to note that gives a vertical shear of a horizontal wind , not a wind itself.  Since pressure decreases with increasing height, it is convenient to multiply both sides of by , as is measured vertically upward.     This relationship given by is called thermal wind balance .   produces the following components of the local vertical shear of the geostrophic wind, i.e., the components of thermal wind balance:        Physically, we can interpret thermal wind balance as given by as the combination of geostrophic balance in the horizontal and hydrostatic balance in the vertical.  An immediate implication of is that, if there is no horizontal temperature gradient on an isobaric surface of interest, there is no vertical shear of the geostrophic wind at the corresponding pressure level. In other words, the geostrophic wind is locally constant with height. We will explore this scenario later in SECTION.  Another immediate implication of is that the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest. An example of this for the Northern Hemisphere is shown in below.   The -12°C and -14°C isotherms are contoured on a 500 hPa map for the Northern Hemisphere. At the location between the isotherms marked by the circle, the temperature gradient on the 500 hPa isobaric surface is indicated by the vector labeled , the vector points out of the screen, and the local vertical shear of the geostrophic wind depicted by the vector labeled points parallel to the isotherms with colder air to its left. Note gives the direction and magnitude of the change of at 500 hPa, not at 500 hPa itself.   The vector representing the local vertical shear of the geostrophic wind points parallel to two isotherms on an isobaric surface with colder air to its left in the Northern Hemisphere. This means the vector representing the local vertical shear of the geostrophic wind is 90° to the left of the horizontal temperature gradient vector on the isobaric surface.    "
+},
+{
+  "id": "ch10-section-thermal-wind-balance-12",
+  "level": "2",
+  "url": "ch10-section-thermal-wind-balance.html#ch10-section-thermal-wind-balance-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "local vertical shear of the geostrophic wind "
+},
+{
+  "id": "ch10-section-thermal-wind-balance-15",
+  "level": "2",
+  "url": "ch10-section-thermal-wind-balance.html#ch10-section-thermal-wind-balance-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "thermal wind balance "
+},
+{
+  "id": "ch10-thermal-wind",
+  "level": "2",
+  "url": "ch10-section-thermal-wind-balance.html#ch10-thermal-wind",
+  "type": "Figure",
+  "number": "10.2.1",
+  "title": "",
+  "body": " The -12°C and -14°C isotherms are contoured on a 500 hPa map for the Northern Hemisphere. At the location between the isotherms marked by the circle, the temperature gradient on the 500 hPa isobaric surface is indicated by the vector labeled , the vector points out of the screen, and the local vertical shear of the geostrophic wind depicted by the vector labeled points parallel to the isotherms with colder air to its left. Note gives the direction and magnitude of the change of at 500 hPa, not at 500 hPa itself.   The vector representing the local vertical shear of the geostrophic wind points parallel to two isotherms on an isobaric surface with colder air to its left in the Northern Hemisphere. This means the vector representing the local vertical shear of the geostrophic wind is 90° to the left of the horizontal temperature gradient vector on the isobaric surface.   "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
   "type": "References",
-  "number": "10",
+  "number": "11",
   "title": "References",
   "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Fujita, T. T.  Tornadoes and Downbursts in the Context of Generalized Planetary Scales  Journal of the Atmospheric Sciences  38  8  1511-1534  1981    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Orlanski, I.  A Rational Subdivision of Scales for Atmospheric Processes  Bulletin of the American Meteorological Society  56  5  527-530  1975    Petty, G. W.  A First Course in Atmospheric Thermodynamics  Sundog Publishing  2008    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
 },
@@ -2372,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#holton-hakim-6",
   "type": "Note",
-  "number": "10.3.1",
+  "number": "11.3.1",
   "title": "",
   "body": " 3rd edition  "
 },
@@ -2381,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#kundu-cohen-dowling-7",
   "type": "Note",
-  "number": "10.4.1",
+  "number": "11.4.1",
   "title": "",
   "body": " 6th edition  "
 },
@@ -2390,7 +2471,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#stull-5",
   "type": "Note",
-  "number": "10.9.1",
+  "number": "11.9.1",
   "title": "",
   "body": " Version 1.02b  "
 },
