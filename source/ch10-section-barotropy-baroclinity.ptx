@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch10-section-barotropy-baroclinity" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Barotropy and baroclinity</title>
+
+  <p>
+    A <term>barotropic</term> fluid is one in which density <m>\rho</m> depends only on pressure <m>p</m>,
+    i.e., <m>\rho = \rho(p)</m>.
+    Consider this restriction alongside the ideal gas law:
+    Since <m>\rho</m> depends only on <m>p</m>,
+    the ideal gas law implies that temperature <m>T</m> also depends only on <m>p</m>,
+    i.e., <m>T = T(p)</m>.
+    Consequently, isobaric, <term>isopycnic</term> (constant density), and isothermal surfaces
+    are parallel within a barotropic fluid,
+    as shown in <xref ref="ch10-barotropic" text="type-global" /> below.
+    In other words,
+    isobaric surfaces also are ispycnic and isothermal surfaces.
+  </p>
+
+  <figure xml:id="ch10-barotropic">
+    <caption>
+        Stratification of isobaric (black), isopycnic (aqua), and isothermal (dashed red) surfaces
+        within a barotropic fluid.
+        The surfaces are parallel and tilt upward where the fluid is warmer.
+        Figure and caption modified from image vectorised by User:Sushant savla from the work by Reas at German Wikipedia,
+        via <url href="https://commons.wikimedia.org/wiki/File:Barotrope.svg">Wikimedia Commons</url>
+        under <url href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
+    </caption>
+    <image source="images/ch10-barotropic.png" width="80%">
+        <shortdescription>
+            Rectangular prism volume of barotropic fluid with parallel black, aqua, and dashed red surfaces
+            representing isobaric, isopycnic, and isothermal surfaces, respectively.
+            The surfaces tilt upward where the fluid is warmer.
+        </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    It follows that in a barotropic atmosphere,
+    <m>T</m> does not vary along isobaric surfaces,
+    i.e., <m>\nabla_p T = \vec{0}</m>.
+    Consequently,
+    <xref ref="eqn-thermal-wind-balance-vector" text="type-global" /><ndash /><xref ref="eqn-thermal-wind-balance-y" text="type-global" /> require that
+    the geostrophic wind is not vertically sheared in a barotropic atmosphere,
+    i.e., it is constant with height and <m>-\dfrac{\partial \vec{v}_g}{\partial p} = \vec{0}</m>.
+    This means the thermal wind also is zero: <m>\vec{v}_T = \vec{0}</m>.
+    So in a barotropic atmosphere,
+    the geostrophic wind can vary with horizontal position and time but not with height.
+    In other words,
+    at a given moment in time,
+    the geostrophic wind is constant in the vertical over any location of interest within a barotropic atmosphere.
+  </p>
+
+  <p>
+    A <term>baroclinic</term> fluid is one in which <m>\rho</m> depends on both <m>p</m> and <m>T</m>,
+    i.e., <m>\rho = \rho(p,T)</m>.
+    Consider this statement alongside the ideal gas law:
+    Since <m>\rho</m> depends on both <m>p</m> and <m>T</m>,
+    the ideal gas law implies that <m>T</m> depends on both <m>p</m> and <m>\rho</m>,
+    i.e., <m>T = T(p,\rho)</m>.
+  </p>
+
+  <p>
+    This is a more complicated situation than found in the barotropic fluid,
+    and it means that isobaric, isopycnic, and isothermal surfaces are not parallel in a baroclinic fluid,
+    an example of which is shown in <xref ref="ch10-baroclinic" text="type-global" /> below.
+    Consequently,
+    in a baroclinic atmosphere,
+    temperature can vary along isobaric surfaces,
+    and so there is no restriction on the vertical shear of the geostrophic wind and the thermal wind:
+    The geostrophic wind can vary with horizontal position and time as well as with height
+    as long as temperature gradients are present along isobaric surfaces.
+  </p>
+
+  <figure xml:id="ch10-baroclinic">
+    <caption>
+        Possible stratification of isobaric (black), isopycnic (aqua), and isothermal (dashed red) surfaces
+        within a baroclinic fluid.
+        The surfaces are not parallel,
+        and the isopycnic surfaces tilt downward where the fluid is warmer,
+        indicating lower density in the warmer part of the fluid.
+        Figure and caption modified from image vectorised by User:Sushant savla from the work by Reas at German Wikipedia,
+        via <url href="https://commons.wikimedia.org/wiki/File:Baroclinic_fluid.png">Wikimedia Commons</url>
+        under <url href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</url>.
+    </caption>
+    <image source="images/ch10-baroclinic.png" width="80%">
+        <shortdescription>
+            Rectangular prism volume of barotropic fluid with parallel black, aqua, and dashed red surfaces
+            representing isobaric, isopycnic, and isothermal surfaces, respectively.
+            The surfaces are not parallel,
+            and the isopycnic surfaces tilt downward where the fluid is warmer.
+        </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    We can determine where the atmosphere is barotropic,
+    approximately barotropic,
+    or baroclinic using isobaric maps with isotherms contoured on them.
+  </p>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                Where the atmosphere is barotropic,
+                isotherms will not be drawn on the map since temperature is constant on the isobaric surface.
+            </p>
+        </li>
+        <li>
+            <p>
+                Where the atmosphere is approximately barotropic,
+                few isotherms will be drawn on the map,
+                and they will be spaced relatively far apart from each other.
+            </p>
+        </li>
+        <li>
+            <p>
+                Where the atmosphere is baroclinic,
+                many isotherms will be drawn on the map since temperature varies across the isobaric surface,
+                and they will be spaced relatively close to each other.
+                An example of this case is shown in <xref ref="ch10-baroclinic-map" text="type-global" /> below.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    Several isobaric maps for different pressure levels can be compared to determine the depth over which the atmosphere is barotropic,
+    approximately barotropic,
+    or baroclinic.
+  </p>
+
+  <figure xml:id="ch10-baroclinic-map">
+    <caption>
+        850 hPa map with contoured isohypses of geopotential height (solid black; m),
+        isotherms (dashed red for temperatures above 0°C, dashed blue for temperatures at and below 0°C),
+        and isodrosotherms (dotted green for dewpoints at or above 0°C, shaded green for dewpoints at or above 6°C).
+        Station models and pressure centers are annotated.
+        Map courtesy of <url href="https://weather.cod.edu/">College of DuPage Weather Lab</url>.
+    </caption>
+    <image source="images/ch10-baroclinic-map.png" width="100%">
+        <shortdescription>
+            850 hPa map with many closely spaced isotherms,
+            indicating baroclinity of the atmosphere at this pressure level.
+        </shortdescription>
+    </image>
+  </figure>
+
+</section>
