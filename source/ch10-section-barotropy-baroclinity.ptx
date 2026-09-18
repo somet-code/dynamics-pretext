@@ -234,9 +234,9 @@
         1991<ndash />2020 annual average isotachs of zonal wind averaged longitudinally.
         Isotachs are contoured at <m>5 \, \text{m} \, \text{s}^{-1}</m> increments
         and labeled every <m>10 \, \text{m} \, \text{s}^{-1}</m>,
-        with color shading between isotherms according to the color bar.
-        Isotachs of westerly winds (directed out of the page) are solid,
-        and isotachs of easterly winds (directed into the page) are dashed.
+        with color shading between isotachs according to the color bar.
+        Isotachs of westerly winds (directed out of the screen) are solid,
+        and isotachs of easterly winds (directed into the screen) are dashed.
         Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
         Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
         using NCEP/NCAR Reanalysis data.
@@ -253,10 +253,10 @@
   <p>
     Baroclinity is enhanced in the winter hemisphere relative to the summer hemisphere
     because the meridional temperature gradient is strengthened as the polar regions cool.
-    FIGa below
+    <xref ref="ch10-zonal-temp-djf" text="type-global" /> below
     shows a vertical cross-section of 1991<ndash />2020 isotherms that have been averaged over December-January-February (DFJ)
     as well as longitudinally,
-    and FIGb below
+    and <xref ref="ch10-zonal-temp-jja" text="type-global" /> below
     shows a vertical cross-section of 1991<ndash />2020 isotherms that have been averaged over June-July-August (JJA)
     as well as longitudinally.
     The former three-month period is winter (summer) for the Northern (Southern) Hemisphere,
@@ -273,10 +273,112 @@
   <p>
     Unsurprisingly,
     seasonally-averaged zonal winds indicate jet streams are faster in the middle latitudes of the winter hemisphere,
-    as shown in FIG below.
+    as shown in <xref ref="ch10-zonal-wind-seasonal" text="type-global" /> below.
     Again,
     wind speed maxima are found around 200 hPa,
     above which the meridional temperature gradient reverses direction.
   </p>
+
+    <figure xml:id="ch10-zonal-temp-seasonal">
+        <caption />
+        <sidebyside>
+            <figure xml:id="ch10-zonal-temp-djf">
+                <caption>
+                    1991<ndash />2020 isotherms averaged over December-January-February (DFJ)
+                    as well as longitudinally.
+                    Isotherms are contoured at 5°C increments and labeled every 10°C,
+                    with color shading between isotherms according to the color bar.
+                    Warmer colored shading indicates warmer temperature.
+                    Isotherms colder than 0°C are dashed while isotherms equal to and warmer than 0°C are solid.
+                    Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
+                    Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
+                    using NCEP/NCAR Reanalysis data.
+                </caption>
+                <image source="images/ch10-zonal-temp-djf.png" width="50%">
+                    <shortdescription>
+                      Zonally averaged temperature at all latitudes from 1000 hPa to 1 hPa.
+                      A deep layer of warm air is found in the tropics up to about 250 hPa.
+                      The warm air slopes downward with increasing latitude in the middle latitudes and polar regions,
+                      creating relatively colder air aloft.
+                      This slope is steeper in the winter hemisphere.
+                      The coldest air in the stratosphere is found above the tropics.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch10-zonal-temp-jja">
+                <caption>
+                    1991<ndash />2020 isotherms averaged over June-July-August (JJA)
+                    as well as longitudinally.
+                    Isotherms are contoured at 5°C increments and labeled every 10°C,
+                    with color shading between isotherms according to the color bar.
+                    Warmer colored shading indicates warmer temperature.
+                    Isotherms colder than 0°C are dashed while isotherms equal to and warmer than 0°C are solid.
+                    Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
+                    Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
+                    using NCEP/NCAR Reanalysis data.
+                </caption>
+                <image source="images/ch10-zonal-temp-jja.png" width="50%">
+                    <shortdescription>
+                      Zonally averaged temperature at all latitudes from 1000 hPa to 1 hPa.
+                      A deep layer of warm air is found in the tropics up to about 250 hPa.
+                      The warm air slopes downward with increasing latitude in the middle latitudes and polar regions,
+                      creating relatively colder air aloft.
+                      This slope is steeper in the winter hemisphere.
+                      The coldest air in the stratosphere is found above the tropics.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
+
+<figure xml:id="ch10-zonal-wind-seasonal">
+        <caption />
+        <sidebyside>
+            <figure xml:id="ch10-zonal-wind-djf">
+                <caption>
+                    1991<ndash />2020 isotachs of zonal wind averaged over December-January-February (DFJ)
+                    as well as longitudinally.
+                    Isotachs are contoured at <m>5 \, \text{m} \, \text{s}^{-1}</m> increments
+                    and labeled every <m>10 \, \text{m} \, \text{s}^{-1}</m>,
+                    with color shading between isotachs according to the color bar.
+                    Isotachs of westerly winds (directed out of the screen) are solid,
+                    and isotachs of easterly winds (directed into the screen) are dashed.
+                    Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
+                    Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
+                    using NCEP/NCAR Reanalysis data.
+                </caption>
+                <image source="images/ch10-zonal-wind-djf.png" width="50%">
+                    <shortdescription>
+                      Zonally averaged zonal wind at all latitudes from 1000 hPa to 1 hPa.
+                      The largest vertical wind shear and fastest winds aloft are found over the middle latitudes,
+                      with speed maxima around 200 hPa.
+                      Winds are fastest in the winter hemisphere.
+                    </shortdescription>
+                </image>
+            </figure>
+            <figure xml:id="ch10-zonal-wind-jja">
+                <caption>
+                    1991<ndash />2020 isotachs of zonal wind averaged over June-July-August (JJA)
+                    as well as longitudinally.
+                    Isotachs are contoured at <m>5 \, \text{m} \, \text{s}^{-1}</m> increments
+                    and labeled every <m>10 \, \text{m} \, \text{s}^{-1}</m>,
+                    with color shading between isotachs according to the color bar.
+                    Isotachs of westerly winds (directed out of the screen) are solid,
+                    and isotachs of easterly winds (directed into the screen) are dashed.
+                    Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
+                    Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
+                    using NCEP/NCAR Reanalysis data.
+                </caption>
+                <image source="images/ch10-zonal-wind-jja.png" width="50%">
+                    <shortdescription>
+                      Zonally averaged zonal wind at all latitudes from 1000 hPa to 1 hPa.
+                      The largest vertical wind shear and fastest winds aloft are found over the middle latitudes,
+                      with speed maxima around 200 hPa.
+                      Winds are fastest in the winter hemisphere.
+                    </shortdescription>
+                </image>
+            </figure>
+        </sidebyside>
+    </figure>
 
 </section>
