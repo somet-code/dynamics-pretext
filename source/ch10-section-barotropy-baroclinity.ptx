@@ -147,4 +147,136 @@
     </image>
   </figure>
 
+  <p>
+    In general,
+    baroclinity is maximized in the middle latitudes,
+    while the tropics are approximately barotropic.
+    <xref ref="ch10-500mb-temp" text="type-global" /> below
+    shows 1991<ndash />2020 annual average isotherms on the 500 hPa isobaric surface.
+    In <xref ref="ch10-500mb-temp" text="type-global" />,
+    the horizontal temperature gradient is quite small in the tropics as depicted by the distant spacing of a couple of isotherms,
+    indicating approximate barotropy.
+    In contrast,
+    the close spacing of many isotherms in the mid-latitudes indicates baroclinity.
+    Baroclinity persists but decreases in the polar latitudes as indicated by the relatively more distant spacing of fewer isotherms.
+    Similar patterns are apparent on isobaric maps for other pressure levels below the tropopause (not shown).
+  </p>
+
+  <figure xml:id="ch10-500mb-temp">
+    <caption>
+        1991<ndash />2020 annual average isotherms on the 500 hPa isobaric surface.
+        Isotherms are contoured at 5°C increments and labeled every 10°C,
+        with color shading between isotherms according to the color bar.
+        Warmer colored shading indicates warmer temperature.
+        Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
+        using NCEP/NCAR Reanalysis data.
+    </caption>
+    <image source="images/ch10-500mb-temp.png" width="100%">
+        <shortdescription>
+            Global 500 mb map with nearly uniform warm air in the tropics,
+            highly baroclinic air in the middle latitudes that cools with increasing latitude,
+            and somewhat baroclinic air in the polar latitudes that cools with increasing latitude.
+        </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    <xref ref="ch10-zonal-temp-annual" text="type-global" /> below
+    shows a vertical cross-section of 1991<ndash />2020 annual average isotherms that have been averaged longitudinally.
+    As expected,
+    the isotherms depict the warmest air on average in the tropics and the coldest air on average in the polar regions,
+    through the depth of the troposphere,
+    thus setting up a meridional temperature gradient in both the Northern Hemisphere and the Southern Hemisphere.
+    Furthermore,
+    the isotherms approximately parallel isobaric surfaces in the tropics but are steeply sloped in the middle latitudes
+    and intersect isobaric surfaces up to about 200 hPa.
+  </p>
+
+  <figure xml:id="ch10-zonal-temp-annual">
+    <caption>
+        1991<ndash />2020 annual average isotherms averaged longitudinally.
+        Isotherms are contoured at 5°C increments and labeled every 10°C,
+        with color shading between isotherms according to the color bar.
+        Warmer colored shading indicates warmer temperature.
+        Isotherms colder than 0°C are dashed
+        while isotherms equal to and warmer than 0°C are solid.
+        Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
+        Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
+        using NCEP/NCAR Reanalysis data.
+    </caption>
+    <image source="images/ch10-zonal-temp-annual.png" width="100%">
+        <shortdescription>
+            Zonally averaged temperature at all latitudes from 1000 hPa to 1 hPa.
+            A deep layer of warm air is found in the tropics up to about 250 hPa.
+            The warm air slopes downward with increasing latitude in the middle latitudes and polar regions,
+            creating relatively colder air aloft.
+            The coldest air in the stratosphere is found above the tropics.
+        </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    Given our previous discussion,
+    it should be unsurprising that zonal winds on average are maximized in the middle latitudes as <term>jet streams</term>
+    (narrow, horizontally-oriented fast-moving currents of air),
+    with wind speed maxima on average around 200 hPa
+    (<xref ref="ch10-zonal-wind-annual" text="type-global" />).
+    This approximately is the pressure level above which the meridional temperature gradient reverses direction.
+    Average zonal winds at other latitudes where baroclinity is smaller are weaker and closer to constant with height.
+    Furthermore,
+    average zonal winds in and around the jet streams are westerly,
+    consistent with the westerly vertical wind shear of the geostrophic wind required by thermal wind balance
+    in both the Northern and Southern Hemispheres.
+  </p>
+
+  <figure xml:id="ch10-zonal-wind-annual">
+    <caption>
+        1991<ndash />2020 annual average isotachs of zonal wind averaged longitudinally.
+        Isotachs are contoured at <m>5 \, \text{m} \, \text{s}^{-1}</m> increments
+        and labeled every <m>10 \, \text{m} \, \text{s}^{-1}</m>,
+        with color shading between isotherms according to the color bar.
+        Isotachs of westerly winds (directed out of the page) are solid,
+        and isotachs of easterly winds (directed into the page) are dashed.
+        Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
+        Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
+        using NCEP/NCAR Reanalysis data.
+    </caption>
+    <image source="images/ch10-zonal-wind-annual.png" width="100%">
+        <shortdescription>
+            Zonally averaged zonal wind at all latitudes from 1000 hPa to 1 hPa.
+            The largest vertical wind shear and fastest winds aloft are found over the middle latitudes,
+            with speed maxima around 200 hPa.
+        </shortdescription>
+    </image>
+  </figure>
+
+  <p>
+    Baroclinity is enhanced in the winter hemisphere relative to the summer hemisphere
+    because the meridional temperature gradient is strengthened as the polar regions cool.
+    FIGa below
+    shows a vertical cross-section of 1991<ndash />2020 isotherms that have been averaged over December-January-February (DFJ)
+    as well as longitudinally,
+    and FIGb below
+    shows a vertical cross-section of 1991<ndash />2020 isotherms that have been averaged over June-July-August (JJA)
+    as well as longitudinally.
+    The former three-month period is winter (summer) for the Northern (Southern) Hemisphere,
+    and the latter three-month period is winter (summer) for the Southern (Northern) Hemisphere.
+    As in the annual average shown in <xref ref="ch10-zonal-temp-annual" text="type-global" />,
+    the isotherms approximately parallel isobaric surfaces in the tropics
+    but are steeply sloped in the middle latitudes and intersect isobaric surfaces up to about 200 hPa.
+    Furthermore,
+    isotherms are sloped more steeply in the middle latitudes of the winter hemisphere relative to the summer hemisphere
+    and intersect isobaric surfaces more frequently,
+    indicating enhanced baroclinity.
+  </p>
+
+  <p>
+    Unsurprisingly,
+    seasonally-averaged zonal winds indicate jet streams are faster in the middle latitudes of the winter hemisphere,
+    as shown in FIG below.
+    Again,
+    wind speed maxima are found around 200 hPa,
+    above which the meridional temperature gradient reverses direction.
+  </p>
+
 </section>
