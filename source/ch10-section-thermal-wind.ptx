@@ -149,7 +149,8 @@
       Furthermore,
       these equations reveal the thermal wind flows parallel to thickness contours for two pressure levels of interest,
       similar to how <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
-      reveals the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest.
+      reveals the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest,
+      with smaller thickness to its left (right) in the Northern (Southern) Hemisphere.
       An example for the Northern Hemisphere of the thermal wind flowing parallel to geopotential height thickness contours
       is shown in <xref ref="ch10-thermal-wind" text="type-global" /> below.
     </p>

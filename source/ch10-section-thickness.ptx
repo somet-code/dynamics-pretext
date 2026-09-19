@@ -216,7 +216,7 @@
     (A mirror image meridional temperature gradient is found on average in the troposphere in the Southern Hemisphere,
     with warmer air to the north in the tropics and colder air to the south in the polar regions.)
     The tilts of isobaric surfaces would continue to increase with increasing height until the meridional temperature gradient reverses direction,
-    as happens at the tropopause.
+    as happens in the stratosphere.
   </p>
 
   <figure xml:id="ch10-thermal-wind-stull">
@@ -257,6 +257,29 @@
     consistent with <xref ref="eqn-pga-isobaric-x" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector" text="type-global" />
     and <xref ref="eqn-pga-isobaric-x-geopotential-height" text="type-global" /><ndash /><xref ref="eqn-pga-isobaric-vector-geopotential-height" text="type-global" />
     of <xref ref="ch9-section-isobaric-coordinates-subsection-pgf" text="custom">Chapter 9</xref>.
+  </p>
+
+  <p>
+    Furthermore,
+    when these geometric height,
+    geopotential,
+    and geopotential height gradients increase with increasing height,
+    the horizontal pressure gradient force strengthens with increasing height.
+    Consequently,
+    the geostrophic wind speed increases with increasing height,
+    as dictated by
+    <xref ref="eqn-geostrophic-wind-vector-isobaric" text="type-global" /><ndash /><xref ref="eqn-geostrophic-wind-y-isobaric-geopotential-height" text="type-global" />
+    of <xref ref="ch9-section-isobaric-coordinates-subsection-geostrophic" text="custom">Chapter 9</xref>
+    and shown in <xref ref="ch10-thermal-wind-stull" text="type-global" />.
+    These increases continue until the temperature gradient reverses direction,
+    as happens in the stratosphere.
+  </p>
+
+  <p>
+    Thus,
+    horizontal temperature gradients result in vertical shear of the geostrophic wind.
+    This is the basis of thermal wind balance,
+    discussed in the <xref ref="ch10-section-thermal-wind-balance" text="custom">next section</xref>.
   </p>
 
 </section>

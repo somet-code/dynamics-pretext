@@ -20,11 +20,12 @@
     </p>
 
     <p>
-        An example of the geostrophic and thermal winds for
+        An example of the geostrophic and thermal wind vectors for
         <m>p_1 = 1000 \, \text{hPa}</m>
         and <m>p_2 = 500 \, \text{hPa}</m>
         for the Northern Hemisphere is shown in <xref ref="ch10-thermal-wind-veer-start" text="type-global" /> below.
-        Note the geostrophic wind drawn in <xref ref="ch10-thermal-wind-veer-start" text="type-global" /> <term>veers</term> (turns clockwise)
+        Note the geostrophic wind illustrated in <xref ref="ch10-thermal-wind-veer-start" text="type-global" />
+        <term>veers</term> (turns clockwise)
         with increasing height. 
     </p>
 
@@ -54,7 +55,7 @@
         and <xref ref="eqn-thermal-wind-vector-geopotential-height" text="type-global" />
         dictate the thermal wind <m>\vec{v}_T</m> flows parallel to thickness contours,
         with lower thickness to its left in the Northern Hemisphere,
-        we can annotate 1000<ndash />500 hPa geopotential thickness contours surrounding <m>\vec{v}_T</m>
+        we can annotate 1000<ndash />500 hPa geopotential height thickness contours surrounding <m>\vec{v}_T</m>
         onto <xref ref="ch10-thermal-wind-veer-start" text="type-global" />,
         as shown in <xref ref="ch10-thermal-wind-veer" text="type-global" /> below.
         Equivalently,
@@ -66,17 +67,17 @@
         at both the 1000 hPa pressure level and the 500 hPa pressure level,
         the geostrophic wind blows across the thickness contours/isotherms of <m>\overline{T}</m>
         from the higher-valued contour toward the lower-valued contour.
-        This indicates <term>column-average geostrophic warm air advection</term>
+        This indicates <term>column-average geostrophic warm advection</term>
         since larger thickness is associated with warmer column-average temperature.
         Therefore, we can say
         <em>veering of the geostrophic wind with increasing height in the Northern Hemisphere
-        corresponds to column-average geostrophic warm air advection</em>.
+        corresponds to column-average geostrophic warm advection</em>.
     </p>
 
     <figure xml:id="ch10-thermal-wind-veer">
         <caption>
             Reproduction of <xref ref="ch10-thermal-wind-veer-start" text="type-global" />,
-            with two contours of 1000<ndash />500 hPa geopotential thickness
+            with two contours of 1000<ndash />500 hPa geopotential height thickness
             separated by increment <m>\delta (\Delta Z)</m>,
             where <m>\delta (\Delta Z) \gt 0</m>,
             annotated parallel to <m>\vec{v}_T</m>,
@@ -87,7 +88,7 @@
             where <m>\delta \overline{T} \gt 0</m>.
             Both <m>\vec{v}_{g,1000}</m> and <m>\vec{v}_{g,500}</m> flow across the thickness contours/isotherms of <m>\overline{T}</m>
             from the higher-valued contour toward the lower-valued contour,
-            indicating column-average geostrophic warm air advection.
+            indicating column-average geostrophic warm advection.
         </caption>
         <image source="images/ch10-thermal-wind-veer.png" width="100%">
             <shortdescription>
@@ -105,10 +106,10 @@
     </figure>
 
     <p>
-        Another example of the geostrophic and thermal winds for <m>p_1 = 1000 \, \text{hPa}</m>
+        Another example of the geostrophic and thermal wind vectors for <m>p_1 = 1000 \, \text{hPa}</m>
         and <m>p_2 = 5000 \, \text{hPa}</m>
         for the Northern Hemisphere is shown in <xref ref="ch10-thermal-wind-back-start" text="type-global" /> below.
-        In this case, note that the geostrophic wind <term>backs</term> (turns counter-clockwise)
+        In this case, note the geostrophic wind <term>backs</term> (turns counter-clockwise)
         with increasing height.
     </p>
 
@@ -137,7 +138,7 @@
         Again,
         since <m>\vec{v}_T</m> flows parallel to thickness contours,
         with lower thickness to its left in the Northern Hemisphere,
-        we can annotate 1000<ndash />500 hPa thickness contours surrounding <m>\vec{v}_T</m>
+        we can annotate 1000<ndash />500 hPa geopotential heightthickness contours surrounding <m>\vec{v}_T</m>
         onto <xref ref="ch10-thermal-wind-back-start" text="type-global" />,
         as shown in <xref ref="ch10-thermal-wind-back" text="type-global" /> below.
         Equivalently, since <xref ref="eqn-thermal-wind-vector" text="type-global" />
@@ -149,17 +150,17 @@
         at both the 1000 hPa pressure level and the 500 hPa pressure level,
         the geostrophic wind blows across the thickness contours/isotherms of <m>\overline{T}</m>
         from the lower-valued contour toward the higher-valued contour.
-        This indicates <term>column-average geostrophic cold air advection</term>
+        This indicates <term>column-average geostrophic cold advection</term>
         since smaller thickness is associated with colder column-average temperature.
         Therefore, we can say
         <em>backing of the geostrophic wind with increasing height in the Northern Hemisphere
-        corresponds to column-average geostrophic cold air advection</em>.
+        corresponds to column-average geostrophic cold advection</em>.
     </p>
 
     <figure xml:id="ch10-thermal-wind-back">
         <caption>
             Reproduction of <xref ref="ch10-thermal-wind-back-start" text="type-global" />,
-            with two contours of 1000<ndash />500 hPa geopotential thickness
+            with two contours of 1000<ndash />500 hPa geopotential height thickness
             separated by increment <m>\delta (\Delta Z)</m>,
             where <m>\delta (\Delta Z) \gt 0</m>,
             annotated parallel to <m>\vec{v}_T</m>,
@@ -170,7 +171,7 @@
             where <m>\delta \overline{T} \gt 0</m>.
             Both <m>\vec{v}_{g,1000}</m> and <m>\vec{v}_{g,500}</m> flow across the thickness contours/isotherms of <m>\overline{T}</m>
             from the lower-valued contour toward the higher-valued contour,
-            indicating column-average geostrophic cold air advection.
+            indicating column-average geostrophic cold advection.
         </caption>
         <image source="images/ch10-thermal-wind-back.png" width="100%">
             <shortdescription>
@@ -191,7 +192,7 @@
         Note that,
         due to the reversal of the Coriolis force's direction in the Southern Hemisphere relative to its direction in the Northern Hemisphere,
         veering (backing) of the geostrophic wind with increasing height in the Southern Hemisphere
-        corresponds to column-average geostrophic cold (warm) air advection.
+        corresponds to column-average geostrophic cold (warm) advection.
     </p>
 
 </subsection>

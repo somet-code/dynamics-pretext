@@ -5,13 +5,31 @@
 
   <p>
     A <term>barotropic</term> fluid is one in which density <m>\rho</m> depends only on pressure <m>p</m>,
-    i.e., <m>\rho = \rho(p)</m>.
+    i.e.,
+  </p>
+
+  <p>
+    <md xml:id="eqn-barotropic-density" number="yes">
+        \rho = \rho(p)
+    </md>
+  </p>
+
+  <p>
     Consider this restriction alongside the ideal gas law:
     Since <m>\rho</m> depends only on <m>p</m>,
     the ideal gas law implies that temperature <m>T</m> also depends only on <m>p</m>,
-    i.e., <m>T = T(p)</m>.
+    i.e.,
+  </p>
+
+  <p>
+    <md xml:id="eqn-barotropic-temperature" number="yes">
+        T = T(p)
+    </md>
+  </p>
+
+  <p>
     Consequently, isobaric, <term>isopycnic</term> (constant density), and isothermal surfaces
-    are parallel within a barotropic fluid,
+    are parallel (i.e., stacked vertically) within a barotropic fluid,
     as shown in <xref ref="ch10-barotropic" text="type-global" /> below.
     In other words,
     isobaric surfaces also are ispycnic and isothermal surfaces.
@@ -42,8 +60,8 @@
     Consequently,
     <xref ref="eqn-thermal-wind-balance-vector" text="type-global" /><ndash /><xref ref="eqn-thermal-wind-balance-y" text="type-global" /> require that
     the geostrophic wind is not vertically sheared in a barotropic atmosphere,
-    i.e., it is constant with height and <m>-\dfrac{\partial \vec{v}_g}{\partial p} = \vec{0}</m>.
-    This means the thermal wind also is zero: <m>\vec{v}_T = \vec{0}</m>.
+    i.e., it is constant with height so <m>-\dfrac{\partial \vec{v}_g}{\partial p} = \vec{0}</m>.
+    This means the thermal wind also is zero in a barotropic atmosphere: <m>\vec{v}_T = \vec{0}</m>.
     So in a barotropic atmosphere,
     the geostrophic wind can vary with horizontal position and time but not with height.
     In other words,
@@ -53,16 +71,31 @@
 
   <p>
     A <term>baroclinic</term> fluid is one in which <m>\rho</m> depends on both <m>p</m> and <m>T</m>,
-    i.e., <m>\rho = \rho(p,T)</m>.
-    Consider this statement alongside the ideal gas law:
-    Since <m>\rho</m> depends on both <m>p</m> and <m>T</m>,
-    the ideal gas law implies that <m>T</m> depends on both <m>p</m> and <m>\rho</m>,
-    i.e., <m>T = T(p,\rho)</m>.
+    i.e.,
   </p>
 
   <p>
-    This is a more complicated situation than found in the barotropic fluid,
-    and it means that isobaric, isopycnic, and isothermal surfaces are not parallel in a baroclinic fluid,
+    <md xml:id="eqn-baroclinic-density" number="yes">
+        \rho = \rho(p,T)
+    </md>
+  </p>
+
+  <p>
+    Consider this statement alongside the ideal gas law:
+    Since <m>\rho</m> depends on both <m>p</m> and <m>T</m>,
+    the ideal gas law implies that <m>T</m> depends on both <m>p</m> and <m>\rho</m>,
+    i.e.,
+  </p>
+
+  <p>
+    <md xml:id="eqn-baroclinic-temperature" number="yes">
+        T = T(p,\rho)
+    </md>
+  </p>
+
+  <p>
+    This is a more complicated situation than for the barotropic fluid,
+    and it means isobaric, isopycnic, and isothermal surfaces are not parallel in a baroclinic fluid,
     an example of which is shown in <xref ref="ch10-baroclinic" text="type-global" /> below.
     Consequently,
     in a baroclinic atmosphere,
@@ -70,6 +103,7 @@
     and so there is no restriction on the vertical shear of the geostrophic wind and the thermal wind:
     The geostrophic wind can vary with horizontal position and time as well as with height
     as long as temperature gradients are present along isobaric surfaces.
+    Furthermore, the thermal wind will not be zero.
   </p>
 
   <figure xml:id="ch10-baroclinic">
@@ -166,7 +200,7 @@
     <caption>
         1991<ndash />2020 annual average isotherms on the 500 hPa isobaric surface.
         Isotherms are contoured at 5°C increments and labeled every 10°C,
-        with color shading between isotherms according to the color bar.
+        with shading between isotherms giving temperature according to the color bar.
         Warmer colored shading indicates warmer temperature.
         Figure courtesy of <url href="https://psl.noaa.gov/">NOAA Physical Sciences Laboratory</url>
         using NCEP/NCAR Reanalysis data.
@@ -182,7 +216,7 @@
 
   <p>
     <xref ref="ch10-zonal-temp-annual" text="type-global" /> below
-    shows a vertical cross-section of 1991<ndash />2020 annual average isotherms that have been averaged longitudinally.
+    shows a vertical cross-section of 1991<ndash />2020 annual average isotherms that also have been averaged longitudinally.
     As expected,
     the isotherms depict the warmest air on average in the tropics and the coldest air on average in the polar regions,
     through the depth of the troposphere,
@@ -194,9 +228,9 @@
 
   <figure xml:id="ch10-zonal-temp-annual">
     <caption>
-        1991<ndash />2020 annual average isotherms averaged longitudinally.
+        1991<ndash />2020 annual average isotherms also averaged longitudinally.
         Isotherms are contoured at 5°C increments and labeled every 10°C,
-        with color shading between isotherms according to the color bar.
+        with shading between isotherms giving temperature according to the color bar.
         Warmer colored shading indicates warmer temperature.
         Isotherms colder than 0°C are dashed
         while isotherms equal to and warmer than 0°C are solid.
@@ -221,7 +255,8 @@
     (narrow, horizontally-oriented fast-moving currents of air),
     with wind speed maxima on average around 200 hPa
     (<xref ref="ch10-zonal-wind-annual" text="type-global" />).
-    This approximately is the pressure level above which the meridional temperature gradient reverses direction.
+    This approximately is the pressure level above which the meridional temperature gradient reverses direction,
+    with the coldest air in the stratosphere found above the tropics.
     Average zonal winds at other latitudes where baroclinity is smaller are weaker and closer to constant with height.
     Furthermore,
     average zonal winds in and around the jet streams are westerly,
@@ -231,10 +266,10 @@
 
   <figure xml:id="ch10-zonal-wind-annual">
     <caption>
-        1991<ndash />2020 annual average isotachs of zonal wind averaged longitudinally.
+        1991<ndash />2020 annual average isotachs of zonal wind also averaged longitudinally.
         Isotachs are contoured at <m>5 \, \text{m} \, \text{s}^{-1}</m> increments
         and labeled every <m>10 \, \text{m} \, \text{s}^{-1}</m>,
-        with color shading between isotachs according to the color bar.
+        with shading between isotachs giving wind speedaccording to the color bar.
         Isotachs of westerly winds (directed out of the screen) are solid,
         and isotachs of easterly winds (directed into the screen) are dashed.
         Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis.
@@ -276,7 +311,7 @@
     as shown in <xref ref="ch10-zonal-wind-seasonal" text="type-global" /> below.
     Again,
     wind speed maxima are found around 200 hPa,
-    above which the meridional temperature gradient reverses direction.
+    above which the meridional temperature gradient reverses direction in the stratosphere.
   </p>
 
     <figure xml:id="ch10-zonal-temp-seasonal">

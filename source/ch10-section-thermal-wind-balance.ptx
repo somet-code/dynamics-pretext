@@ -145,7 +145,8 @@
   <p>
     Another immediate implication of
     <xref ref="eqn-thermal-wind-balance-vector" text="type-global" /><ndash /><xref ref="eqn-thermal-wind-balance-y" text="type-global" />
-    is that the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest.
+    is that the local vertical shear of the geostrophic wind is parallel to isotherms contoured on an isobaric surface of interest,
+    with colder air to its left (right) in the Northern (Southern) Hemisphere.
     An example of this for the Northern Hemisphere is shown in <xref ref="ch10-thermal-wind-balance" text="type-global" /> below.
   </p>
 
