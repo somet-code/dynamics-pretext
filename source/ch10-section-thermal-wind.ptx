@@ -29,15 +29,17 @@
       and reveals <m>\vec{v}_T</m>
       is the vector difference between the geostrophic wind measured at two pressure levels of interest <m>p_1</m> and <m>p_2</m>.
       In other words,
-      the thermal wind thus defined is the <term>bulk vertical shear of the geostrophic wind</term>.
+      the thermal wind thus defined is the <term>bulk vertical shear of the geostrophic wind</term>,
+      where "bulk" means the shear is measured between two pressure levels.
       Furthermore,
       <xref ref="eqn-thermal-wind-vector" text="type-global" />
-      reveals the thermal wind is directly proportional to the pressure-weighted column-average temperature gradient
+      reveals the thermal wind is directly proportional to the horizontal pressure-weighted column-average temperature gradient
       measured at a pressure level of interest.
     </p>
 
     <p>
-      <xref ref="eqn-thermal-wind-vector" text="type-global" /> produces the following thermal wind components:
+      The vector form of the thermal wind <xref ref="eqn-thermal-wind-vector" text="type-global" />
+      produces the following thermal wind components:
     </p>
 
     <p>
@@ -143,7 +145,7 @@
     <p>
       <xref ref="eqn-thermal-wind-vector-geopotential" text="type-global" />
       and  <xref ref="eqn-thermal-wind-vector-geopotential-height" text="type-global" />
-      reveal the thermal wind is directly proportional to the thickness gradient measured at a pressure level of interest.
+      reveal the thermal wind is directly proportional to the horizontal thickness gradient measured at a pressure level of interest.
       Furthermore,
       these equations reveal the thermal wind flows parallel to thickness contours for two pressure levels of interest,
       similar to how <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />

@@ -98,12 +98,12 @@
   </p>
 
   <p>
-    This relationship given by <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
+    The relationship given by <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
     is called <term>thermal wind balance</term>.
   </p>
 
   <p>
-    <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
+    Thermal wind balance <xref ref="eqn-thermal-wind-balance-vector" text="type-global" />
     produces the following components of the local vertical shear of the geostrophic wind,
     i.e., the components of thermal wind balance:
   </p>
@@ -139,7 +139,7 @@
     there is no vertical shear of the geostrophic wind at the corresponding pressure level.
     In other words,
     the geostrophic wind is locally constant with height.
-    We will explore this scenario later in SECTION.
+    We will explore this scenario later in <xref ref="ch10-section-barotropy-baroclinity" text="type-global" />.
   </p>
 
   <p>
