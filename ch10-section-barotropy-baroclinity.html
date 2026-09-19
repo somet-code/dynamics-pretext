@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Barotropy and baroclinity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="METR 3113: Atmospheric Dynamics I">
+<meta property="og:title" content="METR 3113: Atmospheric Dynamics I">
+<meta property="book:title" content="METR 3113: Atmospheric Dynamics I">
+<meta name="twitter:description" content="Lecture notes for Atmospheric Dynamics I">
+<meta property="og:description" content="Lecture notes for Atmospheric Dynamics I">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.c838822d59bc26bc.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b9fedab97dee3c2a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="Atmospheric Dynamics I" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="atmospheric-dynamics-i.html"><span class="title">METR 3113</span> <span class="subtitle">Atmospheric Dynamics I</span></a></h1>
+<p class="byline">Dr. Amanda Kis</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch10-section-thermal-wind.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-10.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch10-section-selected-references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\newcommand{\sfrac}[2]{{#1}/{#2}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Continuum Approximation and Calculus in Geophysical Fluid Dynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-continuum-approximation.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Continuum approximation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch1-section-calculus.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-partial-differentiation" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Partial differentiation</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Vector algebra and calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-right-hand-rule" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Right-hand rule</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-del" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Del</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-vector-calculus-subsubsection-dot-cross-products" class="internal"><span class="codenumber">1.2.2.3</span> <span class="title">Properties of dot and cross products</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Taylor series</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-taylor-series-subsubsection-approximations" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title"><span class="process-math">\(n^{\mathrm{th}}\)</span>-order approximations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch1-section-calculus.html#ch1-section-calculus-subsection-total-differentiation" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Total differentiation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-finite-differencing.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Finite differencing</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-section-selected-references.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Coordinate Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian coordinate system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-spherical-coordinates.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spherical coordinate systems</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Local Cartesian coordinate system</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch2-section-local-cartesian-coordinates.html#ch2-section-local-cartesian-coordinates-subsection-rotation" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Note on rotation, sphericity, and the local Cartesian coordinate system</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-section-selected-references.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Fundamental Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-gravitational-force.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Gravitational force</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-pressure-gradient-force.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Pressure gradient force</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch3-section-friction-force.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Viscous friction force</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch3-section-friction-force.html#ch3-section-friction-force-subsection-couette-flow" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Couette flow</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-newtons-laws.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Newton’s laws of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch3-section-selected-references.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Non-inertial Reference Frames and Apparent Forces</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-relative-motion.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Relative motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-reference-frames.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Inertial and non-inertial reference frames</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-rotating-reference-frame.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Rotating reference frame</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-application-earth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Application of a rotating reference frame to Earth</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-accelerations.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Inertial accelerations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-centrifugal-acceleration.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Centrifugal acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-gravity.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Gravity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-geopotential.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Geopotential and geopotential height</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-inertial-forces-authors-note.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Author’s note on inertial forces</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch4-section-selected-references.html" class="internal"><span class="codenumber">4.10</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-5.html" class="internal"><span class="codenumber">5</span> <span class="title">Spherical Coordinates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Expanding the acceleration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-i-hat" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-j-hat" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-k-hat" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-all" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Putting everything together</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch5-section-expanding-acceleration.html#ch5-section-expanding-acceleration-subsection-a-authors-note" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Author’s note on the simplifying use of <span class="process-math">\(a\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-expanding-coriolis.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Expanding the Coriolis acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-expanding-friction.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Expanding the viscous friction acceleration</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-equations-of-motion.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Component equations of motion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch5-section-selected-references.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-6.html" class="internal"><span class="codenumber">6</span> <span class="title">Mass Conservation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-lagrangian.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Lagrangian perspective</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-eulerian.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Eulerian perspective</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-incompressibility.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Incompressibility</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-looking-ahead.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Looking ahead</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch6-section-selected-references.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-7.html" class="internal"><span class="codenumber">7</span> <span class="title">Dry Thermodynamics, Energy Conservation, and Static Stability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Review of dry thermodynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-ideal-gas" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Ideal gases and the ideal gas law</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hydrostatic-balance" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Hydrostatic balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-hypsometric-equation" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Hypsometric equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-first-law" class="internal"><span class="codenumber">7.1.4</span> <span class="title"><span class="process-math">\(1^{\text{st}}\)</span> law of thermodynamics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-adiabatic" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Lapse rates and adiabatic processes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-standard-atmosphere" class="internal"><span class="codenumber">7.1.6</span> <span class="title">Standard atmosphere</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-potential-temperature" class="internal"><span class="codenumber">7.1.7</span> <span class="title">Poisson’s equation and potential temperature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-buoyancy" class="internal"><span class="codenumber">7.1.8</span> <span class="title">Buoyancy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-thermodynamics-review.html#ch7-section-thermodynamics-review-subsection-stability" class="internal"><span class="codenumber">7.1.9</span> <span class="title">Local static stability</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-thermodynamic-energy-equation.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Thermodynamic energy equation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-mechanical-energy-equation.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Mechanical energy equation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch7-section-total-energy-equation.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Total energy equation</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch7-section-total-energy-equation.html#ch7-section-total-energy-equation-subsection-bernoulli" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Bernoulli’s principle</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-governing-equations.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Governing equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch7-section-selected-references.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-8.html" class="internal"><span class="codenumber">8</span> <span class="title">Synoptic Scale Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch8-section-scale-analysis.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Scale analysis</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Mid-latitude synoptic scale analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Geostrophic balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-rossby-number" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Rossby number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch8-section-mid-latitude-synoptic-scale-analysis.html#ch8-section-mid-latitude-synoptic-scale-analysis-subsection-hydrostatic-balance" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Hydrostatic balance</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch8-section-selected-references.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-9.html" class="internal"><span class="codenumber">9</span> <span class="title">Isobaric and Other Vertical Coordinates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch9-section-setup.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Setup</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-setup.html#ch9-section-setup-subsection-chain-rule" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Review of the chain rule for multivariable functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-setup.html#ch9-section-setup-subsection-general-vertical-coordinate" class="internal"><span class="codenumber">9.1.2</span> <span class="title">General vertical coordinate</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Isobaric coordinates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-pgf" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Pressure gradient acceleration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-geostrophic" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Geostrophic wind</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-hydrostatic-balance" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Hydrostatic balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-total-derivative" class="internal"><span class="codenumber">9.2.4</span> <span class="title">Total derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-mass-conservation" class="internal"><span class="codenumber">9.2.5</span> <span class="title">Mass conservation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-thermodynamic-energy-equation" class="internal"><span class="codenumber">9.2.6</span> <span class="title">Thermodynamic energy equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch9-section-isobaric-coordinates.html#ch9-section-isobaric-coordinates-subsection-omega" class="internal"><span class="codenumber">9.2.7</span> <span class="title">Interpretation of <span class="process-math">\(\omega\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch9-section-other-vertical-coordinates.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Other vertical coordinates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch9-section-selected-references.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-10.html" class="internal"><span class="codenumber">10</span> <span class="title">Thermal Wind Balance</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch10-section-thickness.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Revisiting thickness</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch10-section-thermal-wind-balance.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Thermal wind balance and the vertical shear of the geostrophic wind</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch10-section-thermal-wind.html" class="internal"><span class="codenumber">10.3</span> <span class="title">The thermal wind</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch10-section-thermal-wind.html#ch10-section-thermal-wind-subsection-temperature-advection" class="internal"><span class="codenumber">10.3.1</span> <span class="title">Temperature advection</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch10-section-barotropy-baroclinity.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Barotropy and baroclinity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch10-section-selected-references.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Selected references</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="references.html" class="internal"><span class="codenumber">11</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="appendix-cross-product-term-proof.html" class="internal"><span class="codenumber">A</span> <span class="title">Proof of Cross Product Term in Total Derivative for Rotating Reference Frames</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="aa-section-turntable.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Derivation for a turntable</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-i" class="internal"><span class="codenumber">A.1.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-j" class="internal"><span class="codenumber">A.1.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-k" class="internal"><span class="codenumber">A.1.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-turntable.html#aa-section-turntable-subsection-all" class="internal"><span class="codenumber">A.1.4</span> <span class="title">Putting everything together for the turntable</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="aa-section-earth.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Derivation for Earth</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-i" class="internal"><span class="codenumber">A.2.1</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{i}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-j" class="internal"><span class="codenumber">A.2.2</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{j}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-k" class="internal"><span class="codenumber">A.2.3</span> <span class="title">Expanding the total derivative of <span class="process-math">\(\hat{k}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="aa-section-earth.html#aa-section-earth-subsection-all" class="internal"><span class="codenumber">A.2.4</span> <span class="title">Putting everything together for Earth</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="ch10-section-barotropy-baroclinity">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Barotropy and baroclinity</span>
+</h2>
+<div class="para" id="ch10-section-barotropy-baroclinity-2">A <dfn class="terminology">barotropic</dfn> fluid is one in which density <span class="process-math">\(\rho\)</span> depends only on pressure <span class="process-math">\(p\text{,}\)</span> i.e., <span class="process-math">\(\rho = \rho(p)\text{.}\)</span> Consider this restriction alongside the ideal gas law: Since <span class="process-math">\(\rho\)</span> depends only on <span class="process-math">\(p\text{,}\)</span> the ideal gas law implies that temperature <span class="process-math">\(T\)</span> also depends only on <span class="process-math">\(p\text{,}\)</span> i.e., <span class="process-math">\(T = T(p)\text{.}\)</span> Consequently, isobaric, <dfn class="terminology">isopycnic</dfn> (constant density), and isothermal surfaces are parallel within a barotropic fluid, as shown in <a href="ch10-section-barotropy-baroclinity.html#ch10-barotropic" class="xref" data-knowl="./knowl/xref/ch10-barotropic.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.1">Figure 10.4.1</a> below. In other words, isobaric surfaces also are ispycnic and isothermal surfaces.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch10-barotropic"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch10-barotropic.png" class="contained" alt="Rectangular prism volume of barotropic fluid with parallel black, aqua, and dashed red surfaces representing isobaric, isopycnic, and isothermal surfaces, respectively. The surfaces tilt upward where the fluid is warmer."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Stratification of isobaric (black), isopycnic (aqua), and isothermal (dashed red) surfaces within a barotropic fluid. The surfaces are parallel and tilt upward where the fluid is warmer. Figure and caption modified from image vectorised by User:Sushant savla from the work by Reas at German Wikipedia, via <a class="external" href="https://commons.wikimedia.org/wiki/File:Barotrope.svg" target="_blank">Wikimedia Commons</a> under <a class="external" href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>.<div class="autopermalink" data-description="Figure 10.4.1"><a href="#ch10-barotropic" title="Copy heading and permalink for Figure 10.4.1" aria-label="Copy heading and permalink for Figure 10.4.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch10-section-barotropy-baroclinity-4">It follows that in a barotropic atmosphere, <span class="process-math">\(T\)</span> does not vary along isobaric surfaces, i.e., <span class="process-math">\(\nabla_p T = \vec{0}\text{.}\)</span> Consequently, <a href="ch10-section-thermal-wind-balance.html#eqn-thermal-wind-balance-vector" class="xref" data-knowl="./knowl/xref/eqn-thermal-wind-balance-vector.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 10.2.6">(10.2.6)</a>–<a href="ch10-section-thermal-wind-balance.html#eqn-thermal-wind-balance-y" class="xref" data-knowl="./knowl/xref/eqn-thermal-wind-balance-y.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 10.2.8">(10.2.8)</a> require that the geostrophic wind is not vertically sheared in a barotropic atmosphere, i.e., it is constant with height and <span class="process-math">\(-\dfrac{\partial \vec{v}_g}{\partial p} = \vec{0}\text{.}\)</span> This means the thermal wind also is zero: <span class="process-math">\(\vec{v}_T = \vec{0}\text{.}\)</span> So in a barotropic atmosphere, the geostrophic wind can vary with horizontal position and time but not with height. In other words, at a given moment in time, the geostrophic wind is constant in the vertical over any location of interest within a barotropic atmosphere.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch10-section-barotropy-baroclinity-5">A <dfn class="terminology">baroclinic</dfn> fluid is one in which <span class="process-math">\(\rho\)</span> depends on both <span class="process-math">\(p\)</span> and <span class="process-math">\(T\text{,}\)</span> i.e., <span class="process-math">\(\rho = \rho(p,T)\text{.}\)</span> Consider this statement alongside the ideal gas law: Since <span class="process-math">\(\rho\)</span> depends on both <span class="process-math">\(p\)</span> and <span class="process-math">\(T\text{,}\)</span> the ideal gas law implies that <span class="process-math">\(T\)</span> depends on both <span class="process-math">\(p\)</span> and <span class="process-math">\(\rho\text{,}\)</span> i.e., <span class="process-math">\(T = T(p,\rho)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch10-section-barotropy-baroclinity-6">This is a more complicated situation than found in the barotropic fluid, and it means that isobaric, isopycnic, and isothermal surfaces are not parallel in a baroclinic fluid, an example of which is shown in <a href="ch10-section-barotropy-baroclinity.html#ch10-baroclinic" class="xref" data-knowl="./knowl/xref/ch10-baroclinic.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.2">Figure 10.4.2</a> below. Consequently, in a baroclinic atmosphere, temperature can vary along isobaric surfaces, and so there is no restriction on the vertical shear of the geostrophic wind and the thermal wind: The geostrophic wind can vary with horizontal position and time as well as with height as long as temperature gradients are present along isobaric surfaces.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch10-baroclinic"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/images/ch10-baroclinic.png" class="contained" alt="Rectangular prism volume of barotropic fluid with parallel black, aqua, and dashed red surfaces representing isobaric, isopycnic, and isothermal surfaces, respectively. The surfaces are not parallel, and the isopycnic surfaces tilt downward where the fluid is warmer."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Possible stratification of isobaric (black), isopycnic (aqua), and isothermal (dashed red) surfaces within a baroclinic fluid. The surfaces are not parallel, and the isopycnic surfaces tilt downward where the fluid is warmer, indicating lower density in the warmer part of the fluid. Figure and caption modified from image vectorised by User:Sushant savla from the work by Reas at German Wikipedia, via <a class="external" href="https://commons.wikimedia.org/wiki/File:Baroclinic_fluid.png" target="_blank">Wikimedia Commons</a> under <a class="external" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>.<div class="autopermalink" data-description="Figure 10.4.2"><a href="#ch10-baroclinic" title="Copy heading and permalink for Figure 10.4.2" aria-label="Copy heading and permalink for Figure 10.4.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch10-section-barotropy-baroclinity-8">We can determine where the atmosphere is barotropic, approximately barotropic, or baroclinic using isobaric maps with isotherms contoured on them.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ch10-section-barotropy-baroclinity-9">
+<ul class="disc" id="ch10-section-barotropy-baroclinity-9-1">
+<li id="ch10-section-barotropy-baroclinity-9-1-1">
+<div class="para" id="ch10-section-barotropy-baroclinity-9-1-1-1">Where the atmosphere is barotropic, isotherms will not be drawn on the map since temperature is constant on the isobaric surface.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-9-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch10-section-barotropy-baroclinity-9-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch10-section-barotropy-baroclinity-9-1-2">
+<div class="para" id="ch10-section-barotropy-baroclinity-9-1-2-1">Where the atmosphere is approximately barotropic, few isotherms will be drawn on the map, and they will be spaced relatively far apart from each other.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-9-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch10-section-barotropy-baroclinity-9-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch10-section-barotropy-baroclinity-9-1-3">
+<div class="para" id="ch10-section-barotropy-baroclinity-9-1-3-1">Where the atmosphere is baroclinic, many isotherms will be drawn on the map since temperature varies across the isobaric surface, and they will be spaced relatively close to each other. An example of this case is shown in <a href="ch10-section-barotropy-baroclinity.html#ch10-baroclinic-map" class="xref" data-knowl="./knowl/xref/ch10-baroclinic-map.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.3">Figure 10.4.3</a> below.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-9-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch10-section-barotropy-baroclinity-9-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch10-section-barotropy-baroclinity-10">Several isobaric maps for different pressure levels can be compared to determine the depth over which the atmosphere is barotropic, approximately barotropic, or baroclinic.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch10-baroclinic-map"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/ch10-baroclinic-map.png" class="contained" alt="850 hPa map with many closely spaced isotherms, indicating baroclinity of the atmosphere at this pressure level."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>850 hPa map with contoured isohypses of geopotential height (solid black; m), isotherms (dashed red for temperatures above 0°C, dashed blue for temperatures at and below 0°C), and isodrosotherms (dotted green for dewpoints at or above 0°C, shaded green for dewpoints at or above 6°C). Station models and pressure centers are annotated. Map courtesy of <a class="external" href="https://weather.cod.edu/" target="_blank">College of DuPage Weather Lab</a>.<div class="autopermalink" data-description="Figure 10.4.3"><a href="#ch10-baroclinic-map" title="Copy heading and permalink for Figure 10.4.3" aria-label="Copy heading and permalink for Figure 10.4.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch10-section-barotropy-baroclinity-12">In general, baroclinity is maximized in the middle latitudes, while the tropics are approximately barotropic. <a href="ch10-section-barotropy-baroclinity.html#ch10-500mb-temp" class="xref" data-knowl="./knowl/xref/ch10-500mb-temp.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.4">Figure 10.4.4</a> below shows 1991–2020 annual average isotherms on the 500 hPa isobaric surface. In <a href="ch10-section-barotropy-baroclinity.html#ch10-500mb-temp" class="xref" data-knowl="./knowl/xref/ch10-500mb-temp.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.4">Figure 10.4.4</a>, the horizontal temperature gradient is quite small in the tropics as depicted by the distant spacing of a couple of isotherms, indicating approximate barotropy. In contrast, the close spacing of many isotherms in the mid-latitudes indicates baroclinity. Baroclinity persists but decreases in the polar latitudes as indicated by the relatively more distant spacing of fewer isotherms. Similar patterns are apparent on isobaric maps for other pressure levels below the tropopause (not shown).<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch10-500mb-temp"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/ch10-500mb-temp.png" class="contained" alt="Global 500 mb map with nearly uniform warm air in the tropics, highly baroclinic air in the middle latitudes that cools with increasing latitude, and somewhat baroclinic air in the polar latitudes that cools with increasing latitude."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>1991–2020 annual average isotherms on the 500 hPa isobaric surface. Isotherms are contoured at 5°C increments and labeled every 10°C, with color shading between isotherms according to the color bar. Warmer colored shading indicates warmer temperature. Figure courtesy of <a class="external" href="https://psl.noaa.gov/" target="_blank">NOAA Physical Sciences Laboratory</a> using NCEP/NCAR Reanalysis data.<div class="autopermalink" data-description="Figure 10.4.4"><a href="#ch10-500mb-temp" title="Copy heading and permalink for Figure 10.4.4" aria-label="Copy heading and permalink for Figure 10.4.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch10-section-barotropy-baroclinity-14">
+<a href="ch10-section-barotropy-baroclinity.html#ch10-zonal-temp-annual" class="xref" data-knowl="./knowl/xref/ch10-zonal-temp-annual.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.5">Figure 10.4.5</a> below shows a vertical cross-section of 1991–2020 annual average isotherms that have been averaged longitudinally. As expected, the isotherms depict the warmest air on average in the tropics and the coldest air on average in the polar regions, through the depth of the troposphere, thus setting up a meridional temperature gradient in both the Northern Hemisphere and the Southern Hemisphere. Furthermore, the isotherms approximately parallel isobaric surfaces in the tropics but are steeply sloped in the middle latitudes and intersect isobaric surfaces up to about 200 hPa.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch10-zonal-temp-annual"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/ch10-zonal-temp-annual.png" class="contained" alt="Zonally averaged temperature at all latitudes from 1000 hPa to 1 hPa. A deep layer of warm air is found in the tropics up to about 250 hPa. The warm air slopes downward with increasing latitude in the middle latitudes and polar regions, creating relatively colder air aloft. The coldest air in the stratosphere is found above the tropics."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>1991–2020 annual average isotherms averaged longitudinally. Isotherms are contoured at 5°C increments and labeled every 10°C, with color shading between isotherms according to the color bar. Warmer colored shading indicates warmer temperature. Isotherms colder than 0°C are dashed while isotherms equal to and warmer than 0°C are solid. Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis. Figure courtesy of <a class="external" href="https://psl.noaa.gov/" target="_blank">NOAA Physical Sciences Laboratory</a> using NCEP/NCAR Reanalysis data.<div class="autopermalink" data-description="Figure 10.4.5"><a href="#ch10-zonal-temp-annual" title="Copy heading and permalink for Figure 10.4.5" aria-label="Copy heading and permalink for Figure 10.4.5">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch10-section-barotropy-baroclinity-16">Given our previous discussion, it should be unsurprising that zonal winds on average are maximized in the middle latitudes as <dfn class="terminology">jet streams</dfn> (narrow, horizontally-oriented fast-moving currents of air), with wind speed maxima on average around 200 hPa (<a href="ch10-section-barotropy-baroclinity.html#ch10-zonal-wind-annual" class="xref" data-knowl="./knowl/xref/ch10-zonal-wind-annual.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.6">Figure 10.4.6</a>). This approximately is the pressure level above which the meridional temperature gradient reverses direction. Average zonal winds at other latitudes where baroclinity is smaller are weaker and closer to constant with height. Furthermore, average zonal winds in and around the jet streams are westerly, consistent with the westerly vertical wind shear of the geostrophic wind required by thermal wind balance in both the Northern and Southern Hemispheres.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch10-zonal-wind-annual"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/ch10-zonal-wind-annual.png" class="contained" alt="Zonally averaged zonal wind at all latitudes from 1000 hPa to 1 hPa. The largest vertical wind shear and fastest winds aloft are found over the middle latitudes, with speed maxima around 200 hPa."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>1991–2020 annual average isotachs of zonal wind averaged longitudinally. Isotachs are contoured at <span class="process-math">\(5 \, \text{m} \, \text{s}^{-1}\)</span> increments and labeled every <span class="process-math">\(10 \, \text{m} \, \text{s}^{-1}\text{,}\)</span> with color shading between isotachs according to the color bar. Isotachs of westerly winds (directed out of the screen) are solid, and isotachs of easterly winds (directed into the screen) are dashed. Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis. Figure courtesy of <a class="external" href="https://psl.noaa.gov/" target="_blank">NOAA Physical Sciences Laboratory</a> using NCEP/NCAR Reanalysis data.<div class="autopermalink" data-description="Figure 10.4.6"><a href="#ch10-zonal-wind-annual" title="Copy heading and permalink for Figure 10.4.6" aria-label="Copy heading and permalink for Figure 10.4.6">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="ch10-section-barotropy-baroclinity-18">Baroclinity is enhanced in the winter hemisphere relative to the summer hemisphere because the meridional temperature gradient is strengthened as the polar regions cool. <a href="ch10-section-barotropy-baroclinity.html#ch10-zonal-temp-djf" class="xref" data-knowl="./knowl/xref/ch10-zonal-temp-djf.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.7(a)">Figure 10.4.7(a)</a> below shows a vertical cross-section of 1991–2020 isotherms that have been averaged over December-January-February (DFJ) as well as longitudinally, and <a href="ch10-section-barotropy-baroclinity.html#ch10-zonal-temp-jja" class="xref" data-knowl="./knowl/xref/ch10-zonal-temp-jja.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.7(b)">Figure 10.4.7(b)</a> below shows a vertical cross-section of 1991–2020 isotherms that have been averaged over June-July-August (JJA) as well as longitudinally. The former three-month period is winter (summer) for the Northern (Southern) Hemisphere, and the latter three-month period is winter (summer) for the Southern (Northern) Hemisphere. As in the annual average shown in <a href="ch10-section-barotropy-baroclinity.html#ch10-zonal-temp-annual" class="xref" data-knowl="./knowl/xref/ch10-zonal-temp-annual.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.5">Figure 10.4.5</a>, the isotherms approximately parallel isobaric surfaces in the tropics but are steeply sloped in the middle latitudes and intersect isobaric surfaces up to about 200 hPa. Furthermore, isotherms are sloped more steeply in the middle latitudes of the winter hemisphere relative to the summer hemisphere and intersect isobaric surfaces more frequently, indicating enhanced baroclinity.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ch10-section-barotropy-baroclinity-19">Unsurprisingly, seasonally-averaged zonal winds indicate jet streams are faster in the middle latitudes of the winter hemisphere, as shown in <a href="ch10-section-barotropy-baroclinity.html#ch10-zonal-wind-seasonal" class="xref" data-knowl="./knowl/xref/ch10-zonal-wind-seasonal.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.4.8">Figure 10.4.8</a> below. Again, wind speed maxima are found around 200 hPa, above which the meridional temperature gradient reverses direction.<div class="autopermalink" data-description="Paragraph"><a href="#ch10-section-barotropy-baroclinity-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="ch10-zonal-temp-seasonal">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<figure class="figure figure-like" id="ch10-zonal-temp-djf"><div class="image-box"><img src="external/images/ch10-zonal-temp-djf.png" class="contained" alt="Zonally averaged temperature at all latitudes from 1000 hPa to 1 hPa. A deep layer of warm air is found in the tropics up to about 250 hPa. The warm air slopes downward with increasing latitude in the middle latitudes and polar regions, creating relatively colder air aloft. This slope is steeper in the winter hemisphere. The coldest air in the stratosphere is found above the tropics."></div>
+<figcaption><span class="codenumber">(a)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span>1991–2020 isotherms averaged over December-January-February (DFJ) as well as longitudinally. Isotherms are contoured at 5°C increments and labeled every 10°C, with color shading between isotherms according to the color bar. Warmer colored shading indicates warmer temperature. Isotherms colder than 0°C are dashed while isotherms equal to and warmer than 0°C are solid. Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis. Figure courtesy of <a class="external" href="https://psl.noaa.gov/" target="_blank">NOAA Physical Sciences Laboratory</a> using NCEP/NCAR Reanalysis data.<div class="autopermalink" data-description="Figure 10.4.7(a)"><a href="#ch10-zonal-temp-djf" title="Copy heading and permalink for Figure 10.4.7(a)" aria-label="Copy heading and permalink for Figure 10.4.7(a)">🔗</a></div></figcaption>
+</figure>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<figure class="figure figure-like" id="ch10-zonal-temp-jja"><div class="image-box"><img src="external/images/ch10-zonal-temp-jja.png" class="contained" alt="Zonally averaged temperature at all latitudes from 1000 hPa to 1 hPa. A deep layer of warm air is found in the tropics up to about 250 hPa. The warm air slopes downward with increasing latitude in the middle latitudes and polar regions, creating relatively colder air aloft. This slope is steeper in the winter hemisphere. The coldest air in the stratosphere is found above the tropics."></div>
+<figcaption><span class="codenumber">(b)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span>1991–2020 isotherms averaged over June-July-August (JJA) as well as longitudinally. Isotherms are contoured at 5°C increments and labeled every 10°C, with color shading between isotherms according to the color bar. Warmer colored shading indicates warmer temperature. Isotherms colder than 0°C are dashed while isotherms equal to and warmer than 0°C are solid. Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis. Figure courtesy of <a class="external" href="https://psl.noaa.gov/" target="_blank">NOAA Physical Sciences Laboratory</a> using NCEP/NCAR Reanalysis data.<div class="autopermalink" data-description="Figure 10.4.7(b)"><a href="#ch10-zonal-temp-jja" title="Copy heading and permalink for Figure 10.4.7(b)" aria-label="Copy heading and permalink for Figure 10.4.7(b)">🔗</a></div></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 10.4.7"><a href="#ch10-zonal-temp-seasonal" title="Copy heading and permalink for Figure 10.4.7" aria-label="Copy heading and permalink for Figure 10.4.7">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="ch10-zonal-wind-seasonal">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<figure class="figure figure-like" id="ch10-zonal-wind-djf"><div class="image-box"><img src="external/images/ch10-zonal-wind-djf.png" class="contained" alt="Zonally averaged zonal wind at all latitudes from 1000 hPa to 1 hPa. The largest vertical wind shear and fastest winds aloft are found over the middle latitudes, with speed maxima around 200 hPa. Winds are fastest in the winter hemisphere."></div>
+<figcaption><span class="codenumber">(a)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span>1991–2020 isotachs of zonal wind averaged over December-January-February (DFJ) as well as longitudinally. Isotachs are contoured at <span class="process-math">\(5 \, \text{m} \, \text{s}^{-1}\)</span> increments and labeled every <span class="process-math">\(10 \, \text{m} \, \text{s}^{-1}\text{,}\)</span> with color shading between isotachs according to the color bar. Isotachs of westerly winds (directed out of the screen) are solid, and isotachs of easterly winds (directed into the screen) are dashed. Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis. Figure courtesy of <a class="external" href="https://psl.noaa.gov/" target="_blank">NOAA Physical Sciences Laboratory</a> using NCEP/NCAR Reanalysis data.<div class="autopermalink" data-description="Figure 10.4.8(a)"><a href="#ch10-zonal-wind-djf" title="Copy heading and permalink for Figure 10.4.8(a)" aria-label="Copy heading and permalink for Figure 10.4.8(a)">🔗</a></div></figcaption>
+</figure>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<figure class="figure figure-like" id="ch10-zonal-wind-jja"><div class="image-box"><img src="external/images/ch10-zonal-wind-jja.png" class="contained" alt="Zonally averaged zonal wind at all latitudes from 1000 hPa to 1 hPa. The largest vertical wind shear and fastest winds aloft are found over the middle latitudes, with speed maxima around 200 hPa. Winds are fastest in the winter hemisphere."></div>
+<figcaption><span class="codenumber">(b)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span>1991–2020 isotachs of zonal wind averaged over June-July-August (JJA) as well as longitudinally. Isotachs are contoured at <span class="process-math">\(5 \, \text{m} \, \text{s}^{-1}\)</span> increments and labeled every <span class="process-math">\(10 \, \text{m} \, \text{s}^{-1}\text{,}\)</span> with color shading between isotachs according to the color bar. Isotachs of westerly winds (directed out of the screen) are solid, and isotachs of easterly winds (directed into the screen) are dashed. Pressure (hPa) is shown on the vertical axis and latitude is shown on the horizontal axis. Figure courtesy of <a class="external" href="https://psl.noaa.gov/" target="_blank">NOAA Physical Sciences Laboratory</a> using NCEP/NCAR Reanalysis data.<div class="autopermalink" data-description="Figure 10.4.8(b)"><a href="#ch10-zonal-wind-jja" title="Copy heading and permalink for Figure 10.4.8(b)" aria-label="Copy heading and permalink for Figure 10.4.8(b)">🔗</a></div></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 10.4.8"><a href="#ch10-zonal-wind-seasonal" title="Copy heading and permalink for Figure 10.4.8" aria-label="Copy heading and permalink for Figure 10.4.8">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Section 10.4: Barotropy and baroclinity"><a href="#ch10-section-barotropy-baroclinity" title="Copy heading and permalink for Section 10.4: Barotropy and baroclinity" aria-label="Copy heading and permalink for Section 10.4: Barotropy and baroclinity">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch10-section-thermal-wind.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch10-section-selected-references.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
