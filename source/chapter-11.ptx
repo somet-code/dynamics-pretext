@@ -2,5 +2,6 @@
   <title>The Ageostrophic Wind</title>
 
   <xi:include href="ch11-section-geostrophic-balance-limitations.ptx" />
+  <xi:include href="ch11-section-ageostrophic-wind-derivation.ptx" />
 
 </chapter>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch11-section-ageostrophic-wind-derivation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Deriving the ageostrophic wind</title>
+
+  <p>
+    Recall from <xref ref="ch8-section-mid-latitude-synoptic-scale-analysis" text="custom">Chapter 8</xref>
+    that the horizontal acceleration of air parcels making up the wind<mdash />given by
+    <m>\dfrac{Du}{Dt}</m> in the zonal direction and
+    <m>\dfrac{Dv}{Dt}</m> in the meridional direction<mdash />has the next-largest magnitude
+    for mid-latitude synoptic scale analysis of the horizontal equations of motion: <m>\mathcal{O}(10^{-4} \, \text{m} \, \text{s}^{-2})</m>.
+    Although this horizontal Lagrangian acceleration is about 10 times smaller than the horizontal pressure gradient and Coriolis accelerations
+    for mid-latitude synoptic scale motions,
+    retaining it allows for prediction and explanation of large-scale vertical motions.
+  </p>
+
+  <p>
+    Consider the horizontal equations of motion in height coordinates with these three largest accelerations retained:
+  </p>
+
+  <p>
+    <md xml:id="eqn-quasi-geostrophic-zonal" number="yes">
+      \frac{Du}{Dt} = -\frac{1}{\rho} \frac{\partial p}{\partial x} + fv
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-quasi-geostrophic-meridional" number="yes">
+      \frac{Dv}{Dt} = -\frac{1}{\rho} \frac{\partial p}{\partial y} - fu
+    </md>
+  </p>
+
+  <p>
+    where the Coriolis parameter <m>f = 2 \Omega \sin{\phi}</m> has been substituted for simplicity.
+    These equations can be combined into vector form as
+  </p>
+
+  <p>
+    <md xml:id="eqn-quasi-geostrophic-vector" number="yes">
+      \frac{D \vec{v}}{Dt} = -\frac{1}{\rho} \nabla_z p - f \, \hat{k} \times \vec{v}
+    </md>
+  </p>
+
+  <p>
+    where the "z" subscript emphasizes height coordinates are used and pressure is measured at constant height.
+  </p>
+
+  <p>
+    Unlike the equations of geostrophic balance,
+    which are <em>diagnostic</em>,
+    <xref ref="eqn-quasi-geostrophic-zonal" text="type-global" /><ndash /><xref ref="eqn-quasi-geostrophic-vector" text="type-global" />
+    are <em>prognostic</em> because they feature time derivatives through inclusion of horizontal Lagrangian acceleration.
+    While they are more accurate to real atmospheric motions than the equations of geostrophic balance
+    because the horizontal Lagrangian acceleration is retained,
+    they still are approximate since smaller accelerations such as the curvature terms and viscous friction acceleration are neglected.
+  </p>
+
+  <p>
+    Recall from <xref ref="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance" text="custom">Chapter 8</xref>
+    that the zonal and meridional components of the geostrophic wind are given in height coordinates by
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-x-reproduced2" number="yes">
+      u_g = -\frac{1}{\rho f} \frac{\partial p}{\partial y}
+    </md>
+  </p>
+
+  <p>
+    and
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-y-reproduced2" number="yes">
+      v_g = \frac{1}{\rho f} \frac{\partial p}{\partial x}
+    </md>
+  </p>
+
+  <p>
+    respectively, and its vector equation is given by
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-vector-reproduced2" number="yes">
+      \vec{v}_g = \frac{1}{\rho f} \, \hat{k} \times \nabla_z p
+    </md>
+  </p>
+
+</section>
