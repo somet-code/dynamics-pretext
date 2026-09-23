@@ -19,13 +19,13 @@
   </p>
 
   <p>
-    <md xml:id="eqn-quasi-geostrophic-zonal" number="yes">
+    <md xml:id="eqn-quasi-geostrophic-x" number="yes">
       \frac{Du}{Dt} = -\frac{1}{\rho} \frac{\partial p}{\partial x} + fv
     </md>
   </p>
 
   <p>
-    <md xml:id="eqn-quasi-geostrophic-meridional" number="yes">
+    <md xml:id="eqn-quasi-geostrophic-y" number="yes">
       \frac{Dv}{Dt} = -\frac{1}{\rho} \frac{\partial p}{\partial y} - fu
     </md>
   </p>
@@ -48,7 +48,7 @@
   <p>
     Unlike the equations of geostrophic balance,
     which are <em>diagnostic</em>,
-    <xref ref="eqn-quasi-geostrophic-zonal" text="type-global" /><ndash /><xref ref="eqn-quasi-geostrophic-vector" text="type-global" />
+    <xref ref="eqn-quasi-geostrophic-x" text="type-global" /><ndash /><xref ref="eqn-quasi-geostrophic-vector" text="type-global" />
     are <em>prognostic</em> because they feature time derivatives through inclusion of horizontal Lagrangian acceleration.
     While they are more accurate to real atmospheric motions than the equations of geostrophic balance
     because the horizontal Lagrangian acceleration is retained,
@@ -84,6 +84,167 @@
     <md xml:id="eqn-geostrophic-wind-vector-reproduced2" number="yes">
       \vec{v}_g = \frac{1}{\rho f} \, \hat{k} \times \nabla_z p
     </md>
+  </p>
+
+  <p>
+    <xref ref="eqn-geostrophic-wind-x-reproduced2" text="type-global" /><ndash /><xref ref="eqn-geostrophic-wind-vector-reproduced2" text="type-global" />
+    each can be rearranged to isolate the horizontal pressure gradient acceleration
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-x-reproduced2-rearranged" number="yes">
+      f u_g = -\frac{1}{\rho} \frac{\partial p}{\partial y}
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-geostrophic-wind-y-reproduced2-rearranged" number="yes">
+      -f v_g = -\frac{1}{\rho} \frac{\partial p}{\partial x}
+    </md>
+  </p>
+  
+  <p>
+    <md xml:id="eqn-geostrophic-wind-vector-reproduced2-rearranged" number="yes">
+      f \, \hat{k} \times \vec{v}_g = -\frac{1}{\rho} \nabla_z p
+    </md>
+  </p>
+
+  <p>
+    for substitution into
+    <xref ref="eqn-quasi-geostrophic-x" text="type-global" /><ndash /><xref ref="eqn-quasi-geostrophic-vector" text="type-global" />:
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-x-start" number="yes">
+      \frac{Du}{Dt} = -f v_g + fv = f(v - v_g)
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-y-start" number="yes">
+      \frac{Dv}{Dt} = f u_g - fu = -f(u - u_g)
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-vector-start" number="yes">
+      \frac{D \vec{v}}{Dt}
+      =
+      f \, \hat{k} \times \vec{v}_g - f \, \hat{k} \times \vec{v}
+      =
+      -f \, \hat{k} \times (\vec{v} - \vec{v}_g)
+    </md>
+  </p>
+
+  <p>
+    Note the vector identity
+  </p>
+
+  <p>
+    <md xml:id="eqn-cross-product-identity" number="yes">
+      \hat{k} \times (\hat{k} \times \vec{A}) = -\vec{A}
+    </md>
+  </p>
+
+  <p>
+    was used to produce <xref ref="eqn-geostrophic-wind-vector-reproduced2-rearranged" text="tyep-global" />.
+  </p>
+
+  <p>
+    We define the <term>ageostrophic wind</term> as
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-vector-basic" number="yes">
+      \vec{v}_a
+      = u_a \, \hat{i} + v_a \, \hat{j}
+      = \vec{v} - \vec{v}_g
+      = (u - u_g) \, \hat{i} + (v - v_g) \, \hat{j}
+    </md>
+  </p>
+
+  <p>
+    where <m>\vec{v} = u \, \hat{i} + v \, \hat{j}</m> is the true horizontal wind.
+    <xref ref="eqn-ageostrophic-wind-vector-basic" text="type-global" /> makes it clear that
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-x-basic" number="yes">
+      u_a = u - u_g
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-y-basic" number="yes">
+      v_a = v - v_g
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-vector-basic-reproduced" number="yes">
+      \vec{v}_a = \vec{v} - \vec{v}_g
+    </md>
+  </p>
+
+  <p>
+    In other words,
+    the ageostrophic wind is the deviation of the true horizontal wind from geostrophy,
+    and it results from imbalance between the horizontal pressure gradient force and the horizontal Coriolis force.
+  </p>
+
+  <p>
+    Substituting
+    <xref ref="eqn-ageostrophic-wind-x-basic" text="type-global" /><ndash /><xref ref="eqn-ageostrophic-wind-vector-basic-reproduced" text="type-global" />
+    into
+    <xref ref="eqn-ageostrophic-wind-x-start" text="type-global" /><ndash /><xref ref="eqn-ageostrophic-wind-vector-start" text="type-global" />
+    produces
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-x-intermediate" number="yes">
+      \frac{Du}{Dt} = f v_a
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-y-intermediate" number="yes">
+      \frac{Dv}{Dt} = -f u_a
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-vector-intermediate" number="yes">
+      \frac{D \vec{v}}{Dt}
+      = -f \, \hat{k} \times \vec{v}_a
+    </md>
+  </p>
+
+  <p>
+    Therefore,
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-x" number="yes">
+      u_a = u - u_g = -\frac{1}{f} \frac{Dv}{Dt}
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-y" number="yes">
+      v_a = v - v_g = \frac{1}{f} \frac{Du}{Dt}
+    </md>
+  </p>
+
+  <p>
+    <md xml:id="eqn-ageostrophic-wind-vector" number="yes">
+      \vec{v}_a = \vec{v} - \vec{v}_g
+      = \frac{1}{f} \, \hat{k} \times \frac{D\vec{v}}{Dt}
+    </md>
+  </p>
+
+  <p>
+    where the vector identity given by <xref ref="eqn-cross-product-identity" text="type-global" />
+    again was used to produce <xref ref="eqn-ageostrophic-wind-vector" text="type-global" />.
   </p>
 
 </section>
