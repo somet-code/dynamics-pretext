@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch11-section-ageostrophic-wind-applications-subsection-jet-streaks" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Jet streaks</title>
+
+    <p>
+        A <term>jet streak</term> is a local maximum of horizontal wind speed within a jet stream
+        produced by strengthening of the horizontal pressure gradient,
+        as shown in <xref ref="ch11-jet-streak" text="type-global" /> below.
+        The <term>entrance region</term> of a jet streak is the half into which air parcels flow,
+        speeding up as they enter the jet streak,
+        and the <term>exit region</term> of a jet streak is the half out of which air parcels flow,
+        slowing down as they exit the jet streak.
+    </p>
+
+    <figure xml:id="ch11-jet-streak">
+        <caption>
+            A straight, symmetric Northern Hemisphere jet streak
+            produced by a strengthened horizontal pressure gradient
+            as indicated by isohypses of geopotential height on an isobaric surface of interest (<m>Z \gt 0</m> and <m>\Delta Z \gt 0</m>).
+            Shaded ovals are isotachs,
+            where the inner magenta shading indicates faster wind speeds than the outer blue shading.
+            Black vectors give the geostrophic wind entering the jet streak from the west (on the left),
+            flowing within the jet streak in the center, and exiting the jet streak to the east (on the right).
+        </caption>
+        <image source="images/ch11-jet-streak.png" width="80%">
+            <shortdescription>
+                A west-to-east oriented jet streak with strongest horizontal pressure gradient and fastest winds at its center.
+                Horizontal winds flow from west-to-east through the jet streak,
+                speeding up toward the middle and slowing down after.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Jet streaks typically are partitioned into quadrants that are named relative to the general direction of horizontal wind flow through them,
+        as shown in <xref ref="ch11-jet-streak-quadrants" text="type-global" /> below for generally westerly flow through a Northern Hemisphere jet streak.
+    </p>
+
+    <figure xml:id="ch11-jet-streak-quadrants">
+        <caption>
+            Reproduction of <xref ref="ch11-jet-streak" text="type-global" />
+            with dashed brown lines partitioning the jet streak into named quadrants:
+            left entrance (upper-left),
+            left exit (upper-right),
+            right entrance (lower-left),
+            and right exit (upper-right).
+        </caption>
+        <image source="images/ch11-jet-streak-quadrants.png" width="80%">
+            <shortdescription>
+                A west-to-east oriented jet streak with strongest horizontal pressure gradient and fastest winds at its center.
+                Horizontal winds flow from west-to-east through the jet streak,
+                speeding up toward the middle and slowing down after.
+                The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right)
+                relative to the wind flow through it.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Air parcels speed up as they flow into the jet streak's entrance region,
+        and they slow down as they flow out of the jet streak's exist region.
+        <xref ref="ch11-jet-streak-ageostrophic" text="type-global" /> below depicts representative horizontal acceleration vectors for the entrance and exit regions for the jet streak of
+        <xref ref="ch11-jet-streak" text="type-global" /> and <xref ref="ch11-jet-streak-quadrants" text="type-global" />.
+        <xref ref="eqn-ageostrophic-wind-vector" text="type-global" /> dictates that,
+        in the Northern Hemisphere,
+        the ageostrophic wind must be directed away from the right entrance region and toward the left entrance region
+        as well as away from the left exit region and toward the right exit region,
+        as shown in <xref ref="ch11-jet-streak-ageostrophic" text="type-global" /> as well.
+    </p>
+
+    <figure xml:id="ch11-jet-streak-ageostrophic">
+        <caption>
+            Reproduction of <xref ref="ch11-jet-streak-quadrants" text="type-global" />
+            with the isohypses removed and the dashed brown lines replaced by thinner dashed black lines for clarity.
+            The purple vectors labeled <m>\dfrac{D\vec{v}}{Dt}</m>
+            show representative horizontal acceleration vectors in the entrance and exit regions,
+            and the blue vectors labeled <m>\vec{v}_a</m> give the corresponding ageostrophic winds.
+            Note vectors are not drawn to scale.
+        </caption>
+        <image source="images/ch11-jet-streak-ageostrophic.png" width="80%">
+            <shortdescription>
+                A west-to-east oriented jet streak with fastest winds at its center.
+                Horizontal winds flow from west-to-east through the jet streak,
+                speeding up toward the middle and slowing down after.
+                The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right)
+                relative to the wind flow through it.
+                The acceleration of the horizontal wind vector points toward the center of the jet streak,
+                and the geostrophic wind vectors point to the left of the acceleration of the horizontal wind vectors,
+                toward the left entrance and right exit regions.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch11-section-ageostrophic-wind-applications" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Applying the ageostrophic wind</title>
+
+  <introduction>
+    <p>
+        <xref ref="eqn-ageostrophic-wind-vector" text="type-global" />
+        reveals the ageostrophic wind depends on the horizontal Lagrangian acceleration of the wind,
+        and it is non-zero wherever the horizontal wind accelerates,
+        i.e., wherever the horizontal wind changes speed and/or direction.
+        Common examples of mid-latitude synoptic scale atmospheric phenomena that feature large horizontal accelerations
+        that lead to significant ageostrophic winds are jet streaks and troughs and ridges,
+        as discussed below.
+        The former explicates the effect of significant along-flow wind speed changes,
+        and the latter explicates the effect of significant along-flow wind direction changes.
+    </p>
+  </introduction>
+
+  <xi:include href="ch11-section-ageostrophic-wind-applications-subsection-jet-streaks.ptx" />
+
+</section>
