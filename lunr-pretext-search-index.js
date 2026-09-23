@@ -2665,11 +2665,47 @@ var ptx_lunr_docs = [
   "body": " Selected references     Chapter 4 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 3 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapters 5 and 7 of Marshall and Plumb (2007)      "
 },
 {
+  "id": "ch11-section-geostrophic-balance-limitations",
+  "level": "1",
+  "url": "ch11-section-geostrophic-balance-limitations.html",
+  "type": "Section",
+  "number": "11.1",
+  "title": "Limitations of geostrophic balance",
+  "body": " Limitations of geostrophic balance  Recall from mid-latitude synoptic scale analysis of the horizontal equations of motion as presented in Chapter 8 that the horizontal pressure gradient acceleration given in height coordinates by in the zonal direction and in the meridional direction and the Coriolis acceleration proportional to given by in the zonal direction and in the meridional direction have equal and largest magnitude of all the horizontal accelerations; specifically, they are . This leads to the conclusion mid-latitude synoptic scale atmospheric motions in the horizontal are, to a first-order approximation, in geostrophic balance.  While geostrophic balance describes much about the behavior of mid-latitude synoptic scale atmospheric motions through the geostrophic wind as noted in Chapter 8 , such motions tend to be within 15% of the geostrophic wind its use is limited, as it provides a diagnostic (descriptive) rather than prognostic (predictive) relationship since it includes no dependence on time. This limitation results because the geostrophic wind is non-accelerating since and have been neglected in its derivation; their neglect implies that the geostrophic wind is unchanging. Furthermore, the geostrophic wind is nearly non-divergent, which through mass conservation limits vertical motions significantly. Therefore, while geostrophic balance lets us describe a significant portion of large-scale atmospheric motions, it cannot be used to predict how those motions will change and behave in the future, nor can it explain the development of vertical motions that drive large-scale atmospheric circulations like mid-latitude cyclones and anticyclones. For these, we must take a quasi-geostrophic perspective by considering horizontal force imbalances that lead to accelerations.  "
+},
+{
+  "id": "ch11-section-geostrophic-balance-limitations-3",
+  "level": "2",
+  "url": "ch11-section-geostrophic-balance-limitations.html#ch11-section-geostrophic-balance-limitations-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "quasi-geostrophic "
+},
+{
+  "id": "ch11-section-ageostrophic-wind-derivation",
+  "level": "1",
+  "url": "ch11-section-ageostrophic-wind-derivation.html",
+  "type": "Section",
+  "number": "11.2",
+  "title": "Deriving the ageostrophic wind",
+  "body": " Deriving the ageostrophic wind  Recall from Chapter 8 that the horizontal acceleration of air parcels making up the wind given by in the zonal direction and in the meridional direction has the next-largest magnitude for mid-latitude synoptic scale analysis of the horizontal equations of motion: . Although this horizontal Lagrangian acceleration is about 10 times smaller than the horizontal pressure gradient and Coriolis accelerations for mid-latitude synoptic scale motions, retaining it allows for prediction and explanation of large-scale vertical motions.  Consider the horizontal equations of motion in height coordinates with these three largest accelerations retained:        where the Coriolis parameter has been substituted for simplicity. These equations can be combined into vector form as     where the \"z\" subscript emphasizes height coordinates are used and pressure is measured at constant height.  Unlike the equations of geostrophic balance, which are diagnostic , are prognostic because they feature time derivatives through inclusion of horizontal Lagrangian acceleration. While they are more accurate to real atmospheric motions than the equations of geostrophic balance because the horizontal Lagrangian acceleration is retained, they still are approximate since smaller accelerations such as the curvature terms and viscous friction acceleration are neglected.  Recall from Chapter 8 that the zonal and meridional components of the geostrophic wind are given in height coordinates by     and     respectively, and its vector equation is given by      each can be rearranged to isolate the horizontal pressure gradient acceleration           for substitution into :           Note the vector identity     was used to produce .  We define the ageostrophic wind as     where is the true horizontal wind. makes it clear that           In other words, the ageostrophic wind is the deviation of the true horizontal wind from geostrophy, and it results from imbalance between the horizontal pressure gradient force and the horizontal Coriolis force.  Substituting into produces           Therefore,           where the vector identity given by again was used to produce .  "
+},
+{
+  "id": "ch11-section-ageostrophic-wind-derivation-27",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-derivation.html#ch11-section-ageostrophic-wind-derivation-27",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ageostrophic wind "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
   "type": "References",
-  "number": "11",
+  "number": "12",
   "title": "References",
   "body": " References   Bluestein, H. B.  Synoptic-Dynamic Meteorology in Midlatitudes: Principles of Kinematics and Dynamics  1  Oxford University Press  1992    Fujita, T. T.  Tornadoes and Downbursts in the Context of Generalized Planetary Scales  Journal of the Atmospheric Sciences  38  8  1511-1534  1981    Holton, J. R.  Hakim, G. J.  An Introduction to Dynamic Meteorology  Academic Press  2013   3rd edition     Kundu, P. K.  Cohen, I. M.  Dowling, D. R.  Fluid Mechanics  Academic Press  2016   6th edition     Marshall, J.  Plumb, R. A.  Atmosphere, Ocean and Climate Dynamics: An Introductory Text  Academic Press  2007    Martin, J. E.  Mid-latitude Atmospheric Dynamics: A First Course  Wiley  2006    Orlanski, I.  A Rational Subdivision of Scales for Atmospheric Processes  Bulletin of the American Meteorological Society  56  5  527-530  1975    Petty, G. W.  A First Course in Atmospheric Thermodynamics  Sundog Publishing  2008    Stull, R. B.  Practical Meteorology: An Algebra-based Survey of Atmospheric Science  University of British Columbia  2017   Version 1.02b     National Oceanic and Atmospheric Administration  National Aeronautics and Space Administration  United States Air Force  U.S. Standard Atmosphere, 1976  U.S. Government Printing Office  1976   "
 },
@@ -2678,7 +2714,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#holton-hakim-6",
   "type": "Note",
-  "number": "11.3.1",
+  "number": "12.3.1",
   "title": "",
   "body": " 3rd edition  "
 },
@@ -2687,7 +2723,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#kundu-cohen-dowling-7",
   "type": "Note",
-  "number": "11.4.1",
+  "number": "12.4.1",
   "title": "",
   "body": " 6th edition  "
 },
@@ -2696,7 +2732,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "references.html#stull-5",
   "type": "Note",
-  "number": "11.9.1",
+  "number": "12.9.1",
   "title": "",
   "body": " Version 1.02b  "
 },
