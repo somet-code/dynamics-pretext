@@ -43,15 +43,17 @@
 
   <p>
     where the "z" subscript emphasizes height coordinates are used and pressure is measured at constant height.
+    These are the <term>quasi-geostrophic horizontal equations of motion</term>.
   </p>
 
   <p>
     Unlike the equations of geostrophic balance,
     which are <em>diagnostic</em>,
+    the equations of quasi-geostrophic horizontal motion given by
     <xref ref="eqn-quasi-geostrophic-x" text="type-global" /><ndash /><xref ref="eqn-quasi-geostrophic-vector" text="type-global" />
-    are <em>prognostic</em> because they feature time derivatives through inclusion of horizontal Lagrangian acceleration.
-    While they are more accurate to real atmospheric motions than the equations of geostrophic balance
-    because the horizontal Lagrangian acceleration is retained,
+    are <em>prognostic</em> because they feature time derivatives through inclusion of the horizontal Lagrangian acceleration.
+    While the equations of quasi-geostrophic motion are more accurate to real atmospheric motions than the equations of geostrophic balance
+    because they retain the horizontal Lagrangian acceleration,
     they still are approximate since smaller accelerations such as the curvature terms and viscous friction acceleration are neglected.
   </p>
 

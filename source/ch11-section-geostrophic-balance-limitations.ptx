@@ -14,25 +14,25 @@
     <m>-2 \Omega u \sin{\phi}</m> in the meridional direction<mdash />have equal and largest magnitude
     of all the horizontal accelerations;
     specifically, they are <m>\mathcal{O}(10^{-3} \, \text{m} \, \text{s}^{-2})</m>.
-    This leads to the conclusion mid-latitude synoptic scale atmospheric motions in the horizontal are,
-    to a first-order approximation, in geostrophic balance.
+    This leads to the conclusion <em>mid-latitude synoptic scale atmospheric motions in the horizontal are,
+    to a first-order approximation, in geostrophic balance</em>.
   </p>
 
   <p>
     While geostrophic balance describes much about the behavior of mid-latitude synoptic scale atmospheric motions
     through the geostrophic wind<mdash />as noted in
     <xref ref="ch8-section-mid-latitude-synoptic-scale-analysis-subsection-geostrophic-balance" text="custom">Chapter 8</xref>,
-    such motions tend to be within 15% of the geostrophic wind<mdash />its use is limited,
+    mid-latitude synoptic scale horizontal motions tend to be within 15% of the geostrophic wind<mdash />its use is limited,
     as it provides a diagnostic (descriptive) rather than prognostic (predictive) relationship since it includes no dependence on time.
     This limitation results because the geostrophic wind is non-accelerating
-    since <m>\dfrac{Du}{Dt}</m> and <m>\dfrac{Dv}{Dt}</m> have been neglected in its derivation;
-    their neglect implies that the geostrophic wind is unchanging.
+    since <m>\dfrac{Du}{Dt}</m> and <m>\dfrac{Dv}{Dt}</m> have been neglected in its derivation:
+    Their neglect implies the geostrophic wind is unchanging.
     Furthermore,
     the geostrophic wind is nearly non-divergent,
     which through mass conservation limits vertical motions significantly.
     Therefore,
-    while geostrophic balance lets us describe a significant portion of large-scale atmospheric motions,
-    it cannot be used to predict how those motions will change and behave in the future,
+    while geostrophic balance lets us <em>describe</em> a significant portion of large-scale horizontal motions,
+    it cannot be used to <em>predict</em> how those motions will change and behave in the future,
     nor can it explain the development of vertical motions that drive large-scale atmospheric circulations
     like mid-latitude cyclones and anticyclones.
     For these,
