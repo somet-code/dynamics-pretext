@@ -62,7 +62,7 @@
         and they slow down as they flow out of the jet streak's exist region.
         <xref ref="ch11-jet-streak-ageostrophic" text="type-global" /> below depicts representative horizontal acceleration vectors for the entrance and exit regions for the jet streak of
         <xref ref="ch11-jet-streak" text="type-global" /> and <xref ref="ch11-jet-streak-quadrants" text="type-global" />.
-        <xref ref="eqn-ageostrophic-wind-vector" text="type-global" /> dictates that,
+        The vector form of the ageostrophic wind <xref ref="eqn-ageostrophic-wind-vector" text="type-global" /> dictates that,
         in the Northern Hemisphere,
         the ageostrophic wind must be directed away from the right entrance region and toward the left entrance region
         as well as away from the left exit region and toward the right exit region,
