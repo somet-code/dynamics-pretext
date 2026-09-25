@@ -22,6 +22,8 @@
             where the inner magenta shading indicates faster wind speeds than the outer blue shading.
             Black vectors give the geostrophic wind entering the jet streak from the west (on the left),
             flowing within the jet streak in the center, and exiting the jet streak to the east (on the right).
+            The western (left) half of the jet streak is considered the entrance region,
+            and the eastern (right) half of the jet streak is considered the exit region.
         </caption>
         <image source="images/ch11-jet-streak.png" width="80%">
             <shortdescription>
@@ -41,10 +43,10 @@
         <caption>
             Reproduction of <xref ref="ch11-jet-streak" text="type-global" />
             with dashed brown lines partitioning the jet streak into named quadrants:
-            left entrance (upper-left),
-            left exit (upper-right),
-            right entrance (lower-left),
-            and right exit (upper-right).
+            left entrance to the northwest (upper-left),
+            left exit to the northeast (upper-right),
+            right entrance to the southwest (lower-left),
+            and right exit to the southeast (upper-right).
         </caption>
         <image source="images/ch11-jet-streak-quadrants.png" width="80%">
             <shortdescription>
@@ -59,7 +61,7 @@
 
     <p>
         Air parcels speed up as they flow into the jet streak's entrance region,
-        and they slow down as they flow out of the jet streak's exist region.
+        and they slow down as they flow out of the jet streak's exit region.
         <xref ref="ch11-jet-streak-ageostrophic" text="type-global" /> below depicts representative horizontal acceleration vectors for the entrance and exit regions for the jet streak of
         <xref ref="ch11-jet-streak" text="type-global" /> and <xref ref="ch11-jet-streak-quadrants" text="type-global" />.
         The vector form of the ageostrophic wind <xref ref="eqn-ageostrophic-wind-vector" text="type-global" /> dictates that,
@@ -94,7 +96,8 @@
 
     <p>
         The sum of the ageostrophic and geostrophic winds produces the true horizontal wind,
-        which crosses isohypses to converge toward the left entrance and right exit regions
+        which is westerly but
+        crosses isohypses to converge toward the left entrance and right exit regions
         and diverge away from the right entrance and left exit regions,
         as shown in <xref ref="ch11-jet-streak-winds-start" text="type-global" /> below.
         This pattern is extended to other parts of the jet streak in
@@ -152,7 +155,7 @@
     <figure xml:id="ch11-jet-streak-conv-div">
         <caption>
             Reproduction of <xref ref="ch11-jet-streak-winds" text="type-global" />,
-            with the true horizontal wind vectors removed
+            with the true horizontal wind vectors and isohypses removed
             and areas of convergence (labeled "Conv") and divergence (labeled "Div") indicated.
         </caption>
         <image source="images/ch11-jet-streak-conv-div.png" width="80%">
@@ -174,6 +177,13 @@
         convergence (divergence) aloft drives sinking (rising) motion below,
         which influences the development or dissipation of mid-latitude cyclones and anticyclones
         as well as the formation or inhibition of clouds and precipitation.
+        In particular,
+        convergence aloft promotes sinking motion below,
+        which supports development of mid-latitude anticyclones and dissipation of mid-latitude cyclones
+        as well as the inhibition of clouds and precipitation.
+        Divergence aloft promotes rising motion below,
+        which supports development of mid-latitude cyclones and dissipation of mid-latitude anticyclones
+        as well as the formation of clouds and precipitation.
     </p>
 
 </subsection>

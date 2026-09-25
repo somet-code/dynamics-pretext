@@ -19,9 +19,11 @@
     <figure xml:id="ch11-longwaves">
         <caption>
             A series of Northern Hemisphere longwaves
-            as indicated by northward and southward deviations of isohypses of geopotential height on an isobaric surface of interest
+            as indicated by northward (top of the screen)
+            and southward (bottom of the screen)
+            deviations of isohypses of geopotential height on an isobaric surface of interest
             (<m>Z \gt 0</m> and <m>\Delta Z \gt 0</m>).
-            Black vectors give the geostrophic wind flowing through the series of longwaves.
+            Black vectors give the geostrophic wind flowing through the longwaves.
         </caption>
         <image source="images/ch11-longwaves.png" width="80%">
             <shortdescription>
@@ -100,10 +102,6 @@
         Horizontal wind speed changes result in convergence in the flow directed from the peak of a ridge to the base of the subsequent trough
         and divergence in the flow directed from the base of a trough to the peak of the subsequent ridge,
         as shown in <xref ref="ch11-longwaves-conv-div" text="type-global" /> below.
-        Since longwaves form near the top of the troposphere,
-        convergence (divergence) aloft drives sinking (rising) motion below,
-        which influences the development or dissipation of mid-latitude cyclones and anticyclones
-        as well as the formation or inhibition of clouds and precipitation.
     </p>
 
     <figure xml:id="ch11-longwaves-conv-div">
@@ -123,5 +121,12 @@
             </shortdescription>
         </image>
     </figure>
+
+    <p>
+        Since longwaves form near the top of the troposphere,
+        convergence (divergence) aloft drives sinking (rising) motion below,
+        which influences the development or dissipation of mid-latitude cyclones and anticyclones
+        as well as the formation or inhibition of clouds and precipitation.
+    </p>
 
 </subsection>
