@@ -2701,6 +2701,141 @@ var ptx_lunr_docs = [
   "body": "ageostrophic wind "
 },
 {
+  "id": "ch11-section-ageostrophic-wind-applications",
+  "level": "1",
+  "url": "ch11-section-ageostrophic-wind-applications.html",
+  "type": "Section",
+  "number": "11.3",
+  "title": "Applying the ageostrophic wind",
+  "body": " Applying the ageostrophic wind    reveals the ageostrophic wind depends on the horizontal Lagrangian acceleration of the wind, and it is non-zero wherever the horizontal wind accelerates, i.e., wherever the horizontal wind changes speed and\/or direction. Common examples of mid-latitude synoptic scale atmospheric phenomena that feature large horizontal accelerations that lead to significant ageostrophic winds are jet streaks and troughs and ridges, as discussed below. The former explicates the effect of significant along-flow wind speed changes, and the latter explicates the effect of significant along-flow wind direction changes.    Jet streaks  A jet streak is a local maximum of horizontal wind speed within a jet stream produced by strengthening of the horizontal pressure gradient, as shown in below. The entrance region of a jet streak is the half into which air parcels flow, speeding up as they enter the jet streak, and the exit region of a jet streak is the half out of which air parcels flow, slowing down as they exit the jet streak.   A straight, symmetric Northern Hemisphere jet streak produced by a strengthened horizontal pressure gradient as indicated by isohypses of geopotential height on an isobaric surface of interest ( and ). Shaded ovals are isotachs, where the inner magenta shading indicates faster wind speeds than the outer blue shading. Black vectors give the geostrophic wind entering the jet streak from the west (on the left), flowing within the jet streak in the center, and exiting the jet streak to the east (on the right).   A west-to-east oriented jet streak with strongest horizontal pressure gradient and fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after.    Jet streaks typically are partitioned into quadrants that are named relative to the general direction of horizontal wind flow through them, as shown in below for generally westerly flow through a Northern Hemisphere jet streak.   Reproduction of with dashed brown lines partitioning the jet streak into named quadrants: left entrance (upper-left), left exit (upper-right), right entrance (lower-left), and right exit (upper-right).   A west-to-east oriented jet streak with strongest horizontal pressure gradient and fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it.    Air parcels speed up as they flow into the jet streak's entrance region, and they slow down as they flow out of the jet streak's exist region. below depicts representative horizontal acceleration vectors for the entrance and exit regions for the jet streak of and . The vector form of the ageostrophic wind dictates that, in the Northern Hemisphere, the ageostrophic wind must be directed away from the right entrance region and toward the left entrance region as well as away from the left exit region and toward the right exit region, as shown in as well.   Reproduction of with the isohypses removed and the dashed brown lines replaced by thinner dashed black lines for clarity. The purple vectors labeled show representative horizontal acceleration vectors in the entrance and exit regions, and the blue vectors labeled give the corresponding ageostrophic winds. Note vectors are not drawn to scale.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The acceleration of the horizontal wind vector points toward the center of the jet streak, and the geostrophic wind vectors point to the left of the acceleration of the horizontal wind vectors, toward the left entrance and right exit regions.    The sum of the ageostrophic and geostrophic winds produces the true horizontal wind, which crosses isohypses to converge toward the left entrance and right exit regions and diverge away from the right entrance and left exit regions, as shown in below. This pattern is extended to other parts of the jet streak in below, and corresponding areas of convergence and divergence are highlighted in below.   Reproduction of , with the horizontal acceleration vectors removed and the geostrophic wind vectors at the two locations inserted as black vectors labeled . The green vectors labeled result from the sum of the ageostrophic and geostrophic winds and represent the true horizontal wind at the two locations.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The acceleration of the horizontal wind vector points toward the center of the jet streak, and the geostrophic wind vectors point to the left of the acceleration of the horizontal wind vectors, toward the left entrance and right exit regions. The geostrophic wind vectors point from the left to the right. The true horizontal wind vectors point at an angle toward the left entrance and right exit regions.     Reproduction of , with the ageostrophic and geostrophic wind vectors removed and more true horizontal wind vectors inserted. The isohypses of and have been re-introduced to emphasize the cross-isohypse nature of the wind flow.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The true horizontal wind vectors point generally from west to east while converging toward the left entrance and right exit regions.     Reproduction of , with the true horizontal wind vectors removed and areas of convergence (labeled \"Conv\") and divergence (labeled \"Div\") indicated.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The true horizontal wind converges into the left entrance and right exit regions and diverges away from the right entrance and left exit regions.    Since jet streaks form near the top of the troposphere, and the tropopause and stratosphere above are stable layers, convergence (divergence) aloft drives sinking (rising) motion below, which influences the development or dissipation of mid-latitude cyclones and anticyclones as well as the formation or inhibition of clouds and precipitation.    Troughs and ridges  Curvature of horizontal wind flow through troughs of low pressure and ridges of high pressure, such as we find in Rossby wave (also called longwaves ), induces air parcel accelerations via a change in horizontal wind direction.  Consider a series of several idealized Northern Hemisphere longwaves as shown in below. For simplicity, spacing between the isohypses is held constant so geostrophic wind speed is constant.   A series of Northern Hemisphere longwaves as indicated by northward and southward deviations of isohypses of geopotential height on an isobaric surface of interest ( and ). Black vectors give the geostrophic wind flowing through the series of longwaves.   Two ridges with a trough in between, created by a wavy pair of isohypses, with geostrophic wind vectors paralleling the isohypses and pointing generally from west to east.    Air parcels flowing through the bases of troughs and the peaks of ridges experience an inward-directed centripetal acceleration; below depicts representative horizontal acceleration vectors for the trough and ridges of . The vector form of the ageostrophic wind dictates that, in the Northern Hemisphere, the ageostrophic wind must be directed opposite the geostrophic wind in a trough and in the same direction as the geostrophic wind in a ridge, as shown in as well.   Reproduction of . The purple vectors labeled show representative horizontal acceleration vectors (i.e., centripetal acceleration vectors) in the base of the trough and peaks of the ridges, and the blue vectors labeled give the corresponding ageostrophic winds. Note that vectors are not drawn to scale.   Two ridges with a trough in between, created by a wavy pair of isohypses, with geostrophic wind vectors paralleling the isohypses and pointing generally from west to east. Horizontal acceleration vectors point toward the center of curature of the isohypses, and ageostrophic wind vectors point opposite the geostrophic wind in the trough and in the same direction as the geostrophic wind in the ridges.    Since the ageostrophic wind is directed parallel to the geostrophic wind in the peaks of ridges, we find supergeostrophic (faster than geostrophic) horizontal wind flow there, while since the geostrophic wind is directed anti-parallel to the geostrophic wind in the bases of troughs, we find subgeostrophic (slower than geostrophic) horizontal wind flow there, as shown in below. Also note flow between troughs and ridges is geostrophic where the isohypses are straight.   Reproduction of , with the horizontal acceleration and ageostrophic wind vectors removed. The green vectors labeled result from the sum of the ageostrophic and geostrophic winds and represent the true horizontal wind.   Two ridges with a trough in between, created by a wavy pair of isohypses, with horizontal wind vectors paralleling the isohypses and pointing generally from west to east. Horizontal wind vectors are longer in the ridges to indicate faster-than-geostrophic wind speed and shorter in the trough to indicate slower-than-geostrophic wind speed.    Horizontal wind speed changes result in convergence in the flow directed from the peak of a ridge to the base of the subsequent trough and divergence in the flow directed from the base of a trough to the peak of the subsequent ridge, as shown in below. Since longwaves form near the top of the troposphere, convergence (divergence) aloft drives sinking (rising) motion below, which influences the development or dissipation of mid-latitude cyclones and anticyclones as well as the formation or inhibition of clouds and precipitation.   Reproduction of , with true horizontal wind vectors removed between ridges and trough and areas of convergence (labeled \"Conv\") and divergence (labeled \"Div\") indicated.   Two ridges with a trough in between, created by a wavy pair of isohypses, with horizontal wind vectors paralleling the isohypses and pointing generally from west to east. Convergence is found in the northwesterly horizontal wind flow between the ridge and trough, and divergence is found in the southeasterly horizontal wind flow between the trough and ridge.     "
+},
+{
+  "id": "ch11-section-ageostrophic-wind-applications-subsection-jet-streaks-2",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-section-ageostrophic-wind-applications-subsection-jet-streaks-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "jet streak entrance region exit region "
+},
+{
+  "id": "ch11-jet-streak",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-jet-streak",
+  "type": "Figure",
+  "number": "11.3.1",
+  "title": "",
+  "body": " A straight, symmetric Northern Hemisphere jet streak produced by a strengthened horizontal pressure gradient as indicated by isohypses of geopotential height on an isobaric surface of interest ( and ). Shaded ovals are isotachs, where the inner magenta shading indicates faster wind speeds than the outer blue shading. Black vectors give the geostrophic wind entering the jet streak from the west (on the left), flowing within the jet streak in the center, and exiting the jet streak to the east (on the right).   A west-to-east oriented jet streak with strongest horizontal pressure gradient and fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after.   "
+},
+{
+  "id": "ch11-jet-streak-quadrants",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-jet-streak-quadrants",
+  "type": "Figure",
+  "number": "11.3.2",
+  "title": "",
+  "body": " Reproduction of with dashed brown lines partitioning the jet streak into named quadrants: left entrance (upper-left), left exit (upper-right), right entrance (lower-left), and right exit (upper-right).   A west-to-east oriented jet streak with strongest horizontal pressure gradient and fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it.   "
+},
+{
+  "id": "ch11-jet-streak-ageostrophic",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-jet-streak-ageostrophic",
+  "type": "Figure",
+  "number": "11.3.3",
+  "title": "",
+  "body": " Reproduction of with the isohypses removed and the dashed brown lines replaced by thinner dashed black lines for clarity. The purple vectors labeled show representative horizontal acceleration vectors in the entrance and exit regions, and the blue vectors labeled give the corresponding ageostrophic winds. Note vectors are not drawn to scale.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The acceleration of the horizontal wind vector points toward the center of the jet streak, and the geostrophic wind vectors point to the left of the acceleration of the horizontal wind vectors, toward the left entrance and right exit regions.   "
+},
+{
+  "id": "ch11-jet-streak-winds-start",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-jet-streak-winds-start",
+  "type": "Figure",
+  "number": "11.3.4",
+  "title": "",
+  "body": " Reproduction of , with the horizontal acceleration vectors removed and the geostrophic wind vectors at the two locations inserted as black vectors labeled . The green vectors labeled result from the sum of the ageostrophic and geostrophic winds and represent the true horizontal wind at the two locations.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The acceleration of the horizontal wind vector points toward the center of the jet streak, and the geostrophic wind vectors point to the left of the acceleration of the horizontal wind vectors, toward the left entrance and right exit regions. The geostrophic wind vectors point from the left to the right. The true horizontal wind vectors point at an angle toward the left entrance and right exit regions.   "
+},
+{
+  "id": "ch11-jet-streak-winds",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-jet-streak-winds",
+  "type": "Figure",
+  "number": "11.3.5",
+  "title": "",
+  "body": " Reproduction of , with the ageostrophic and geostrophic wind vectors removed and more true horizontal wind vectors inserted. The isohypses of and have been re-introduced to emphasize the cross-isohypse nature of the wind flow.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The true horizontal wind vectors point generally from west to east while converging toward the left entrance and right exit regions.   "
+},
+{
+  "id": "ch11-jet-streak-conv-div",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-jet-streak-conv-div",
+  "type": "Figure",
+  "number": "11.3.6",
+  "title": "",
+  "body": " Reproduction of , with the true horizontal wind vectors removed and areas of convergence (labeled \"Conv\") and divergence (labeled \"Div\") indicated.   A west-to-east oriented jet streak with fastest winds at its center. Horizontal winds flow from west-to-east through the jet streak, speeding up toward the middle and slowing down after. The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right) relative to the wind flow through it. The true horizontal wind converges into the left entrance and right exit regions and diverges away from the right entrance and left exit regions.   "
+},
+{
+  "id": "ch11-section-ageostrophic-wind-applications-subsection-troughs-ridges-2",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-section-ageostrophic-wind-applications-subsection-troughs-ridges-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "troughs ridges Rossby wave longwaves "
+},
+{
+  "id": "ch11-longwaves",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-longwaves",
+  "type": "Figure",
+  "number": "11.3.7",
+  "title": "",
+  "body": " A series of Northern Hemisphere longwaves as indicated by northward and southward deviations of isohypses of geopotential height on an isobaric surface of interest ( and ). Black vectors give the geostrophic wind flowing through the series of longwaves.   Two ridges with a trough in between, created by a wavy pair of isohypses, with geostrophic wind vectors paralleling the isohypses and pointing generally from west to east.   "
+},
+{
+  "id": "ch11-longwaves-ageostrophic-wind",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-longwaves-ageostrophic-wind",
+  "type": "Figure",
+  "number": "11.3.8",
+  "title": "",
+  "body": " Reproduction of . The purple vectors labeled show representative horizontal acceleration vectors (i.e., centripetal acceleration vectors) in the base of the trough and peaks of the ridges, and the blue vectors labeled give the corresponding ageostrophic winds. Note that vectors are not drawn to scale.   Two ridges with a trough in between, created by a wavy pair of isohypses, with geostrophic wind vectors paralleling the isohypses and pointing generally from west to east. Horizontal acceleration vectors point toward the center of curature of the isohypses, and ageostrophic wind vectors point opposite the geostrophic wind in the trough and in the same direction as the geostrophic wind in the ridges.   "
+},
+{
+  "id": "ch11-section-ageostrophic-wind-applications-subsection-troughs-ridges-7",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-section-ageostrophic-wind-applications-subsection-troughs-ridges-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "supergeostrophic subgeostrophic "
+},
+{
+  "id": "ch11-longwaves-winds",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-longwaves-winds",
+  "type": "Figure",
+  "number": "11.3.9",
+  "title": "",
+  "body": " Reproduction of , with the horizontal acceleration and ageostrophic wind vectors removed. The green vectors labeled result from the sum of the ageostrophic and geostrophic winds and represent the true horizontal wind.   Two ridges with a trough in between, created by a wavy pair of isohypses, with horizontal wind vectors paralleling the isohypses and pointing generally from west to east. Horizontal wind vectors are longer in the ridges to indicate faster-than-geostrophic wind speed and shorter in the trough to indicate slower-than-geostrophic wind speed.   "
+},
+{
+  "id": "ch11-longwaves-conv-div",
+  "level": "2",
+  "url": "ch11-section-ageostrophic-wind-applications.html#ch11-longwaves-conv-div",
+  "type": "Figure",
+  "number": "11.3.10",
+  "title": "",
+  "body": " Reproduction of , with true horizontal wind vectors removed between ridges and trough and areas of convergence (labeled \"Conv\") and divergence (labeled \"Div\") indicated.   Two ridges with a trough in between, created by a wavy pair of isohypses, with horizontal wind vectors paralleling the isohypses and pointing generally from west to east. Convergence is found in the northwesterly horizontal wind flow between the ridge and trough, and divergence is found in the southeasterly horizontal wind flow between the trough and ridge.   "
+},
+{
+  "id": "ch11-section-selected-references",
+  "level": "1",
+  "url": "ch11-section-selected-references.html",
+  "type": "Section",
+  "number": "11.4",
+  "title": "Selected references",
+  "body": " Selected references     Chapter 3 of Martin (2006) : See tentative course schedule for specific readings.    Chapter 2 of Holton and Hakim (2013) : See tentative course schedule for specific readings.    Chapter 13 of Stull (2017)      "
+},
+{
   "id": "references",
   "level": "1",
   "url": "references.html",
