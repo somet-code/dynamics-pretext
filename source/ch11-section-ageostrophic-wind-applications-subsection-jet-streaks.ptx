@@ -92,4 +92,88 @@
         </image>
     </figure>
 
+    <p>
+        The sum of the ageostrophic and geostrophic winds produces the true horizontal wind,
+        which crosses isohypses to converge toward the left entrance and right exit regions
+        and diverge away from the right entrance and left exit regions,
+        as shown in <xref ref="ch11-jet-streak-winds-start" text="type-global" /> below.
+        This pattern is extended to other parts of the jet streak in
+        <xref ref="ch11-jet-streak-winds" text="type-global" /> below,
+        and corresponding areas of convergence and divergence are highlighted in
+        <xref ref="ch11-jet-streak-conv-div" text="type-global" /> below.
+    </p>
+
+    <figure xml:id="ch11-jet-streak-winds-start">
+        <caption>
+            Reproduction of <xref ref="ch11-jet-streak-ageostrophic" text="type-global" />,
+            with the horizontal acceleration vectors removed
+            and the geostrophic wind vectors at the two locations inserted as black vectors labeled <m>\vec{v}_g</m>.
+            The green vectors labeled <m>\vec{v}</m> result from the sum of the ageostrophic and geostrophic winds
+            and represent the true horizontal wind at the two locations.
+        </caption>
+        <image source="images/ch11-jet-streak-winds-start.png" width="80%">
+            <shortdescription>
+                A west-to-east oriented jet streak with fastest winds at its center.
+                Horizontal winds flow from west-to-east through the jet streak,
+                speeding up toward the middle and slowing down after.
+                The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right)
+                relative to the wind flow through it.
+                The acceleration of the horizontal wind vector points toward the center of the jet streak,
+                and the geostrophic wind vectors point to the left of the acceleration of the horizontal wind vectors,
+                toward the left entrance and right exit regions.
+                The geostrophic wind vectors point from the left to the right.
+                The true horizontal wind vectors point at an angle toward the left entrance and right exit regions.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <figure xml:id="ch11-jet-streak-winds">
+        <caption>
+            Reproduction of <xref ref="ch11-jet-streak-winds-start" text="type-global" />,
+            with the ageostrophic and geostrophic wind vectors removed
+            and more true horizontal wind vectors inserted.
+            The isohypses of <xref ref="ch11-jet-streak" text="type-global" />
+            and <xref ref="ch11-jet-streak-quadrants" text="type-global" />
+            have been re-introduced to emphasize the cross-isohypse nature of the wind flow.
+        </caption>
+        <image source="images/ch11-jet-streak-winds.png" width="80%">
+            <shortdescription>
+                A west-to-east oriented jet streak with fastest winds at its center.
+                Horizontal winds flow from west-to-east through the jet streak,
+                speeding up toward the middle and slowing down after.
+                The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right)
+                relative to the wind flow through it.
+                The true horizontal wind vectors point generally from west to east
+                while converging toward the left entrance and right exit regions.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <figure xml:id="ch11-jet-streak-conv-div">
+        <caption>
+            Reproduction of <xref ref="ch11-jet-streak-winds" text="type-global" />,
+            with the true horizontal wind vectors removed
+            and areas of convergence (labeled "Conv") and divergence (labeled "Div") indicated.
+        </caption>
+        <image source="images/ch11-jet-streak-conv-div.png" width="80%">
+            <shortdescription>
+                A west-to-east oriented jet streak with fastest winds at its center.
+                Horizontal winds flow from west-to-east through the jet streak,
+                speeding up toward the middle and slowing down after.
+                The jet streak is partitioned into two entrance quadrants (left and right) and two exit quadrants (left and right)
+                relative to the wind flow through it.
+                The true horizontal wind converges into the left entrance and right exit regions
+                and diverges away from the right entrance and left exit regions.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Since jet streaks form near the top of the troposphere,
+        and the tropopause and stratosphere above are stable layers,
+        convergence (divergence) aloft drives sinking (rising) motion below,
+        which influences the development or dissipation of mid-latitude cyclones and anticyclones
+        as well as the formation or inhibition of clouds and precipitation.
+    </p>
+
 </subsection>
