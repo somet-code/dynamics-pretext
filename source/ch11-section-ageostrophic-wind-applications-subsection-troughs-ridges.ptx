@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="ch11-section-ageostrophic-wind-applications-subsection-troughs-ridges" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Troughs and ridges</title>
+
+    <p>
+        Curvature of horizontal wind flow through <term>troughs</term> of low pressure and <term>ridges</term> of high pressure,
+        such as we find in <term>Rossby wave</term> (also called <term>longwaves</term>),
+        induces air parcel accelerations via a change in horizontal wind direction.
+    </p>
+
+    <p>
+        Consider a series of several idealized Northern Hemisphere longwaves as shown in
+        <xref ref="ch11-longwaves" text="type-global" /> below.
+        For simplicity,
+        spacing between the isohypses is held constant so geostrophic wind speed is constant.
+    </p>
+
+    <figure xml:id="ch11-longwaves">
+        <caption>
+            A series of Northern Hemisphere longwaves
+            as indicated by northward and southward deviations of isohypses of geopotential height on an isobaric surface of interest
+            (<m>Z \gt 0</m> and <m>\Delta Z \gt 0</m>).
+            Black vectors give the geostrophic wind flowing through the series of longwaves.
+        </caption>
+        <image source="images/ch11-longwaves.png" width="80%">
+            <shortdescription>
+                Two ridges with a trough in between,
+                created by a wavy pair of isohypses,
+                with geostrophic wind vectors paralleling the isohypses
+                and pointing generally from west to east.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Air parcels flowing through the bases of troughs and the peaks of ridges experience an inward-directed centripetal acceleration;
+        <xref ref="ch11-longwaves-ageostrophic-wind" text="type-global" /> below
+        depicts representative horizontal acceleration vectors for the trough and ridges of
+        <xref ref="ch11-longwaves" text="type-global" />.
+        The vector form of the ageostrophic wind <xref ref="eqn-ageostrophic-wind-vector" text="type-global" /> dictates that,
+        in the Northern Hemisphere,
+        the ageostrophic wind must be directed opposite the geostrophic wind in a trough
+        and in the same direction as the geostrophic wind in a ridge,
+        as shown in <xref ref="ch11-longwaves-ageostrophic-wind" text="type-global" /> as well.
+    </p>
+
+    <figure xml:id="ch11-longwaves-ageostrophic-wind">
+        <caption>
+            Reproduction of <xref ref="ch11-longwaves" text="type-global" />.
+            The purple vectors labeled <m>\dfrac{D\vec{v}}{Dt}</m>
+            show representative horizontal acceleration vectors
+            (i.e., centripetal acceleration vectors)
+            in the base of the trough and peaks of the ridges,
+            and the blue vectors labeled <m>\vec{v}_a</m> give the corresponding ageostrophic winds.
+            Note that vectors are not drawn to scale.
+        </caption>
+        <image source="images/ch11-longwaves-ageostrophic-wind.png" width="80%">
+            <shortdescription>
+                Two ridges with a trough in between,
+                created by a wavy pair of isohypses,
+                with geostrophic wind vectors paralleling the isohypses
+                and pointing generally from west to east.
+                Horizontal acceleration vectors point toward the center of curature of the isohypses,
+                and ageostrophic wind vectors point opposite the geostrophic wind in the trough
+                and in the same direction as the geostrophic wind in the ridges.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Since the ageostrophic wind is directed parallel to the geostrophic wind in the peaks of ridges,
+        we find <term>supergeostrophic</term> (faster than geostrophic) horizontal wind flow there,
+        while since the geostrophic wind is directed anti-parallel to the geostrophic wind in the bases of troughs,
+        we find <term>subgeostrophic</term> (slower than geostrophic) horizontal wind flow there,
+        as shown in <xref ref="ch11-longwaves-winds" text="type-global" /> below.
+        Also note flow between troughs and ridges is geostrophic where the isohypses are straight.
+    </p>
+
+    <figure xml:id="ch11-longwaves-winds">
+        <caption>
+            Reproduction of <xref ref="ch11-longwaves-ageostrophic-wind" text="type-global" />,
+            with the horizontal acceleration and ageostrophic wind vectors removed.
+            The green vectors labeled <m>\vec{v}</m> result from the sum of the ageostrophic and geostrophic winds
+            and represent the true horizontal wind.
+        </caption>
+        <image source="images/ch11-longwaves-winds.png" width="80%">
+            <shortdescription>
+                Two ridges with a trough in between,
+                created by a wavy pair of isohypses,
+                with horizontal wind vectors paralleling the isohypses
+                and pointing generally from west to east.
+                Horizontal wind vectors are longer in the ridges to indicate faster-than-geostrophic wind speed
+                and shorter in the trough to indicate slower-than-geostrophic wind speed.
+            </shortdescription>
+        </image>
+    </figure>
+
+    <p>
+        Horizontal wind speed changes result in convergence in the flow directed from the peak of a ridge to the base of the subsequent trough
+        and divergence in the flow directed from the base of a trough to the peak of the subsequent ridge,
+        as shown in <xref ref="ch11-longwaves-conv-div" text="type-global" /> below.
+        Since longwaves form near the top of the troposphere,
+        convergence (divergence) aloft drives sinking (rising) motion below,
+        which influences the development or dissipation of mid-latitude cyclones and anticyclones
+        as well as the formation or inhibition of clouds and precipitation.
+    </p>
+
+    <figure xml:id="ch11-longwaves-conv-div">
+        <caption>
+            Reproduction of <xref ref="ch11-longwaves-winds" text="type-global" />,
+            with true horizontal wind vectors removed between ridges and trough
+            and areas of convergence (labeled "Conv") and divergence (labeled "Div") indicated.
+        </caption>
+        <image source="images/ch11-longwaves-conv-div.png" width="80%">
+            <shortdescription>
+                Two ridges with a trough in between,
+                created by a wavy pair of isohypses,
+                with horizontal wind vectors paralleling the isohypses
+                and pointing generally from west to east.
+                Convergence is found in the northwesterly horizontal wind flow between the ridge and trough,
+                and divergence is found in the southeasterly horizontal wind flow between the trough and ridge.
+            </shortdescription>
+        </image>
+    </figure>
+
+</subsection>

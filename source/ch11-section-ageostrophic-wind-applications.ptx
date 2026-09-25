@@ -18,5 +18,6 @@
   </introduction>
 
   <xi:include href="ch11-section-ageostrophic-wind-applications-subsection-jet-streaks.ptx" />
+  <xi:include href="ch11-section-ageostrophic-wind-applications-subsection-troughs-ridges.ptx" />
 
 </section>
